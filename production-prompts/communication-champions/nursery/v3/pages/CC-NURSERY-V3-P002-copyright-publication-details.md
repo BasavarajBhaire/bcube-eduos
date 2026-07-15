@@ -37,6 +37,18 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 - Use a 10–14 mm footer with page number 2 only at bottom right.
 - Never generate or redraw the logo; apply the official vector asset during final layout.
 
+### Locked publication metadata
+
+- Copyright: © 2025 BCube Future Academy. All rights reserved.
+- Publisher: BCube Future Academy
+- Series: BCube Future Skills Learning Series™
+- Title: Communication Champions — Nursery (3+)
+- Address: 407, DSMAX Sky Supreme KST Bangalore - 560060
+- Email: info@bcubefutureacademy.in
+- Website: bcubefutureacademy.in
+- Edition: First Edition 2025
+- These values are final controlled copy. Do not paraphrase, replace, infer, or generate alternate contact or edition details.
+
 ## 5. Design and Visual Grammar Engines
 
 - Page type: teacher_guide. Layout anchor: 80% text area.
@@ -66,7 +78,7 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 
 ## 9. Illustration and Character Engines
 
-- Composition: Minimal decoration; do not invent final legal data. Individual execution locked: 0 activities; Whitespace is for readability only.
+- Composition: Minimal decoration; use only the locked publication metadata in section 4. Individual execution locked: 0 activities; Whitespace is for readability only.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
