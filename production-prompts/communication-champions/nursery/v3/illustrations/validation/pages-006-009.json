@@ -1,0 +1,23 @@
+{
+  "batch": "CC-NURSERY-V3-P006-P009",
+  "workflow": "AI artwork plus deterministic publication layout",
+  "pages": [6, 7, 8, 9],
+  "dimensions": "2480x3508",
+  "density": "300 DPI",
+  "logo": "Approved BCube Academy asset",
+  "typography": {
+    "headings": "Poppins Bold",
+    "body": "Nunito SemiBold"
+  },
+  "checks": {
+    "page_title_present": true,
+    "direct_child_instruction_present": true,
+    "meaningful_response_space_present": true,
+    "teacher_prompt_present": true,
+    "home_connection_present": true,
+    "page_number_present": true,
+    "generated_body_text_prohibited": true,
+    "invented_publication_details": false
+  },
+  "status": "Publication-layout complete; CMYK conversion reserved for final print export"
+}
