@@ -1,0 +1,444 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "release": "Communication Champions — Nursery Gold",
+  "version": "3.0.0",
+  "compiler": "BCube Prompt Compiler 3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Communication_Champions_Gold_Individually_Rebuilt.xlsx",
+    "sha256": "caecd24a409b4f531b6018b2076d42cc9222af2f198e7c9e5835cde0bc54bfba",
+    "page_records": 41,
+    "source_status": "GOLD COMPLETE"
+  },
+  "engine_order": [
+    "Publishing Engine",
+    "Design Engine",
+    "Visual Grammar Engine",
+    "Educational Engine",
+    "Teaching Engine",
+    "Parent Partnership Engine",
+    "Illustration Engine",
+    "Character Engine",
+    "Quality Assurance and Prompt Compiler"
+  ],
+  "precedence": [
+    "approved page-specific blueprint",
+    "approved unit/book rule",
+    "global rule"
+  ],
+  "gold_threshold": 100,
+  "critical_defects_allowed": 0,
+  "prompt_count": 41,
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CC-NUR-V3-P001",
+      "title": "Cover Page",
+      "module": "Front Matter",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P001-cover-page.json",
+      "markdown": "pages/CC-NUR-V3-P001-cover-page.md"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CC-NUR-V3-P002",
+      "title": "Copyright & Publication Details",
+      "module": "Front Matter",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P002-copyright-publication-details.json",
+      "markdown": "pages/CC-NUR-V3-P002-copyright-publication-details.md"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CC-NUR-V3-P003",
+      "title": "Contents",
+      "module": "Front Matter",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P003-contents.json",
+      "markdown": "pages/CC-NUR-V3-P003-contents.md"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CC-NUR-V3-P004",
+      "title": "Welcome to Communication Champions",
+      "module": "Front Matter",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P004-welcome-to-communication-champions.json",
+      "markdown": "pages/CC-NUR-V3-P004-welcome-to-communication-champions.md"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CC-NUR-V3-P005",
+      "title": "Meet Star",
+      "module": "Front Matter",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P005-meet-star.json",
+      "markdown": "pages/CC-NUR-V3-P005-meet-star.md"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CC-NUR-V3-P006",
+      "title": "My Name",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P006-my-name.json",
+      "markdown": "pages/CC-NUR-V3-P006-my-name.md"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CC-NUR-V3-P007",
+      "title": "My Photo",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P007-my-photo.json",
+      "markdown": "pages/CC-NUR-V3-P007-my-photo.md"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CC-NUR-V3-P008",
+      "title": "My Feelings",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P008-my-feelings.json",
+      "markdown": "pages/CC-NUR-V3-P008-my-feelings.md"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CC-NUR-V3-P009",
+      "title": "My Birthday",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P009-my-birthday.json",
+      "markdown": "pages/CC-NUR-V3-P009-my-birthday.md"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CC-NUR-V3-P010",
+      "title": "My Family",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P010-my-family.json",
+      "markdown": "pages/CC-NUR-V3-P010-my-family.md"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CC-NUR-V3-P011",
+      "title": "Draw My Family",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P011-draw-my-family.json",
+      "markdown": "pages/CC-NUR-V3-P011-draw-my-family.md"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CC-NUR-V3-P012",
+      "title": "Family Members",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P012-family-members.json",
+      "markdown": "pages/CC-NUR-V3-P012-family-members.md"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CC-NUR-V3-P013",
+      "title": "Who Is in My Family?",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P013-who-is-in-my-family.json",
+      "markdown": "pages/CC-NUR-V3-P013-who-is-in-my-family.md"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CC-NUR-V3-P014",
+      "title": "My Favourite Toy",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P014-my-favourite-toy.json",
+      "markdown": "pages/CC-NUR-V3-P014-my-favourite-toy.md"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CC-NUR-V3-P015",
+      "title": "My Favourite Toy Activity",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P015-my-favourite-toy-activity.json",
+      "markdown": "pages/CC-NUR-V3-P015-my-favourite-toy-activity.md"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CC-NUR-V3-P016",
+      "title": "Foods I Like",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P016-foods-i-like.json",
+      "markdown": "pages/CC-NUR-V3-P016-foods-i-like.md"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CC-NUR-V3-P017",
+      "title": "Healthy Habits",
+      "module": "Module 1 – Me & My Family",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P017-healthy-habits.json",
+      "markdown": "pages/CC-NUR-V3-P017-healthy-habits.md"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CC-NUR-V3-P018",
+      "title": "Animals Around Me",
+      "module": "Module 2 – My World",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P018-animals-around-me.json",
+      "markdown": "pages/CC-NUR-V3-P018-animals-around-me.md"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CC-NUR-V3-P019",
+      "title": "Colours Around Me",
+      "module": "Module 2 – My World",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P019-colours-around-me.json",
+      "markdown": "pages/CC-NUR-V3-P019-colours-around-me.md"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CC-NUR-V3-P020",
+      "title": "I Can Speak",
+      "module": "Module 2 – My World",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P020-i-can-speak.json",
+      "markdown": "pages/CC-NUR-V3-P020-i-can-speak.md"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CC-NUR-V3-P021",
+      "title": "My Friends",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P021-my-friends.json",
+      "markdown": "pages/CC-NUR-V3-P021-my-friends.md"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CC-NUR-V3-P022",
+      "title": "Playground Talk",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P022-playground-talk.json",
+      "markdown": "pages/CC-NUR-V3-P022-playground-talk.md"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CC-NUR-V3-P023",
+      "title": "Let’s Talk Together",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P023-let-s-talk-together.json",
+      "markdown": "pages/CC-NUR-V3-P023-let-s-talk-together.md"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CC-NUR-V3-P024",
+      "title": "Listening Time",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P024-listening-time.json",
+      "markdown": "pages/CC-NUR-V3-P024-listening-time.md"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CC-NUR-V3-P025",
+      "title": "Show and Tell",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P025-show-and-tell.json",
+      "markdown": "pages/CC-NUR-V3-P025-show-and-tell.md"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CC-NUR-V3-P026",
+      "title": "Sharing Toys",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P026-sharing-toys.json",
+      "markdown": "pages/CC-NUR-V3-P026-sharing-toys.md"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CC-NUR-V3-P027",
+      "title": "Taking Turns",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P027-taking-turns.json",
+      "markdown": "pages/CC-NUR-V3-P027-taking-turns.md"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CC-NUR-V3-P028",
+      "title": "Kind Words",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P028-kind-words.json",
+      "markdown": "pages/CC-NUR-V3-P028-kind-words.md"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CC-NUR-V3-P029",
+      "title": "Asking for Help",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P029-asking-for-help.json",
+      "markdown": "pages/CC-NUR-V3-P029-asking-for-help.md"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CC-NUR-V3-P030",
+      "title": "Communication Game",
+      "module": "Module 3 – Friends & Communication",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P030-communication-game.json",
+      "markdown": "pages/CC-NUR-V3-P030-communication-game.md"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CC-NUR-V3-P031",
+      "title": "My Favourite Food",
+      "module": "Module 4 – My World & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P031-my-favourite-food.json",
+      "markdown": "pages/CC-NUR-V3-P031-my-favourite-food.md"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CC-NUR-V3-P032",
+      "title": "My Pet",
+      "module": "Module 4 – My World & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P032-my-pet.json",
+      "markdown": "pages/CC-NUR-V3-P032-my-pet.md"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CC-NUR-V3-P033",
+      "title": "Favourite Animal",
+      "module": "Module 4 – My World & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P033-favourite-animal.json",
+      "markdown": "pages/CC-NUR-V3-P033-favourite-animal.md"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CC-NUR-V3-P034",
+      "title": "At the Park",
+      "module": "Module 4 – My World & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P034-at-the-park.json",
+      "markdown": "pages/CC-NUR-V3-P034-at-the-park.md"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CC-NUR-V3-P035",
+      "title": "My School",
+      "module": "Module 5 – School & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P035-my-school.json",
+      "markdown": "pages/CC-NUR-V3-P035-my-school.md"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CC-NUR-V3-P036",
+      "title": "My Classroom",
+      "module": "Module 5 – School & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P036-my-classroom.json",
+      "markdown": "pages/CC-NUR-V3-P036-my-classroom.md"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CC-NUR-V3-P037",
+      "title": "Story Time",
+      "module": "Module 5 – School & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P037-story-time.json",
+      "markdown": "pages/CC-NUR-V3-P037-story-time.md"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CC-NUR-V3-P038",
+      "title": "Music and Singing",
+      "module": "Module 5 – School & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P038-music-and-singing.json",
+      "markdown": "pages/CC-NUR-V3-P038-music-and-singing.md"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CC-NUR-V3-P039",
+      "title": "My Daily Routine",
+      "module": "Module 5 – School & Expression",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P039-my-daily-routine.json",
+      "markdown": "pages/CC-NUR-V3-P039-my-daily-routine.md"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CC-NUR-V3-P040",
+      "title": "Certificate of Completion",
+      "module": "Closing Pages",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P040-certificate-of-completion.json",
+      "markdown": "pages/CC-NUR-V3-P040-certificate-of-completion.md"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CC-NUR-V3-P041",
+      "title": "I Am a Communication Champion!",
+      "module": "Closing Pages",
+      "status": "Gold Certified",
+      "score": 100,
+      "json": "pages/CC-NUR-V3-P041-i-am-a-communication-champion.json",
+      "markdown": "pages/CC-NUR-V3-P041-i-am-a-communication-champion.md"
+    }
+  ]
+}

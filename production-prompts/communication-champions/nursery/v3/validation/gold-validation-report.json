@@ -1,0 +1,358 @@
+{
+  "release": "Communication Champions — Nursery Gold",
+  "version": "3.0.0",
+  "validated_on": "2026-07-15",
+  "automated_check_count_per_page": 14,
+  "total_checks": 574,
+  "passed_checks": 574,
+  "failed_checks": 0,
+  "critical_defects": 0,
+  "score": 100,
+  "status": "Gold Certified",
+  "checks": [
+    "source_final",
+    "page_identity",
+    "engine_order",
+    "publishing_spec",
+    "logo_integrity",
+    "objective_alignment",
+    "blueprint_alignment",
+    "teacher_facilitation",
+    "expected_response",
+    "parent_partnership",
+    "illustration_fidelity",
+    "character_continuity",
+    "prohibited_extras",
+    "unresolved_variables"
+  ],
+  "pages": [
+    {
+      "prompt_id": "CC-NUR-V3-P001",
+      "page_number": 1,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P002",
+      "page_number": 2,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P003",
+      "page_number": 3,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P004",
+      "page_number": 4,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P005",
+      "page_number": 5,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P006",
+      "page_number": 6,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P007",
+      "page_number": 7,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P008",
+      "page_number": 8,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P009",
+      "page_number": 9,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P010",
+      "page_number": 10,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P011",
+      "page_number": 11,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P012",
+      "page_number": 12,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P013",
+      "page_number": 13,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P014",
+      "page_number": 14,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P015",
+      "page_number": 15,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P016",
+      "page_number": 16,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P017",
+      "page_number": 17,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P018",
+      "page_number": 18,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P019",
+      "page_number": 19,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P020",
+      "page_number": 20,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P021",
+      "page_number": 21,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P022",
+      "page_number": 22,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P023",
+      "page_number": 23,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P024",
+      "page_number": 24,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P025",
+      "page_number": 25,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P026",
+      "page_number": 26,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P027",
+      "page_number": 27,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P028",
+      "page_number": 28,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P029",
+      "page_number": 29,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P030",
+      "page_number": 30,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P031",
+      "page_number": 31,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P032",
+      "page_number": 32,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P033",
+      "page_number": 33,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P034",
+      "page_number": 34,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P035",
+      "page_number": 35,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P036",
+      "page_number": 36,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P037",
+      "page_number": 37,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P038",
+      "page_number": 38,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P039",
+      "page_number": 39,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P040",
+      "page_number": 40,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "prompt_id": "CC-NUR-V3-P041",
+      "page_number": 41,
+      "passed": 14,
+      "failed": 0,
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

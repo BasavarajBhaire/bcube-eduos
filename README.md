@@ -9,6 +9,10 @@ The canonical documentation and machine-readable production standards for BCube 
 - [Generated Word edition](docs/BCube_Prompt_Engine_v3/generated/BCube_Prompt_Engine_v3.docx)
 - [Generated PDF edition](docs/BCube_Prompt_Engine_v3/generated/BCube_Prompt_Engine_v3.pdf)
 
+## Production prompts
+
+- [Communication Champions — Nursery Production Prompts v3](production-prompts/communication-champions/nursery/v3/README.md) — 41 Gold-certified, compiler-ready page packages
+
 ## Repository model
 
 Markdown is the single authoritative source. YAML and JSON files provide executable rules, templates, fragments, validation controls, examples, and schemas. Word and PDF files are generated release artifacts.
@@ -25,6 +29,7 @@ Markdown is the single authoritative source. YAML and JSON files provide executa
 | `examples/` | Reference page and prompt implementations |
 | `schemas/` | JSON Schemas for machine validation |
 | `scripts/` | Documentation generation and validation |
+| `production-prompts/` | Versioned, book-level production prompt releases |
 
 ## Version
 
