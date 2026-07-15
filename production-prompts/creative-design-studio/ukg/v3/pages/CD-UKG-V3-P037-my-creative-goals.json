@@ -1,0 +1,54 @@
+{
+  "prompt_id": "CD-UKG-V3-P037",
+  "version": "3.0.0",
+  "page_data": {
+    "page_id": "CD-UKG-V3-P037",
+    "book_id": "CREATIVE_DESIGN_STUDIO_UKG",
+    "unit_id": "CORE_LEARNING",
+    "page_number": 37,
+    "page_type": "activity_page",
+    "title": "My Creative Goals",
+    "age_level": "UKG (5+)",
+    "learning_objective": "Develop creativity, design thinking and artistic expression.",
+    "competencies": [
+      "ART-01"
+    ],
+    "activity": {
+      "instruction": "Teacher, Star mascot and six UKG children creating 'My Creative Goals'. One short speaking, reflection, or independent practice response.",
+      "evidence": "Children share ideas, appreciate others' work and improve their own creations."
+    },
+    "teacher_prompt": {
+      "facilitation": "Encourage exploration, experimentation and discussion about creative choices.",
+      "questions": [
+        "What can you show or tell about my creative goals?"
+      ]
+    },
+    "parent_prompt": {
+      "conversation": "Create together at home using recycled and everyday materials.",
+      "home_activity": "Create together at home using recycled and everyday materials."
+    },
+    "illustration": {
+      "scene": "Teacher, Star mascot and six UKG children creating 'My Creative Goals'.",
+      "focal_point": "One dominant focus for “My Creative Goals”.",
+      "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+      "negative_constraints": [
+        "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+        "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+        "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+        "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+        "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+        "No unrelated activity or decorative response space."
+      ]
+    },
+    "character_refs": [
+      "STAR-MASCOT-V3"
+    ],
+    "overrides": []
+  },
+  "compiled_prompt": "# BCube Production Prompt v3 — CD-UKG-V3-P037\n\n## 1. Release metadata\n\n- Prompt ID: CD-UKG-V3-P037\n- Version: 3.0.0\n- Book: Creative Design Studio\n- Level: UKG (5+)\n- Module: Core Learning\n- Page: 37 of 41\n- Exact title: My Creative Goals\n- Source: Creative_Design_Studio_UKG_Gold_Production_v1.xlsx\n- Source SHA-256: 679e99cf22dce6174f10d8396705520e642344880318e9e4afee29cafb9365a3\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “My Creative Goals”. Follow this deterministic package only. Produce no explanation, alternate, mockup, or additional page.\n\n## 3. Engine order and precedence\n\n1. Publishing Engine\n2. Design Engine\n3. Visual Grammar Engine\n4. Educational Engine\n5. Teaching Engine\n6. Parent Partnership Engine\n7. Illustration Engine\n8. Character Engine\n9. Quality Assurance and Prompt Compiler\n\nPrecedence: approved page instruction > approved book/level rule > global rule. Do not resolve conflicts by guessing.\n\n## 4. Publishing Engine\n\n- A4 portrait, 210 × 297 mm; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin; 300 DPI; CMYK-safe; print-ready.\n- Use a 20–28 mm header with the exact title “My Creative Goals” centred and the official BCube logo reserved at top left.\n- Use a 10–14 mm footer with page number 37 only at bottom right.\n- Never generate or redraw the logo; apply the official vector asset during final layout.\n\n## 5. Design and Visual Grammar Engines\n\n- Page type: activity_page. Layout anchor: Teacher, Star mascot and six UKG children creating 'My Creative Goals'.\n- Visual/text balance: 55–65% visual and 35–45% text/activity. Use one dominant focal point and a clear title → model → action → response eye path.\n- Blank-space rule: Only purposeful response space; no decorative blank frame. Maximum two core activities and one optional extension.\n- Clean white base, soft BCube pastel accents, thick rounded outlines, large targets, strong contrast, generous spacing, and no visual clutter.\n\n## 6. Educational Engine\n\n- Objective: Develop creativity, design thinking and artistic expression.\n- Primary activity: Teacher, Star mascot and six UKG children creating 'My Creative Goals'.\n- Secondary activity: One short speaking, reflection, or independent practice response.\n- Observable evidence: Children share ideas, appreciate others' work and improve their own creations.\n- Developmental response modes: oral explanation, guided reading, short independent response, sequencing, problem solving, drawing, or a simple sentence.\n- BCube competency: ART-01\n- Grade 1 readiness: Grade 1 Creative Readiness\n\n## 7. Teaching Engine\n\n- Facilitation: Encourage exploration, experimentation and discussion about creative choices.\n- Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.\n- Assessment evidence: Child explains creative decisions and completes the activity independently.\n\n## 8. Parent Partnership Engine\n\n- Home connection: Create together at home using recycled and everyday materials.\n- Use common household materials only; do not create a new scored task or require a device, purchase, or printing.\n\n## 9. Illustration and Character Engines\n\n- Composition: Premium creative studio, labelled art stations, soft pastel palette, clean workspace.\n- Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.\n- Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.\n\n## 10. Approved source instruction\n\nCreate a premium BCube Gold Production v2 A4 workbook page titled 'My Creative Goals' with teacher-led creative design activities, Star mascot, six expressive UKG children, rich classroom storytelling, commercial publishing quality, 300 DPI.\n\n## 11. Negative constraints\n\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No unrelated activity or decorative response space.\n\n## 12. Gold QA gate and compiler footer\n\nVerify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.\n\nCD-UKG-V3-P037 | v3.0.0 | page 37/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Gold Certified"
+  }
+}

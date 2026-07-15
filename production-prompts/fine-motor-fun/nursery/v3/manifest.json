@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Fine Motor Fun",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Fine_Motor_Fun_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "8796e4a125cb8e20b81fd704effb3c09082afbe0b825a7005123ac44851f1009"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "FM-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/FM-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/FM-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "FM-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/FM-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/FM-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "FM-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/FM-NURSERY-V3-P003-contents.md",
+      "json": "pages/FM-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "FM-NURSERY-V3-P004",
+      "title": "Welcome to Fine Motor Fun",
+      "markdown": "pages/FM-NURSERY-V3-P004-welcome-to-fine-motor-fun.md",
+      "json": "pages/FM-NURSERY-V3-P004-welcome-to-fine-motor-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "FM-NURSERY-V3-P005",
+      "title": "Meet Skill Star",
+      "markdown": "pages/FM-NURSERY-V3-P005-meet-skill-star.md",
+      "json": "pages/FM-NURSERY-V3-P005-meet-skill-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "FM-NURSERY-V3-P006",
+      "title": "My Busy Hands",
+      "markdown": "pages/FM-NURSERY-V3-P006-my-busy-hands.md",
+      "json": "pages/FM-NURSERY-V3-P006-my-busy-hands.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "FM-NURSERY-V3-P007",
+      "title": "Finger Gym",
+      "markdown": "pages/FM-NURSERY-V3-P007-finger-gym.md",
+      "json": "pages/FM-NURSERY-V3-P007-finger-gym.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "FM-NURSERY-V3-P008",
+      "title": "Playdough Pinch and Roll",
+      "markdown": "pages/FM-NURSERY-V3-P008-playdough-pinch-and-roll.md",
+      "json": "pages/FM-NURSERY-V3-P008-playdough-pinch-and-roll.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "FM-NURSERY-V3-P009",
+      "title": "Pick and Place",
+      "markdown": "pages/FM-NURSERY-V3-P009-pick-and-place.md",
+      "json": "pages/FM-NURSERY-V3-P009-pick-and-place.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "FM-NURSERY-V3-P010",
+      "title": "Tear and Paste",
+      "markdown": "pages/FM-NURSERY-V3-P010-tear-and-paste.md",
+      "json": "pages/FM-NURSERY-V3-P010-tear-and-paste.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "FM-NURSERY-V3-P011",
+      "title": "Trace Standing Lines",
+      "markdown": "pages/FM-NURSERY-V3-P011-trace-standing-lines.md",
+      "json": "pages/FM-NURSERY-V3-P011-trace-standing-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "FM-NURSERY-V3-P012",
+      "title": "Trace Sleeping Lines",
+      "markdown": "pages/FM-NURSERY-V3-P012-trace-sleeping-lines.md",
+      "json": "pages/FM-NURSERY-V3-P012-trace-sleeping-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "FM-NURSERY-V3-P013",
+      "title": "Trace Slanting Lines",
+      "markdown": "pages/FM-NURSERY-V3-P013-trace-slanting-lines.md",
+      "json": "pages/FM-NURSERY-V3-P013-trace-slanting-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "FM-NURSERY-V3-P014",
+      "title": "Trace Curved Lines",
+      "markdown": "pages/FM-NURSERY-V3-P014-trace-curved-lines.md",
+      "json": "pages/FM-NURSERY-V3-P014-trace-curved-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "FM-NURSERY-V3-P015",
+      "title": "Trace Zigzag Lines",
+      "markdown": "pages/FM-NURSERY-V3-P015-trace-zigzag-lines.md",
+      "json": "pages/FM-NURSERY-V3-P015-trace-zigzag-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "FM-NURSERY-V3-P016",
+      "title": "Trace Wavy Lines",
+      "markdown": "pages/FM-NURSERY-V3-P016-trace-wavy-lines.md",
+      "json": "pages/FM-NURSERY-V3-P016-trace-wavy-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "FM-NURSERY-V3-P017",
+      "title": "Trace Loops",
+      "markdown": "pages/FM-NURSERY-V3-P017-trace-loops.md",
+      "json": "pages/FM-NURSERY-V3-P017-trace-loops.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "FM-NURSERY-V3-P018",
+      "title": "Trace Spirals",
+      "markdown": "pages/FM-NURSERY-V3-P018-trace-spirals.md",
+      "json": "pages/FM-NURSERY-V3-P018-trace-spirals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "FM-NURSERY-V3-P019",
+      "title": "Follow the Path",
+      "markdown": "pages/FM-NURSERY-V3-P019-follow-the-path.md",
+      "json": "pages/FM-NURSERY-V3-P019-follow-the-path.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "FM-NURSERY-V3-P020",
+      "title": "Line Practice Review",
+      "markdown": "pages/FM-NURSERY-V3-P020-line-practice-review.md",
+      "json": "pages/FM-NURSERY-V3-P020-line-practice-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "FM-NURSERY-V3-P021",
+      "title": "Trace Circles",
+      "markdown": "pages/FM-NURSERY-V3-P021-trace-circles.md",
+      "json": "pages/FM-NURSERY-V3-P021-trace-circles.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "FM-NURSERY-V3-P022",
+      "title": "Trace Squares",
+      "markdown": "pages/FM-NURSERY-V3-P022-trace-squares.md",
+      "json": "pages/FM-NURSERY-V3-P022-trace-squares.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "FM-NURSERY-V3-P023",
+      "title": "Trace Triangles",
+      "markdown": "pages/FM-NURSERY-V3-P023-trace-triangles.md",
+      "json": "pages/FM-NURSERY-V3-P023-trace-triangles.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "FM-NURSERY-V3-P024",
+      "title": "Trace Rectangles",
+      "markdown": "pages/FM-NURSERY-V3-P024-trace-rectangles.md",
+      "json": "pages/FM-NURSERY-V3-P024-trace-rectangles.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "FM-NURSERY-V3-P025",
+      "title": "Trace Stars",
+      "markdown": "pages/FM-NURSERY-V3-P025-trace-stars.md",
+      "json": "pages/FM-NURSERY-V3-P025-trace-stars.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "FM-NURSERY-V3-P026",
+      "title": "Shape Patterns",
+      "markdown": "pages/FM-NURSERY-V3-P026-shape-patterns.md",
+      "json": "pages/FM-NURSERY-V3-P026-shape-patterns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "FM-NURSERY-V3-P027",
+      "title": "Complete the Pattern",
+      "markdown": "pages/FM-NURSERY-V3-P027-complete-the-pattern.md",
+      "json": "pages/FM-NURSERY-V3-P027-complete-the-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "FM-NURSERY-V3-P028",
+      "title": "Shape Path",
+      "markdown": "pages/FM-NURSERY-V3-P028-shape-path.md",
+      "json": "pages/FM-NURSERY-V3-P028-shape-path.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "FM-NURSERY-V3-P029",
+      "title": "Thread and Lace",
+      "markdown": "pages/FM-NURSERY-V3-P029-thread-and-lace.md",
+      "json": "pages/FM-NURSERY-V3-P029-thread-and-lace.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "FM-NURSERY-V3-P030",
+      "title": "Sticker Match",
+      "markdown": "pages/FM-NURSERY-V3-P030-sticker-match.md",
+      "json": "pages/FM-NURSERY-V3-P030-sticker-match.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "FM-NURSERY-V3-P031",
+      "title": "Dot Marker Fun",
+      "markdown": "pages/FM-NURSERY-V3-P031-dot-marker-fun.md",
+      "json": "pages/FM-NURSERY-V3-P031-dot-marker-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "FM-NURSERY-V3-P032",
+      "title": "Fingerprint Garden",
+      "markdown": "pages/FM-NURSERY-V3-P032-fingerprint-garden.md",
+      "json": "pages/FM-NURSERY-V3-P032-fingerprint-garden.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "FM-NURSERY-V3-P033",
+      "title": "Cut Straight Lines",
+      "markdown": "pages/FM-NURSERY-V3-P033-cut-straight-lines.md",
+      "json": "pages/FM-NURSERY-V3-P033-cut-straight-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "FM-NURSERY-V3-P034",
+      "title": "Cut Curved Lines",
+      "markdown": "pages/FM-NURSERY-V3-P034-cut-curved-lines.md",
+      "json": "pages/FM-NURSERY-V3-P034-cut-curved-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "FM-NURSERY-V3-P035",
+      "title": "Cut and Paste Shapes",
+      "markdown": "pages/FM-NURSERY-V3-P035-cut-and-paste-shapes.md",
+      "json": "pages/FM-NURSERY-V3-P035-cut-and-paste-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "FM-NURSERY-V3-P036",
+      "title": "Paper Collage",
+      "markdown": "pages/FM-NURSERY-V3-P036-paper-collage.md",
+      "json": "pages/FM-NURSERY-V3-P036-paper-collage.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "FM-NURSERY-V3-P037",
+      "title": "Draw a Happy Face",
+      "markdown": "pages/FM-NURSERY-V3-P037-draw-a-happy-face.md",
+      "json": "pages/FM-NURSERY-V3-P037-draw-a-happy-face.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "FM-NURSERY-V3-P038",
+      "title": "Complete the Picture",
+      "markdown": "pages/FM-NURSERY-V3-P038-complete-the-picture.md",
+      "json": "pages/FM-NURSERY-V3-P038-complete-the-picture.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "FM-NURSERY-V3-P039",
+      "title": "My Fine Motor Creation",
+      "markdown": "pages/FM-NURSERY-V3-P039-my-fine-motor-creation.md",
+      "json": "pages/FM-NURSERY-V3-P039-my-fine-motor-creation.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "FM-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/FM-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/FM-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "FM-NURSERY-V3-P041",
+      "title": "I Am a Fine Motor Star!",
+      "markdown": "pages/FM-NURSERY-V3-P041-i-am-a-fine-motor-star.md",
+      "json": "pages/FM-NURSERY-V3-P041-i-am-a-fine-motor-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

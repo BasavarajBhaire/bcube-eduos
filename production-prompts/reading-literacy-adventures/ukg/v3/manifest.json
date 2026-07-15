@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Reading & Literacy Adventures",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Reading_Literacy_Adventures_UKG_Gold_Production_v3.xlsx",
+    "sha256": "412cf4537d3d6cbb49cc63ef19f73c1524cab922eac42c37ea2afab1dddcdd1f"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "RL-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/RL-UKG-V3-P001-cover.md",
+      "json": "pages/RL-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "RL-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/RL-UKG-V3-P002-copyright.md",
+      "json": "pages/RL-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "RL-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/RL-UKG-V3-P003-contents.md",
+      "json": "pages/RL-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "RL-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/RL-UKG-V3-P004-welcome.md",
+      "json": "pages/RL-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "RL-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/RL-UKG-V3-P005-meet-star.md",
+      "json": "pages/RL-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "RL-UKG-V3-P006",
+      "title": "Letter Sounds Review",
+      "markdown": "pages/RL-UKG-V3-P006-letter-sounds-review.md",
+      "json": "pages/RL-UKG-V3-P006-letter-sounds-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "RL-UKG-V3-P007",
+      "title": "Blend the Sounds",
+      "markdown": "pages/RL-UKG-V3-P007-blend-the-sounds.md",
+      "json": "pages/RL-UKG-V3-P007-blend-the-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "RL-UKG-V3-P008",
+      "title": "Read CVC Words",
+      "markdown": "pages/RL-UKG-V3-P008-read-cvc-words.md",
+      "json": "pages/RL-UKG-V3-P008-read-cvc-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "RL-UKG-V3-P009",
+      "title": "Picture to Word",
+      "markdown": "pages/RL-UKG-V3-P009-picture-to-word.md",
+      "json": "pages/RL-UKG-V3-P009-picture-to-word.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "RL-UKG-V3-P010",
+      "title": "Sight Words",
+      "markdown": "pages/RL-UKG-V3-P010-sight-words.md",
+      "json": "pages/RL-UKG-V3-P010-sight-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "RL-UKG-V3-P011",
+      "title": "Rhyming Families",
+      "markdown": "pages/RL-UKG-V3-P011-rhyming-families.md",
+      "json": "pages/RL-UKG-V3-P011-rhyming-families.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "RL-UKG-V3-P012",
+      "title": "Read the Sentence",
+      "markdown": "pages/RL-UKG-V3-P012-read-the-sentence.md",
+      "json": "pages/RL-UKG-V3-P012-read-the-sentence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "RL-UKG-V3-P013",
+      "title": "Match Word & Picture",
+      "markdown": "pages/RL-UKG-V3-P013-match-word-picture.md",
+      "json": "pages/RL-UKG-V3-P013-match-word-picture.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "RL-UKG-V3-P014",
+      "title": "Beginning Sounds",
+      "markdown": "pages/RL-UKG-V3-P014-beginning-sounds.md",
+      "json": "pages/RL-UKG-V3-P014-beginning-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "RL-UKG-V3-P015",
+      "title": "Ending Sounds",
+      "markdown": "pages/RL-UKG-V3-P015-ending-sounds.md",
+      "json": "pages/RL-UKG-V3-P015-ending-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "RL-UKG-V3-P016",
+      "title": "Middle Sounds",
+      "markdown": "pages/RL-UKG-V3-P016-middle-sounds.md",
+      "json": "pages/RL-UKG-V3-P016-middle-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "RL-UKG-V3-P017",
+      "title": "Read and Draw",
+      "markdown": "pages/RL-UKG-V3-P017-read-and-draw.md",
+      "json": "pages/RL-UKG-V3-P017-read-and-draw.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "RL-UKG-V3-P018",
+      "title": "Story Time",
+      "markdown": "pages/RL-UKG-V3-P018-story-time.md",
+      "json": "pages/RL-UKG-V3-P018-story-time.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "RL-UKG-V3-P019",
+      "title": "Story Sequence",
+      "markdown": "pages/RL-UKG-V3-P019-story-sequence.md",
+      "json": "pages/RL-UKG-V3-P019-story-sequence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "RL-UKG-V3-P020",
+      "title": "Who? What? Where?",
+      "markdown": "pages/RL-UKG-V3-P020-who-what-where.md",
+      "json": "pages/RL-UKG-V3-P020-who-what-where.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "RL-UKG-V3-P021",
+      "title": "Answer the Question",
+      "markdown": "pages/RL-UKG-V3-P021-answer-the-question.md",
+      "json": "pages/RL-UKG-V3-P021-answer-the-question.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "RL-UKG-V3-P022",
+      "title": "Vocabulary Boost",
+      "markdown": "pages/RL-UKG-V3-P022-vocabulary-boost.md",
+      "json": "pages/RL-UKG-V3-P022-vocabulary-boost.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "RL-UKG-V3-P023",
+      "title": "Opposites",
+      "markdown": "pages/RL-UKG-V3-P023-opposites.md",
+      "json": "pages/RL-UKG-V3-P023-opposites.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "RL-UKG-V3-P024",
+      "title": "Describing Words",
+      "markdown": "pages/RL-UKG-V3-P024-describing-words.md",
+      "json": "pages/RL-UKG-V3-P024-describing-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "RL-UKG-V3-P025",
+      "title": "Action Words",
+      "markdown": "pages/RL-UKG-V3-P025-action-words.md",
+      "json": "pages/RL-UKG-V3-P025-action-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "RL-UKG-V3-P026",
+      "title": "Punctuation Fun",
+      "markdown": "pages/RL-UKG-V3-P026-punctuation-fun.md",
+      "json": "pages/RL-UKG-V3-P026-punctuation-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "RL-UKG-V3-P027",
+      "title": "Build a Sentence",
+      "markdown": "pages/RL-UKG-V3-P027-build-a-sentence.md",
+      "json": "pages/RL-UKG-V3-P027-build-a-sentence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "RL-UKG-V3-P028",
+      "title": "Read with Expression",
+      "markdown": "pages/RL-UKG-V3-P028-read-with-expression.md",
+      "json": "pages/RL-UKG-V3-P028-read-with-expression.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "RL-UKG-V3-P029",
+      "title": "Mini Reading",
+      "markdown": "pages/RL-UKG-V3-P029-mini-reading.md",
+      "json": "pages/RL-UKG-V3-P029-mini-reading.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "RL-UKG-V3-P030",
+      "title": "Library Adventure",
+      "markdown": "pages/RL-UKG-V3-P030-library-adventure.md",
+      "json": "pages/RL-UKG-V3-P030-library-adventure.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "RL-UKG-V3-P031",
+      "title": "Reading Review",
+      "markdown": "pages/RL-UKG-V3-P031-reading-review.md",
+      "json": "pages/RL-UKG-V3-P031-reading-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "RL-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/RL-UKG-V3-P032-mini-project.md",
+      "json": "pages/RL-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "RL-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/RL-UKG-V3-P033-reflection.md",
+      "json": "pages/RL-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "RL-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/RL-UKG-V3-P034-showcase.md",
+      "json": "pages/RL-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "RL-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/RL-UKG-V3-P035-grand-review.md",
+      "json": "pages/RL-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "RL-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/RL-UKG-V3-P036-my-achievement.md",
+      "json": "pages/RL-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "RL-UKG-V3-P037",
+      "title": "My Reading Goals",
+      "markdown": "pages/RL-UKG-V3-P037-my-reading-goals.md",
+      "json": "pages/RL-UKG-V3-P037-my-reading-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "RL-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/RL-UKG-V3-P038-celebration.md",
+      "json": "pages/RL-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "RL-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/RL-UKG-V3-P039-certificate.md",
+      "json": "pages/RL-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "RL-UKG-V3-P040",
+      "title": "I Am a Reader",
+      "markdown": "pages/RL-UKG-V3-P040-i-am-a-reader.md",
+      "json": "pages/RL-UKG-V3-P040-i-am-a-reader.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "RL-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/RL-UKG-V3-P041-back-cover.md",
+      "json": "pages/RL-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

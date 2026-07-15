@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Communication Champions",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Communication_Champions_LKG_Gold_Production_v2_Final.xlsx",
+    "sha256": "f9b5c4bbf026f68f6f46a9975b0407ca33b3e2351d2ecb92dcaa85518d7c97a3"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CC-LKG-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/CC-LKG-V3-P001-cover-page.md",
+      "json": "pages/CC-LKG-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CC-LKG-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/CC-LKG-V3-P002-copyright-publication-details.md",
+      "json": "pages/CC-LKG-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CC-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CC-LKG-V3-P003-contents.md",
+      "json": "pages/CC-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CC-LKG-V3-P004",
+      "title": "Welcome to Communication Champions",
+      "markdown": "pages/CC-LKG-V3-P004-welcome-to-communication-champions.md",
+      "json": "pages/CC-LKG-V3-P004-welcome-to-communication-champions.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CC-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/CC-LKG-V3-P005-meet-star.md",
+      "json": "pages/CC-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CC-LKG-V3-P006",
+      "title": "Good Listening",
+      "markdown": "pages/CC-LKG-V3-P006-good-listening.md",
+      "json": "pages/CC-LKG-V3-P006-good-listening.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CC-LKG-V3-P007",
+      "title": "Follow One Instruction",
+      "markdown": "pages/CC-LKG-V3-P007-follow-one-instruction.md",
+      "json": "pages/CC-LKG-V3-P007-follow-one-instruction.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CC-LKG-V3-P008",
+      "title": "Follow Two Instructions",
+      "markdown": "pages/CC-LKG-V3-P008-follow-two-instructions.md",
+      "json": "pages/CC-LKG-V3-P008-follow-two-instructions.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CC-LKG-V3-P009",
+      "title": "Speak in a Full Sentence",
+      "markdown": "pages/CC-LKG-V3-P009-speak-in-a-full-sentence.md",
+      "json": "pages/CC-LKG-V3-P009-speak-in-a-full-sentence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CC-LKG-V3-P010",
+      "title": "My Name and Age",
+      "markdown": "pages/CC-LKG-V3-P010-my-name-and-age.md",
+      "json": "pages/CC-LKG-V3-P010-my-name-and-age.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CC-LKG-V3-P011",
+      "title": "About Me",
+      "markdown": "pages/CC-LKG-V3-P011-about-me.md",
+      "json": "pages/CC-LKG-V3-P011-about-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CC-LKG-V3-P012",
+      "title": "People at School",
+      "markdown": "pages/CC-LKG-V3-P012-people-at-school.md",
+      "json": "pages/CC-LKG-V3-P012-people-at-school.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CC-LKG-V3-P013",
+      "title": "Things in My Classroom",
+      "markdown": "pages/CC-LKG-V3-P013-things-in-my-classroom.md",
+      "json": "pages/CC-LKG-V3-P013-things-in-my-classroom.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CC-LKG-V3-P014",
+      "title": "Action Words",
+      "markdown": "pages/CC-LKG-V3-P014-action-words.md",
+      "json": "pages/CC-LKG-V3-P014-action-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CC-LKG-V3-P015",
+      "title": "Describing Words",
+      "markdown": "pages/CC-LKG-V3-P015-describing-words.md",
+      "json": "pages/CC-LKG-V3-P015-describing-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CC-LKG-V3-P016",
+      "title": "Opposite Words",
+      "markdown": "pages/CC-LKG-V3-P016-opposite-words.md",
+      "json": "pages/CC-LKG-V3-P016-opposite-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CC-LKG-V3-P017",
+      "title": "Position Words",
+      "markdown": "pages/CC-LKG-V3-P017-position-words.md",
+      "json": "pages/CC-LKG-V3-P017-position-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CC-LKG-V3-P018",
+      "title": "Make a Sentence",
+      "markdown": "pages/CC-LKG-V3-P018-make-a-sentence.md",
+      "json": "pages/CC-LKG-V3-P018-make-a-sentence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CC-LKG-V3-P019",
+      "title": "Greetings",
+      "markdown": "pages/CC-LKG-V3-P019-greetings.md",
+      "json": "pages/CC-LKG-V3-P019-greetings.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CC-LKG-V3-P020",
+      "title": "Please and Thank You",
+      "markdown": "pages/CC-LKG-V3-P020-please-and-thank-you.md",
+      "json": "pages/CC-LKG-V3-P020-please-and-thank-you.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CC-LKG-V3-P021",
+      "title": "Taking Turns",
+      "markdown": "pages/CC-LKG-V3-P021-taking-turns.md",
+      "json": "pages/CC-LKG-V3-P021-taking-turns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CC-LKG-V3-P022",
+      "title": "Asking for Help",
+      "markdown": "pages/CC-LKG-V3-P022-asking-for-help.md",
+      "json": "pages/CC-LKG-V3-P022-asking-for-help.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CC-LKG-V3-P023",
+      "title": "Joining a Group",
+      "markdown": "pages/CC-LKG-V3-P023-joining-a-group.md",
+      "json": "pages/CC-LKG-V3-P023-joining-a-group.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CC-LKG-V3-P024",
+      "title": "Sharing an Idea",
+      "markdown": "pages/CC-LKG-V3-P024-sharing-an-idea.md",
+      "json": "pages/CC-LKG-V3-P024-sharing-an-idea.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CC-LKG-V3-P025",
+      "title": "Solve a Small Problem",
+      "markdown": "pages/CC-LKG-V3-P025-solve-a-small-problem.md",
+      "json": "pages/CC-LKG-V3-P025-solve-a-small-problem.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CC-LKG-V3-P026",
+      "title": "Who, What and Where",
+      "markdown": "pages/CC-LKG-V3-P026-who-what-and-where.md",
+      "json": "pages/CC-LKG-V3-P026-who-what-and-where.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CC-LKG-V3-P027",
+      "title": "Ask a Question",
+      "markdown": "pages/CC-LKG-V3-P027-ask-a-question.md",
+      "json": "pages/CC-LKG-V3-P027-ask-a-question.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CC-LKG-V3-P028",
+      "title": "Yes or No?",
+      "markdown": "pages/CC-LKG-V3-P028-yes-or-no.md",
+      "json": "pages/CC-LKG-V3-P028-yes-or-no.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CC-LKG-V3-P029",
+      "title": "Answer in a Sentence",
+      "markdown": "pages/CC-LKG-V3-P029-answer-in-a-sentence.md",
+      "json": "pages/CC-LKG-V3-P029-answer-in-a-sentence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CC-LKG-V3-P030",
+      "title": "Picture Talk",
+      "markdown": "pages/CC-LKG-V3-P030-picture-talk.md",
+      "json": "pages/CC-LKG-V3-P030-picture-talk.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CC-LKG-V3-P031",
+      "title": "Story Sequence",
+      "markdown": "pages/CC-LKG-V3-P031-story-sequence.md",
+      "json": "pages/CC-LKG-V3-P031-story-sequence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CC-LKG-V3-P032",
+      "title": "Retell a Short Story",
+      "markdown": "pages/CC-LKG-V3-P032-retell-a-short-story.md",
+      "json": "pages/CC-LKG-V3-P032-retell-a-short-story.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CC-LKG-V3-P033",
+      "title": "Make a Story Ending",
+      "markdown": "pages/CC-LKG-V3-P033-make-a-story-ending.md",
+      "json": "pages/CC-LKG-V3-P033-make-a-story-ending.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CC-LKG-V3-P034",
+      "title": "Describe a Character",
+      "markdown": "pages/CC-LKG-V3-P034-describe-a-character.md",
+      "json": "pages/CC-LKG-V3-P034-describe-a-character.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CC-LKG-V3-P035",
+      "title": "Show and Tell",
+      "markdown": "pages/CC-LKG-V3-P035-show-and-tell.md",
+      "json": "pages/CC-LKG-V3-P035-show-and-tell.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CC-LKG-V3-P036",
+      "title": "My News",
+      "markdown": "pages/CC-LKG-V3-P036-my-news.md",
+      "json": "pages/CC-LKG-V3-P036-my-news.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CC-LKG-V3-P037",
+      "title": "Speak to the Group",
+      "markdown": "pages/CC-LKG-V3-P037-speak-to-the-group.md",
+      "json": "pages/CC-LKG-V3-P037-speak-to-the-group.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CC-LKG-V3-P038",
+      "title": "Listen and Respond",
+      "markdown": "pages/CC-LKG-V3-P038-listen-and-respond.md",
+      "json": "pages/CC-LKG-V3-P038-listen-and-respond.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CC-LKG-V3-P039",
+      "title": "My Communication Journal",
+      "markdown": "pages/CC-LKG-V3-P039-my-communication-journal.md",
+      "json": "pages/CC-LKG-V3-P039-my-communication-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CC-LKG-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/CC-LKG-V3-P040-certificate-of-completion.md",
+      "json": "pages/CC-LKG-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CC-LKG-V3-P041",
+      "title": "I Am a Communication Champion!",
+      "markdown": "pages/CC-LKG-V3-P041-i-am-a-communication-champion.md",
+      "json": "pages/CC-LKG-V3-P041-i-am-a-communication-champion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Early Maths Adventures",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Early_Maths_Adventures_LKG_Gold_Complete_Final.xlsx",
+    "sha256": "9bde31bb0dc915df1cf2c21a8670330ddad33fcf99f863e4ac1a75e7e6aae5e5"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "EM-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/EM-LKG-V3-P001-cover.md",
+      "json": "pages/EM-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "EM-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/EM-LKG-V3-P002-copyright.md",
+      "json": "pages/EM-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "EM-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/EM-LKG-V3-P003-contents.md",
+      "json": "pages/EM-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "EM-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/EM-LKG-V3-P004-welcome.md",
+      "json": "pages/EM-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "EM-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/EM-LKG-V3-P005-meet-star.md",
+      "json": "pages/EM-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "EM-LKG-V3-P006",
+      "title": "Numbers 1–10 Review",
+      "markdown": "pages/EM-LKG-V3-P006-numbers-1-10-review.md",
+      "json": "pages/EM-LKG-V3-P006-numbers-1-10-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "EM-LKG-V3-P007",
+      "title": "Numbers 11–20",
+      "markdown": "pages/EM-LKG-V3-P007-numbers-11-20.md",
+      "json": "pages/EM-LKG-V3-P007-numbers-11-20.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "EM-LKG-V3-P008",
+      "title": "Count & Match",
+      "markdown": "pages/EM-LKG-V3-P008-count-match.md",
+      "json": "pages/EM-LKG-V3-P008-count-match.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "EM-LKG-V3-P009",
+      "title": "Count & Circle",
+      "markdown": "pages/EM-LKG-V3-P009-count-circle.md",
+      "json": "pages/EM-LKG-V3-P009-count-circle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "EM-LKG-V3-P010",
+      "title": "More or Less",
+      "markdown": "pages/EM-LKG-V3-P010-more-or-less.md",
+      "json": "pages/EM-LKG-V3-P010-more-or-less.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "EM-LKG-V3-P011",
+      "title": "Equal Groups",
+      "markdown": "pages/EM-LKG-V3-P011-equal-groups.md",
+      "json": "pages/EM-LKG-V3-P011-equal-groups.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "EM-LKG-V3-P012",
+      "title": "Missing Numbers",
+      "markdown": "pages/EM-LKG-V3-P012-missing-numbers.md",
+      "json": "pages/EM-LKG-V3-P012-missing-numbers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "EM-LKG-V3-P013",
+      "title": "Join Groups",
+      "markdown": "pages/EM-LKG-V3-P013-join-groups.md",
+      "json": "pages/EM-LKG-V3-P013-join-groups.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "EM-LKG-V3-P014",
+      "title": "Take Away",
+      "markdown": "pages/EM-LKG-V3-P014-take-away.md",
+      "json": "pages/EM-LKG-V3-P014-take-away.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "EM-LKG-V3-P015",
+      "title": "Before & After",
+      "markdown": "pages/EM-LKG-V3-P015-before-after.md",
+      "json": "pages/EM-LKG-V3-P015-before-after.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "EM-LKG-V3-P016",
+      "title": "Number Order",
+      "markdown": "pages/EM-LKG-V3-P016-number-order.md",
+      "json": "pages/EM-LKG-V3-P016-number-order.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "EM-LKG-V3-P017",
+      "title": "Number Line",
+      "markdown": "pages/EM-LKG-V3-P017-number-line.md",
+      "json": "pages/EM-LKG-V3-P017-number-line.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "EM-LKG-V3-P018",
+      "title": "Compare Numbers",
+      "markdown": "pages/EM-LKG-V3-P018-compare-numbers.md",
+      "json": "pages/EM-LKG-V3-P018-compare-numbers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "EM-LKG-V3-P019",
+      "title": "Math Stories",
+      "markdown": "pages/EM-LKG-V3-P019-math-stories.md",
+      "json": "pages/EM-LKG-V3-P019-math-stories.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "EM-LKG-V3-P020",
+      "title": "2D Shapes",
+      "markdown": "pages/EM-LKG-V3-P020-2d-shapes.md",
+      "json": "pages/EM-LKG-V3-P020-2d-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "EM-LKG-V3-P021",
+      "title": "3D Objects",
+      "markdown": "pages/EM-LKG-V3-P021-3d-objects.md",
+      "json": "pages/EM-LKG-V3-P021-3d-objects.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "EM-LKG-V3-P022",
+      "title": "Shape Hunt",
+      "markdown": "pages/EM-LKG-V3-P022-shape-hunt.md",
+      "json": "pages/EM-LKG-V3-P022-shape-hunt.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "EM-LKG-V3-P023",
+      "title": "Patterns",
+      "markdown": "pages/EM-LKG-V3-P023-patterns.md",
+      "json": "pages/EM-LKG-V3-P023-patterns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "EM-LKG-V3-P024",
+      "title": "Complete the Pattern",
+      "markdown": "pages/EM-LKG-V3-P024-complete-the-pattern.md",
+      "json": "pages/EM-LKG-V3-P024-complete-the-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "EM-LKG-V3-P025",
+      "title": "Position Words",
+      "markdown": "pages/EM-LKG-V3-P025-position-words.md",
+      "json": "pages/EM-LKG-V3-P025-position-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "EM-LKG-V3-P026",
+      "title": "Directions",
+      "markdown": "pages/EM-LKG-V3-P026-directions.md",
+      "json": "pages/EM-LKG-V3-P026-directions.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "EM-LKG-V3-P027",
+      "title": "Big & Small",
+      "markdown": "pages/EM-LKG-V3-P027-big-small.md",
+      "json": "pages/EM-LKG-V3-P027-big-small.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "EM-LKG-V3-P028",
+      "title": "Tall & Short",
+      "markdown": "pages/EM-LKG-V3-P028-tall-short.md",
+      "json": "pages/EM-LKG-V3-P028-tall-short.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "EM-LKG-V3-P029",
+      "title": "Heavy & Light",
+      "markdown": "pages/EM-LKG-V3-P029-heavy-light.md",
+      "json": "pages/EM-LKG-V3-P029-heavy-light.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "EM-LKG-V3-P030",
+      "title": "Long & Short",
+      "markdown": "pages/EM-LKG-V3-P030-long-short.md",
+      "json": "pages/EM-LKG-V3-P030-long-short.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "EM-LKG-V3-P031",
+      "title": "Full & Empty",
+      "markdown": "pages/EM-LKG-V3-P031-full-empty.md",
+      "json": "pages/EM-LKG-V3-P031-full-empty.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "EM-LKG-V3-P032",
+      "title": "Capacity",
+      "markdown": "pages/EM-LKG-V3-P032-capacity.md",
+      "json": "pages/EM-LKG-V3-P032-capacity.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "EM-LKG-V3-P033",
+      "title": "Time Awareness",
+      "markdown": "pages/EM-LKG-V3-P033-time-awareness.md",
+      "json": "pages/EM-LKG-V3-P033-time-awareness.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "EM-LKG-V3-P034",
+      "title": "Sorting",
+      "markdown": "pages/EM-LKG-V3-P034-sorting.md",
+      "json": "pages/EM-LKG-V3-P034-sorting.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "EM-LKG-V3-P035",
+      "title": "Classifying",
+      "markdown": "pages/EM-LKG-V3-P035-classifying.md",
+      "json": "pages/EM-LKG-V3-P035-classifying.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "EM-LKG-V3-P036",
+      "title": "Picture Graph",
+      "markdown": "pages/EM-LKG-V3-P036-picture-graph.md",
+      "json": "pages/EM-LKG-V3-P036-picture-graph.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "EM-LKG-V3-P037",
+      "title": "Problem Solving",
+      "markdown": "pages/EM-LKG-V3-P037-problem-solving.md",
+      "json": "pages/EM-LKG-V3-P037-problem-solving.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "EM-LKG-V3-P038",
+      "title": "Maths Around Me",
+      "markdown": "pages/EM-LKG-V3-P038-maths-around-me.md",
+      "json": "pages/EM-LKG-V3-P038-maths-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "EM-LKG-V3-P039",
+      "title": "Maths Review",
+      "markdown": "pages/EM-LKG-V3-P039-maths-review.md",
+      "json": "pages/EM-LKG-V3-P039-maths-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "EM-LKG-V3-P040",
+      "title": "Certificate",
+      "markdown": "pages/EM-LKG-V3-P040-certificate.md",
+      "json": "pages/EM-LKG-V3-P040-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "EM-LKG-V3-P041",
+      "title": "I Am a Maths Explorer",
+      "markdown": "pages/EM-LKG-V3-P041-i-am-a-maths-explorer.md",
+      "json": "pages/EM-LKG-V3-P041-i-am-a-maths-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

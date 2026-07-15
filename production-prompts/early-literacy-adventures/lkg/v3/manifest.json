@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Early Literacy Adventures",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Early_Literacy_Adventures_LKG_Gold_Production_v2_Final.xlsx",
+    "sha256": "e2bfa45780ddf31bbc5e0e1e7617fe3e342777251544b154b8ae2c5a5b02550c"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "EL-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/EL-LKG-V3-P001-cover.md",
+      "json": "pages/EL-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "EL-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/EL-LKG-V3-P002-copyright.md",
+      "json": "pages/EL-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "EL-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/EL-LKG-V3-P003-contents.md",
+      "json": "pages/EL-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "EL-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/EL-LKG-V3-P004-welcome.md",
+      "json": "pages/EL-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "EL-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/EL-LKG-V3-P005-meet-star.md",
+      "json": "pages/EL-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "EL-LKG-V3-P006",
+      "title": "Alphabet Review",
+      "markdown": "pages/EL-LKG-V3-P006-alphabet-review.md",
+      "json": "pages/EL-LKG-V3-P006-alphabet-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "EL-LKG-V3-P007",
+      "title": "Uppercase & Lowercase",
+      "markdown": "pages/EL-LKG-V3-P007-uppercase-lowercase.md",
+      "json": "pages/EL-LKG-V3-P007-uppercase-lowercase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "EL-LKG-V3-P008",
+      "title": "Letter Sounds",
+      "markdown": "pages/EL-LKG-V3-P008-letter-sounds.md",
+      "json": "pages/EL-LKG-V3-P008-letter-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "EL-LKG-V3-P009",
+      "title": "Beginning Sounds",
+      "markdown": "pages/EL-LKG-V3-P009-beginning-sounds.md",
+      "json": "pages/EL-LKG-V3-P009-beginning-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "EL-LKG-V3-P010",
+      "title": "Ending Sounds",
+      "markdown": "pages/EL-LKG-V3-P010-ending-sounds.md",
+      "json": "pages/EL-LKG-V3-P010-ending-sounds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "EL-LKG-V3-P011",
+      "title": "Rhyming Words",
+      "markdown": "pages/EL-LKG-V3-P011-rhyming-words.md",
+      "json": "pages/EL-LKG-V3-P011-rhyming-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "EL-LKG-V3-P012",
+      "title": "Same Sound",
+      "markdown": "pages/EL-LKG-V3-P012-same-sound.md",
+      "json": "pages/EL-LKG-V3-P012-same-sound.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "EL-LKG-V3-P013",
+      "title": "Odd Sound Out",
+      "markdown": "pages/EL-LKG-V3-P013-odd-sound-out.md",
+      "json": "pages/EL-LKG-V3-P013-odd-sound-out.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "EL-LKG-V3-P014",
+      "title": "CVC Words",
+      "markdown": "pages/EL-LKG-V3-P014-cvc-words.md",
+      "json": "pages/EL-LKG-V3-P014-cvc-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "EL-LKG-V3-P015",
+      "title": "Build the Word",
+      "markdown": "pages/EL-LKG-V3-P015-build-the-word.md",
+      "json": "pages/EL-LKG-V3-P015-build-the-word.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "EL-LKG-V3-P016",
+      "title": "Picture Vocabulary",
+      "markdown": "pages/EL-LKG-V3-P016-picture-vocabulary.md",
+      "json": "pages/EL-LKG-V3-P016-picture-vocabulary.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "EL-LKG-V3-P017",
+      "title": "Action Words",
+      "markdown": "pages/EL-LKG-V3-P017-action-words.md",
+      "json": "pages/EL-LKG-V3-P017-action-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "EL-LKG-V3-P018",
+      "title": "Opposites",
+      "markdown": "pages/EL-LKG-V3-P018-opposites.md",
+      "json": "pages/EL-LKG-V3-P018-opposites.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "EL-LKG-V3-P019",
+      "title": "Describing Words",
+      "markdown": "pages/EL-LKG-V3-P019-describing-words.md",
+      "json": "pages/EL-LKG-V3-P019-describing-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "EL-LKG-V3-P020",
+      "title": "Categories",
+      "markdown": "pages/EL-LKG-V3-P020-categories.md",
+      "json": "pages/EL-LKG-V3-P020-categories.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "EL-LKG-V3-P021",
+      "title": "Read & Match",
+      "markdown": "pages/EL-LKG-V3-P021-read-match.md",
+      "json": "pages/EL-LKG-V3-P021-read-match.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "EL-LKG-V3-P022",
+      "title": "Read & Colour",
+      "markdown": "pages/EL-LKG-V3-P022-read-colour.md",
+      "json": "pages/EL-LKG-V3-P022-read-colour.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "EL-LKG-V3-P023",
+      "title": "Read & Circle",
+      "markdown": "pages/EL-LKG-V3-P023-read-circle.md",
+      "json": "pages/EL-LKG-V3-P023-read-circle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "EL-LKG-V3-P024",
+      "title": "Sentence Builder",
+      "markdown": "pages/EL-LKG-V3-P024-sentence-builder.md",
+      "json": "pages/EL-LKG-V3-P024-sentence-builder.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "EL-LKG-V3-P025",
+      "title": "Complete the Sentence",
+      "markdown": "pages/EL-LKG-V3-P025-complete-the-sentence.md",
+      "json": "pages/EL-LKG-V3-P025-complete-the-sentence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "EL-LKG-V3-P026",
+      "title": "Picture Reading",
+      "markdown": "pages/EL-LKG-V3-P026-picture-reading.md",
+      "json": "pages/EL-LKG-V3-P026-picture-reading.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "EL-LKG-V3-P027",
+      "title": "Listening",
+      "markdown": "pages/EL-LKG-V3-P027-listening.md",
+      "json": "pages/EL-LKG-V3-P027-listening.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "EL-LKG-V3-P028",
+      "title": "Question & Answer",
+      "markdown": "pages/EL-LKG-V3-P028-question-answer.md",
+      "json": "pages/EL-LKG-V3-P028-question-answer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "EL-LKG-V3-P029",
+      "title": "Sight Words",
+      "markdown": "pages/EL-LKG-V3-P029-sight-words.md",
+      "json": "pages/EL-LKG-V3-P029-sight-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "EL-LKG-V3-P030",
+      "title": "Reading Review",
+      "markdown": "pages/EL-LKG-V3-P030-reading-review.md",
+      "json": "pages/EL-LKG-V3-P030-reading-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "EL-LKG-V3-P031",
+      "title": "Story Sequence",
+      "markdown": "pages/EL-LKG-V3-P031-story-sequence.md",
+      "json": "pages/EL-LKG-V3-P031-story-sequence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "EL-LKG-V3-P032",
+      "title": "Story Retelling",
+      "markdown": "pages/EL-LKG-V3-P032-story-retelling.md",
+      "json": "pages/EL-LKG-V3-P032-story-retelling.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "EL-LKG-V3-P033",
+      "title": "Picture Conversation",
+      "markdown": "pages/EL-LKG-V3-P033-picture-conversation.md",
+      "json": "pages/EL-LKG-V3-P033-picture-conversation.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "EL-LKG-V3-P034",
+      "title": "Who What Where",
+      "markdown": "pages/EL-LKG-V3-P034-who-what-where.md",
+      "json": "pages/EL-LKG-V3-P034-who-what-where.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "EL-LKG-V3-P035",
+      "title": "My Favourite Story",
+      "markdown": "pages/EL-LKG-V3-P035-my-favourite-story.md",
+      "json": "pages/EL-LKG-V3-P035-my-favourite-story.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "EL-LKG-V3-P036",
+      "title": "Mini Assessment",
+      "markdown": "pages/EL-LKG-V3-P036-mini-assessment.md",
+      "json": "pages/EL-LKG-V3-P036-mini-assessment.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "EL-LKG-V3-P037",
+      "title": "Mini Assessment 2",
+      "markdown": "pages/EL-LKG-V3-P037-mini-assessment-2.md",
+      "json": "pages/EL-LKG-V3-P037-mini-assessment-2.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "EL-LKG-V3-P038",
+      "title": "Literacy Review",
+      "markdown": "pages/EL-LKG-V3-P038-literacy-review.md",
+      "json": "pages/EL-LKG-V3-P038-literacy-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "EL-LKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/EL-LKG-V3-P039-certificate.md",
+      "json": "pages/EL-LKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "EL-LKG-V3-P040",
+      "title": "I Am A Reader",
+      "markdown": "pages/EL-LKG-V3-P040-i-am-a-reader.md",
+      "json": "pages/EL-LKG-V3-P040-i-am-a-reader.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "EL-LKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/EL-LKG-V3-P041-back-cover.md",
+      "json": "pages/EL-LKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

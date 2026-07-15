@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Creative Design Studio",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Creative_Design_Studio_UKG_Gold_Production_v1.xlsx",
+    "sha256": "679e99cf22dce6174f10d8396705520e642344880318e9e4afee29cafb9365a3"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CD-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/CD-UKG-V3-P001-cover.md",
+      "json": "pages/CD-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CD-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/CD-UKG-V3-P002-copyright.md",
+      "json": "pages/CD-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CD-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CD-UKG-V3-P003-contents.md",
+      "json": "pages/CD-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CD-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/CD-UKG-V3-P004-welcome.md",
+      "json": "pages/CD-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CD-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/CD-UKG-V3-P005-meet-star.md",
+      "json": "pages/CD-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CD-UKG-V3-P006",
+      "title": "Lines & Shapes",
+      "markdown": "pages/CD-UKG-V3-P006-lines-shapes.md",
+      "json": "pages/CD-UKG-V3-P006-lines-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CD-UKG-V3-P007",
+      "title": "Colour Mixing",
+      "markdown": "pages/CD-UKG-V3-P007-colour-mixing.md",
+      "json": "pages/CD-UKG-V3-P007-colour-mixing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CD-UKG-V3-P008",
+      "title": "Patterns in Art",
+      "markdown": "pages/CD-UKG-V3-P008-patterns-in-art.md",
+      "json": "pages/CD-UKG-V3-P008-patterns-in-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CD-UKG-V3-P009",
+      "title": "Draw My Family",
+      "markdown": "pages/CD-UKG-V3-P009-draw-my-family.md",
+      "json": "pages/CD-UKG-V3-P009-draw-my-family.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CD-UKG-V3-P010",
+      "title": "Nature Sketching",
+      "markdown": "pages/CD-UKG-V3-P010-nature-sketching.md",
+      "json": "pages/CD-UKG-V3-P010-nature-sketching.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CD-UKG-V3-P011",
+      "title": "Texture Hunt",
+      "markdown": "pages/CD-UKG-V3-P011-texture-hunt.md",
+      "json": "pages/CD-UKG-V3-P011-texture-hunt.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CD-UKG-V3-P012",
+      "title": "Paper Folding",
+      "markdown": "pages/CD-UKG-V3-P012-paper-folding.md",
+      "json": "pages/CD-UKG-V3-P012-paper-folding.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CD-UKG-V3-P013",
+      "title": "Cut & Paste",
+      "markdown": "pages/CD-UKG-V3-P013-cut-paste.md",
+      "json": "pages/CD-UKG-V3-P013-cut-paste.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CD-UKG-V3-P014",
+      "title": "Creative Collage",
+      "markdown": "pages/CD-UKG-V3-P014-creative-collage.md",
+      "json": "pages/CD-UKG-V3-P014-creative-collage.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CD-UKG-V3-P015",
+      "title": "Clay Creations",
+      "markdown": "pages/CD-UKG-V3-P015-clay-creations.md",
+      "json": "pages/CD-UKG-V3-P015-clay-creations.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CD-UKG-V3-P016",
+      "title": "Design a Toy",
+      "markdown": "pages/CD-UKG-V3-P016-design-a-toy.md",
+      "json": "pages/CD-UKG-V3-P016-design-a-toy.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CD-UKG-V3-P017",
+      "title": "Build a House",
+      "markdown": "pages/CD-UKG-V3-P017-build-a-house.md",
+      "json": "pages/CD-UKG-V3-P017-build-a-house.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CD-UKG-V3-P018",
+      "title": "Bridge Challenge",
+      "markdown": "pages/CD-UKG-V3-P018-bridge-challenge.md",
+      "json": "pages/CD-UKG-V3-P018-bridge-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CD-UKG-V3-P019",
+      "title": "Story Illustration",
+      "markdown": "pages/CD-UKG-V3-P019-story-illustration.md",
+      "json": "pages/CD-UKG-V3-P019-story-illustration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CD-UKG-V3-P020",
+      "title": "Emotion Art",
+      "markdown": "pages/CD-UKG-V3-P020-emotion-art.md",
+      "json": "pages/CD-UKG-V3-P020-emotion-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CD-UKG-V3-P021",
+      "title": "Animal Masks",
+      "markdown": "pages/CD-UKG-V3-P021-animal-masks.md",
+      "json": "pages/CD-UKG-V3-P021-animal-masks.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CD-UKG-V3-P022",
+      "title": "Festival Craft",
+      "markdown": "pages/CD-UKG-V3-P022-festival-craft.md",
+      "json": "pages/CD-UKG-V3-P022-festival-craft.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CD-UKG-V3-P023",
+      "title": "Recycled Art",
+      "markdown": "pages/CD-UKG-V3-P023-recycled-art.md",
+      "json": "pages/CD-UKG-V3-P023-recycled-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CD-UKG-V3-P024",
+      "title": "Design a Garden",
+      "markdown": "pages/CD-UKG-V3-P024-design-a-garden.md",
+      "json": "pages/CD-UKG-V3-P024-design-a-garden.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CD-UKG-V3-P025",
+      "title": "My Dream Room",
+      "markdown": "pages/CD-UKG-V3-P025-my-dream-room.md",
+      "json": "pages/CD-UKG-V3-P025-my-dream-room.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CD-UKG-V3-P026",
+      "title": "Creative Problem Solving",
+      "markdown": "pages/CD-UKG-V3-P026-creative-problem-solving.md",
+      "json": "pages/CD-UKG-V3-P026-creative-problem-solving.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CD-UKG-V3-P027",
+      "title": "Invent Something",
+      "markdown": "pages/CD-UKG-V3-P027-invent-something.md",
+      "json": "pages/CD-UKG-V3-P027-invent-something.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CD-UKG-V3-P028",
+      "title": "Art Gallery",
+      "markdown": "pages/CD-UKG-V3-P028-art-gallery.md",
+      "json": "pages/CD-UKG-V3-P028-art-gallery.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CD-UKG-V3-P029",
+      "title": "Team Creation",
+      "markdown": "pages/CD-UKG-V3-P029-team-creation.md",
+      "json": "pages/CD-UKG-V3-P029-team-creation.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CD-UKG-V3-P030",
+      "title": "Design Challenge",
+      "markdown": "pages/CD-UKG-V3-P030-design-challenge.md",
+      "json": "pages/CD-UKG-V3-P030-design-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CD-UKG-V3-P031",
+      "title": "Creative Review",
+      "markdown": "pages/CD-UKG-V3-P031-creative-review.md",
+      "json": "pages/CD-UKG-V3-P031-creative-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CD-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/CD-UKG-V3-P032-mini-project.md",
+      "json": "pages/CD-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CD-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/CD-UKG-V3-P033-reflection.md",
+      "json": "pages/CD-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CD-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/CD-UKG-V3-P034-showcase.md",
+      "json": "pages/CD-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CD-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/CD-UKG-V3-P035-grand-review.md",
+      "json": "pages/CD-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CD-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/CD-UKG-V3-P036-my-achievement.md",
+      "json": "pages/CD-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CD-UKG-V3-P037",
+      "title": "My Creative Goals",
+      "markdown": "pages/CD-UKG-V3-P037-my-creative-goals.md",
+      "json": "pages/CD-UKG-V3-P037-my-creative-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CD-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/CD-UKG-V3-P038-celebration.md",
+      "json": "pages/CD-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CD-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/CD-UKG-V3-P039-certificate.md",
+      "json": "pages/CD-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CD-UKG-V3-P040",
+      "title": "I Am a Creative Designer",
+      "markdown": "pages/CD-UKG-V3-P040-i-am-a-creative-designer.md",
+      "json": "pages/CD-UKG-V3-P040-i-am-a-creative-designer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CD-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/CD-UKG-V3-P041-back-cover.md",
+      "json": "pages/CD-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

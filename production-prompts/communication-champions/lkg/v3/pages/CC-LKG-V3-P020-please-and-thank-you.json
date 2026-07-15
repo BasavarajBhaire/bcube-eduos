@@ -1,0 +1,54 @@
+{
+  "prompt_id": "CC-LKG-V3-P020",
+  "version": "3.0.0",
+  "page_data": {
+    "page_id": "CC-LKG-V3-P020",
+    "book_id": "COMMUNICATION_CHAMPIONS_LKG",
+    "unit_id": "MODULE_3_CONVERSATION_SKILLS",
+    "page_number": 20,
+    "page_type": "activity_page",
+    "title": "Please and Thank You",
+    "age_level": "LKG (4+)",
+    "learning_objective": "Use polite words appropriately.",
+    "competencies": [
+      "future skills"
+    ],
+    "activity": {
+      "instruction": "Practise one short role-play for “Please and Thank You”. Choose the correct response from picture cards.",
+      "evidence": "One exact 3–8 word response."
+    },
+    "teacher_prompt": {
+      "facilitation": "Model both roles and swap turns.",
+      "questions": [
+        "What can you show or tell about please and thank you?"
+      ]
+    },
+    "parent_prompt": {
+      "conversation": "Repeat learning at home using everyday situations.",
+      "home_activity": "Repeat learning at home using everyday situations."
+    },
+    "illustration": {
+      "scene": "Choose and role-play",
+      "focal_point": "One dominant focus for “Please and Thank You”.",
+      "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+      "negative_constraints": [
+        "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+        "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+        "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+        "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+        "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+        "No more than three balloons."
+      ]
+    },
+    "character_refs": [
+      "STAR-MASCOT-V3"
+    ],
+    "overrides": []
+  },
+  "compiled_prompt": "# BCube Production Prompt v3 — CC-LKG-V3-P020\n\n## 1. Release metadata\n\n- Prompt ID: CC-LKG-V3-P020\n- Version: 3.0.0\n- Book: Communication Champions\n- Level: LKG (4+)\n- Module: Module 3 – Conversation Skills\n- Page: 20 of 41\n- Exact title: Please and Thank You\n- Source: Communication_Champions_LKG_Gold_Production_v2_Final.xlsx\n- Source SHA-256: f9b5c4bbf026f68f6f46a9975b0407ca33b3e2351d2ecb92dcaa85518d7c97a3\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Please and Thank You”. Follow this deterministic package only. Produce no explanation, alternate, mockup, or additional page.\n\n## 3. Engine order and precedence\n\n1. Publishing Engine\n2. Design Engine\n3. Visual Grammar Engine\n4. Educational Engine\n5. Teaching Engine\n6. Parent Partnership Engine\n7. Illustration Engine\n8. Character Engine\n9. Quality Assurance and Prompt Compiler\n\nPrecedence: approved page instruction > approved book/level rule > global rule. Do not resolve conflicts by guessing.\n\n## 4. Publishing Engine\n\n- A4 portrait, 210 × 297 mm; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin; 300 DPI; CMYK-safe; print-ready.\n- Use a 20–28 mm header with the exact title “Please and Thank You” centred and the official BCube logo reserved at top left.\n- Use a 10–14 mm footer with page number 20 only at bottom right.\n- Never generate or redraw the logo; apply the official vector asset during final layout.\n\n## 5. Design and Visual Grammar Engines\n\n- Page type: activity_page. Layout anchor: Choose and role-play.\n- Visual/text balance: 60–70% visual and 30–40% text/activity. Use one dominant focal point and a clear title → model → action → response eye path.\n- Blank-space rule: Use two speech cards and one choice row. Maximum two core activities and one optional extension.\n- Clean white base, soft BCube pastel accents, thick rounded outlines, large targets, strong contrast, generous spacing, and no visual clutter.\n\n## 6. Educational Engine\n\n- Objective: Use polite words appropriately.\n- Primary activity: Practise one short role-play for “Please and Thank You”.\n- Secondary activity: Choose the correct response from picture cards.\n- Observable evidence: One exact 3–8 word response.\n- Developmental response modes: oral response, guided tracing, short-word copying, sequencing, drawing, matching, or one supported sentence frame.\n\n## 7. Teaching Engine\n\n- Facilitation: Model both roles and swap turns.\n- Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.\n- Assessment evidence: Child completes the task independently and communicates understanding.\n\n## 8. Parent Partnership Engine\n\n- Home connection: Repeat learning at home using everyday situations.\n- Use common household materials only; do not create a new scored task or require a device, purchase, or printing.\n\n## 9. Illustration and Character Engines\n\n- Composition: Follow the individual blueprint exactly.\n- Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.\n- Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.\n\n## 10. Approved source instruction\n\nTECHNICAL AND PUBLISHING SPECIFICATION: Create an A4 portrait educational workbook page, 210 × 297 mm, 300 DPI, print-ready, with a clean white background, pastel accents, thick rounded black outlines, generous safe margins, and a premium preschool publishing finish. Use the official BCube logo at top left, exact page title centred at the top, and page number at bottom right. Do not show the LKG (4+) badge on interior pages. LKG DEVELOPMENT RULES: Designed for children aged approximately 4–5. Use familiar vocabulary, short model sentences, picture-supported instructions, guided tracing or copying, and one clear communication focus. Use a maximum of two core activities and one optional extension. TEACHING CLARITY RULES: Every page must show the exact child action, a short teacher or parent prompt, the expected child response, and purposeful response space. Do not use decorative blank balloons or unexplained boxes. Every visible frame, line, card, and balloon must have a learning purpose. PAGE-SPECIFIC ART DIRECTION: Exact title “Please and Thank You”, page number 20. Show asking for a crayon, receiving help, and giving an item. Use phrases “Please may I have ______?” and “Thank you.” INDIVIDUAL PAGE EXECUTION BLUEPRINT: Primary activity: Practise one short role-play for “Please and Thank You”. Secondary task: Choose the correct response from picture cards. Teacher prompt: Model both roles and swap turns. Expected child response: One exact 3–8 word response. Blank-space allocation: Use two speech cards and one choice row. Activity load: 2 activities. Do not add: No more than three balloons. OFFICIAL STAR MASCOT: Use one consistent bright yellow five-point Star with softly rounded points, large expressive eyes, rosy cheeks, friendly smile, blue shoes, and a small blue cape. Keep Star outside all response areas. QUALITY RULES: No watermark, unrelated logo, photorealism, gibberish text, distorted anatomy, extra fingers, crowded layouts, long passages, unsafe scenes, or blocked activity spaces. Use British English consistently.\n\n## 11. Negative constraints\n\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No more than three balloons.\n\n## 12. Gold QA gate and compiler footer\n\nVerify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.\n\nCC-LKG-V3-P020 | v3.0.0 | page 20/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Gold Certified"
+  }
+}

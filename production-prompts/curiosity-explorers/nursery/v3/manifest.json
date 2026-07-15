@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Curiosity Explorers",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Curiosity_Explorers_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "e6c27b11d84e56ae3c3c813e1489a4bf71ab87947e290effd8ef883500d6f368"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CE-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/CE-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/CE-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CE-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/CE-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/CE-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CE-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CE-NURSERY-V3-P003-contents.md",
+      "json": "pages/CE-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CE-NURSERY-V3-P004",
+      "title": "Welcome to Curiosity Explorers",
+      "markdown": "pages/CE-NURSERY-V3-P004-welcome-to-curiosity-explorers.md",
+      "json": "pages/CE-NURSERY-V3-P004-welcome-to-curiosity-explorers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CE-NURSERY-V3-P005",
+      "title": "Meet Curious Star",
+      "markdown": "pages/CE-NURSERY-V3-P005-meet-curious-star.md",
+      "json": "pages/CE-NURSERY-V3-P005-meet-curious-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CE-NURSERY-V3-P006",
+      "title": "What Is Curiosity?",
+      "markdown": "pages/CE-NURSERY-V3-P006-what-is-curiosity.md",
+      "json": "pages/CE-NURSERY-V3-P006-what-is-curiosity.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CE-NURSERY-V3-P007",
+      "title": "Look Closely",
+      "markdown": "pages/CE-NURSERY-V3-P007-look-closely.md",
+      "json": "pages/CE-NURSERY-V3-P007-look-closely.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CE-NURSERY-V3-P008",
+      "title": "What Do You See?",
+      "markdown": "pages/CE-NURSERY-V3-P008-what-do-you-see.md",
+      "json": "pages/CE-NURSERY-V3-P008-what-do-you-see.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CE-NURSERY-V3-P009",
+      "title": "Same and Different",
+      "markdown": "pages/CE-NURSERY-V3-P009-same-and-different.md",
+      "json": "pages/CE-NURSERY-V3-P009-same-and-different.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CE-NURSERY-V3-P010",
+      "title": "Big and Small",
+      "markdown": "pages/CE-NURSERY-V3-P010-big-and-small.md",
+      "json": "pages/CE-NURSERY-V3-P010-big-and-small.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CE-NURSERY-V3-P011",
+      "title": "Long and Short",
+      "markdown": "pages/CE-NURSERY-V3-P011-long-and-short.md",
+      "json": "pages/CE-NURSERY-V3-P011-long-and-short.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CE-NURSERY-V3-P012",
+      "title": "More and Less",
+      "markdown": "pages/CE-NURSERY-V3-P012-more-and-less.md",
+      "json": "pages/CE-NURSERY-V3-P012-more-and-less.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CE-NURSERY-V3-P013",
+      "title": "Colours Around Us",
+      "markdown": "pages/CE-NURSERY-V3-P013-colours-around-us.md",
+      "json": "pages/CE-NURSERY-V3-P013-colours-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CE-NURSERY-V3-P014",
+      "title": "Shapes Around Us",
+      "markdown": "pages/CE-NURSERY-V3-P014-shapes-around-us.md",
+      "json": "pages/CE-NURSERY-V3-P014-shapes-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CE-NURSERY-V3-P015",
+      "title": "Match the Shadows",
+      "markdown": "pages/CE-NURSERY-V3-P015-match-the-shadows.md",
+      "json": "pages/CE-NURSERY-V3-P015-match-the-shadows.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CE-NURSERY-V3-P016",
+      "title": "Odd One Out",
+      "markdown": "pages/CE-NURSERY-V3-P016-odd-one-out.md",
+      "json": "pages/CE-NURSERY-V3-P016-odd-one-out.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CE-NURSERY-V3-P017",
+      "title": "Where Does It Belong?",
+      "markdown": "pages/CE-NURSERY-V3-P017-where-does-it-belong.md",
+      "json": "pages/CE-NURSERY-V3-P017-where-does-it-belong.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CE-NURSERY-V3-P018",
+      "title": "Sort by Colour",
+      "markdown": "pages/CE-NURSERY-V3-P018-sort-by-colour.md",
+      "json": "pages/CE-NURSERY-V3-P018-sort-by-colour.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CE-NURSERY-V3-P019",
+      "title": "Sort by Shape",
+      "markdown": "pages/CE-NURSERY-V3-P019-sort-by-shape.md",
+      "json": "pages/CE-NURSERY-V3-P019-sort-by-shape.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CE-NURSERY-V3-P020",
+      "title": "Find the Pattern",
+      "markdown": "pages/CE-NURSERY-V3-P020-find-the-pattern.md",
+      "json": "pages/CE-NURSERY-V3-P020-find-the-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CE-NURSERY-V3-P021",
+      "title": "What Comes Next?",
+      "markdown": "pages/CE-NURSERY-V3-P021-what-comes-next.md",
+      "json": "pages/CE-NURSERY-V3-P021-what-comes-next.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CE-NURSERY-V3-P022",
+      "title": "Inside and Outside",
+      "markdown": "pages/CE-NURSERY-V3-P022-inside-and-outside.md",
+      "json": "pages/CE-NURSERY-V3-P022-inside-and-outside.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CE-NURSERY-V3-P023",
+      "title": "Above and Below",
+      "markdown": "pages/CE-NURSERY-V3-P023-above-and-below.md",
+      "json": "pages/CE-NURSERY-V3-P023-above-and-below.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CE-NURSERY-V3-P024",
+      "title": "Near and Far",
+      "markdown": "pages/CE-NURSERY-V3-P024-near-and-far.md",
+      "json": "pages/CE-NURSERY-V3-P024-near-and-far.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CE-NURSERY-V3-P025",
+      "title": "Sink or Float?",
+      "markdown": "pages/CE-NURSERY-V3-P025-sink-or-float.md",
+      "json": "pages/CE-NURSERY-V3-P025-sink-or-float.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CE-NURSERY-V3-P026",
+      "title": "Heavy and Light",
+      "markdown": "pages/CE-NURSERY-V3-P026-heavy-and-light.md",
+      "json": "pages/CE-NURSERY-V3-P026-heavy-and-light.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CE-NURSERY-V3-P027",
+      "title": "Rough and Smooth",
+      "markdown": "pages/CE-NURSERY-V3-P027-rough-and-smooth.md",
+      "json": "pages/CE-NURSERY-V3-P027-rough-and-smooth.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CE-NURSERY-V3-P028",
+      "title": "Hot and Cold",
+      "markdown": "pages/CE-NURSERY-V3-P028-hot-and-cold.md",
+      "json": "pages/CE-NURSERY-V3-P028-hot-and-cold.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CE-NURSERY-V3-P029",
+      "title": "Loud and Quiet",
+      "markdown": "pages/CE-NURSERY-V3-P029-loud-and-quiet.md",
+      "json": "pages/CE-NURSERY-V3-P029-loud-and-quiet.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CE-NURSERY-V3-P030",
+      "title": "Light and Dark",
+      "markdown": "pages/CE-NURSERY-V3-P030-light-and-dark.md",
+      "json": "pages/CE-NURSERY-V3-P030-light-and-dark.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CE-NURSERY-V3-P031",
+      "title": "Day and Night",
+      "markdown": "pages/CE-NURSERY-V3-P031-day-and-night.md",
+      "json": "pages/CE-NURSERY-V3-P031-day-and-night.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CE-NURSERY-V3-P032",
+      "title": "Weather Watch",
+      "markdown": "pages/CE-NURSERY-V3-P032-weather-watch.md",
+      "json": "pages/CE-NURSERY-V3-P032-weather-watch.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CE-NURSERY-V3-P033",
+      "title": "Wheels and Ramps",
+      "markdown": "pages/CE-NURSERY-V3-P033-wheels-and-ramps.md",
+      "json": "pages/CE-NURSERY-V3-P033-wheels-and-ramps.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CE-NURSERY-V3-P034",
+      "title": "Magnet Hunt",
+      "markdown": "pages/CE-NURSERY-V3-P034-magnet-hunt.md",
+      "json": "pages/CE-NURSERY-V3-P034-magnet-hunt.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CE-NURSERY-V3-P035",
+      "title": "Living and Non-Living",
+      "markdown": "pages/CE-NURSERY-V3-P035-living-and-non-living.md",
+      "json": "pages/CE-NURSERY-V3-P035-living-and-non-living.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CE-NURSERY-V3-P036",
+      "title": "Plants Grow",
+      "markdown": "pages/CE-NURSERY-V3-P036-plants-grow.md",
+      "json": "pages/CE-NURSERY-V3-P036-plants-grow.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CE-NURSERY-V3-P037",
+      "title": "Animal Homes",
+      "markdown": "pages/CE-NURSERY-V3-P037-animal-homes.md",
+      "json": "pages/CE-NURSERY-V3-P037-animal-homes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CE-NURSERY-V3-P038",
+      "title": "Ask a Question",
+      "markdown": "pages/CE-NURSERY-V3-P038-ask-a-question.md",
+      "json": "pages/CE-NURSERY-V3-P038-ask-a-question.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CE-NURSERY-V3-P039",
+      "title": "My Curiosity Journal",
+      "markdown": "pages/CE-NURSERY-V3-P039-my-curiosity-journal.md",
+      "json": "pages/CE-NURSERY-V3-P039-my-curiosity-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CE-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/CE-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/CE-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CE-NURSERY-V3-P041",
+      "title": "I Am a Curiosity Explorer!",
+      "markdown": "pages/CE-NURSERY-V3-P041-i-am-a-curiosity-explorer.md",
+      "json": "pages/CE-NURSERY-V3-P041-i-am-a-curiosity-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

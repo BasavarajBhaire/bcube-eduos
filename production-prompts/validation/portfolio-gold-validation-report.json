@@ -1,0 +1,41 @@
+{
+  "standard": "BCube Production Prompts v3 Portfolio",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "levels": 3,
+  "books": 30,
+  "pages": 1230,
+  "prompt_packages": 1230,
+  "automated_checks_passed": 17220,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "level_releases": [
+    "nursery",
+    "lkg",
+    "ukg"
+  ],
+  "checks_per_page": 14,
+  "failed_checks": 0,
+  "release_gate": "PASS",
+  "level_summary": [
+    {
+      "level": "Nursery",
+      "books": 10,
+      "pages": 410,
+      "checks_passed": 5740
+    },
+    {
+      "level": "LKG",
+      "books": 10,
+      "pages": 410,
+      "checks_passed": 5740
+    },
+    {
+      "level": "UKG",
+      "books": 10,
+      "pages": 410,
+      "checks_passed": 5740
+    }
+  ],
+  "note": "LKG Confidence & Social Skills was reconstructed from the approved canonical curriculum plan because no matching final source workbook existed; it passed the same compiler and validation gates."
+}

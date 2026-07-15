@@ -1,0 +1,72 @@
+{
+  "level": "UKG",
+  "version": "3.0.0",
+  "books": 10,
+  "pages": 410,
+  "prompts": 410,
+  "checks_passed": 5740,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "releases": [
+    {
+      "book": "Communication Masters",
+      "path": "../communication-masters/ukg/v3",
+      "source": "Communication_Masters_UKG_Gold_Production_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Reading & Literacy Adventures",
+      "path": "../reading-literacy-adventures/ukg/v3",
+      "source": "Reading_Literacy_Adventures_UKG_Gold_Production_v3.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Maths Explorers",
+      "path": "../maths-explorers/ukg/v3",
+      "source": "Maths_Explorers_UKG_Gold_Production_v4.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Logic & Brain Builders",
+      "path": "../logic-brain-builders/ukg/v3",
+      "source": "Logic_Brain_Builders_UKG_Gold_Production_v4.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Young Scientists",
+      "path": "../young-scientists/ukg/v3",
+      "source": "Young_Scientists_UKG_Gold_Production_v4.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Creative Design Studio",
+      "path": "../creative-design-studio/ukg/v3",
+      "source": "Creative_Design_Studio_UKG_Gold_Production_v1.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "My Amazing World",
+      "path": "../my-amazing-world/ukg/v3",
+      "source": "My_Amazing_World_UKG_Gold_Production_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Digital Explorers",
+      "path": "../digital-explorers/ukg/v3",
+      "source": "Digital_Explorers_UKG_Gold_Production_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Healthy Me & Wellbeing",
+      "path": "../healthy-me-wellbeing/ukg/v3",
+      "source": "Healthy_Me_Wellbeing_UKG_Gold_Production_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Financial Literacy & Life Skills",
+      "path": "../financial-literacy-life-skills/ukg/v3",
+      "source": "Financial_Literacy_Life_Skills_UKG_Gold_Production_v4.xlsx",
+      "status": "Gold Certified"
+    }
+  ]
+}

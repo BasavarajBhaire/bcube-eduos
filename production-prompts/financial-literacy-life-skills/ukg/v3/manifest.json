@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Financial Literacy & Life Skills",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Financial_Literacy_Life_Skills_UKG_Gold_Production_v4.xlsx",
+    "sha256": "b3abdc121a2336e3aa39be91d3ad42a091076799718e508cd26726d02a91fed2"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "FL-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/FL-UKG-V3-P001-cover.md",
+      "json": "pages/FL-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "FL-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/FL-UKG-V3-P002-copyright.md",
+      "json": "pages/FL-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "FL-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/FL-UKG-V3-P003-contents.md",
+      "json": "pages/FL-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "FL-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/FL-UKG-V3-P004-welcome.md",
+      "json": "pages/FL-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "FL-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/FL-UKG-V3-P005-meet-star.md",
+      "json": "pages/FL-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "FL-UKG-V3-P006",
+      "title": "What Is Money?",
+      "markdown": "pages/FL-UKG-V3-P006-what-is-money.md",
+      "json": "pages/FL-UKG-V3-P006-what-is-money.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "FL-UKG-V3-P007",
+      "title": "Coins & Notes",
+      "markdown": "pages/FL-UKG-V3-P007-coins-notes.md",
+      "json": "pages/FL-UKG-V3-P007-coins-notes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "FL-UKG-V3-P008",
+      "title": "Needs vs Wants",
+      "markdown": "pages/FL-UKG-V3-P008-needs-vs-wants.md",
+      "json": "pages/FL-UKG-V3-P008-needs-vs-wants.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "FL-UKG-V3-P009",
+      "title": "Saving Money",
+      "markdown": "pages/FL-UKG-V3-P009-saving-money.md",
+      "json": "pages/FL-UKG-V3-P009-saving-money.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "FL-UKG-V3-P010",
+      "title": "Sharing & Giving",
+      "markdown": "pages/FL-UKG-V3-P010-sharing-giving.md",
+      "json": "pages/FL-UKG-V3-P010-sharing-giving.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "FL-UKG-V3-P011",
+      "title": "Shopping Time",
+      "markdown": "pages/FL-UKG-V3-P011-shopping-time.md",
+      "json": "pages/FL-UKG-V3-P011-shopping-time.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "FL-UKG-V3-P012",
+      "title": "Making Choices",
+      "markdown": "pages/FL-UKG-V3-P012-making-choices.md",
+      "json": "pages/FL-UKG-V3-P012-making-choices.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "FL-UKG-V3-P013",
+      "title": "Simple Budget",
+      "markdown": "pages/FL-UKG-V3-P013-simple-budget.md",
+      "json": "pages/FL-UKG-V3-P013-simple-budget.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "FL-UKG-V3-P014",
+      "title": "Value of Things",
+      "markdown": "pages/FL-UKG-V3-P014-value-of-things.md",
+      "json": "pages/FL-UKG-V3-P014-value-of-things.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "FL-UKG-V3-P015",
+      "title": "Earn Through Helping",
+      "markdown": "pages/FL-UKG-V3-P015-earn-through-helping.md",
+      "json": "pages/FL-UKG-V3-P015-earn-through-helping.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "FL-UKG-V3-P016",
+      "title": "Time Is Valuable",
+      "markdown": "pages/FL-UKG-V3-P016-time-is-valuable.md",
+      "json": "pages/FL-UKG-V3-P016-time-is-valuable.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "FL-UKG-V3-P017",
+      "title": "Daily Routine",
+      "markdown": "pages/FL-UKG-V3-P017-daily-routine.md",
+      "json": "pages/FL-UKG-V3-P017-daily-routine.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "FL-UKG-V3-P018",
+      "title": "Responsibility",
+      "markdown": "pages/FL-UKG-V3-P018-responsibility.md",
+      "json": "pages/FL-UKG-V3-P018-responsibility.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "FL-UKG-V3-P019",
+      "title": "Home Helpers",
+      "markdown": "pages/FL-UKG-V3-P019-home-helpers.md",
+      "json": "pages/FL-UKG-V3-P019-home-helpers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "FL-UKG-V3-P020",
+      "title": "Taking Turns",
+      "markdown": "pages/FL-UKG-V3-P020-taking-turns.md",
+      "json": "pages/FL-UKG-V3-P020-taking-turns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "FL-UKG-V3-P021",
+      "title": "Teamwork",
+      "markdown": "pages/FL-UKG-V3-P021-teamwork.md",
+      "json": "pages/FL-UKG-V3-P021-teamwork.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "FL-UKG-V3-P022",
+      "title": "Problem Solving",
+      "markdown": "pages/FL-UKG-V3-P022-problem-solving.md",
+      "json": "pages/FL-UKG-V3-P022-problem-solving.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "FL-UKG-V3-P023",
+      "title": "Decision Making",
+      "markdown": "pages/FL-UKG-V3-P023-decision-making.md",
+      "json": "pages/FL-UKG-V3-P023-decision-making.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "FL-UKG-V3-P024",
+      "title": "Goal Setting",
+      "markdown": "pages/FL-UKG-V3-P024-goal-setting.md",
+      "json": "pages/FL-UKG-V3-P024-goal-setting.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "FL-UKG-V3-P025",
+      "title": "Planning Ahead",
+      "markdown": "pages/FL-UKG-V3-P025-planning-ahead.md",
+      "json": "pages/FL-UKG-V3-P025-planning-ahead.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "FL-UKG-V3-P026",
+      "title": "Mini Business",
+      "markdown": "pages/FL-UKG-V3-P026-mini-business.md",
+      "json": "pages/FL-UKG-V3-P026-mini-business.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "FL-UKG-V3-P027",
+      "title": "Customer & Shop",
+      "markdown": "pages/FL-UKG-V3-P027-customer-shop.md",
+      "json": "pages/FL-UKG-V3-P027-customer-shop.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "FL-UKG-V3-P028",
+      "title": "Community Jobs",
+      "markdown": "pages/FL-UKG-V3-P028-community-jobs.md",
+      "json": "pages/FL-UKG-V3-P028-community-jobs.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "FL-UKG-V3-P029",
+      "title": "Life Skills Challenge",
+      "markdown": "pages/FL-UKG-V3-P029-life-skills-challenge.md",
+      "json": "pages/FL-UKG-V3-P029-life-skills-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "FL-UKG-V3-P030",
+      "title": "Future Me",
+      "markdown": "pages/FL-UKG-V3-P030-future-me.md",
+      "json": "pages/FL-UKG-V3-P030-future-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "FL-UKG-V3-P031",
+      "title": "Life Skills Review",
+      "markdown": "pages/FL-UKG-V3-P031-life-skills-review.md",
+      "json": "pages/FL-UKG-V3-P031-life-skills-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "FL-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/FL-UKG-V3-P032-mini-project.md",
+      "json": "pages/FL-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "FL-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/FL-UKG-V3-P033-reflection.md",
+      "json": "pages/FL-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "FL-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/FL-UKG-V3-P034-showcase.md",
+      "json": "pages/FL-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "FL-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/FL-UKG-V3-P035-grand-review.md",
+      "json": "pages/FL-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "FL-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/FL-UKG-V3-P036-my-achievement.md",
+      "json": "pages/FL-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "FL-UKG-V3-P037",
+      "title": "My Life Skills Goals",
+      "markdown": "pages/FL-UKG-V3-P037-my-life-skills-goals.md",
+      "json": "pages/FL-UKG-V3-P037-my-life-skills-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "FL-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/FL-UKG-V3-P038-celebration.md",
+      "json": "pages/FL-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "FL-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/FL-UKG-V3-P039-certificate.md",
+      "json": "pages/FL-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "FL-UKG-V3-P040",
+      "title": "I Am Ready for Grade 1",
+      "markdown": "pages/FL-UKG-V3-P040-i-am-ready-for-grade-1.md",
+      "json": "pages/FL-UKG-V3-P040-i-am-ready-for-grade-1.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "FL-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/FL-UKG-V3-P041-back-cover.md",
+      "json": "pages/FL-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

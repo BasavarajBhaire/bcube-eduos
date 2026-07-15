@@ -1,0 +1,72 @@
+{
+  "level": "LKG",
+  "version": "3.0.0",
+  "books": 10,
+  "pages": 410,
+  "prompts": 410,
+  "checks_passed": 5740,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "releases": [
+    {
+      "book": "Communication Champions",
+      "path": "../communication-champions/lkg/v3",
+      "source": "Communication_Champions_LKG_Gold_Production_v2_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Early Literacy Adventures",
+      "path": "../early-literacy-adventures/lkg/v3",
+      "source": "Early_Literacy_Adventures_LKG_Gold_Production_v2_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Early Maths Adventures",
+      "path": "../early-maths-adventures/lkg/v3",
+      "source": "Early_Maths_Adventures_LKG_Gold_Complete_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Logical Thinking Adventures",
+      "path": "../logical-thinking-adventures/lkg/v3",
+      "source": "Logical_Thinking_Adventures_LKG_Gold_Complete_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "STEM Explorers",
+      "path": "../stem-explorers/lkg/v3",
+      "source": "STEM_Explorers_LKG_Gold_Complete_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Creativity Challenges",
+      "path": "../creativity-challenges/lkg/v3",
+      "source": "Creativity_Challenges_LKG_Gold_Complete_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "My World & General Awareness",
+      "path": "../my-world-general-awareness/lkg/v3",
+      "source": "My_World_General_Awareness_LKG_Gold_Complete_v4.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Healthy Habits & Safety",
+      "path": "../healthy-habits-safety/lkg/v3",
+      "source": "Healthy_Habits_Safety_LKG_Gold_Complete_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Art & Colour Fun",
+      "path": "../art-colour-fun/lkg/v3",
+      "source": "Art_Colour_Fun_LKG_Gold_Complete_Final.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Confidence & Social Skills",
+      "path": "../confidence-social-skills/lkg/v3",
+      "source": "BCube_LKG_10_Book_Master_Curriculum_Plan.xlsx — curriculum-derived reconstruction",
+      "status": "Gold Certified"
+    }
+  ]
+}

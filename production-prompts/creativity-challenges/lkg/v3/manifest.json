@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Creativity Challenges",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Creativity_Challenges_LKG_Gold_Complete_Final.xlsx",
+    "sha256": "434e6cbcfc9f00893125272237d78b40743b64770ca9c7f427eff390ce5abf04"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CR-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/CR-LKG-V3-P001-cover.md",
+      "json": "pages/CR-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CR-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/CR-LKG-V3-P002-copyright.md",
+      "json": "pages/CR-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CR-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CR-LKG-V3-P003-contents.md",
+      "json": "pages/CR-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CR-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/CR-LKG-V3-P004-welcome.md",
+      "json": "pages/CR-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CR-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/CR-LKG-V3-P005-meet-star.md",
+      "json": "pages/CR-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CR-LKG-V3-P006",
+      "title": "Creative Lines",
+      "markdown": "pages/CR-LKG-V3-P006-creative-lines.md",
+      "json": "pages/CR-LKG-V3-P006-creative-lines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CR-LKG-V3-P007",
+      "title": "Creative Shapes",
+      "markdown": "pages/CR-LKG-V3-P007-creative-shapes.md",
+      "json": "pages/CR-LKG-V3-P007-creative-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CR-LKG-V3-P008",
+      "title": "Finish the Picture",
+      "markdown": "pages/CR-LKG-V3-P008-finish-the-picture.md",
+      "json": "pages/CR-LKG-V3-P008-finish-the-picture.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CR-LKG-V3-P009",
+      "title": "Colour Creatively",
+      "markdown": "pages/CR-LKG-V3-P009-colour-creatively.md",
+      "json": "pages/CR-LKG-V3-P009-colour-creatively.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CR-LKG-V3-P010",
+      "title": "Pattern Art",
+      "markdown": "pages/CR-LKG-V3-P010-pattern-art.md",
+      "json": "pages/CR-LKG-V3-P010-pattern-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CR-LKG-V3-P011",
+      "title": "My Funny Face",
+      "markdown": "pages/CR-LKG-V3-P011-my-funny-face.md",
+      "json": "pages/CR-LKG-V3-P011-my-funny-face.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CR-LKG-V3-P012",
+      "title": "Animal Creations",
+      "markdown": "pages/CR-LKG-V3-P012-animal-creations.md",
+      "json": "pages/CR-LKG-V3-P012-animal-creations.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CR-LKG-V3-P013",
+      "title": "Magic Garden",
+      "markdown": "pages/CR-LKG-V3-P013-magic-garden.md",
+      "json": "pages/CR-LKG-V3-P013-magic-garden.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CR-LKG-V3-P014",
+      "title": "Fantasy Friends",
+      "markdown": "pages/CR-LKG-V3-P014-fantasy-friends.md",
+      "json": "pages/CR-LKG-V3-P014-fantasy-friends.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CR-LKG-V3-P015",
+      "title": "Picture Story",
+      "markdown": "pages/CR-LKG-V3-P015-picture-story.md",
+      "json": "pages/CR-LKG-V3-P015-picture-story.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CR-LKG-V3-P016",
+      "title": "Creative Collage",
+      "markdown": "pages/CR-LKG-V3-P016-creative-collage.md",
+      "json": "pages/CR-LKG-V3-P016-creative-collage.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CR-LKG-V3-P017",
+      "title": "Design a Toy",
+      "markdown": "pages/CR-LKG-V3-P017-design-a-toy.md",
+      "json": "pages/CR-LKG-V3-P017-design-a-toy.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CR-LKG-V3-P018",
+      "title": "Build with Shapes",
+      "markdown": "pages/CR-LKG-V3-P018-build-with-shapes.md",
+      "json": "pages/CR-LKG-V3-P018-build-with-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CR-LKG-V3-P019",
+      "title": "Imagine a Vehicle",
+      "markdown": "pages/CR-LKG-V3-P019-imagine-a-vehicle.md",
+      "json": "pages/CR-LKG-V3-P019-imagine-a-vehicle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CR-LKG-V3-P020",
+      "title": "My Dream House",
+      "markdown": "pages/CR-LKG-V3-P020-my-dream-house.md",
+      "json": "pages/CR-LKG-V3-P020-my-dream-house.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CR-LKG-V3-P021",
+      "title": "Nature Art",
+      "markdown": "pages/CR-LKG-V3-P021-nature-art.md",
+      "json": "pages/CR-LKG-V3-P021-nature-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CR-LKG-V3-P022",
+      "title": "Texture Fun",
+      "markdown": "pages/CR-LKG-V3-P022-texture-fun.md",
+      "json": "pages/CR-LKG-V3-P022-texture-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CR-LKG-V3-P023",
+      "title": "Finger Painting",
+      "markdown": "pages/CR-LKG-V3-P023-finger-painting.md",
+      "json": "pages/CR-LKG-V3-P023-finger-painting.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CR-LKG-V3-P024",
+      "title": "Paper Folding",
+      "markdown": "pages/CR-LKG-V3-P024-paper-folding.md",
+      "json": "pages/CR-LKG-V3-P024-paper-folding.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CR-LKG-V3-P025",
+      "title": "Simple Craft",
+      "markdown": "pages/CR-LKG-V3-P025-simple-craft.md",
+      "json": "pages/CR-LKG-V3-P025-simple-craft.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CR-LKG-V3-P026",
+      "title": "Creative Problem",
+      "markdown": "pages/CR-LKG-V3-P026-creative-problem.md",
+      "json": "pages/CR-LKG-V3-P026-creative-problem.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CR-LKG-V3-P027",
+      "title": "Invent Something",
+      "markdown": "pages/CR-LKG-V3-P027-invent-something.md",
+      "json": "pages/CR-LKG-V3-P027-invent-something.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CR-LKG-V3-P028",
+      "title": "Design Thinking",
+      "markdown": "pages/CR-LKG-V3-P028-design-thinking.md",
+      "json": "pages/CR-LKG-V3-P028-design-thinking.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CR-LKG-V3-P029",
+      "title": "Emoji Stories",
+      "markdown": "pages/CR-LKG-V3-P029-emoji-stories.md",
+      "json": "pages/CR-LKG-V3-P029-emoji-stories.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CR-LKG-V3-P030",
+      "title": "Music & Movement",
+      "markdown": "pages/CR-LKG-V3-P030-music-movement.md",
+      "json": "pages/CR-LKG-V3-P030-music-movement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CR-LKG-V3-P031",
+      "title": "Story Starters",
+      "markdown": "pages/CR-LKG-V3-P031-story-starters.md",
+      "json": "pages/CR-LKG-V3-P031-story-starters.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CR-LKG-V3-P032",
+      "title": "Picture Conversation",
+      "markdown": "pages/CR-LKG-V3-P032-picture-conversation.md",
+      "json": "pages/CR-LKG-V3-P032-picture-conversation.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CR-LKG-V3-P033",
+      "title": "My Big Idea",
+      "markdown": "pages/CR-LKG-V3-P033-my-big-idea.md",
+      "json": "pages/CR-LKG-V3-P033-my-big-idea.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CR-LKG-V3-P034",
+      "title": "Creative Challenge",
+      "markdown": "pages/CR-LKG-V3-P034-creative-challenge.md",
+      "json": "pages/CR-LKG-V3-P034-creative-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CR-LKG-V3-P035",
+      "title": "Art Review",
+      "markdown": "pages/CR-LKG-V3-P035-art-review.md",
+      "json": "pages/CR-LKG-V3-P035-art-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CR-LKG-V3-P036",
+      "title": "My Gallery",
+      "markdown": "pages/CR-LKG-V3-P036-my-gallery.md",
+      "json": "pages/CR-LKG-V3-P036-my-gallery.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CR-LKG-V3-P037",
+      "title": "Creativity Journal",
+      "markdown": "pages/CR-LKG-V3-P037-creativity-journal.md",
+      "json": "pages/CR-LKG-V3-P037-creativity-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CR-LKG-V3-P038",
+      "title": "Showcase",
+      "markdown": "pages/CR-LKG-V3-P038-showcase.md",
+      "json": "pages/CR-LKG-V3-P038-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CR-LKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/CR-LKG-V3-P039-certificate.md",
+      "json": "pages/CR-LKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CR-LKG-V3-P040",
+      "title": "I Am Creative",
+      "markdown": "pages/CR-LKG-V3-P040-i-am-creative.md",
+      "json": "pages/CR-LKG-V3-P040-i-am-creative.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CR-LKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/CR-LKG-V3-P041-back-cover.md",
+      "json": "pages/CR-LKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

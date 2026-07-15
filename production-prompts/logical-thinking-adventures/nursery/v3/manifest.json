@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Logical Thinking Adventures",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Logical_Thinking_Adventures_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "3f9195d1f3fa7b7ed8ae0f945d256f87ad0f4937e7dac9f289458c713766bd1b"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "LT-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/LT-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/LT-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "LT-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/LT-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/LT-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "LT-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/LT-NURSERY-V3-P003-contents.md",
+      "json": "pages/LT-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "LT-NURSERY-V3-P004",
+      "title": "Welcome to Logical Thinking Adventures",
+      "markdown": "pages/LT-NURSERY-V3-P004-welcome-to-logical-thinking-adventures.md",
+      "json": "pages/LT-NURSERY-V3-P004-welcome-to-logical-thinking-adventures.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "LT-NURSERY-V3-P005",
+      "title": "Meet Thinking Star",
+      "markdown": "pages/LT-NURSERY-V3-P005-meet-thinking-star.md",
+      "json": "pages/LT-NURSERY-V3-P005-meet-thinking-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "LT-NURSERY-V3-P006",
+      "title": "Look Carefully",
+      "markdown": "pages/LT-NURSERY-V3-P006-look-carefully.md",
+      "json": "pages/LT-NURSERY-V3-P006-look-carefully.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "LT-NURSERY-V3-P007",
+      "title": "Find the Same",
+      "markdown": "pages/LT-NURSERY-V3-P007-find-the-same.md",
+      "json": "pages/LT-NURSERY-V3-P007-find-the-same.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "LT-NURSERY-V3-P008",
+      "title": "Find the Different One",
+      "markdown": "pages/LT-NURSERY-V3-P008-find-the-different-one.md",
+      "json": "pages/LT-NURSERY-V3-P008-find-the-different-one.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "LT-NURSERY-V3-P009",
+      "title": "Match the Shadows",
+      "markdown": "pages/LT-NURSERY-V3-P009-match-the-shadows.md",
+      "json": "pages/LT-NURSERY-V3-P009-match-the-shadows.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "LT-NURSERY-V3-P010",
+      "title": "Match the Halves",
+      "markdown": "pages/LT-NURSERY-V3-P010-match-the-halves.md",
+      "json": "pages/LT-NURSERY-V3-P010-match-the-halves.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "LT-NURSERY-V3-P011",
+      "title": "Animal and Home",
+      "markdown": "pages/LT-NURSERY-V3-P011-animal-and-home.md",
+      "json": "pages/LT-NURSERY-V3-P011-animal-and-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "LT-NURSERY-V3-P012",
+      "title": "Object and Use",
+      "markdown": "pages/LT-NURSERY-V3-P012-object-and-use.md",
+      "json": "pages/LT-NURSERY-V3-P012-object-and-use.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "LT-NURSERY-V3-P013",
+      "title": "Sort by Colour",
+      "markdown": "pages/LT-NURSERY-V3-P013-sort-by-colour.md",
+      "json": "pages/LT-NURSERY-V3-P013-sort-by-colour.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "LT-NURSERY-V3-P014",
+      "title": "Sort by Shape",
+      "markdown": "pages/LT-NURSERY-V3-P014-sort-by-shape.md",
+      "json": "pages/LT-NURSERY-V3-P014-sort-by-shape.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "LT-NURSERY-V3-P015",
+      "title": "Sort by Size",
+      "markdown": "pages/LT-NURSERY-V3-P015-sort-by-size.md",
+      "json": "pages/LT-NURSERY-V3-P015-sort-by-size.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "LT-NURSERY-V3-P016",
+      "title": "Living and Non-Living",
+      "markdown": "pages/LT-NURSERY-V3-P016-living-and-non-living.md",
+      "json": "pages/LT-NURSERY-V3-P016-living-and-non-living.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "LT-NURSERY-V3-P017",
+      "title": "Big, Bigger, Biggest",
+      "markdown": "pages/LT-NURSERY-V3-P017-big-bigger-biggest.md",
+      "json": "pages/LT-NURSERY-V3-P017-big-bigger-biggest.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "LT-NURSERY-V3-P018",
+      "title": "Long and Short",
+      "markdown": "pages/LT-NURSERY-V3-P018-long-and-short.md",
+      "json": "pages/LT-NURSERY-V3-P018-long-and-short.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "LT-NURSERY-V3-P019",
+      "title": "More, Less, Same",
+      "markdown": "pages/LT-NURSERY-V3-P019-more-less-same.md",
+      "json": "pages/LT-NURSERY-V3-P019-more-less-same.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "LT-NURSERY-V3-P020",
+      "title": "Which One Belongs?",
+      "markdown": "pages/LT-NURSERY-V3-P020-which-one-belongs.md",
+      "json": "pages/LT-NURSERY-V3-P020-which-one-belongs.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "LT-NURSERY-V3-P021",
+      "title": "Find the Pattern",
+      "markdown": "pages/LT-NURSERY-V3-P021-find-the-pattern.md",
+      "json": "pages/LT-NURSERY-V3-P021-find-the-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "LT-NURSERY-V3-P022",
+      "title": "Copy the Pattern",
+      "markdown": "pages/LT-NURSERY-V3-P022-copy-the-pattern.md",
+      "json": "pages/LT-NURSERY-V3-P022-copy-the-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "LT-NURSERY-V3-P023",
+      "title": "First, Next, Last",
+      "markdown": "pages/LT-NURSERY-V3-P023-first-next-last.md",
+      "json": "pages/LT-NURSERY-V3-P023-first-next-last.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "LT-NURSERY-V3-P024",
+      "title": "What Comes Next?",
+      "markdown": "pages/LT-NURSERY-V3-P024-what-comes-next.md",
+      "json": "pages/LT-NURSERY-V3-P024-what-comes-next.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "LT-NURSERY-V3-P025",
+      "title": "Before and After",
+      "markdown": "pages/LT-NURSERY-V3-P025-before-and-after.md",
+      "json": "pages/LT-NURSERY-V3-P025-before-and-after.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "LT-NURSERY-V3-P026",
+      "title": "Complete the Story",
+      "markdown": "pages/LT-NURSERY-V3-P026-complete-the-story.md",
+      "json": "pages/LT-NURSERY-V3-P026-complete-the-story.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "LT-NURSERY-V3-P027",
+      "title": "Cause and Effect",
+      "markdown": "pages/LT-NURSERY-V3-P027-cause-and-effect.md",
+      "json": "pages/LT-NURSERY-V3-P027-cause-and-effect.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "LT-NURSERY-V3-P028",
+      "title": "Inside and Outside",
+      "markdown": "pages/LT-NURSERY-V3-P028-inside-and-outside.md",
+      "json": "pages/LT-NURSERY-V3-P028-inside-and-outside.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "LT-NURSERY-V3-P029",
+      "title": "Above and Below",
+      "markdown": "pages/LT-NURSERY-V3-P029-above-and-below.md",
+      "json": "pages/LT-NURSERY-V3-P029-above-and-below.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "LT-NURSERY-V3-P030",
+      "title": "Near and Far",
+      "markdown": "pages/LT-NURSERY-V3-P030-near-and-far.md",
+      "json": "pages/LT-NURSERY-V3-P030-near-and-far.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "LT-NURSERY-V3-P031",
+      "title": "Left and Right",
+      "markdown": "pages/LT-NURSERY-V3-P031-left-and-right.md",
+      "json": "pages/LT-NURSERY-V3-P031-left-and-right.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "LT-NURSERY-V3-P032",
+      "title": "Follow the Arrows",
+      "markdown": "pages/LT-NURSERY-V3-P032-follow-the-arrows.md",
+      "json": "pages/LT-NURSERY-V3-P032-follow-the-arrows.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "LT-NURSERY-V3-P033",
+      "title": "Find the Way",
+      "markdown": "pages/LT-NURSERY-V3-P033-find-the-way.md",
+      "json": "pages/LT-NURSERY-V3-P033-find-the-way.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "LT-NURSERY-V3-P034",
+      "title": "Choose the Helpful Tool",
+      "markdown": "pages/LT-NURSERY-V3-P034-choose-the-helpful-tool.md",
+      "json": "pages/LT-NURSERY-V3-P034-choose-the-helpful-tool.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "LT-NURSERY-V3-P035",
+      "title": "Fix the Picture",
+      "markdown": "pages/LT-NURSERY-V3-P035-fix-the-picture.md",
+      "json": "pages/LT-NURSERY-V3-P035-fix-the-picture.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "LT-NURSERY-V3-P036",
+      "title": "Safe and Helpful Choice",
+      "markdown": "pages/LT-NURSERY-V3-P036-safe-and-helpful-choice.md",
+      "json": "pages/LT-NURSERY-V3-P036-safe-and-helpful-choice.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "LT-NURSERY-V3-P037",
+      "title": "Remember and Match",
+      "markdown": "pages/LT-NURSERY-V3-P037-remember-and-match.md",
+      "json": "pages/LT-NURSERY-V3-P037-remember-and-match.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "LT-NURSERY-V3-P038",
+      "title": "Think of Another Way",
+      "markdown": "pages/LT-NURSERY-V3-P038-think-of-another-way.md",
+      "json": "pages/LT-NURSERY-V3-P038-think-of-another-way.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "LT-NURSERY-V3-P039",
+      "title": "My Thinking Journal",
+      "markdown": "pages/LT-NURSERY-V3-P039-my-thinking-journal.md",
+      "json": "pages/LT-NURSERY-V3-P039-my-thinking-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "LT-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/LT-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/LT-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "LT-NURSERY-V3-P041",
+      "title": "I Am a Logical Thinker!",
+      "markdown": "pages/LT-NURSERY-V3-P041-i-am-a-logical-thinker.md",
+      "json": "pages/LT-NURSERY-V3-P041-i-am-a-logical-thinker.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

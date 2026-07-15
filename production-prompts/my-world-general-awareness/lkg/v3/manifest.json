@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "My World & General Awareness",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "My_World_General_Awareness_LKG_Gold_Complete_v4.xlsx",
+    "sha256": "37f1d35b7fd0eb3ae2e57bcdf4cb54f97f428eda9bca8ccf923aac48db07bc29"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "MW-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/MW-LKG-V3-P001-cover.md",
+      "json": "pages/MW-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "MW-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/MW-LKG-V3-P002-copyright.md",
+      "json": "pages/MW-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "MW-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/MW-LKG-V3-P003-contents.md",
+      "json": "pages/MW-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "MW-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/MW-LKG-V3-P004-welcome.md",
+      "json": "pages/MW-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "MW-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/MW-LKG-V3-P005-meet-star.md",
+      "json": "pages/MW-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "MW-LKG-V3-P006",
+      "title": "My Family",
+      "markdown": "pages/MW-LKG-V3-P006-my-family.md",
+      "json": "pages/MW-LKG-V3-P006-my-family.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "MW-LKG-V3-P007",
+      "title": "My Home",
+      "markdown": "pages/MW-LKG-V3-P007-my-home.md",
+      "json": "pages/MW-LKG-V3-P007-my-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "MW-LKG-V3-P008",
+      "title": "My School",
+      "markdown": "pages/MW-LKG-V3-P008-my-school.md",
+      "json": "pages/MW-LKG-V3-P008-my-school.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "MW-LKG-V3-P009",
+      "title": "Community Helpers",
+      "markdown": "pages/MW-LKG-V3-P009-community-helpers.md",
+      "json": "pages/MW-LKG-V3-P009-community-helpers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "MW-LKG-V3-P010",
+      "title": "My Classroom",
+      "markdown": "pages/MW-LKG-V3-P010-my-classroom.md",
+      "json": "pages/MW-LKG-V3-P010-my-classroom.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "MW-LKG-V3-P011",
+      "title": "My City",
+      "markdown": "pages/MW-LKG-V3-P011-my-city.md",
+      "json": "pages/MW-LKG-V3-P011-my-city.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "MW-LKG-V3-P012",
+      "title": "Transport Around Us",
+      "markdown": "pages/MW-LKG-V3-P012-transport-around-us.md",
+      "json": "pages/MW-LKG-V3-P012-transport-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "MW-LKG-V3-P013",
+      "title": "Road Safety",
+      "markdown": "pages/MW-LKG-V3-P013-road-safety.md",
+      "json": "pages/MW-LKG-V3-P013-road-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "MW-LKG-V3-P014",
+      "title": "Places Around Me",
+      "markdown": "pages/MW-LKG-V3-P014-places-around-me.md",
+      "json": "pages/MW-LKG-V3-P014-places-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "MW-LKG-V3-P015",
+      "title": "Weather Around Me",
+      "markdown": "pages/MW-LKG-V3-P015-weather-around-me.md",
+      "json": "pages/MW-LKG-V3-P015-weather-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "MW-LKG-V3-P016",
+      "title": "Seasons",
+      "markdown": "pages/MW-LKG-V3-P016-seasons.md",
+      "json": "pages/MW-LKG-V3-P016-seasons.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "MW-LKG-V3-P017",
+      "title": "Plants Around Us",
+      "markdown": "pages/MW-LKG-V3-P017-plants-around-us.md",
+      "json": "pages/MW-LKG-V3-P017-plants-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "MW-LKG-V3-P018",
+      "title": "Animals Around Us",
+      "markdown": "pages/MW-LKG-V3-P018-animals-around-us.md",
+      "json": "pages/MW-LKG-V3-P018-animals-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "MW-LKG-V3-P019",
+      "title": "Birds & Insects",
+      "markdown": "pages/MW-LKG-V3-P019-birds-insects.md",
+      "json": "pages/MW-LKG-V3-P019-birds-insects.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "MW-LKG-V3-P020",
+      "title": "Water Around Us",
+      "markdown": "pages/MW-LKG-V3-P020-water-around-us.md",
+      "json": "pages/MW-LKG-V3-P020-water-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "MW-LKG-V3-P021",
+      "title": "Healthy Food",
+      "markdown": "pages/MW-LKG-V3-P021-healthy-food.md",
+      "json": "pages/MW-LKG-V3-P021-healthy-food.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "MW-LKG-V3-P022",
+      "title": "Fruits & Vegetables",
+      "markdown": "pages/MW-LKG-V3-P022-fruits-vegetables.md",
+      "json": "pages/MW-LKG-V3-P022-fruits-vegetables.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "MW-LKG-V3-P023",
+      "title": "Good Manners",
+      "markdown": "pages/MW-LKG-V3-P023-good-manners.md",
+      "json": "pages/MW-LKG-V3-P023-good-manners.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "MW-LKG-V3-P024",
+      "title": "Festivals",
+      "markdown": "pages/MW-LKG-V3-P024-festivals.md",
+      "json": "pages/MW-LKG-V3-P024-festivals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "MW-LKG-V3-P025",
+      "title": "National Symbols",
+      "markdown": "pages/MW-LKG-V3-P025-national-symbols.md",
+      "json": "pages/MW-LKG-V3-P025-national-symbols.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "MW-LKG-V3-P026",
+      "title": "Our Earth",
+      "markdown": "pages/MW-LKG-V3-P026-our-earth.md",
+      "json": "pages/MW-LKG-V3-P026-our-earth.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "MW-LKG-V3-P027",
+      "title": "Reduce Reuse Recycle",
+      "markdown": "pages/MW-LKG-V3-P027-reduce-reuse-recycle.md",
+      "json": "pages/MW-LKG-V3-P027-reduce-reuse-recycle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "MW-LKG-V3-P028",
+      "title": "Maps & Directions",
+      "markdown": "pages/MW-LKG-V3-P028-maps-directions.md",
+      "json": "pages/MW-LKG-V3-P028-maps-directions.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "MW-LKG-V3-P029",
+      "title": "People Around Me",
+      "markdown": "pages/MW-LKG-V3-P029-people-around-me.md",
+      "json": "pages/MW-LKG-V3-P029-people-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "MW-LKG-V3-P030",
+      "title": "Jobs We See",
+      "markdown": "pages/MW-LKG-V3-P030-jobs-we-see.md",
+      "json": "pages/MW-LKG-V3-P030-jobs-we-see.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "MW-LKG-V3-P031",
+      "title": "My Daily Routine",
+      "markdown": "pages/MW-LKG-V3-P031-my-daily-routine.md",
+      "json": "pages/MW-LKG-V3-P031-my-daily-routine.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "MW-LKG-V3-P032",
+      "title": "Technology Around Me",
+      "markdown": "pages/MW-LKG-V3-P032-technology-around-me.md",
+      "json": "pages/MW-LKG-V3-P032-technology-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "MW-LKG-V3-P033",
+      "title": "Safety at Home",
+      "markdown": "pages/MW-LKG-V3-P033-safety-at-home.md",
+      "json": "pages/MW-LKG-V3-P033-safety-at-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "MW-LKG-V3-P034",
+      "title": "Safety Outside",
+      "markdown": "pages/MW-LKG-V3-P034-safety-outside.md",
+      "json": "pages/MW-LKG-V3-P034-safety-outside.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "MW-LKG-V3-P035",
+      "title": "General Awareness Review",
+      "markdown": "pages/MW-LKG-V3-P035-general-awareness-review.md",
+      "json": "pages/MW-LKG-V3-P035-general-awareness-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "MW-LKG-V3-P036",
+      "title": "My Discovery",
+      "markdown": "pages/MW-LKG-V3-P036-my-discovery.md",
+      "json": "pages/MW-LKG-V3-P036-my-discovery.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "MW-LKG-V3-P037",
+      "title": "My World Journal",
+      "markdown": "pages/MW-LKG-V3-P037-my-world-journal.md",
+      "json": "pages/MW-LKG-V3-P037-my-world-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "MW-LKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/MW-LKG-V3-P038-celebration.md",
+      "json": "pages/MW-LKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "MW-LKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/MW-LKG-V3-P039-certificate.md",
+      "json": "pages/MW-LKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "MW-LKG-V3-P040",
+      "title": "I Know My World",
+      "markdown": "pages/MW-LKG-V3-P040-i-know-my-world.md",
+      "json": "pages/MW-LKG-V3-P040-i-know-my-world.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "MW-LKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/MW-LKG-V3-P041-back-cover.md",
+      "json": "pages/MW-LKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

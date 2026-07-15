@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Young Scientists",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Young_Scientists_UKG_Gold_Production_v4.xlsx",
+    "sha256": "387ad20bb318b63d8716e716ab1cbc18e462ceec688153ea8e36c477008ef01a"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "YS-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/YS-UKG-V3-P001-cover.md",
+      "json": "pages/YS-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "YS-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/YS-UKG-V3-P002-copyright.md",
+      "json": "pages/YS-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "YS-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/YS-UKG-V3-P003-contents.md",
+      "json": "pages/YS-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "YS-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/YS-UKG-V3-P004-welcome.md",
+      "json": "pages/YS-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "YS-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/YS-UKG-V3-P005-meet-star.md",
+      "json": "pages/YS-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "YS-UKG-V3-P006",
+      "title": "My Five Senses",
+      "markdown": "pages/YS-UKG-V3-P006-my-five-senses.md",
+      "json": "pages/YS-UKG-V3-P006-my-five-senses.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "YS-UKG-V3-P007",
+      "title": "Observe Carefully",
+      "markdown": "pages/YS-UKG-V3-P007-observe-carefully.md",
+      "json": "pages/YS-UKG-V3-P007-observe-carefully.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "YS-UKG-V3-P008",
+      "title": "Living & Non-Living",
+      "markdown": "pages/YS-UKG-V3-P008-living-non-living.md",
+      "json": "pages/YS-UKG-V3-P008-living-non-living.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "YS-UKG-V3-P009",
+      "title": "Plant Parts",
+      "markdown": "pages/YS-UKG-V3-P009-plant-parts.md",
+      "json": "pages/YS-UKG-V3-P009-plant-parts.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "YS-UKG-V3-P010",
+      "title": "Animal Homes",
+      "markdown": "pages/YS-UKG-V3-P010-animal-homes.md",
+      "json": "pages/YS-UKG-V3-P010-animal-homes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "YS-UKG-V3-P011",
+      "title": "Weather Watch",
+      "markdown": "pages/YS-UKG-V3-P011-weather-watch.md",
+      "json": "pages/YS-UKG-V3-P011-weather-watch.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "YS-UKG-V3-P012",
+      "title": "Day & Night",
+      "markdown": "pages/YS-UKG-V3-P012-day-night.md",
+      "json": "pages/YS-UKG-V3-P012-day-night.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "YS-UKG-V3-P013",
+      "title": "Floating & Sinking",
+      "markdown": "pages/YS-UKG-V3-P013-floating-sinking.md",
+      "json": "pages/YS-UKG-V3-P013-floating-sinking.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "YS-UKG-V3-P014",
+      "title": "Magnet Fun",
+      "markdown": "pages/YS-UKG-V3-P014-magnet-fun.md",
+      "json": "pages/YS-UKG-V3-P014-magnet-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "YS-UKG-V3-P015",
+      "title": "Light & Shadow",
+      "markdown": "pages/YS-UKG-V3-P015-light-shadow.md",
+      "json": "pages/YS-UKG-V3-P015-light-shadow.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "YS-UKG-V3-P016",
+      "title": "Hot & Cold",
+      "markdown": "pages/YS-UKG-V3-P016-hot-cold.md",
+      "json": "pages/YS-UKG-V3-P016-hot-cold.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "YS-UKG-V3-P017",
+      "title": "Push & Pull",
+      "markdown": "pages/YS-UKG-V3-P017-push-pull.md",
+      "json": "pages/YS-UKG-V3-P017-push-pull.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "YS-UKG-V3-P018",
+      "title": "Healthy Habits",
+      "markdown": "pages/YS-UKG-V3-P018-healthy-habits.md",
+      "json": "pages/YS-UKG-V3-P018-healthy-habits.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "YS-UKG-V3-P019",
+      "title": "Water Around Us",
+      "markdown": "pages/YS-UKG-V3-P019-water-around-us.md",
+      "json": "pages/YS-UKG-V3-P019-water-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "YS-UKG-V3-P020",
+      "title": "Reduce, Reuse, Recycle",
+      "markdown": "pages/YS-UKG-V3-P020-reduce-reuse-recycle.md",
+      "json": "pages/YS-UKG-V3-P020-reduce-reuse-recycle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "YS-UKG-V3-P021",
+      "title": "Nature Walk",
+      "markdown": "pages/YS-UKG-V3-P021-nature-walk.md",
+      "json": "pages/YS-UKG-V3-P021-nature-walk.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "YS-UKG-V3-P022",
+      "title": "Insect Explorer",
+      "markdown": "pages/YS-UKG-V3-P022-insect-explorer.md",
+      "json": "pages/YS-UKG-V3-P022-insect-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "YS-UKG-V3-P023",
+      "title": "Bird Watch",
+      "markdown": "pages/YS-UKG-V3-P023-bird-watch.md",
+      "json": "pages/YS-UKG-V3-P023-bird-watch.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "YS-UKG-V3-P024",
+      "title": "Seed Experiment",
+      "markdown": "pages/YS-UKG-V3-P024-seed-experiment.md",
+      "json": "pages/YS-UKG-V3-P024-seed-experiment.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "YS-UKG-V3-P025",
+      "title": "Growing Plants",
+      "markdown": "pages/YS-UKG-V3-P025-growing-plants.md",
+      "json": "pages/YS-UKG-V3-P025-growing-plants.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "YS-UKG-V3-P026",
+      "title": "Build a Bridge",
+      "markdown": "pages/YS-UKG-V3-P026-build-a-bridge.md",
+      "json": "pages/YS-UKG-V3-P026-build-a-bridge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "YS-UKG-V3-P027",
+      "title": "Simple Machines",
+      "markdown": "pages/YS-UKG-V3-P027-simple-machines.md",
+      "json": "pages/YS-UKG-V3-P027-simple-machines.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "YS-UKG-V3-P028",
+      "title": "STEM Challenge",
+      "markdown": "pages/YS-UKG-V3-P028-stem-challenge.md",
+      "json": "pages/YS-UKG-V3-P028-stem-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "YS-UKG-V3-P029",
+      "title": "Science in Daily Life",
+      "markdown": "pages/YS-UKG-V3-P029-science-in-daily-life.md",
+      "json": "pages/YS-UKG-V3-P029-science-in-daily-life.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "YS-UKG-V3-P030",
+      "title": "Young Inventor",
+      "markdown": "pages/YS-UKG-V3-P030-young-inventor.md",
+      "json": "pages/YS-UKG-V3-P030-young-inventor.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "YS-UKG-V3-P031",
+      "title": "Science Review",
+      "markdown": "pages/YS-UKG-V3-P031-science-review.md",
+      "json": "pages/YS-UKG-V3-P031-science-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "YS-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/YS-UKG-V3-P032-mini-project.md",
+      "json": "pages/YS-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "YS-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/YS-UKG-V3-P033-reflection.md",
+      "json": "pages/YS-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "YS-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/YS-UKG-V3-P034-showcase.md",
+      "json": "pages/YS-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "YS-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/YS-UKG-V3-P035-grand-review.md",
+      "json": "pages/YS-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "YS-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/YS-UKG-V3-P036-my-achievement.md",
+      "json": "pages/YS-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "YS-UKG-V3-P037",
+      "title": "My Science Goals",
+      "markdown": "pages/YS-UKG-V3-P037-my-science-goals.md",
+      "json": "pages/YS-UKG-V3-P037-my-science-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "YS-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/YS-UKG-V3-P038-celebration.md",
+      "json": "pages/YS-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "YS-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/YS-UKG-V3-P039-certificate.md",
+      "json": "pages/YS-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "YS-UKG-V3-P040",
+      "title": "I Am a Young Scientist",
+      "markdown": "pages/YS-UKG-V3-P040-i-am-a-young-scientist.md",
+      "json": "pages/YS-UKG-V3-P040-i-am-a-young-scientist.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "YS-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/YS-UKG-V3-P041-back-cover.md",
+      "json": "pages/YS-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

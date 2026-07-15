@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "STEM Explorers",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "STEM_Explorers_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "999b929a3de8e1f1937ffcb2564e831e9e75b811f41807c0af5326b8306a4624"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "ST-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/ST-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/ST-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "ST-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/ST-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/ST-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "ST-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/ST-NURSERY-V3-P003-contents.md",
+      "json": "pages/ST-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "ST-NURSERY-V3-P004",
+      "title": "Welcome to STEM Explorers",
+      "markdown": "pages/ST-NURSERY-V3-P004-welcome-to-stem-explorers.md",
+      "json": "pages/ST-NURSERY-V3-P004-welcome-to-stem-explorers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "ST-NURSERY-V3-P005",
+      "title": "Meet STEM Star",
+      "markdown": "pages/ST-NURSERY-V3-P005-meet-stem-star.md",
+      "json": "pages/ST-NURSERY-V3-P005-meet-stem-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "ST-NURSERY-V3-P006",
+      "title": "What Is STEM?",
+      "markdown": "pages/ST-NURSERY-V3-P006-what-is-stem.md",
+      "json": "pages/ST-NURSERY-V3-P006-what-is-stem.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "ST-NURSERY-V3-P007",
+      "title": "Explore with My Senses",
+      "markdown": "pages/ST-NURSERY-V3-P007-explore-with-my-senses.md",
+      "json": "pages/ST-NURSERY-V3-P007-explore-with-my-senses.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "ST-NURSERY-V3-P008",
+      "title": "Colour Mixing",
+      "markdown": "pages/ST-NURSERY-V3-P008-colour-mixing.md",
+      "json": "pages/ST-NURSERY-V3-P008-colour-mixing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "ST-NURSERY-V3-P009",
+      "title": "Sink or Float?",
+      "markdown": "pages/ST-NURSERY-V3-P009-sink-or-float.md",
+      "json": "pages/ST-NURSERY-V3-P009-sink-or-float.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "ST-NURSERY-V3-P010",
+      "title": "Magnet Test",
+      "markdown": "pages/ST-NURSERY-V3-P010-magnet-test.md",
+      "json": "pages/ST-NURSERY-V3-P010-magnet-test.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "ST-NURSERY-V3-P011",
+      "title": "Light and Shadow",
+      "markdown": "pages/ST-NURSERY-V3-P011-light-and-shadow.md",
+      "json": "pages/ST-NURSERY-V3-P011-light-and-shadow.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "ST-NURSERY-V3-P012",
+      "title": "Weather Watchers",
+      "markdown": "pages/ST-NURSERY-V3-P012-weather-watchers.md",
+      "json": "pages/ST-NURSERY-V3-P012-weather-watchers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "ST-NURSERY-V3-P013",
+      "title": "From Seed to Plant",
+      "markdown": "pages/ST-NURSERY-V3-P013-from-seed-to-plant.md",
+      "json": "pages/ST-NURSERY-V3-P013-from-seed-to-plant.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "ST-NURSERY-V3-P014",
+      "title": "Tools Help Us",
+      "markdown": "pages/ST-NURSERY-V3-P014-tools-help-us.md",
+      "json": "pages/ST-NURSERY-V3-P014-tools-help-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "ST-NURSERY-V3-P015",
+      "title": "Technology Around Me",
+      "markdown": "pages/ST-NURSERY-V3-P015-technology-around-me.md",
+      "json": "pages/ST-NURSERY-V3-P015-technology-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "ST-NURSERY-V3-P016",
+      "title": "Cause and Effect",
+      "markdown": "pages/ST-NURSERY-V3-P016-cause-and-effect.md",
+      "json": "pages/ST-NURSERY-V3-P016-cause-and-effect.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "ST-NURSERY-V3-P017",
+      "title": "Follow the Arrows",
+      "markdown": "pages/ST-NURSERY-V3-P017-follow-the-arrows.md",
+      "json": "pages/ST-NURSERY-V3-P017-follow-the-arrows.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "ST-NURSERY-V3-P018",
+      "title": "Make a Command Pattern",
+      "markdown": "pages/ST-NURSERY-V3-P018-make-a-command-pattern.md",
+      "json": "pages/ST-NURSERY-V3-P018-make-a-command-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "ST-NURSERY-V3-P019",
+      "title": "Guide the Robot",
+      "markdown": "pages/ST-NURSERY-V3-P019-guide-the-robot.md",
+      "json": "pages/ST-NURSERY-V3-P019-guide-the-robot.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "ST-NURSERY-V3-P020",
+      "title": "Build a Strong Tower",
+      "markdown": "pages/ST-NURSERY-V3-P020-build-a-strong-tower.md",
+      "json": "pages/ST-NURSERY-V3-P020-build-a-strong-tower.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "ST-NURSERY-V3-P021",
+      "title": "Bridge Challenge",
+      "markdown": "pages/ST-NURSERY-V3-P021-bridge-challenge.md",
+      "json": "pages/ST-NURSERY-V3-P021-bridge-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "ST-NURSERY-V3-P022",
+      "title": "Ramp and Roll",
+      "markdown": "pages/ST-NURSERY-V3-P022-ramp-and-roll.md",
+      "json": "pages/ST-NURSERY-V3-P022-ramp-and-roll.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "ST-NURSERY-V3-P023",
+      "title": "Build a Safe Shelter",
+      "markdown": "pages/ST-NURSERY-V3-P023-build-a-safe-shelter.md",
+      "json": "pages/ST-NURSERY-V3-P023-build-a-safe-shelter.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "ST-NURSERY-V3-P024",
+      "title": "Make a Floating Boat",
+      "markdown": "pages/ST-NURSERY-V3-P024-make-a-floating-boat.md",
+      "json": "pages/ST-NURSERY-V3-P024-make-a-floating-boat.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "ST-NURSERY-V3-P025",
+      "title": "Balance Challenge",
+      "markdown": "pages/ST-NURSERY-V3-P025-balance-challenge.md",
+      "json": "pages/ST-NURSERY-V3-P025-balance-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "ST-NURSERY-V3-P026",
+      "title": "Fix the Road",
+      "markdown": "pages/ST-NURSERY-V3-P026-fix-the-road.md",
+      "json": "pages/ST-NURSERY-V3-P026-fix-the-road.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "ST-NURSERY-V3-P027",
+      "title": "Design a Playground",
+      "markdown": "pages/ST-NURSERY-V3-P027-design-a-playground.md",
+      "json": "pages/ST-NURSERY-V3-P027-design-a-playground.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "ST-NURSERY-V3-P028",
+      "title": "Build with Shapes",
+      "markdown": "pages/ST-NURSERY-V3-P028-build-with-shapes.md",
+      "json": "pages/ST-NURSERY-V3-P028-build-with-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "ST-NURSERY-V3-P029",
+      "title": "My STEM Invention",
+      "markdown": "pages/ST-NURSERY-V3-P029-my-stem-invention.md",
+      "json": "pages/ST-NURSERY-V3-P029-my-stem-invention.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "ST-NURSERY-V3-P030",
+      "title": "Count and Build",
+      "markdown": "pages/ST-NURSERY-V3-P030-count-and-build.md",
+      "json": "pages/ST-NURSERY-V3-P030-count-and-build.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "ST-NURSERY-V3-P031",
+      "title": "More, Less, Same",
+      "markdown": "pages/ST-NURSERY-V3-P031-more-less-same.md",
+      "json": "pages/ST-NURSERY-V3-P031-more-less-same.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "ST-NURSERY-V3-P032",
+      "title": "Sort and Group",
+      "markdown": "pages/ST-NURSERY-V3-P032-sort-and-group.md",
+      "json": "pages/ST-NURSERY-V3-P032-sort-and-group.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "ST-NURSERY-V3-P033",
+      "title": "Shapes in Buildings",
+      "markdown": "pages/ST-NURSERY-V3-P033-shapes-in-buildings.md",
+      "json": "pages/ST-NURSERY-V3-P033-shapes-in-buildings.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "ST-NURSERY-V3-P034",
+      "title": "Measure with Blocks",
+      "markdown": "pages/ST-NURSERY-V3-P034-measure-with-blocks.md",
+      "json": "pages/ST-NURSERY-V3-P034-measure-with-blocks.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "ST-NURSERY-V3-P035",
+      "title": "Heavy and Light",
+      "markdown": "pages/ST-NURSERY-V3-P035-heavy-and-light.md",
+      "json": "pages/ST-NURSERY-V3-P035-heavy-and-light.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "ST-NURSERY-V3-P036",
+      "title": "Make a Math Pattern",
+      "markdown": "pages/ST-NURSERY-V3-P036-make-a-math-pattern.md",
+      "json": "pages/ST-NURSERY-V3-P036-make-a-math-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "ST-NURSERY-V3-P037",
+      "title": "Position Words",
+      "markdown": "pages/ST-NURSERY-V3-P037-position-words.md",
+      "json": "pages/ST-NURSERY-V3-P037-position-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "ST-NURSERY-V3-P038",
+      "title": "My Picture Graph",
+      "markdown": "pages/ST-NURSERY-V3-P038-my-picture-graph.md",
+      "json": "pages/ST-NURSERY-V3-P038-my-picture-graph.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "ST-NURSERY-V3-P039",
+      "title": "My STEM Journal",
+      "markdown": "pages/ST-NURSERY-V3-P039-my-stem-journal.md",
+      "json": "pages/ST-NURSERY-V3-P039-my-stem-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "ST-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/ST-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/ST-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "ST-NURSERY-V3-P041",
+      "title": "I Am a STEM Explorer!",
+      "markdown": "pages/ST-NURSERY-V3-P041-i-am-a-stem-explorer.md",
+      "json": "pages/ST-NURSERY-V3-P041-i-am-a-stem-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

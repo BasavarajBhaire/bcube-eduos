@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Confidence & Social Skills",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "BCube_LKG_10_Book_Master_Curriculum_Plan.xlsx — curriculum-derived reconstruction",
+    "sha256": "7ae7860e8b38596e3e60476c973074b6e7db6e9fd348df61e51057877699976c"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CS-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/CS-LKG-V3-P001-cover.md",
+      "json": "pages/CS-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CS-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/CS-LKG-V3-P002-copyright.md",
+      "json": "pages/CS-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CS-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CS-LKG-V3-P003-contents.md",
+      "json": "pages/CS-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CS-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/CS-LKG-V3-P004-welcome.md",
+      "json": "pages/CS-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CS-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/CS-LKG-V3-P005-meet-star.md",
+      "json": "pages/CS-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CS-LKG-V3-P006",
+      "title": "I Am Growing",
+      "markdown": "pages/CS-LKG-V3-P006-i-am-growing.md",
+      "json": "pages/CS-LKG-V3-P006-i-am-growing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CS-LKG-V3-P007",
+      "title": "My Strengths",
+      "markdown": "pages/CS-LKG-V3-P007-my-strengths.md",
+      "json": "pages/CS-LKG-V3-P007-my-strengths.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CS-LKG-V3-P008",
+      "title": "I Can Try",
+      "markdown": "pages/CS-LKG-V3-P008-i-can-try.md",
+      "json": "pages/CS-LKG-V3-P008-i-can-try.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CS-LKG-V3-P009",
+      "title": "Trying Again",
+      "markdown": "pages/CS-LKG-V3-P009-trying-again.md",
+      "json": "pages/CS-LKG-V3-P009-trying-again.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CS-LKG-V3-P010",
+      "title": "Asking for Help",
+      "markdown": "pages/CS-LKG-V3-P010-asking-for-help.md",
+      "json": "pages/CS-LKG-V3-P010-asking-for-help.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CS-LKG-V3-P011",
+      "title": "Naming Feelings",
+      "markdown": "pages/CS-LKG-V3-P011-naming-feelings.md",
+      "json": "pages/CS-LKG-V3-P011-naming-feelings.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CS-LKG-V3-P012",
+      "title": "Calm Breathing",
+      "markdown": "pages/CS-LKG-V3-P012-calm-breathing.md",
+      "json": "pages/CS-LKG-V3-P012-calm-breathing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CS-LKG-V3-P013",
+      "title": "When I Feel Angry",
+      "markdown": "pages/CS-LKG-V3-P013-when-i-feel-angry.md",
+      "json": "pages/CS-LKG-V3-P013-when-i-feel-angry.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CS-LKG-V3-P014",
+      "title": "When I Feel Sad",
+      "markdown": "pages/CS-LKG-V3-P014-when-i-feel-sad.md",
+      "json": "pages/CS-LKG-V3-P014-when-i-feel-sad.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CS-LKG-V3-P015",
+      "title": "Feeling Proud",
+      "markdown": "pages/CS-LKG-V3-P015-feeling-proud.md",
+      "json": "pages/CS-LKG-V3-P015-feeling-proud.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CS-LKG-V3-P016",
+      "title": "My Friends",
+      "markdown": "pages/CS-LKG-V3-P016-my-friends.md",
+      "json": "pages/CS-LKG-V3-P016-my-friends.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CS-LKG-V3-P017",
+      "title": "Kind Words",
+      "markdown": "pages/CS-LKG-V3-P017-kind-words.md",
+      "json": "pages/CS-LKG-V3-P017-kind-words.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CS-LKG-V3-P018",
+      "title": "Sharing",
+      "markdown": "pages/CS-LKG-V3-P018-sharing.md",
+      "json": "pages/CS-LKG-V3-P018-sharing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CS-LKG-V3-P019",
+      "title": "Taking Turns",
+      "markdown": "pages/CS-LKG-V3-P019-taking-turns.md",
+      "json": "pages/CS-LKG-V3-P019-taking-turns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CS-LKG-V3-P020",
+      "title": "Joining Play",
+      "markdown": "pages/CS-LKG-V3-P020-joining-play.md",
+      "json": "pages/CS-LKG-V3-P020-joining-play.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CS-LKG-V3-P021",
+      "title": "Listening to Others",
+      "markdown": "pages/CS-LKG-V3-P021-listening-to-others.md",
+      "json": "pages/CS-LKG-V3-P021-listening-to-others.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CS-LKG-V3-P022",
+      "title": "Please and Thank You",
+      "markdown": "pages/CS-LKG-V3-P022-please-and-thank-you.md",
+      "json": "pages/CS-LKG-V3-P022-please-and-thank-you.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CS-LKG-V3-P023",
+      "title": "Solving Small Problems",
+      "markdown": "pages/CS-LKG-V3-P023-solving-small-problems.md",
+      "json": "pages/CS-LKG-V3-P023-solving-small-problems.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CS-LKG-V3-P024",
+      "title": "Saying Sorry",
+      "markdown": "pages/CS-LKG-V3-P024-saying-sorry.md",
+      "json": "pages/CS-LKG-V3-P024-saying-sorry.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CS-LKG-V3-P025",
+      "title": "Forgiving",
+      "markdown": "pages/CS-LKG-V3-P025-forgiving.md",
+      "json": "pages/CS-LKG-V3-P025-forgiving.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CS-LKG-V3-P026",
+      "title": "Working Together",
+      "markdown": "pages/CS-LKG-V3-P026-working-together.md",
+      "json": "pages/CS-LKG-V3-P026-working-together.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CS-LKG-V3-P027",
+      "title": "Classroom Responsibility",
+      "markdown": "pages/CS-LKG-V3-P027-classroom-responsibility.md",
+      "json": "pages/CS-LKG-V3-P027-classroom-responsibility.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CS-LKG-V3-P028",
+      "title": "I Can Choose",
+      "markdown": "pages/CS-LKG-V3-P028-i-can-choose.md",
+      "json": "pages/CS-LKG-V3-P028-i-can-choose.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CS-LKG-V3-P029",
+      "title": "I Can Wait",
+      "markdown": "pages/CS-LKG-V3-P029-i-can-wait.md",
+      "json": "pages/CS-LKG-V3-P029-i-can-wait.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CS-LKG-V3-P030",
+      "title": "I Can Finish",
+      "markdown": "pages/CS-LKG-V3-P030-i-can-finish.md",
+      "json": "pages/CS-LKG-V3-P030-i-can-finish.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CS-LKG-V3-P031",
+      "title": "Safe and Unsafe Choices",
+      "markdown": "pages/CS-LKG-V3-P031-safe-and-unsafe-choices.md",
+      "json": "pages/CS-LKG-V3-P031-safe-and-unsafe-choices.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CS-LKG-V3-P032",
+      "title": "Trusted Adults",
+      "markdown": "pages/CS-LKG-V3-P032-trusted-adults.md",
+      "json": "pages/CS-LKG-V3-P032-trusted-adults.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CS-LKG-V3-P033",
+      "title": "Speaking Up",
+      "markdown": "pages/CS-LKG-V3-P033-speaking-up.md",
+      "json": "pages/CS-LKG-V3-P033-speaking-up.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CS-LKG-V3-P034",
+      "title": "Personal Space",
+      "markdown": "pages/CS-LKG-V3-P034-personal-space.md",
+      "json": "pages/CS-LKG-V3-P034-personal-space.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CS-LKG-V3-P035",
+      "title": "Helping Others",
+      "markdown": "pages/CS-LKG-V3-P035-helping-others.md",
+      "json": "pages/CS-LKG-V3-P035-helping-others.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CS-LKG-V3-P036",
+      "title": "Confidence Challenge",
+      "markdown": "pages/CS-LKG-V3-P036-confidence-challenge.md",
+      "json": "pages/CS-LKG-V3-P036-confidence-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CS-LKG-V3-P037",
+      "title": "Friendship Review",
+      "markdown": "pages/CS-LKG-V3-P037-friendship-review.md",
+      "json": "pages/CS-LKG-V3-P037-friendship-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CS-LKG-V3-P038",
+      "title": "My Social Skills",
+      "markdown": "pages/CS-LKG-V3-P038-my-social-skills.md",
+      "json": "pages/CS-LKG-V3-P038-my-social-skills.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CS-LKG-V3-P039",
+      "title": "My Confidence Portfolio",
+      "markdown": "pages/CS-LKG-V3-P039-my-confidence-portfolio.md",
+      "json": "pages/CS-LKG-V3-P039-my-confidence-portfolio.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CS-LKG-V3-P040",
+      "title": "Certificate",
+      "markdown": "pages/CS-LKG-V3-P040-certificate.md",
+      "json": "pages/CS-LKG-V3-P040-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CS-LKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/CS-LKG-V3-P041-back-cover.md",
+      "json": "pages/CS-LKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

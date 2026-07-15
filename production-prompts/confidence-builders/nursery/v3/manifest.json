@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Confidence Builders",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Confidence_Builders_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "dc23d43ae81499adf51b6558fc24b741388ed939a546b580127308087ed5b9fa"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CB-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/CB-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/CB-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CB-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/CB-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/CB-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CB-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CB-NURSERY-V3-P003-contents.md",
+      "json": "pages/CB-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CB-NURSERY-V3-P004",
+      "title": "Welcome to Confidence Builders",
+      "markdown": "pages/CB-NURSERY-V3-P004-welcome-to-confidence-builders.md",
+      "json": "pages/CB-NURSERY-V3-P004-welcome-to-confidence-builders.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CB-NURSERY-V3-P005",
+      "title": "Meet Brave Star",
+      "markdown": "pages/CB-NURSERY-V3-P005-meet-brave-star.md",
+      "json": "pages/CB-NURSERY-V3-P005-meet-brave-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CB-NURSERY-V3-P006",
+      "title": "I Am Special",
+      "markdown": "pages/CB-NURSERY-V3-P006-i-am-special.md",
+      "json": "pages/CB-NURSERY-V3-P006-i-am-special.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CB-NURSERY-V3-P007",
+      "title": "Things I Can Do",
+      "markdown": "pages/CB-NURSERY-V3-P007-things-i-can-do.md",
+      "json": "pages/CB-NURSERY-V3-P007-things-i-can-do.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CB-NURSERY-V3-P008",
+      "title": "My Happy Face",
+      "markdown": "pages/CB-NURSERY-V3-P008-my-happy-face.md",
+      "json": "pages/CB-NURSERY-V3-P008-my-happy-face.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CB-NURSERY-V3-P009",
+      "title": "My Feelings Change",
+      "markdown": "pages/CB-NURSERY-V3-P009-my-feelings-change.md",
+      "json": "pages/CB-NURSERY-V3-P009-my-feelings-change.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CB-NURSERY-V3-P010",
+      "title": "Things I Like",
+      "markdown": "pages/CB-NURSERY-V3-P010-things-i-like.md",
+      "json": "pages/CB-NURSERY-V3-P010-things-i-like.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CB-NURSERY-V3-P011",
+      "title": "My Strength Star",
+      "markdown": "pages/CB-NURSERY-V3-P011-my-strength-star.md",
+      "json": "pages/CB-NURSERY-V3-P011-my-strength-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CB-NURSERY-V3-P012",
+      "title": "My Proud Moment",
+      "markdown": "pages/CB-NURSERY-V3-P012-my-proud-moment.md",
+      "json": "pages/CB-NURSERY-V3-P012-my-proud-moment.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CB-NURSERY-V3-P013",
+      "title": "My Choice",
+      "markdown": "pages/CB-NURSERY-V3-P013-my-choice.md",
+      "json": "pages/CB-NURSERY-V3-P013-my-choice.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CB-NURSERY-V3-P014",
+      "title": "Try Something New",
+      "markdown": "pages/CB-NURSERY-V3-P014-try-something-new.md",
+      "json": "pages/CB-NURSERY-V3-P014-try-something-new.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CB-NURSERY-V3-P015",
+      "title": "I Can Ask for Help",
+      "markdown": "pages/CB-NURSERY-V3-P015-i-can-ask-for-help.md",
+      "json": "pages/CB-NURSERY-V3-P015-i-can-ask-for-help.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CB-NURSERY-V3-P016",
+      "title": "I Can Try Again",
+      "markdown": "pages/CB-NURSERY-V3-P016-i-can-try-again.md",
+      "json": "pages/CB-NURSERY-V3-P016-i-can-try-again.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CB-NURSERY-V3-P017",
+      "title": "Small Steps",
+      "markdown": "pages/CB-NURSERY-V3-P017-small-steps.md",
+      "json": "pages/CB-NURSERY-V3-P017-small-steps.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CB-NURSERY-V3-P018",
+      "title": "Brave at School",
+      "markdown": "pages/CB-NURSERY-V3-P018-brave-at-school.md",
+      "json": "pages/CB-NURSERY-V3-P018-brave-at-school.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CB-NURSERY-V3-P019",
+      "title": "Speak Up Kindly",
+      "markdown": "pages/CB-NURSERY-V3-P019-speak-up-kindly.md",
+      "json": "pages/CB-NURSERY-V3-P019-speak-up-kindly.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CB-NURSERY-V3-P020",
+      "title": "My Turn to Talk",
+      "markdown": "pages/CB-NURSERY-V3-P020-my-turn-to-talk.md",
+      "json": "pages/CB-NURSERY-V3-P020-my-turn-to-talk.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CB-NURSERY-V3-P021",
+      "title": "Show and Tell Confidence",
+      "markdown": "pages/CB-NURSERY-V3-P021-show-and-tell-confidence.md",
+      "json": "pages/CB-NURSERY-V3-P021-show-and-tell-confidence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CB-NURSERY-V3-P022",
+      "title": "Calm Down and Try",
+      "markdown": "pages/CB-NURSERY-V3-P022-calm-down-and-try.md",
+      "json": "pages/CB-NURSERY-V3-P022-calm-down-and-try.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CB-NURSERY-V3-P023",
+      "title": "Make a New Friend",
+      "markdown": "pages/CB-NURSERY-V3-P023-make-a-new-friend.md",
+      "json": "pages/CB-NURSERY-V3-P023-make-a-new-friend.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CB-NURSERY-V3-P024",
+      "title": "Join the Game",
+      "markdown": "pages/CB-NURSERY-V3-P024-join-the-game.md",
+      "json": "pages/CB-NURSERY-V3-P024-join-the-game.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CB-NURSERY-V3-P025",
+      "title": "Share and Take Turns",
+      "markdown": "pages/CB-NURSERY-V3-P025-share-and-take-turns.md",
+      "json": "pages/CB-NURSERY-V3-P025-share-and-take-turns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CB-NURSERY-V3-P026",
+      "title": "Please and Thank You",
+      "markdown": "pages/CB-NURSERY-V3-P026-please-and-thank-you.md",
+      "json": "pages/CB-NURSERY-V3-P026-please-and-thank-you.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CB-NURSERY-V3-P027",
+      "title": "Solve a Little Problem",
+      "markdown": "pages/CB-NURSERY-V3-P027-solve-a-little-problem.md",
+      "json": "pages/CB-NURSERY-V3-P027-solve-a-little-problem.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CB-NURSERY-V3-P028",
+      "title": "I Can Say No Safely",
+      "markdown": "pages/CB-NURSERY-V3-P028-i-can-say-no-safely.md",
+      "json": "pages/CB-NURSERY-V3-P028-i-can-say-no-safely.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CB-NURSERY-V3-P029",
+      "title": "Help a Friend",
+      "markdown": "pages/CB-NURSERY-V3-P029-help-a-friend.md",
+      "json": "pages/CB-NURSERY-V3-P029-help-a-friend.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CB-NURSERY-V3-P030",
+      "title": "Teamwork Time",
+      "markdown": "pages/CB-NURSERY-V3-P030-teamwork-time.md",
+      "json": "pages/CB-NURSERY-V3-P030-teamwork-time.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CB-NURSERY-V3-P031",
+      "title": "Celebrate Others",
+      "markdown": "pages/CB-NURSERY-V3-P031-celebrate-others.md",
+      "json": "pages/CB-NURSERY-V3-P031-celebrate-others.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CB-NURSERY-V3-P032",
+      "title": "Dress Myself",
+      "markdown": "pages/CB-NURSERY-V3-P032-dress-myself.md",
+      "json": "pages/CB-NURSERY-V3-P032-dress-myself.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CB-NURSERY-V3-P033",
+      "title": "Pack My Bag",
+      "markdown": "pages/CB-NURSERY-V3-P033-pack-my-bag.md",
+      "json": "pages/CB-NURSERY-V3-P033-pack-my-bag.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CB-NURSERY-V3-P034",
+      "title": "Tidy Up",
+      "markdown": "pages/CB-NURSERY-V3-P034-tidy-up.md",
+      "json": "pages/CB-NURSERY-V3-P034-tidy-up.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CB-NURSERY-V3-P035",
+      "title": "Choose and Finish",
+      "markdown": "pages/CB-NURSERY-V3-P035-choose-and-finish.md",
+      "json": "pages/CB-NURSERY-V3-P035-choose-and-finish.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CB-NURSERY-V3-P036",
+      "title": "Help at Home",
+      "markdown": "pages/CB-NURSERY-V3-P036-help-at-home.md",
+      "json": "pages/CB-NURSERY-V3-P036-help-at-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CB-NURSERY-V3-P037",
+      "title": "Follow a Routine",
+      "markdown": "pages/CB-NURSERY-V3-P037-follow-a-routine.md",
+      "json": "pages/CB-NURSERY-V3-P037-follow-a-routine.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CB-NURSERY-V3-P038",
+      "title": "My Responsibility Chart",
+      "markdown": "pages/CB-NURSERY-V3-P038-my-responsibility-chart.md",
+      "json": "pages/CB-NURSERY-V3-P038-my-responsibility-chart.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CB-NURSERY-V3-P039",
+      "title": "My Confidence Journal",
+      "markdown": "pages/CB-NURSERY-V3-P039-my-confidence-journal.md",
+      "json": "pages/CB-NURSERY-V3-P039-my-confidence-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CB-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/CB-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/CB-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CB-NURSERY-V3-P041",
+      "title": "I Am a Confidence Champion!",
+      "markdown": "pages/CB-NURSERY-V3-P041-i-am-a-confidence-champion.md",
+      "json": "pages/CB-NURSERY-V3-P041-i-am-a-confidence-champion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "My World & General Awareness",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "My_World_and_General_Awareness_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "f2d6ea6217fcb48fde25e971a3b1dc968fa79103d4abcb099630e1ded2d2cb48"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "MW-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/MW-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/MW-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "MW-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/MW-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/MW-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "MW-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/MW-NURSERY-V3-P003-contents.md",
+      "json": "pages/MW-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "MW-NURSERY-V3-P004",
+      "title": "Welcome to My World",
+      "markdown": "pages/MW-NURSERY-V3-P004-welcome-to-my-world.md",
+      "json": "pages/MW-NURSERY-V3-P004-welcome-to-my-world.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "MW-NURSERY-V3-P005",
+      "title": "Meet World Star",
+      "markdown": "pages/MW-NURSERY-V3-P005-meet-world-star.md",
+      "json": "pages/MW-NURSERY-V3-P005-meet-world-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "MW-NURSERY-V3-P006",
+      "title": "My Body",
+      "markdown": "pages/MW-NURSERY-V3-P006-my-body.md",
+      "json": "pages/MW-NURSERY-V3-P006-my-body.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "MW-NURSERY-V3-P007",
+      "title": "My Five Senses",
+      "markdown": "pages/MW-NURSERY-V3-P007-my-five-senses.md",
+      "json": "pages/MW-NURSERY-V3-P007-my-five-senses.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "MW-NURSERY-V3-P008",
+      "title": "Healthy Me",
+      "markdown": "pages/MW-NURSERY-V3-P008-healthy-me.md",
+      "json": "pages/MW-NURSERY-V3-P008-healthy-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "MW-NURSERY-V3-P009",
+      "title": "My Family",
+      "markdown": "pages/MW-NURSERY-V3-P009-my-family.md",
+      "json": "pages/MW-NURSERY-V3-P009-my-family.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "MW-NURSERY-V3-P010",
+      "title": "My Home",
+      "markdown": "pages/MW-NURSERY-V3-P010-my-home.md",
+      "json": "pages/MW-NURSERY-V3-P010-my-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "MW-NURSERY-V3-P011",
+      "title": "My School",
+      "markdown": "pages/MW-NURSERY-V3-P011-my-school.md",
+      "json": "pages/MW-NURSERY-V3-P011-my-school.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "MW-NURSERY-V3-P012",
+      "title": "My Classroom",
+      "markdown": "pages/MW-NURSERY-V3-P012-my-classroom.md",
+      "json": "pages/MW-NURSERY-V3-P012-my-classroom.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "MW-NURSERY-V3-P013",
+      "title": "My Neighbourhood",
+      "markdown": "pages/MW-NURSERY-V3-P013-my-neighbourhood.md",
+      "json": "pages/MW-NURSERY-V3-P013-my-neighbourhood.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "MW-NURSERY-V3-P014",
+      "title": "People Who Help Us",
+      "markdown": "pages/MW-NURSERY-V3-P014-people-who-help-us.md",
+      "json": "pages/MW-NURSERY-V3-P014-people-who-help-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "MW-NURSERY-V3-P015",
+      "title": "Doctor and Nurse",
+      "markdown": "pages/MW-NURSERY-V3-P015-doctor-and-nurse.md",
+      "json": "pages/MW-NURSERY-V3-P015-doctor-and-nurse.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "MW-NURSERY-V3-P016",
+      "title": "Farmer and Food",
+      "markdown": "pages/MW-NURSERY-V3-P016-farmer-and-food.md",
+      "json": "pages/MW-NURSERY-V3-P016-farmer-and-food.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "MW-NURSERY-V3-P017",
+      "title": "Police Officer and Firefighter",
+      "markdown": "pages/MW-NURSERY-V3-P017-police-officer-and-firefighter.md",
+      "json": "pages/MW-NURSERY-V3-P017-police-officer-and-firefighter.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "MW-NURSERY-V3-P018",
+      "title": "Post and Delivery",
+      "markdown": "pages/MW-NURSERY-V3-P018-post-and-delivery.md",
+      "json": "pages/MW-NURSERY-V3-P018-post-and-delivery.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "MW-NURSERY-V3-P019",
+      "title": "At the Market",
+      "markdown": "pages/MW-NURSERY-V3-P019-at-the-market.md",
+      "json": "pages/MW-NURSERY-V3-P019-at-the-market.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "MW-NURSERY-V3-P020",
+      "title": "Places Around Me",
+      "markdown": "pages/MW-NURSERY-V3-P020-places-around-me.md",
+      "json": "pages/MW-NURSERY-V3-P020-places-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "MW-NURSERY-V3-P021",
+      "title": "Road Safety",
+      "markdown": "pages/MW-NURSERY-V3-P021-road-safety.md",
+      "json": "pages/MW-NURSERY-V3-P021-road-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "MW-NURSERY-V3-P022",
+      "title": "Animals Around Us",
+      "markdown": "pages/MW-NURSERY-V3-P022-animals-around-us.md",
+      "json": "pages/MW-NURSERY-V3-P022-animals-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "MW-NURSERY-V3-P023",
+      "title": "Farm Animals",
+      "markdown": "pages/MW-NURSERY-V3-P023-farm-animals.md",
+      "json": "pages/MW-NURSERY-V3-P023-farm-animals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "MW-NURSERY-V3-P024",
+      "title": "Wild Animals",
+      "markdown": "pages/MW-NURSERY-V3-P024-wild-animals.md",
+      "json": "pages/MW-NURSERY-V3-P024-wild-animals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "MW-NURSERY-V3-P025",
+      "title": "Birds and Insects",
+      "markdown": "pages/MW-NURSERY-V3-P025-birds-and-insects.md",
+      "json": "pages/MW-NURSERY-V3-P025-birds-and-insects.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "MW-NURSERY-V3-P026",
+      "title": "Animal Homes",
+      "markdown": "pages/MW-NURSERY-V3-P026-animal-homes.md",
+      "json": "pages/MW-NURSERY-V3-P026-animal-homes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "MW-NURSERY-V3-P027",
+      "title": "Plants Around Us",
+      "markdown": "pages/MW-NURSERY-V3-P027-plants-around-us.md",
+      "json": "pages/MW-NURSERY-V3-P027-plants-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "MW-NURSERY-V3-P028",
+      "title": "Fruits and Vegetables",
+      "markdown": "pages/MW-NURSERY-V3-P028-fruits-and-vegetables.md",
+      "json": "pages/MW-NURSERY-V3-P028-fruits-and-vegetables.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "MW-NURSERY-V3-P029",
+      "title": "Weather Around Us",
+      "markdown": "pages/MW-NURSERY-V3-P029-weather-around-us.md",
+      "json": "pages/MW-NURSERY-V3-P029-weather-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "MW-NURSERY-V3-P030",
+      "title": "My Country India",
+      "markdown": "pages/MW-NURSERY-V3-P030-my-country-india.md",
+      "json": "pages/MW-NURSERY-V3-P030-my-country-india.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "MW-NURSERY-V3-P031",
+      "title": "The Indian Flag",
+      "markdown": "pages/MW-NURSERY-V3-P031-the-indian-flag.md",
+      "json": "pages/MW-NURSERY-V3-P031-the-indian-flag.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "MW-NURSERY-V3-P032",
+      "title": "National Symbols",
+      "markdown": "pages/MW-NURSERY-V3-P032-national-symbols.md",
+      "json": "pages/MW-NURSERY-V3-P032-national-symbols.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "MW-NURSERY-V3-P033",
+      "title": "Festivals and Celebrations",
+      "markdown": "pages/MW-NURSERY-V3-P033-festivals-and-celebrations.md",
+      "json": "pages/MW-NURSERY-V3-P033-festivals-and-celebrations.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "MW-NURSERY-V3-P034",
+      "title": "Clothes and Food Around India",
+      "markdown": "pages/MW-NURSERY-V3-P034-clothes-and-food-around-india.md",
+      "json": "pages/MW-NURSERY-V3-P034-clothes-and-food-around-india.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "MW-NURSERY-V3-P035",
+      "title": "Transport Around Us",
+      "markdown": "pages/MW-NURSERY-V3-P035-transport-around-us.md",
+      "json": "pages/MW-NURSERY-V3-P035-transport-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "MW-NURSERY-V3-P036",
+      "title": "Earth Is Our Home",
+      "markdown": "pages/MW-NURSERY-V3-P036-earth-is-our-home.md",
+      "json": "pages/MW-NURSERY-V3-P036-earth-is-our-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "MW-NURSERY-V3-P037",
+      "title": "Day and Night",
+      "markdown": "pages/MW-NURSERY-V3-P037-day-and-night.md",
+      "json": "pages/MW-NURSERY-V3-P037-day-and-night.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "MW-NURSERY-V3-P038",
+      "title": "Keep My World Clean",
+      "markdown": "pages/MW-NURSERY-V3-P038-keep-my-world-clean.md",
+      "json": "pages/MW-NURSERY-V3-P038-keep-my-world-clean.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "MW-NURSERY-V3-P039",
+      "title": "My World Journal",
+      "markdown": "pages/MW-NURSERY-V3-P039-my-world-journal.md",
+      "json": "pages/MW-NURSERY-V3-P039-my-world-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "MW-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/MW-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/MW-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "MW-NURSERY-V3-P041",
+      "title": "I Am a World Explorer!",
+      "markdown": "pages/MW-NURSERY-V3-P041-i-am-a-world-explorer.md",
+      "json": "pages/MW-NURSERY-V3-P041-i-am-a-world-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

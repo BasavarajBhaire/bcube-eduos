@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Healthy Habits & Safety",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Healthy_Habits_Safety_LKG_Gold_Complete_Final.xlsx",
+    "sha256": "fa0ca20db62334af61ad804a06fd35faa906a72301a64bb474a75e00bd94f63a"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "HH-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/HH-LKG-V3-P001-cover.md",
+      "json": "pages/HH-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "HH-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/HH-LKG-V3-P002-copyright.md",
+      "json": "pages/HH-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "HH-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/HH-LKG-V3-P003-contents.md",
+      "json": "pages/HH-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "HH-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/HH-LKG-V3-P004-welcome.md",
+      "json": "pages/HH-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "HH-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/HH-LKG-V3-P005-meet-star.md",
+      "json": "pages/HH-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "HH-LKG-V3-P006",
+      "title": "Healthy Body",
+      "markdown": "pages/HH-LKG-V3-P006-healthy-body.md",
+      "json": "pages/HH-LKG-V3-P006-healthy-body.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "HH-LKG-V3-P007",
+      "title": "My Five Senses",
+      "markdown": "pages/HH-LKG-V3-P007-my-five-senses.md",
+      "json": "pages/HH-LKG-V3-P007-my-five-senses.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "HH-LKG-V3-P008",
+      "title": "Brush My Teeth",
+      "markdown": "pages/HH-LKG-V3-P008-brush-my-teeth.md",
+      "json": "pages/HH-LKG-V3-P008-brush-my-teeth.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "HH-LKG-V3-P009",
+      "title": "Wash My Hands",
+      "markdown": "pages/HH-LKG-V3-P009-wash-my-hands.md",
+      "json": "pages/HH-LKG-V3-P009-wash-my-hands.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "HH-LKG-V3-P010",
+      "title": "Bath Time",
+      "markdown": "pages/HH-LKG-V3-P010-bath-time.md",
+      "json": "pages/HH-LKG-V3-P010-bath-time.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "HH-LKG-V3-P011",
+      "title": "Healthy Food",
+      "markdown": "pages/HH-LKG-V3-P011-healthy-food.md",
+      "json": "pages/HH-LKG-V3-P011-healthy-food.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "HH-LKG-V3-P012",
+      "title": "Drink Water",
+      "markdown": "pages/HH-LKG-V3-P012-drink-water.md",
+      "json": "pages/HH-LKG-V3-P012-drink-water.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "HH-LKG-V3-P013",
+      "title": "Exercise Every Day",
+      "markdown": "pages/HH-LKG-V3-P013-exercise-every-day.md",
+      "json": "pages/HH-LKG-V3-P013-exercise-every-day.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "HH-LKG-V3-P014",
+      "title": "Good Sleep",
+      "markdown": "pages/HH-LKG-V3-P014-good-sleep.md",
+      "json": "pages/HH-LKG-V3-P014-good-sleep.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "HH-LKG-V3-P015",
+      "title": "Clean Clothes",
+      "markdown": "pages/HH-LKG-V3-P015-clean-clothes.md",
+      "json": "pages/HH-LKG-V3-P015-clean-clothes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "HH-LKG-V3-P016",
+      "title": "Visit the Doctor",
+      "markdown": "pages/HH-LKG-V3-P016-visit-the-doctor.md",
+      "json": "pages/HH-LKG-V3-P016-visit-the-doctor.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "HH-LKG-V3-P017",
+      "title": "Healthy Habits Review",
+      "markdown": "pages/HH-LKG-V3-P017-healthy-habits-review.md",
+      "json": "pages/HH-LKG-V3-P017-healthy-habits-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "HH-LKG-V3-P018",
+      "title": "Safe at Home",
+      "markdown": "pages/HH-LKG-V3-P018-safe-at-home.md",
+      "json": "pages/HH-LKG-V3-P018-safe-at-home.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "HH-LKG-V3-P019",
+      "title": "Kitchen Safety",
+      "markdown": "pages/HH-LKG-V3-P019-kitchen-safety.md",
+      "json": "pages/HH-LKG-V3-P019-kitchen-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "HH-LKG-V3-P020",
+      "title": "Bathroom Safety",
+      "markdown": "pages/HH-LKG-V3-P020-bathroom-safety.md",
+      "json": "pages/HH-LKG-V3-P020-bathroom-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "HH-LKG-V3-P021",
+      "title": "Road Safety",
+      "markdown": "pages/HH-LKG-V3-P021-road-safety.md",
+      "json": "pages/HH-LKG-V3-P021-road-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "HH-LKG-V3-P022",
+      "title": "Stranger Safety",
+      "markdown": "pages/HH-LKG-V3-P022-stranger-safety.md",
+      "json": "pages/HH-LKG-V3-P022-stranger-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "HH-LKG-V3-P023",
+      "title": "Good Touch Safe Touch",
+      "markdown": "pages/HH-LKG-V3-P023-good-touch-safe-touch.md",
+      "json": "pages/HH-LKG-V3-P023-good-touch-safe-touch.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "HH-LKG-V3-P024",
+      "title": "Fire Safety",
+      "markdown": "pages/HH-LKG-V3-P024-fire-safety.md",
+      "json": "pages/HH-LKG-V3-P024-fire-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "HH-LKG-V3-P025",
+      "title": "Emergency Helpers",
+      "markdown": "pages/HH-LKG-V3-P025-emergency-helpers.md",
+      "json": "pages/HH-LKG-V3-P025-emergency-helpers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "HH-LKG-V3-P026",
+      "title": "Playground Safety",
+      "markdown": "pages/HH-LKG-V3-P026-playground-safety.md",
+      "json": "pages/HH-LKG-V3-P026-playground-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "HH-LKG-V3-P027",
+      "title": "Internet Basics",
+      "markdown": "pages/HH-LKG-V3-P027-internet-basics.md",
+      "json": "pages/HH-LKG-V3-P027-internet-basics.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "HH-LKG-V3-P028",
+      "title": "Healthy Emotions",
+      "markdown": "pages/HH-LKG-V3-P028-healthy-emotions.md",
+      "json": "pages/HH-LKG-V3-P028-healthy-emotions.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "HH-LKG-V3-P029",
+      "title": "Kindness",
+      "markdown": "pages/HH-LKG-V3-P029-kindness.md",
+      "json": "pages/HH-LKG-V3-P029-kindness.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "HH-LKG-V3-P030",
+      "title": "Sharing & Caring",
+      "markdown": "pages/HH-LKG-V3-P030-sharing-caring.md",
+      "json": "pages/HH-LKG-V3-P030-sharing-caring.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "HH-LKG-V3-P031",
+      "title": "My Daily Routine",
+      "markdown": "pages/HH-LKG-V3-P031-my-daily-routine.md",
+      "json": "pages/HH-LKG-V3-P031-my-daily-routine.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "HH-LKG-V3-P032",
+      "title": "Keep My Environment Clean",
+      "markdown": "pages/HH-LKG-V3-P032-keep-my-environment-clean.md",
+      "json": "pages/HH-LKG-V3-P032-keep-my-environment-clean.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "HH-LKG-V3-P033",
+      "title": "Reduce Germs",
+      "markdown": "pages/HH-LKG-V3-P033-reduce-germs.md",
+      "json": "pages/HH-LKG-V3-P033-reduce-germs.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "HH-LKG-V3-P034",
+      "title": "Healthy Choices",
+      "markdown": "pages/HH-LKG-V3-P034-healthy-choices.md",
+      "json": "pages/HH-LKG-V3-P034-healthy-choices.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "HH-LKG-V3-P035",
+      "title": "Safety Review",
+      "markdown": "pages/HH-LKG-V3-P035-safety-review.md",
+      "json": "pages/HH-LKG-V3-P035-safety-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "HH-LKG-V3-P036",
+      "title": "My Health Journal",
+      "markdown": "pages/HH-LKG-V3-P036-my-health-journal.md",
+      "json": "pages/HH-LKG-V3-P036-my-health-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "HH-LKG-V3-P037",
+      "title": "My Healthy Promise",
+      "markdown": "pages/HH-LKG-V3-P037-my-healthy-promise.md",
+      "json": "pages/HH-LKG-V3-P037-my-healthy-promise.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "HH-LKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/HH-LKG-V3-P038-celebration.md",
+      "json": "pages/HH-LKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "HH-LKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/HH-LKG-V3-P039-certificate.md",
+      "json": "pages/HH-LKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "HH-LKG-V3-P040",
+      "title": "I Stay Healthy & Safe",
+      "markdown": "pages/HH-LKG-V3-P040-i-stay-healthy-safe.md",
+      "json": "pages/HH-LKG-V3-P040-i-stay-healthy-safe.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "HH-LKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/HH-LKG-V3-P041-back-cover.md",
+      "json": "pages/HH-LKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

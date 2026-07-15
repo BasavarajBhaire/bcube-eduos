@@ -1,0 +1,72 @@
+{
+  "level": "Nursery",
+  "version": "3.0.0",
+  "books": 10,
+  "pages": 410,
+  "prompts": 410,
+  "checks_passed": 5740,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "releases": [
+    {
+      "book": "Communication Champions",
+      "path": "../communication-champions/nursery/v3",
+      "source": "Communication_Champions_Gold_Individually_Rebuilt.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Curiosity Explorers",
+      "path": "../curiosity-explorers/nursery/v3",
+      "source": "Curiosity_Explorers_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Fine Motor Fun",
+      "path": "../fine-motor-fun/nursery/v3",
+      "source": "Fine_Motor_Fun_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Creativity Challenges",
+      "path": "../creativity-challenges/nursery/v3",
+      "source": "Creativity_Challenges_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Confidence Builders",
+      "path": "../confidence-builders/nursery/v3",
+      "source": "Confidence_Builders_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "STEM Explorers",
+      "path": "../stem-explorers/nursery/v3",
+      "source": "STEM_Explorers_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "My World & General Awareness",
+      "path": "../my-world-general-awareness/nursery/v3",
+      "source": "My_World_and_General_Awareness_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Logical Thinking Adventures",
+      "path": "../logical-thinking-adventures/nursery/v3",
+      "source": "Logical_Thinking_Adventures_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Healthy Habits & Safety",
+      "path": "../healthy-habits-safety/nursery/v3",
+      "source": "Healthy_Habits_and_Safety_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    },
+    {
+      "book": "Art & Colour Fun",
+      "path": "../art-colour-fun/nursery/v3",
+      "source": "Art_and_Colour_Fun_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+      "status": "Gold Certified"
+    }
+  ]
+}

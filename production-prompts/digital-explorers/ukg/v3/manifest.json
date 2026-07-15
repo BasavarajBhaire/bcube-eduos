@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Digital Explorers",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Digital_Explorers_UKG_Gold_Production_Final.xlsx",
+    "sha256": "784e79002ae5e5a8689ef82dc10fbd56f87ec8525c7f9e3427f7ffa0e45339d2"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "DE-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/DE-UKG-V3-P001-cover.md",
+      "json": "pages/DE-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "DE-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/DE-UKG-V3-P002-copyright.md",
+      "json": "pages/DE-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "DE-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/DE-UKG-V3-P003-contents.md",
+      "json": "pages/DE-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "DE-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/DE-UKG-V3-P004-welcome.md",
+      "json": "pages/DE-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "DE-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/DE-UKG-V3-P005-meet-star.md",
+      "json": "pages/DE-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "DE-UKG-V3-P006",
+      "title": "My Digital World",
+      "markdown": "pages/DE-UKG-V3-P006-my-digital-world.md",
+      "json": "pages/DE-UKG-V3-P006-my-digital-world.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "DE-UKG-V3-P007",
+      "title": "Know My Devices",
+      "markdown": "pages/DE-UKG-V3-P007-know-my-devices.md",
+      "json": "pages/DE-UKG-V3-P007-know-my-devices.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "DE-UKG-V3-P008",
+      "title": "Technology Around Me",
+      "markdown": "pages/DE-UKG-V3-P008-technology-around-me.md",
+      "json": "pages/DE-UKG-V3-P008-technology-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "DE-UKG-V3-P009",
+      "title": "Computer Parts",
+      "markdown": "pages/DE-UKG-V3-P009-computer-parts.md",
+      "json": "pages/DE-UKG-V3-P009-computer-parts.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "DE-UKG-V3-P010",
+      "title": "Using a Mouse",
+      "markdown": "pages/DE-UKG-V3-P010-using-a-mouse.md",
+      "json": "pages/DE-UKG-V3-P010-using-a-mouse.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "DE-UKG-V3-P011",
+      "title": "Keyboard Fun",
+      "markdown": "pages/DE-UKG-V3-P011-keyboard-fun.md",
+      "json": "pages/DE-UKG-V3-P011-keyboard-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "DE-UKG-V3-P012",
+      "title": "Touchscreen Skills",
+      "markdown": "pages/DE-UKG-V3-P012-touchscreen-skills.md",
+      "json": "pages/DE-UKG-V3-P012-touchscreen-skills.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "DE-UKG-V3-P013",
+      "title": "Digital Safety",
+      "markdown": "pages/DE-UKG-V3-P013-digital-safety.md",
+      "json": "pages/DE-UKG-V3-P013-digital-safety.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "DE-UKG-V3-P014",
+      "title": "Kind Online",
+      "markdown": "pages/DE-UKG-V3-P014-kind-online.md",
+      "json": "pages/DE-UKG-V3-P014-kind-online.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "DE-UKG-V3-P015",
+      "title": "Follow the Steps",
+      "markdown": "pages/DE-UKG-V3-P015-follow-the-steps.md",
+      "json": "pages/DE-UKG-V3-P015-follow-the-steps.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "DE-UKG-V3-P016",
+      "title": "Picture Coding",
+      "markdown": "pages/DE-UKG-V3-P016-picture-coding.md",
+      "json": "pages/DE-UKG-V3-P016-picture-coding.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "DE-UKG-V3-P017",
+      "title": "Arrow Coding",
+      "markdown": "pages/DE-UKG-V3-P017-arrow-coding.md",
+      "json": "pages/DE-UKG-V3-P017-arrow-coding.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "DE-UKG-V3-P018",
+      "title": "Find the Pattern",
+      "markdown": "pages/DE-UKG-V3-P018-find-the-pattern.md",
+      "json": "pages/DE-UKG-V3-P018-find-the-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "DE-UKG-V3-P019",
+      "title": "Robot Path",
+      "markdown": "pages/DE-UKG-V3-P019-robot-path.md",
+      "json": "pages/DE-UKG-V3-P019-robot-path.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "DE-UKG-V3-P020",
+      "title": "Debug the Route",
+      "markdown": "pages/DE-UKG-V3-P020-debug-the-route.md",
+      "json": "pages/DE-UKG-V3-P020-debug-the-route.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "DE-UKG-V3-P021",
+      "title": "Sequencing",
+      "markdown": "pages/DE-UKG-V3-P021-sequencing.md",
+      "json": "pages/DE-UKG-V3-P021-sequencing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "DE-UKG-V3-P022",
+      "title": "Solve with Technology",
+      "markdown": "pages/DE-UKG-V3-P022-solve-with-technology.md",
+      "json": "pages/DE-UKG-V3-P022-solve-with-technology.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "DE-UKG-V3-P023",
+      "title": "Digital Art",
+      "markdown": "pages/DE-UKG-V3-P023-digital-art.md",
+      "json": "pages/DE-UKG-V3-P023-digital-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "DE-UKG-V3-P024",
+      "title": "Record My Voice",
+      "markdown": "pages/DE-UKG-V3-P024-record-my-voice.md",
+      "json": "pages/DE-UKG-V3-P024-record-my-voice.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "DE-UKG-V3-P025",
+      "title": "Take a Photo",
+      "markdown": "pages/DE-UKG-V3-P025-take-a-photo.md",
+      "json": "pages/DE-UKG-V3-P025-take-a-photo.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "DE-UKG-V3-P026",
+      "title": "Create a Story",
+      "markdown": "pages/DE-UKG-V3-P026-create-a-story.md",
+      "json": "pages/DE-UKG-V3-P026-create-a-story.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "DE-UKG-V3-P027",
+      "title": "Think Like a Coder",
+      "markdown": "pages/DE-UKG-V3-P027-think-like-a-coder.md",
+      "json": "pages/DE-UKG-V3-P027-think-like-a-coder.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "DE-UKG-V3-P028",
+      "title": "Technology Helpers",
+      "markdown": "pages/DE-UKG-V3-P028-technology-helpers.md",
+      "json": "pages/DE-UKG-V3-P028-technology-helpers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "DE-UKG-V3-P029",
+      "title": "Digital Challenge",
+      "markdown": "pages/DE-UKG-V3-P029-digital-challenge.md",
+      "json": "pages/DE-UKG-V3-P029-digital-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "DE-UKG-V3-P030",
+      "title": "Innovation Time",
+      "markdown": "pages/DE-UKG-V3-P030-innovation-time.md",
+      "json": "pages/DE-UKG-V3-P030-innovation-time.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "DE-UKG-V3-P031",
+      "title": "Digital Review",
+      "markdown": "pages/DE-UKG-V3-P031-digital-review.md",
+      "json": "pages/DE-UKG-V3-P031-digital-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "DE-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/DE-UKG-V3-P032-mini-project.md",
+      "json": "pages/DE-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "DE-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/DE-UKG-V3-P033-reflection.md",
+      "json": "pages/DE-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "DE-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/DE-UKG-V3-P034-showcase.md",
+      "json": "pages/DE-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "DE-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/DE-UKG-V3-P035-grand-review.md",
+      "json": "pages/DE-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "DE-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/DE-UKG-V3-P036-my-achievement.md",
+      "json": "pages/DE-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "DE-UKG-V3-P037",
+      "title": "My Digital Goals",
+      "markdown": "pages/DE-UKG-V3-P037-my-digital-goals.md",
+      "json": "pages/DE-UKG-V3-P037-my-digital-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "DE-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/DE-UKG-V3-P038-celebration.md",
+      "json": "pages/DE-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "DE-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/DE-UKG-V3-P039-certificate.md",
+      "json": "pages/DE-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "DE-UKG-V3-P040",
+      "title": "I Am a Digital Explorer",
+      "markdown": "pages/DE-UKG-V3-P040-i-am-a-digital-explorer.md",
+      "json": "pages/DE-UKG-V3-P040-i-am-a-digital-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "DE-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/DE-UKG-V3-P041-back-cover.md",
+      "json": "pages/DE-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

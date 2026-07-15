@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Maths Explorers",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Maths_Explorers_UKG_Gold_Production_v4.xlsx",
+    "sha256": "8dd85d047bd998fd311124ad0c46bf3199665ba358e371b17e2b20aedefb0b2b"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "ME-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/ME-UKG-V3-P001-cover.md",
+      "json": "pages/ME-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "ME-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/ME-UKG-V3-P002-copyright.md",
+      "json": "pages/ME-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "ME-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/ME-UKG-V3-P003-contents.md",
+      "json": "pages/ME-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "ME-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/ME-UKG-V3-P004-welcome.md",
+      "json": "pages/ME-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "ME-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/ME-UKG-V3-P005-meet-star.md",
+      "json": "pages/ME-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "ME-UKG-V3-P006",
+      "title": "Numbers to 100",
+      "markdown": "pages/ME-UKG-V3-P006-numbers-to-100.md",
+      "json": "pages/ME-UKG-V3-P006-numbers-to-100.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "ME-UKG-V3-P007",
+      "title": "Count Forward & Backward",
+      "markdown": "pages/ME-UKG-V3-P007-count-forward-backward.md",
+      "json": "pages/ME-UKG-V3-P007-count-forward-backward.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "ME-UKG-V3-P008",
+      "title": "Place Value",
+      "markdown": "pages/ME-UKG-V3-P008-place-value.md",
+      "json": "pages/ME-UKG-V3-P008-place-value.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "ME-UKG-V3-P009",
+      "title": "Compare Numbers",
+      "markdown": "pages/ME-UKG-V3-P009-compare-numbers.md",
+      "json": "pages/ME-UKG-V3-P009-compare-numbers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "ME-UKG-V3-P010",
+      "title": "Number Patterns",
+      "markdown": "pages/ME-UKG-V3-P010-number-patterns.md",
+      "json": "pages/ME-UKG-V3-P010-number-patterns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "ME-UKG-V3-P011",
+      "title": "Addition Stories",
+      "markdown": "pages/ME-UKG-V3-P011-addition-stories.md",
+      "json": "pages/ME-UKG-V3-P011-addition-stories.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "ME-UKG-V3-P012",
+      "title": "Subtraction Stories",
+      "markdown": "pages/ME-UKG-V3-P012-subtraction-stories.md",
+      "json": "pages/ME-UKG-V3-P012-subtraction-stories.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "ME-UKG-V3-P013",
+      "title": "Make 10",
+      "markdown": "pages/ME-UKG-V3-P013-make-10.md",
+      "json": "pages/ME-UKG-V3-P013-make-10.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "ME-UKG-V3-P014",
+      "title": "Number Bonds",
+      "markdown": "pages/ME-UKG-V3-P014-number-bonds.md",
+      "json": "pages/ME-UKG-V3-P014-number-bonds.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "ME-UKG-V3-P015",
+      "title": "Missing Numbers",
+      "markdown": "pages/ME-UKG-V3-P015-missing-numbers.md",
+      "json": "pages/ME-UKG-V3-P015-missing-numbers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "ME-UKG-V3-P016",
+      "title": "Shapes Around Us",
+      "markdown": "pages/ME-UKG-V3-P016-shapes-around-us.md",
+      "json": "pages/ME-UKG-V3-P016-shapes-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "ME-UKG-V3-P017",
+      "title": "2D & 3D Shapes",
+      "markdown": "pages/ME-UKG-V3-P017-2d-3d-shapes.md",
+      "json": "pages/ME-UKG-V3-P017-2d-3d-shapes.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "ME-UKG-V3-P018",
+      "title": "Measure Length",
+      "markdown": "pages/ME-UKG-V3-P018-measure-length.md",
+      "json": "pages/ME-UKG-V3-P018-measure-length.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "ME-UKG-V3-P019",
+      "title": "Weight & Capacity",
+      "markdown": "pages/ME-UKG-V3-P019-weight-capacity.md",
+      "json": "pages/ME-UKG-V3-P019-weight-capacity.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "ME-UKG-V3-P020",
+      "title": "Time on the Clock",
+      "markdown": "pages/ME-UKG-V3-P020-time-on-the-clock.md",
+      "json": "pages/ME-UKG-V3-P020-time-on-the-clock.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "ME-UKG-V3-P021",
+      "title": "Days & Months",
+      "markdown": "pages/ME-UKG-V3-P021-days-months.md",
+      "json": "pages/ME-UKG-V3-P021-days-months.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "ME-UKG-V3-P022",
+      "title": "Money Fun",
+      "markdown": "pages/ME-UKG-V3-P022-money-fun.md",
+      "json": "pages/ME-UKG-V3-P022-money-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "ME-UKG-V3-P023",
+      "title": "Simple Graphs",
+      "markdown": "pages/ME-UKG-V3-P023-simple-graphs.md",
+      "json": "pages/ME-UKG-V3-P023-simple-graphs.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "ME-UKG-V3-P024",
+      "title": "Sorting & Classifying",
+      "markdown": "pages/ME-UKG-V3-P024-sorting-classifying.md",
+      "json": "pages/ME-UKG-V3-P024-sorting-classifying.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "ME-UKG-V3-P025",
+      "title": "Ordinal Numbers",
+      "markdown": "pages/ME-UKG-V3-P025-ordinal-numbers.md",
+      "json": "pages/ME-UKG-V3-P025-ordinal-numbers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "ME-UKG-V3-P026",
+      "title": "Skip Counting",
+      "markdown": "pages/ME-UKG-V3-P026-skip-counting.md",
+      "json": "pages/ME-UKG-V3-P026-skip-counting.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "ME-UKG-V3-P027",
+      "title": "Word Problems",
+      "markdown": "pages/ME-UKG-V3-P027-word-problems.md",
+      "json": "pages/ME-UKG-V3-P027-word-problems.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "ME-UKG-V3-P028",
+      "title": "Maths in Daily Life",
+      "markdown": "pages/ME-UKG-V3-P028-maths-in-daily-life.md",
+      "json": "pages/ME-UKG-V3-P028-maths-in-daily-life.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "ME-UKG-V3-P029",
+      "title": "Logic Challenge",
+      "markdown": "pages/ME-UKG-V3-P029-logic-challenge.md",
+      "json": "pages/ME-UKG-V3-P029-logic-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "ME-UKG-V3-P030",
+      "title": "Math Games",
+      "markdown": "pages/ME-UKG-V3-P030-math-games.md",
+      "json": "pages/ME-UKG-V3-P030-math-games.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "ME-UKG-V3-P031",
+      "title": "Maths Review",
+      "markdown": "pages/ME-UKG-V3-P031-maths-review.md",
+      "json": "pages/ME-UKG-V3-P031-maths-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "ME-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/ME-UKG-V3-P032-mini-project.md",
+      "json": "pages/ME-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "ME-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/ME-UKG-V3-P033-reflection.md",
+      "json": "pages/ME-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "ME-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/ME-UKG-V3-P034-showcase.md",
+      "json": "pages/ME-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "ME-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/ME-UKG-V3-P035-grand-review.md",
+      "json": "pages/ME-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "ME-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/ME-UKG-V3-P036-my-achievement.md",
+      "json": "pages/ME-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "ME-UKG-V3-P037",
+      "title": "My Maths Goals",
+      "markdown": "pages/ME-UKG-V3-P037-my-maths-goals.md",
+      "json": "pages/ME-UKG-V3-P037-my-maths-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "ME-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/ME-UKG-V3-P038-celebration.md",
+      "json": "pages/ME-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "ME-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/ME-UKG-V3-P039-certificate.md",
+      "json": "pages/ME-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "ME-UKG-V3-P040",
+      "title": "I Am a Maths Explorer",
+      "markdown": "pages/ME-UKG-V3-P040-i-am-a-maths-explorer.md",
+      "json": "pages/ME-UKG-V3-P040-i-am-a-maths-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "ME-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/ME-UKG-V3-P041-back-cover.md",
+      "json": "pages/ME-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Creativity Challenges",
+  "level": "Nursery",
+  "age_level": "Nursery (3+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Creativity_Challenges_Gold_Complete_Teaching_Clarity_Updated.xlsx",
+    "sha256": "a2c3d5fead39804f01e1618f79a102c23c8c5999ed3e06f4bfd30e8235c8e2f6"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "CR-NURSERY-V3-P001",
+      "title": "Cover Page",
+      "markdown": "pages/CR-NURSERY-V3-P001-cover-page.md",
+      "json": "pages/CR-NURSERY-V3-P001-cover-page.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "CR-NURSERY-V3-P002",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/CR-NURSERY-V3-P002-copyright-publication-details.md",
+      "json": "pages/CR-NURSERY-V3-P002-copyright-publication-details.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "CR-NURSERY-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/CR-NURSERY-V3-P003-contents.md",
+      "json": "pages/CR-NURSERY-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "CR-NURSERY-V3-P004",
+      "title": "Welcome to Creativity Challenges",
+      "markdown": "pages/CR-NURSERY-V3-P004-welcome-to-creativity-challenges.md",
+      "json": "pages/CR-NURSERY-V3-P004-welcome-to-creativity-challenges.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "CR-NURSERY-V3-P005",
+      "title": "Meet Creative Star",
+      "markdown": "pages/CR-NURSERY-V3-P005-meet-creative-star.md",
+      "json": "pages/CR-NURSERY-V3-P005-meet-creative-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "CR-NURSERY-V3-P006",
+      "title": "What Is Creativity?",
+      "markdown": "pages/CR-NURSERY-V3-P006-what-is-creativity.md",
+      "json": "pages/CR-NURSERY-V3-P006-what-is-creativity.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "CR-NURSERY-V3-P007",
+      "title": "Colour Your Way",
+      "markdown": "pages/CR-NURSERY-V3-P007-colour-your-way.md",
+      "json": "pages/CR-NURSERY-V3-P007-colour-your-way.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "CR-NURSERY-V3-P008",
+      "title": "Draw from a Shape",
+      "markdown": "pages/CR-NURSERY-V3-P008-draw-from-a-shape.md",
+      "json": "pages/CR-NURSERY-V3-P008-draw-from-a-shape.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "CR-NURSERY-V3-P009",
+      "title": "Finish the Doodle",
+      "markdown": "pages/CR-NURSERY-V3-P009-finish-the-doodle.md",
+      "json": "pages/CR-NURSERY-V3-P009-finish-the-doodle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "CR-NURSERY-V3-P010",
+      "title": "Make a Silly Face",
+      "markdown": "pages/CR-NURSERY-V3-P010-make-a-silly-face.md",
+      "json": "pages/CR-NURSERY-V3-P010-make-a-silly-face.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "CR-NURSERY-V3-P011",
+      "title": "Imagine a New Toy",
+      "markdown": "pages/CR-NURSERY-V3-P011-imagine-a-new-toy.md",
+      "json": "pages/CR-NURSERY-V3-P011-imagine-a-new-toy.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "CR-NURSERY-V3-P012",
+      "title": "My Dream Room",
+      "markdown": "pages/CR-NURSERY-V3-P012-my-dream-room.md",
+      "json": "pages/CR-NURSERY-V3-P012-my-dream-room.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "CR-NURSERY-V3-P013",
+      "title": "If I Could Fly",
+      "markdown": "pages/CR-NURSERY-V3-P013-if-i-could-fly.md",
+      "json": "pages/CR-NURSERY-V3-P013-if-i-could-fly.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "CR-NURSERY-V3-P014",
+      "title": "Story Picture Starter",
+      "markdown": "pages/CR-NURSERY-V3-P014-story-picture-starter.md",
+      "json": "pages/CR-NURSERY-V3-P014-story-picture-starter.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "CR-NURSERY-V3-P015",
+      "title": "Mix-and-Match Creatures",
+      "markdown": "pages/CR-NURSERY-V3-P015-mix-and-match-creatures.md",
+      "json": "pages/CR-NURSERY-V3-P015-mix-and-match-creatures.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "CR-NURSERY-V3-P016",
+      "title": "Build a Tall Tower",
+      "markdown": "pages/CR-NURSERY-V3-P016-build-a-tall-tower.md",
+      "json": "pages/CR-NURSERY-V3-P016-build-a-tall-tower.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "CR-NURSERY-V3-P017",
+      "title": "Design a Bridge",
+      "markdown": "pages/CR-NURSERY-V3-P017-design-a-bridge.md",
+      "json": "pages/CR-NURSERY-V3-P017-design-a-bridge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "CR-NURSERY-V3-P018",
+      "title": "Make a Pattern",
+      "markdown": "pages/CR-NURSERY-V3-P018-make-a-pattern.md",
+      "json": "pages/CR-NURSERY-V3-P018-make-a-pattern.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "CR-NURSERY-V3-P019",
+      "title": "Shape Builder",
+      "markdown": "pages/CR-NURSERY-V3-P019-shape-builder.md",
+      "json": "pages/CR-NURSERY-V3-P019-shape-builder.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "CR-NURSERY-V3-P020",
+      "title": "Reuse and Create",
+      "markdown": "pages/CR-NURSERY-V3-P020-reuse-and-create.md",
+      "json": "pages/CR-NURSERY-V3-P020-reuse-and-create.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "CR-NURSERY-V3-P021",
+      "title": "Design a Vehicle",
+      "markdown": "pages/CR-NURSERY-V3-P021-design-a-vehicle.md",
+      "json": "pages/CR-NURSERY-V3-P021-design-a-vehicle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "CR-NURSERY-V3-P022",
+      "title": "A Home for an Animal",
+      "markdown": "pages/CR-NURSERY-V3-P022-a-home-for-an-animal.md",
+      "json": "pages/CR-NURSERY-V3-P022-a-home-for-an-animal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "CR-NURSERY-V3-P023",
+      "title": "Make a Crown",
+      "markdown": "pages/CR-NURSERY-V3-P023-make-a-crown.md",
+      "json": "pages/CR-NURSERY-V3-P023-make-a-crown.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "CR-NURSERY-V3-P024",
+      "title": "Paper Puppet",
+      "markdown": "pages/CR-NURSERY-V3-P024-paper-puppet.md",
+      "json": "pages/CR-NURSERY-V3-P024-paper-puppet.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "CR-NURSERY-V3-P025",
+      "title": "My Mini Invention",
+      "markdown": "pages/CR-NURSERY-V3-P025-my-mini-invention.md",
+      "json": "pages/CR-NURSERY-V3-P025-my-mini-invention.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "CR-NURSERY-V3-P026",
+      "title": "Many Uses",
+      "markdown": "pages/CR-NURSERY-V3-P026-many-uses.md",
+      "json": "pages/CR-NURSERY-V3-P026-many-uses.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "CR-NURSERY-V3-P027",
+      "title": "Fix the Broken Picture",
+      "markdown": "pages/CR-NURSERY-V3-P027-fix-the-broken-picture.md",
+      "json": "pages/CR-NURSERY-V3-P027-fix-the-broken-picture.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "CR-NURSERY-V3-P028",
+      "title": "Choose a Better Way",
+      "markdown": "pages/CR-NURSERY-V3-P028-choose-a-better-way.md",
+      "json": "pages/CR-NURSERY-V3-P028-choose-a-better-way.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "CR-NURSERY-V3-P029",
+      "title": "Creative Choice Maze",
+      "markdown": "pages/CR-NURSERY-V3-P029-creative-choice-maze.md",
+      "json": "pages/CR-NURSERY-V3-P029-creative-choice-maze.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "CR-NURSERY-V3-P030",
+      "title": "What Can We Add?",
+      "markdown": "pages/CR-NURSERY-V3-P030-what-can-we-add.md",
+      "json": "pages/CR-NURSERY-V3-P030-what-can-we-add.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "CR-NURSERY-V3-P031",
+      "title": "Create from Nature",
+      "markdown": "pages/CR-NURSERY-V3-P031-create-from-nature.md",
+      "json": "pages/CR-NURSERY-V3-P031-create-from-nature.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "CR-NURSERY-V3-P032",
+      "title": "Make a Music Maker",
+      "markdown": "pages/CR-NURSERY-V3-P032-make-a-music-maker.md",
+      "json": "pages/CR-NURSERY-V3-P032-make-a-music-maker.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "CR-NURSERY-V3-P033",
+      "title": "Balance Challenge",
+      "markdown": "pages/CR-NURSERY-V3-P033-balance-challenge.md",
+      "json": "pages/CR-NURSERY-V3-P033-balance-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "CR-NURSERY-V3-P034",
+      "title": "Copy, Change, Create",
+      "markdown": "pages/CR-NURSERY-V3-P034-copy-change-create.md",
+      "json": "pages/CR-NURSERY-V3-P034-copy-change-create.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "CR-NURSERY-V3-P035",
+      "title": "My Picture Story",
+      "markdown": "pages/CR-NURSERY-V3-P035-my-picture-story.md",
+      "json": "pages/CR-NURSERY-V3-P035-my-picture-story.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "CR-NURSERY-V3-P036",
+      "title": "Create a Character",
+      "markdown": "pages/CR-NURSERY-V3-P036-create-a-character.md",
+      "json": "pages/CR-NURSERY-V3-P036-create-a-character.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "CR-NURSERY-V3-P037",
+      "title": "My New Game",
+      "markdown": "pages/CR-NURSERY-V3-P037-my-new-game.md",
+      "json": "pages/CR-NURSERY-V3-P037-my-new-game.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "CR-NURSERY-V3-P038",
+      "title": "Creative Teamwork",
+      "markdown": "pages/CR-NURSERY-V3-P038-creative-teamwork.md",
+      "json": "pages/CR-NURSERY-V3-P038-creative-teamwork.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "CR-NURSERY-V3-P039",
+      "title": "My Creativity Gallery",
+      "markdown": "pages/CR-NURSERY-V3-P039-my-creativity-gallery.md",
+      "json": "pages/CR-NURSERY-V3-P039-my-creativity-gallery.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "CR-NURSERY-V3-P040",
+      "title": "Certificate of Completion",
+      "markdown": "pages/CR-NURSERY-V3-P040-certificate-of-completion.md",
+      "json": "pages/CR-NURSERY-V3-P040-certificate-of-completion.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "CR-NURSERY-V3-P041",
+      "title": "I Am a Creative Thinker!",
+      "markdown": "pages/CR-NURSERY-V3-P041-i-am-a-creative-thinker.md",
+      "json": "pages/CR-NURSERY-V3-P041-i-am-a-creative-thinker.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

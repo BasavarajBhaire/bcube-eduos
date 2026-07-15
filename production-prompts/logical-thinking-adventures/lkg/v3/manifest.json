@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Logical Thinking Adventures",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Logical_Thinking_Adventures_LKG_Gold_Complete_Final.xlsx",
+    "sha256": "77f2a1ba1f78578b4b97e1c5e080b616bf79aa4423a505f72eb000c1fd560d3f"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "LT-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/LT-LKG-V3-P001-cover.md",
+      "json": "pages/LT-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "LT-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/LT-LKG-V3-P002-copyright.md",
+      "json": "pages/LT-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "LT-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/LT-LKG-V3-P003-contents.md",
+      "json": "pages/LT-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "LT-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/LT-LKG-V3-P004-welcome.md",
+      "json": "pages/LT-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "LT-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/LT-LKG-V3-P005-meet-star.md",
+      "json": "pages/LT-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "LT-LKG-V3-P006",
+      "title": "Find the Difference",
+      "markdown": "pages/LT-LKG-V3-P006-find-the-difference.md",
+      "json": "pages/LT-LKG-V3-P006-find-the-difference.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "LT-LKG-V3-P007",
+      "title": "Spot the Same",
+      "markdown": "pages/LT-LKG-V3-P007-spot-the-same.md",
+      "json": "pages/LT-LKG-V3-P007-spot-the-same.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "LT-LKG-V3-P008",
+      "title": "Odd One Out",
+      "markdown": "pages/LT-LKG-V3-P008-odd-one-out.md",
+      "json": "pages/LT-LKG-V3-P008-odd-one-out.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "LT-LKG-V3-P009",
+      "title": "Picture Match",
+      "markdown": "pages/LT-LKG-V3-P009-picture-match.md",
+      "json": "pages/LT-LKG-V3-P009-picture-match.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "LT-LKG-V3-P010",
+      "title": "Hidden Objects",
+      "markdown": "pages/LT-LKG-V3-P010-hidden-objects.md",
+      "json": "pages/LT-LKG-V3-P010-hidden-objects.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "LT-LKG-V3-P011",
+      "title": "What Comes Next",
+      "markdown": "pages/LT-LKG-V3-P011-what-comes-next.md",
+      "json": "pages/LT-LKG-V3-P011-what-comes-next.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "LT-LKG-V3-P012",
+      "title": "Story Sequence",
+      "markdown": "pages/LT-LKG-V3-P012-story-sequence.md",
+      "json": "pages/LT-LKG-V3-P012-story-sequence.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "LT-LKG-V3-P013",
+      "title": "Pattern Logic",
+      "markdown": "pages/LT-LKG-V3-P013-pattern-logic.md",
+      "json": "pages/LT-LKG-V3-P013-pattern-logic.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "LT-LKG-V3-P014",
+      "title": "Complete the Series",
+      "markdown": "pages/LT-LKG-V3-P014-complete-the-series.md",
+      "json": "pages/LT-LKG-V3-P014-complete-the-series.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "LT-LKG-V3-P015",
+      "title": "Sort by Colour",
+      "markdown": "pages/LT-LKG-V3-P015-sort-by-colour.md",
+      "json": "pages/LT-LKG-V3-P015-sort-by-colour.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "LT-LKG-V3-P016",
+      "title": "Sort by Shape",
+      "markdown": "pages/LT-LKG-V3-P016-sort-by-shape.md",
+      "json": "pages/LT-LKG-V3-P016-sort-by-shape.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "LT-LKG-V3-P017",
+      "title": "Sort by Size",
+      "markdown": "pages/LT-LKG-V3-P017-sort-by-size.md",
+      "json": "pages/LT-LKG-V3-P017-sort-by-size.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "LT-LKG-V3-P018",
+      "title": "Belongs Together",
+      "markdown": "pages/LT-LKG-V3-P018-belongs-together.md",
+      "json": "pages/LT-LKG-V3-P018-belongs-together.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "LT-LKG-V3-P019",
+      "title": "Big Problem Small Problem",
+      "markdown": "pages/LT-LKG-V3-P019-big-problem-small-problem.md",
+      "json": "pages/LT-LKG-V3-P019-big-problem-small-problem.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "LT-LKG-V3-P020",
+      "title": "Cause and Effect",
+      "markdown": "pages/LT-LKG-V3-P020-cause-and-effect.md",
+      "json": "pages/LT-LKG-V3-P020-cause-and-effect.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "LT-LKG-V3-P021",
+      "title": "Left and Right",
+      "markdown": "pages/LT-LKG-V3-P021-left-and-right.md",
+      "json": "pages/LT-LKG-V3-P021-left-and-right.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "LT-LKG-V3-P022",
+      "title": "Above and Below",
+      "markdown": "pages/LT-LKG-V3-P022-above-and-below.md",
+      "json": "pages/LT-LKG-V3-P022-above-and-below.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "LT-LKG-V3-P023",
+      "title": "Inside and Outside",
+      "markdown": "pages/LT-LKG-V3-P023-inside-and-outside.md",
+      "json": "pages/LT-LKG-V3-P023-inside-and-outside.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "LT-LKG-V3-P024",
+      "title": "Maze Challenge",
+      "markdown": "pages/LT-LKG-V3-P024-maze-challenge.md",
+      "json": "pages/LT-LKG-V3-P024-maze-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "LT-LKG-V3-P025",
+      "title": "Remember the Pictures",
+      "markdown": "pages/LT-LKG-V3-P025-remember-the-pictures.md",
+      "json": "pages/LT-LKG-V3-P025-remember-the-pictures.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "LT-LKG-V3-P026",
+      "title": "Picture Recall",
+      "markdown": "pages/LT-LKG-V3-P026-picture-recall.md",
+      "json": "pages/LT-LKG-V3-P026-picture-recall.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "LT-LKG-V3-P027",
+      "title": "Choose the Best Answer",
+      "markdown": "pages/LT-LKG-V3-P027-choose-the-best-answer.md",
+      "json": "pages/LT-LKG-V3-P027-choose-the-best-answer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "LT-LKG-V3-P028",
+      "title": "Finish the Picture",
+      "markdown": "pages/LT-LKG-V3-P028-finish-the-picture.md",
+      "json": "pages/LT-LKG-V3-P028-finish-the-picture.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "LT-LKG-V3-P029",
+      "title": "Visual Puzzle",
+      "markdown": "pages/LT-LKG-V3-P029-visual-puzzle.md",
+      "json": "pages/LT-LKG-V3-P029-visual-puzzle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "LT-LKG-V3-P030",
+      "title": "Shadow Match",
+      "markdown": "pages/LT-LKG-V3-P030-shadow-match.md",
+      "json": "pages/LT-LKG-V3-P030-shadow-match.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "LT-LKG-V3-P031",
+      "title": "Complete the Puzzle",
+      "markdown": "pages/LT-LKG-V3-P031-complete-the-puzzle.md",
+      "json": "pages/LT-LKG-V3-P031-complete-the-puzzle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "LT-LKG-V3-P032",
+      "title": "Picture Logic",
+      "markdown": "pages/LT-LKG-V3-P032-picture-logic.md",
+      "json": "pages/LT-LKG-V3-P032-picture-logic.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "LT-LKG-V3-P033",
+      "title": "Simple Coding",
+      "markdown": "pages/LT-LKG-V3-P033-simple-coding.md",
+      "json": "pages/LT-LKG-V3-P033-simple-coding.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "LT-LKG-V3-P034",
+      "title": "Thinking Challenge",
+      "markdown": "pages/LT-LKG-V3-P034-thinking-challenge.md",
+      "json": "pages/LT-LKG-V3-P034-thinking-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "LT-LKG-V3-P035",
+      "title": "Mixed Logic Review",
+      "markdown": "pages/LT-LKG-V3-P035-mixed-logic-review.md",
+      "json": "pages/LT-LKG-V3-P035-mixed-logic-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "LT-LKG-V3-P036",
+      "title": "Brain Challenge",
+      "markdown": "pages/LT-LKG-V3-P036-brain-challenge.md",
+      "json": "pages/LT-LKG-V3-P036-brain-challenge.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "LT-LKG-V3-P037",
+      "title": "Thinking Assessment",
+      "markdown": "pages/LT-LKG-V3-P037-thinking-assessment.md",
+      "json": "pages/LT-LKG-V3-P037-thinking-assessment.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "LT-LKG-V3-P038",
+      "title": "My Thinking Journal",
+      "markdown": "pages/LT-LKG-V3-P038-my-thinking-journal.md",
+      "json": "pages/LT-LKG-V3-P038-my-thinking-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "LT-LKG-V3-P039",
+      "title": "Logic Celebration",
+      "markdown": "pages/LT-LKG-V3-P039-logic-celebration.md",
+      "json": "pages/LT-LKG-V3-P039-logic-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "LT-LKG-V3-P040",
+      "title": "Certificate",
+      "markdown": "pages/LT-LKG-V3-P040-certificate.md",
+      "json": "pages/LT-LKG-V3-P040-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "LT-LKG-V3-P041",
+      "title": "I Am a Logic Explorer",
+      "markdown": "pages/LT-LKG-V3-P041-i-am-a-logic-explorer.md",
+      "json": "pages/LT-LKG-V3-P041-i-am-a-logic-explorer.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

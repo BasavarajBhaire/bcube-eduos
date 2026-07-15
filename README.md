@@ -11,7 +11,7 @@ The canonical documentation and machine-readable production standards for BCube 
 
 ## Production prompts
 
-- [Communication Champions — Nursery Production Prompts v3](production-prompts/communication-champions/nursery/v3/README.md) — 41 Gold-certified, compiler-ready page packages
+- [Complete Nursery, LKG, and UKG Production Prompts v3 portfolio](production-prompts/README.md) — 30 books, 1,230 Gold-certified compiler-ready page packages
 
 ## Repository model
 

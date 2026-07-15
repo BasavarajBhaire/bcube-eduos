@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "Art & Colour Fun",
+  "level": "LKG",
+  "age_level": "LKG (4+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "Art_Colour_Fun_LKG_Gold_Complete_Final.xlsx",
+    "sha256": "dd31acc587288da7a95b40640596e9a389f80e7acfad7ccbd418b80852d111e6"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "AC-LKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/AC-LKG-V3-P001-cover.md",
+      "json": "pages/AC-LKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "AC-LKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/AC-LKG-V3-P002-copyright.md",
+      "json": "pages/AC-LKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "AC-LKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/AC-LKG-V3-P003-contents.md",
+      "json": "pages/AC-LKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "AC-LKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/AC-LKG-V3-P004-welcome.md",
+      "json": "pages/AC-LKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "AC-LKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/AC-LKG-V3-P005-meet-star.md",
+      "json": "pages/AC-LKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "AC-LKG-V3-P006",
+      "title": "Primary Colours",
+      "markdown": "pages/AC-LKG-V3-P006-primary-colours.md",
+      "json": "pages/AC-LKG-V3-P006-primary-colours.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "AC-LKG-V3-P007",
+      "title": "Secondary Colours",
+      "markdown": "pages/AC-LKG-V3-P007-secondary-colours.md",
+      "json": "pages/AC-LKG-V3-P007-secondary-colours.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "AC-LKG-V3-P008",
+      "title": "Colour Hunt",
+      "markdown": "pages/AC-LKG-V3-P008-colour-hunt.md",
+      "json": "pages/AC-LKG-V3-P008-colour-hunt.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "AC-LKG-V3-P009",
+      "title": "Rainbow Fun",
+      "markdown": "pages/AC-LKG-V3-P009-rainbow-fun.md",
+      "json": "pages/AC-LKG-V3-P009-rainbow-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "AC-LKG-V3-P010",
+      "title": "Colour Mixing",
+      "markdown": "pages/AC-LKG-V3-P010-colour-mixing.md",
+      "json": "pages/AC-LKG-V3-P010-colour-mixing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "AC-LKG-V3-P011",
+      "title": "Lines & Patterns",
+      "markdown": "pages/AC-LKG-V3-P011-lines-patterns.md",
+      "json": "pages/AC-LKG-V3-P011-lines-patterns.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "AC-LKG-V3-P012",
+      "title": "Shapes in Art",
+      "markdown": "pages/AC-LKG-V3-P012-shapes-in-art.md",
+      "json": "pages/AC-LKG-V3-P012-shapes-in-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "AC-LKG-V3-P013",
+      "title": "Colour by Number",
+      "markdown": "pages/AC-LKG-V3-P013-colour-by-number.md",
+      "json": "pages/AC-LKG-V3-P013-colour-by-number.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "AC-LKG-V3-P014",
+      "title": "Trace & Colour",
+      "markdown": "pages/AC-LKG-V3-P014-trace-colour.md",
+      "json": "pages/AC-LKG-V3-P014-trace-colour.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "AC-LKG-V3-P015",
+      "title": "My First Drawing",
+      "markdown": "pages/AC-LKG-V3-P015-my-first-drawing.md",
+      "json": "pages/AC-LKG-V3-P015-my-first-drawing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "AC-LKG-V3-P016",
+      "title": "Finger Painting",
+      "markdown": "pages/AC-LKG-V3-P016-finger-painting.md",
+      "json": "pages/AC-LKG-V3-P016-finger-painting.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "AC-LKG-V3-P017",
+      "title": "Sponge Painting",
+      "markdown": "pages/AC-LKG-V3-P017-sponge-painting.md",
+      "json": "pages/AC-LKG-V3-P017-sponge-painting.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "AC-LKG-V3-P018",
+      "title": "Leaf Printing",
+      "markdown": "pages/AC-LKG-V3-P018-leaf-printing.md",
+      "json": "pages/AC-LKG-V3-P018-leaf-printing.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "AC-LKG-V3-P019",
+      "title": "Nature Colours",
+      "markdown": "pages/AC-LKG-V3-P019-nature-colours.md",
+      "json": "pages/AC-LKG-V3-P019-nature-colours.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "AC-LKG-V3-P020",
+      "title": "Texture Art",
+      "markdown": "pages/AC-LKG-V3-P020-texture-art.md",
+      "json": "pages/AC-LKG-V3-P020-texture-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "AC-LKG-V3-P021",
+      "title": "Tear & Paste",
+      "markdown": "pages/AC-LKG-V3-P021-tear-paste.md",
+      "json": "pages/AC-LKG-V3-P021-tear-paste.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "AC-LKG-V3-P022",
+      "title": "Paper Collage",
+      "markdown": "pages/AC-LKG-V3-P022-paper-collage.md",
+      "json": "pages/AC-LKG-V3-P022-paper-collage.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "AC-LKG-V3-P023",
+      "title": "Sticker Fun",
+      "markdown": "pages/AC-LKG-V3-P023-sticker-fun.md",
+      "json": "pages/AC-LKG-V3-P023-sticker-fun.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "AC-LKG-V3-P024",
+      "title": "Clay Creations",
+      "markdown": "pages/AC-LKG-V3-P024-clay-creations.md",
+      "json": "pages/AC-LKG-V3-P024-clay-creations.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "AC-LKG-V3-P025",
+      "title": "Simple Craft",
+      "markdown": "pages/AC-LKG-V3-P025-simple-craft.md",
+      "json": "pages/AC-LKG-V3-P025-simple-craft.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "AC-LKG-V3-P026",
+      "title": "Festival Art",
+      "markdown": "pages/AC-LKG-V3-P026-festival-art.md",
+      "json": "pages/AC-LKG-V3-P026-festival-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "AC-LKG-V3-P027",
+      "title": "Animal Art",
+      "markdown": "pages/AC-LKG-V3-P027-animal-art.md",
+      "json": "pages/AC-LKG-V3-P027-animal-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "AC-LKG-V3-P028",
+      "title": "Bird Art",
+      "markdown": "pages/AC-LKG-V3-P028-bird-art.md",
+      "json": "pages/AC-LKG-V3-P028-bird-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "AC-LKG-V3-P029",
+      "title": "Underwater World",
+      "markdown": "pages/AC-LKG-V3-P029-underwater-world.md",
+      "json": "pages/AC-LKG-V3-P029-underwater-world.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "AC-LKG-V3-P030",
+      "title": "Space Art",
+      "markdown": "pages/AC-LKG-V3-P030-space-art.md",
+      "json": "pages/AC-LKG-V3-P030-space-art.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "AC-LKG-V3-P031",
+      "title": "My Favourite Colour",
+      "markdown": "pages/AC-LKG-V3-P031-my-favourite-colour.md",
+      "json": "pages/AC-LKG-V3-P031-my-favourite-colour.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "AC-LKG-V3-P032",
+      "title": "Art Around Me",
+      "markdown": "pages/AC-LKG-V3-P032-art-around-me.md",
+      "json": "pages/AC-LKG-V3-P032-art-around-me.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "AC-LKG-V3-P033",
+      "title": "Creative Poster",
+      "markdown": "pages/AC-LKG-V3-P033-creative-poster.md",
+      "json": "pages/AC-LKG-V3-P033-creative-poster.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "AC-LKG-V3-P034",
+      "title": "Art Review",
+      "markdown": "pages/AC-LKG-V3-P034-art-review.md",
+      "json": "pages/AC-LKG-V3-P034-art-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "AC-LKG-V3-P035",
+      "title": "Gallery Walk",
+      "markdown": "pages/AC-LKG-V3-P035-gallery-walk.md",
+      "json": "pages/AC-LKG-V3-P035-gallery-walk.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "AC-LKG-V3-P036",
+      "title": "My Art Journal",
+      "markdown": "pages/AC-LKG-V3-P036-my-art-journal.md",
+      "json": "pages/AC-LKG-V3-P036-my-art-journal.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "AC-LKG-V3-P037",
+      "title": "My Best Artwork",
+      "markdown": "pages/AC-LKG-V3-P037-my-best-artwork.md",
+      "json": "pages/AC-LKG-V3-P037-my-best-artwork.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "AC-LKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/AC-LKG-V3-P038-celebration.md",
+      "json": "pages/AC-LKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "AC-LKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/AC-LKG-V3-P039-certificate.md",
+      "json": "pages/AC-LKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "AC-LKG-V3-P040",
+      "title": "I Am an Artist",
+      "markdown": "pages/AC-LKG-V3-P040-i-am-an-artist.md",
+      "json": "pages/AC-LKG-V3-P040-i-am-an-artist.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "AC-LKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/AC-LKG-V3-P041-back-cover.md",
+      "json": "pages/AC-LKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

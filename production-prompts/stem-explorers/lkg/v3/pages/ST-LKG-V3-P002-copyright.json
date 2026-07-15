@@ -1,0 +1,54 @@
+{
+  "prompt_id": "ST-LKG-V3-P002",
+  "version": "3.0.0",
+  "page_data": {
+    "page_id": "ST-LKG-V3-P002",
+    "book_id": "STEM_EXPLORERS_LKG",
+    "unit_id": "FRONT_MATTER",
+    "page_number": 2,
+    "page_type": "teacher_guide",
+    "title": "Copyright",
+    "age_level": "LKG (4+)",
+    "learning_objective": "Publication details.",
+    "competencies": [
+      "future skills"
+    ],
+    "activity": {
+      "instruction": "Investigation Discussion",
+      "evidence": "Child observes, predicts or explains using simple language."
+    },
+    "teacher_prompt": {
+      "facilitation": "Model the investigation and encourage children to observe before answering.",
+      "questions": [
+        "What can you show or tell about copyright?"
+      ]
+    },
+    "parent_prompt": {
+      "conversation": "Repeat the activity at home using safe everyday materials.",
+      "home_activity": "Repeat the activity at home using safe everyday materials."
+    },
+    "illustration": {
+      "scene": "One dominant learning scene with a clearly protected child-response area.",
+      "focal_point": "One dominant focus for “Copyright”.",
+      "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+      "negative_constraints": [
+        "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+        "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+        "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+        "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+        "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+        "No unrelated activity or decorative response space."
+      ]
+    },
+    "character_refs": [
+      "STAR-MASCOT-V3"
+    ],
+    "overrides": []
+  },
+  "compiled_prompt": "# BCube Production Prompt v3 — ST-LKG-V3-P002\n\n## 1. Release metadata\n\n- Prompt ID: ST-LKG-V3-P002\n- Version: 3.0.0\n- Book: STEM Explorers\n- Level: LKG (4+)\n- Module: Front Matter\n- Page: 2 of 41\n- Exact title: Copyright\n- Source: STEM_Explorers_LKG_Gold_Complete_Final.xlsx\n- Source SHA-256: 47732c7ae928b0af0a72bf94d6db79e55949fc0c3efbceae23d2f12fa3adf3d9\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Copyright”. Follow this deterministic package only. Produce no explanation, alternate, mockup, or additional page.\n\n## 3. Engine order and precedence\n\n1. Publishing Engine\n2. Design Engine\n3. Visual Grammar Engine\n4. Educational Engine\n5. Teaching Engine\n6. Parent Partnership Engine\n7. Illustration Engine\n8. Character Engine\n9. Quality Assurance and Prompt Compiler\n\nPrecedence: approved page instruction > approved book/level rule > global rule. Do not resolve conflicts by guessing.\n\n## 4. Publishing Engine\n\n- A4 portrait, 210 × 297 mm; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin; 300 DPI; CMYK-safe; print-ready.\n- Use a 20–28 mm header with the exact title “Copyright” centred and the official BCube logo reserved at top left.\n- Use a 10–14 mm footer with page number 2 only at bottom right.\n- Never generate or redraw the logo; apply the official vector asset during final layout.\n\n## 5. Design and Visual Grammar Engines\n\n- Page type: teacher_guide. Layout anchor: One dominant learning scene with a clearly protected child-response area.\n- Visual/text balance: 60–70% visual and 30–40% text/activity. Use one dominant focal point and a clear title → model → action → response eye path.\n- Blank-space rule: Purposeful only. Maximum two core activities and one optional extension.\n- Clean white base, soft BCube pastel accents, thick rounded outlines, large targets, strong contrast, generous spacing, and no visual clutter.\n\n## 6. Educational Engine\n\n- Objective: Publication details.\n- Primary activity: Investigation\n- Secondary activity: Discussion\n- Observable evidence: Child observes, predicts or explains using simple language.\n- Developmental response modes: oral response, guided tracing, short-word copying, sequencing, drawing, matching, or one supported sentence frame.\n\n## 7. Teaching Engine\n\n- Facilitation: Model the investigation and encourage children to observe before answering.\n- Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.\n- Assessment evidence: Child observes, predicts or explains using simple language.\n\n## 8. Parent Partnership Engine\n\n- Home connection: Repeat the activity at home using safe everyday materials.\n- Use common household materials only; do not create a new scored task or require a device, purchase, or printing.\n\n## 9. Illustration and Character Engines\n\n- Composition: Large uncluttered visuals with one clear STEM concept.\n- Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.\n- Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.\n\n## 10. Approved source instruction\n\nTECHNICAL: Create an A4 portrait, 300 DPI, print-ready BCube STEM workbook page with a clean white background, teacher-guided learning, Star mascot, purposeful activity spaces, British English, premium preschool publishing quality. PAGE 2: Professional publication page with editable copyright information. Include one teacher demonstration, one guided investigation, one independent child activity, one speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure there are no decorative blank boxes or empty speech balloons.\n\n## 11. Negative constraints\n\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No unrelated activity or decorative response space.\n\n## 12. Gold QA gate and compiler footer\n\nVerify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.\n\nST-LKG-V3-P002 | v3.0.0 | page 2/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Gold Certified"
+  }
+}

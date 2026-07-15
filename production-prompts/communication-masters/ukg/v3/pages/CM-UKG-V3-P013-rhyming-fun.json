@@ -1,0 +1,54 @@
+{
+  "prompt_id": "CM-UKG-V3-P013",
+  "version": "3.0.0",
+  "page_data": {
+    "page_id": "CM-UKG-V3-P013",
+    "book_id": "COMMUNICATION_MASTERS_UKG",
+    "unit_id": "CORE_LEARNING",
+    "page_number": 13,
+    "page_type": "activity_page",
+    "title": "Rhyming Fun",
+    "age_level": "UKG (5+)",
+    "learning_objective": "Strengthen expressive language, listening and communication.",
+    "competencies": [
+      "COM-02"
+    ],
+    "activity": {
+      "instruction": "Rhyming Fun Yes",
+      "evidence": "Children share ideas respectfully, build on friends' responses and use complete sentences."
+    },
+    "teacher_prompt": {
+      "facilitation": "Guide discussion with open-ended questions and encourage every child to participate.",
+      "questions": [
+        "What can you show or tell about rhyming fun?"
+      ]
+    },
+    "parent_prompt": {
+      "conversation": "Repeat the speaking activity at home during family conversations.",
+      "home_activity": "Repeat the speaking activity at home during family conversations."
+    },
+    "illustration": {
+      "scene": "Teacher facilitating 'Rhyming Fun' with Star mascot and six engaged UKG children.",
+      "focal_point": "One dominant focus for “Rhyming Fun”.",
+      "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+      "negative_constraints": [
+        "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+        "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+        "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+        "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+        "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+        "No unrelated activity or decorative response space."
+      ]
+    },
+    "character_refs": [
+      "STAR-MASCOT-V3"
+    ],
+    "overrides": []
+  },
+  "compiled_prompt": "# BCube Production Prompt v3 — CM-UKG-V3-P013\n\n## 1. Release metadata\n\n- Prompt ID: CM-UKG-V3-P013\n- Version: 3.0.0\n- Book: Communication Masters\n- Level: UKG (5+)\n- Module: Core Learning\n- Page: 13 of 41\n- Exact title: Rhyming Fun\n- Source: Communication_Masters_UKG_Gold_Production_Final.xlsx\n- Source SHA-256: 0e93a503a4ac211ebb8a561981b8ec9fd7b17c4594c38e7d7cc177ce748ccc1b\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Rhyming Fun”. Follow this deterministic package only. Produce no explanation, alternate, mockup, or additional page.\n\n## 3. Engine order and precedence\n\n1. Publishing Engine\n2. Design Engine\n3. Visual Grammar Engine\n4. Educational Engine\n5. Teaching Engine\n6. Parent Partnership Engine\n7. Illustration Engine\n8. Character Engine\n9. Quality Assurance and Prompt Compiler\n\nPrecedence: approved page instruction > approved book/level rule > global rule. Do not resolve conflicts by guessing.\n\n## 4. Publishing Engine\n\n- A4 portrait, 210 × 297 mm; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin; 300 DPI; CMYK-safe; print-ready.\n- Use a 20–28 mm header with the exact title “Rhyming Fun” centred and the official BCube logo reserved at top left.\n- Use a 10–14 mm footer with page number 13 only at bottom right.\n- Never generate or redraw the logo; apply the official vector asset during final layout.\n\n## 5. Design and Visual Grammar Engines\n\n- Page type: activity_page. Layout anchor: Teacher facilitating 'Rhyming Fun' with Star mascot and six engaged UKG children.\n- Visual/text balance: 55–65% visual and 35–45% text/activity. Use one dominant focal point and a clear title → model → action → response eye path.\n- Blank-space rule: Only purposeful response space; no decorative blank frame. Maximum two core activities and one optional extension.\n- Clean white base, soft BCube pastel accents, thick rounded outlines, large targets, strong contrast, generous spacing, and no visual clutter.\n\n## 6. Educational Engine\n\n- Objective: Strengthen expressive language, listening and communication.\n- Primary activity: Rhyming Fun\n- Secondary activity: Yes\n- Observable evidence: Children share ideas respectfully, build on friends' responses and use complete sentences.\n- Developmental response modes: oral explanation, guided reading, short independent response, sequencing, problem solving, drawing, or a simple sentence.\n- BCube competency: COM-02\n- Grade 1 readiness: Communication & Oral Language\n\n## 7. Teaching Engine\n\n- Facilitation: Guide discussion with open-ended questions and encourage every child to participate.\n- Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.\n- Assessment evidence: Child speaks confidently, listens actively and responds appropriately.\n\n## 8. Parent Partnership Engine\n\n- Home connection: Repeat the speaking activity at home during family conversations.\n- Use common household materials only; do not create a new scored task or require a device, purchase, or printing.\n\n## 9. Illustration and Character Engines\n\n- Composition: Premium classroom storytelling, expressive faces, labelled activity areas, soft pastel educational palette.\n- Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.\n- Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.\n\n## 10. Approved source instruction\n\nCreate a premium A4 UKG workbook page titled 'Rhyming Fun' using BCube Gold Production Standard v2. Teacher-led classroom, Star mascot, six expressive children, rich storytelling, purposeful activity zones, commercial preschool publishing quality, 300 DPI.\n\n## 11. Negative constraints\n\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No unrelated activity or decorative response space.\n\n## 12. Gold QA gate and compiler footer\n\nVerify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.\n\nCM-UKG-V3-P013 | v3.0.0 | page 13/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Gold Certified"
+  }
+}

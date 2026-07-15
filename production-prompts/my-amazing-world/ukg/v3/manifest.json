@@ -1,0 +1,387 @@
+{
+  "standard": "BCube Production Prompts v3",
+  "book": "My Amazing World",
+  "level": "UKG",
+  "age_level": "UKG (5+)",
+  "version": "3.0.0",
+  "release_date": "2026-07-15",
+  "source": {
+    "filename": "My_Amazing_World_UKG_Gold_Production_Final.xlsx",
+    "sha256": "7665ae8d430e15acf3f7992439e4fb7b222b539ffae9b46f678affd352f68451"
+  },
+  "prompt_count": 41,
+  "automated_checks": 574,
+  "critical_defects": 0,
+  "status": "Gold Certified",
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt_id": "MA-UKG-V3-P001",
+      "title": "Cover",
+      "markdown": "pages/MA-UKG-V3-P001-cover.md",
+      "json": "pages/MA-UKG-V3-P001-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 2,
+      "prompt_id": "MA-UKG-V3-P002",
+      "title": "Copyright",
+      "markdown": "pages/MA-UKG-V3-P002-copyright.md",
+      "json": "pages/MA-UKG-V3-P002-copyright.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 3,
+      "prompt_id": "MA-UKG-V3-P003",
+      "title": "Contents",
+      "markdown": "pages/MA-UKG-V3-P003-contents.md",
+      "json": "pages/MA-UKG-V3-P003-contents.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 4,
+      "prompt_id": "MA-UKG-V3-P004",
+      "title": "Welcome",
+      "markdown": "pages/MA-UKG-V3-P004-welcome.md",
+      "json": "pages/MA-UKG-V3-P004-welcome.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 5,
+      "prompt_id": "MA-UKG-V3-P005",
+      "title": "Meet Star",
+      "markdown": "pages/MA-UKG-V3-P005-meet-star.md",
+      "json": "pages/MA-UKG-V3-P005-meet-star.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 6,
+      "prompt_id": "MA-UKG-V3-P006",
+      "title": "My Family",
+      "markdown": "pages/MA-UKG-V3-P006-my-family.md",
+      "json": "pages/MA-UKG-V3-P006-my-family.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 7,
+      "prompt_id": "MA-UKG-V3-P007",
+      "title": "My School",
+      "markdown": "pages/MA-UKG-V3-P007-my-school.md",
+      "json": "pages/MA-UKG-V3-P007-my-school.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 8,
+      "prompt_id": "MA-UKG-V3-P008",
+      "title": "Community Helpers",
+      "markdown": "pages/MA-UKG-V3-P008-community-helpers.md",
+      "json": "pages/MA-UKG-V3-P008-community-helpers.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 9,
+      "prompt_id": "MA-UKG-V3-P009",
+      "title": "Our Neighborhood",
+      "markdown": "pages/MA-UKG-V3-P009-our-neighborhood.md",
+      "json": "pages/MA-UKG-V3-P009-our-neighborhood.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 10,
+      "prompt_id": "MA-UKG-V3-P010",
+      "title": "Maps & Directions",
+      "markdown": "pages/MA-UKG-V3-P010-maps-directions.md",
+      "json": "pages/MA-UKG-V3-P010-maps-directions.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 11,
+      "prompt_id": "MA-UKG-V3-P011",
+      "title": "Our Country",
+      "markdown": "pages/MA-UKG-V3-P011-our-country.md",
+      "json": "pages/MA-UKG-V3-P011-our-country.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 12,
+      "prompt_id": "MA-UKG-V3-P012",
+      "title": "Flags Around the World",
+      "markdown": "pages/MA-UKG-V3-P012-flags-around-the-world.md",
+      "json": "pages/MA-UKG-V3-P012-flags-around-the-world.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 13,
+      "prompt_id": "MA-UKG-V3-P013",
+      "title": "Festivals",
+      "markdown": "pages/MA-UKG-V3-P013-festivals.md",
+      "json": "pages/MA-UKG-V3-P013-festivals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 14,
+      "prompt_id": "MA-UKG-V3-P014",
+      "title": "Weather & Seasons",
+      "markdown": "pages/MA-UKG-V3-P014-weather-seasons.md",
+      "json": "pages/MA-UKG-V3-P014-weather-seasons.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 15,
+      "prompt_id": "MA-UKG-V3-P015",
+      "title": "Land, Water & Air",
+      "markdown": "pages/MA-UKG-V3-P015-land-water-air.md",
+      "json": "pages/MA-UKG-V3-P015-land-water-air.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 16,
+      "prompt_id": "MA-UKG-V3-P016",
+      "title": "Plants Around Us",
+      "markdown": "pages/MA-UKG-V3-P016-plants-around-us.md",
+      "json": "pages/MA-UKG-V3-P016-plants-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 17,
+      "prompt_id": "MA-UKG-V3-P017",
+      "title": "Animals Around Us",
+      "markdown": "pages/MA-UKG-V3-P017-animals-around-us.md",
+      "json": "pages/MA-UKG-V3-P017-animals-around-us.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 18,
+      "prompt_id": "MA-UKG-V3-P018",
+      "title": "Protect Nature",
+      "markdown": "pages/MA-UKG-V3-P018-protect-nature.md",
+      "json": "pages/MA-UKG-V3-P018-protect-nature.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 19,
+      "prompt_id": "MA-UKG-V3-P019",
+      "title": "Reduce, Reuse, Recycle",
+      "markdown": "pages/MA-UKG-V3-P019-reduce-reuse-recycle.md",
+      "json": "pages/MA-UKG-V3-P019-reduce-reuse-recycle.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 20,
+      "prompt_id": "MA-UKG-V3-P020",
+      "title": "Earth Day",
+      "markdown": "pages/MA-UKG-V3-P020-earth-day.md",
+      "json": "pages/MA-UKG-V3-P020-earth-day.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 21,
+      "prompt_id": "MA-UKG-V3-P021",
+      "title": "Day & Night",
+      "markdown": "pages/MA-UKG-V3-P021-day-night.md",
+      "json": "pages/MA-UKG-V3-P021-day-night.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 22,
+      "prompt_id": "MA-UKG-V3-P022",
+      "title": "The Solar System",
+      "markdown": "pages/MA-UKG-V3-P022-the-solar-system.md",
+      "json": "pages/MA-UKG-V3-P022-the-solar-system.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 23,
+      "prompt_id": "MA-UKG-V3-P023",
+      "title": "Travel Safely",
+      "markdown": "pages/MA-UKG-V3-P023-travel-safely.md",
+      "json": "pages/MA-UKG-V3-P023-travel-safely.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 24,
+      "prompt_id": "MA-UKG-V3-P024",
+      "title": "Good Citizenship",
+      "markdown": "pages/MA-UKG-V3-P024-good-citizenship.md",
+      "json": "pages/MA-UKG-V3-P024-good-citizenship.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 25,
+      "prompt_id": "MA-UKG-V3-P025",
+      "title": "Helping Others",
+      "markdown": "pages/MA-UKG-V3-P025-helping-others.md",
+      "json": "pages/MA-UKG-V3-P025-helping-others.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 26,
+      "prompt_id": "MA-UKG-V3-P026",
+      "title": "Different Cultures",
+      "markdown": "pages/MA-UKG-V3-P026-different-cultures.md",
+      "json": "pages/MA-UKG-V3-P026-different-cultures.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 27,
+      "prompt_id": "MA-UKG-V3-P027",
+      "title": "Healthy Communities",
+      "markdown": "pages/MA-UKG-V3-P027-healthy-communities.md",
+      "json": "pages/MA-UKG-V3-P027-healthy-communities.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 28,
+      "prompt_id": "MA-UKG-V3-P028",
+      "title": "Places We Visit",
+      "markdown": "pages/MA-UKG-V3-P028-places-we-visit.md",
+      "json": "pages/MA-UKG-V3-P028-places-we-visit.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 29,
+      "prompt_id": "MA-UKG-V3-P029",
+      "title": "My Amazing World",
+      "markdown": "pages/MA-UKG-V3-P029-my-amazing-world.md",
+      "json": "pages/MA-UKG-V3-P029-my-amazing-world.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 30,
+      "prompt_id": "MA-UKG-V3-P030",
+      "title": "Global Friends",
+      "markdown": "pages/MA-UKG-V3-P030-global-friends.md",
+      "json": "pages/MA-UKG-V3-P030-global-friends.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 31,
+      "prompt_id": "MA-UKG-V3-P031",
+      "title": "World Review",
+      "markdown": "pages/MA-UKG-V3-P031-world-review.md",
+      "json": "pages/MA-UKG-V3-P031-world-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 32,
+      "prompt_id": "MA-UKG-V3-P032",
+      "title": "Mini Project",
+      "markdown": "pages/MA-UKG-V3-P032-mini-project.md",
+      "json": "pages/MA-UKG-V3-P032-mini-project.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 33,
+      "prompt_id": "MA-UKG-V3-P033",
+      "title": "Reflection",
+      "markdown": "pages/MA-UKG-V3-P033-reflection.md",
+      "json": "pages/MA-UKG-V3-P033-reflection.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 34,
+      "prompt_id": "MA-UKG-V3-P034",
+      "title": "Showcase",
+      "markdown": "pages/MA-UKG-V3-P034-showcase.md",
+      "json": "pages/MA-UKG-V3-P034-showcase.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 35,
+      "prompt_id": "MA-UKG-V3-P035",
+      "title": "Grand Review",
+      "markdown": "pages/MA-UKG-V3-P035-grand-review.md",
+      "json": "pages/MA-UKG-V3-P035-grand-review.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 36,
+      "prompt_id": "MA-UKG-V3-P036",
+      "title": "My Achievement",
+      "markdown": "pages/MA-UKG-V3-P036-my-achievement.md",
+      "json": "pages/MA-UKG-V3-P036-my-achievement.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 37,
+      "prompt_id": "MA-UKG-V3-P037",
+      "title": "My World Goals",
+      "markdown": "pages/MA-UKG-V3-P037-my-world-goals.md",
+      "json": "pages/MA-UKG-V3-P037-my-world-goals.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 38,
+      "prompt_id": "MA-UKG-V3-P038",
+      "title": "Celebration",
+      "markdown": "pages/MA-UKG-V3-P038-celebration.md",
+      "json": "pages/MA-UKG-V3-P038-celebration.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 39,
+      "prompt_id": "MA-UKG-V3-P039",
+      "title": "Certificate",
+      "markdown": "pages/MA-UKG-V3-P039-certificate.md",
+      "json": "pages/MA-UKG-V3-P039-certificate.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 40,
+      "prompt_id": "MA-UKG-V3-P040",
+      "title": "I Am a Global Citizen",
+      "markdown": "pages/MA-UKG-V3-P040-i-am-a-global-citizen.md",
+      "json": "pages/MA-UKG-V3-P040-i-am-a-global-citizen.json",
+      "score": 100,
+      "status": "Gold Certified"
+    },
+    {
+      "page_number": 41,
+      "prompt_id": "MA-UKG-V3-P041",
+      "title": "Back Cover",
+      "markdown": "pages/MA-UKG-V3-P041-back-cover.md",
+      "json": "pages/MA-UKG-V3-P041-back-cover.json",
+      "score": 100,
+      "status": "Gold Certified"
+    }
+  ]
+}

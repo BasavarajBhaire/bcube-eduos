@@ -1,0 +1,54 @@
+{
+  "prompt_id": "ME-UKG-V3-P013",
+  "version": "3.0.0",
+  "page_data": {
+    "page_id": "ME-UKG-V3-P013",
+    "book_id": "MATHS_EXPLORERS_UKG",
+    "unit_id": "CORE_LEARNING",
+    "page_number": 13,
+    "page_type": "activity_page",
+    "title": "Make 10",
+    "age_level": "UKG (5+)",
+    "learning_objective": "Develop operations, measurement and mathematical reasoning.",
+    "competencies": [
+      "MAT-02"
+    ],
+    "activity": {
+      "instruction": "Teacher, Star mascot and six UKG children exploring 'Make 10' with maths manipulatives. One short speaking, reflection, or independent practice response.",
+      "evidence": "Children compare strategies, justify answers and collaborate respectfully."
+    },
+    "teacher_prompt": {
+      "facilitation": "Model with concrete materials and ask children to explain their strategy.",
+      "questions": [
+        "What can you show or tell about make 10?"
+      ]
+    },
+    "parent_prompt": {
+      "conversation": "Use maths during cooking, shopping and daily routines.",
+      "home_activity": "Use maths during cooking, shopping and daily routines."
+    },
+    "illustration": {
+      "scene": "Teacher, Star mascot and six UKG children exploring 'Make 10' with maths manipulatives.",
+      "focal_point": "One dominant focus for “Make 10”.",
+      "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+      "negative_constraints": [
+        "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+        "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+        "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+        "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+        "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+        "No unrelated activity or decorative response space."
+      ]
+    },
+    "character_refs": [
+      "STAR-MASCOT-V3"
+    ],
+    "overrides": []
+  },
+  "compiled_prompt": "# BCube Production Prompt v3 — ME-UKG-V3-P013\n\n## 1. Release metadata\n\n- Prompt ID: ME-UKG-V3-P013\n- Version: 3.0.0\n- Book: Maths Explorers\n- Level: UKG (5+)\n- Module: Core Learning\n- Page: 13 of 41\n- Exact title: Make 10\n- Source: Maths_Explorers_UKG_Gold_Production_v4.xlsx\n- Source SHA-256: 8dd85d047bd998fd311124ad0c46bf3199665ba358e371b17e2b20aedefb0b2b\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Make 10”. Follow this deterministic package only. Produce no explanation, alternate, mockup, or additional page.\n\n## 3. Engine order and precedence\n\n1. Publishing Engine\n2. Design Engine\n3. Visual Grammar Engine\n4. Educational Engine\n5. Teaching Engine\n6. Parent Partnership Engine\n7. Illustration Engine\n8. Character Engine\n9. Quality Assurance and Prompt Compiler\n\nPrecedence: approved page instruction > approved book/level rule > global rule. Do not resolve conflicts by guessing.\n\n## 4. Publishing Engine\n\n- A4 portrait, 210 × 297 mm; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin; 300 DPI; CMYK-safe; print-ready.\n- Use a 20–28 mm header with the exact title “Make 10” centred and the official BCube logo reserved at top left.\n- Use a 10–14 mm footer with page number 13 only at bottom right.\n- Never generate or redraw the logo; apply the official vector asset during final layout.\n\n## 5. Design and Visual Grammar Engines\n\n- Page type: activity_page. Layout anchor: Teacher, Star mascot and six UKG children exploring 'Make 10' with maths manipulatives.\n- Visual/text balance: 55–65% visual and 35–45% text/activity. Use one dominant focal point and a clear title → model → action → response eye path.\n- Blank-space rule: Only purposeful response space; no decorative blank frame. Maximum two core activities and one optional extension.\n- Clean white base, soft BCube pastel accents, thick rounded outlines, large targets, strong contrast, generous spacing, and no visual clutter.\n\n## 6. Educational Engine\n\n- Objective: Develop operations, measurement and mathematical reasoning.\n- Primary activity: Teacher, Star mascot and six UKG children exploring 'Make 10' with maths manipulatives.\n- Secondary activity: One short speaking, reflection, or independent practice response.\n- Observable evidence: Children compare strategies, justify answers and collaborate respectfully.\n- Developmental response modes: oral explanation, guided reading, short independent response, sequencing, problem solving, drawing, or a simple sentence.\n- BCube competency: MAT-02\n- Grade 1 readiness: Operations & Measurement\n\n## 7. Teaching Engine\n\n- Facilitation: Model with concrete materials and ask children to explain their strategy.\n- Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.\n- Assessment evidence: Child solves the task accurately and explains the reasoning.\n\n## 8. Parent Partnership Engine\n\n- Home connection: Use maths during cooking, shopping and daily routines.\n- Use common household materials only; do not create a new scored task or require a device, purchase, or printing.\n\n## 9. Illustration and Character Engines\n\n- Composition: Premium maths classroom, hands-on resources, labelled activity zones, warm pastel palette.\n- Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.\n- Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.\n\n## 10. Approved source instruction\n\nCreate a premium BCube Gold Production v2 A4 workbook page titled 'Make 10' with teacher-led maths learning, Star mascot, six expressive UKG children, concrete manipulatives, rich storytelling, 300 DPI.\n\n## 11. Negative constraints\n\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No unrelated activity or decorative response space.\n\n## 12. Gold QA gate and compiler footer\n\nVerify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.\n\nME-UKG-V3-P013 | v3.0.0 | page 13/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Gold Certified"
+  }
+}
