@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BCube Gold Prompt Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "prompt_id",
+    "version",
+    "page_data",
+    "compiled_prompt",
+    "validation"
+  ],
+  "properties": {
+    "prompt_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "page_data": {
+      "$ref": "page-data.schema.json"
+    },
+    "compiled_prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "score",
+        "critical_defects",
+        "status"
+      ],
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "critical_defects": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "enum": [
+            "Draft",
+            "Failed",
+            "Passed",
+            "Gold Certified"
+          ]
+        }
+      }
+    }
+  }
+}

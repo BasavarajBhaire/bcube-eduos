@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BCube Rule Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "engine",
+    "status",
+    "priority",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(PE|DE|VG|EE|TE|PP|IE|CE|QA|PC)-[A-Z]{3}-[0-9]{3}$"
+    },
+    "engine": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "Draft",
+        "Review",
+        "Approved",
+        "Active",
+        "Superseded",
+        "Deprecated",
+        "Archived"
+      ]
+    },
+    "priority": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "requirement": {
+      "type": "string"
+    }
+  }
+}

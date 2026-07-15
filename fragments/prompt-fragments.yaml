@@ -1,0 +1,73 @@
+standard: BCube Prompt Fragment Library
+version: 3.0.0
+immutability: Approved fragment versions are immutable.
+families:
+- id: PF-PUB
+  name: Publishing
+  items:
+  - page_geometry
+  - safe_margins
+  - print_specification
+  - brand_header
+  - footer
+  - export_profile
+- id: PF-DES
+  name: Design
+  items:
+  - grid
+  - whitespace
+  - typography
+  - layout_hierarchy
+  - activity_zone
+- id: PF-VG
+  name: Visual Grammar
+  items:
+  - focal_point
+  - eye_flow
+  - visual_rhythm
+  - cognitive_load
+- id: PF-EDU
+  name: Educational
+  items:
+  - objective
+  - competency
+  - activity
+  - assessment_evidence
+- id: PF-TEA
+  name: Teaching
+  items:
+  - facilitation
+  - questioning
+  - scaffolding
+  - feedback
+  - observation
+- id: PF-PAR
+  name: Parent
+  items:
+  - conversation_prompt
+  - home_activity
+  - reinforcement
+  - family_accessibility
+- id: PF-ILL
+  name: Illustration
+  items:
+  - rendering_style
+  - scene
+  - lighting
+  - colour
+  - technical_output
+- id: PF-CHR
+  name: Character
+  items:
+  - identity
+  - expression
+  - pose
+  - continuity
+  - interaction
+- id: PF-QAC
+  name: QA and Compiler
+  items:
+  - negative_constraints
+  - validation_footer
+  - metadata
+  - release_package

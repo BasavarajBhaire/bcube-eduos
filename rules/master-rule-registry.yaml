@@ -1,0 +1,1130 @@
+standard: BCube Prompt Engine v3.0
+version: 3.0.0
+status: Active
+inheritance:
+- global
+- book
+- unit
+- page
+lifecycle:
+- Draft
+- Review
+- Approved
+- Active
+- Superseded
+- Deprecated
+- Archived
+rules:
+- id: CE-ACC-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Character behaviour MUST model safe, respectful and age-appropriate
+    conduct.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-CON-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Wardrobe, colours and proportions MUST remain continuous across related
+    pages.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-DIV-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Character representation SHALL reflect diversity and inclusion.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-EXP-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Expressions SHALL support the intended learning emotion.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-IDN-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Every recurring character MUST have a unique canonical identity.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-INT-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Character interactions SHALL reinforce the learning objective.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-MTD-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Character metadata SHALL be complete before prompt compilation.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-POS-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Poses MUST communicate purposeful educational actions.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-STR-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Star mascot SHALL remain visually consistent across all publications.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: CE-VAL-001
+  engine: Character Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_10.docx
+  requirement: Character validation MUST pass before final QA and Prompt Compiler
+    execution.
+  rationale: Maintain recognisable, trustworthy and educationally effective characters.
+  inputs: Illustration metadata, curriculum context, page objective and continuity
+    profile.
+  outputs: Character specification, pose, expression and interaction metadata.
+  validation: Verify identity, continuity, accessibility and educational appropriateness.
+  compiler_impact: Produces the Character Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: DE-SPC-001
+  engine: Design Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_4.docx
+  requirement: Whitespace MUST preserve readability and activity usability.
+  rationale: Creates consistent, reusable page structures across every BCube publication.
+  inputs: Publishing metadata, template ID, design tokens, page type.
+  outputs: Resolved layout, component positions, spacing and typography metadata.
+  validation: Check grid alignment, spacing consistency, template compliance and hierarchy.
+  compiler_impact: Provides normalized design instructions for downstream engines.
+- id: DE-TOK-001
+  engine: Design Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_4.docx
+  requirement: Layouts MUST preserve protected activity zones.
+  rationale: Creates consistent, reusable page structures across every BCube publication.
+  inputs: Publishing metadata, template ID, design tokens, page type.
+  outputs: Resolved layout, component positions, spacing and typography metadata.
+  validation: Check grid alignment, spacing consistency, template compliance and hierarchy.
+  compiler_impact: Provides normalized design instructions for downstream engines.
+- id: DE-VAL-001
+  engine: Design Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_4.docx
+  requirement: Design validation MUST complete before Visual Grammar compilation.
+  rationale: Creates consistent, reusable page structures across every BCube publication.
+  inputs: Publishing metadata, template ID, design tokens, page type.
+  outputs: Resolved layout, component positions, spacing and typography metadata.
+  validation: Check grid alignment, spacing consistency, template compliance and hierarchy.
+  compiler_impact: Provides normalized design instructions for downstream engines.
+- id: EE-ACT-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Activities SHALL require meaningful child participation.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-ASM-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Every activity MUST include observable assessment evidence.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-CMP-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Each activity SHALL map to one or more BCube competencies.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-DEV-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Learning experiences MUST align with the target developmental stage.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-DIF-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Support and extension pathways SHOULD be available.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-MTD-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Educational metadata SHALL be complete before compilation.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-OBJ-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Every page SHALL define one measurable primary learning objective.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-OBJ-002
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Supporting objectives MUST reinforce the primary objective.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-TRN-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Learning SHOULD transfer to real-life experiences.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: EE-VAL-001
+  engine: Educational Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_6.docx
+  requirement: Educational validation MUST pass before illustration approval.
+  rationale: Ensure educational consistency and measurable learning outcomes.
+  inputs: Curriculum, age level, competencies, page metadata.
+  outputs: Structured educational metadata for downstream engines.
+  validation: Verify objective clarity, competency alignment and assessment readiness.
+  compiler_impact: Generates Educational Engine block for the final BCube Gold Production
+    Prompt™.
+- id: IE-CNT-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Recurring scenes and assets MUST maintain continuity across the series.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-COL-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Illustrations SHALL use the approved BCube colour system and accessibility
+    guidelines.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-ENV-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Background environments SHALL reinforce the learning objective without
+    distraction.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-LGT-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Lighting MUST maximize readability and maintain a warm, child-friendly
+    atmosphere.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-MTD-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Illustration metadata SHALL be complete before compilation.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-PER-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Perspective SHALL remain age-appropriate and visually stable.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-PRO-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Props MUST support learning and never compete with instructional content.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-REN-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Every illustration SHALL use the approved BCube rendering style and
+    visual identity.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-SCN-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Each page MUST communicate one coherent educational scene.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: IE-VAL-001
+  engine: Illustration Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_9.docx
+  requirement: Illustration validation MUST pass before Character Engine and QA execution.
+  rationale: Ensure premium-quality, educationally effective and visually consistent
+    illustrations.
+  inputs: Publishing, Design, Visual Grammar and Educational Engine metadata.
+  outputs: Scene specification, rendering parameters, environment metadata and illustration
+    directives.
+  validation: Check composition, quality, accessibility, continuity and print suitability.
+  compiler_impact: Produces the Illustration Engine™ block for the BCube Gold Production
+    Prompt™.
+- id: PC-AUD-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Every compilation SHALL produce an auditable execution record.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-LOD-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: The compiler SHALL load engine outputs in the approved execution sequence.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-MRG-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Engine outputs SHALL merge without conflicting instructions.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-MTD-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Compiled prompts SHALL include complete versioned metadata.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-OVR-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Overrides MAY modify only approved overridable fields.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-PKG-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: The compiler SHALL generate a release-ready prompt package.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-REL-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Only QA-approved prompts MAY be released for production.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-SCH-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: All required metadata MUST conform to the master schema before compilation.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-VAL-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Compilation MUST halt on unresolved validation failures.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PC-VAR-001
+  engine: Prompt Compiler
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_12.docx
+  requirement: Variables SHALL resolve using global, book, unit and page precedence.
+  rationale: Ensure repeatable, deterministic prompt generation.
+  inputs: Outputs from Publishing, Design, Visual Grammar, Educational, Teaching,
+    Parent, Illustration, Character and QA engines.
+  outputs: Compiled BCube Gold Production Prompt™, metadata and audit record.
+  validation: Schema validation, dependency checks, conflict detection and version
+    compatibility.
+  compiler_impact: Defines final prompt assembly and release behaviour.
+- id: PE-ACT-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Activity spaces MUST remain unobstructed.
+  rationale: Supports child interaction.
+  validation: Activity-zone validation.
+  compiler_impact: Activity metadata.
+- id: PE-BRD-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Official BCube branding SHALL follow approved placement rules.
+  rationale: Brand consistency.
+  validation: Header inspection.
+  compiler_impact: Brand metadata.
+- id: PE-CLR-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Interior pages SHOULD use light backgrounds with accessible contrast.
+  rationale: Improves readability.
+  validation: Contrast review.
+  compiler_impact: Colour profile.
+- id: PE-EXP-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Final output SHALL support PDF/X export workflow.
+  rationale: Reliable production.
+  validation: Export profile verification.
+  compiler_impact: Release metadata.
+- id: PE-GEO-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Every standard workbook page SHALL use the approved page geometry.
+  rationale: Uniform production and printing.
+  validation: Check page size, orientation and bleed.
+  compiler_impact: Publishing block generated.
+- id: PE-GEO-002
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Essential content MUST remain inside the safe area.
+  rationale: Prevents trim loss.
+  validation: Measure all critical elements against safe margin.
+  compiler_impact: Safe-area flag.
+- id: PE-IMG-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Illustrations MUST be suitable for 300 DPI print reproduction.
+  rationale: Commercial print quality.
+  validation: Resolution validation.
+  compiler_impact: Image compliance.
+- id: PE-LAY-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Pages SHALL reserve protected zones for title, activity and footer.
+  rationale: Supports consistent layouts.
+  validation: Template compliance review.
+  compiler_impact: Layout metadata.
+- id: PE-TYP-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Child-facing typography MUST meet minimum readability standards.
+  rationale: Supports early readers.
+  validation: Font size and contrast validation.
+  compiler_impact: Typography block.
+- id: PE-VAL-001
+  engine: Publishing Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_2.docx
+  requirement: Publishing Engine SHALL fail compilation on critical geometry defects.
+  rationale: Protects production quality.
+  validation: Critical error detection.
+  compiler_impact: Compilation stop.
+- id: PP-ACC-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Home guidance MUST be accessible to diverse family structures and contexts.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-COM-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Parent communication SHALL use clear, encouraging and jargon-free language.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-CON-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Conversation prompts MUST reinforce the classroom learning objective.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-ENG-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Family engagement activities SHOULD be practical and inclusive.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-EXT-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Optional extension activities MAY be provided for deeper exploration.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-HME-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Every learning unit SHOULD include an optional home-learning activity.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-MTD-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Parent metadata SHALL be complete before compilation.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-RES-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Home activities MUST rely on commonly available materials whenever
+    possible.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-TIM-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Recommended activity duration SHALL match the developmental level.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: PP-VAL-001
+  engine: Parent Partnership Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_8.docx
+  requirement: Parent Partnership validation MUST pass before QA approval.
+  rationale: Strengthens continuity between classroom learning and the home environment.
+  inputs: Educational objective, learner profile, activity metadata.
+  outputs: Conversation prompts, home activities, reinforcement metadata.
+  validation: Verify clarity, feasibility, inclusiveness and alignment with learning
+    objectives.
+  compiler_impact: Produces the Parent Partnership Engine™ block for the compiled
+    production prompt.
+- id: QA-ACC-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Accessibility compliance MUST be reviewed.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-AUD-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: All validation results SHALL be recorded for audit.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-CHR-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Character consistency SHALL be validated across related pages.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-DEF-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Defects SHALL be classified as Critical, Major, Minor or Cosmetic.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-DES-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Design and publishing compliance SHALL be verified.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-EDU-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Educational compliance MUST be validated before release.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-GAT-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Every production artifact SHALL pass all mandatory quality gates.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-REL-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Only approved artifacts MAY proceed to publication.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-SCR-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Every artifact SHALL receive a Gold Quality Score™.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: QA-VIS-001
+  engine: Quality Assurance Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_11.docx
+  requirement: Visual grammar and illustration quality MUST meet Gold standards.
+  rationale: Ensure consistent educational, visual and production quality.
+  inputs: Outputs from all production engines plus compiled metadata.
+  outputs: QA status, score, defect log and release recommendation.
+  validation: Automated checks followed by human review where required.
+  compiler_impact: Blocks or approves final prompt compilation based on QA status.
+- id: TE-CLS-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Classroom routines SHOULD promote safety, inclusion and engagement.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-FAC-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Every learning activity SHALL include a defined teacher facilitation
+    strategy.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-FDB-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Feedback SHALL be specific, positive and growth-oriented.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-GRP-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Activities MAY support whole-class, small-group or individual learning.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-INT-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Teacher-child interactions SHALL reinforce the primary learning objective.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-MTD-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Teaching metadata SHALL be complete before prompt compilation.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-OBS-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Teachers MUST observe and document evidence of learning.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-QUE-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Teachers SHOULD use open-ended questioning before direct explanation.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-SCF-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Scaffolding MUST progress from modelling to guided practice to independence.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: TE-VAL-001
+  engine: Teaching Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_7.docx
+  requirement: Teaching validation MUST pass before QA approval.
+  rationale: Promotes consistent, evidence-based classroom practice.
+  inputs: Educational metadata, activity type, learner profile.
+  outputs: Teaching strategy, questioning prompts, facilitation metadata.
+  validation: Check instructional alignment, questioning quality and evidence collection.
+  compiler_impact: Produces the Teaching Engine™ block for the final production prompt.
+- id: VG-ACC-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Visual grammar SHALL support accessibility and inclusion.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-BAL-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Visual weight SHALL remain balanced across the page.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-COG-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Illustrations MUST minimize unnecessary cognitive load.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-EYE-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Visual eye flow SHALL guide the learner naturally from title to activity.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-FOC-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Every page SHALL contain exactly one dominant educational focal point.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-FOC-002
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Secondary focal points MUST reinforce, not compete with, the primary
+    objective.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-RHY-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Spacing and repetition SHOULD create predictable visual rhythm.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-SCN-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Scenes MUST communicate a single learning narrative.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-VAL-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Visual Grammar validation MUST complete before Educational Engine execution.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.
+- id: VG-WHT-001
+  engine: Visual Grammar Engine
+  status: Active
+  priority: Mandatory
+  source: BCube_Prompt_Engine_v3_Complete_Production_Standard_Master_Part_5.docx
+  requirement: Whitespace SHALL be treated as an instructional design element.
+  rationale: Improve comprehension and reduce visual confusion.
+  inputs: Design layout, illustration metadata, page objective.
+  outputs: Focal hierarchy, eye-flow map, composition metadata.
+  validation: Evaluate attention path, clutter, balance and instructional clarity.
+  compiler_impact: Generates normalized visual grammar block for prompt compilation.

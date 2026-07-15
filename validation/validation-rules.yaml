@@ -1,0 +1,68 @@
+standard: BCube Validation Library
+version: 3.0.0
+release_threshold: 90
+critical_failures_block_release: true
+execution_levels:
+- fragment
+- engine
+- compiled_prompt
+- generated_asset
+- release_package
+domains:
+- id: VAL-PUB
+  name: Publishing
+  weight: 15
+  critical:
+  - trim_safety
+  - resolution
+  - logo_integrity
+- id: VAL-DES
+  name: Design
+  weight: 10
+  critical:
+  - hierarchy
+  - activity_usability
+- id: VAL-VG
+  name: Visual Grammar
+  weight: 10
+  critical:
+  - single_focal_point
+  - cognitive_load
+- id: VAL-EDU
+  name: Educational
+  weight: 15
+  critical:
+  - objective_alignment
+  - developmental_fit
+- id: VAL-TEA
+  name: Teaching
+  weight: 10
+  critical:
+  - facilitation_clarity
+  - child_participation
+- id: VAL-PAR
+  name: Parent
+  weight: 5
+  critical:
+  - clarity
+  - feasibility
+- id: VAL-ILL
+  name: Illustration
+  weight: 15
+  critical:
+  - prompt_fidelity
+  - print_suitability
+- id: VAL-CHR
+  name: Character
+  weight: 10
+  critical:
+  - identity
+  - continuity
+  - inclusion
+- id: VAL-PC
+  name: Compiler
+  weight: 10
+  critical:
+  - schema
+  - unresolved_variables
+  - version_compatibility

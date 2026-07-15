@@ -1,0 +1,50 @@
+standard: BCube Template Library
+version: 3.0.0
+templates:
+- id: TPL-COVER
+  type: cover
+  required_zones:
+  - brand
+  - title
+  - hero_visual
+  - age_badge
+- id: TPL-LEARN
+  type: learning_page
+  required_zones:
+  - header
+  - learning_focus
+  - dominant_visual
+  - teacher_prompt
+  - footer
+- id: TPL-ACT
+  type: activity_page
+  required_zones:
+  - header
+  - instruction
+  - activity_canvas
+  - teacher_prompt
+  - parent_prompt
+  - footer
+- id: TPL-ASSESS
+  type: assessment
+  required_zones:
+  - objective
+  - task
+  - evidence
+  - observation
+  - footer
+- id: TPL-REVIEW
+  type: review
+  required_zones:
+  - recap
+  - practice
+  - reflection
+  - progress
+- id: TPL-CERT
+  type: certificate
+  required_zones:
+  - brand
+  - achievement
+  - learner_name
+  - date
+  - signature

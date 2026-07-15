@@ -1,0 +1,38 @@
+page_id: CCG-NUR-MEET-STAR-005
+book_id: COMMUNICATION-CHAMPIONS-GOLD
+unit_id: MEET-THE-MASCOTS
+page_number: 5
+page_type: learning_page
+title: Meet Star
+age_level: Nursery (3+)
+learning_objective: The child greets Star using a clear word, eye contact, or a friendly
+  wave.
+competencies:
+- communication
+- confidence
+- social-emotional learning
+activity:
+  instruction: 'Wave to Star and say: Hello, Star!'
+  evidence: The child attempts a greeting through speech, gesture, or supported communication.
+teacher_prompt:
+  facilitation: Model a warm greeting, pause for the child, and positively acknowledge
+    every communication attempt.
+  questions:
+  - Can you wave to Star?
+  - What can you say when you meet a friend?
+parent_prompt:
+  conversation: 'Ask: How did you greet Star today?'
+  home_activity: Practise one friendly greeting with a family member.
+illustration:
+  scene: Star stands centrally, smiling and waving, with one teacher and a small group
+    of children responding naturally.
+  focal_point: Star and the teacher-child greeting interaction
+  style: Premium preschool publishing illustration; white background, soft pastel
+    accents, thick rounded outlines, large recognizable forms.
+  negative_constraints:
+  - no empty speech balloons
+  - no nursery badge on interior page
+  - no tiny decorative clutter
+  - no cropped hands or faces
+character_refs:
+- STAR-MASCOT-v3

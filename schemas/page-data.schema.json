@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/page-data.schema.json",
+  "title": "BCube Page Data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "page_id",
+    "book_id",
+    "page_type",
+    "title",
+    "age_level",
+    "learning_objective",
+    "activity",
+    "teacher_prompt",
+    "illustration"
+  ],
+  "properties": {
+    "page_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_-]+$"
+    },
+    "book_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit_id": {
+      "type": "string"
+    },
+    "page_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "page_type": {
+      "enum": [
+        "cover",
+        "learning_page",
+        "activity_page",
+        "worksheet",
+        "assessment",
+        "review",
+        "certificate",
+        "teacher_guide",
+        "parent_guide"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "age_level": {
+      "type": "string",
+      "minLength": 1
+    },
+    "learning_objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "competencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "activity": {
+      "type": "object",
+      "required": [
+        "instruction",
+        "evidence"
+      ],
+      "properties": {
+        "instruction": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "teacher_prompt": {
+      "type": "object",
+      "required": [
+        "facilitation",
+        "questions"
+      ],
+      "properties": {
+        "facilitation": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "parent_prompt": {
+      "type": "object",
+      "properties": {
+        "conversation": {
+          "type": "string"
+        },
+        "home_activity": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "illustration": {
+      "type": "object",
+      "required": [
+        "scene",
+        "focal_point",
+        "style"
+      ],
+      "properties": {
+        "scene": {
+          "type": "string"
+        },
+        "focal_point": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string"
+        },
+        "negative_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "character_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "overrides": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}
