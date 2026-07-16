@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/asset-manifest.schema.json",
+  "id": "BRAND-COLOR-PALETTE-001",
+  "name": "BCube Academy Core Colour Palette",
+  "type": "brand-colour-palette",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "colours": [
+    {"token": "bcube-navy", "usage": "primary brand and academy text", "hex": "#0A3C82"},
+    {"token": "bcube-orange", "usage": "energy, creativity and C accent", "hex": "#FF9800"},
+    {"token": "bcube-green", "usage": "growth and U accent", "hex": "#43B02A"},
+    {"token": "bcube-blue", "usage": "future skills and B accent", "hex": "#0089E6"},
+    {"token": "bcube-purple", "usage": "imagination and E accent", "hex": "#7436B5"},
+    {"token": "bcube-pink", "usage": "secondary playful accent", "hex": "#FF2C63"},
+    {"token": "bcube-white", "usage": "clean page background", "hex": "#FFFFFF"}
+  ],
+  "compilerExpansion": "Use the approved BCube brand palette as controlled accents while preserving a clean white or very light pastel educational background. Do not replace the official logo colours, introduce unrelated neon palettes, or use full dark backgrounds.",
+  "validation": {
+    "logoColoursProtected": true,
+    "fullDarkBackgroundForbidden": true,
+    "unapprovedDominantPaletteFailsGold": true
+  }
+}
