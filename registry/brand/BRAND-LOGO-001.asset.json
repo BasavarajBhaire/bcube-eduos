@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/asset-manifest.schema.json",
+  "id": "BRAND-LOGO-001",
+  "name": "BCube Academy Master Logo",
+  "type": "brand-logo",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "source": {
+    "repositoryPath": "assets/brand/logo/master/bcube-academy-master-logo.png",
+    "mimeType": "image/png",
+    "sha256": "20a34081b07562cba15c1ec624bf709496fcdde18ab7d9da09a4e496125992f2",
+    "sizeBytes": 795875
+  },
+  "usage": ["cover", "interior", "teacher-guide", "parent-guide", "certificate", "poster", "marketing", "web"],
+  "rendering": {
+    "preserveAspectRatio": true,
+    "allowCrop": false,
+    "allowRecolor": false,
+    "allowDistortion": false,
+    "defaultPlacement": "top-left",
+    "clearSpaceRequired": true
+  },
+  "compilerExpansion": "Place the official full-colour BCube Academy logo from the governed master asset at the required template location. Preserve its original proportions, colours, wording and complete symbol; do not redraw, simplify, crop, recolour, distort, substitute or recreate it as generated text.",
+  "validation": {
+    "mandatoryFor": ["cover", "interior", "certificate", "publisher-page"],
+    "failOnMissingSource": true,
+    "failOnUnresolvedReference": true,
+    "failOnGeneratedSubstitute": true
+  }
+}
