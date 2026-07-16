@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/compilation-manifest.schema.json",
+  "title": "BCube Compilation Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifestVersion",
+    "compilerVersion",
+    "requestId",
+    "bookId",
+    "pageId",
+    "buildProfileId",
+    "modelProfileId",
+    "resolvedAssets",
+    "promptFingerprint",
+    "validationStatus",
+    "compiledAt"
+  ],
+  "properties": {
+    "manifestVersion": {"type": "string"},
+    "compilerVersion": {"type": "string"},
+    "requestId": {"type": "string", "minLength": 1},
+    "bookId": {"type": "string", "minLength": 1},
+    "pageId": {"type": "string", "minLength": 1},
+    "buildProfileId": {"type": "string", "minLength": 1},
+    "modelProfileId": {"type": "string", "minLength": 1},
+    "resolvedAssets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assetId", "version", "assetType"],
+        "properties": {
+          "assetId": {"type": "string"},
+          "version": {"type": "string"},
+          "assetType": {"type": "string"},
+          "checksum": {"type": "string"}
+        }
+      }
+    },
+    "promptFingerprint": {"type": "string", "pattern": "^sha256:[a-fA-F0-9]{64}$"},
+    "validationStatus": {"enum": ["PASS", "FAIL"]},
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "compiledAt": {"type": "string", "format": "date-time"},
+    "releasedAt": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
