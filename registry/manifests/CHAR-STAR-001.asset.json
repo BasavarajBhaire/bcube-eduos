@@ -1,0 +1,37 @@
+{
+  "assetId": "CHAR-STAR-001",
+  "assetType": "character",
+  "name": "Official BCube Star Mascot",
+  "description": "Canonical Star mascot used across BCube preschool publications.",
+  "version": "1.0.0",
+  "status": "gold-certified",
+  "owner": "BCube Future Academy",
+  "dependencies": [
+    {
+      "assetId": "STYLE-PRESCHOOL-GOLD-001",
+      "versionRange": ">=1.0.0 <2.0.0",
+      "required": true
+    }
+  ],
+  "validationProfile": "GOLD-CHARACTER",
+  "compilerExpansion": {
+    "mode": "inline",
+    "sourcePath": "characters/star.character.json",
+    "requiredFields": [
+      "shape",
+      "colour",
+      "eyes",
+      "cheeks",
+      "smile",
+      "shoes",
+      "cape"
+    ]
+  },
+  "source": {
+    "path": "characters/star.character.json",
+    "format": "json"
+  },
+  "tags": ["mascot", "star", "nursery", "character", "gold"],
+  "createdAt": "2026-07-16T00:00:00+05:30",
+  "updatedAt": "2026-07-16T00:00:00+05:30"
+}
