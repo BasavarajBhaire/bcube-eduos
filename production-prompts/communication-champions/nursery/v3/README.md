@@ -1,9 +1,11 @@
 # Communication Champions — Nursery Production Prompts v3
 
-41 compiler-ready page packages. Prompts only; no generated page artwork.
+41 individually rewritten compiler-ready page packages. Each page locks its own child action, visible wording, response space, teacher move, parent extension, illustration scene and page-specific prohibitions. Generated artwork is stored separately under `illustrations/`.
 
-- Version: 3.0.0
-- Gold validation: 574/574 checks passed; 0 critical defects
+- Version: 3.1.0
+- Revision date: 2026-07-16
+- Gold validation: 943/943 checks passed; 0 critical defects
+- Individual specification source: [individual-page-specifications.json](individual-page-specifications.json)
 - Source: Communication_Champions_Gold_Individually_Rebuilt.xlsx
 
 | Page | Prompt ID | Title | Markdown | JSON | Status |

@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P041
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Closing Pages
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Support self-reflection and celebrate key communication achievements.
-- Primary activity: One model-and-repeat, point-and-say, listening, or role-play task for “I Am a Communication Champion!”.
-- Secondary activity: Add one simple choice-supported speaking task.
-- Observable evidence: Use one exact visible 2–7 word model phrase.
+- Primary activity: Tick four achievements, choose one favourite skill and say the champion pledge with support.
+- Secondary activity: Four optional tick boxes and one spoken pledge.
+- Observable evidence: Child self-identifies at least one communication achievement.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Say the model phrase slowly; accept pointing or one-word responses.
+- Facilitation: Read each achievement, invite a tick or point and celebrate growth without requiring every box.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Use one exact visible 2–7 word model phrase.
+- Assessment evidence: Child self-identifies at least one communication achievement.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Repeat the pledge together and notice one real example during the week.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 activities; Use at most one sentence starter.
+- Composition: Star and the recurring children celebrate around four large achievement cards: listen, speak, take turns, kind words.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 41: Learning objective: Support self-reflection and celebrate key communication achievements. Primary child activity: One model-and-repeat, point-and-say, listening, or role-play task for “I Am a Communication Champion!”. Secondary activity: Add one simple choice-supported speaking task. Teacher/parent prompt: Say the model phrase slowly; accept pointing or one-word responses. Expected child response: Use one exact visible 2–7 word model phrase. Blank-space allocation: Use at most one sentence starter. Activity load: 2 activities. Prohibited extras: No more than three speech balloons or long independent writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Tick four achievements, choose one favourite skill and say the champion pledge with support.
+- Exact observable evidence: Child self-identifies at least one communication achievement.
+- Exact teacher move: Read each achievement, invite a tick or point and celebrate growth without requiring every box.
+- Exact teacher question: Which communication skill makes you proud?
+- Exact home connection: Repeat the pledge together and notice one real example during the week.
+- Exact illustration scene: Star and the recurring children celebrate around four large achievement cards: listen, speak, take turns, kind words.
+- Exact visible text: I listen with care. I speak with confidence. I take turns. I use kind words. I am a Communication Champion!
+- Exact response space: Four optional tick boxes and one spoken pledge.
+- Page-specific prohibition: No score, ranking, all-or-nothing pass mark, blank balloons or new skill beyond the book.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 41: Learning objective: Support sel
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P041 | v3.0.0 | page 41/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P041 | v3.1.0 | page 41/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

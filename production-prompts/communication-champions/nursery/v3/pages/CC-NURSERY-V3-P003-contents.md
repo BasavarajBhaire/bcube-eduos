@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P003
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Front Matter
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Help parents and teachers navigate the workbook.
-- Primary activity: Show the exact final module names and verified page ranges.
-- Secondary activity: Use one simple icon per module.
-- Observable evidence: No child response required.
+- Primary activity: Adults use the verified list to locate each page; children are not asked to complete an activity.
+- Secondary activity: No child response space.
+- Observable evidence: Adult locates a named page correctly.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Use this page only to locate lessons.
+- Facilitation: Point to one section name and show how its page number leads to the lesson.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: No child response required.
+- Assessment evidence: Adult locates a named page correctly.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Use the contents page together to revisit one favourite activity.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Use editable page ranges and module names. Individual execution locked: 0 child activities; No blank response boxes.
+- Composition: Two-column contents list with one small, consistent icon per verified section and Star pointing to the page-number column.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 3: Learning objective: Help parents and teachers navigate the workbook. Primary child activity: Show the exact final module names and verified page ranges. Secondary activity: Use one simple icon per module. Teacher/parent prompt: Use this page only to locate lessons. Expected child response: No child response required. Blank-space allocation: No blank response boxes. Activity load: 0 child activities. Prohibited extras: No placeholder modules, placeholder page numbers, or worksheet activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Adults use the verified list to locate each page; children are not asked to complete an activity.
+- Exact observable evidence: Adult locates a named page correctly.
+- Exact teacher move: Point to one section name and show how its page number leads to the lesson.
+- Exact teacher question: Which page shall we find?
+- Exact home connection: Use the contents page together to revisit one favourite activity.
+- Exact illustration scene: Two-column contents list with one small, consistent icon per verified section and Star pointing to the page-number column.
+- Exact visible text: Only the 41 verified page titles and page numbers from the manifest.
+- Exact response space: No child response space.
+- Page-specific prohibition: No invented modules, no ranges beyond page 41 and no decorative activity panels.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 3: Learning objective: Help parents
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P003 | v3.0.0 | page 3/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P003 | v3.1.0 | page 3/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

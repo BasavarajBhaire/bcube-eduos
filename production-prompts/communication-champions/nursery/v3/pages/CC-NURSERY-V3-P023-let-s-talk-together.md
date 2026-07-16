@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P023
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 3 – Friends & Communication
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Practise simple two-way conversation and eye contact.
-- Primary activity: One short verified path or arrow task for “Let’s Talk Together”.
-- Secondary activity: Add one start-and-finish speaking prompt.
-- Observable evidence: Child says one direction or destination.
+- Primary activity: Follow the two-turn conversation path: greet, ask one question, listen, answer and say goodbye.
+- Secondary activity: One oral answer blank within the fixed conversation path.
+- Observable evidence: Child completes at least one turn using words, gesture or picture choice.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Trace the first move together.
+- Facilitation: Partner children, model the first two bubbles and pause after each turn.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child says one direction or destination.
+- Assessment evidence: Child completes at least one turn using words, gesture or picture choice.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Have a two-turn conversation about one familiar event from the day.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt; preserve all activity areas and exact text. Individual execution locked: 2 activities; Use one large solvable grid or maze only.
+- Composition: Two children face each other with a five-step arrow path and fully written model bubbles; Star marks start and finish.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 23: Learning objective: Practise simple two-way conversation and eye contact. Primary child activity: One short verified path or arrow task for “Let’s Talk Together”. Secondary activity: Add one start-and-finish speaking prompt. Teacher/parent prompt: Trace the first move together. Expected child response: Child says one direction or destination. Blank-space allocation: Use one large solvable grid or maze only. Activity load: 2 activities. Prohibited extras: No unsolvable route, narrow corridor, excessive turns, or second maze. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Follow the two-turn conversation path: greet, ask one question, listen, answer and say goodbye.
+- Exact observable evidence: Child completes at least one turn using words, gesture or picture choice.
+- Exact teacher move: Partner children, model the first two bubbles and pause after each turn.
+- Exact teacher question: What would you like to ask your partner?
+- Exact home connection: Have a two-turn conversation about one familiar event from the day.
+- Exact illustration scene: Two children face each other with a five-step arrow path and fully written model bubbles; Star marks start and finish.
+- Exact visible text: Hello! What do you like? I like ______. What do you like? Goodbye!
+- Exact response space: One oral answer blank within the fixed conversation path.
+- Page-specific prohibition: No maze, crossed arrows, empty balloons or more than five conversational turns.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 23: Learning objective: Practise si
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P023 | v3.0.0 | page 23/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P023 | v3.1.0 | page 23/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

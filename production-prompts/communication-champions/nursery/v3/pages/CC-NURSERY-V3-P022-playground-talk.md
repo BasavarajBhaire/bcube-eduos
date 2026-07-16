@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P022
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 3 – Friends & Communication
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Use short, polite phrases while playing with others.
-- Primary activity: One model-and-repeat, point-and-say, listening, or role-play task for “Playground Talk”.
-- Secondary activity: Add one simple choice-supported speaking task.
-- Observable evidence: Use one exact visible 2–7 word model phrase.
+- Primary activity: Match each playground situation to the polite phrase: Can I play? My turn, please. Thank you.
+- Secondary activity: Three phrase-to-scene matches.
+- Observable evidence: Child repeats or selects one useful playground phrase.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Say the model phrase slowly; accept pointing or one-word responses.
+- Facilitation: Role-play one invitation with puppets, then let two children practise with opt-out choice.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Use one exact visible 2–7 word model phrase.
+- Assessment evidence: Child repeats or selects one useful playground phrase.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Use one polite turn-taking phrase during a family game.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt; preserve all activity areas and exact text. Individual execution locked: 2 activities; Use at most one sentence starter.
+- Composition: Three separated playground scenes: joining a ball game, waiting for slide, receiving a shared toy; phrase cards below.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 22: Learning objective: Use short, polite phrases while playing with others. Primary child activity: One model-and-repeat, point-and-say, listening, or role-play task for “Playground Talk”. Secondary activity: Add one simple choice-supported speaking task. Teacher/parent prompt: Say the model phrase slowly; accept pointing or one-word responses. Expected child response: Use one exact visible 2–7 word model phrase. Blank-space allocation: Use at most one sentence starter. Activity load: 2 activities. Prohibited extras: No more than three speech balloons or long independent writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Match each playground situation to the polite phrase: Can I play? My turn, please. Thank you.
+- Exact observable evidence: Child repeats or selects one useful playground phrase.
+- Exact teacher move: Role-play one invitation with puppets, then let two children practise with opt-out choice.
+- Exact teacher question: What could you say here?
+- Exact home connection: Use one polite turn-taking phrase during a family game.
+- Exact illustration scene: Three separated playground scenes: joining a ball game, waiting for slide, receiving a shared toy; phrase cards below.
+- Exact visible text: Can I play? My turn, please. Thank you.
+- Exact response space: Three phrase-to-scene matches.
+- Page-specific prohibition: No unsafe equipment use, shouting text, crowded panorama or blank balloons.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 22: Learning objective: Use short, 
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P022 | v3.0.0 | page 22/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P022 | v3.1.0 | page 22/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

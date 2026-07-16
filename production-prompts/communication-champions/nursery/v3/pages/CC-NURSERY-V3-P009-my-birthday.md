@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P009
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: State age and connect numbers 1–5 with candles.
-- Primary activity: One concrete counting, comparison, measurement, graph, or pattern task for “My Birthday”.
-- Secondary activity: Add one number or comparison-word response.
-- Observable evidence: A number, shape, colour, more, less, same, or next item.
+- Primary activity: Circle your age from 1–5, then draw or colour the same number of candles on the cake.
+- Secondary activity: Five numeral choices and five unfilled candle positions.
+- Observable evidence: Child selects one numeral and creates the matching candle quantity.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Complete the first example together.
+- Facilitation: Count the first candle together; let the child continue and say I am __ years old.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A number, shape, colour, more, less, same, or next item.
+- Assessment evidence: Child selects one numeral and creates the matching candle quantity.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Count 1–5 safe household objects and say the final number.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Candles remain blank for coloring; no age preselected. Individual execution locked: 2 activities; Use answer circles, one graph, or one pattern strip only.
+- Composition: One large birthday cake with five dotted candle positions and a separate numeral choice row 1–5; Star celebrates beside the child.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 9: Learning objective: State age and connect numbers 1–5 with candles. Primary child activity: One concrete counting, comparison, measurement, graph, or pattern task for “My Birthday”. Secondary activity: Add one number or comparison-word response. Teacher/parent prompt: Complete the first example together. Expected child response: A number, shape, colour, more, less, same, or next item. Blank-space allocation: Use answer circles, one graph, or one pattern strip only. Activity load: 2 activities. Prohibited extras: No incorrect counts or combination of too many task types. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Circle your age from 1–5, then draw or colour the same number of candles on the cake.
+- Exact observable evidence: Child selects one numeral and creates the matching candle quantity.
+- Exact teacher move: Count the first candle together; let the child continue and say I am __ years old.
+- Exact teacher question: How old are you?
+- Exact home connection: Count 1–5 safe household objects and say the final number.
+- Exact illustration scene: One large birthday cake with five dotted candle positions and a separate numeral choice row 1–5; Star celebrates beside the child.
+- Exact visible text: How old are you? Circle your age. Add the same number of candles. I am ___ years old.
+- Exact response space: Five numeral choices and five unfilled candle positions.
+- Page-specific prohibition: No prefilled answer, extra numerals, fire hazard scene or party-brand decorations.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 9: Learning objective: State age an
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P009 | v3.0.0 | page 9/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P009 | v3.1.0 | page 9/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P033
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 4 – My World & Expression
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Describe an animal using size, colour, and movement words.
-- Primary activity: One model-and-repeat, point-and-say, listening, or role-play task for “Favourite Animal”.
-- Secondary activity: Add one simple choice-supported speaking task.
-- Observable evidence: Use one exact visible 2–7 word model phrase.
+- Primary activity: Choose one of four animals and describe its size, colour and movement using the picture cues.
+- Secondary activity: Four animal choices and three oral starters.
+- Observable evidence: Child gives one to three describing words or a supported sentence.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Say the model phrase slowly; accept pointing or one-word responses.
+- Facilitation: Model one animal only: The elephant is big and walks; then let the child choose another.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Use one exact visible 2–7 word model phrase.
+- Assessment evidence: Child gives one to three describing words or a supported sentence.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Use two describing words for an animal seen in a book or from a safe distance.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 activities; Use at most one sentence starter.
+- Composition: Four separate animal cards: elephant, rabbit, parrot, fish; cue icons below for big/small, colour and movement.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 33: Learning objective: Describe an animal using size, colour, and movement words. Primary child activity: One model-and-repeat, point-and-say, listening, or role-play task for “Favourite Animal”. Secondary activity: Add one simple choice-supported speaking task. Teacher/parent prompt: Say the model phrase slowly; accept pointing or one-word responses. Expected child response: Use one exact visible 2–7 word model phrase. Blank-space allocation: Use at most one sentence starter. Activity load: 2 activities. Prohibited extras: No more than three speech balloons or long independent writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Choose one of four animals and describe its size, colour and movement using the picture cues.
+- Exact observable evidence: Child gives one to three describing words or a supported sentence.
+- Exact teacher move: Model one animal only: The elephant is big and walks; then let the child choose another.
+- Exact teacher question: How does your animal look and move?
+- Exact home connection: Use two describing words for an animal seen in a book or from a safe distance.
+- Exact illustration scene: Four separate animal cards: elephant, rabbit, parrot, fish; cue icons below for big/small, colour and movement.
+- Exact visible text: My favourite animal is ______. It is ______. It can ______.
+- Exact response space: Four animal choices and three oral starters.
+- Page-specific prohibition: No habitat lesson, animal attack, crowded zoo or unrelated colouring task.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 33: Learning objective: Describe an
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P033 | v3.0.0 | page 33/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P033 | v3.1.0 | page 33/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

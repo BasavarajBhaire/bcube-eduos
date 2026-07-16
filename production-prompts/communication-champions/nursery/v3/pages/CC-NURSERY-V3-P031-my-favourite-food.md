@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P031
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 4 – My World & Expression
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Name a favourite food and use a simple sentence to express preference.
-- Primary activity: One purposeful drawing or making task directly linked to “My Favourite Food”.
-- Secondary activity: Add one short speaking or reflection starter.
-- Observable evidence: A short response about my favourite food or adult-supported dictation.
+- Primary activity: Draw one favourite food on the plate, then complete: My favourite food is ____.
+- Secondary activity: One large empty plate and two oral starters.
+- Observable evidence: Child draws or identifies a food and states a preference.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Ask the child to describe one part of the work.
+- Facilitation: Keep the plate empty; offer vocabulary support without judging food choices.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A short response about my favourite food or adult-supported dictation.
+- Assessment evidence: Child draws or identifies a food and states a preference.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Talk about one familiar food’s colour, shape, taste or texture.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 core activities + 1 optional extension; Use one purposeful work frame occupying about 45–60% of the page.
+- Composition: One large empty plate with fork and spoon safely placed; three tiny vocabulary icons for colour, shape and taste; Star presents the sentence starter.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 31: Learning objective: Name a favourite food and use a simple sentence to express preference. Primary child activity: One purposeful drawing or making task directly linked to “My Favourite Food”. Secondary activity: Add one short speaking or reflection starter. Teacher/parent prompt: Ask the child to describe one part of the work. Expected child response: A short response about my favourite food or adult-supported dictation. Blank-space allocation: Use one purposeful work frame occupying about 45–60% of the page. Activity load: 2 core activities + 1 optional extension. Prohibited extras: No second empty frame, unused balloon, or independent full-sentence writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Draw one favourite food on the plate, then complete: My favourite food is ____.
+- Exact observable evidence: Child draws or identifies a food and states a preference.
+- Exact teacher move: Keep the plate empty; offer vocabulary support without judging food choices.
+- Exact teacher question: What food would you put on your plate?
+- Exact home connection: Talk about one familiar food’s colour, shape, taste or texture.
+- Exact illustration scene: One large empty plate with fork and spoon safely placed; three tiny vocabulary icons for colour, shape and taste; Star presents the sentence starter.
+- Exact visible text: Draw my favourite food. My favourite food is ______. It tastes ______.
+- Exact response space: One large empty plate and two oral starters.
+- Page-specific prohibition: No prefilled food, branded packaging, nutrition scoring or food shaming.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 31: Learning objective: Name a favo
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P031 | v3.0.0 | page 31/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P031 | v3.1.0 | page 31/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

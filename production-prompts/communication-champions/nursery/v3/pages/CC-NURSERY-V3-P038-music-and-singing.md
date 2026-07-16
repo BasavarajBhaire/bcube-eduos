@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P038
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 5 – School & Expression
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Join a song, copy actions, and communicate through rhythm and movement.
-- Primary activity: One point-and-discuss task for “Music and Singing” using one clear visual scene.
-- Secondary activity: Add one short point-and-say starter.
-- Observable evidence: Child names one item or says one short phrase.
+- Primary activity: Copy three actions—clap, tap, wave—while singing the short call-and-response line; choose a favourite action.
+- Secondary activity: Three action choices and one oral choice.
+- Observable evidence: Child joins one rhythm or movement and communicates a choice.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Point to the key items and model one response.
+- Facilitation: Model one action at a time, keep volume comfortable and offer a quiet participation option.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child names one item or says one short phrase.
+- Assessment evidence: Child joins one rhythm or movement and communicates a choice.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Make a short clap-tap pattern and take turns copying it.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 activities; No large blank area unless drawing is the objective.
+- Composition: Teacher leads four children with clap, drum tap and wave picture cues; Star holds three beat dots.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 38: Learning objective: Join a song, copy actions, and communicate through rhythm and movement. Primary child activity: One point-and-discuss task for “Music and Singing” using one clear visual scene. Secondary activity: Add one short point-and-say starter. Teacher/parent prompt: Point to the key items and model one response. Expected child response: Child names one item or says one short phrase. Blank-space allocation: No large blank area unless drawing is the objective. Activity load: 2 activities. Prohibited extras: No decorative boxes, empty balloons, or unrelated activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Copy three actions—clap, tap, wave—while singing the short call-and-response line; choose a favourite action.
+- Exact observable evidence: Child joins one rhythm or movement and communicates a choice.
+- Exact teacher move: Model one action at a time, keep volume comfortable and offer a quiet participation option.
+- Exact teacher question: Which action would you like to repeat?
+- Exact home connection: Make a short clap-tap pattern and take turns copying it.
+- Exact illustration scene: Teacher leads four children with clap, drum tap and wave picture cues; Star holds three beat dots.
+- Exact visible text: Clap, clap—hello! Tap, tap—hello! Wave, wave—hello! I choose ______.
+- Exact response space: Three action choices and one oral choice.
+- Page-specific prohibition: No copyrighted song lyrics, loudspeaker, complex notation, forced singing or crowded concert scene.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 38: Learning objective: Join a song
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P038 | v3.0.0 | page 38/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P038 | v3.1.0 | page 38/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

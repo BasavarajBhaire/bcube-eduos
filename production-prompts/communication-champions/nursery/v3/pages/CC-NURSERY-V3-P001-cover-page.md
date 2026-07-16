@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P001
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Front Matter
@@ -47,8 +47,8 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Create excitement and establish the BCube communication-learning identity.
-- Primary activity: No child activity. Create one focused premium cover illustration.
-- Secondary activity: No practice panel or worksheet element.
+- Primary activity: No child task. Present one joyful cover scene that introduces speaking, listening and kindness.
+- Secondary activity: No response space.
 - Observable evidence: Not applicable.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
@@ -61,18 +61,27 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Not applicable.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Keep title highly readable; Nursery (3+) appears here only. Individual execution locked: 0 activities; No blank activity area.
+- Composition: Star welcomes five diverse Nursery children seated in a conversation circle with one teacher; communication icons support the title without becoming activities.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 1: Learning objective: Create excitement and establish the BCube communication-learning identity. Primary child activity: No child activity. Create one focused premium cover illustration. Secondary activity: No practice panel or worksheet element. Teacher/parent prompt: Not applicable. Expected child response: Not applicable. Blank-space allocation: No blank activity area. Activity load: 0 activities. Prohibited extras: Do not add empty balloons, activity frames, or extra learning tasks. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: No child task. Present one joyful cover scene that introduces speaking, listening and kindness.
+- Exact observable evidence: Not applicable.
+- Exact teacher move: Not applicable.
+- Exact teacher question: Not applicable.
+- Exact home connection: Not applicable.
+- Exact illustration scene: Star welcomes five diverse Nursery children seated in a conversation circle with one teacher; communication icons support the title without becoming activities.
+- Exact visible text: Communication Champions; Nursery (3+); Listen with care; Speak with confidence; Connect with kindness; Every word connects us.
+- Exact response space: No response space.
+- Page-specific prohibition: No worksheet boxes, blank balloons, lesson instructions or invented logos.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 1: Learning objective: Create excit
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P001 | v3.0.0 | page 1/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P001 | v3.1.0 | page 1/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

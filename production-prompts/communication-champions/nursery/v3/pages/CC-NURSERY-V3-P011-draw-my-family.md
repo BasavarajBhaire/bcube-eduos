@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P011
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Express family understanding through drawing.
-- Primary activity: One purposeful drawing or making task directly linked to “Draw My Family”.
-- Secondary activity: Add one short speaking or reflection starter.
-- Observable evidence: A short response about draw my family or adult-supported dictation.
+- Primary activity: Draw the people the child calls family inside one large frame, then dictate or say one sentence about the drawing.
+- Secondary activity: One large unobstructed drawing frame and one short dictation line.
+- Observable evidence: Child creates a family drawing and names or describes one person.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Ask the child to describe one part of the work.
+- Facilitation: Keep the frame empty, ask Who did you draw? and record dictation only if requested.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A short response about draw my family or adult-supported dictation.
+- Assessment evidence: Child creates a family drawing and names or describes one person.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Draw one familiar family activity together and talk about it.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt. Individual execution locked: 2 core activities + 1 optional extension; Use one purposeful work frame occupying about 45–60% of the page.
+- Composition: One very large blank drawing frame with crayons below; small Star and teacher encourage from the outer margin.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 11: Learning objective: Express family understanding through drawing. Primary child activity: One purposeful drawing or making task directly linked to “Draw My Family”. Secondary activity: Add one short speaking or reflection starter. Teacher/parent prompt: Ask the child to describe one part of the work. Expected child response: A short response about draw my family or adult-supported dictation. Blank-space allocation: Use one purposeful work frame occupying about 45–60% of the page. Activity load: 2 core activities + 1 optional extension. Prohibited extras: No second empty frame, unused balloon, or independent full-sentence writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Draw the people the child calls family inside one large frame, then dictate or say one sentence about the drawing.
+- Exact observable evidence: Child creates a family drawing and names or describes one person.
+- Exact teacher move: Keep the frame empty, ask Who did you draw? and record dictation only if requested.
+- Exact teacher question: Who is in your drawing?
+- Exact home connection: Draw one familiar family activity together and talk about it.
+- Exact illustration scene: One very large blank drawing frame with crayons below; small Star and teacher encourage from the outer margin.
+- Exact visible text: Draw my family. This is my family. I drew ______.
+- Exact response space: One large unobstructed drawing frame and one short dictation line.
+- Page-specific prohibition: No pre-drawn family inside the frame, portrait cards or colouring example that dictates family structure.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 11: Learning objective: Express fam
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P011 | v3.0.0 | page 11/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P011 | v3.1.0 | page 11/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

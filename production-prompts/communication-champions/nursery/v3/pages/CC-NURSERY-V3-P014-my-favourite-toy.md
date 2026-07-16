@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P014
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Express preferences and develop vocabulary through toys.
-- Primary activity: One purposeful drawing or making task directly linked to “My Favourite Toy”.
-- Secondary activity: Add one short speaking or reflection starter.
-- Observable evidence: A short response about my favourite toy or adult-supported dictation.
+- Primary activity: Draw or colour one favourite toy in the large space, then complete: I like my ____.
+- Secondary activity: One large drawing area and two oral starters.
+- Observable evidence: Child represents one toy and names it or states a preference.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Ask the child to describe one part of the work.
+- Facilitation: Show two familiar toy examples without choosing for the child; ask for one describing word.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A short response about my favourite toy or adult-supported dictation.
+- Assessment evidence: Child represents one toy and names it or states a preference.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Choose one toy, name its colour and put it away together after play.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt. Individual execution locked: 2 core activities + 1 optional extension; Use one purposeful work frame occupying about 45–60% of the page.
+- Composition: Large central blank drawing area with three small reference toys—ball, blocks, teddy—along the edge; Star holds a blank choice card.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 14: Learning objective: Express preferences and develop vocabulary through toys. Primary child activity: One purposeful drawing or making task directly linked to “My Favourite Toy”. Secondary activity: Add one short speaking or reflection starter. Teacher/parent prompt: Ask the child to describe one part of the work. Expected child response: A short response about my favourite toy or adult-supported dictation. Blank-space allocation: Use one purposeful work frame occupying about 45–60% of the page. Activity load: 2 core activities + 1 optional extension. Prohibited extras: No second empty frame, unused balloon, or independent full-sentence writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Draw or colour one favourite toy in the large space, then complete: I like my ____.
+- Exact observable evidence: Child represents one toy and names it or states a preference.
+- Exact teacher move: Show two familiar toy examples without choosing for the child; ask for one describing word.
+- Exact teacher question: What toy do you like?
+- Exact home connection: Choose one toy, name its colour and put it away together after play.
+- Exact illustration scene: Large central blank drawing area with three small reference toys—ball, blocks, teddy—along the edge; Star holds a blank choice card.
+- Exact visible text: Draw my favourite toy. I like my ______. It is ______.
+- Exact response space: One large drawing area and two oral starters.
+- Page-specific prohibition: No branded toys, screens, weapon toys or completed favourite-toy answer.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 14: Learning objective: Express pre
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P014 | v3.0.0 | page 14/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P014 | v3.1.0 | page 14/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

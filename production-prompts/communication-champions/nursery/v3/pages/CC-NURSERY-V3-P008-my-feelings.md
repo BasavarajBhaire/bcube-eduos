@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P008
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Identify and name five basic emotions.
-- Primary activity: One clear choice or discussion task for “My Feelings” using 3–6 pictures.
-- Secondary activity: Add one short sentence starter.
-- Observable evidence: A one-word choice or short supported sentence.
+- Primary activity: Point to five faces—happy, sad, angry, scared and calm. Circle how you feel today and complete the sentence orally.
+- Secondary activity: One circle choice and one oral sentence starter.
+- Observable evidence: Child selects one emotion and says its word or I feel ____.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Name the choices and ask the child to select one.
+- Facilitation: Name each face without judging; model one feeling sentence and accept the child’s choice.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A one-word choice or short supported sentence.
+- Assessment evidence: Child selects one emotion and says its word or I feel ____.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Ask How do you feel? during a calm routine and listen without correcting the feeling.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Use exact emotion labels and clear expressions. Individual execution locked: 2 activities; Use choice circles or one sentence starter.
+- Composition: Five large face cards showing distinct, developmentally clear emotions; Star models calm breathing beside the choice row.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 8: Learning objective: Identify and name five basic emotions. Primary child activity: One clear choice or discussion task for “My Feelings” using 3–6 pictures. Secondary activity: Add one short sentence starter. Teacher/parent prompt: Name the choices and ask the child to select one. Expected child response: A one-word choice or short supported sentence. Blank-space allocation: Use choice circles or one sentence starter. Activity load: 2 activities. Prohibited extras: No frightening wrong options, shame, trick questions, or unrelated tasks. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Point to five faces—happy, sad, angry, scared and calm. Circle how you feel today and complete the sentence orally.
+- Exact observable evidence: Child selects one emotion and says its word or I feel ____.
+- Exact teacher move: Name each face without judging; model one feeling sentence and accept the child’s choice.
+- Exact teacher question: How do you feel today?
+- Exact home connection: Ask How do you feel? during a calm routine and listen without correcting the feeling.
+- Exact illustration scene: Five large face cards showing distinct, developmentally clear emotions; Star models calm breathing beside the choice row.
+- Exact visible text: happy; sad; angry; scared; calm; I feel ______.
+- Exact response space: One circle choice and one oral sentence starter.
+- Page-specific prohibition: No mixed emotion labels, frightening faces, diagnostic language or empty decorative balloon.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 8: Learning objective: Identify and
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P008 | v3.0.0 | page 8/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P008 | v3.1.0 | page 8/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

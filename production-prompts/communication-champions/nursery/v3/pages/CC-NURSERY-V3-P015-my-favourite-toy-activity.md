@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P015
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Build speaking confidence through show-and-tell.
-- Primary activity: One point-and-discuss task for “My Favourite Toy Activity” using one clear visual scene.
-- Secondary activity: Add one short point-and-say starter.
-- Observable evidence: Child names one item or says one short phrase.
+- Primary activity: Bring or point to one toy and use the three-step show-and-tell strip: name it, describe it, say why you like it.
+- Secondary activity: Three oral cue boxes; no drawing area.
+- Observable evidence: Child gives one to three supported phrases about a toy.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Point to the key items and model one response.
+- Facilitation: Model with one plain ball: This is a ball. It is red. I like to roll it.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child names one item or says one short phrase.
+- Assessment evidence: Child gives one to three supported phrases about a toy.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Practise the three short show-and-tell phrases with one household toy.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt. Individual execution locked: 2 activities; No large blank area unless drawing is the objective.
+- Composition: One child holds a teddy before three picture cue cards: name, colour/feature, action; peers listen and Star indicates turn-taking.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 15: Learning objective: Build speaking confidence through show-and-tell. Primary child activity: One point-and-discuss task for “My Favourite Toy Activity” using one clear visual scene. Secondary activity: Add one short point-and-say starter. Teacher/parent prompt: Point to the key items and model one response. Expected child response: Child names one item or says one short phrase. Blank-space allocation: No large blank area unless drawing is the objective. Activity load: 2 activities. Prohibited extras: No decorative boxes, empty balloons, or unrelated activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Bring or point to one toy and use the three-step show-and-tell strip: name it, describe it, say why you like it.
+- Exact observable evidence: Child gives one to three supported phrases about a toy.
+- Exact teacher move: Model with one plain ball: This is a ball. It is red. I like to roll it.
+- Exact teacher question: What would you like to tell us about your toy?
+- Exact home connection: Practise the three short show-and-tell phrases with one household toy.
+- Exact illustration scene: One child holds a teddy before three picture cue cards: name, colour/feature, action; peers listen and Star indicates turn-taking.
+- Exact visible text: This is my ______. It is ______. I like to ______ with it.
+- Exact response space: Three oral cue boxes; no drawing area.
+- Page-specific prohibition: No toy shop, multiple competing activities, microphone electronics or long speech requirement.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 15: Learning objective: Build speak
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P015 | v3.0.0 | page 15/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P015 | v3.1.0 | page 15/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

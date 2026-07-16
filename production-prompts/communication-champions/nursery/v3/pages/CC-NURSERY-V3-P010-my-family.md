@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P010
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Recognize family relationships and participate in simple conversation.
-- Primary activity: One point-and-discuss task for “My Family” using one clear visual scene.
-- Secondary activity: Add one short point-and-say starter.
-- Observable evidence: Child names one item or says one short phrase.
+- Primary activity: Point to one person in the family scene and say: This is my ____. Then tell one thing you do together.
+- Secondary activity: Two oral sentence starters; no drawing box.
+- Observable evidence: Child names one family relationship or uses the sentence starter.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Point to the key items and model one response.
+- Facilitation: Model one respectful family word and allow the child to describe their own family structure.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child names one item or says one short phrase.
+- Assessment evidence: Child names one family relationship or uses the sentence starter.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Use one real family photo to name familiar people together.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: This is a discussion page, not a drawing-frame page. Individual execution locked: 2 activities; No large blank area unless drawing is the objective.
+- Composition: Warm multigenerational family sharing a book at home; Star observes from the side without being presented as a family member.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 10: Learning objective: Recognize family relationships and participate in simple conversation. Primary child activity: One point-and-discuss task for “My Family” using one clear visual scene. Secondary activity: Add one short point-and-say starter. Teacher/parent prompt: Point to the key items and model one response. Expected child response: Child names one item or says one short phrase. Blank-space allocation: No large blank area unless drawing is the objective. Activity load: 2 activities. Prohibited extras: No decorative boxes, empty balloons, or unrelated activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Point to one person in the family scene and say: This is my ____. Then tell one thing you do together.
+- Exact observable evidence: Child names one family relationship or uses the sentence starter.
+- Exact teacher move: Model one respectful family word and allow the child to describe their own family structure.
+- Exact teacher question: Who would you like to tell us about?
+- Exact home connection: Use one real family photo to name familiar people together.
+- Exact illustration scene: Warm multigenerational family sharing a book at home; Star observes from the side without being presented as a family member.
+- Exact visible text: This is my ______. We ______ together.
+- Exact response space: Two oral sentence starters; no drawing box.
+- Page-specific prohibition: No fixed assumption that every child has the same family members and no portrait-selection strip.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 10: Learning objective: Recognize f
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P010 | v3.0.0 | page 10/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P010 | v3.1.0 | page 10/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P002
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Front Matter
@@ -59,8 +59,8 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Present publication ownership and legal information clearly.
-- Primary activity: Adult-facing publication information only.
-- Secondary activity: Keep legal and publisher details editable and professionally typeset.
+- Primary activity: Adult-facing publication page only; typeset the locked legal and publisher copy exactly.
+- Secondary activity: No response space.
 - Observable evidence: Not applicable.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
@@ -73,18 +73,27 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Not applicable.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Minimal decoration; use only the locked publication metadata in section 4. Individual execution locked: 0 activities; Whitespace is for readability only.
+- Composition: Minimal professional publication page with approved logo, small Star accent and structured legal-information column; no classroom scene.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 2: Learning objective: Present publication ownership and legal information clearly. Primary child activity: Adult-facing publication information only. Secondary activity: Keep legal and publisher details editable and professionally typeset. Teacher/parent prompt: Not applicable. Expected child response: Not applicable. Blank-space allocation: Whitespace is for readability only. Activity load: 0 activities. Prohibited extras: No child action, speech practice, expected response, tracing, matching, or drawing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Adult-facing publication page only; typeset the locked legal and publisher copy exactly.
+- Exact observable evidence: Not applicable.
+- Exact teacher move: Not applicable.
+- Exact teacher question: Not applicable.
+- Exact home connection: Not applicable.
+- Exact illustration scene: Minimal professional publication page with approved logo, small Star accent and structured legal-information column; no classroom scene.
+- Exact visible text: Use only the locked publication metadata in this package.
+- Exact response space: No response space.
+- Page-specific prohibition: No child task, fake address, fake email, fake website, QR code or invented edition data.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -99,4 +108,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 2: Learning objective: Present publ
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P002 | v3.0.0 | page 2/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P002 | v3.1.0 | page 2/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

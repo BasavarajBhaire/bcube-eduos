@@ -1,0 +1,24 @@
+{
+  "standard": "BCube Production Prompts v3.1 — Individual Page Revision",
+  "book": "Communication Champions",
+  "level": "Nursery (3+)",
+  "revision_date": "2026-07-16",
+  "pages": 41,
+  "markdown_json_pairs": 41,
+  "checks": 943,
+  "critical_defects": 0,
+  "generic_activity_templates_remaining": 0,
+  "generic_home_extensions_remaining": 0,
+  "required_individual_fields": [
+    "exact child action",
+    "observable evidence",
+    "teacher move",
+    "teacher question",
+    "home connection",
+    "illustration scene",
+    "visible text",
+    "response space",
+    "page-specific prohibition"
+  ],
+  "status": "Gold Certified for illustration generation"
+}

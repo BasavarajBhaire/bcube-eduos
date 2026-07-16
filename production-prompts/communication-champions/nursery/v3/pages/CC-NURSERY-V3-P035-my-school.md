@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P035
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 5 – School & Expression
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Recognize the school environment and talk about belonging.
-- Primary activity: One point-and-discuss task for “My School” using one clear visual scene.
-- Secondary activity: Add one short point-and-say starter.
-- Observable evidence: Child names one item or says one short phrase.
+- Primary activity: Point to the school, teacher, classroom and friends; then complete: My school is ____.
+- Secondary activity: Four point-and-say targets and one oral starter.
+- Observable evidence: Child identifies one school feature and expresses belonging or preference.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Point to the key items and model one response.
+- Facilitation: Use the child’s actual school name if appropriate; allow children new to school to point instead of speak.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child names one item or says one short phrase.
+- Assessment evidence: Child identifies one school feature and expresses belonging or preference.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Talk about one familiar school routine and what helps the child feel safe.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 activities; No large blank area unless drawing is the objective.
+- Composition: Welcoming preschool entrance leading to one visible classroom; teacher greets children and Star stands by the school sign area.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 35: Learning objective: Recognize the school environment and talk about belonging. Primary child activity: One point-and-discuss task for “My School” using one clear visual scene. Secondary activity: Add one short point-and-say starter. Teacher/parent prompt: Point to the key items and model one response. Expected child response: Child names one item or says one short phrase. Blank-space allocation: No large blank area unless drawing is the objective. Activity load: 2 activities. Prohibited extras: No decorative boxes, empty balloons, or unrelated activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Point to the school, teacher, classroom and friends; then complete: My school is ____.
+- Exact observable evidence: Child identifies one school feature and expresses belonging or preference.
+- Exact teacher move: Use the child’s actual school name if appropriate; allow children new to school to point instead of speak.
+- Exact teacher question: What do you notice at school?
+- Exact home connection: Talk about one familiar school routine and what helps the child feel safe.
+- Exact illustration scene: Welcoming preschool entrance leading to one visible classroom; teacher greets children and Star stands by the school sign area.
+- Exact visible text: school; teacher; classroom; friends; My school is ______.
+- Exact response space: Four point-and-say targets and one oral starter.
+- Page-specific prohibition: No invented school name on building, school photograph, uniforms as requirement or crowded campus.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 35: Learning objective: Recognize t
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P035 | v3.0.0 | page 35/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P035 | v3.1.0 | page 35/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

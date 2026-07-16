@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P017
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Understand and discuss basic healthy habits.
-- Primary activity: One clear choice or discussion task for “Healthy Habits” using 3–6 pictures.
-- Secondary activity: Add one short sentence starter.
-- Observable evidence: A one-word choice or short supported sentence.
+- Primary activity: Tick the four healthy-habit pictures and cross the two unsafe or unhelpful choices.
+- Secondary activity: Six large tick/cross targets.
+- Observable evidence: Child distinguishes four healthy actions and explains one choice with support.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Name the choices and ask the child to select one.
+- Facilitation: Model handwashing, then ask the child to choose one habit they practise.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A one-word choice or short supported sentence.
+- Assessment evidence: Child distinguishes four healthy actions and explains one choice with support.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Choose one routine—washing hands, brushing teeth or sleep—and practise its steps together.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt. Individual execution locked: 2 activities; Use choice circles or one sentence starter.
+- Composition: Six clear action cards: wash hands, brush teeth, drink water, sleep, eat unwashed food, stay awake too late.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 17: Learning objective: Understand and discuss basic healthy habits. Primary child activity: One clear choice or discussion task for “Healthy Habits” using 3–6 pictures. Secondary activity: Add one short sentence starter. Teacher/parent prompt: Name the choices and ask the child to select one. Expected child response: A one-word choice or short supported sentence. Blank-space allocation: Use choice circles or one sentence starter. Activity load: 2 activities. Prohibited extras: No frightening wrong options, shame, trick questions, or unrelated tasks. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Tick the four healthy-habit pictures and cross the two unsafe or unhelpful choices.
+- Exact observable evidence: Child distinguishes four healthy actions and explains one choice with support.
+- Exact teacher move: Model handwashing, then ask the child to choose one habit they practise.
+- Exact teacher question: Which habit keeps us healthy?
+- Exact home connection: Choose one routine—washing hands, brushing teeth or sleep—and practise its steps together.
+- Exact illustration scene: Six clear action cards: wash hands, brush teeth, drink water, sleep, eat unwashed food, stay awake too late.
+- Exact visible text: Tick healthy habits. Cross the other choices. I can ______.
+- Exact response space: Six large tick/cross targets.
+- Page-specific prohibition: No medical advice, shame, frightening germs or ambiguous actions.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 17: Learning objective: Understand 
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P017 | v3.0.0 | page 17/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P017 | v3.1.0 | page 17/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

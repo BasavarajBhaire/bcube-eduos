@@ -3,14 +3,14 @@
   "book": "Communication Champions",
   "level": "Nursery",
   "age_level": "Nursery (3+)",
-  "version": "3.0.0",
-  "release_date": "2026-07-15",
+  "version": "3.1.0",
+  "release_date": "2026-07-16",
   "source": {
     "filename": "Communication_Champions_Gold_Individually_Rebuilt.xlsx",
     "sha256": "caecd24a409b4f531b6018b2076d42cc9222af2f198e7c9e5835cde0bc54bfba"
   },
   "prompt_count": 41,
-  "automated_checks": 574,
+  "automated_checks": 943,
   "critical_defects": 0,
   "status": "Gold Certified",
   "pages": [

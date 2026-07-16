@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P037
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 5 – School & Expression
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Listen to a story, observe pictures, and answer a simple question.
-- Primary activity: One model-and-repeat, point-and-say, listening, or role-play task for “Story Time”.
-- Secondary activity: Add one simple choice-supported speaking task.
-- Observable evidence: Use one exact visible 2–7 word model phrase.
+- Primary activity: Listen to the three-picture mini-story, point to what happened first and answer one choice question.
+- Secondary activity: Two picture choices for one comprehension question.
+- Observable evidence: Child attends, sequences one event and answers by pointing or words.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Say the model phrase slowly; accept pointing or one-word responses.
+- Facilitation: Read the three sentences slowly, pause at each picture and ask the single question after reading.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Use one exact visible 2–7 word model phrase.
+- Assessment evidence: Child attends, sequences one event and answers by pointing or words.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Read a short picture story and ask one simple what question.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 activities; Use at most one sentence starter.
+- Composition: Three-panel story: child sees a lost red ball, asks a friend, returns ball to owner; same characters and ball throughout.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 37: Learning objective: Listen to a story, observe pictures, and answer a simple question. Primary child activity: One model-and-repeat, point-and-say, listening, or role-play task for “Story Time”. Secondary activity: Add one simple choice-supported speaking task. Teacher/parent prompt: Say the model phrase slowly; accept pointing or one-word responses. Expected child response: Use one exact visible 2–7 word model phrase. Blank-space allocation: Use at most one sentence starter. Activity load: 2 activities. Prohibited extras: No more than three speech balloons or long independent writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Listen to the three-picture mini-story, point to what happened first and answer one choice question.
+- Exact observable evidence: Child attends, sequences one event and answers by pointing or words.
+- Exact teacher move: Read the three sentences slowly, pause at each picture and ask the single question after reading.
+- Exact teacher question: What did the child find?
+- Exact home connection: Read a short picture story and ask one simple what question.
+- Exact illustration scene: Three-panel story: child sees a lost red ball, asks a friend, returns ball to owner; same characters and ball throughout.
+- Exact visible text: 1. Asha found a red ball. 2. She asked, Whose ball is this? 3. Ravi said, Thank you! Question: What did Asha find? ball / book
+- Exact response space: Two picture choices for one comprehension question.
+- Page-specific prohibition: No long story, more than three panels, changing object colour, empty speech bubbles or reading test.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 37: Learning objective: Listen to a
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P037 | v3.0.0 | page 37/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P037 | v3.1.0 | page 37/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

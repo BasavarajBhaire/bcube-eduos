@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P006
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Recognize, say, trace, and write own name.
-- Primary activity: One purposeful drawing or making task directly linked to “My Name”.
-- Secondary activity: Add one short speaking or reflection starter.
-- Observable evidence: A short response about my name or adult-supported dictation.
+- Primary activity: Say: My name is ____. Trace the adult-written name once, then copy it once on the second line.
+- Secondary activity: One dotted trace line and one blank copy line.
+- Observable evidence: Child says own name and makes an adult-supported tracing or copying attempt.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Ask the child to describe one part of the work.
+- Facilitation: Write the child’s name in the trace line, model the sentence once and invite the child to say it.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: A short response about my name or adult-supported dictation.
+- Assessment evidence: Child says own name and makes an adult-supported tracing or copying attempt.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Say family members’ names and clap the syllables in each name.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Writing strip and portrait box must remain unobstructed. Individual execution locked: 2 core activities + 1 optional extension; Use one purposeful work frame occupying about 45–60% of the page.
+- Composition: One child faces a mirror while Star holds a name card; two wide horizontal name lines occupy the protected response area.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 6: Learning objective: Recognize, say, trace, and write own name. Primary child activity: One purposeful drawing or making task directly linked to “My Name”. Secondary activity: Add one short speaking or reflection starter. Teacher/parent prompt: Ask the child to describe one part of the work. Expected child response: A short response about my name or adult-supported dictation. Blank-space allocation: Use one purposeful work frame occupying about 45–60% of the page. Activity load: 2 core activities + 1 optional extension. Prohibited extras: No second empty frame, unused balloon, or independent full-sentence writing. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Say: My name is ____. Trace the adult-written name once, then copy it once on the second line.
+- Exact observable evidence: Child says own name and makes an adult-supported tracing or copying attempt.
+- Exact teacher move: Write the child’s name in the trace line, model the sentence once and invite the child to say it.
+- Exact teacher question: What is your name?
+- Exact home connection: Say family members’ names and clap the syllables in each name.
+- Exact illustration scene: One child faces a mirror while Star holds a name card; two wide horizontal name lines occupy the protected response area.
+- Exact visible text: My name is ________. Trace my name. Write my name.
+- Exact response space: One dotted trace line and one blank copy line.
+- Page-specific prohibition: No group classroom scene, photo frame, alphabet drill or completed child name.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 6: Learning objective: Recognize, s
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P006 | v3.0.0 | page 6/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P006 | v3.1.0 | page 6/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

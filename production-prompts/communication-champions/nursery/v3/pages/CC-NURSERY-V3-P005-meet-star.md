@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P005
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Front Matter
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Build emotional connection with the official learning mascot.
-- Primary activity: Point and say three short facts about Star.
-- Secondary activity: Add one simple colour or circle task using one controlled Star reference.
-- Observable evidence: This is Star.
+- Primary activity: Point to Star, say three facts, then colour only the separate outline Star.
+- Secondary activity: One large colouring area.
+- Observable evidence: Child says one fact about Star and colours the outline without copying a completed answer.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Read one model phrase and invite repetition.
+- Facilitation: Model: This is Star. Star is happy. Star wears a blue cape. Invite the child to repeat or point.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: This is Star.
+- Assessment evidence: Child says one fact about Star and colours the outline without copying a completed answer.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Look in a mirror, smile and say: This is me!
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: This page establishes the locked mascot appearance. Individual execution locked: 2 activities; At most one medium colouring outline.
+- Composition: One large locked-colour Star reference beside one separate black-outline colouring Star; teacher and three children greet Star.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 5: Learning objective: Build emotional connection with the official learning mascot. Primary child activity: Point and say three short facts about Star. Secondary activity: Add one simple colour or circle task using one controlled Star reference. Teacher/parent prompt: Read one model phrase and invite repetition. Expected child response: This is Star. Blank-space allocation: At most one medium colouring outline. Activity load: 2 activities. Prohibited extras: No inconsistent Star versions or more than two child tasks. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Point to Star, say three facts, then colour only the separate outline Star.
+- Exact observable evidence: Child says one fact about Star and colours the outline without copying a completed answer.
+- Exact teacher move: Model: This is Star. Star is happy. Star wears a blue cape. Invite the child to repeat or point.
+- Exact teacher question: What do you notice about Star?
+- Exact home connection: Look in a mirror, smile and say: This is me!
+- Exact illustration scene: One large locked-colour Star reference beside one separate black-outline colouring Star; teacher and three children greet Star.
+- Exact visible text: This is Star; Star is happy; Star wears a blue cape; Star helps friends.
+- Exact response space: One large colouring area.
+- Page-specific prohibition: No alternate mascot design, extra costume colours or multiple unrelated tasks.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 5: Learning objective: Build emotio
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P005 | v3.0.0 | page 5/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P005 | v3.1.0 | page 5/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

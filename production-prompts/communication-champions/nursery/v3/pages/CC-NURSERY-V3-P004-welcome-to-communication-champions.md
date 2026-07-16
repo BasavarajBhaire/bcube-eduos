@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P004
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Front Matter
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Introduce speaking, listening, sharing, and confidence.
-- Primary activity: Introduce the book through 4–6 clear picture outcomes.
-- Secondary activity: Use one short model phrase linked to the book theme.
-- Observable evidence: Child points to one picture and says one familiar word.
+- Primary activity: Point to the four learning pictures, then repeat the model sentence with an adult.
+- Secondary activity: One point-and-say choice only.
+- Observable evidence: Child points to one picture and says one word or the model sentence.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Point to each picture and explain what children will learn in Communication Champions.
+- Facilitation: Introduce listening, speaking, sharing and confidence one picture at a time; pause for the child to respond.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child points to one picture and says one familiar word.
+- Assessment evidence: Child points to one picture and says one word or the model sentence.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: During one family routine, take turns listening and sharing one idea.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Keep four learning outcomes visible and uncluttered. Individual execution locked: 2 light activities; No large blank frame; use compact labelled cards.
+- Composition: Four clearly separated outcome cards: listening ear, speaking child, two children sharing, confident child; Star and teacher guide the eye path.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 4: Learning objective: Introduce speaking, listening, sharing, and confidence. Primary child activity: Introduce the book through 4–6 clear picture outcomes. Secondary activity: Use one short model phrase linked to the book theme. Teacher/parent prompt: Point to each picture and explain what children will learn in Communication Champions. Expected child response: Child points to one picture and says one familiar word. Blank-space allocation: No large blank frame; use compact labelled cards. Activity load: 2 light activities. Prohibited extras: Do not turn the page into many separate worksheet activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Point to the four learning pictures, then repeat the model sentence with an adult.
+- Exact observable evidence: Child points to one picture and says one word or the model sentence.
+- Exact teacher move: Introduce listening, speaking, sharing and confidence one picture at a time; pause for the child to respond.
+- Exact teacher question: Which communication skill would you like to try?
+- Exact home connection: During one family routine, take turns listening and sharing one idea.
+- Exact illustration scene: Four clearly separated outcome cards: listening ear, speaking child, two children sharing, confident child; Star and teacher guide the eye path.
+- Exact visible text: Listen with care; Speak with confidence; Share with kindness; Feel proud and confident; I can speak, listen, share and feel confident!
+- Exact response space: One point-and-say choice only.
+- Page-specific prohibition: No contents list, writing lines or unrelated skill icons.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 4: Learning objective: Introduce sp
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P004 | v3.0.0 | page 4/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P004 | v3.1.0 | page 4/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P016
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 1 – Me & My Family
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Recognize familiar foods and discuss preferences.
-- Primary activity: One point-and-discuss task for “Foods I Like” using one clear visual scene.
-- Secondary activity: Add one short point-and-say starter.
-- Observable evidence: Child names one item or says one short phrase.
+- Primary activity: Circle two foods you like from six familiar foods, then say: I like ____.
+- Secondary activity: Six circle targets and one oral starter.
+- Observable evidence: Child identifies foods and states one preference.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Point to the key items and model one response.
+- Facilitation: Name each food neutrally; do not label preference choices as good or bad.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child names one item or says one short phrase.
+- Assessment evidence: Child identifies foods and states one preference.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: At mealtime, name one food’s colour, taste or texture without pressure to eat it.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard interior prompt. Individual execution locked: 2 activities; No large blank area unless drawing is the objective.
+- Composition: Six large separate food cards: banana, apple, rice, roti, carrot and curd/yogurt; Star holds an empty plate icon.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 16: Learning objective: Recognize familiar foods and discuss preferences. Primary child activity: One point-and-discuss task for “Foods I Like” using one clear visual scene. Secondary activity: Add one short point-and-say starter. Teacher/parent prompt: Point to the key items and model one response. Expected child response: Child names one item or says one short phrase. Blank-space allocation: No large blank area unless drawing is the objective. Activity load: 2 activities. Prohibited extras: No decorative boxes, empty balloons, or unrelated activities. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Circle two foods you like from six familiar foods, then say: I like ____.
+- Exact observable evidence: Child identifies foods and states one preference.
+- Exact teacher move: Name each food neutrally; do not label preference choices as good or bad.
+- Exact teacher question: Which food do you like?
+- Exact home connection: At mealtime, name one food’s colour, taste or texture without pressure to eat it.
+- Exact illustration scene: Six large separate food cards: banana, apple, rice, roti, carrot and curd/yogurt; Star holds an empty plate icon.
+- Exact visible text: Circle two foods you like. I like ______.
+- Exact response space: Six circle targets and one oral starter.
+- Page-specific prohibition: No packaged brands, sweets-only selection, food shaming or filled circles.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 16: Learning objective: Recognize f
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P016 | v3.0.0 | page 16/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P016 | v3.1.0 | page 16/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.

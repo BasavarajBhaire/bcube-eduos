@@ -3,7 +3,7 @@
 ## 1. Release metadata
 
 - Prompt ID: CC-NURSERY-V3-P036
-- Version: 3.0.0
+- Version: 3.1.0
 - Book: Communication Champions
 - Level: Nursery (3+)
 - Module: Module 5 – School & Expression
@@ -47,32 +47,41 @@ Precedence: approved page instruction > approved book/level rule > global rule. 
 ## 6. Educational Engine
 
 - Objective: Name common classroom objects and practise simple classroom language.
-- Primary activity: One clear matching or sorting task for “My Classroom” using large separated items.
-- Secondary activity: Add one point-and-say or choose-and-say prompt.
-- Observable evidence: Child matches and says one target word.
+- Primary activity: Match six classroom objects to their places, then practise one classroom request: May I use the ____?
+- Secondary activity: Six short matching paths and one oral request.
+- Observable evidence: Child completes matches and names or requests one object.
 - Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.
 
 ## 7. Teaching Engine
 
-- Facilitation: Model one match, then let the child continue.
+- Facilitation: Model pencil to pencil cup; read each remaining object and place aloud.
 - Model once, invite participation, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact learning objective.
-- Assessment evidence: Child matches and says one target word.
+- Assessment evidence: Child completes matches and names or requests one object.
 
 ## 8. Parent Partnership Engine
 
-- Home connection: Repeat the same skill once in a familiar home routine using common materials.
+- Home connection: Sort three safe learning materials at home and ask politely for one.
 - Use common household materials only; do not create a new scored task or require a device, purchase, or printing.
 
 ## 9. Illustration and Character Engines
 
-- Composition: Gold-standard production prompt; preserve exact text, safe margins, and all activity space. Individual execution locked: 2 activities; Use only matching space or clear sorting zones.
+- Composition: Six objects—pencil, crayon, book, bag, scissors, glue—above six clear storage places; safety scissors only.
 - Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and editable visible text.
 - Star uses the locked bright-yellow rounded five-point identity, expressive face, blue shoes, and small blue cape; Star demonstrates or encourages without completing the child’s answer.
 
-## 10. Approved source instruction
+## 10. Locked individual page specification
 
-INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 36: Learning objective: Name common classroom objects and practise simple classroom language. Primary child activity: One clear matching or sorting task for “My Classroom” using large separated items. Secondary activity: Add one point-and-say or choose-and-say prompt. Teacher/parent prompt: Model one match, then let the child continue. Expected child response: Child matches and says one target word. Blank-space allocation: Use only matching space or clear sorting zones. Activity load: 2 activities. Prohibited extras: No more than six targets, ambiguous matches, or decorative empty frames. Every box, balloon, line, card, and frame must have a stated learning purpose. Do not invent additional activities or unexplained blank areas.
+- Exact child action: Match six classroom objects to their places, then practise one classroom request: May I use the ____?
+- Exact observable evidence: Child completes matches and names or requests one object.
+- Exact teacher move: Model pencil to pencil cup; read each remaining object and place aloud.
+- Exact teacher question: Where does this classroom object belong?
+- Exact home connection: Sort three safe learning materials at home and ask politely for one.
+- Exact illustration scene: Six objects—pencil, crayon, book, bag, scissors, glue—above six clear storage places; safety scissors only.
+- Exact visible text: pencil; crayon; book; bag; scissors; glue; May I use the ______?
+- Exact response space: Six short matching paths and one oral request.
+- Page-specific prohibition: No sharp scissors, cluttered shelves, blank labels or more than six objects.
+- This section overrides any broader category template or generic instruction elsewhere in the package.
 
 ## 11. Negative constraints
 
@@ -87,4 +96,4 @@ INDIVIDUAL PAGE EXECUTION BLUEPRINT — PAGE 36: Learning objective: Name common
 
 Verify page identity, geometry, bleed, safe zones, logo reservation, exact title, objective alignment, activity load, teacher interaction, parent extension, expected response, character continuity, inclusion, print suitability, prohibited extras, and unresolved variables. Any critical defect blocks release.
 
-CC-NURSERY-V3-P036 | v3.0.0 | page 36/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
+CC-NURSERY-V3-P036 | v3.1.0 | page 36/41 | Gold 100/100 | critical defects 0 | GOLD CERTIFIED.
