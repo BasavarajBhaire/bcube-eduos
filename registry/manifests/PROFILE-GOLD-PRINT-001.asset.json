@@ -1,0 +1,41 @@
+{
+  "assetId": "PROFILE-GOLD-PRINT-001",
+  "assetType": "build-profile",
+  "name": "BCube Gold Print Profile",
+  "description": "Commercial print profile for A4 preschool workbook pages.",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "dependencies": [
+    {
+      "assetId": "LAYOUT-A4-WORKBOOK-001",
+      "versionRange": ">=1.0.0 <2.0.0",
+      "required": true
+    },
+    {
+      "assetId": "BRAND-BCUBE-001",
+      "versionRange": ">=1.0.0 <2.0.0",
+      "required": true
+    }
+  ],
+  "validationProfile": "GOLD-PRINT",
+  "compilerExpansion": {
+    "mode": "inline",
+    "sourcePath": "profiles/GOLD_PRINT.profile.json",
+    "requiredFields": [
+      "pageSize",
+      "orientation",
+      "resolutionDpi",
+      "safeMargins",
+      "logoPlacement",
+      "pageNumberPlacement"
+    ]
+  },
+  "source": {
+    "path": "profiles/GOLD_PRINT.profile.json",
+    "format": "json"
+  },
+  "tags": ["print", "gold", "a4", "workbook", "production"],
+  "createdAt": "2026-07-16T00:00:00+05:30",
+  "updatedAt": "2026-07-16T00:00:00+05:30"
+}
