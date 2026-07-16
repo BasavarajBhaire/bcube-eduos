@@ -5,8 +5,8 @@ ROOT="$(cd "$(dirname "$0")" && pwd)"
 ART="$ROOT/artwork"
 OUT="$ROOT/final"
 LOGO="$ROOT/assets/BCube_Academy_approved_logo.png"
-POPPINS="/tmp/bcube-fonts/Poppins-Bold.ttf"
-NUNITO="/tmp/bcube-fonts/Nunito-SemiBold.ttf"
+POPPINS="$ROOT/assets/fonts/Poppins-Bold.ttf"
+NUNITO="$ROOT/assets/fonts/Nunito-SemiBold.ttf"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
@@ -74,3 +74,27 @@ build_page "CC-NURSERY-V3-P009" "9" "My Birthday" \
   "I am ______ years old." \
   "Count the first candle together, then let the child continue and say their age." \
   "Count birthday candles, steps, or safe household objects from 1 to 5."
+
+build_page "CC-NURSERY-V3-P010" "10" "My Family" \
+  "Point to the people. Name one family member. Tell the group about your family." \
+  "This is my ____________________." \
+  "Point to one person, model the sentence starter, then invite the child to choose and speak." \
+  "Look at a family photo and name the people together."
+
+build_page "CC-NURSERY-V3-P011" "11" "Draw My Family" \
+  "Draw the people in your family inside the large frame. Then tell us about one person." \
+  "This is my family." \
+  "Ask the child to describe one person or one detail in the drawing; accept pointing or dictation." \
+  "Draw one familiar family activity together and talk about it."
+
+build_page "CC-NURSERY-V3-P012" "12" "Family Members" \
+  "Point to a family member. Say who it is. Choose one picture and use the sentence starter." \
+  "This is my ____________________." \
+  "Model one family word, then invite the child to point and name another person." \
+  "Name familiar family members during a photo or video-free conversation."
+
+build_page "CC-NURSERY-V3-P013" "13" "Who Is in My Family?" \
+  "Match each family picture to a family word. Circle Star because Star is our friend." \
+  "father   •   mother   •   brother   •   sister" \
+  "Model one match, read the family words aloud, then let the child continue and say one word." \
+  "Choose two family members and say one kind thing about each."
