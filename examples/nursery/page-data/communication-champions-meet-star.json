@@ -1,0 +1,33 @@
+{
+  "book_id": "COMMUNICATION_CHAMPIONS_NURSERY",
+  "book_version": "3.0.0",
+  "level": "Nursery",
+  "age": "3+",
+  "page_number": 5,
+  "page_title": "Meet Star",
+  "page_type": "learning_page",
+  "template_id": "TPL-LEARN-001",
+  "learning_objective": "The child recognizes Star as a friendly learning companion and responds to a simple greeting.",
+  "competency": ["communication", "confidence"],
+  "child_instruction": "Wave and say, ‘Hello, Star!’",
+  "teacher_prompt": "Wave with Star and invite each child to say hello in their own comfortable way.",
+  "parent_prompt": "At home, practise a friendly hello with a wave, smile or spoken greeting.",
+  "scene": {
+    "primary_focal_point": "Star standing centrally, smiling and waving",
+    "teacher_action": "Teacher kneels at child eye level and gently models a wave",
+    "child_action": "Two nursery children smile and wave back",
+    "environment": "Bright, simple preschool welcome corner with minimal pastel classroom cues",
+    "activity_space": "Clear lower-right response area for the child to trace a large waving path"
+  },
+  "exact_visible_text": {
+    "title": "Meet Star",
+    "instruction": "Wave and say, ‘Hello, Star!’",
+    "teacher_label": "Teacher says: Hello, Star!",
+    "parent_label": "Try a friendly hello at home."
+  },
+  "star": {
+    "appearance": "bright yellow five-point star with softly rounded points, large expressive eyes, rosy cheeks, friendly smile, blue shoes and a small blue cape",
+    "pose": "standing upright with one arm raised in a clear wave",
+    "emotion": "warm, welcoming and encouraging"
+  }
+}
