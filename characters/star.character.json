@@ -1,0 +1,54 @@
+{
+  "characterId": "BCUBE-STAR-001",
+  "name": "Star",
+  "role": "learning-guide",
+  "canonical": true,
+  "appearance": {
+    "body": "bright yellow five-point star",
+    "points": "softly rounded and symmetrical",
+    "eyes": "large expressive friendly eyes",
+    "cheeks": "soft rosy cheeks",
+    "mouth": "small friendly smile",
+    "shoes": "small blue shoes",
+    "cape": "small blue cape",
+    "outline": "clean thick rounded black outline",
+    "rendering": "premium preschool illustration, non-photorealistic"
+  },
+  "allowedExpressions": [
+    "happy",
+    "curious",
+    "encouraging",
+    "thinking",
+    "listening",
+    "celebrating"
+  ],
+  "allowedPoses": [
+    "waving",
+    "pointing gently",
+    "listening",
+    "demonstrating",
+    "celebrating",
+    "standing beside activity"
+  ],
+  "forbidden": [
+    "different number of points",
+    "sharp frightening points",
+    "missing blue shoes",
+    "missing blue cape",
+    "photorealistic texture",
+    "aggressive expression",
+    "unsafe action",
+    "blocking child response area",
+    "unapproved clothing",
+    "embedded text on body"
+  ],
+  "compilerExpansionMinimum": [
+    "bright yellow five-point Star",
+    "soft rounded points",
+    "large expressive eyes",
+    "rosy cheeks",
+    "friendly smile",
+    "blue shoes",
+    "small blue cape"
+  ]
+}
