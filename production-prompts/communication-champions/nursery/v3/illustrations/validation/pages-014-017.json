@@ -1,0 +1,20 @@
+{
+  "batch": "CC-NURSERY-V3-P014-P017",
+  "prompt_version": "3.1.0",
+  "workflow": "Individual v3.1 specification → illustration artwork → deterministic publication layout",
+  "pages": [14, 15, 16, 17],
+  "dimensions": "2480x3508",
+  "density": "300 DPI",
+  "checks": {
+    "individual_scene_followed": true,
+    "exact_child_action_typeset": true,
+    "exact_response_starter_typeset": true,
+    "teacher_move_typeset": true,
+    "home_connection_typeset": true,
+    "approved_logo_used": true,
+    "photography_or_photorealism": false,
+    "generated_text_visible_in_final": false,
+    "child_answer_prefilled": false
+  },
+  "status": "Gold layout validation passed; CMYK conversion reserved for final print export"
+}

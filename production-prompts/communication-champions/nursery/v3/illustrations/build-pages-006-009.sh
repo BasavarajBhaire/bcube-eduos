@@ -34,11 +34,12 @@ build_page() {
     -draw 'roundrectangle 35,30 2445,335 42,42' \
     -fill 'rgba(255,255,255,0.95)' -stroke '#F5C242' -strokewidth 7 \
     -draw 'roundrectangle 150,340 2330,625 38,38' \
-    -fill 'rgba(255,255,255,0.96)' -stroke '#8E6CCF' -strokewidth 7 \
+    -fill '#FFFFFF' -stroke none -draw 'rectangle 0,2440 2480,3508' \
+    -fill '#FFFFFF' -stroke '#8E6CCF' -strokewidth 7 \
     -draw 'roundrectangle 210,2590 2270,2810 34,34' \
-    -fill 'rgba(255,255,255,0.97)' -stroke '#1E4E8C' -strokewidth 8 \
+    -fill '#FFFFFF' -stroke '#1E4E8C' -strokewidth 8 \
     -draw 'roundrectangle 50,2870 1205,3350 38,38' \
-    -fill 'rgba(255,255,255,0.97)' -stroke '#6CBF5F' -strokewidth 8 \
+    -fill '#FFFFFF' -stroke '#6CBF5F' -strokewidth 8 \
     -draw 'roundrectangle 1275,2870 2430,3350 38,38' \
     -fill '#1E4E8C' -stroke none -draw 'circle 2320,3400 2390,3400' \
     \( "$LOGO" -resize '250x205' \) -geometry +65+70 -composite \
@@ -98,3 +99,27 @@ build_page "CC-NURSERY-V3-P013" "13" "Who Is in My Family?" \
   "father   •   mother   •   brother   •   sister" \
   "Model one match, read the family words aloud, then let the child continue and say one word." \
   "Choose two family members and say one kind thing about each."
+
+build_page "CC-NURSERY-V3-P014" "14" "My Favourite Toy" \
+  "Draw or colour one favourite toy in the large space. Then tell us about it." \
+  "I like my ______. It is ______." \
+  "Show two familiar toy examples without choosing for the child; ask for one describing word." \
+  "Choose one toy, name its colour and put it away together after play."
+
+build_page "CC-NURSERY-V3-P015" "15" "Toy Show-and-Tell" \
+  "Show one toy. Name it, describe it and say what you like to do with it." \
+  "This is my ______. It is ______. I like to ______ with it." \
+  "Model with one plain ball, then prompt only one cue at a time." \
+  "Practise the three short show-and-tell phrases with one household toy."
+
+build_page "CC-NURSERY-V3-P016" "16" "Foods I Like" \
+  "Circle two foods you like. Point to one choice and complete the sentence." \
+  "I like ____________________." \
+  "Name each food neutrally; do not label preference choices as good or bad." \
+  "At mealtime, name one food’s colour, taste or texture without pressure to eat it."
+
+build_page "CC-NURSERY-V3-P017" "17" "Healthy Habits" \
+  "Tick the four healthy habits. Cross the two other choices. Tell one healthy action." \
+  "I can ____________________." \
+  "Model handwashing, then ask the child to choose one habit they practise." \
+  "Choose one routine—washing hands, brushing teeth or sleep—and practise its steps together."
