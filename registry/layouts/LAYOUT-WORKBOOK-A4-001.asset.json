@@ -1,0 +1,32 @@
+{
+  "id": "LAYOUT-WORKBOOK-A4-001",
+  "uri": "eduos://layout/workbook/a4-gold/1.0.0",
+  "name": "BCube Gold A4 Workbook Layout",
+  "type": "layout",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "page": {
+    "size": "A4",
+    "orientation": "portrait",
+    "dimensionsMm": {"width": 210, "height": 297},
+    "dpi": 300,
+    "safeMarginsMm": {"top": 12, "right": 12, "bottom": 14, "left": 12}
+  },
+  "zones": {
+    "logo": "top-left",
+    "title": "top-centre",
+    "learningScene": "upper-middle",
+    "activity": "lower-middle",
+    "footer": "bottom safe zone",
+    "pageNumber": "bottom-right"
+  },
+  "constraints": [
+    "All important text and faces remain inside safe margins",
+    "Activity area remains unobstructed",
+    "Interior pages do not display the Nursery age badge",
+    "Page number remains visible at bottom-right"
+  ],
+  "compiler": {"expand": true, "stripInternalReference": true},
+  "validation": {"profile": "GOLD-PRINT-LAYOUT"}
+}
