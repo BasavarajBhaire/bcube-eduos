@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/book-metadata.schema.json",
+  "title": "BCube Book Metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bookId",
+    "title",
+    "series",
+    "level",
+    "publisher",
+    "language",
+    "edition",
+    "brand",
+    "publishingProfile"
+  ],
+  "properties": {
+    "bookId": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "series": {"type": "string", "minLength": 1},
+    "level": {"enum": ["Nursery", "LKG", "UKG", "Grade 1+"]},
+    "ageLabel": {"type": "string"},
+    "language": {"type": "string", "default": "en-IN"},
+    "edition": {
+      "type": "object",
+      "required": ["name", "year", "version"],
+      "properties": {
+        "name": {"type": "string"},
+        "year": {"type": "integer", "minimum": 2026},
+        "version": {"type": "string"}
+      }
+    },
+    "publisher": {
+      "type": "object",
+      "required": ["name", "address", "email", "website"],
+      "properties": {
+        "name": {"const": "BCube Future Academy"},
+        "address": {"type": "string"},
+        "email": {"type": "string", "format": "email"},
+        "website": {"type": "string"}
+      }
+    },
+    "brand": {
+      "type": "object",
+      "required": ["logoAsset", "mascotId", "pillars"],
+      "properties": {
+        "logoAsset": {"type": "string"},
+        "mascotId": {"type": "string"},
+        "pillars": {
+          "type": "array",
+          "items": {"enum": ["Curiosity", "Communication", "Creativity", "Confidence"]},
+          "minItems": 4,
+          "maxItems": 4,
+          "uniqueItems": true
+        }
+      }
+    },
+    "publishingProfile": {
+      "type": "object",
+      "required": ["trim", "orientation", "dpi", "safeMarginMm", "bleedMm"],
+      "properties": {
+        "trim": {"const": "210x297mm"},
+        "orientation": {"const": "portrait"},
+        "dpi": {"const": 300},
+        "safeMarginMm": {"type": "number", "minimum": 8},
+        "bleedMm": {"type": "number", "minimum": 3}
+      }
+    }
+  }
+}
