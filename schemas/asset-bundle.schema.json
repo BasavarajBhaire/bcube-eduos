@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/asset-bundle.schema.json",
+  "title": "BCube Asset Bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "uri", "name", "version", "status", "includes", "compiler"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+    "uri": {"type": "string", "pattern": "^eduos://"},
+    "name": {"type": "string", "minLength": 3},
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum": ["draft", "reviewed", "approved", "gold-certified", "released", "superseded", "deprecated", "archived"]},
+    "description": {"type": "string"},
+    "includes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["assetUri", "required"],
+        "properties": {
+          "assetUri": {"type": "string", "pattern": "^eduos://"},
+          "required": {"type": "boolean"},
+          "versionRange": {"type": "string"},
+          "contexts": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "policies": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "compiler": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expandAll", "stripInternalReferences"],
+      "properties": {
+        "expandAll": {"const": true},
+        "stripInternalReferences": {"const": true},
+        "failOnMissingRequiredAsset": {"type": "boolean", "default": true}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "profile": {"type": "string"},
+        "minimumStatus": {"type": "string"}
+      }
+    }
+  }
+}
