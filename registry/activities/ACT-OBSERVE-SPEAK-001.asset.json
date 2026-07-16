@@ -1,0 +1,33 @@
+{
+  "id": "ACT-OBSERVE-SPEAK-001",
+  "uri": "eduos://activity/observe-and-speak/1.0.0",
+  "name": "Observe and Speak",
+  "type": "activity",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "ageGroups": ["Nursery", "LKG", "UKG"],
+  "intent": {
+    "primarySkill": "communication",
+    "childAction": ["observe", "point", "say a short response"],
+    "teacherRole": "model the response, pause, invite the child and encourage without pressure",
+    "parentRole": "repeat the short response naturally at home"
+  },
+  "activitySpace": {
+    "mustBeVisible": true,
+    "mustBeUnobstructed": true,
+    "responseLength": "one to five words"
+  },
+  "safety": [
+    "Do not force verbal participation",
+    "Accept pointing, gesture or partial speech",
+    "Use warm encouragement"
+  ],
+  "compiler": {
+    "expand": true,
+    "stripInternalReference": true,
+    "mustEmitTeacherInstruction": true,
+    "mustEmitChildInstruction": true
+  },
+  "validation": {"profile": "GOLD-EARLY-YEARS-ACTIVITY"}
+}
