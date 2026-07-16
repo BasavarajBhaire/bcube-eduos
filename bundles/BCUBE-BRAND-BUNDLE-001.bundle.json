@@ -1,0 +1,31 @@
+{
+  "id": "BCUBE-BRAND-BUNDLE-001",
+  "name": "BCube Academy Core Brand Bundle",
+  "version": "1.0.0",
+  "status": "approved",
+  "includes": [
+    "BRAND-LOGO-001@1.0.0",
+    "PUBLISHER-BCUBE-001@1.0.0",
+    "BRAND-COLOR-PALETTE-001@1.0.0"
+  ],
+  "requiredFor": [
+    "gold-print",
+    "digital-workbook",
+    "teacher-guide",
+    "parent-guide",
+    "certificate",
+    "marketing"
+  ],
+  "resolutionPolicy": {
+    "allAssetsRequired": true,
+    "exactVersionPinning": true,
+    "rejectDeprecatedAssets": true,
+    "rejectMissingBinarySource": true
+  },
+  "compilerPolicy": {
+    "expandAssetInstructions": true,
+    "removeInternalAssetIdsFromFinalPrompt": true,
+    "preserveExactPublisherText": true,
+    "useOfficialLogoBinaryNotGeneratedSubstitute": true
+  }
+}
