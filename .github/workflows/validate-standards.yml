@@ -1,0 +1,64 @@
+name: Validate BCube Standards
+
+on:
+  push:
+    paths:
+      - 'rules/**'
+      - 'fragments/**'
+      - 'templates/**'
+      - 'schemas/**'
+      - 'examples/**'
+      - 'validation/**'
+      - '.github/workflows/validate-standards.yml'
+  pull_request:
+    paths:
+      - 'rules/**'
+      - 'fragments/**'
+      - 'templates/**'
+      - 'schemas/**'
+      - 'examples/**'
+      - 'validation/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validators
+        run: python -m pip install --upgrade jsonschema check-jsonschema
+
+      - name: Validate JSON syntax
+        run: check-jsonschema --check-metaschema schemas/*.json
+
+      - name: Validate required repository assets
+        run: |
+          test -f rules/RULE_TEMPLATE.md
+          test -f fragments/FRAGMENT_TEMPLATE.md
+          test -f templates/TEMPLATE_SPEC.md
+          test -f schemas/page.schema.json
+          test -f schemas/prompt.schema.json
+          test -f schemas/book.schema.json
+
+      - name: Check rule identifiers
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          failures = []
+          pattern = re.compile(r'^(PE|DE|VG|EE|TE|PP|IE|CE|QA|PC)-[A-Z]+-\d{3}\.md$')
+          for path in Path('rules').glob('*/*.md'):
+              if path.name in {'README.md', 'INDEX.md'}:
+                  continue
+              if not pattern.match(path.name):
+                  failures.append(str(path))
+          if failures:
+              raise SystemExit('Invalid rule filenames:\n' + '\n'.join(failures))
+          print('Rule identifiers valid')
+          PY
