@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schemas/asset-manifest.schema.json",
+  "id": "PUBLISHER-BCUBE-001",
+  "name": "BCube Future Academy Publisher Identity",
+  "type": "publisher",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "data": {
+    "publisherName": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST, Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyrightYear": 2026,
+    "edition": "First Edition",
+    "series": "BCube Future Skills Learning Series™"
+  },
+  "compilerExpansion": "Use BCube Future Academy as publisher. Where publication details are required, print the approved address, email, website, copyright year, edition and series exactly as stored in this governed publisher asset.",
+  "validation": {
+    "exactTextRequired": true,
+    "failOnLegacyPublisherData": true,
+    "failOnPartialAddress": true
+  }
+}
