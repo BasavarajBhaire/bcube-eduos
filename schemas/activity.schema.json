@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/activity.schema.json",
+  "title": "BCube Activity",
+  "type": "object",
+  "required": ["activity_id", "instruction", "activity_type", "learning_objective", "assessment_evidence"],
+  "properties": {
+    "activity_id": {"type": "string", "pattern": "^ACT-[A-Z0-9-]+$"},
+    "instruction": {"type": "string", "minLength": 1, "maxLength": 160},
+    "activity_type": {"enum": ["speak", "trace", "colour", "match", "circle", "draw", "sort", "create", "observe", "role-play"]},
+    "learning_objective": {"type": "string", "minLength": 1},
+    "assessment_evidence": {"type": "string", "minLength": 1},
+    "estimated_minutes": {"type": "integer", "minimum": 1, "maximum": 30},
+    "materials": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "response_space": {"enum": ["none", "small", "medium", "large"]},
+    "support_path": {"type": "string"},
+    "extension_path": {"type": "string"}
+  },
+  "additionalProperties": false
+}
