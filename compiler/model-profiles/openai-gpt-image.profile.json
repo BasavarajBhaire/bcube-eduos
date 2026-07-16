@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/model-profile.schema.json",
+  "profileId": "openai-gpt-image",
+  "version": "1.0.0",
+  "status": "active",
+  "purpose": "Compile BCube Gold Production Prompts for OpenAI image generation.",
+  "promptStyle": {
+    "format": "ordered-natural-language",
+    "sectionOrder": [
+      "technicalSpecification",
+      "brandAndPageIdentity",
+      "layoutAndVisualHierarchy",
+      "pageSpecificScene",
+      "charactersAndInteractions",
+      "educationalIntent",
+      "activityAndGuidance",
+      "exactVisibleText",
+      "negativeConstraints"
+    ],
+    "requireSelfContainedPrompt": true,
+    "allowRuleReferences": false,
+    "allowPlaceholders": false,
+    "preferPositiveInstructionsBeforeNegativeConstraints": true,
+    "repeatCriticalIdentityDetails": true
+  },
+  "outputDefaults": {
+    "orientation": "portrait",
+    "printIntent": "A4 210 x 297 mm at 300 DPI",
+    "background": "clean white with soft pastel accents",
+    "rendering": "premium preschool educational illustration with clean rounded outlines"
+  },
+  "validation": {
+    "requireExactTextBlock": true,
+    "requireNegativeConstraints": true,
+    "requirePromptFingerprint": true,
+    "rejectUnresolvedTokens": true
+  }
+}
