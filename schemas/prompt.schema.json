@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/prompt.schema.json",
+  "title": "BCube Gold Production Prompt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "prompt_id",
+    "prompt_version",
+    "page",
+    "engine_versions",
+    "compiled_prompt",
+    "qa_status"
+  ],
+  "properties": {
+    "prompt_id": {"type": "string", "pattern": "^BCP-[A-Z0-9_-]+-[0-9]{3}$"},
+    "prompt_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "page": {"$ref": "page.schema.json"},
+    "engine_versions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["publishing", "design", "visual_grammar", "educational", "teaching", "parent", "illustration", "character", "qa", "compiler"],
+      "properties": {
+        "publishing": {"type": "string"},
+        "design": {"type": "string"},
+        "visual_grammar": {"type": "string"},
+        "educational": {"type": "string"},
+        "teaching": {"type": "string"},
+        "parent": {"type": "string"},
+        "illustration": {"type": "string"},
+        "character": {"type": "string"},
+        "qa": {"type": "string"},
+        "compiler": {"type": "string"}
+      }
+    },
+    "fragments": {"type": "array", "items": {"type": "string", "pattern": "^PF-[A-Z]+-[0-9]{3}$"}},
+    "compiled_prompt": {"type": "string", "minLength": 300},
+    "negative_constraints": {"type": "array", "items": {"type": "string"}},
+    "qa_status": {"type": "string", "enum": ["PENDING", "PASS", "CONDITIONAL_PASS", "FAIL"]},
+    "gold_score": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+    "compiled_at": {"type": ["string", "null"], "format": "date-time"},
+    "checksum": {"type": ["string", "null"]}
+  }
+}
