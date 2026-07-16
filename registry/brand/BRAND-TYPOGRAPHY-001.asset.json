@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/asset-manifest.schema.json",
+  "id": "BRAND-TYPOGRAPHY-001",
+  "uri": "eduos://brand/typography/primary/1.0.0",
+  "name": "BCube Primary Typography System",
+  "type": "brand.typography",
+  "version": "1.0.0",
+  "status": "approved",
+  "owner": "BCube Future Academy",
+  "intent": "Provide a consistent, child-friendly, highly legible typography system across print and digital outputs.",
+  "roles": {
+    "display": {"style": "rounded, friendly, bold", "usage": ["cover titles", "unit openers"]},
+    "heading": {"style": "rounded, clear, semibold", "usage": ["page titles", "section labels"]},
+    "body": {"style": "simple, open, highly legible", "usage": ["instructions", "teacher and parent prompts"]},
+    "activity": {"style": "large, simple, trace-safe", "usage": ["child response text", "labels"]}
+  },
+  "policies": [
+    "Do not use decorative scripts for child instructions.",
+    "Maintain strong character distinction for a, e, g, 1, I and l.",
+    "Avoid condensed typography.",
+    "Keep text inside print-safe zones.",
+    "Use large age-appropriate sizes for Nursery, LKG and UKG."
+  ],
+  "compiler": {
+    "expand": true,
+    "finalPromptInstruction": "Use friendly rounded educational typography with large, highly legible letters, clear hierarchy, generous spacing and no decorative script text."
+  },
+  "validation": {"profile": "GOLD", "mandatory": true}
+}
