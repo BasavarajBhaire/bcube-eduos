@@ -1,0 +1,31 @@
+{
+  "id": "BCUBE-WORKBOOK-FOUNDATION-001",
+  "uri": "eduos://bundle/workbook-foundation/1.0.0",
+  "name": "BCube Workbook Foundation Bundle",
+  "version": "1.0.0",
+  "status": "approved",
+  "description": "Shared foundation for BCube preschool workbook pages.",
+  "includes": [
+    {"assetUri": "eduos://brand/logo/master/1.0.0", "required": true, "versionRange": "1.x"},
+    {"assetUri": "eduos://publisher/bcube/1.0.0", "required": true, "versionRange": "1.x"},
+    {"assetUri": "eduos://brand/colour-palette/1.0.0", "required": true, "versionRange": "1.x"},
+    {"assetUri": "eduos://brand/typography/1.0.0", "required": true, "versionRange": "1.x"},
+    {"assetUri": "eduos://layout/workbook/a4-gold/1.0.0", "required": true, "versionRange": "1.x"},
+    {"assetUri": "eduos://character/star/1.0.0", "required": false, "versionRange": "1.x"},
+    {"assetUri": "eduos://activity/observe-and-speak/1.0.0", "required": false, "versionRange": "1.x"}
+  ],
+  "policies": [
+    "BRAND_LOGO_USAGE_POLICY",
+    "GOLD_PRINT_LAYOUT_POLICY",
+    "SELF_CONTAINED_FINAL_PROMPT_POLICY"
+  ],
+  "compiler": {
+    "expandAll": true,
+    "stripInternalReferences": true,
+    "failOnMissingRequiredAsset": true
+  },
+  "validation": {
+    "profile": "GOLD-WORKBOOK",
+    "minimumStatus": "approved"
+  }
+}
