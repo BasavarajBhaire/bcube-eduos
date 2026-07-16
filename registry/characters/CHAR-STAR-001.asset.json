@@ -1,0 +1,35 @@
+{
+  "id": "CHAR-STAR-001",
+  "uri": "eduos://character/star/1.0.0",
+  "name": "BCube Star Mascot",
+  "type": "character",
+  "category": "mascot",
+  "version": "1.0.0",
+  "status": "gold-certified",
+  "owner": "BCube Future Academy",
+  "description": "Canonical semantic definition of the official BCube Star mascot used across preschool publications.",
+  "intent": {
+    "role": "friendly learning companion",
+    "ageAppropriateness": "Nursery, LKG and UKG",
+    "emotionalTone": ["warm", "encouraging", "curious", "confident"]
+  },
+  "visualDefinition": {
+    "shape": "bright yellow five-point star with softly rounded points",
+    "eyes": "large expressive eyes",
+    "cheeks": "rosy cheeks",
+    "mouth": "friendly smile",
+    "shoes": "small blue shoes",
+    "cape": "small blue cape"
+  },
+  "allowedExpressions": ["smiling", "waving", "encouraging", "thinking", "celebrating", "listening"],
+  "forbidden": ["photorealistic rendering", "sharp points", "frightened expression", "aggressive pose", "missing shoes", "missing cape", "different body colour"],
+  "compiler": {
+    "expand": true,
+    "stripInternalReference": true,
+    "requiredExpandedDetails": 7
+  },
+  "validation": {
+    "profile": "GOLD-CHARACTER",
+    "mustPreserveIdentity": true
+  }
+}
