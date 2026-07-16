@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/illustration.schema.json",
+  "title": "BCube Illustration Specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scene_type", "environment", "rendering_style", "primary_characters", "lighting", "perspective"],
+  "properties": {
+    "scene_type": {"type": "string", "minLength": 1},
+    "environment": {"type": "string", "minLength": 1},
+    "rendering_style": {"enum": ["BCube Preschool Illustration", "BCube Story Illustration", "BCube Diagram"]},
+    "primary_characters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string"}
+    },
+    "supporting_characters": {"type": "array", "items": {"type": "string"}},
+    "props": {"type": "array", "items": {"type": "string"}},
+    "lighting": {"enum": ["soft natural", "bright diffused", "gentle indoor"]},
+    "perspective": {"enum": ["child eye level", "front view", "slight top view"]},
+    "mood": {"type": "string"},
+    "protected_activity_zone": {"type": "boolean", "default": true},
+    "negative_constraints": {"type": "array", "items": {"type": "string"}}
+  }
+}
