@@ -4,6 +4,16 @@ Status: FINAL and LOCKED
 
 This contract governs all book-artwork production under `BCube_Gold_Production_v4`.
 
+## Mandatory governance documents
+
+Every production job must comply with:
+
+- `FOUNDER_LOCK.md`
+- `GOLD_ACCEPTANCE_CRITERIA_v1.md`
+- `QA_SCORECARD.md`
+- `REJECTION_RULES.md`
+- `IMAGE_GENERATION_PIPELINE.md`
+
 ## Source of truth
 
 1. `production-prompts/README.md` defines the approved 30-book portfolio.
@@ -21,10 +31,11 @@ For every page, execute these steps in this order:
 4. Validate book name, level, page number, title and prompt ID against the release README.
 5. Apply only the page-specific instructions plus locked v4 visual rules.
 6. Generate exactly one flat, front-facing A4 portrait page.
-7. Reserve the official logo zone; never redraw the logo.
-8. Run the preflight and postflight QA gates.
-9. Accept only when all critical checks pass.
-10. Save one page image using the canonical prompt ID as the filename.
+7. Reserve the official logo zone or place the exact official logo asset through deterministic composition; never redraw the logo.
+8. Run the preflight and postflight rejection gates.
+9. Complete the weighted QA scorecard.
+10. Accept only at 95/100 or higher with zero critical defects.
+11. Save one page image using the canonical prompt ID as the filename.
 
 ## Non-negotiable output rules
 
@@ -36,6 +47,8 @@ For every page, execute these steps in this order:
 - Never place an AI-generated BCube logo.
 - Never mark a page approved when it conflicts with the source package.
 - Never use chat history as curriculum authority when repository content exists.
+- Never approve a page below 95/100.
+- Any critical failure overrides the numeric score.
 
 ## Fixed production geometry
 
@@ -64,9 +77,10 @@ A page is approved only when:
 - required illustration scene matches,
 - required activities and response spaces match,
 - prohibited elements are absent,
-- official-logo reservation is respected,
+- official-logo handling is respected,
 - one-page-only output is respected,
 - print geometry is valid,
+- weighted QA score is at least 95/100,
 - critical defect count is zero.
 
-Any failed critical check blocks release and requires regeneration.
+Any failed critical check blocks release and requires regeneration. No manual override is allowed unless the Founder explicitly updates the repository specification.
