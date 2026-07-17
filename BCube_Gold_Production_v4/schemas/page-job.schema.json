@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/page-job.schema.json",
+  "title": "BCube Deterministic Page Job",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "job_id",
+    "book",
+    "level",
+    "page_number",
+    "total_pages",
+    "prompt_id",
+    "title",
+    "source_markdown",
+    "source_json",
+    "output_file",
+    "status",
+    "critical_checks"
+  ],
+  "properties": {
+    "job_id": {"type": "string", "minLength": 1},
+    "book": {"type": "string", "minLength": 1},
+    "level": {"enum": ["Nursery", "LKG", "UKG"]},
+    "page_number": {"type": "integer", "minimum": 1, "maximum": 41},
+    "total_pages": {"const": 41},
+    "prompt_id": {"type": "string", "pattern": "^[A-Z]{2}-[A-Z]+-V3-P[0-9]{3}$"},
+    "title": {"type": "string", "minLength": 1},
+    "source_markdown": {"type": "string", "pattern": "^production-prompts/.+\\.md$"},
+    "source_json": {"type": "string", "pattern": "^production-prompts/.+\\.json$"},
+    "output_file": {"type": "string", "pattern": "^BCube_Gold_Production_v4/output/.+\\.png$"},
+    "status": {"enum": ["queued", "source-validated", "generating", "generated", "qa-failed", "approved"]},
+    "critical_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_identity",
+        "one_page_only",
+        "exact_visible_text",
+        "required_scene",
+        "required_activities",
+        "prohibitions",
+        "official_logo_only",
+        "print_geometry",
+        "critical_defects_zero"
+      ],
+      "properties": {
+        "canonical_identity": {"type": "boolean"},
+        "one_page_only": {"type": "boolean"},
+        "exact_visible_text": {"type": "boolean"},
+        "required_scene": {"type": "boolean"},
+        "required_activities": {"type": "boolean"},
+        "prohibitions": {"type": "boolean"},
+        "official_logo_only": {"type": "boolean"},
+        "print_geometry": {"type": "boolean"},
+        "critical_defects_zero": {"type": "boolean"}
+      }
+    }
+  }
+}
