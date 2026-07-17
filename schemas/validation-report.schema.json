@@ -36,7 +36,18 @@
       "then": {
         "properties": {
           "gold_score": {"minimum": 90},
-          "critical_defects": {"const": 0}
+          "critical_defects": {"const": 0},
+          "checks": {
+            "not": {
+              "contains": {
+                "type": "object",
+                "required": ["result"],
+                "properties": {
+                  "result": {"const": "fail"}
+                }
+              }
+            }
+          }
         }
       }
     }
