@@ -1,0 +1,48 @@
+{
+  "manifest_version": "1.0",
+  "identity": {
+    "book": "Communication Champions",
+    "level": "Nursery",
+    "prompt_id": "CC-NURSERY-V3-P001",
+    "source_markdown": "production-prompts/nursery/communication-champions/pages/CC-NURSERY-V3-P001.md",
+    "source_json": "production-prompts/nursery/communication-champions/pages/CC-NURSERY-V3-P001.json"
+  },
+  "page": {
+    "number": 0,
+    "type": "cover",
+    "title": "Communication Champions",
+    "visible_text": [
+      "Communication Champions",
+      "Nursery (3+)",
+      "Listen with care",
+      "Speak with confidence",
+      "Connect with kindness",
+      "Every word connects us."
+    ],
+    "show_page_number": false
+  },
+  "assets": {
+    "logo": "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
+    "illustration": "eduos/assets/pending/CC-NURSERY-V3-P001-illustration.png",
+    "characters": ["STAR-WELCOME-V1", "TEACHER-CIRCLE-V1", "CHILDREN-GROUP-5-V1"]
+  },
+  "composition": {
+    "template": "cover.communication.v1",
+    "width_px": 2480,
+    "height_px": 3508,
+    "dpi": 300,
+    "background": "#FFFFFF"
+  },
+  "qa": {
+    "minimum_score": 95,
+    "reject_on": [
+      "multiple_pages",
+      "wrong_logo",
+      "wrong_title",
+      "invented_text",
+      "page_number_on_cover",
+      "wrong_character_count",
+      "worksheet_elements_on_cover"
+    ]
+  }
+}
