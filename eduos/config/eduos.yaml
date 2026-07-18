@@ -1,0 +1,42 @@
+version: 1.0.0
+status: founder_locked
+source_of_truth:
+  curriculum_root: production-prompts
+  governance_root: BCube_Gold_Production_v4
+output:
+  format: PNG
+  width_px: 2480
+  height_px: 3508
+  dpi: 300
+  orientation: portrait
+  bleed_mm: 3
+  safe_margin_mm: 10
+  binding_margin_mm: 12
+approval:
+  minimum_score: 95
+  maximum_critical_defects: 0
+  manual_override: false
+brand:
+  official_logo: BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png
+  allow_generated_logo: false
+  allow_logo_recolour: false
+  allow_logo_distortion: false
+composition:
+  one_source_page_per_output: true
+  allow_collage: false
+  allow_contact_sheet: false
+  allow_mockup: false
+  allow_ai_typography: false
+  allow_ai_page_layout: false
+  allow_invented_content: false
+assets:
+  require_approved_asset_ids: true
+  missing_asset_policy: reject
+qa:
+  run_preflight: true
+  run_postflight: true
+  validate_exact_visible_text: true
+  validate_page_identity: true
+  validate_print_geometry: true
+  validate_logo_asset: true
+  validate_single_page: true
