@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from typing import Any
 
 
@@ -25,6 +25,10 @@ class Geometry:
             raise PageObjectError("region geometry must be positive and inside the canvas")
         return geometry
 
+    def validate_inside(self, canvas_width: int, canvas_height: int) -> None:
+        if self.x + self.width > canvas_width or self.y + self.height > canvas_height:
+            raise PageObjectError("component geometry exceeds canvas")
+
 
 @dataclass(frozen=True)
 class PageComponent:
@@ -48,8 +52,23 @@ class PageObject:
     components: tuple[PageComponent, ...]
     output_stem: str
 
+    def validate(self) -> None:
+        if (self.canvas_width, self.canvas_height, self.dpi) != (2480, 3508, 300):
+            raise PageObjectError("Page Object must use locked A4 portrait geometry")
+        if not self.prompt_id or not self.template_id or not self.output_stem:
+            raise PageObjectError("Page Object identity is incomplete")
+        component_ids = [component.component_id for component in self.components]
+        if len(component_ids) != len(set(component_ids)):
+            raise PageObjectError("duplicate component_id")
+        for component in self.components:
+            component.geometry.validate_inside(self.canvas_width, self.canvas_height)
+
     def component(self, component_id: str) -> PageComponent:
         matches = [component for component in self.components if component.component_id == component_id]
         if len(matches) != 1:
             raise PageObjectError(f"expected exactly one component: {component_id}")
         return matches[0]
+
+    def to_dict(self) -> dict[str, Any]:
+        self.validate()
+        return asdict(self)
