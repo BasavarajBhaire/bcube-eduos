@@ -1,0 +1,76 @@
+{
+  "registry_version": "1.0.0",
+  "status": "founder_locked",
+  "templates": {
+    "COVER_V1.0.0": {
+      "page_type": "cover",
+      "canvas": {"width_px": 2480, "height_px": 3508, "dpi": 300, "orientation": "portrait"},
+      "safe_margin_px": 118,
+      "binding_margin_px": 142,
+      "regions": {
+        "logo": {"x": 118, "y": 105, "w": 460, "h": 210},
+        "age_badge": {"x": 1850, "y": 120, "w": 420, "h": 150},
+        "title": {"x": 260, "y": 330, "w": 1960, "h": 390},
+        "hero": {"x": 180, "y": 760, "w": 2120, "h": 2130},
+        "tagline": {"x": 280, "y": 2960, "w": 1920, "h": 250},
+        "publisher": {"x": 280, "y": 3230, "w": 1920, "h": 120}
+      },
+      "rules": {
+        "page_number_allowed": false,
+        "activity_region_allowed": false,
+        "teacher_box_allowed": false,
+        "parent_box_allowed": false,
+        "logo_mode": "approved_asset_only"
+      }
+    },
+    "LESSON_V1.0.0": {
+      "page_type": "lesson",
+      "canvas": {"width_px": 2480, "height_px": 3508, "dpi": 300, "orientation": "portrait"},
+      "safe_margin_px": 118,
+      "binding_margin_px": 142,
+      "regions": {
+        "logo": {"x": 118, "y": 95, "w": 360, "h": 165},
+        "title": {"x": 500, "y": 105, "w": 1480, "h": 190},
+        "hero": {"x": 180, "y": 360, "w": 2120, "h": 1900},
+        "activity": {"x": 180, "y": 2320, "w": 2120, "h": 850},
+        "footer": {"x": 180, "y": 3230, "w": 2120, "h": 130}
+      },
+      "rules": {
+        "page_number_allowed": true,
+        "activity_region_allowed": true,
+        "max_activities": 2,
+        "logo_mode": "approved_asset_only"
+      }
+    },
+    "TRACE_V1.0.0": {
+      "page_type": "tracing",
+      "extends": "LESSON_V1.0.0",
+      "rules": {
+        "activity_kind": "tracing",
+        "minimum_stroke_height_px": 160,
+        "minimum_trace_gap_px": 36,
+        "max_activities": 1
+      }
+    },
+    "COLOR_V1.0.0": {
+      "page_type": "colouring",
+      "extends": "LESSON_V1.0.0",
+      "rules": {
+        "activity_kind": "colouring",
+        "minimum_colouring_area_ratio": 0.25,
+        "minimum_outline_width_px": 8,
+        "max_activities": 1
+      }
+    },
+    "MATCH_V1.0.0": {
+      "page_type": "matching",
+      "extends": "LESSON_V1.0.0",
+      "rules": {
+        "activity_kind": "matching",
+        "minimum_item_size_px": 180,
+        "maximum_pairs": 5,
+        "max_activities": 1
+      }
+    }
+  }
+}
