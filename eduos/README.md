@@ -1,6 +1,6 @@
 # BCube EduOS v1.0
 
-Status: **Platform architecture, versioned templates, immutable assets and composer preflight implemented**
+Status: **Runtime kernel, versioned templates, immutable assets and composer preflight implemented**
 
 BCube EduOS is the deterministic educational and publishing layer for BCube preschool products. It extends the existing v3 production prompts and the locked v4 governance rules; it does not replace curriculum sources.
 
@@ -11,12 +11,15 @@ BCube EduOS is the deterministic educational and publishing layer for BCube pres
 
 ## Non-negotiable architecture
 
-`Learning outcome -> Content package -> Page manifest -> Versioned template -> Versioned assets -> Illustration candidate -> Deterministic composer -> QA -> Regression -> Release -> Export`
+`Learning outcome -> Content package -> Page manifest -> EduOS Runtime -> Versioned template -> Versioned assets -> Deterministic composer -> QA -> Regression -> Release -> Export`
 
 AI may generate candidate illustration assets only. AI must not control final typography, logo placement, page geometry, page numbering, template selection, content authority or release approval.
 
 ## Implemented modules
 
+- `kernel/runtime.py` — fail-closed orchestration entry point
+- `kernel/event_bus.py` — auditable runtime events
+- `kernel/capability_registry.py` — explicit and unambiguous provider resolution
 - `config/eduos.yaml` — system-wide production settings
 - `schemas/page-manifest.schema.json` — page contract requiring exact template and asset IDs
 - `schemas/template-registry.schema.json` — machine-readable template-registry contract
@@ -29,10 +32,12 @@ AI may generate candidate illustration assets only. AI must not control final ty
 - `src/page_composer.py` — deterministic composer with mandatory template-and-asset preflight
 - `src/qa_engine.py` — critical rejection gates and weighted scoring
 - `examples/communication-champions-cover.json` — reference manifest using immutable IDs
+- `tests/test_runtime.py` — runtime orchestration and event tests
 - `tests/test_phase1.py` — executable foundation smoke tests
 - `tests/test_template_registry.py` — template versioning and fail-closed tests
 - `tests/test_asset_registry.py` — immutable-asset and checksum tests
 - `tests/test_composer_preflight.py` — integrated template-and-asset preflight tests
+- `MILESTONE_RUNTIME_KERNEL.md` — runtime execution contract
 - `MILESTONE_TEMPLATE_VERSIONING.md` — semantic-version and reproducibility rules
 - `MILESTONE_IMMUTABLE_ASSET_ENGINE.md` — immutable-asset rules
 - `MILESTONE_COMPOSER_PREFLIGHT.md` — integrated composition gates
@@ -44,6 +49,17 @@ AI may generate candidate illustration assets only. AI must not control final ty
 3. Approved assets are versioned and immutable.
 4. Final page layout is template-driven.
 5. Release gates fail closed.
+6. Production orchestration runs through the EduOS Runtime.
+
+## Runtime execution order
+
+1. Load manifest identity.
+2. Resolve exact versioned template.
+3. Resolve and checksum-verify all referenced assets.
+4. Enforce template/page-type compatibility.
+5. Build the deterministic composition plan.
+6. Emit auditable lifecycle events.
+7. Stop immediately on any unresolved dependency.
 
 ## Versioned reference rules
 
@@ -77,15 +93,17 @@ A page is releasable only when:
 ## Run locally
 
 ```bash
+python -m eduos.kernel.runtime eduos/examples/communication-champions-cover.json
 python eduos/src/manifest_validator.py eduos/examples/communication-champions-cover.json
 python eduos/src/template_registry.py COVER_V1.0.0
 python eduos/src/asset_registry.py LOGO_BCUBE.PRIMARY.V1.0.0
 python eduos/src/page_composer.py eduos/examples/communication-champions-cover.json
 python eduos/src/qa_engine.py eduos/examples/communication-champions-cover.json
+python -m unittest eduos/tests/test_runtime.py
 python -m unittest eduos/tests/test_phase1.py
 python -m unittest eduos/tests/test_template_registry.py
 python -m unittest eduos/tests/test_asset_registry.py
 python -m unittest eduos/tests/test_composer_preflight.py
 ```
 
-The current real cover manifest is expected to fail composer preflight until the official logo and all cover assets have verified SHA-256 values and `GOLD` status.
+The current real cover manifest is expected to fail runtime preflight until the official logo and all cover assets have verified SHA-256 values and `GOLD` status.
