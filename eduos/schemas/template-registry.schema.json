@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/eduos/template-registry.schema.json",
+  "title": "BCube EduOS Template Registry",
+  "type": "object",
+  "required": ["registry_version", "status", "templates"],
+  "properties": {
+    "registry_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "status": {"enum": ["draft", "approved", "founder_locked"]},
+    "templates": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["page_type", "rules"],
+        "properties": {
+          "page_type": {"type": "string", "minLength": 1},
+          "extends": {"type": "string", "pattern": "^[A-Z_]+_V[0-9]+\\.[0-9]+\\.[0-9]+$"},
+          "canvas": {
+            "type": "object",
+            "required": ["width_px", "height_px", "dpi", "orientation"],
+            "properties": {
+              "width_px": {"const": 2480},
+              "height_px": {"const": 3508},
+              "dpi": {"const": 300},
+              "orientation": {"const": "portrait"}
+            },
+            "additionalProperties": false
+          },
+          "regions": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "required": ["x", "y", "w", "h"],
+              "properties": {
+                "x": {"type": "integer", "minimum": 0},
+                "y": {"type": "integer", "minimum": 0},
+                "w": {"type": "integer", "exclusiveMinimum": 0},
+                "h": {"type": "integer", "exclusiveMinimum": 0}
+              },
+              "additionalProperties": false
+            }
+          },
+          "rules": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
