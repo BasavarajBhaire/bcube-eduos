@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/page-manifest.schema.json",
+  "title": "BCube EduOS Page Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "identity", "page", "assets", "composition", "qa"],
+  "properties": {
+    "manifest_version": {"const": "1.0"},
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["book", "level", "prompt_id", "source_markdown", "source_json"],
+      "properties": {
+        "book": {"type": "string", "minLength": 1},
+        "level": {"enum": ["Nursery", "LKG", "UKG"]},
+        "prompt_id": {"type": "string", "pattern": "^[A-Z0-9-]+$"},
+        "source_markdown": {"type": "string", "minLength": 1},
+        "source_json": {"type": "string", "minLength": 1}
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "type", "title", "visible_text"],
+      "properties": {
+        "number": {"type": "integer", "minimum": 0, "maximum": 500},
+        "type": {"enum": ["cover", "lesson", "activity", "review", "certificate", "copyright"]},
+        "title": {"type": "string", "minLength": 1},
+        "visible_text": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "show_page_number": {"type": "boolean", "default": true}
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logo", "illustration"],
+      "properties": {
+        "logo": {"type": "string", "minLength": 1},
+        "illustration": {"type": "string", "minLength": 1},
+        "characters": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "composition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["template", "width_px", "height_px", "dpi"],
+      "properties": {
+        "template": {"type": "string", "minLength": 1},
+        "width_px": {"const": 2480},
+        "height_px": {"const": 3508},
+        "dpi": {"const": 300},
+        "background": {"type": "string", "default": "#FFFFFF"}
+      }
+    },
+    "qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimum_score", "reject_on"],
+      "properties": {
+        "minimum_score": {"type": "integer", "minimum": 95, "maximum": 100},
+        "reject_on": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true}
+      }
+    }
+  }
+}
