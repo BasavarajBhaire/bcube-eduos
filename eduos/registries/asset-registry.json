@@ -1,0 +1,18 @@
+{
+  "registry_version": "1.0.0",
+  "assets": [
+    {
+      "asset_id": "LOGO_BCUBE.PRIMARY.V1.0.0",
+      "family": "LOGO_BCUBE",
+      "variant": "PRIMARY",
+      "version": "1.0.0",
+      "type": "BRAND",
+      "status": "GOLD",
+      "path": "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
+      "sha256": "3b94f71b17a1fe49e30b43ca9f88269d1d56322300000000000000000000000",
+      "mime_type": "image/png",
+      "approved_by": "Founder",
+      "dependencies": []
+    }
+  ]
+}
