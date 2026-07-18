@@ -22,12 +22,16 @@
     "show_page_number": false
   },
   "assets": {
-    "logo": "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
-    "illustration": "eduos/assets/pending/CC-NURSERY-V3-P001-illustration.png",
-    "characters": ["STAR-WELCOME-V1", "TEACHER-CIRCLE-V1", "CHILDREN-GROUP-5-V1"]
+    "logo": "LOGO_BCUBE.PRIMARY.V1.0.0",
+    "illustration": "CC_NURSERY_COVER.MAIN_SCENE.V1.0.0",
+    "characters": [
+      "STAR.WELCOME.V1.0.0",
+      "TEACHER.CONVERSATION_CIRCLE.V1.0.0",
+      "CHILDREN_GROUP.FIVE_SEATED.V1.0.0"
+    ]
   },
   "composition": {
-    "template": "cover.communication.v1",
+    "template": "COVER_V1.0.0",
     "width_px": 2480,
     "height_px": 3508,
     "dpi": 300,
