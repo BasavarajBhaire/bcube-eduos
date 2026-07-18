@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
+from eduos.compiler.ece import EducationalCompilationError, build_page_object
+from eduos.compiler.page_object import PageObject
 from eduos.compiler.parser import PageUnit, parse_manifest
 from eduos.compiler.planner import CompilationPlan, build_compilation_plan
 from eduos.src.asset_registry import AssetRegistryError, resolve_asset
@@ -18,6 +20,7 @@ class CompilationResult:
     status: str
     unit: PageUnit
     plan: CompilationPlan
+    page_object: PageObject
     verified_assets: tuple[str, ...]
 
 
@@ -50,12 +53,14 @@ class EducationalCompiler:
 
         try:
             plan = build_compilation_plan(unit, template)
-        except ValueError as exc:
+            page_object = build_page_object(unit, plan, template)
+        except (ValueError, EducationalCompilationError) as exc:
             raise CompilationError(str(exc)) from exc
 
         return CompilationResult(
             status="COMPILED",
             unit=unit,
             plan=plan,
+            page_object=page_object,
             verified_assets=tuple(verified_assets),
         )
