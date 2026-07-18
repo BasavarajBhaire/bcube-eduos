@@ -96,7 +96,7 @@ def build_page_object(
         if page_number_components and any(component.payload.get("visible") for component in page_number_components):
             raise EducationalCompilationError("cover page cannot display a page number")
 
-    return PageObject(
+    page_object = PageObject(
         prompt_id=unit.prompt_id,
         book=unit.book,
         level=unit.level,
@@ -108,3 +108,8 @@ def build_page_object(
         components=tuple(components),
         output_stem=plan.output_stem,
     )
+    try:
+        page_object.validate()
+    except PageObjectError as exc:
+        raise EducationalCompilationError(str(exc)) from exc
+    return page_object
