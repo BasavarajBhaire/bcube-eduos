@@ -36,9 +36,13 @@
       "additionalProperties": false,
       "required": ["logo", "illustration"],
       "properties": {
-        "logo": {"type": "string", "minLength": 1},
-        "illustration": {"type": "string", "minLength": 1},
-        "characters": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+        "logo": {"type": "string", "pattern": "^[A-Z0-9_]+\\.[A-Z0-9_]+\\.V[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "illustration": {"type": "string", "pattern": "^[A-Z0-9_]+\\.[A-Z0-9_]+\\.V[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "characters": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^[A-Z0-9_]+\\.[A-Z0-9_]+\\.V[0-9]+\\.[0-9]+\\.[0-9]+$"},
+          "uniqueItems": true
+        }
       }
     },
     "composition": {
@@ -46,7 +50,7 @@
       "additionalProperties": false,
       "required": ["template", "width_px", "height_px", "dpi"],
       "properties": {
-        "template": {"type": "string", "minLength": 1},
+        "template": {"type": "string", "pattern": "^[A-Z_]+_V[0-9]+\\.[0-9]+\\.[0-9]+$"},
         "width_px": {"const": 2480},
         "height_px": {"const": 3508},
         "dpi": {"const": 300},
