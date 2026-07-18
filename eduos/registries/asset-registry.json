@@ -7,9 +7,10 @@
       "variant": "PRIMARY",
       "version": "1.0.0",
       "type": "BRAND",
-      "status": "GOLD",
+      "status": "REVIEW",
       "path": "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
-      "sha256": "3b94f71b17a1fe49e30b43ca9f88269d1d56322300000000000000000000000",
+      "sha256": null,
+      "git_blob_sha": "3b94f71b17a1fe49e30b43ca9f88269d1d563223",
       "mime_type": "image/png",
       "approved_by": "Founder",
       "dependencies": []
