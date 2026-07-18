@@ -12,24 +12,26 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SRC = ROOT / "eduos" / "src"
-KERNEL = ROOT / "eduos" / "kernel"
-for module_path in (SRC, KERNEL):
-    if str(module_path) not in sys.path:
-        sys.path.insert(0, str(module_path))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-from runtime import EduOSRuntime, RuntimeFailure  # type: ignore  # noqa: E402
+from eduos.kernel.runtime import EduOSRuntime, RuntimeFailure  # noqa: E402
 
 
 def publish_manifest(manifest_path: Path, repository_root: Path) -> dict:
-    runtime = EduOSRuntime(repository_root=repository_root)
-    result = runtime.run(manifest_path)
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    runtime = EduOSRuntime(
+        repository_root=repository_root,
+        template_registry_path=repository_root / "eduos/registries/template-registry.json",
+        asset_registry_path=repository_root / "eduos/registries/asset-registry.json",
+    )
+    result = runtime.preflight(manifest)
     return {
-        "status": "PREFLIGHT_PASSED",
+        "status": result.status,
         "prompt_id": result.prompt_id,
         "template_id": result.template_id,
-        "asset_ids": result.asset_ids,
-        "events": result.events,
+        "asset_ids": list(result.assets),
+        "events": list(result.events),
     }
 
 
@@ -37,7 +39,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="bcube", description="BCube Publisher")
     subcommands = parser.add_subparsers(dest="command", required=True)
 
-    publish = subcommands.add_parser("publish", help="Preflight and publish a page manifest")
+    publish = subcommands.add_parser("publish", help="Run strict preflight for a page manifest")
     publish.add_argument("manifest", type=Path)
     publish.add_argument("--root", type=Path, default=ROOT)
     publish.add_argument("--json", action="store_true", help="Print machine-readable output")
@@ -48,7 +50,7 @@ def main() -> int:
     args = build_parser().parse_args()
     try:
         result = publish_manifest(args.manifest, args.root)
-    except (RuntimeFailure, OSError, ValueError, KeyError) as exc:
+    except (RuntimeFailure, OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
         payload = {"status": "REJECTED", "error": str(exc)}
         if getattr(args, "json", False):
             print(json.dumps(payload, indent=2))
