@@ -110,12 +110,12 @@ def build_contents(part, rows):
     y = 555
     for name, number, module in rows:
         if module:
-            draw.rounded_rectangle((280, y, 2200, y+82), radius=24, fill="#FFF0C8")
-            draw.text((330, y+16), module, font=ft(38, True), fill="#9B6400")
-            y += 110
-        draw.text((350, y), name, font=ft(36), fill="#26384E")
-        centred(draw, str(number), 2120, y, ft(36, True), "#E49B00")
-        y += 78
+            draw.rounded_rectangle((280, y, 2200, y+94), radius=26, fill="#FFF0C8")
+            draw.text((330, y+18), module, font=ft(46, True), fill="#9B6400")
+            y += 120
+        draw.text((350, y), name, font=ft(44), fill="#26384E")
+        centred(draw, str(number), 2120, y, ft(44, True), "#E49B00")
+        y += 92
     return page
 
 
