@@ -55,6 +55,14 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 
 ## Illustration failures
 
+- A letter, initial, word label, coloured oval, generic icon or empty frame is used
+  in place of the required illustrated person, object, animal, food, action or scene.
+- The page instruction names visual choices that are not visibly illustrated.
+- Illustration cards contain only text or alphabetic placeholders.
+- The illustration is generic and does not demonstrate the exact learning action.
+- A required visual element from the canonical scene specification is missing.
+- The page has no completed semantic illustration-evidence record or has not passed
+  the illustration-content review gate.
 - Wrong Star identity.
 - Inconsistent teacher or child style that breaks continuity.
 - Anatomy errors, uncanny faces or cropped key body parts.
