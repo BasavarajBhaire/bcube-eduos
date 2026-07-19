@@ -30,6 +30,9 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 
 ## Branding failures
 
+- Instruction banner, subheader, title or activity content intersects the protected logo zone.
+- A generated, improvised or redrawn Star appears where the locked official mascot asset is required.
+- A mascot-bearing page does not record and match the approved mascot asset SHA-256.
 - AI-generated, recreated, recoloured, stretched, cropped or approximate BCube logo.
 - Wrong logo placement or insufficient reserved logo zone.
 - Wrong age badge.
