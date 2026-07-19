@@ -1,55 +1,78 @@
 # CC-NURSERY-V3-P011 — Draw My Family
 
-**Book:** Communication Champions  
-**Level:** Nursery (3+)  
-**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P011-draw-my-family.md`  
-**Status:** Editorial and production specification reviewed and approved; final artwork and composed page pending.
+**Book:** Communication Champions
 
-## Objective
-Express family understanding through drawing and one spoken or dictated sentence.
+**Level:** Nursery (3+)
 
-## Exact visible text
-- Draw my family.
-- This is my family.
-- I drew ______.
+**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P011-draw-my-family.md`
+**Status:** REVIEWED AND APPROVED AS GOLD PRODUCTION SPECIFICATION; final artwork, deterministic composition and print preflight pending.
 
-## Locked composition
-One very large, unobstructed drawing frame with crayons below. Small Star and teacher figures encourage from the outer margin without entering the response area.
+## Learning objective
+Express family understanding through drawing.
+
+## Exact visible wording
+Draw my family. This is my family. I drew ______.
 
 ## Child action
-Draw the people the child calls family inside the large frame, then say or dictate one sentence about the drawing.
+Draw the people the child calls family inside one large frame, then dictate or say one sentence about the drawing.
 
 ## Observable evidence
-The child creates a family drawing and names or describes one person.
+Child creates a family drawing and names or describes one person.
 
 ## Teacher move
-Keep the frame completely empty. Ask: `Who is in your drawing?` Record the child's words only when requested.
+Keep the frame empty, ask Who did you draw? and record dictation only if requested.
+
+### Teacher question
+- Who is in your drawing?
 
 ## Parent connection
 Draw one familiar family activity together and talk about it.
 
-## Inclusive editorial rule
-- Never prescribe a fixed family structure.
-- Do not pre-draw parents, siblings or grandparents inside the frame.
-- Accept caregivers, extended family, blended families and other caring relationships naturally.
+## Locked composition
+One very large blank drawing frame with crayons below; small Star and teacher encourage from the outer margin.
+
+## Exact response space
+One large unobstructed drawing frame and one short dictation line.
+
+## Page-specific prohibition
+No pre-drawn family inside the frame, portrait cards or colouring example that dictates family structure.
+
+## Illustration contract
+- Generate only the illustration elements required by the locked composition.
+- Do not generate the BCube logo, page number, watermark, final typography, response lines or invented wording inside the artwork.
+- Preserve the locked bright-yellow rounded five-point Star identity, expressive face, blue shoes and small blue cape wherever Star is required.
+- Use a clean white or transparent base, soft BCube-compatible pastels, thick clean rounded outlines, natural anatomy, inclusive Indian representation and a premium preschool publishing finish.
+- Keep every response area unobstructed and large enough for Nursery use.
+
+### Canonical negative constraints
+- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.
+- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.
+- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.
+- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.
+- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.
+- No second empty frame, unused balloon, or independent full-sentence writing.
+- Page-specific: No pre-drawn family inside the frame, portrait cards or colouring example that dictates family structure.
 
 ## Publishing rules
-- One flat A4 portrait page only.
-- 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI, CMYK-safe.
-- Exact title `Draw My Family`; page number 11 at bottom right.
-- Official BCube logo must come from the approved immutable asset and never be generated.
-- The drawing frame must occupy roughly 45–60% of the page and remain free from decorative obstruction.
-- Include only one short dictation line; do not require independent full-sentence writing.
+- Exactly one flat, front-facing A4 portrait page.
+- 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
+- Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
+- Exact page title centred in the header.
+- Page number 11 at bottom right.
+- Exact repository wording and activity geometry must be composed deterministically using approved typography.
+- No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
 
-## Completed review comments
-- The large blank work area is educationally purposeful and age appropriate.
-- One drawing task plus one optional spoken/dictated sentence keeps the activity load suitable for Nursery.
-- Star and teacher must remain small supportive guides, not a competing illustration scene.
-- Crayons may appear below the frame as a visual cue but must not reduce usable drawing space.
-- No example family drawing, portrait cards, second frame or decorative speech balloon is permitted.
-
-## QA gate
-Reject if the frame contains a pre-drawn family, the response area is obstructed, a fixed family model is imposed, more than one drawing frame appears, independent sentence writing is required, the official logo is regenerated, or output is not one A4 portrait page.
+## Gold QA review
+- [x] Canonical prompt ID, page number and title match.
+- [x] Canonical Markdown and JSON source paths match.
+- [x] Learning objective is preserved without rewriting.
+- [x] Child action and observable evidence are preserved.
+- [x] Teacher move and parent connection are preserved.
+- [x] Illustration scene and response space are preserved.
+- [x] Exact visible wording is preserved.
+- [x] Page-specific prohibition is preserved.
+- [x] Official-logo and one-page-only rules are explicit.
+- [x] Print geometry is explicit.
 
 ## Review decision
-**P011 specification: APPROVED.** Final illustration, deterministic layout, effective-resolution check and print QA remain pending.
+**CC-NURSERY-V3-P011 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.

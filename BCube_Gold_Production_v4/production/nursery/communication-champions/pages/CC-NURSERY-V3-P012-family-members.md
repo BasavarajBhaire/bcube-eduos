@@ -1,41 +1,41 @@
-# CC-NURSERY-V3-P010 — My Family
+# CC-NURSERY-V3-P012 — Family Members
 
 **Book:** Communication Champions
 
 **Level:** Nursery (3+)
 
-**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P010-my-family.md`
+**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P012-family-members.md`
 **Status:** REVIEWED AND APPROVED AS GOLD PRODUCTION SPECIFICATION; final artwork, deterministic composition and print preflight pending.
 
 ## Learning objective
-Recognize family relationships and participate in simple conversation.
+Recognize and name family members.
 
 ## Exact visible wording
-This is my ______. We ______ together.
+mother; father; sister; brother; grandmother; grandfather; This is my ______.
 
 ## Child action
-Point to one person in the family scene and say: This is my ____. Then tell one thing you do together.
+Point to six relationship pictures and say the family word shown below each picture.
 
 ## Observable evidence
-Child names one family relationship or uses the sentence starter.
+Child points and names at least one familiar relationship word.
 
 ## Teacher move
-Model one respectful family word and allow the child to describe their own family structure.
+Read each word slowly and explain that families can look different; invite one choice at a time.
 
 ### Teacher question
-- Who would you like to tell us about?
+- Which family word do you know?
 
 ## Parent connection
-Use one real family photo to name familiar people together.
+Name the relationship words that fit the child’s own family; skip words that do not.
 
 ## Locked composition
-Warm multigenerational family sharing a book at home; Star observes from the side without being presented as a family member.
+Six separate portrait pairs representing mother, father, sister, brother, grandmother and grandfather with consistent children and uncluttered backgrounds.
 
 ## Exact response space
-Two oral sentence starters; no drawing box.
+One oral point-and-say starter.
 
 ## Page-specific prohibition
-No fixed assumption that every child has the same family members and no portrait-selection strip.
+No matching lines, blank labels, Star as a family member or assumption that all six are present.
 
 ## Illustration contract
 - Generate only the illustration elements required by the locked composition.
@@ -51,14 +51,14 @@ No fixed assumption that every child has the same family members and no portrait
 - No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.
 - No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.
 - No decorative boxes, empty balloons, or unrelated activities.
-- Page-specific: No fixed assumption that every child has the same family members and no portrait-selection strip.
+- Page-specific: No matching lines, blank labels, Star as a family member or assumption that all six are present.
 
 ## Publishing rules
 - Exactly one flat, front-facing A4 portrait page.
 - 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
 - Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
 - Exact page title centred in the header.
-- Page number 10 at bottom right.
+- Page number 12 at bottom right.
 - Exact repository wording and activity geometry must be composed deterministically using approved typography.
 - No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
 
@@ -75,4 +75,4 @@ No fixed assumption that every child has the same family members and no portrait
 - [x] Print geometry is explicit.
 
 ## Review decision
-**CC-NURSERY-V3-P010 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.
+**CC-NURSERY-V3-P012 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.

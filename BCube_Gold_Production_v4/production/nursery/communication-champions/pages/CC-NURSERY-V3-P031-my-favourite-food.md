@@ -1,41 +1,41 @@
-# CC-NURSERY-V3-P010 — My Family
+# CC-NURSERY-V3-P031 — My Favourite Food
 
 **Book:** Communication Champions
 
 **Level:** Nursery (3+)
 
-**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P010-my-family.md`
+**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P031-my-favourite-food.md`
 **Status:** REVIEWED AND APPROVED AS GOLD PRODUCTION SPECIFICATION; final artwork, deterministic composition and print preflight pending.
 
 ## Learning objective
-Recognize family relationships and participate in simple conversation.
+Name a favourite food and use a simple sentence to express preference.
 
 ## Exact visible wording
-This is my ______. We ______ together.
+Draw my favourite food. My favourite food is ______. It tastes ______.
 
 ## Child action
-Point to one person in the family scene and say: This is my ____. Then tell one thing you do together.
+Draw one favourite food on the plate, then complete: My favourite food is ____.
 
 ## Observable evidence
-Child names one family relationship or uses the sentence starter.
+Child draws or identifies a food and states a preference.
 
 ## Teacher move
-Model one respectful family word and allow the child to describe their own family structure.
+Keep the plate empty; offer vocabulary support without judging food choices.
 
 ### Teacher question
-- Who would you like to tell us about?
+- What food would you put on your plate?
 
 ## Parent connection
-Use one real family photo to name familiar people together.
+Talk about one familiar food’s colour, shape, taste or texture.
 
 ## Locked composition
-Warm multigenerational family sharing a book at home; Star observes from the side without being presented as a family member.
+One large empty plate with fork and spoon safely placed; three tiny vocabulary icons for colour, shape and taste; Star presents the sentence starter.
 
 ## Exact response space
-Two oral sentence starters; no drawing box.
+One large empty plate and two oral starters.
 
 ## Page-specific prohibition
-No fixed assumption that every child has the same family members and no portrait-selection strip.
+No prefilled food, branded packaging, nutrition scoring or food shaming.
 
 ## Illustration contract
 - Generate only the illustration elements required by the locked composition.
@@ -50,15 +50,15 @@ No fixed assumption that every child has the same family members and no portrait
 - No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.
 - No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.
 - No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.
-- No decorative boxes, empty balloons, or unrelated activities.
-- Page-specific: No fixed assumption that every child has the same family members and no portrait-selection strip.
+- No second empty frame, unused balloon, or independent full-sentence writing.
+- Page-specific: No prefilled food, branded packaging, nutrition scoring or food shaming.
 
 ## Publishing rules
 - Exactly one flat, front-facing A4 portrait page.
 - 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
 - Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
 - Exact page title centred in the header.
-- Page number 10 at bottom right.
+- Page number 31 at bottom right.
 - Exact repository wording and activity geometry must be composed deterministically using approved typography.
 - No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
 
@@ -75,4 +75,4 @@ No fixed assumption that every child has the same family members and no portrait
 - [x] Print geometry is explicit.
 
 ## Review decision
-**CC-NURSERY-V3-P010 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.
+**CC-NURSERY-V3-P031 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.

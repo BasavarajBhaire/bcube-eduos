@@ -1,64 +1,78 @@
 # CC-NURSERY-V3-P007 — My Photo
 
-**Book:** Communication Champions  
-**Level:** Nursery (3+)  
-**Sprint:** 3  
-**Status:** GOLD SPECIFICATION APPROVED
+**Book:** Communication Champions
+
+**Level:** Nursery (3+)
+
+**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P007-my-photo.md`
+**Status:** REVIEWED AND APPROVED AS GOLD PRODUCTION SPECIFICATION; final artwork, deterministic composition and print preflight pending.
 
 ## Learning objective
-The child recognizes themselves in a photograph and confidently says, “This is me.”
+Strengthen self-recognition and personal identity.
 
-## Locked visible wording
-- Page title: My Photo
-- Photo prompt: Paste your smiling photo here.
-- Child sentence: Hello! My name is __________. This is me!
-- Reward wording: I am special!
+## Exact visible wording
+Paste my photo here. This is me!
 
-## Child activity
-1. Paste one photograph in the large photo frame.
-2. Ask, “Who is this?”
-3. Child points to the photograph and says, “This is me.”
-4. Child says their name.
-5. Adult adds a sticker, stamp, or smiley after participation.
+## Child action
+Paste one real child photo in the frame, point to it and say: This is me.
 
-## Final composition
-- One A4 portrait page only.
-- Official BCube logo reserved at top left; never regenerate it.
-- Exact page title centred in the header.
-- Large removable/reusable photo frame is the dominant focal point.
-- Hero scene: locked Star mascot holding or presenting the frame while one smiling Nursery child points towards it.
-- Use a subtle dashed photo boundary suitable for a standard small printed photograph.
-- Minimal pastel accents only; no unrelated scenery or decorative clutter.
-- Bottom activity area includes the speaking sentence and one small confidence/reward space.
-- Page number 7 at bottom right.
+## Observable evidence
+Child identifies self by pointing, name or model phrase.
 
-## Illustration contract
-Illustration only. No logo, page number, watermark, body copy, final photo-frame wording, or invented text inside the artwork. White or transparent background, thick clean rounded outlines, soft BCube-compatible palette, natural proportions, premium preschool publishing finish.
+## Teacher move
+Show where the photo belongs, then invite the child to point and say their name.
 
-## Teacher prompt
-Show a photograph first. Ask, “Who is this?” Help the child answer, “This is me,” and say their name without pressure.
+### Teacher question
+- Who is in the photo?
 
 ## Parent connection
-Look at one family photograph together. Ask the child to point to themselves and say, “This is me.”
+Look at one family photo and name one familiar person together.
 
-## Print contract
-- A4 portrait, 210 × 297 mm
-- 3 mm bleed
-- minimum 10 mm safe area
-- 12 mm binding allowance
-- final raster target 2480 × 3508 px before bleed at 300 DPI
-- final typography composed deterministically using approved fonts
-- CMYK conversion and physical proof required before commercial printing
+## Locked composition
+One large empty portrait photo frame with safe paste boundary; Star points to the frame and one child holds a small blank photo card.
 
-## Gold QA
-- [x] One clear learning focus
-- [x] Age appropriate for Nursery
-- [x] Child response is observable
-- [x] Photo frame is large and usable
-- [x] Teacher guidance is concise
-- [x] Parent connection is practical
-- [x] Illustration is separated from typography and layout
-- [x] No generated logo allowed
-- [x] Print geometry specified
+## Exact response space
+One large empty photo frame.
 
-**Approval scope:** content, illustration direction, and layout specification only. Final artwork, composed page, QA score, and print PDF remain required before page release.
+## Page-specific prohibition
+No generated child portrait inside the frame, camera, photography lesson or fake photograph.
+
+## Illustration contract
+- Generate only the illustration elements required by the locked composition.
+- Do not generate the BCube logo, page number, watermark, final typography, response lines or invented wording inside the artwork.
+- Preserve the locked bright-yellow rounded five-point Star identity, expressive face, blue shoes and small blue cape wherever Star is required.
+- Use a clean white or transparent base, soft BCube-compatible pastels, thick clean rounded outlines, natural anatomy, inclusive Indian representation and a premium preschool publishing finish.
+- Keep every response area unobstructed and large enough for Nursery use.
+
+### Canonical negative constraints
+- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.
+- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.
+- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.
+- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.
+- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.
+- No decorative boxes, empty balloons, or unrelated activities.
+- Page-specific: No generated child portrait inside the frame, camera, photography lesson or fake photograph.
+
+## Publishing rules
+- Exactly one flat, front-facing A4 portrait page.
+- 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
+- Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
+- Exact page title centred in the header.
+- Page number 7 at bottom right.
+- Exact repository wording and activity geometry must be composed deterministically using approved typography.
+- No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
+
+## Gold QA review
+- [x] Canonical prompt ID, page number and title match.
+- [x] Canonical Markdown and JSON source paths match.
+- [x] Learning objective is preserved without rewriting.
+- [x] Child action and observable evidence are preserved.
+- [x] Teacher move and parent connection are preserved.
+- [x] Illustration scene and response space are preserved.
+- [x] Exact visible wording is preserved.
+- [x] Page-specific prohibition is preserved.
+- [x] Official-logo and one-page-only rules are explicit.
+- [x] Print geometry is explicit.
+
+## Review decision
+**CC-NURSERY-V3-P007 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.

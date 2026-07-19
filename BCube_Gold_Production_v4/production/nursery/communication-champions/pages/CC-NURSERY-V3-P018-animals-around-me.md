@@ -1,41 +1,41 @@
-# CC-NURSERY-V3-P010 — My Family
+# CC-NURSERY-V3-P018 — Animals Around Me
 
 **Book:** Communication Champions
 
 **Level:** Nursery (3+)
 
-**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P010-my-family.md`
+**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P018-animals-around-me.md`
 **Status:** REVIEWED AND APPROVED AS GOLD PRODUCTION SPECIFICATION; final artwork, deterministic composition and print preflight pending.
 
 ## Learning objective
-Recognize family relationships and participate in simple conversation.
+Identify common animals and enjoy coloring.
 
 ## Exact visible wording
-This is my ______. We ______ together.
+cat; dog; cow; bird; Choose and colour one animal. It can ______.
 
 ## Child action
-Point to one person in the family scene and say: This is my ____. Then tell one thing you do together.
+Name the four animals, then colour only the large outlined animal selected by the child.
 
 ## Observable evidence
-Child names one family relationship or uses the sentence starter.
+Child names one animal and colours within one large outline.
 
 ## Teacher move
-Model one respectful family word and allow the child to describe their own family structure.
+Name cat, dog, cow and bird; demonstrate one safe colouring stroke outside the outline.
 
 ### Teacher question
-- Who would you like to tell us about?
+- Which animal will you colour?
 
 ## Parent connection
-Use one real family photo to name familiar people together.
+Notice one real animal safely from a distance and describe one sound or movement.
 
 ## Locked composition
-Warm multigenerational family sharing a book at home; Star observes from the side without being presented as a family member.
+Four small coloured reference animals above one large uncoloured friendly animal outline; Star holds crayons outside the work area.
 
 ## Exact response space
-Two oral sentence starters; no drawing box.
+One large colouring outline and oral action starter.
 
 ## Page-specific prohibition
-No fixed assumption that every child has the same family members and no portrait-selection strip.
+No zoo panorama, dangerous animal contact, several colouring areas or pre-coloured answer.
 
 ## Illustration contract
 - Generate only the illustration elements required by the locked composition.
@@ -50,15 +50,15 @@ No fixed assumption that every child has the same family members and no portrait
 - No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.
 - No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.
 - No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.
-- No decorative boxes, empty balloons, or unrelated activities.
-- Page-specific: No fixed assumption that every child has the same family members and no portrait-selection strip.
+- No tiny pieces, complex cutting, multiple crafts, or one prescribed result.
+- Page-specific: No zoo panorama, dangerous animal contact, several colouring areas or pre-coloured answer.
 
 ## Publishing rules
 - Exactly one flat, front-facing A4 portrait page.
 - 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
 - Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
 - Exact page title centred in the header.
-- Page number 10 at bottom right.
+- Page number 18 at bottom right.
 - Exact repository wording and activity geometry must be composed deterministically using approved typography.
 - No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
 
@@ -75,4 +75,4 @@ No fixed assumption that every child has the same family members and no portrait
 - [x] Print geometry is explicit.
 
 ## Review decision
-**CC-NURSERY-V3-P010 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.
+**CC-NURSERY-V3-P018 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.

@@ -1,65 +1,78 @@
 # CC-NURSERY-V3-P008 — My Feelings
 
-**Book:** Communication Champions  
-**Level:** Nursery (3+)  
-**Sprint:** 3  
-**Status:** GOLD SPECIFICATION APPROVED
+**Book:** Communication Champions
+
+**Level:** Nursery (3+)
+
+**Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P008-my-feelings.md`
+**Status:** REVIEWED AND APPROVED AS GOLD PRODUCTION SPECIFICATION; final artwork, deterministic composition and print preflight pending.
 
 ## Learning objective
-The child recognizes and expresses four basic feelings using simple words.
+Identify and name five basic emotions.
 
-## Locked visible wording
-- Page title: My Feelings
-- Instruction: Point to the face that shows how you feel today.
-- Feeling labels: Happy; Sad; Surprised; Sleepy
-- Drawing prompt: Draw your face when you feel happy.
-- Reward wording: Great talking!
+## Exact visible wording
+happy; sad; angry; scared; calm; I feel ______.
 
-## Child activity
-1. Look at four large feeling faces.
-2. Point to the face that matches how the child feels.
-3. Say one short sentence: “I feel happy,” “I feel sad,” “I feel surprised,” or “I feel sleepy.”
-4. Draw a happy face in the large response area.
-5. Adult adds a sticker, stamp, or smiley after participation.
+## Child action
+Point to five faces—happy, sad, angry, scared and calm. Circle how you feel today and complete the sentence orally.
 
-## Final composition
-- One A4 portrait page only.
-- Official BCube logo reserved at top left; never regenerate it.
-- Exact page title centred in the header.
-- Four large emotion cards are the primary learning focus.
-- Use four diverse preschool children with very clear, friendly expressions: happy, sad, surprised, and sleepy.
-- Locked Star mascot appears as a small encouraging guide, not as a fifth emotion.
-- Keep a clean white base with minimal pastel accents and generous spacing.
-- Bottom section contains one oversized drawing area and a small reward space.
-- Page number 8 at bottom right.
+## Observable evidence
+Child selects one emotion and says its word or I feel ____.
 
-## Illustration contract
-Illustration only. No logo, page number, watermark, emotion labels, instruction text, speech bubbles, or invented wording inside the artwork. White or transparent background, thick clean rounded outlines, soft BCube-compatible palette, natural proportions, inclusive representation, premium preschool publishing finish.
+## Teacher move
+Name each face without judging; model one feeling sentence and accept the child’s choice.
 
-## Teacher prompt
-Model each expression once. Ask the child to point and say one feeling word. Accept every feeling without judging it as good or bad.
+### Teacher question
+- How do you feel today?
 
 ## Parent connection
-Ask once during a familiar routine, “How are you feeling?” Help the child answer with one of the four feeling words.
+Ask How do you feel? during a calm routine and listen without correcting the feeling.
 
-## Print contract
-- A4 portrait, 210 × 297 mm
-- 3 mm bleed
-- minimum 10 mm safe area
-- 12 mm binding allowance
-- final raster target 2480 × 3508 px before bleed at 300 DPI
-- final typography composed deterministically using approved fonts
-- CMYK conversion and physical proof required before commercial printing
+## Locked composition
+Five large face cards showing distinct, developmentally clear emotions; Star models calm breathing beside the choice row.
 
-## Gold QA
-- [x] Four feelings only; cognitive load is age appropriate
-- [x] One clear learning focus
-- [x] Facial expressions are visually distinguishable
-- [x] Child response is observable
-- [x] Teacher guidance is emotionally safe
-- [x] Parent connection is practical
-- [x] Illustration is separated from typography and layout
-- [x] No generated logo allowed
-- [x] Print geometry specified
+## Exact response space
+One circle choice and one oral sentence starter.
 
-**Approval scope:** content, illustration direction, and layout specification only. Final artwork, composed page, QA score, and print PDF remain required before page release.
+## Page-specific prohibition
+No mixed emotion labels, frightening faces, diagnostic language or empty decorative balloon.
+
+## Illustration contract
+- Generate only the illustration elements required by the locked composition.
+- Do not generate the BCube logo, page number, watermark, final typography, response lines or invented wording inside the artwork.
+- Preserve the locked bright-yellow rounded five-point Star identity, expressive face, blue shoes and small blue cape wherever Star is required.
+- Use a clean white or transparent base, soft BCube-compatible pastels, thick clean rounded outlines, natural anatomy, inclusive Indian representation and a premium preschool publishing finish.
+- Keep every response area unobstructed and large enough for Nursery use.
+
+### Canonical negative constraints
+- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.
+- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.
+- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.
+- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.
+- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.
+- No frightening wrong options, shame, trick questions, or unrelated tasks.
+- Page-specific: No mixed emotion labels, frightening faces, diagnostic language or empty decorative balloon.
+
+## Publishing rules
+- Exactly one flat, front-facing A4 portrait page.
+- 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
+- Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
+- Exact page title centred in the header.
+- Page number 8 at bottom right.
+- Exact repository wording and activity geometry must be composed deterministically using approved typography.
+- No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
+
+## Gold QA review
+- [x] Canonical prompt ID, page number and title match.
+- [x] Canonical Markdown and JSON source paths match.
+- [x] Learning objective is preserved without rewriting.
+- [x] Child action and observable evidence are preserved.
+- [x] Teacher move and parent connection are preserved.
+- [x] Illustration scene and response space are preserved.
+- [x] Exact visible wording is preserved.
+- [x] Page-specific prohibition is preserved.
+- [x] Official-logo and one-page-only rules are explicit.
+- [x] Print geometry is explicit.
+
+## Review decision
+**CC-NURSERY-V3-P008 specification: APPROVED.** Approval covers source accuracy, educational intent, illustration direction and page-production requirements only. Final artwork, composed page, weighted QA score, CMYK proof and print PDF remain required before Gold release.
