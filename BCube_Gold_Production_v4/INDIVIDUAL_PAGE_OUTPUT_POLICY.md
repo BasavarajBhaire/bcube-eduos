@@ -59,4 +59,14 @@ Every handoff must:
 3. Never use a combined-page image as the main preview or result.
 4. Identify any non-page QA artifact separately and keep it out of the handoff.
 
+## Corrected-delivery cache rule
+
+- Never overwrite and redeliver a previously shared artifact using the same
+  filename or link.
+- Every corrected page, ZIP or PDF must use a new explicit versioned filename,
+  such as corrected-v2 or corrected-v3.
+- Before handoff, extract the newly named archive into a clean directory and
+  verify that the extracted page hashes match the corrected source page hashes.
+- A stale cached archive or same-name redelivery is a critical delivery defect.
+
 Any violation is a critical defect and requires a corrected rebuild or redelivery.
