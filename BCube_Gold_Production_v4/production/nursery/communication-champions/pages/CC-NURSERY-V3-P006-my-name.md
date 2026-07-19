@@ -28,7 +28,7 @@ The child recognizes, says, and begins to write their own name with confidence.
 - Hero area occupies about 60–65% of the page.
 - Hero scene: one smiling Nursery child beside the locked Star mascot, proudly presenting a large name card that reads exactly “I am Star”. The board must never be empty and must not read “My name”.
 - Minimal pastel accents only; no rainbow, ABC blocks, flowers, clouds, or unrelated decoration.
-- Bottom activity area contains the speaking prompt, one large guided writing line, one independent writing line, and a small reward space.
+- Bottom activity area contains a long name-entry line after “My name is”, two full-width dotted tracing lines, and two full-width solid independent-writing lines.
 - Page number 6 at bottom right.
 
 ## Illustration contract
@@ -57,6 +57,8 @@ Ask, “What is your name?” Let the child introduce themselves to one family m
 - [x] Parent connection is practical
 - [x] Illustration is separated from typography and layout
 - [x] Star's board has the purposeful model text “I am Star”; it is not an unexplained response space
+- [x] Name-entry line supports long child names
+- [x] Writing practice provides two dotted tracing lines and two solid independent-writing lines
 - [x] Cover rules not applicable
 - [x] No generated logo allowed
 - [x] Print geometry specified
