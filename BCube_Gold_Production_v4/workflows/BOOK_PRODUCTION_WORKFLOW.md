@@ -43,6 +43,9 @@ No information may be inferred from a previous generated page.
 - Do not generate the BCube logo.
 - Do not create multiple variants.
 - Do not create an overview, collage or contact sheet.
+- For a page range, create and validate one individual file per page.
+- Never present or package an internal QA contact sheet as the result. User
+  validation is performed against the individual page files only.
 - Do not add text or sections absent from the compiled job.
 
 ### Stage 4 — QA
@@ -71,6 +74,8 @@ Any failure sets status to `qa-failed`; the page cannot be approved.
 ### Stage 6 — Front-matter assembly gate
 
 - Confirm exactly 43 standalone page outputs.
+- Confirm that the deliverable directory and ZIP contain no contact sheet, montage,
+  collage, overview, grid or composite.
 - Confirm Cover is P001 and unnumbered.
 - Confirm About, Copyright and two Contents pages occupy P002–P005 with hidden numbers.
 - Confirm Welcome is P006 and visibly numbered 5.
