@@ -1,5 +1,8 @@
 {
   "manifest_version": "1.0.0",
+  "architecture_status": "legacy-41-blocked-for-final-v4-assembly",
+  "target_architecture": "43-package-front-matter-v1",
+  "migration_policy": "BCube_Gold_Production_v4/FRONT_MATTER_AND_NUMBERING_POLICY.md",
   "contract": "BCube_Gold_Production_v4/EXECUTION_CONTRACT.md",
   "schema": "BCube_Gold_Production_v4/schemas/page-job.schema.json",
   "book": "Communication Champions",

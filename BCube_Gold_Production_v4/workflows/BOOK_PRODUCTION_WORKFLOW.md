@@ -6,7 +6,7 @@ Repository-driven work mode. Chat instructions may start or stop a run, but may 
 
 ## Book run
 
-A book run consumes one canonical manifest and produces one image per job.
+A book run consumes one migrated 43-package manifest and produces one image per job. Legacy 41-package manifests are blocked from final assembly.
 
 ### Stage 1 — Source validation
 
@@ -17,6 +17,7 @@ For each manifest entry:
 - Open the page Markdown.
 - Open the page JSON.
 - Fail immediately if identity fields disagree.
+- Fail immediately if the manifest does not conform to `FRONT_MATTER_AND_NUMBERING_POLICY.md`.
 
 ### Stage 2 — Job compilation
 
@@ -67,12 +68,21 @@ Any failure sets status to `qa-failed`; the page cannot be approved.
 - Status progression: `queued` → `source-validated` → `generating` → `generated` → `approved`
 - A failed page becomes `qa-failed` and is regenerated from the same source package.
 
+### Stage 6 — Front-matter assembly gate
+
+- Confirm exactly 43 standalone page outputs.
+- Confirm Cover is P001 and unnumbered.
+- Confirm About, Copyright and two Contents pages occupy P002–P005 with hidden numbers.
+- Confirm Welcome is P006 and visibly numbered 5.
+- Confirm the final page is P043 and visibly numbered 42.
+- Confirm Contents lists only P006–P043 and groups entries by canonical modules.
+
 ## Communication Champions first run
 
 Manifest:
 
 `BCube_Gold_Production_v4/manifests/nursery/communication-champions.json`
 
-Expected output count: 41 standalone PNG pages.
+Target output count after migration: 43 standalone PNG pages.
 
 Validation occurs after the full first book is produced. No other book begins until this run is reviewed and accepted.

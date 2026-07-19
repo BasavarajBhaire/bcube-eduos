@@ -32,6 +32,10 @@ Complete this scorecard after generating each page and before saving it as appro
 - [ ] No generated, redrawn, recoloured, cropped or distorted logo.
 - [ ] Correct age badge policy.
 - [ ] Correct page-number policy.
+- [ ] Book manifest uses the locked 43-package architecture.
+- [ ] Production position, logical page and printed-number visibility agree.
+- [ ] P001–P005 numbering is hidden and P006 Welcome visibly starts at 5.
+- [ ] Contents uses two pages, canonical module headings and no front-matter entries.
 
 ## Print gate — critical
 

@@ -1,0 +1,35 @@
+{
+  "policy_version": "1.0.0",
+  "status": "founder-approved",
+  "effective_date": "2026-07-19",
+  "levels": ["Nursery", "LKG", "UKG"],
+  "books_per_level": 10,
+  "total_books": 30,
+  "packages_per_book": 43,
+  "total_packages": 1290,
+  "front_matter": [
+    {"production_position": 1, "role": "cover", "logical_page": null, "printed_number_visible": false},
+    {"production_position": 2, "role": "about_this_book", "logical_page": 1, "printed_number_visible": false},
+    {"production_position": 3, "role": "copyright", "logical_page": 2, "printed_number_visible": false},
+    {"production_position": 4, "role": "contents_part_1", "logical_page": 3, "printed_number_visible": false},
+    {"production_position": 5, "role": "contents_part_2", "logical_page": 4, "printed_number_visible": false},
+    {"production_position": 6, "role": "welcome", "logical_page": 5, "printed_number_visible": true}
+  ],
+  "last_production_position": 43,
+  "last_logical_page": 42,
+  "contents": {
+    "production_positions": [4, 5],
+    "grouping": "canonical-modules",
+    "first_listed_production_position": 6,
+    "first_listed_logical_page": 5,
+    "excluded_roles": ["cover", "about_this_book", "copyright", "contents_part_1", "contents_part_2"]
+  },
+  "legacy_migration": {
+    "legacy_packages_per_book": 41,
+    "new_pages_added": 2,
+    "legacy_welcome_position": 4,
+    "new_welcome_position": 6,
+    "learning_page_position_shift": 2,
+    "reader_page_number_shift": 1
+  }
+}

@@ -2,6 +2,23 @@
 
 Complete prompt-only portfolio for Nursery, LKG, and UKG.
 
+## v4 front-matter migration notice
+
+The 41-package releases below remain the locked curriculum sources during migration. All 30 books are scheduled to adopt the Founder-approved 43-package front-matter and numbering architecture before final v4 artwork assembly:
+
+- unnumbered and uncounted cover;
+- About This Book as internally counted page 1;
+- Copyright as internally counted page 2;
+- two module-wise Contents pages internally counted as pages 3–4;
+- Welcome as the first visibly numbered page, page 5;
+- 43 production packages and 42 reader pages per migrated book.
+
+Policy: [`../BCube_Gold_Production_v4/FRONT_MATTER_AND_NUMBERING_POLICY.md`](../BCube_Gold_Production_v4/FRONT_MATTER_AND_NUMBERING_POLICY.md)
+
+Rollout: [`../BCube_Gold_Production_v4/PORTFOLIO_43_PAGE_MIGRATION_PLAN.md`](../BCube_Gold_Production_v4/PORTFOLIO_43_PAGE_MIGRATION_PLAN.md)
+
+Do not use the legacy 41-package front matter for final v4 book assembly. Curriculum pages remain authoritative and must be migrated without rewriting.
+
 - 30 books
 - 1,230 page packages
 - 17,220/17,220 automated checks passed

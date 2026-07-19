@@ -18,11 +18,13 @@ Convert one canonical repository page package into one validated, publication-re
 - `GOLD_ACCEPTANCE_CRITERIA_v1.md`.
 - `QA_SCORECARD.md`.
 - `REJECTION_RULES.md`.
+- `FRONT_MATTER_AND_NUMBERING_POLICY.md`.
 
 ## Execution sequence
 
 1. Resolve one page by canonical prompt ID.
-2. Load the matching Markdown and JSON.
+2. Confirm the source belongs to a migrated 43-package manifest.
+3. Load the matching Markdown and JSON.
 3. Cross-check book, level, page, title, prompt ID and visible wording.
 4. Build a page job from the manifest and schema.
 5. Generate only the illustration/background layer when exact branding or typography cannot be guaranteed by the image model.
@@ -71,6 +73,14 @@ For cover pages:
 - no parent corner,
 - no child response space,
 - one strong hero scene and exact cover wording only.
+
+## Front-matter-specific rules
+
+- P002 About This Book is adult-facing and contains no scored child activity.
+- P003 Copyright uses only locked controlled publication metadata.
+- P004 and P005 form one module-wise Contents sequence across two standalone A4 pages.
+- P001–P005 show no printed number.
+- P006 Welcome is the first page with a visible number and shows 5.
 
 ## Output states
 

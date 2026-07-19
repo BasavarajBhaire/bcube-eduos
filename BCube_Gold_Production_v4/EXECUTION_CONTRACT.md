@@ -13,11 +13,12 @@ Every production job must comply with:
 - `QA_SCORECARD.md`
 - `REJECTION_RULES.md`
 - `IMAGE_GENERATION_PIPELINE.md`
+- `FRONT_MATTER_AND_NUMBERING_POLICY.md`
 
 ## Source of truth
 
 1. `production-prompts/README.md` defines the approved 30-book portfolio.
-2. Each book release README defines the exact 41-page sequence.
+2. Each migrated book release README defines the exact 43-package sequence.
 3. Each page Markdown and JSON package defines the exact page content.
 4. `BCube_Gold_Production_v4` may improve visual execution only. It may not invent, rename, reorder, merge or remove books, pages, chapters, objectives, activities or visible wording.
 
@@ -26,9 +27,10 @@ Every production job must comply with:
 For every page, execute these steps in this order:
 
 1. Resolve the book from the canonical portfolio.
-2. Resolve the exact page from the book release README.
-3. Load both the page Markdown and page JSON.
-4. Validate book name, level, page number, title and prompt ID against the release README.
+2. Confirm that the book has completed the 43-package front-matter migration; block final production when it has not.
+3. Resolve the exact page from the migrated book release README.
+4. Load both the page Markdown and page JSON.
+5. Validate book name, level, production position, logical page, printed-number visibility, title and prompt ID against the release README.
 5. Apply only the page-specific instructions plus locked v4 visual rules.
 6. Generate exactly one flat, front-facing A4 portrait page.
 7. Reserve the official logo zone or place the exact official logo asset through deterministic composition; never redraw the logo.
@@ -59,6 +61,14 @@ For every page, execute these steps in this order:
 - 300 DPI
 - CMYK-safe print palette
 - Flat, front-facing page only
+
+## Locked numbering geometry
+
+- P001 cover: no logical number and no printed number.
+- P002–P005: logical pages 1–4, printed numbers hidden.
+- P006 Welcome: logical and printed page 5.
+- P007–P043: logical and printed pages 6–42.
+- Contents occupies P004 and P005 and excludes all front matter.
 
 ## File naming
 

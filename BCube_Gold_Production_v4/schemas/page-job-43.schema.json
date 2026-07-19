@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/page-job-43.schema.json",
+  "title": "BCube 43-Package Deterministic Page Job",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "job_id",
+    "book",
+    "level",
+    "production_position",
+    "total_packages",
+    "prompt_id",
+    "title",
+    "page_role",
+    "logical_page_number",
+    "printed_number_visible",
+    "source_markdown",
+    "source_json",
+    "output_file",
+    "status",
+    "critical_checks"
+  ],
+  "properties": {
+    "job_id": {"type": "string", "minLength": 1},
+    "book": {"type": "string", "minLength": 1},
+    "level": {"enum": ["Nursery", "LKG", "UKG"]},
+    "production_position": {"type": "integer", "minimum": 1, "maximum": 43},
+    "total_packages": {"const": 43},
+    "prompt_id": {"type": "string", "pattern": "^[A-Z]{2}-[A-Z]+-V4-P(00[1-9]|0[1-3][0-9]|04[0-3])$"},
+    "title": {"type": "string", "minLength": 1},
+    "page_role": {
+      "enum": ["cover", "about_this_book", "copyright", "contents_part_1", "contents_part_2", "welcome", "learning_page", "certificate", "completion"]
+    },
+    "logical_page_number": {"type": ["integer", "null"], "minimum": 1, "maximum": 42},
+    "printed_number_visible": {"type": "boolean"},
+    "source_markdown": {"type": "string", "pattern": "^production-prompts/.+\\.md$"},
+    "source_json": {"type": "string", "pattern": "^production-prompts/.+\\.json$"},
+    "output_file": {"type": "string", "pattern": "^BCube_Gold_Production_v4/output/.+\\.png$"},
+    "status": {"enum": ["queued", "source-validated", "generating", "generated", "qa-failed", "approved"]},
+    "critical_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_identity",
+        "front_matter_policy",
+        "numbering_policy",
+        "one_page_only",
+        "exact_visible_text",
+        "required_scene",
+        "required_activities",
+        "prohibitions",
+        "official_logo_only",
+        "print_geometry",
+        "critical_defects_zero"
+      ],
+      "properties": {
+        "canonical_identity": {"type": "boolean"},
+        "front_matter_policy": {"type": "boolean"},
+        "numbering_policy": {"type": "boolean"},
+        "one_page_only": {"type": "boolean"},
+        "exact_visible_text": {"type": "boolean"},
+        "required_scene": {"type": "boolean"},
+        "required_activities": {"type": "boolean"},
+        "prohibitions": {"type": "boolean"},
+        "official_logo_only": {"type": "boolean"},
+        "print_geometry": {"type": "boolean"},
+        "critical_defects_zero": {"type": "boolean"}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"production_position": {"const": 1}}},
+      "then": {"properties": {"page_role": {"const": "cover"}, "logical_page_number": {"type": "null"}, "printed_number_visible": {"const": false}}}
+    },
+    {
+      "if": {"properties": {"production_position": {"minimum": 2, "maximum": 5}}},
+      "then": {"properties": {"printed_number_visible": {"const": false}}}
+    },
+    {
+      "if": {"properties": {"production_position": {"const": 6}}},
+      "then": {"properties": {"page_role": {"const": "welcome"}, "logical_page_number": {"const": 5}, "printed_number_visible": {"const": true}}}
+    }
+  ]
+}

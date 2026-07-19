@@ -26,6 +26,13 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 - Wrong age badge.
 - Visible page number on a cover when prohibited.
 - Missing required page number on an interior page.
+- Legacy 41-package or mixed 41/43 structure used for final assembly.
+- Missing About This Book page.
+- Single-page Contents when the two-page policy applies.
+- Contents lists Cover, About This Book, Copyright or either Contents page.
+- Contents is not grouped by canonical modules.
+- Visible number on P002, P003, P004 or P005.
+- Welcome does not show printed page number 5.
 
 ## Content and pedagogy failures
 

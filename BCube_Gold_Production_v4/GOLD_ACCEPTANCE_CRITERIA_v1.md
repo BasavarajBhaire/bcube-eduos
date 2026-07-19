@@ -14,6 +14,10 @@ No page is approved because it is "good enough". A page is approved only when ev
 - No invented book, page, title, label, activity, teacher box, parent box, speech balloon or instructional text.
 - The official BCube logo asset must be used unchanged. Never redraw, recolour, crop, stretch or approximate it.
 - Cover pages must not show a visible page number or worksheet elements unless the canonical package explicitly requires them.
+- A final book must use the complete 43-package front-matter architecture; mixed 41/43 structures are critical failures.
+- About, Copyright and both Contents pages must hide their internally counted numbers 1–4.
+- Welcome must be the first visibly numbered page and must show 5.
+- Contents must occupy two pages, use canonical module headings and exclude front matter.
 
 ## Single-page output rule
 
@@ -71,6 +75,9 @@ Reject immediately for any of the following:
 - invented or missing visible text,
 - invented or missing activity,
 - wrong page-number policy,
+- one-page Contents or Contents that lists Cover, About, Copyright or Contents,
+- any visible number on P002–P005,
+- Welcome numbered other than 5,
 - cover containing worksheet elements,
 - inconsistent Star identity,
 - tiny unreadable text,
