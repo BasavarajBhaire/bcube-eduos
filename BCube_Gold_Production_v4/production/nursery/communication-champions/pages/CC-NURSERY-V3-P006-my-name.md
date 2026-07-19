@@ -10,6 +10,7 @@ The child recognizes, says, and begins to write their own name with confidence.
 
 ## Locked visible wording
 - Page title: My Name
+- Star's model sentence on the mascot board: I am Star
 - Child sentence: Hello! My name is __________.
 - Reward wording: Well done! I said my name proudly.
 
@@ -25,7 +26,7 @@ The child recognizes, says, and begins to write their own name with confidence.
 - Official BCube logo reserved at top left; never regenerate it.
 - Exact page title centred in the header.
 - Hero area occupies about 60–65% of the page.
-- Hero scene: one smiling Nursery child beside the locked Star mascot, proudly presenting a large name card.
+- Hero scene: one smiling Nursery child beside the locked Star mascot, proudly presenting a large name card that reads exactly “I am Star”. The board must never be empty and must not read “My name”.
 - Minimal pastel accents only; no rainbow, ABC blocks, flowers, clouds, or unrelated decoration.
 - Bottom activity area contains the speaking prompt, one large guided writing line, one independent writing line, and a small reward space.
 - Page number 6 at bottom right.
@@ -34,7 +35,7 @@ The child recognizes, says, and begins to write their own name with confidence.
 Illustration only. No logo, page number, watermark, body copy, tracing lines, or invented wording inside the artwork. White or transparent background, thick clean rounded outlines, soft BCube-compatible palette, natural proportions, premium preschool publishing finish.
 
 ## Teacher prompt
-Say your name first. Ask the child to say theirs. Help once, pause, and praise every attempt.
+Point to Star's board and model, “I am Star.” Say your name, then ask the child to say theirs. Help once, pause, and praise every attempt.
 
 ## Parent connection
 Ask, “What is your name?” Let the child introduce themselves to one family member and identify their name on one personal item.
@@ -55,6 +56,7 @@ Ask, “What is your name?” Let the child introduce themselves to one family m
 - [x] Teacher guidance is concise
 - [x] Parent connection is practical
 - [x] Illustration is separated from typography and layout
+- [x] Star's board has the purposeful model text “I am Star”; it is not an unexplained response space
 - [x] Cover rules not applicable
 - [x] No generated logo allowed
 - [x] Print geometry specified
