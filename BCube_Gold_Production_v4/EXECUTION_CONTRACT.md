@@ -14,6 +14,7 @@ Every production job must comply with:
 - `REJECTION_RULES.md`
 - `IMAGE_GENERATION_PIPELINE.md`
 - `FRONT_MATTER_AND_NUMBERING_POLICY.md`
+- `INDIVIDUAL_PAGE_OUTPUT_POLICY.md`
 
 ## Source of truth
 
@@ -43,6 +44,10 @@ For every page, execute these steps in this order:
 
 - One source page equals one standalone image.
 - Never create collages, overview boards, contact sheets or multi-page composites.
+- A page-range request always produces one individual A4 file per page; never use
+  one combined image as the result or user-facing validation preview.
+- Do not deliver or link an internal QA montage/contact sheet. Deliver individual
+  pages directly or a ZIP containing only individual page files.
 - Never invent a book or chapter.
 - Never change the canonical page title.
 - Never add activities, teacher boxes, parent boxes, speech bubbles or labels unless the page package requires them.
@@ -89,6 +94,8 @@ A page is approved only when:
 - prohibited elements are absent,
 - official-logo handling is respected,
 - one-page-only output is respected,
+- delivery contains only individual page files and no contact sheet, montage,
+  collage, overview, grid or composite,
 - print geometry is valid,
 - weighted QA score is at least 95/100,
 - critical defect count is zero.
