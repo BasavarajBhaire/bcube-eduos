@@ -16,6 +16,11 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 
 - More than one page appears in the generated image.
 - Collage, contact sheet, preview board, book overview, storyboard or composite output.
+- Contact sheet, montage, collage, grid, overview or composite presented, linked,
+  attached or packaged as a validation deliverable.
+- Requested page range delivered as one combined image instead of one individual
+  file per logical page.
+- Deliverable ZIP or output directory contains a non-page QA composite.
 - Mockup, perspective page, page curl, device frame or hands holding the page.
 - Landscape output when portrait is required.
 
