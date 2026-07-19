@@ -50,6 +50,16 @@ The Contents must:
 - never invent, rename, merge or split curriculum modules;
 - remain legible at final A4 print size without compressed microtext.
 
+For the 2480 × 3508 px validation build, Contents typography must use at least:
+
+- 46 px bold module headings;
+- 44 px page-entry text;
+- 44 px bold page numbers;
+- 92 px minimum row advance.
+
+Equivalent physical sizes must be preserved in print/PDF workflows. Smaller
+Contents typography is a legibility defect.
+
 ## About This Book policy
 
 P002 is a new controlled front-matter page for every book.
