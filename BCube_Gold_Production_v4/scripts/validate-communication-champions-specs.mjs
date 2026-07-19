@@ -10,7 +10,7 @@ const failures = [];
 let checked = 0;
 
 for (const [pageNumber, promptId, title, slug] of manifest.jobs) {
-  if (pageNumber < 12) continue;
+  if (pageNumber < 6) continue;
 
   const basename = `${promptId}-${slug}`;
   const jsonPath = path.join(sourceDir, `${basename}.json`);
@@ -60,11 +60,11 @@ for (const [pageNumber, promptId, title, slug] of manifest.jobs) {
   checked += 1;
 }
 
-if (checked !== 30) failures.push(`Expected 30 specifications, checked ${checked}`);
+if (checked !== 36) failures.push(`Expected 36 specifications, checked ${checked}`);
 
 if (failures.length > 0) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
 
-console.log(`PASS: ${checked} Communication Champions specifications (P012–P041) match the canonical manifest and page packages.`);
+console.log(`PASS: ${checked} Communication Champions specifications (P006–P041) match the canonical manifest and page packages.`);
