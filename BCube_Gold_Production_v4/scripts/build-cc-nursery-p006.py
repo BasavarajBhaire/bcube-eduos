@@ -28,6 +28,11 @@ def centred(draw, text, centre_x, y, face, fill=BLUE):
     draw.text((centre_x - (box[2] - box[0]) / 2, y), text, font=face, fill=fill)
 
 
+def dotted_line(draw, x1, x2, y, fill="#6FA6D9", width=6, dash=22, gap=16):
+    for x in range(x1, x2, dash + gap):
+        draw.line((x, y, min(x + dash, x2), y), fill=fill, width=width)
+
+
 def build():
     page = Image.open(ASSETS / "illustration.jpg").convert("RGB").resize(
         (W, H), Image.Resampling.LANCZOS
@@ -53,11 +58,20 @@ def build():
     # Locked teaching model: Star introduces itself before the child responds.
     centred(draw, "I am Star", 1740, 1540, font(54))
 
-    draw.text((180, 2220), "My name is ________.", font=font(62), fill=BLUE)
-    draw.text((190, 2515), "Trace my name.", font=font(45), fill="#3D6F95")
-    draw.line((300, 2680, 2180, 2680), fill="#6FA6D9", width=7)
-    draw.text((190, 2865), "Write my name.", font=font(45), fill="#3D6F95")
-    draw.line((300, 3050, 2180, 3050), fill="#6FA6D9", width=7)
+    # Clear legacy guide marks baked into the validation illustration while
+    # preserving the surrounding green activity-panel border.
+    draw.rectangle((115, 2195, 2365, 3075), fill="white")
+
+    draw.text((180, 2210), "My name is", font=font(62), fill=BLUE)
+    draw.line((610, 2278, 2180, 2278), fill=BLUE, width=7)
+
+    draw.text((190, 2390), "Trace my name.", font=font(43), fill="#3D6F95")
+    dotted_line(draw, 300, 2180, 2535)
+    dotted_line(draw, 300, 2180, 2655)
+
+    draw.text((190, 2750), "Write my name.", font=font(43), fill="#3D6F95")
+    draw.line((300, 2900, 2180, 2900), fill="#6FA6D9", width=7)
+    draw.line((300, 3040, 2180, 3040), fill="#6FA6D9", width=7)
 
     draw.ellipse((2210, 3260, 2375, 3425), fill="white", outline="#F2B400", width=8)
     centred(draw, "6", 2292, 3300, font(64))
