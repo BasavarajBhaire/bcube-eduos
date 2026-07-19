@@ -21,6 +21,11 @@ No page is approved because it is "good enough". A page is approved only when ev
 
 ## Single-page output rule
 
+Repository authority and delivery requirements are defined in
+`INDIVIDUAL_PAGE_OUTPUT_POLICY.md`. A page range must be delivered as multiple
+individual files. Internal QA contact sheets must never be included or presented
+as validation output.
+
 Every generation must contain exactly one flat, front-facing A4 portrait page.
 
 Automatically reject:
