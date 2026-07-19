@@ -10,6 +10,12 @@ const outputDir = path.join(
   root,
   "BCube_Gold_Production_v4/production/nursery/communication-champions/pages",
 );
+const manifest = JSON.parse(
+  fs.readFileSync(
+    path.join(root, "BCube_Gold_Production_v4/manifests/nursery/communication-champions.json"),
+    "utf8",
+  ),
+);
 
 const startPage = Number(process.argv[2] ?? 12);
 const endPage = Number(process.argv[3] ?? 41);
@@ -39,6 +45,42 @@ function render(sourceFile) {
   const sourceMarkdown = sourceFile.replace(/\.json$/, ".md");
   const teacherQuestions = page.teacher_prompt.questions.map(bullet).join("\n");
   const negativeConstraints = page.illustration.negative_constraints.map(bullet).join("\n");
+  const isCover = page.page_type === "cover";
+  const titleRule = isCover
+    ? "Use “Communication Champions” as the dominant cover title and show “Nursery (3+)” on the cover only."
+    : `Exact page title “${page.title}” centred in the header.`;
+  const pageNumberRule = isCover
+    ? "No visible page number or interior-page footer on the cover."
+    : `Page number ${pageNumber} at bottom right.`;
+  let controlledCopy = "";
+
+  if (pageNumber === 2) {
+    controlledCopy = `
+## Locked publication metadata
+- Copyright: © 2025 BCube Future Academy. All rights reserved.
+- Publisher: BCube Future Academy
+- Series: BCube Future Skills Learning Series™
+- Title: Communication Champions — Nursery (3+)
+- Address: 407, DSMAX Sky Supreme KST Bangalore - 560060
+- Email: info@bcubefutureacademy.in
+- Website: bcubefutureacademy.in
+- Edition: First Edition 2025
+
+These values are canonical controlled copy and must not be paraphrased, replaced or inferred.
+`;
+  }
+
+  if (pageNumber === 3) {
+    const contentsRows = manifest.jobs.map(([number, , entryTitle]) => `| ${number} | ${entryTitle} |`).join("\n");
+    controlledCopy = `
+## Canonical contents entries
+| Page | Exact title |
+|---:|---|
+${contentsRows}
+
+All 41 entries must fit legibly in the required two-column navigation layout without renaming, grouping or inventing modules.
+`;
+  }
 
   return `# ${source.prompt_id} — ${page.title}
 
@@ -78,6 +120,7 @@ ${page.individual_specification.response_space}
 
 ## Page-specific prohibition
 ${page.individual_specification.page_specific_prohibition}
+${controlledCopy}
 
 ## Illustration contract
 - Generate only the illustration elements required by the locked composition.
@@ -93,8 +136,8 @@ ${negativeConstraints}
 - Exactly one flat, front-facing A4 portrait page.
 - 210 × 297 mm, 3 mm bleed, minimum 10 mm safe margin, 12 mm binding allowance, 300 DPI and CMYK-safe output.
 - Official BCube logo reserved at top left and placed later from the approved immutable asset; never regenerate or redraw it.
-- Exact page title centred in the header.
-- Page number ${pageNumber} at bottom right.
+- ${titleRule}
+- ${pageNumberRule}
 - Exact repository wording and activity geometry must be composed deterministically using approved typography.
 - No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.
 

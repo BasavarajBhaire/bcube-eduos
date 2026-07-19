@@ -10,8 +10,6 @@ const failures = [];
 let checked = 0;
 
 for (const [pageNumber, promptId, title, slug] of manifest.jobs) {
-  if (pageNumber < 6) continue;
-
   const basename = `${promptId}-${slug}`;
   const jsonPath = path.join(sourceDir, `${basename}.json`);
   const markdownPath = path.join(sourceDir, `${basename}.md`);
@@ -50,21 +48,44 @@ for (const [pageNumber, promptId, title, slug] of manifest.jobs) {
   const requiredRules = [
     "Exactly one flat, front-facing A4 portrait page.",
     "Official BCube logo reserved at top left",
-    `Page number ${pageNumber} at bottom right.`,
+    page.page_type === "cover"
+      ? "No visible page number or interior-page footer on the cover."
+      : `Page number ${pageNumber} at bottom right.`,
     "No collage, contact sheet, mockup, extra page, extra activity or unrelated decoration.",
   ];
   for (const rule of requiredRules) {
     if (!production.includes(rule)) failures.push(`${promptId}: missing v4 production rule: ${rule}`);
   }
 
+  if (pageNumber === 2) {
+    const metadata = [
+      "© 2025 BCube Future Academy. All rights reserved.",
+      "BCube Future Skills Learning Series™",
+      "407, DSMAX Sky Supreme KST Bangalore - 560060",
+      "info@bcubefutureacademy.in",
+      "bcubefutureacademy.in",
+      "First Edition 2025",
+    ];
+    for (const value of metadata) {
+      if (!production.includes(value)) failures.push(`${promptId}: missing locked publication metadata: ${value}`);
+    }
+  }
+
+  if (pageNumber === 3) {
+    for (const [contentsPage, , contentsTitle] of manifest.jobs) {
+      const row = `| ${contentsPage} | ${contentsTitle} |`;
+      if (!production.includes(row)) failures.push(`${promptId}: missing canonical contents row: ${row}`);
+    }
+  }
+
   checked += 1;
 }
 
-if (checked !== 36) failures.push(`Expected 36 specifications, checked ${checked}`);
+if (checked !== 41) failures.push(`Expected 41 specifications, checked ${checked}`);
 
 if (failures.length > 0) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
 
-console.log(`PASS: ${checked} Communication Champions specifications (P006–P041) match the canonical manifest and page packages.`);
+console.log(`PASS: all ${checked} Communication Champions specifications (P001–P041) match the canonical manifest and page packages.`);
