@@ -21,6 +21,10 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 - Requested page range delivered as one combined image instead of one individual
   file per logical page.
 - Deliverable ZIP or output directory contains a non-page QA composite.
+- Corrected artifact is redelivered with a previously shared filename or link,
+  allowing a stale cached file to be served.
+- Corrected ZIP is not extracted and hash-verified against corrected source pages
+  before handoff.
 - Mockup, perspective page, page curl, device frame or hands holding the page.
 - Landscape output when portrait is required.
 
