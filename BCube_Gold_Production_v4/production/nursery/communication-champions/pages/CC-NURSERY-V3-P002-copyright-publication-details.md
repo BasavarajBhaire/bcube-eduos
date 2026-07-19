@@ -3,7 +3,7 @@
 **Book:** Communication Champions  
 **Level:** Nursery (3+)  
 **Source prompt:** `production-prompts/communication-champions/nursery/v3/pages/CC-NURSERY-V3-P002-copyright-publication-details.md`  
-**Status:** Gold production specification locked; final composed page pending.
+**Status:** Editorial and production specification reviewed and approved; final deterministic typesetting and print preflight pending.
 
 ## Locked publication copy
 - © 2025 BCube Future Academy. All rights reserved.
@@ -25,5 +25,14 @@ Minimal professional publication page with approved logo, small Star accent and 
 - Official BCube logo must be placed from the approved asset and never generated.
 - No fake contact details, QR code, alternate edition data, response space or worksheet activity.
 
+## Completed review comments
+- Publication identity, address, email, website and edition are retained exactly as the locked controlled copy.
+- The page must remain adult-facing, restrained and highly legible; no educational activity or decorative classroom scene is permitted.
+- Final typesetting must use approved fonts, consistent spacing and a clear legal-information hierarchy.
+- Final preflight must reconfirm the copyright year and edition against founder-approved release metadata before commercial printing.
+
 ## QA gate
 Reject for any paraphrased legal copy, invented publication detail, fake logo, child task, missing page number or non-A4 output.
+
+## Review decision
+**P002 specification: APPROVED.** Final release remains blocked until metadata confirmation, composed-page review and print preflight.
