@@ -1,4 +1,4 @@
-name: Restore Communication Champions pages
+name: Recover Communication Champions pages safely
 
 on:
   push:
@@ -15,11 +15,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: restore-communication-champions-pages
-  cancel-in-progress: false
+  group: recover-communication-champions-pages
+  cancel-in-progress: true
 
 jobs:
-  restore:
+  recover:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -34,58 +34,80 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install image dependencies
+      - name: Install image dependency
         run: python -m pip install --disable-pip-version-check Pillow
 
       - name: Inventory approved PNG files
         run: python scripts/inventory_communication_champions_pages.py
 
-      - name: Restore selected pages non-destructively
-        id: restoration
+      - name: Remove unsafe generated outputs from working tree
+        run: |
+          rm -rf BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages
+          mkdir -p BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
+
+      - name: Create faithful recovery candidates
+        id: recovery
         continue-on-error: true
         run: |
-          mkdir -p BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
           set -o pipefail
-          python scripts/restore_communication_champions_pages.py 2>&1 | tee BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/workflow.log
+          python scripts/restore_communication_champions_pages.py 2>&1 | tee BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/recovery-workflow.log
 
-      - name: Validate generated outputs
+      - name: Enforce mechanical checks and block automatic approval
         id: validation
         continue-on-error: true
         run: |
-          python - <<'PY' 2>&1 | tee -a BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/workflow.log
+          python - <<'PY' 2>&1 | tee -a BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/recovery-workflow.log
           import json
           from pathlib import Path
-          report = Path('BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/restoration-report.json')
-          if not report.exists():
-              raise SystemExit('Restoration report was not generated.')
-          rows = json.loads(report.read_text(encoding='utf-8'))
+
+          report_path = Path('BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/recovery-report.json')
+          if not report_path.exists():
+              raise SystemExit('Recovery report was not generated.')
+
+          report = json.loads(report_path.read_text(encoding='utf-8'))
+          rows = report.get('pages', [])
           expected = {f'P{i:03d}' for i in [*range(9,14), *range(15,17), *range(26,44)]}
-          present = {r.get('page_id') for r in rows}
+          present = {row.get('page_id') for row in rows}
           if present != expected:
               raise SystemExit(f'Target-page mismatch. Missing={sorted(expected-present)}, extra={sorted(present-expected)}')
-          bad = [r for r in rows if r.get('valid_source') and not r.get('source_unchanged')]
-          if bad:
-              raise SystemExit(f'Approved source mutation detected: {bad}')
-          restored = [r for r in rows if r.get('status') == 'restored']
-          invalid_size = [r for r in restored if r.get('output_dimensions') != [2480, 3508]]
-          if invalid_size:
-              raise SystemExit(f'Unexpected output dimensions: {invalid_size}')
-          unaccounted = [r for r in rows if r.get('status') not in {'restored', 'isolated-unreadable'}]
-          if unaccounted:
-              raise SystemExit(f'Unaccounted target pages: {unaccounted}')
-          print(f'Validated {len(restored)} restored pages and {len(rows)-len(restored)} isolated pages; approved sources unchanged.')
+
+          if report.get('policy', {}).get('automatic_header_editing') is not False:
+              raise SystemExit('Unsafe automatic header editing is enabled.')
+          if report.get('policy', {}).get('automatic_visual_approval') is not False:
+              raise SystemExit('Automatic visual approval must remain disabled.')
+          if report.get('policy', {}).get('merge_allowed') is not False:
+              raise SystemExit('Merge must remain blocked before human visual approval.')
+
+          failures = [row for row in rows if row.get('status') != 'pending-visual-review']
+          if failures:
+              raise SystemExit(f'Mechanical recovery failures: {failures}')
+          mutated = [row for row in rows if not row.get('source_unchanged')]
+          if mutated:
+              raise SystemExit(f'Approved source mutation detected: {mutated}')
+          wrong_size = [row for row in rows if row.get('output_dimensions') != [2480, 3508]]
+          if wrong_size:
+              raise SystemExit(f'Unexpected output dimensions: {wrong_size}')
+          approved = [row for row in rows if row.get('approved') is not False]
+          if approved:
+              raise SystemExit(f'Pages were incorrectly auto-approved: {approved}')
+
+          sheets = [Path(path) for path in report.get('contact_sheets', [])]
+          if not sheets or any(not path.exists() for path in sheets):
+              raise SystemExit('Visual-review contact sheets are missing.')
+
+          print(f'Mechanical checks passed for {len(rows)} candidates. All remain pending visual review; merge blocked.')
           PY
 
-      - name: Commit inventory, outputs and diagnostics
+      - name: Commit recovery candidates and review evidence
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add BCube_Gold_Production_v4/restoration-work/nursery/communication-champions
+          git add -A BCube_Gold_Production_v4/restoration-work/nursery/communication-champions
           if git diff --cached --quiet; then
-            echo "No restoration changes to commit."
+            echo "No recovery changes to commit."
           else
-            git commit -m "Restore Communication Champions page headers and print pixels"
+            git commit -m "Replace unsafe restorations with visual-review recovery candidates"
             for attempt in 1 2 3; do
               git pull --rebase origin restore/communication-champions-pixel-header-fixes && \
               git push origin HEAD:restore/communication-champions-pixel-header-fixes && break
@@ -94,8 +116,21 @@ jobs:
             done
           fi
 
-      - name: Enforce successful restoration
+      - name: Publish review artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: communication-champions-recovery-review
+          path: |
+            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates
+            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets
+            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Enforce successful recovery
         if: always()
         run: |
-          test "${{ steps.restoration.outcome }}" = "success"
+          test "${{ steps.recovery.outcome }}" = "success"
           test "${{ steps.validation.outcome }}" = "success"
+          echo "Recovery candidates generated. This workflow intentionally does not approve or merge them."
