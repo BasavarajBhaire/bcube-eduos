@@ -1,0 +1,452 @@
+[
+  {
+    "page_id": "P009",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P009-my-photo.png",
+    "source_sha256": "ef4daf2c48de4995212231c2a1983bc412ebee6647a81ced25e270c9f24062bb",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P009-my-photo.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "85b71291e61926d18cdad485cbcab1ee76042177cdb92df1939a07fe83acc79a",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P010",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P010-my-feelings.png",
+    "source_sha256": "8ff980827dae6a0b6062377128f8e0ca931fca01b3d38984cd93b2d723ce9877",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P010-my-feelings.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "e5f62c6621db63626522af1b2021619dff66c7960000d87389203e5bde9b11cd",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P011",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P011-my-birthday.png",
+    "source_sha256": "fb99df363ca9241425154426971d605e399868897a4a1222b18324b678c032e9",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P011-my-birthday.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "557f5c6469e8c3c518c612b5c3188b1c0be9dd5f1fc0dd9164c3f521a04048a4",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P012",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P012-my-family.png",
+    "source_sha256": "888ab8a54f1425632027c286ce17215c6057f6696acd3699c1d1378bc51d9162",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P012-my-family.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "4031df6301c52553a295de51f7977f200551e01540ab4aa03e5afe723703d482",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P013",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P013-draw-my-family.png",
+    "source_sha256": "a5ae3cab66e938c21e85c819520ebb3e131edb5d800398fc3d6176e10637424b",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P013-draw-my-family.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "132b3bdc7014b206f49cd7b3bdfef8781d3991ebb0898c49643a6d22aa9c9d36",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P015",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P015-who-is-in-my-family-corrected-v3.png",
+    "source_sha256": "a5041d558e30f7ebbd23cc8318c878a2af22037a933783aed8e203fb4f355ab1",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P015-who-is-in-my-family-corrected-v3.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "cd37ccd4801e35db44452e96ca1c6f1c68d58007f90229c871042e423868ddb9",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P016",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P016-my-favourite-toy-corrected-v3.png",
+    "source_sha256": "12641798cc4ce9f72ead019de66477b59c1df14dd837f5f788636acb6455f3aa",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      2480,
+      3508
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P016-my-favourite-toy-corrected-v3.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "ee501978efd0134afa597e454c9fcfbf4b279e71b893cbdc4a5c441b170a0a06",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P026",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P026.png",
+    "source_sha256": "3fbc4cc1191eae7a60d70a4be4edf37e6c18e0825b70e1b71de9bcb9178163e5",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P026.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "e59ba124c33def6d612ee828970cfc32f61bc7b461a70caf53cecc53c5d0be2a",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P027",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P027.png",
+    "source_sha256": "1560e9851ed20e01c0d5dbb5adcc68ef61faf00b713d1aaa785199d3dedacbf2",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P027.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "9eda555111b069055a820e35e9eaf4b82a04f09e5522cf61f307cf32143f2675",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P028",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P028.png",
+    "source_sha256": "c49aa166a742f609e1b61ba111de70e05d1e6355a55090a763852e9aababf014",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P028.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "f4a0118c1a0920f1d98f4b6b67a840c8308f9fb78872908a3b2fb8272d655f20",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P029",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P029.png",
+    "source_sha256": "0e4334395e659e832a833ff6d4ced1fdccde332a8d62e86c0dc42aa3b640f7b7",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P029.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "2962577dd0067071f31e3b444be4fc45e83d74492178f514c28de0a7768c6bc2",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P030",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P030.png",
+    "source_sha256": "0f43d37eaf6fde48e4cd0f474ecf686797cb020ab7bd8c7e2eaefc8d582772c3",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P030.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "1acaed1745359bb831d6e6aa7ca482b15afa9b8ab8daf9794a577c639f2633c4",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P031",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P031.png",
+    "source_sha256": "963321cb72766e1b59c35752bfbe0c86101843e69fafc20f1b93defe030d459a",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P031.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "c46dc7e4f274888fad363fa25ce3a6cbb191a9898e89a1459b72ce2395c9144e",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P032",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P032.png",
+    "source_sha256": "2d2196e45b660aca43d997f6c618023ebd0b2af7ea60dd2a3e042d762ec82428",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P032.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "63a4e7a207975f29009b350f47ccacfb54aef27c16ac74b0a69ea7890f32c3f9",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P033",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P033.png",
+    "source_sha256": "cf4645a76ce32b57f755996aeeaa0983328d9e71bec47fb4573e5617734fce4f",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P033.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "98f3a8c90cf9c8d1e5d6b74b0b36bd2768bdfdf28d5eca909e00e75254ee4c8e",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P034",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P034.png",
+    "source_sha256": "5a82704ca125bd957b4c6a46865699565a653a4fa8d56278138d211037cad2b7",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P034.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "722ae40e133993c9a6a9be87e75a6d8080bfe986683bd826861d314af16f96de",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P035",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P035.png",
+    "source_sha256": "cb3a566c77a24f10c8605f9ea0408279cb31e82921408018a8fe16972045b28c",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P035.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "3c91309435d9b557a2fc724896fb10b7efa00157b2a0ef65eea62d3fd6e2cda4",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P036",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P036.png",
+    "source_sha256": "91d827dd71092d5495982bc830e16d6843baaa77ccf7c01b4de69d8abe6c95f6",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P036.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "eb2e23f2f45f2936169805ae549139b974b33ffb2e48adce889636f23c9269cd",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P037",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P037.png",
+    "source_sha256": "e63f66742632d74819704460279d3590a705de0709d0518b31c2dd4f4d2d0dbd",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P037.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "13ab38d6522c27561d8f298f675ec7c6a541a9cb03a3f89d90318e0a7029b844",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P038",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P038.png",
+    "source_sha256": "96dd315a3fa9a4136d83c9112ae0d6689513ec2bb80f428ffda7428f6e207611",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P038.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "f1975547151918dc05ade4e4b9fd8adbe697be33adf9b0e6f4b67047fcc01fce",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P039",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P039.png",
+    "source_sha256": "44302d326fa91b4363dba5d05be82adc88a0b48e0cbbc8340c7817ef3c03bd6b",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P039.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "63d28c5eea835fae278be4a4c04583cec741b56b6c17266991daf701a7cf8a73",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P040",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P040.png",
+    "source_sha256": "bf17e2fb31f3a3844725a8e18335ab6b150b00f2db5c9318a0b507a0f52afc4a",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P040.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "fc0c37ba71cd9a4c23366a76fc050f5f718f92168bfa1c9769c7228b36d91501",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P041",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P041.png",
+    "source_sha256": "ad861d166abecef93974442eaf37d05fa8a78a2a88cec40af2b193191116b070",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P041.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "1e6470e10cf4edaef43daae9e79dea72d2c5a4e1441d3955fb062f79253c146d",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P042",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P042.png",
+    "source_sha256": "266b8436005d9215e11b4857072b6762c6c925a097418cb0c41f03fd5db91666",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P042.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "0b2413c31f36ad8e5737477d4e37124664323940551d2233a0c0d27f84c4c416",
+    "source_unchanged": true
+  },
+  {
+    "page_id": "P043",
+    "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P043.png",
+    "source_sha256": "dd323f9a5e1ea84a54d3de7be403a67591fe7549567e51dca2974293b7a0eee7",
+    "valid_source": true,
+    "status": "restored",
+    "source_dimensions": [
+      1055,
+      1491
+    ],
+    "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages/CC-NURSERY-V4-P043.png",
+    "output_dimensions": [
+      2480,
+      3508
+    ],
+    "output_sha256": "e3e845d46c3c4f4ff7fa22f6c663c2d5e8f91503e3fb7d01e27a075828a51d5f",
+    "source_unchanged": true
+  }
+]
