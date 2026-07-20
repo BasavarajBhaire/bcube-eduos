@@ -1,8 +1,10 @@
 # Canonical Book and Page Index
 
-Status: locked source map for BCube Gold Production v4.
+Status: locked source map and migration inventory for BCube Gold Production v4.
 
-This index points to the 30 approved release READMEs. Each linked README contains the canonical 41-page sequence, page titles, prompt IDs and links to the individual Markdown/JSON page packages. Those files must be read before artwork generation.
+This index points to the 30 approved legacy release READMEs. Each currently contains the canonical 41-package curriculum sequence. Every release must be migrated to the common 43-package front-matter architecture before final v4 artwork assembly. Curriculum pages remain authoritative during migration.
+
+Required migration policy: [`FRONT_MATTER_AND_NUMBERING_POLICY.md`](FRONT_MATTER_AND_NUMBERING_POLICY.md).
 
 ## Nursery
 
@@ -46,8 +48,9 @@ This index points to the 30 approved release READMEs. Each linked README contain
 ## Enforcement
 
 - 30 approved books only.
-- 41 individual pages per book.
-- 1,230 individual page packages total.
+- 43 individual production packages per migrated book.
+- 1,290 individual page packages after portfolio migration.
+- Legacy 41-package releases are migration sources, not final v4 assembly manifests.
 - One source page produces one standalone page image.
 - No invented book names or chapter titles.
 - No multi-page composite images.

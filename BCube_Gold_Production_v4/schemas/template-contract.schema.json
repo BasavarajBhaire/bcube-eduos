@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/template-contract.schema.json",
+  "title": "BCube deterministic template contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["template_registry_version", "canvas", "global_rules", "templates"],
+  "properties": {
+    "template_registry_version": {"type": "string"},
+    "canvas": {"type": "object"},
+    "global_rules": {"type": "object"},
+    "templates": {"type": "object"}
+  }
+}

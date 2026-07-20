@@ -1,0 +1,18 @@
+{
+  "prompt_id": "CC-NURSERY-V4-P002",
+  "version": "4.1.0",
+  "page_data": {
+    "page_id": "CC-NURSERY-V4-P002",
+    "book_id": "COMMUNICATION_CHAMPIONS_NURSERY",
+    "page_number": 1,
+    "page_type": "front_matter",
+    "title": "About This Book",
+    "age_level": "Nursery (3+)",
+    "visible_text": "Communication Champions — Nursery (3+)",
+    "illustration": {"scene": "Adult-facing overview with restrained decorative use of the approved Star asset."},
+    "individual_specification": {
+      "response_space": "None",
+      "page_specific_prohibition": "No child worksheet, no score, no printed page number."
+    }
+  }
+}

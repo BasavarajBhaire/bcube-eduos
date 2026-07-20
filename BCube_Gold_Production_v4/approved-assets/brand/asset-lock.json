@@ -1,0 +1,21 @@
+{
+  "lock_version": "1.0.0",
+  "assets": {
+    "official_logo": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "requirements": "Original approved BCube logo binary; must pass PNG decode and SHA-256 lock before promotion."
+    },
+    "star_mascot": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "requirements": "Transparent PNG; bright-yellow rounded five-point Star; expressive face; blue shoes; small blue cape."
+    }
+  }
+}

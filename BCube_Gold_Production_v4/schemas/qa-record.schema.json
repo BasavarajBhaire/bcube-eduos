@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/qa-record.schema.json",
+  "title": "BCube Golden Page QA Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "prompt_id", "candidate_sha256", "reviewer", "reviewed_at",
+    "score", "critical_defects", "checks"
+  ],
+  "properties": {
+    "prompt_id": {"type": "string", "pattern": "^CC-NURSERY-V4-P[0-9]{3}$"},
+    "candidate_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "reviewer": {"type": "string", "minLength": 2},
+    "reviewed_at": {"type": "string", "format": "date-time"},
+    "score": {"type": "integer", "minimum": 95, "maximum": 100},
+    "critical_defects": {"const": 0},
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_identity", "exact_visible_text", "required_scene",
+        "required_activity", "no_crop_or_overlap", "official_logo",
+        "official_mascot", "safe_margins", "individual_page"
+      ],
+      "properties": {
+        "canonical_identity": {"const": true},
+        "exact_visible_text": {"const": true},
+        "required_scene": {"const": true},
+        "required_activity": {"const": true},
+        "no_crop_or_overlap": {"const": true},
+        "official_logo": {"const": true},
+        "official_mascot": {"const": true},
+        "safe_margins": {"const": true},
+        "individual_page": {"const": true}
+      }
+    },
+    "notes": {"type": "string"}
+  }
+}

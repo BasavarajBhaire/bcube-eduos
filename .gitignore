@@ -4,3 +4,16 @@ qa-render*/
 *.pyc
 __pycache__/
 .DS_Store
+
+# BCube generated/delivery artifacts — never commit these
+BCube_Gold_Production_v4/output/**/candidates/
+BCube_Gold_Production_v4/output/**/previews/
+BCube_Gold_Production_v4/output/**/rejected*/
+BCube_Gold_Production_v4/output/**/contact-sheet*/
+BCube_Gold_Production_v4/output/**/contact_sheets*/
+BCube_Gold_Production_v4/output/**/tmp/
+BCube_Gold_Production_v4/output/**/*.zip
+BCube_Gold_Production_v4/output/**/*.pdf
+
+# Approved PNGs are intentionally NOT ignored. They live only under:
+# BCube_Gold_Production_v4/approved-assets/<level>/<book>/pages/

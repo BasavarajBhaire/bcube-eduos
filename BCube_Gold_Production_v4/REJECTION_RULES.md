@@ -2,6 +2,18 @@
 
 Status: MANDATORY
 
+## Deterministic release blockers
+
+- Release assembly invokes AI generation, downloads, generative fill or illustration substitution.
+- A page, logo or mascot is absent from its approved lock, or its SHA-256 differs.
+- Page count/order differs from the canonical 44-page physical release manifest.
+- A deliverable is not one individual 2480 × 3508 PNG.
+- A golden page lacks a matching signed QA record with zero critical defects.
+- Identity, exact text, scene, activity, crop/overlap, logo, mascot or safe-margin checks are not explicitly approved.
+- Automatic crop, inferred focal cropping, a contact sheet or regeneration is used in release mode.
+
+See `DETERMINISTIC_RELEASE_ARCHITECTURE.md`.
+
 A page must be rejected immediately when any rule below is triggered. Do not continue scoring a critically failed page as acceptable.
 
 ## Identity failures
@@ -16,16 +28,37 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 
 - More than one page appears in the generated image.
 - Collage, contact sheet, preview board, book overview, storyboard or composite output.
+- Contact sheet, montage, collage, grid, overview or composite presented, linked,
+  attached or packaged as a validation deliverable.
+- Requested page range delivered as one combined image instead of one individual
+  file per logical page.
+- Deliverable ZIP or output directory contains a non-page QA composite.
+- Corrected artifact is redelivered with a previously shared filename or link,
+  allowing a stale cached file to be served.
+- Corrected ZIP is not extracted and hash-verified against corrected source pages
+  before handoff.
 - Mockup, perspective page, page curl, device frame or hands holding the page.
 - Landscape output when portrait is required.
 
 ## Branding failures
 
+- Instruction banner, subheader, title or activity content intersects the protected logo zone.
+- A generated, improvised or redrawn Star appears where the locked official mascot asset is required.
+- A mascot-bearing page does not record and match the approved mascot asset SHA-256.
+- Generated header, instruction-banner, top-right-corner or mascot pixels remain in the final composed page.
+- Top-right decoration differs from the locked pale-yellow quarter-circle template.
 - AI-generated, recreated, recoloured, stretched, cropped or approximate BCube logo.
 - Wrong logo placement or insufficient reserved logo zone.
 - Wrong age badge.
 - Visible page number on a cover when prohibited.
 - Missing required page number on an interior page.
+- Legacy 41-package or mixed 41/43 structure used for final assembly.
+- Missing About This Book page.
+- Single-page Contents when the two-page policy applies.
+- Contents lists Cover, About This Book, Copyright or either Contents page.
+- Contents is not grouped by canonical modules.
+- Visible number on P002, P003, P004 or P005.
+- Welcome does not show printed page number 5.
 
 ## Content and pedagogy failures
 
@@ -39,6 +72,14 @@ A page must be rejected immediately when any rule below is triggered. Do not con
 
 ## Illustration failures
 
+- A letter, initial, word label, coloured oval, generic icon or empty frame is used
+  in place of the required illustrated person, object, animal, food, action or scene.
+- The page instruction names visual choices that are not visibly illustrated.
+- Illustration cards contain only text or alphabetic placeholders.
+- The illustration is generic and does not demonstrate the exact learning action.
+- A required visual element from the canonical scene specification is missing.
+- The page has no completed semantic illustration-evidence record or has not passed
+  the illustration-content review gate.
 - Wrong Star identity.
 - Inconsistent teacher or child style that breaks continuity.
 - Anatomy errors, uncanny faces or cropped key body parts.

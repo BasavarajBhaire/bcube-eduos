@@ -1,12 +1,14 @@
 # BCube Book Production Workflow
 
+> Release builds follow `DETERMINISTIC_RELEASE_ARCHITECTURE.md`: generation is authoring-only; approved golden pages are hash-locked and copied unchanged.
+
 ## Operating mode
 
 Repository-driven work mode. Chat instructions may start or stop a run, but may not redefine curriculum or page structure.
 
 ## Book run
 
-A book run consumes one canonical manifest and produces one image per job.
+A book run consumes one migrated 44-physical-page manifest and produces one image per job. Legacy 41-package manifests are blocked from final assembly.
 
 ### Stage 1 — Source validation
 
@@ -17,6 +19,7 @@ For each manifest entry:
 - Open the page Markdown.
 - Open the page JSON.
 - Fail immediately if identity fields disagree.
+- Fail immediately if the manifest does not conform to `FRONT_MATTER_AND_NUMBERING_POLICY.md`.
 
 ### Stage 2 — Job compilation
 
@@ -42,6 +45,9 @@ No information may be inferred from a previous generated page.
 - Do not generate the BCube logo.
 - Do not create multiple variants.
 - Do not create an overview, collage or contact sheet.
+- For a page range, create and validate one individual file per page.
+- Never present or package an internal QA contact sheet as the result. User
+  validation is performed against the individual page files only.
 - Do not add text or sections absent from the compiled job.
 
 ### Stage 4 — QA
@@ -67,12 +73,24 @@ Any failure sets status to `qa-failed`; the page cannot be approved.
 - Status progression: `queued` → `source-validated` → `generating` → `generated` → `approved`
 - A failed page becomes `qa-failed` and is regenerated from the same source package.
 
+### Stage 6 — Front-matter assembly gate
+
+- Confirm exactly 44 standalone physical page outputs.
+- Confirm that the deliverable directory and ZIP contain no contact sheet, montage,
+  collage, overview, grid or composite.
+- Confirm Cover is P001 and unnumbered.
+- Confirm About, Copyright and two Contents pages occupy P002–P005 with hidden numbers.
+- Confirm Welcome is P006 and visibly numbered 5.
+- Confirm the final reader page is P043 and visibly numbered 42.
+- Confirm P044 is the separate back cover with no printed page number.
+- Confirm Contents lists only P006–P043 and groups entries by canonical modules.
+
 ## Communication Champions first run
 
 Manifest:
 
 `BCube_Gold_Production_v4/manifests/nursery/communication-champions.json`
 
-Expected output count: 41 standalone PNG pages.
+Target output count after migration: 44 standalone PNG physical pages.
 
 Validation occurs after the full first book is produced. No other book begins until this run is reviewed and accepted.
