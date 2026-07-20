@@ -1,0 +1,572 @@
+{
+  "policy": {
+    "automatic_header_editing": false,
+    "automatic_visual_approval": false,
+    "merge_allowed": false,
+    "required_final_state": "explicit-human-visual-approval"
+  },
+  "target_size": [
+    2480,
+    3508
+  ],
+  "max_roundtrip_mae": 8.0,
+  "contact_sheets": [
+    "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets/recovery-review-01.jpg",
+    "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets/recovery-review-02.jpg",
+    "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets/recovery-review-03.jpg",
+    "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets/recovery-review-04.jpg",
+    "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets/recovery-review-05.jpg"
+  ],
+  "pages": [
+    {
+      "page_id": "P009",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P009-my-photo.png",
+      "source_sha256": "ef4daf2c48de4995212231c2a1983bc412ebee6647a81ced25e270c9f24062bb",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P009-my-photo.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "ef4daf2c48de4995212231c2a1983bc412ebee6647a81ced25e270c9f24062bb",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P010",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P010-my-feelings.png",
+      "source_sha256": "8ff980827dae6a0b6062377128f8e0ca931fca01b3d38984cd93b2d723ce9877",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P010-my-feelings.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "8ff980827dae6a0b6062377128f8e0ca931fca01b3d38984cd93b2d723ce9877",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P011",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P011-my-birthday.png",
+      "source_sha256": "fb99df363ca9241425154426971d605e399868897a4a1222b18324b678c032e9",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P011-my-birthday.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "fb99df363ca9241425154426971d605e399868897a4a1222b18324b678c032e9",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P012",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P012-my-family.png",
+      "source_sha256": "888ab8a54f1425632027c286ce17215c6057f6696acd3699c1d1378bc51d9162",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P012-my-family.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "888ab8a54f1425632027c286ce17215c6057f6696acd3699c1d1378bc51d9162",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P013",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P013-draw-my-family.png",
+      "source_sha256": "a5ae3cab66e938c21e85c819520ebb3e131edb5d800398fc3d6176e10637424b",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P013-draw-my-family.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "a5ae3cab66e938c21e85c819520ebb3e131edb5d800398fc3d6176e10637424b",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P015",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P015-who-is-in-my-family-corrected-v3.png",
+      "source_sha256": "a5041d558e30f7ebbd23cc8318c878a2af22037a933783aed8e203fb4f355ab1",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P015-who-is-in-my-family-corrected-v3.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "a5041d558e30f7ebbd23cc8318c878a2af22037a933783aed8e203fb4f355ab1",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P016",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P016-my-favourite-toy-corrected-v3.png",
+      "source_sha256": "12641798cc4ce9f72ead019de66477b59c1df14dd837f5f788636acb6455f3aa",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        2480,
+        3508
+      ],
+      "roundtrip_mae": 0.0,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P016-my-favourite-toy-corrected-v3.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "12641798cc4ce9f72ead019de66477b59c1df14dd837f5f788636acb6455f3aa",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P026",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P026.png",
+      "source_sha256": "3fbc4cc1191eae7a60d70a4be4edf37e6c18e0825b70e1b71de9bcb9178163e5",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.24460274019048467,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P026.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "4e47cc6c59572097e3ec5e34f6116e99165ab96253ce2d270271ea43fb276f68",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P027",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P027.png",
+      "source_sha256": "1560e9851ed20e01c0d5dbb5adcc68ef61faf00b713d1aaa785199d3dedacbf2",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.38578834778020415,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P027.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "a6ea68a2c37795ba9843120363ef9a0bee45ec917fa3438c791a094e3623f17c",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P028",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P028.png",
+      "source_sha256": "c49aa166a742f609e1b61ba111de70e05d1e6355a55090a763852e9aababf014",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.36942773015131336,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P028.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "f075647aa02deb17f4dbccab8c4b10f7d2224cdf6f74c37e8a3da9e09c6b6db8",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P029",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P029.png",
+      "source_sha256": "0e4334395e659e832a833ff6d4ced1fdccde332a8d62e86c0dc42aa3b640f7b7",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.4220488809635062,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P029.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "14cfff05584ee9dbf6c90019b69469363d3621b7746488052b93dbdeb983caa1",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P030",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P030.png",
+      "source_sha256": "0f43d37eaf6fde48e4cd0f474ecf686797cb020ab7bd8c7e2eaefc8d582772c3",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.4154419937211473,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P030.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "2f5fe191cd0eb764c1034c5786a4f342fbecb2cbf121d245f7e906ed055a289d",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P031",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P031.png",
+      "source_sha256": "963321cb72766e1b59c35752bfbe0c86101843e69fafc20f1b93defe030d459a",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.351090852646156,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P031.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "9f44281845c5212d9b2cdb64d93c874bcbb0453c23111fbd9b3f8b9de6fbca82",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P032",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P032.png",
+      "source_sha256": "2d2196e45b660aca43d997f6c618023ebd0b2af7ea60dd2a3e042d762ec82428",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.19480760285779977,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P032.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "722a0fb959a7a6260d02dcddb72b707aba0b389c8946953ab55944a7dca8006d",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P033",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P033.png",
+      "source_sha256": "cf4645a76ce32b57f755996aeeaa0983328d9e71bec47fb4573e5617734fce4f",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.21695671660293514,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P033.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "4364a6bc342385c1957eaaa625749b8245edf6a6d8c6065a0e6de67965dc21d2",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P034",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P034.png",
+      "source_sha256": "5a82704ca125bd957b4c6a46865699565a653a4fa8d56278138d211037cad2b7",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.3420340897411854,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P034.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "855c593ace3c01e9b9ed6de91feb826c8c821e0dd8b74c829b101487691bc0ed",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P035",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P035.png",
+      "source_sha256": "cb3a566c77a24f10c8605f9ea0408279cb31e82921408018a8fe16972045b28c",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.37000666452638953,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P035.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "d0d88c3acc58fd0be1aa4477ce943a75d51499d5fc3df3447319fe373ceb0f15",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P036",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P036.png",
+      "source_sha256": "91d827dd71092d5495982bc830e16d6843baaa77ccf7c01b4de69d8abe6c95f6",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.5999078197462818,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P036.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "f46e0d176faeac66abb49b25b313ecd56f4543ae2aacc210af90f65ee08dde86",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P037",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P037.png",
+      "source_sha256": "e63f66742632d74819704460279d3590a705de0709d0518b31c2dd4f4d2d0dbd",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.4039512483007577,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P037.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "0268a70a0af422726ca9c4549fec71fdb81c8bef44311d6dedde56fc4e04b23b",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P038",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P038.png",
+      "source_sha256": "96dd315a3fa9a4136d83c9112ae0d6689513ec2bb80f428ffda7428f6e207611",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.4547423561908577,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P038.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "1dcdd4ad5742846b4a2a2e7fc3c374a3fe0dfcdb2eedc3bb4eb23755f78ff06e",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P039",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P039.png",
+      "source_sha256": "44302d326fa91b4363dba5d05be82adc88a0b48e0cbbc8340c7817ef3c03bd6b",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.4195561997577884,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P039.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "86cdfd36ed9e02aebc3fd38e39d7135f341de67fc2331f1f4b03b2bbf92d2891",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P040",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P040.png",
+      "source_sha256": "bf17e2fb31f3a3844725a8e18335ab6b150b00f2db5c9318a0b507a0f52afc4a",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.5519240773763169,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P040.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "3fc65eaad137a70441f90c7b3ba10771b2736bb2d5fbf89dc6242b4050e1d008",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P041",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P041.png",
+      "source_sha256": "ad861d166abecef93974442eaf37d05fa8a78a2a88cec40af2b193191116b070",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.4475234768272616,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P041.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "b4c66ac122b0a65ef0718ee4d91e1e0a6cafb67cc433310e5bcf0ffab3d602bf",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P042",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P042.png",
+      "source_sha256": "266b8436005d9215e11b4857072b6762c6c925a097418cb0c41f03fd5db91666",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.5262871595025657,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P042.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "876f42a2b9effba2ef36e6bbcd0bc1df852aa52b86728323298cf9bae892e6c8",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    },
+    {
+      "page_id": "P043",
+      "source": "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P043.png",
+      "source_sha256": "dd323f9a5e1ea84a54d3de7be403a67591fe7549567e51dca2974293b7a0eee7",
+      "valid_source": true,
+      "status": "pending-visual-review",
+      "source_dimensions": [
+        1055,
+        1491
+      ],
+      "roundtrip_mae": 0.3516897064323805,
+      "output": "BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates/CC-NURSERY-V4-P043.png",
+      "output_dimensions": [
+        2480,
+        3508
+      ],
+      "output_sha256": "b5cfd017bb841a1e8567de2e568f2e57fc244acf9076652565277cfd9df7f605",
+      "source_unchanged": true,
+      "mechanical_validation_passed": true,
+      "visual_validation": "required",
+      "approved": false
+    }
+  ]
+}
