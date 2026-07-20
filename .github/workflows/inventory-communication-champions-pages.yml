@@ -1,25 +1,23 @@
-name: Recover Communication Champions pages safely
+name: Communication Champions recovery review
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - restore/communication-champions-pixel-header-fixes
     paths:
-      - scripts/inventory_communication_champions_pages.py
       - scripts/restore_communication_champions_pages.py
       - .github/workflows/inventory-communication-champions-pages.yml
-      - BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/**
-  workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: recover-communication-champions-pages
+  group: communication-champions-recovery-review
   cancel-in-progress: true
 
 jobs:
-  recover:
+  recovery-review:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
@@ -29,6 +27,22 @@ jobs:
           ref: restore/communication-champions-pixel-header-fixes
           fetch-depth: 0
 
+      - name: Remove rejected generated outputs
+        run: |
+          rm -rf BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages
+          mkdir -p BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/rejected
+          cat > BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/rejected/README.md <<'EOF'
+          # Rejected restoration outputs
+
+          The previous generated candidates were rejected after visual review.
+
+          Reasons include duplicate logos, damaged header composition, inconsistent title scale,
+          incorrect instruction-banner alignment, and mechanical validation that did not detect
+          visible layout defects.
+
+          These pages are not approved and must not be merged or published.
+          EOF
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -37,100 +51,33 @@ jobs:
       - name: Install image dependency
         run: python -m pip install --disable-pip-version-check Pillow
 
-      - name: Inventory approved PNG files
-        run: python scripts/inventory_communication_champions_pages.py
+      - name: Generate review-only diagnostics
+        run: python scripts/restore_communication_champions_pages.py
 
-      - name: Remove unsafe generated outputs from working tree
-        run: |
-          rm -rf BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/restored-pages
-          mkdir -p BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
+      - name: Upload review diagnostics only
+        uses: actions/upload-artifact@v4
+        with:
+          name: communication-champions-recovery-review
+          path: |
+            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/review
+            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
+          if-no-files-found: error
+          retention-days: 7
 
-      - name: Create faithful recovery candidates
-        id: recovery
-        continue-on-error: true
-        run: |
-          set -o pipefail
-          python scripts/restore_communication_champions_pages.py 2>&1 | tee BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/recovery-workflow.log
-
-      - name: Enforce mechanical checks and block automatic approval
-        id: validation
-        continue-on-error: true
-        run: |
-          python - <<'PY' 2>&1 | tee -a BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/recovery-workflow.log
-          import json
-          from pathlib import Path
-
-          report_path = Path('BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/recovery-report.json')
-          if not report_path.exists():
-              raise SystemExit('Recovery report was not generated.')
-
-          report = json.loads(report_path.read_text(encoding='utf-8'))
-          rows = report.get('pages', [])
-          expected = {f'P{i:03d}' for i in [*range(9,14), *range(15,17), *range(26,44)]}
-          present = {row.get('page_id') for row in rows}
-          if present != expected:
-              raise SystemExit(f'Target-page mismatch. Missing={sorted(expected-present)}, extra={sorted(present-expected)}')
-
-          if report.get('policy', {}).get('automatic_header_editing') is not False:
-              raise SystemExit('Unsafe automatic header editing is enabled.')
-          if report.get('policy', {}).get('automatic_visual_approval') is not False:
-              raise SystemExit('Automatic visual approval must remain disabled.')
-          if report.get('policy', {}).get('merge_allowed') is not False:
-              raise SystemExit('Merge must remain blocked before human visual approval.')
-
-          failures = [row for row in rows if row.get('status') != 'pending-visual-review']
-          if failures:
-              raise SystemExit(f'Mechanical recovery failures: {failures}')
-          mutated = [row for row in rows if not row.get('source_unchanged')]
-          if mutated:
-              raise SystemExit(f'Approved source mutation detected: {mutated}')
-          wrong_size = [row for row in rows if row.get('output_dimensions') != [2480, 3508]]
-          if wrong_size:
-              raise SystemExit(f'Unexpected output dimensions: {wrong_size}')
-          approved = [row for row in rows if row.get('approved') is not False]
-          if approved:
-              raise SystemExit(f'Pages were incorrectly auto-approved: {approved}')
-
-          sheets = [Path(path) for path in report.get('contact_sheets', [])]
-          if not sheets or any(not path.exists() for path in sheets):
-              raise SystemExit('Visual-review contact sheets are missing.')
-
-          print(f'Mechanical checks passed for {len(rows)} candidates. All remain pending visual review; merge blocked.')
-          PY
-
-      - name: Commit recovery candidates and review evidence
-        if: always()
+      - name: Commit rejection record and remove broken candidates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A BCube_Gold_Production_v4/restoration-work/nursery/communication-champions
           if git diff --cached --quiet; then
-            echo "No recovery changes to commit."
+            echo "No repository cleanup changes."
           else
-            git commit -m "Replace unsafe restorations with visual-review recovery candidates"
-            for attempt in 1 2 3; do
-              git pull --rebase origin restore/communication-champions-pixel-header-fixes && \
-              git push origin HEAD:restore/communication-champions-pixel-header-fixes && break
-              if [ "$attempt" = "3" ]; then exit 1; fi
-              sleep 5
-            done
+            git commit -m "Reject broken Communication Champions restoration candidates"
+            git pull --rebase origin restore/communication-champions-pixel-header-fixes
+            git push origin HEAD:restore/communication-champions-pixel-header-fixes
           fi
 
-      - name: Publish review artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: communication-champions-recovery-review
-          path: |
-            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/recovery-candidates
-            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/contact-sheets
-            BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
-          if-no-files-found: error
-          retention-days: 14
-
-      - name: Enforce successful recovery
-        if: always()
+      - name: Block merge until manual approval
         run: |
-          test "${{ steps.recovery.outcome }}" = "success"
-          test "${{ steps.validation.outcome }}" = "success"
-          echo "Recovery candidates generated. This workflow intentionally does not approve or merge them."
+          echo "Visual approval is mandatory. No generated PNG is publishable from this workflow."
+          exit 1
