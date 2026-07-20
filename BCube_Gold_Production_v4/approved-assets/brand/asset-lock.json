@@ -2,11 +2,12 @@
   "lock_version": "1.0.0",
   "assets": {
     "official_logo": {
-      "status": "approved",
-      "file": "BCube_Gold_Production_v4/approved-assets/brand/Official_BCube_Logo-v1.png",
-      "sha256": "20a34081b07562cba15c1ec624bf709496fcdde18ab7d9da09a4e496125992f2",
-      "approved_by": "repository-migration",
-      "approved_at": "2026-07-20T00:00:00+05:30"
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "requirements": "Original approved BCube logo binary; must pass PNG decode and SHA-256 lock before promotion."
     },
     "star_mascot": {
       "status": "missing",
