@@ -21,6 +21,7 @@ concurrency:
 jobs:
   restore:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Check out safety branch
         uses: actions/checkout@v4
@@ -40,15 +41,28 @@ jobs:
         run: python scripts/inventory_communication_champions_pages.py
 
       - name: Restore selected pages non-destructively
-        run: python scripts/restore_communication_champions_pages.py
-
-      - name: Validate originals remain untouched
+        id: restoration
+        continue-on-error: true
         run: |
-          python - <<'PY'
+          mkdir -p BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation
+          set -o pipefail
+          python scripts/restore_communication_champions_pages.py 2>&1 | tee BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/workflow.log
+
+      - name: Validate generated outputs
+        id: validation
+        continue-on-error: true
+        run: |
+          python - <<'PY' 2>&1 | tee -a BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/workflow.log
           import json
           from pathlib import Path
           report = Path('BCube_Gold_Production_v4/restoration-work/nursery/communication-champions/validation/restoration-report.json')
+          if not report.exists():
+              raise SystemExit('Restoration report was not generated.')
           rows = json.loads(report.read_text(encoding='utf-8'))
+          expected = {f'P{i:03d}' for i in [*range(9,14), *range(15,17), *range(26,44)]}
+          present = {r.get('page_id') for r in rows}
+          if present != expected:
+              raise SystemExit(f'Target-page mismatch. Missing={sorted(expected-present)}, extra={sorted(present-expected)}')
           bad = [r for r in rows if r.get('valid_source') and not r.get('source_unchanged')]
           if bad:
               raise SystemExit(f'Approved source mutation detected: {bad}')
@@ -56,17 +70,32 @@ jobs:
           invalid_size = [r for r in restored if r.get('output_dimensions') != [2480, 3508]]
           if invalid_size:
               raise SystemExit(f'Unexpected output dimensions: {invalid_size}')
-          print(f'Validated {len(restored)} restored pages; approved sources unchanged.')
+          unaccounted = [r for r in rows if r.get('status') not in {'restored', 'isolated-unreadable'}]
+          if unaccounted:
+              raise SystemExit(f'Unaccounted target pages: {unaccounted}')
+          print(f'Validated {len(restored)} restored pages and {len(rows)-len(restored)} isolated pages; approved sources unchanged.')
           PY
 
-      - name: Commit restoration outputs and validation reports
+      - name: Commit inventory, outputs and diagnostics
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add BCube_Gold_Production_v4/restoration-work/nursery/communication-champions
           if git diff --cached --quiet; then
-            echo "Restoration outputs are unchanged."
+            echo "No restoration changes to commit."
           else
             git commit -m "Restore Communication Champions page headers and print pixels"
-            git push origin HEAD:restore/communication-champions-pixel-header-fixes
+            for attempt in 1 2 3; do
+              git pull --rebase origin restore/communication-champions-pixel-header-fixes && \
+              git push origin HEAD:restore/communication-champions-pixel-header-fixes && break
+              if [ "$attempt" = "3" ]; then exit 1; fi
+              sleep 5
+            done
           fi
+
+      - name: Enforce successful restoration
+        if: always()
+        run: |
+          test "${{ steps.restoration.outcome }}" = "success"
+          test "${{ steps.validation.outcome }}" = "success"
