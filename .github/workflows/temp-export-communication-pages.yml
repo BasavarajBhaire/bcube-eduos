@@ -1,0 +1,42 @@
+name: Temporary Communication Pages Export
+
+on:
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  export-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Package exact approved page binaries
+        run: |
+          mkdir -p export
+          cp -R BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages export/
+          cp BCube_Gold_Production_v4/manifests/nursery/communication-champions.release-v4.json export/
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageFile
+          import json
+          ImageFile.LOAD_TRUNCATED_IMAGES = False
+          rows=[]
+          for p in sorted(Path('export/pages').glob('*.png')):
+              try:
+                  with Image.open(p) as im:
+                      im.load()
+                      rows.append({'file':p.name,'width':im.width,'height':im.height,'mode':im.mode,'status':'ok'})
+              except Exception as e:
+                  rows.append({'file':p.name,'status':'decode_error','error':str(e)})
+          Path('export/source-validation.json').write_text(json.dumps(rows, indent=2), encoding='utf-8')
+          PY
+      - name: Upload exact source files
+        uses: actions/upload-artifact@v4
+        with:
+          name: communication-pages-source-export
+          path: export
+          if-no-files-found: error
+          retention-days: 1
