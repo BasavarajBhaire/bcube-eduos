@@ -14,13 +14,13 @@ This keeps authoring flexible while making repeated releases identical.
 
 ## Sources of truth
 
-- `manifests/nursery/communication-champions.release-v4.json` — exact 44-page physical order, identity, numbering, source package, template and filename.
+- `manifests/<level>/<book>.release-v4.json` — exact 44-page physical order, identity, numbering, source package, template and filename for each book.
 - `templates/template-registry.v1.json` — canvas, safe areas, layer order, fit mode and brand placement contracts.
 - `approved-assets/brand/asset-lock.json` — approved logo and Star mascot hashes.
-- `approved-assets/nursery/communication-champions/asset-lock.json` — approved golden-page hashes.
+- `approved-assets/<level>/<book>/asset-lock.json` — approved golden-page hashes.
 - `schemas/qa-record.schema.json` — minimum human semantic review contract.
 
-The release manifest maps 41 curriculum source packages to 44 physical pages by adding About This Book, splitting Contents into Parts 1 and 2, and adding an unnumbered back cover. It does not invent new curriculum.
+Every release manifest maps 41 curriculum source packages to 44 physical pages by adding About This Book, splitting Contents into Parts 1 and 2, and adding an unnumbered back cover. It does not invent new curriculum. New books must be scaffolded with `scripts/create-book-release-framework.py`; manual page renumbering is prohibited.
 
 ## Fail-closed workflow
 
@@ -28,11 +28,17 @@ From `BCube_Gold_Production_v4`:
 
 ```bash
 python3 scripts/validate-deterministic-release.py --mode manifest
+python3 scripts/validate-deterministic-release.py --mode manifest \
+  --manifest manifests/nursery/confidence-builders.release-v4.json \
+  --asset-lock approved-assets/nursery/confidence-builders/asset-lock.json
 python3 scripts/promote-approved-page.py CC-NURSERY-V4-P017 candidate.png \
   --reviewer "Reviewer name" --source-package-version 4.0.0 \
   --qa-record qa/CC-NURSERY-V4-P017.json --founder-approved
 python3 scripts/validate-deterministic-release.py --mode release
 python3 scripts/build-deterministic-release.py --release-id CC-NURSERY-V4-2026-07-20
+python3 scripts/build-deterministic-release.py --release-id CB-NURSERY-V4-2026-07-20 \
+  --manifest manifests/nursery/confidence-builders.release-v4.json \
+  --asset-lock approved-assets/nursery/confidence-builders/asset-lock.json
 ```
 
 A missing asset, changed hash, wrong dimension, wrong page count or failed QA record blocks the build.

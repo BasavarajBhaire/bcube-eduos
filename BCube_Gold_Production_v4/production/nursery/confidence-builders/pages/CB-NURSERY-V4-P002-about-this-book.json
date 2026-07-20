@@ -1,0 +1,20 @@
+{
+  "prompt_id": "CB-NURSERY-V4-P002",
+  "version": "4.1.0",
+  "page_data": {
+    "page_id": "CB-NURSERY-V4-P002",
+    "book_id": "CONFIDENCE_BUILDERS_NURSERY",
+    "page_number": 1,
+    "page_type": "front_matter",
+    "title": "About This Book",
+    "age_level": "Nursery (3+)",
+    "visible_text": "This book helps young children recognise their strengths, express feelings, try new experiences, ask for help, build friendships, and practise growing independence through simple guided activities.",
+    "illustration": {
+      "scene": "Adult-facing overview with restrained use of the approved Star mascot."
+    },
+    "individual_specification": {
+      "response_space": "None",
+      "page_specific_prohibition": "No child worksheet, score, or printed page number."
+    }
+  }
+}

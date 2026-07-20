@@ -1,0 +1,403 @@
+{
+  "lock_version": "1.0.0",
+  "book_id": "CONFIDENCE_BUILDERS_NURSERY",
+  "brand_lock": "BCube_Gold_Production_v4/approved-assets/brand/asset-lock.json",
+  "page_assets": {
+    "CB-NURSERY-V4-P001": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P002": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P003": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P004": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P005": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P006": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P007": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P008": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P009": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P010": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P011": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P012": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P013": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P014": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P015": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P016": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P017": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P018": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P019": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P020": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P021": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P022": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P023": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P024": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P025": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P026": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P027": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P028": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P029": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P030": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P031": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P032": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P033": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P034": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P035": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P036": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P037": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P038": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P039": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P040": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P041": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P042": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P043": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    },
+    "CB-NURSERY-V4-P044": {
+      "status": "missing",
+      "file": null,
+      "sha256": null,
+      "approved_by": null,
+      "approved_at": null,
+      "source_package_version": null,
+      "notes": "Promote only after exact-page human QA; release builds may not generate or substitute this page."
+    }
+  }
+}

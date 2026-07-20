@@ -6,8 +6,8 @@ from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[2]
 V4=ROOT/"BCube_Gold_Production_v4"
-MANIFEST=V4/"manifests/nursery/communication-champions.release-v4.json"
-LOCK=V4/"approved-assets/nursery/communication-champions/asset-lock.json"
+DEFAULT_MANIFEST=V4/"manifests/nursery/communication-champions.release-v4.json"
+DEFAULT_LOCK=V4/"approved-assets/nursery/communication-champions/asset-lock.json"
 
 def sha(p):
     h=hashlib.sha256()
@@ -25,10 +25,12 @@ def main():
     ap.add_argument("--source-package-version",required=True)
     ap.add_argument("--qa-record",required=True,type=Path,help="Signed JSON QA record for this exact candidate")
     ap.add_argument("--founder-approved",action="store_true",help="Required explicit approval gate")
+    ap.add_argument("--manifest",type=Path,default=DEFAULT_MANIFEST)
+    ap.add_argument("--asset-lock",type=Path,default=DEFAULT_LOCK)
     args=ap.parse_args()
     if not args.founder_approved:
         print("REJECTED: explicit --founder-approved flag is required",file=sys.stderr); return 2
-    manifest=json.loads(MANIFEST.read_text()); jobs={j["prompt_id"]:j for j in manifest["jobs"]}
+    manifest=json.loads(args.manifest.read_text()); jobs={j["prompt_id"]:j for j in manifest["jobs"]}
     if args.prompt_id not in jobs: print("REJECTED: prompt id is not in canonical manifest",file=sys.stderr); return 2
     if not args.candidate.is_file(): print("REJECTED: candidate file missing",file=sys.stderr); return 2
     try:
@@ -57,11 +59,12 @@ def main():
     checks=qa.get("checks",{})
     if set(checks)!=required_checks or not all(checks.values()):
         print("REJECTED: every required semantic and visual QA check must be explicitly true",file=sys.stderr); return 1
-    dest_dir=V4/"approved-assets/nursery/communication-champions/pages"/args.prompt_id
+    book_slug=args.manifest.name.removesuffix(".release-v4.json")
+    dest_dir=V4/"approved-assets/nursery"/book_slug/"pages"/args.prompt_id
     dest_dir.mkdir(parents=True,exist_ok=True)
     dest=dest_dir/f"{args.prompt_id}-{digest[:12]}.png"
     if not dest.exists(): shutil.copy2(args.candidate,dest)
-    lock=json.loads(LOCK.read_text()); previous=lock["page_assets"][args.prompt_id]
+    lock=json.loads(args.asset_lock.read_text()); previous=lock["page_assets"][args.prompt_id]
     if previous.get("status")=="approved" and previous.get("sha256")!=digest:
         print("REJECTED: an approved version already exists; retire it explicitly before promoting a replacement",file=sys.stderr); return 1
     lock["page_assets"][args.prompt_id]={
@@ -71,7 +74,7 @@ def main():
       "qa_record":str(args.qa_record.resolve().relative_to(ROOT)) if args.qa_record.resolve().is_relative_to(ROOT) else str(args.qa_record.resolve()),
       "notes":"Human-reviewed golden page. Release assembly must copy this file unchanged."
     }
-    LOCK.write_text(json.dumps(lock,indent=2)+"\n")
+    args.asset_lock.write_text(json.dumps(lock,indent=2)+"\n")
     print(dest); print(digest)
     return 0
 
