@@ -1,0 +1,29 @@
+{
+  "prompt_id": "CC-NURSERY-V4-P044",
+  "version": "4.1.0",
+  "page_data": {
+    "page_id": "CC-NURSERY-V4-P044",
+    "book_id": "COMMUNICATION_CHAMPIONS_NURSERY",
+    "page_number": null,
+    "page_type": "back_cover",
+    "title": "Back Cover",
+    "age_level": "Nursery (3+)",
+    "visible_text": [
+      "Communication Champions",
+      "Nursery (3+)",
+      "Listen with care • Speak with confidence • Connect with kindness",
+      "Every word connects us.",
+      "BCube Future Academy",
+      "BCube Future Skills Learning Series™",
+      "bcubefutureacademy.in",
+      "info@bcubefutureacademy.in"
+    ],
+    "illustration": {
+      "scene": "Restrained communication-themed decorative icons with reserved space for the approved Star mascot; official logo placed from the locked asset."
+    },
+    "individual_specification": {
+      "response_space": "None",
+      "page_specific_prohibition": "No printed page number, invented ISBN, barcode, QR code, award, contact detail or generated logo/mascot."
+    }
+  }
+}

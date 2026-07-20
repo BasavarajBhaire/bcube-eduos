@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/release-manifest.schema.json",
+  "title": "BCube deterministic release manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "book_id", "book", "level", "release_mode", "total_packages", "brand_lock", "jobs"],
+  "properties": {
+    "manifest_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "book_id": {"type": "string", "minLength": 1},
+    "book": {"type": "string", "minLength": 1},
+    "level": {"enum": ["Nursery", "LKG", "UKG"]},
+    "release_mode": {"const": "approved-assets-only"},
+    "total_packages": {"const": 44},
+    "brand_lock": {"type": "string", "minLength": 1},
+    "jobs": {
+      "type": "array",
+      "minItems": 44,
+      "maxItems": 44,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["production_position", "prompt_id", "source_prompt_id", "title", "slug", "page_role", "logical_page_number", "printed_number_visible", "source_markdown", "source_json", "template_id", "asset_lock_id", "output_file"],
+        "properties": {
+          "production_position": {"type": "integer", "minimum": 1, "maximum": 44},
+          "prompt_id": {"type": "string", "pattern": "^CC-NURSERY-V4-P(00[1-9]|0[1-3][0-9]|04[0-3])$"},
+          "source_prompt_id": {"type": ["string", "null"]},
+          "title": {"type": "string", "minLength": 1},
+          "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "page_role": {"enum": ["cover", "about_this_book", "copyright", "contents_part_1", "contents_part_2", "welcome", "learning_page", "certificate", "completion", "back_cover"]},
+          "logical_page_number": {"type": ["integer", "null"], "minimum": 1, "maximum": 42},
+          "printed_number_visible": {"type": "boolean"},
+          "source_markdown": {"type": "string", "minLength": 1},
+          "source_json": {"type": "string", "minLength": 1},
+          "template_id": {"type": "string", "minLength": 1},
+          "asset_lock_id": {"type": "string", "minLength": 1},
+          "output_file": {"type": "string", "pattern": "^CC-NURSERY-V4-P[0-9]{3}-.+\\.png$"}
+        }
+      }
+    }
+  }
+}

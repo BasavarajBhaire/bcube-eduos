@@ -2,6 +2,18 @@
 
 Status: MANDATORY
 
+## Deterministic release blockers
+
+- Release assembly invokes AI generation, downloads, generative fill or illustration substitution.
+- A page, logo or mascot is absent from its approved lock, or its SHA-256 differs.
+- Page count/order differs from the canonical 44-page physical release manifest.
+- A deliverable is not one individual 2480 × 3508 PNG.
+- A golden page lacks a matching signed QA record with zero critical defects.
+- Identity, exact text, scene, activity, crop/overlap, logo, mascot or safe-margin checks are not explicitly approved.
+- Automatic crop, inferred focal cropping, a contact sheet or regeneration is used in release mode.
+
+See `DETERMINISTIC_RELEASE_ARCHITECTURE.md`.
+
 A page must be rejected immediately when any rule below is triggered. Do not continue scoring a critically failed page as acceptable.
 
 ## Identity failures

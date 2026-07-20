@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/asset-lock.schema.json",
+  "title": "BCube immutable release asset lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lock_version", "book_id", "brand_assets", "page_assets"],
+  "properties": {
+    "lock_version": {"type": "string"},
+    "book_id": {"type": "string"},
+    "brand_assets": {"type": "object"},
+    "page_assets": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["status", "file", "sha256", "approved_by", "approved_at", "source_package_version"],
+        "properties": {
+          "status": {"enum": ["missing", "candidate", "approved", "rejected", "retired"]},
+          "file": {"type": ["string", "null"]},
+          "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+          "approved_by": {"type": ["string", "null"]},
+          "approved_at": {"type": ["string", "null"]},
+          "source_package_version": {"type": ["string", "null"]},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

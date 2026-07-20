@@ -1,0 +1,29 @@
+{
+  "template_registry_version": "1.0.0",
+  "canvas": {"width_px": 2480, "height_px": 3508, "dpi": 300, "orientation": "portrait"},
+  "global_rules": {
+    "safe_margin_px": 118,
+    "binding_margin_px": 142,
+    "illustration_fit_default": "contain",
+    "automatic_crop_allowed": false,
+    "logo_asset_policy": "locked-hash-only",
+    "mascot_asset_policy": "locked-transparent-asset-only",
+    "generated_asset_policy": "authoring-only",
+    "release_network_policy": "disabled"
+  },
+  "templates": {
+    "cover": {"required_slots": ["logo", "title", "hero"], "optional_slots": ["subtitle", "age_badge"]},
+    "about_this_book": {"required_slots": ["logo", "title", "adult_copy"], "optional_slots": ["mascot"]},
+    "copyright": {"required_slots": ["logo", "title", "publication_copy"], "optional_slots": ["mascot"]},
+    "contents": {"required_slots": ["logo", "title", "module_list"], "optional_slots": []},
+    "welcome": {"required_slots": ["logo", "title", "welcome_scene", "response"], "optional_slots": ["mascot"]},
+    "three-panel-activity": {"required_slots": ["logo", "title", "instruction", "panel_1", "panel_2", "panel_3", "response", "mascot", "page_number"], "optional_slots": []},
+    "five-card-choice": {"required_slots": ["logo", "title", "instruction", "choice_1", "choice_2", "choice_3", "choice_4", "choice_5", "response", "mascot", "page_number"], "optional_slots": []},
+    "colouring-pairs": {"required_slots": ["logo", "title", "instruction", "reference_images", "matching_outlines", "response", "mascot", "page_number"], "optional_slots": []},
+    "drawing-activity": {"required_slots": ["logo", "title", "instruction", "drawing_area", "response", "mascot", "page_number"], "optional_slots": []},
+    "illustrated-activity": {"required_slots": ["logo", "title", "instruction", "illustration", "response", "mascot", "page_number"], "optional_slots": []},
+    "certificate": {"required_slots": ["logo", "title", "certificate_copy", "name", "date", "signature", "mascot", "page_number"], "optional_slots": []},
+    "completion": {"required_slots": ["logo", "title", "celebration_scene", "affirmation", "mascot", "page_number"], "optional_slots": []},
+    "back_cover": {"required_slots": ["logo", "book_title", "age_badge", "skills_summary", "publisher", "website", "email"], "optional_slots": ["mascot", "barcode"]}
+  }
+}

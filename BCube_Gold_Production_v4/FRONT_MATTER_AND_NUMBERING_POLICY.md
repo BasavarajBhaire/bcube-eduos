@@ -10,11 +10,11 @@ Owner: Basavaraj Bhaire
 
 ## Scope
 
-This policy applies consistently to every BCube Gold book in Nursery, LKG and UKG. It replaces the legacy 41-package front-matter arrangement with one common 43-package architecture.
+This policy applies consistently to every BCube Gold book in Nursery, LKG and UKG. It replaces the legacy 41-package arrangement with 43 numbered/content packages plus one unnumbered back-cover package: 44 physical pages.
 
 It changes front matter, contents pagination and printed numbering only. Existing book names, learning modules, curriculum sequence, learning objectives and learning-page content remain unchanged.
 
-## Locked 43-package architecture
+## Locked 44-physical-page architecture
 
 | Production position | Required page | Counted reader page | Printed number |
 |---:|---|---:|---:|
@@ -26,6 +26,7 @@ It changes front matter, contents pagination and printed numbering only. Existin
 | P006 | Welcome to `<Book Title>` | 5 | **5** |
 | P007 | First page after Welcome | 6 | **6** |
 | P008–P043 | Remaining canonical pages in their existing order | 7–42 | **7–42** |
+| P044 | Back Cover | Not counted | Hidden |
 
 Rules:
 
@@ -34,6 +35,7 @@ Rules:
 - The first visible printed number is 5 on the Welcome page.
 - Every page after Welcome shows its reader-facing number sequentially.
 - Production prompt IDs remain physical-package identifiers and are not the same as printed page numbers.
+- The back cover is a separate physical page, is not counted, is not listed in Contents and has no printed number.
 
 ## Contents policy
 
@@ -85,17 +87,18 @@ Book-specific wording must be derived from that book's canonical objectives and 
 | P003 Contents | P004–P005 | Replace with two module-wise Contents pages |
 | P004 Welcome | P006 | Preserve content; printed page number becomes 5 |
 | P005–P041 | P007–P043 | Preserve order and content; shift production ID by +2 and printed number by +1 |
+| — | P044 | Add unnumbered Back Cover using only approved publication and brand metadata |
 
 ## Portfolio totals after migration
 
-- Nursery: 10 books × 43 packages = 430
-- LKG: 10 books × 43 packages = 430
-- UKG: 10 books × 43 packages = 430
-- Total: 30 books / 1,290 individual page packages
+- Nursery: 10 books × 44 physical pages = 440
+- LKG: 10 books × 44 physical pages = 440
+- UKG: 10 books × 44 physical pages = 440
+- Total: 30 books / 1,320 individual physical pages
 
 ## Enforcement
 
-- No commercial artwork run may mix the legacy 41-page structure with the new 43-package structure.
+- No commercial artwork run may mix the legacy 41-page structure with the new 44-physical-page structure.
 - A book becomes v4 front-matter ready only after its README, manifest, Markdown, JSON, source spreadsheet, validation report and page-job records all agree.
 - Existing 41-page releases remain curriculum sources during migration but are blocked from final v4 book assembly.
 - Any exception requires an explicit Founder-approved repository update.
