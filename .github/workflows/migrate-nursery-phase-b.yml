@@ -1,0 +1,54 @@
+name: Migrate Nursery Phase B
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - normalization/nursery-gold-v5
+    paths:
+      - 'BCube_Gold_Production_v4/scripts/migrate_nursery_phase_b.py'
+      - '.github/workflows/migrate-nursery-phase-b.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout normalization branch
+        uses: actions/checkout@v4
+        with:
+          ref: normalization/nursery-gold-v5
+          fetch-depth: 0
+
+      - name: Fetch source branches
+        run: |
+          git fetch origin \
+            book4/creativity-creators-phase1-2 \
+            book6/problem-solvers-phase1-3 \
+            book7/creative-thinkers-complete \
+            book8/future-innovators-complete
+          git branch -f book4/creativity-creators-phase1-2 origin/book4/creativity-creators-phase1-2
+          git branch -f book6/problem-solvers-phase1-3 origin/book6/problem-solvers-phase1-3
+          git branch -f book7/creative-thinkers-complete origin/book7/creative-thinkers-complete
+          git branch -f book8/future-innovators-complete origin/book8/future-innovators-complete
+
+      - name: Run Phase B migration
+        run: python BCube_Gold_Production_v4/scripts/migrate_nursery_phase_b.py
+
+      - name: Commit migrated books and archives
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add BCube_Gold_Production_v4/books/nursery/creativity-challenges \
+                  BCube_Gold_Production_v4/books/nursery/logical-thinking-adventures \
+                  BCube_Gold_Production_v4/archive/experimental \
+                  BCube_Gold_Production_v4/normalization/nursery-gold-v5/qa/phase-b-migration-report.json \
+                  BCube_Gold_Production_v4/normalization/nursery-gold-v5/qa/phase-b-migration-summary.md
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "feat(normalization): complete Nursery Phase B migration"
+            git push origin normalization/nursery-gold-v5
+          fi
