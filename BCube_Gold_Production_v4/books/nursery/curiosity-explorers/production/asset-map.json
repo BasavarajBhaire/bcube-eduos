@@ -1,0 +1,20 @@
+{
+  "book_id": "CURIOSITY_EXPLORERS_NURSERY",
+  "book_code": "CE",
+  "phase": 4,
+  "page_count": 44,
+  "prompt_pattern": "production-prompts/P{page:03d}.md",
+  "output_pattern": "CE-NURSERY-V5-P{page:03d}.png",
+  "brand_assets": {
+    "logo": "BCube_Gold_Production_v4/approved-assets/brand/asset-lock.json",
+    "star_mascot": "BCube_Gold_Production_v4/approved-assets/brand/asset-lock.json"
+  },
+  "required_human_reviews": [
+    "educational",
+    "design",
+    "illustration",
+    "accessibility",
+    "prepress"
+  ],
+  "automation_boundary": "Automation validates objective structure and files only; it cannot approve visual quality or alter artwork."
+}
