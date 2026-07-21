@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "template_id": "nursery-interior-v1",
+  "page_type": "interior",
+  "canvas": {"width_px": 2480, "height_px": 3508},
+  "regions": {
+    "logo": {"x": 120, "y": 90, "w": 360, "h": 150},
+    "title": {"x": 520, "y": 95, "w": 1440, "h": 150},
+    "badge": {"x": 2040, "y": 70, "w": 300, "h": 220},
+    "illustration": {"x": 180, "y": 360, "w": 2120, "h": 2150},
+    "teacher_box": {"x": 180, "y": 2580, "w": 980, "h": 520},
+    "parent_box": {"x": 1320, "y": 2580, "w": 980, "h": 520},
+    "page_number": {"x": 2180, "y": 3280, "w": 160, "h": 120}
+  },
+  "required_content": [
+    "page_title",
+    "illustration_path",
+    "teacher_guidance",
+    "parent_prompt",
+    "page_number"
+  ],
+  "asset_rules": {
+    "logo": "approved-fixed-asset",
+    "mascot": "approved-fixed-asset-when-required",
+    "illustration": "artwork-only-no-text-no-branding"
+  }
+}
