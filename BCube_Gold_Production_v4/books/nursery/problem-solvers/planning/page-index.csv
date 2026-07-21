@@ -1,0 +1,45 @@
+physical_page,page_id,title,module,primary_pillar,status
+1,PS-NURSERY-V5-P001,Problem Solvers Gold,Opening,Observe,production_ready
+2,PS-NURSERY-V5-P002,This Book Belongs to Me,Opening,Express,production_ready
+3,PS-NURSERY-V5-P003,Meet Star,Opening,Observe,production_ready
+4,PS-NURSERY-V5-P004,How Problem Solvers Think,Opening,Think,production_ready
+5,PS-NURSERY-V5-P005,What Do You Notice?,Look Closely,Observe,production_ready
+6,PS-NURSERY-V5-P006,Find the Same,Look Closely,Observe,production_ready
+7,PS-NURSERY-V5-P007,Find the Different One,Look Closely,Observe,production_ready
+8,PS-NURSERY-V5-P008,What Is Missing?,Look Closely,Think,production_ready
+9,PS-NURSERY-V5-P009,Spot the Change,Look Closely,Observe,production_ready
+10,PS-NURSERY-V5-P010,Match the Shadows,Look Closely,Think,production_ready
+11,PS-NURSERY-V5-P011,Look Closely Celebration,Look Closely,Express,production_ready
+12,PS-NURSERY-V5-P012,Sort by Colour,Sort and Match,Think,production_ready
+13,PS-NURSERY-V5-P013,Sort by Shape,Sort and Match,Think,production_ready
+14,PS-NURSERY-V5-P014,Big and Small,Sort and Match,Observe,production_ready
+15,PS-NURSERY-V5-P015,Match the Pairs,Sort and Match,Think,production_ready
+16,PS-NURSERY-V5-P016,Where Does It Belong?,Sort and Match,Solve,production_ready
+17,PS-NURSERY-V5-P017,"Same Group, New Rule",Sort and Match,Try,production_ready
+18,PS-NURSERY-V5-P018,Sorting Celebration,Sort and Match,Express,production_ready
+19,PS-NURSERY-V5-P019,What Comes Next?,Patterns and Order,Think,production_ready
+20,PS-NURSERY-V5-P020,Finish the Pattern,Patterns and Order,Solve,production_ready
+21,PS-NURSERY-V5-P021,"First, Next, Last",Patterns and Order,Think,production_ready
+22,PS-NURSERY-V5-P022,Put the Story in Order,Patterns and Order,Solve,production_ready
+23,PS-NURSERY-V5-P023,Make a New Pattern,Patterns and Order,Try,production_ready
+24,PS-NURSERY-V5-P024,Fix the Mixed-Up Row,Patterns and Order,Solve,production_ready
+25,PS-NURSERY-V5-P025,Pattern Celebration,Patterns and Order,Express,production_ready
+26,PS-NURSERY-V5-P026,Choose the Safe Path,Paths and Choices,Think,production_ready
+27,PS-NURSERY-V5-P027,Help the Animal Get Home,Paths and Choices,Solve,production_ready
+28,PS-NURSERY-V5-P028,Which Tool Will Help?,Paths and Choices,Think,production_ready
+29,PS-NURSERY-V5-P029,Choose What Happens Next,Paths and Choices,Try,production_ready
+30,PS-NURSERY-V5-P030,Two Ways to Solve It,Paths and Choices,Try,production_ready
+31,PS-NURSERY-V5-P031,Find Another Way,Paths and Choices,Solve,production_ready
+32,PS-NURSERY-V5-P032,Choice Celebration,Paths and Choices,Express,production_ready
+33,PS-NURSERY-V5-P033,Build the Tallest Tower,Try and Improve,Try,production_ready
+34,PS-NURSERY-V5-P034,Fix the Wobbly Bridge,Try and Improve,Solve,production_ready
+35,PS-NURSERY-V5-P035,Make It Fit,Try and Improve,Think,production_ready
+36,PS-NURSERY-V5-P036,Try Again,Try and Improve,Try,production_ready
+37,PS-NURSERY-V5-P037,Change One Thing,Try and Improve,Solve,production_ready
+38,PS-NURSERY-V5-P038,Make It Better,Try and Improve,Solve,production_ready
+39,PS-NURSERY-V5-P039,Improvement Celebration,Try and Improve,Express,production_ready
+40,PS-NURSERY-V5-P040,Help at Home,Everyday Problems,Solve,production_ready
+41,PS-NURSERY-V5-P041,Help a Friend,Everyday Problems,Think,production_ready
+42,PS-NURSERY-V5-P042,Plan a Picnic,Everyday Problems,Solve,production_ready
+43,PS-NURSERY-V5-P043,My Best Solution,Everyday Problems,Express,production_ready
+44,PS-NURSERY-V5-P044,I Am a Problem Solver,Celebration,Express,production_ready

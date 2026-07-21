@@ -1,0 +1,16 @@
+{
+  "commit": "A",
+  "book": "Problem Solvers Gold",
+  "book_id": "PS-NURSERY-V5",
+  "phases": [
+    1,
+    2,
+    3
+  ],
+  "page_count": 44,
+  "prompt_count": 44,
+  "required_sections": 15,
+  "csv": "Problem_Solvers_Gold_Production_Prompts_v5.csv",
+  "xlsx": "Problem_Solvers_Gold_Production_Prompts_v5.xlsx",
+  "status": "pass"
+}
