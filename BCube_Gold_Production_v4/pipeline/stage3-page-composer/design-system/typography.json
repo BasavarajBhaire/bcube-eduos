@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "font_policy": "Use only approved licensed fonts available to the production runtime.",
+  "roles": {
+    "book_title": {"family": "Nunito", "weight": 800},
+    "page_title": {"family": "Nunito", "weight": 800},
+    "section_title": {"family": "Nunito", "weight": 700},
+    "body": {"family": "Nunito", "weight": 600},
+    "guidance": {"family": "Nunito", "weight": 600},
+    "page_number": {"family": "Nunito", "weight": 700}
+  },
+  "rules": [
+    "Do not render official text inside AI-generated illustration artwork.",
+    "Keep all text editable until final export.",
+    "Reject missing glyphs, clipped text, and font substitution."
+  ]
+}
