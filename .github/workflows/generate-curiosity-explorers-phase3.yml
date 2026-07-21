@@ -1,0 +1,86 @@
+name: Generate Curiosity Explorers Phase 3
+
+on:
+  push:
+    branches:
+      - book3/curiosity-explorers-phase3
+    paths:
+      - BCube_Gold_Production_v4/scripts/generate_curiosity_explorers_phase3.py
+      - .github/workflows/generate-curiosity-explorers-phase3.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: curiosity-explorers-phase3
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out Book 3 branch
+        uses: actions/checkout@v4
+        with:
+          ref: book3/curiosity-explorers-phase3
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install workbook dependency
+        run: python -m pip install --disable-pip-version-check openpyxl
+
+      - name: Generate complete Phase 3 package
+        run: python BCube_Gold_Production_v4/scripts/generate_curiosity_explorers_phase3.py
+
+      - name: Validate generated package
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('BCube_Gold_Production_v4/books/nursery/curiosity-explorers')
+          prompts = sorted((root / 'production-prompts').glob('P*.md'))
+          if len(prompts) != 44:
+              raise SystemExit(f'Expected 44 prompt files, found {len(prompts)}')
+          expected = [f'P{i:03d}.md' for i in range(1, 45)]
+          actual = [p.name for p in prompts]
+          if actual != expected:
+              raise SystemExit(f'Prompt sequence mismatch: {actual}')
+          for path in prompts:
+              text = path.read_text(encoding='utf-8')
+              for section in range(1, 16):
+                  if f'## {section}.' not in text:
+                      raise SystemExit(f'{path} missing section {section}')
+          manifest = json.loads((root / 'publishing/phase3-manifest.json').read_text(encoding='utf-8'))
+          if manifest.get('physical_page_count') != 44 or len(manifest.get('pages', [])) != 44:
+              raise SystemExit('Manifest page count is invalid')
+          if manifest.get('artwork_generation_allowed') is not False:
+              raise SystemExit('Phase 3 must remain documentation-only')
+          for required in [
+              root / 'Curiosity_Explorers_Gold_Production_Prompts_v5.xlsx',
+              root / 'Curiosity_Explorers_Gold_Production_Prompts_v5.csv',
+              root / 'qa/phase3-generation-report.json',
+          ]:
+              if not required.is_file() or required.stat().st_size == 0:
+                  raise SystemExit(f'Missing required output: {required}')
+          print('Phase 3 validation passed: 44 prompts, standards, manifest and workbook present.')
+          PY
+
+      - name: Commit generated Phase 3 documents
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add BCube_Gold_Production_v4/books/nursery/curiosity-explorers
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Complete Curiosity Explorers Phase 3 production package"
+            git pull --rebase origin book3/curiosity-explorers-phase3
+            git push origin HEAD:book3/curiosity-explorers-phase3
+          fi
