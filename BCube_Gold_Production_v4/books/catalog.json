@@ -1,6 +1,6 @@
 {
   "schema_version": "5.1.0",
-  "series": "BCube Future Skills Learning Series\u2122",
+  "series": "BCube Future Skills Learning Series™",
   "level": "Nursery (3+)",
   "official_book_count": 10,
   "canonical_page_count": 44,
@@ -16,7 +16,7 @@
     {
       "number": 1,
       "slug": "communication-champions",
-      "title": "Communication Champions Gold\u2122",
+      "title": "Communication Champions Gold™",
       "code": "CC",
       "page_count": 44,
       "status": "existing"
@@ -24,7 +24,7 @@
     {
       "number": 2,
       "slug": "curiosity-explorers",
-      "title": "Curiosity Explorers Gold\u2122",
+      "title": "Curiosity Explorers Gold™",
       "code": "CE",
       "page_count": 44,
       "status": "existing"
@@ -32,15 +32,15 @@
     {
       "number": 3,
       "slug": "fine-motor-fun",
-      "title": "Fine Motor Fun Gold\u2122",
+      "title": "Fine Motor Fun Gold™",
       "code": "FM",
       "page_count": 44,
-      "status": "to_build"
+      "status": "phase_c_framework_complete"
     },
     {
       "number": 4,
       "slug": "creativity-challenges",
-      "title": "Creativity Challenges Gold\u2122",
+      "title": "Creativity Challenges Gold™",
       "code": "CR",
       "page_count": 44,
       "status": "align_from_creativity_creators"
@@ -48,7 +48,7 @@
     {
       "number": 5,
       "slug": "confidence-builders",
-      "title": "Confidence Builders Gold\u2122",
+      "title": "Confidence Builders Gold™",
       "code": "CB",
       "page_count": 44,
       "status": "existing"
@@ -56,23 +56,23 @@
     {
       "number": 6,
       "slug": "stem-explorers",
-      "title": "STEM Explorers Gold\u2122",
+      "title": "STEM Explorers Gold™",
       "code": "STEM",
       "page_count": 44,
-      "status": "to_build"
+      "status": "phase_c_framework_complete"
     },
     {
       "number": 7,
       "slug": "my-world-general-awareness",
-      "title": "My World & General Awareness Gold\u2122",
+      "title": "My World & General Awareness Gold™",
       "code": "MW",
       "page_count": 44,
-      "status": "to_build"
+      "status": "phase_c_framework_complete"
     },
     {
       "number": 8,
       "slug": "logical-thinking-adventures",
-      "title": "Logical Thinking Adventures Gold\u2122",
+      "title": "Logical Thinking Adventures Gold™",
       "code": "LT",
       "page_count": 44,
       "status": "align_from_problem_solvers"
@@ -80,18 +80,18 @@
     {
       "number": 9,
       "slug": "healthy-habits-safety",
-      "title": "Healthy Habits & Safety Gold\u2122",
+      "title": "Healthy Habits & Safety Gold™",
       "code": "HH",
       "page_count": 44,
-      "status": "to_build"
+      "status": "phase_c_framework_complete"
     },
     {
       "number": 10,
       "slug": "art-colour-fun",
-      "title": "Art & Colour Fun Gold\u2122",
+      "title": "Art & Colour Fun Gold™",
       "code": "AC",
       "page_count": 44,
-      "status": "to_build"
+      "status": "phase_c_framework_complete"
     }
   ]
 }

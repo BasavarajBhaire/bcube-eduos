@@ -1,0 +1,70 @@
+{
+  "phase": "C",
+  "books_generated": 5,
+  "expected_books": 5,
+  "total_prompts_generated": 220,
+  "expected_prompts": 220,
+  "books": [
+    {
+      "book_number": 3,
+      "title": "Fine Motor Fun Gold\u2122",
+      "slug": "fine-motor-fun",
+      "code": "FM",
+      "expected_pages": 44,
+      "prompt_files": 44,
+      "csv_present": true,
+      "xlsx_present": true,
+      "unique_prompt_ids": true,
+      "decision": "PASS"
+    },
+    {
+      "book_number": 6,
+      "title": "STEM Explorers Gold\u2122",
+      "slug": "stem-explorers",
+      "code": "STEM",
+      "expected_pages": 44,
+      "prompt_files": 44,
+      "csv_present": true,
+      "xlsx_present": true,
+      "unique_prompt_ids": true,
+      "decision": "PASS"
+    },
+    {
+      "book_number": 7,
+      "title": "My World & General Awareness Gold\u2122",
+      "slug": "my-world-general-awareness",
+      "code": "MW",
+      "expected_pages": 44,
+      "prompt_files": 44,
+      "csv_present": true,
+      "xlsx_present": true,
+      "unique_prompt_ids": true,
+      "decision": "PASS"
+    },
+    {
+      "book_number": 9,
+      "title": "Healthy Habits & Safety Gold\u2122",
+      "slug": "healthy-habits-safety",
+      "code": "HH",
+      "expected_pages": 44,
+      "prompt_files": 44,
+      "csv_present": true,
+      "xlsx_present": true,
+      "unique_prompt_ids": true,
+      "decision": "PASS"
+    },
+    {
+      "book_number": 10,
+      "title": "Art & Colour Fun Gold\u2122",
+      "slug": "art-colour-fun",
+      "code": "AC",
+      "expected_pages": 44,
+      "prompt_files": 44,
+      "csv_present": true,
+      "xlsx_present": true,
+      "unique_prompt_ids": true,
+      "decision": "PASS"
+    }
+  ],
+  "decision": "PASS"
+}

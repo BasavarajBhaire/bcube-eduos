@@ -1,0 +1,12 @@
+{
+  "book_number": 6,
+  "title": "STEM Explorers Gold\u2122",
+  "slug": "stem-explorers",
+  "code": "STEM",
+  "expected_pages": 44,
+  "prompt_files": 44,
+  "csv_present": true,
+  "xlsx_present": true,
+  "unique_prompt_ids": true,
+  "decision": "PASS"
+}

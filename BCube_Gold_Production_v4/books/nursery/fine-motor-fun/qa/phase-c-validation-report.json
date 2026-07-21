@@ -1,0 +1,12 @@
+{
+  "book_number": 3,
+  "title": "Fine Motor Fun Gold\u2122",
+  "slug": "fine-motor-fun",
+  "code": "FM",
+  "expected_pages": 44,
+  "prompt_files": 44,
+  "csv_present": true,
+  "xlsx_present": true,
+  "unique_prompt_ids": true,
+  "decision": "PASS"
+}

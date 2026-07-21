@@ -1,0 +1,12 @@
+{
+  "book_number": 9,
+  "title": "Healthy Habits & Safety Gold\u2122",
+  "slug": "healthy-habits-safety",
+  "code": "HH",
+  "expected_pages": 44,
+  "prompt_files": 44,
+  "csv_present": true,
+  "xlsx_present": true,
+  "unique_prompt_ids": true,
+  "decision": "PASS"
+}

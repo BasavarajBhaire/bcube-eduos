@@ -1,0 +1,12 @@
+{
+  "book_number": 7,
+  "title": "My World & General Awareness Gold\u2122",
+  "slug": "my-world-general-awareness",
+  "code": "MW",
+  "expected_pages": 44,
+  "prompt_files": 44,
+  "csv_present": true,
+  "xlsx_present": true,
+  "unique_prompt_ids": true,
+  "decision": "PASS"
+}

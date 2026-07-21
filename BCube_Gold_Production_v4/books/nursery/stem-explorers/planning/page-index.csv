@@ -1,0 +1,45 @@
+﻿page,prompt_id,page_type,module,title
+1,STEM-NURSERY-V5-P001,Front Cover,Front Matter,STEM Explorers
+2,STEM-NURSERY-V5-P002,Inside Cover / Book Information,Front Matter,About This Book
+3,STEM-NURSERY-V5-P003,This Book Belongs To,Front Matter,This Book Belongs To
+4,STEM-NURSERY-V5-P004,Core Learning,Little Scientists,Look Like a Scientist
+5,STEM-NURSERY-V5-P005,Core Learning,Little Scientists,Use My Senses
+6,STEM-NURSERY-V5-P006,Core Learning,Little Scientists,What Do You Notice?
+7,STEM-NURSERY-V5-P007,Core Learning,Little Scientists,Same or Different?
+8,STEM-NURSERY-V5-P008,Core Learning,Little Scientists,Guess What Happens
+9,STEM-NURSERY-V5-P009,Core Learning,Little Scientists,Test the Idea
+10,STEM-NURSERY-V5-P010,Core Learning,Little Scientists,Watch It Change
+11,STEM-NURSERY-V5-P011,Core Learning,Little Scientists,Tell What Happened
+12,STEM-NURSERY-V5-P012,Core Learning,Sort and Compare,Sort by Colour
+13,STEM-NURSERY-V5-P013,Core Learning,Sort and Compare,Sort by Shape
+14,STEM-NURSERY-V5-P014,Core Learning,Sort and Compare,Sort by Size
+15,STEM-NURSERY-V5-P015,Core Learning,Sort and Compare,Heavy or Light
+16,STEM-NURSERY-V5-P016,Core Learning,Sort and Compare,Long or Short
+17,STEM-NURSERY-V5-P017,Core Learning,Sort and Compare,More or Less
+18,STEM-NURSERY-V5-P018,Core Learning,Sort and Compare,Sink or Float
+19,STEM-NURSERY-V5-P019,Core Learning,Sort and Compare,Magnetic or Not
+20,STEM-NURSERY-V5-P020,Core Learning,Patterns and Sequences,Copy the Pattern
+21,STEM-NURSERY-V5-P021,Core Learning,Patterns and Sequences,Finish the Pattern
+22,STEM-NURSERY-V5-P022,Core Learning,Patterns and Sequences,Make a Colour Pattern
+23,STEM-NURSERY-V5-P023,Core Learning,Patterns and Sequences,Make a Shape Pattern
+24,STEM-NURSERY-V5-P024,Core Learning,Patterns and Sequences,What Comes Next?
+25,STEM-NURSERY-V5-P025,Core Learning,Patterns and Sequences,First Then Last
+26,STEM-NURSERY-V5-P026,Core Learning,Patterns and Sequences,Day and Night
+27,STEM-NURSERY-V5-P027,Core Learning,Patterns and Sequences,Growing Sequence
+28,STEM-NURSERY-V5-P028,Core Learning,Build and Test,Build a Tall Tower
+29,STEM-NURSERY-V5-P029,Core Learning,Build and Test,Build a Strong Bridge
+30,STEM-NURSERY-V5-P030,Core Learning,Build and Test,Make a Ramp
+31,STEM-NURSERY-V5-P031,Core Learning,Build and Test,Roll It Down
+32,STEM-NURSERY-V5-P032,Core Learning,Build and Test,Fast or Slow
+33,STEM-NURSERY-V5-P033,Core Learning,Build and Test,Balance the Blocks
+34,STEM-NURSERY-V5-P034,Core Learning,Build and Test,Fix the Structure
+35,STEM-NURSERY-V5-P035,Core Learning,Build and Test,Build with Recycled Shapes
+36,STEM-NURSERY-V5-P036,Core Learning,Nature and Machines,Parts of a Plant
+37,STEM-NURSERY-V5-P037,Core Learning,Nature and Machines,What Plants Need
+38,STEM-NURSERY-V5-P038,Core Learning,Nature and Machines,Weather Watch
+39,STEM-NURSERY-V5-P039,Core Learning,Nature and Machines,Shadows Move
+40,STEM-NURSERY-V5-P040,Core Learning,Nature and Machines,Push and Pull
+41,STEM-NURSERY-V5-P041,Core Learning,Nature and Machines,Wheels Help Us
+42,STEM-NURSERY-V5-P042,Core Learning,Nature and Machines,Simple Machines Around Us
+43,STEM-NURSERY-V5-P043,Core Learning,Nature and Machines,STEM Explorer Celebration
+44,STEM-NURSERY-V5-P044,Back Cover,Back Matter,Back Cover
