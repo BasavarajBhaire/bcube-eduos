@@ -46,11 +46,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 360
     env:
-      BCUBE_IMAGE_PROVIDER_URL: ${{ secrets.BCUBE_IMAGE_PROVIDER_URL }}
-      BCUBE_IMAGE_PROVIDER_TOKEN: ${{ secrets.BCUBE_IMAGE_PROVIDER_TOKEN }}
-      BCUBE_IMAGE_MODEL: ${{ vars.BCUBE_IMAGE_MODEL }}
-      BCUBE_IMAGE_TIMEOUT_SECONDS: ${{ vars.BCUBE_IMAGE_TIMEOUT_SECONDS }}
-      BCUBE_IMAGE_MAX_RETRIES: ${{ vars.BCUBE_IMAGE_MAX_RETRIES }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      BCUBE_IMAGE_MODEL: ${{ vars.BCUBE_IMAGE_MODEL || 'gpt-image-1.5' }}
+      BCUBE_IMAGE_QUALITY: ${{ vars.BCUBE_IMAGE_QUALITY || 'high' }}
+      BCUBE_IMAGE_SIZE: ${{ vars.BCUBE_IMAGE_SIZE || '1024x1536' }}
+      BCUBE_IMAGE_TIMEOUT_SECONDS: ${{ vars.BCUBE_IMAGE_TIMEOUT_SECONDS || '300' }}
+      BCUBE_IMAGE_MAX_RETRIES: ${{ vars.BCUBE_IMAGE_MAX_RETRIES || '3' }}
 
     steps:
       - name: Checkout repository
@@ -67,19 +68,18 @@ jobs:
           python BCube_Gold_Production_v4/pipeline/stage2-illustration-runtime/prepare_book_queue.py \
             --book "${{ inputs.book }}"
 
-      - name: Validate real-generation credentials
+      - name: Validate OpenAI credentials
         if: ${{ inputs.mode == 'generate' || inputs.mode == 'resume' }}
         shell: bash
         run: |
-          test -n "$BCUBE_IMAGE_PROVIDER_URL" || (echo 'Missing BCUBE_IMAGE_PROVIDER_URL secret' && exit 1)
-          test -n "$BCUBE_IMAGE_PROVIDER_TOKEN" || (echo 'Missing BCUBE_IMAGE_PROVIDER_TOKEN secret' && exit 1)
+          test -n "$OPENAI_API_KEY" || (echo 'Missing OPENAI_API_KEY repository secret' && exit 1)
 
-      - name: Run one-book illustration engine
+      - name: Run one-book OpenAI illustration engine
         shell: bash
         run: |
           FORCE_ARG=""
           if [ "${{ inputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
-          python BCube_Gold_Production_v4/pipeline/stage2-illustration-runtime/illustration_engine.py \
+          python BCube_Gold_Production_v4/pipeline/stage2-illustration-runtime/openai_illustration_engine.py \
             --book "${{ inputs.book }}" \
             --mode "${{ inputs.mode }}" \
             $FORCE_ARG
