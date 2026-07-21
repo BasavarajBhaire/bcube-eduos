@@ -1,0 +1,64 @@
+name: Stage 2 Illustration Generation
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Stage 2 execution mode
+        required: true
+        default: validate
+        type: choice
+        options:
+          - validate
+          - dry-run
+  push:
+    branches:
+      - normalization/nursery-gold-v5
+    paths:
+      - 'BCube_Gold_Production_v4/pipeline/stage1-prompt-compiler/output/**'
+      - 'BCube_Gold_Production_v4/pipeline/stage2-illustration-generation/**'
+      - '.github/workflows/stage2-illustration-generation.yml'
+
+permissions:
+  contents: read
+
+env:
+  PYTHON_VERSION: '3.12'
+
+jobs:
+  stage2-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Resolve mode
+        id: mode
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=validate" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate Stage 1 entry gate and prepare Stage 2 jobs
+        run: |
+          python BCube_Gold_Production_v4/pipeline/stage2-illustration-generation/stage2_orchestrator.py \
+            --mode "${{ steps.mode.outputs.value }}"
+
+      - name: Upload Stage 2 metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage2-illustration-generation-metadata
+          path: BCube_Gold_Production_v4/pipeline/stage2-illustration-generation/output/
+          if-no-files-found: warn
+
+# Provider invocation is intentionally excluded until Stage 1 passes with 440 READY
+# prompts and repository secrets plus binary storage are configured.
