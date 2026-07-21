@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "status": "AWAITING_APPROVED_BINARY_ASSETS",
+  "assets": {
+    "logo": {
+      "path": "BCube_Gold_Production_v4/assets/approved/logo/bcube-future-academy.png",
+      "required": true,
+      "policy": "Exact approved file only; no AI redraw, recolor, stretch, or reconstruction."
+    },
+    "mascot": {
+      "front": "BCube_Gold_Production_v4/assets/approved/mascot/star/front.png",
+      "wave": "BCube_Gold_Production_v4/assets/approved/mascot/star/wave.png",
+      "point": "BCube_Gold_Production_v4/assets/approved/mascot/star/point.png",
+      "thumbs_up": "BCube_Gold_Production_v4/assets/approved/mascot/star/thumbs-up.png",
+      "thinking": "BCube_Gold_Production_v4/assets/approved/mascot/star/thinking.png",
+      "surprised": "BCube_Gold_Production_v4/assets/approved/mascot/star/surprised.png",
+      "sitting": "BCube_Gold_Production_v4/assets/approved/mascot/star/sitting.png",
+      "policy": "Approved transparent PNG assets only; never regenerate mascot inside page artwork."
+    },
+    "badges": {
+      "nursery": "BCube_Gold_Production_v4/assets/approved/badges/nursery-3-plus.png"
+    }
+  }
+}
