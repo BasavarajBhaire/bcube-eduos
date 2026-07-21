@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "PS-NURSERY-V5",
+  "title": "Logical Thinking Adventures Gold",
+  "edition": "First Edition",
+  "page_count": 44,
+  "source_branch": "book6/logical-thinking-adventures-phase1-3",
+  "artwork_approved_pages": 0,
+  "final_pdf": null,
+  "final_pdf_sha256": null,
+  "release_zip": null,
+  "release_status": "blocked",
+  "approvals": []
+}

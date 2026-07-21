@@ -1,0 +1,12 @@
+{
+  "book_id": "CT-NURSERY-V5",
+  "title": "Creative Thinkers Gold",
+  "delivery": "phases_1_to_6",
+  "prompt_count": 44,
+  "csv_workbook": "Creative_Thinkers_Gold_Production_Prompts_v5.csv",
+  "xlsx_workbook": "Creative_Thinkers_Gold_Production_Prompts_v5.xlsx",
+  "automated_validation": "pass",
+  "framework_status": "complete",
+  "artwork_status": "not_started",
+  "publication_status": "blocked"
+}

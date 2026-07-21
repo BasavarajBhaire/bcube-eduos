@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "CC-NURSERY-V5",
+  "expected_pages": 44,
+  "approved_pages": 0,
+  "batches": [
+    {
+      "id": "B1",
+      "range": "P001-P011",
+      "status": "not_started"
+    },
+    {
+      "id": "B2",
+      "range": "P012-P022",
+      "status": "not_started"
+    },
+    {
+      "id": "B3",
+      "range": "P023-P033",
+      "status": "not_started"
+    },
+    {
+      "id": "B4",
+      "range": "P034-P044",
+      "status": "not_started"
+    }
+  ],
+  "release_allowed": false
+}

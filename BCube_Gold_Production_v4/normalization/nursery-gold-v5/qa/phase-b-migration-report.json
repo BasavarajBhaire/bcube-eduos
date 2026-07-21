@@ -1,0 +1,30 @@
+{
+  "phase": "B",
+  "official_migrations": [
+    {
+      "target": "books/nursery/creativity-challenges",
+      "prompt_count": 44,
+      "old_name_hits": [],
+      "status": "PASS"
+    },
+    {
+      "target": "books/nursery/logical-thinking-adventures",
+      "prompt_count": 44,
+      "old_name_hits": [],
+      "status": "PASS"
+    }
+  ],
+  "experimental_archives": [
+    {
+      "target": "archive/experimental/creative-thinkers",
+      "preserved": true,
+      "prompt_count": 44
+    },
+    {
+      "target": "archive/experimental/future-innovators",
+      "preserved": true,
+      "prompt_count": 44
+    }
+  ],
+  "overall_decision": "PASS"
+}
