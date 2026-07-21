@@ -1,0 +1,55 @@
+name: Generate Confidence Builders Commit C
+
+on:
+  push:
+    branches:
+      - book5/confidence-builders-phase1-3
+    paths:
+      - BCube_Gold_Production_v4/scripts/generate_confidence_builders_commit_c.py
+      - .github/workflows/generate-confidence-builders-commit-c.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: book5/confidence-builders-phase1-3
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate Phase 5 and Phase 6 framework
+        run: python BCube_Gold_Production_v4/scripts/generate_confidence_builders_commit_c.py
+
+      - name: Verify required outputs
+        run: |
+          test -f BCube_Gold_Production_v4/books/nursery/confidence-builders/phase5/page-review-status.csv
+          test -f BCube_Gold_Production_v4/books/nursery/confidence-builders/phase5/artwork-manifest.json
+          test -f BCube_Gold_Production_v4/books/nursery/confidence-builders/phase6/release-manifest-template.json
+          test -f BCube_Gold_Production_v4/books/nursery/confidence-builders/phase6/publication-status.json
+          test -f BCube_Gold_Production_v4/books/nursery/confidence-builders/qa/commit-c-summary.md
+
+      - name: Commit generated framework
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add BCube_Gold_Production_v4/books/nursery/confidence-builders/phase5 \
+                  BCube_Gold_Production_v4/books/nursery/confidence-builders/phase6 \
+                  BCube_Gold_Production_v4/books/nursery/confidence-builders/qa/commit-c-framework-report.json \
+                  BCube_Gold_Production_v4/books/nursery/confidence-builders/qa/commit-c-summary.md
+          if git diff --cached --quiet; then
+            echo 'Commit C framework is already current.'
+          else
+            git commit -m 'feat(book5): add Confidence Builders Gold production and publishing framework'
+            git push origin HEAD:book5/confidence-builders-phase1-3
+          fi
