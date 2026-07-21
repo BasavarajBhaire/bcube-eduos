@@ -1,0 +1,19 @@
+{
+  "book_id": "CURIOSITY_EXPLORERS_NURSERY",
+  "phase": 4,
+  "status": "validation-framework-complete",
+  "prompt_count": 44,
+  "structural_validation": "pass",
+  "prompt_quality_threshold": 95,
+  "artwork_generation_allowed": false,
+  "blocking_reason": "Page-by-page human prompt review and approval records are not yet complete.",
+  "required_before_phase5": [
+    "44 page quality scores",
+    "44 educational approvals",
+    "44 design approvals",
+    "44 illustration-readiness approvals",
+    "44 accessibility approvals",
+    "phase4 summary marked pass"
+  ],
+  "merge_allowed": false
+}
