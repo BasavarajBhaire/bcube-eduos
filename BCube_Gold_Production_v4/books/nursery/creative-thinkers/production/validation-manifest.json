@@ -1,0 +1,8 @@
+{
+  "delivery": "complete",
+  "book": "Creative Thinkers Gold",
+  "prompt_count": 44,
+  "required_sections": 15,
+  "automated_threshold": 90,
+  "all_prompts_pass": true
+}
