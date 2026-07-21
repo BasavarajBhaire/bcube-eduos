@@ -1,0 +1,45 @@
+physical_page,page_id,title,module,primary_pillar,status
+1,CC-NURSERY-P001,Creativity Creators,Opening,Express,planned
+2,CC-NURSERY-P002,This Book Belongs to Me,Opening,Express,planned
+3,CC-NURSERY-P003,Meet Star,Opening,Imagine,planned
+4,CC-NURSERY-P004,How to Be Creative,Opening,Experiment,planned
+5,CC-NURSERY-P005,My First Doodle,My Creative World,Create,planned
+6,CC-NURSERY-P006,Finish the Face,My Creative World,Imagine,planned
+7,CC-NURSERY-P007,What Could This Be?,My Creative World,Imagine,planned
+8,CC-NURSERY-P008,Add Something Funny,My Creative World,Experiment,planned
+9,CC-NURSERY-P009,Make a Happy Scene,My Creative World,Create,planned
+10,CC-NURSERY-P010,Draw a New Friend,My Creative World,Create,planned
+11,CC-NURSERY-P011,Tell Your Picture Story,My Creative World,Express,planned
+12,CC-NURSERY-P012,Shape Hunt,Shapes and Patterns,Imagine,planned
+13,CC-NURSERY-P013,Turn a Circle Into Something,Shapes and Patterns,Imagine,planned
+14,CC-NURSERY-P014,Build With Shapes,Shapes and Patterns,Create,planned
+15,CC-NURSERY-P015,Continue the Pattern,Shapes and Patterns,Create,planned
+16,CC-NURSERY-P016,Make a New Pattern,Shapes and Patterns,Experiment,planned
+17,CC-NURSERY-P017,"Same Shapes, New Picture",Shapes and Patterns,Experiment,planned
+18,CC-NURSERY-P018,My Shape Design,Shapes and Patterns,Express,planned
+19,CC-NURSERY-P019,Colour Match,Colours Everywhere,Create,planned
+20,CC-NURSERY-P020,Choose a New Colour,Colours Everywhere,Experiment,planned
+21,CC-NURSERY-P021,Warm and Cool,Colours Everywhere,Imagine,planned
+22,CC-NURSERY-P022,Colour the Mood,Colours Everywhere,Express,planned
+23,CC-NURSERY-P023,Rainbow Surprise,Colours Everywhere,Create,planned
+24,CC-NURSERY-P024,"Two Colours, One Picture",Colours Everywhere,Experiment,planned
+25,CC-NURSERY-P025,My Favourite Colours,Colours Everywhere,Express,planned
+26,CC-NURSERY-P026,Build a House,Build and Create,Create,planned
+27,CC-NURSERY-P027,Make a Vehicle,Build and Create,Imagine,planned
+28,CC-NURSERY-P028,Fix the Broken Toy,Build and Create,Experiment,planned
+29,CC-NURSERY-P029,Stack and Arrange,Build and Create,Create,planned
+30,CC-NURSERY-P030,Design a Playground,Build and Create,Imagine,planned
+31,CC-NURSERY-P031,Change the Design,Build and Create,Experiment,planned
+32,CC-NURSERY-P032,Show What You Built,Build and Create,Express,planned
+33,CC-NURSERY-P033,Leaf Shapes,Creative Nature,Create,planned
+34,CC-NURSERY-P034,Complete the Flower,Creative Nature,Imagine,planned
+35,CC-NURSERY-P035,Butterfly Balance,Creative Nature,Create,planned
+36,CC-NURSERY-P036,Cloud Pictures,Creative Nature,Imagine,planned
+37,CC-NURSERY-P037,Animal Pattern Maker,Creative Nature,Experiment,planned
+38,CC-NURSERY-P038,Make a Nature Creature,Creative Nature,Create,planned
+39,CC-NURSERY-P039,My Nature Art,Creative Nature,Express,planned
+40,CC-NURSERY-P040,Invent Something Helpful,My Big Ideas,Imagine,planned
+41,CC-NURSERY-P041,Make a Silly Machine,My Big Ideas,Experiment,planned
+42,CC-NURSERY-P042,Create a New World,My Big Ideas,Create,planned
+43,CC-NURSERY-P043,Share Your Big Idea,My Big Ideas,Express,planned
+44,CC-NURSERY-P044,I Am a Creativity Creator,Celebration,Express,planned
