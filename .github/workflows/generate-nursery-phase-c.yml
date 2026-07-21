@@ -1,0 +1,59 @@
+name: Generate Nursery Phase C
+
+on:
+  push:
+    branches:
+      - normalization/nursery-gold-v5
+    paths:
+      - 'BCube_Gold_Production_v4/scripts/generate_nursery_phase_c.py'
+      - '.github/workflows/generate-nursery-phase-c.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-phase-c:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout normalization branch
+        uses: actions/checkout@v4
+        with:
+          ref: normalization/nursery-gold-v5
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install workbook dependency
+        run: python -m pip install --disable-pip-version-check openpyxl
+
+      - name: Generate five official books
+        run: python BCube_Gold_Production_v4/scripts/generate_nursery_phase_c.py
+
+      - name: Validate generated package
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = Path('BCube_Gold_Production_v4/normalization/nursery-gold-v5/phase-c/qa/phase-c-report.json')
+          data = json.loads(report.read_text(encoding='utf-8'))
+          assert data['decision'] == 'PASS', data
+          assert data['books_generated'] == 5, data
+          assert data['total_prompts_generated'] == 220, data
+          print('Phase C validation PASS')
+          PY
+
+      - name: Commit generated Phase C package
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add BCube_Gold_Production_v4/books BCube_Gold_Production_v4/normalization/nursery-gold-v5/phase-c
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit.'
+          else
+            git commit -m 'feat(nursery): generate Phase C five-book production packages'
+            git push origin HEAD:normalization/nursery-gold-v5
+          fi
