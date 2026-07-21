@@ -1,0 +1,46 @@
+name: Generate Future Innovators Complete Book
+
+on:
+  push:
+    branches:
+      - book8/future-innovators-complete
+    paths:
+      - 'BCube_Gold_Production_v4/scripts/generate_future_innovators_complete.py'
+      - '.github/workflows/generate-future-innovators-complete.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: book8/future-innovators-complete
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install openpyxl
+
+      - name: Generate and validate complete book
+        run: python BCube_Gold_Production_v4/scripts/generate_future_innovators_complete.py
+
+      - name: Commit generated package
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add BCube_Gold_Production_v4/books/nursery/future-innovators
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit.'
+          else
+            git commit -m 'feat(book8): complete Future Innovators Gold production framework [skip ci]'
+            git push origin HEAD:book8/future-innovators-complete
+          fi
