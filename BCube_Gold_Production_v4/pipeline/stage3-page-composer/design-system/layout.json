@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "page": {
+    "format": "A4",
+    "orientation": "portrait",
+    "width_mm": 210,
+    "height_mm": 297,
+    "target_dpi": 300,
+    "width_px": 2480,
+    "height_px": 3508,
+    "safe_margin_mm": 10
+  },
+  "interior": {
+    "header_ratio": 0.11,
+    "illustration_ratio": 0.64,
+    "guidance_ratio": 0.18,
+    "footer_ratio": 0.07,
+    "visual_text_target": "70/30"
+  },
+  "rules": [
+    "Logo remains inside the safe area.",
+    "Page title is editable text, never part of the illustration.",
+    "Page number is bottom-right unless the approved template overrides it.",
+    "Illustration must not contain generated logos, badges, labels, speech text, or publisher details."
+  ]
+}
