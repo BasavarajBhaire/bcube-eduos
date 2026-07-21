@@ -1,0 +1,12 @@
+{
+  "book": "Creativity Creators Gold\u2122",
+  "level": "Nursery (3+)",
+  "version": "5.0.0",
+  "expected_prompts": 44,
+  "actual_prompts": 44,
+  "first_prompt": "CC-NURSERY-V5-P001",
+  "last_prompt": "CC-NURSERY-V5-P044",
+  "status": "pass",
+  "artwork_generation_allowed": false,
+  "reason": "Human prompt and visual-readiness approval required before artwork generation."
+}
