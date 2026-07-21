@@ -1,0 +1,46 @@
+name: Generate Creativity Creators Commit D
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - book4/creativity-creators-phase1-2
+    paths:
+      - 'BCube_Gold_Production_v4/scripts/generate_creativity_creators_commit_d.py'
+      - '.github/workflows/generate-creativity-creators-commit-d.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: book4/creativity-creators-phase1-2
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate Phase 5 and Phase 6 framework
+        run: python BCube_Gold_Production_v4/scripts/generate_creativity_creators_commit_d.py
+
+      - name: Commit generated framework
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add BCube_Gold_Production_v4/books/nursery/creativity-creators/phase5
+          git add BCube_Gold_Production_v4/books/nursery/creativity-creators/phase6
+          git add BCube_Gold_Production_v4/books/nursery/creativity-creators/qa/commit-d-framework-report.json
+          git add BCube_Gold_Production_v4/books/nursery/creativity-creators/qa/commit-d-summary.md
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+          else
+            git commit -m "feat(book4): add Phase 5 and Phase 6 production framework"
+            git push origin HEAD:book4/creativity-creators-phase1-2
+          fi
