@@ -1,0 +1,88 @@
+name: Run Book Illustration Engine
+
+on:
+  workflow_dispatch:
+    inputs:
+      book:
+        description: Official Nursery book slug
+        required: true
+        type: choice
+        options:
+          - communication-champions
+          - curiosity-explorers
+          - fine-motor-fun
+          - creativity-challenges
+          - confidence-builders
+          - stem-explorers
+          - my-world-general-awareness
+          - logical-thinking-adventures
+          - healthy-habits-safety
+          - art-colour-fun
+      mode:
+        description: Execution mode
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - validate
+          - dry-run
+          - generate
+          - resume
+      force:
+        description: Replace existing output pages
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bcube-stage2-${{ inputs.book }}
+  cancel-in-progress: false
+
+jobs:
+  illustrate-book:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      BCUBE_IMAGE_PROVIDER_URL: ${{ secrets.BCUBE_IMAGE_PROVIDER_URL }}
+      BCUBE_IMAGE_PROVIDER_TOKEN: ${{ secrets.BCUBE_IMAGE_PROVIDER_TOKEN }}
+      BCUBE_IMAGE_MODEL: ${{ vars.BCUBE_IMAGE_MODEL }}
+      BCUBE_IMAGE_TIMEOUT_SECONDS: ${{ vars.BCUBE_IMAGE_TIMEOUT_SECONDS }}
+      BCUBE_IMAGE_MAX_RETRIES: ${{ vars.BCUBE_IMAGE_MAX_RETRIES }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate real-generation credentials
+        if: ${{ inputs.mode == 'generate' || inputs.mode == 'resume' }}
+        shell: bash
+        run: |
+          test -n "$BCUBE_IMAGE_PROVIDER_URL" || (echo 'Missing BCUBE_IMAGE_PROVIDER_URL secret' && exit 1)
+          test -n "$BCUBE_IMAGE_PROVIDER_TOKEN" || (echo 'Missing BCUBE_IMAGE_PROVIDER_TOKEN secret' && exit 1)
+
+      - name: Run one-book illustration engine
+        shell: bash
+        run: |
+          FORCE_ARG=""
+          if [ "${{ inputs.force }}" = "true" ]; then FORCE_ARG="--force"; fi
+          python BCube_Gold_Production_v4/pipeline/stage2-illustration-runtime/illustration_engine.py \
+            --book "${{ inputs.book }}" \
+            --mode "${{ inputs.mode }}" \
+            $FORCE_ARG
+
+      - name: Upload Stage 2 book artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage2-${{ inputs.book }}-${{ github.run_number }}
+          path: BCube_Gold_Production_v4/pipeline/stage2-illustration-runtime/output/${{ inputs.book }}
+          if-no-files-found: error
+          retention-days: 30
