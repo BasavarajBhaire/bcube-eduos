@@ -1,0 +1,90 @@
+{
+  "schema_version": "5.0.0",
+  "series": "BCube Future Skills Learning Series\u2122",
+  "level": "Nursery (3+)",
+  "official_book_count": 10,
+  "canonical_page_count": 41,
+  "prompt_id_pattern": "{CODE}-NURSERY-V5-P{PAGE:03d}",
+  "books": [
+    {
+      "number": 1,
+      "slug": "communication-champions",
+      "title": "Communication Champions Gold\u2122",
+      "code": "CC",
+      "page_count": 41,
+      "status": "existing"
+    },
+    {
+      "number": 2,
+      "slug": "curiosity-explorers",
+      "title": "Curiosity Explorers Gold\u2122",
+      "code": "CE",
+      "page_count": 41,
+      "status": "existing"
+    },
+    {
+      "number": 3,
+      "slug": "fine-motor-fun",
+      "title": "Fine Motor Fun Gold\u2122",
+      "code": "FM",
+      "page_count": 41,
+      "status": "to_build"
+    },
+    {
+      "number": 4,
+      "slug": "creativity-challenges",
+      "title": "Creativity Challenges Gold\u2122",
+      "code": "CR",
+      "page_count": 41,
+      "status": "align_from_creativity_creators"
+    },
+    {
+      "number": 5,
+      "slug": "confidence-builders",
+      "title": "Confidence Builders Gold\u2122",
+      "code": "CB",
+      "page_count": 41,
+      "status": "existing"
+    },
+    {
+      "number": 6,
+      "slug": "stem-explorers",
+      "title": "STEM Explorers Gold\u2122",
+      "code": "STEM",
+      "page_count": 41,
+      "status": "to_build"
+    },
+    {
+      "number": 7,
+      "slug": "my-world-general-awareness",
+      "title": "My World & General Awareness Gold\u2122",
+      "code": "MW",
+      "page_count": 41,
+      "status": "to_build"
+    },
+    {
+      "number": 8,
+      "slug": "logical-thinking-adventures",
+      "title": "Logical Thinking Adventures Gold\u2122",
+      "code": "LT",
+      "page_count": 41,
+      "status": "align_from_problem_solvers"
+    },
+    {
+      "number": 9,
+      "slug": "healthy-habits-safety",
+      "title": "Healthy Habits & Safety Gold\u2122",
+      "code": "HH",
+      "page_count": 41,
+      "status": "to_build"
+    },
+    {
+      "number": 10,
+      "slug": "art-colour-fun",
+      "title": "Art & Colour Fun Gold\u2122",
+      "code": "AC",
+      "page_count": 41,
+      "status": "to_build"
+    }
+  ]
+}

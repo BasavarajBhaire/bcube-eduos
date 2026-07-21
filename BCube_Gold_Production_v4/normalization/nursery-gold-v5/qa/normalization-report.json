@@ -1,0 +1,10 @@
+{
+  "official_book_count": 10,
+  "unique_numbers": true,
+  "unique_slugs": true,
+  "unique_codes": true,
+  "all_page_counts_41": true,
+  "required_official_titles_present": true,
+  "migration_entries": 4,
+  "overall_decision": "PASS"
+}
