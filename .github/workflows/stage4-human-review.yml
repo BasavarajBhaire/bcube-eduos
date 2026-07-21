@@ -1,0 +1,49 @@
+name: Stage 4 Human Review Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage3_manifest:
+        description: Path to Stage 3 manifest
+        required: true
+        default: BCube_Gold_Production_v4/pipeline/stage3-visual-qa/output/stage3-manifest.json
+      reviews_csv:
+        description: Optional completed review CSV path
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  review-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Stage 4 gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT='BCube_Gold_Production_v4/pipeline/stage4-human-review/output'
+          mkdir -p "$OUT"
+          REVIEWS='${{ inputs.reviews_csv }}'
+          if [ -n "$REVIEWS" ]; then
+            python BCube_Gold_Production_v4/pipeline/stage4-human-review/stage4_review_gate.py \
+              --stage3-manifest '${{ inputs.stage3_manifest }}' \
+              --reviews "$REVIEWS" \
+              --output "$OUT"
+          else
+            python BCube_Gold_Production_v4/pipeline/stage4-human-review/stage4_review_gate.py \
+              --stage3-manifest '${{ inputs.stage3_manifest }}' \
+              --output "$OUT"
+          fi
+      - name: Upload Stage 4 records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage4-human-review-records
+          path: BCube_Gold_Production_v4/pipeline/stage4-human-review/output
+          if-no-files-found: error
