@@ -1,0 +1,18 @@
+{
+  "release_id": null,
+  "book_id": "CURIOSITY_EXPLORERS_NURSERY",
+  "version": null,
+  "status": "blocked",
+  "physical_page_count": 44,
+  "approved_page_count": 0,
+  "final_pdf": {
+    "file": null,
+    "sha256": null,
+    "page_count": null
+  },
+  "pages": [],
+  "qa_report": null,
+  "approved_by": null,
+  "approved_at": null,
+  "notes": "Populate only from approved Phase 5 assets. Missing or candidate pages are prohibited."
+}
