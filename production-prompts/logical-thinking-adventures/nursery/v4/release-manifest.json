@@ -1,0 +1,413 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Logical Thinking Adventures",
+  "slug": "logical-thinking-adventures",
+  "prefix": "LT",
+  "level": "Nursery (3+)",
+  "physical_pages": 44,
+  "learning_pages": 38,
+  "printed_learning_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "LT-NURSERY-V4-P001",
+      "title": "Logical Thinking Adventures",
+      "markdown": "pages/LT-NURSERY-V4-P001-logical-thinking-adventures.md",
+      "json": "pages/LT-NURSERY-V4-P001-logical-thinking-adventures.json",
+      "source_prompt": "LT-NURSERY-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "LT-NURSERY-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/LT-NURSERY-V4-P002-about-this-book.md",
+      "json": "pages/LT-NURSERY-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "LT-NURSERY-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/LT-NURSERY-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/LT-NURSERY-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "LT-NURSERY-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "LT-NURSERY-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/LT-NURSERY-V4-P004-contents-part-1.md",
+      "json": "pages/LT-NURSERY-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "LT-NURSERY-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/LT-NURSERY-V4-P005-contents-part-2.md",
+      "json": "pages/LT-NURSERY-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "LT-NURSERY-V4-P006",
+      "title": "Welcome to Logical Thinking Adventures",
+      "markdown": "pages/LT-NURSERY-V4-P006-welcome-to-logical-thinking-adventures.md",
+      "json": "pages/LT-NURSERY-V4-P006-welcome-to-logical-thinking-adventures.json",
+      "source_prompt": "LT-NURSERY-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "LT-NURSERY-V4-P007",
+      "title": "Meet Thinking Star",
+      "markdown": "pages/LT-NURSERY-V4-P007-meet-thinking-star.md",
+      "json": "pages/LT-NURSERY-V4-P007-meet-thinking-star.json",
+      "source_prompt": "LT-NURSERY-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "LT-NURSERY-V4-P008",
+      "title": "Look Carefully",
+      "markdown": "pages/LT-NURSERY-V4-P008-look-carefully.md",
+      "json": "pages/LT-NURSERY-V4-P008-look-carefully.json",
+      "source_prompt": "LT-NURSERY-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "LT-NURSERY-V4-P009",
+      "title": "Find the Same",
+      "markdown": "pages/LT-NURSERY-V4-P009-find-the-same.md",
+      "json": "pages/LT-NURSERY-V4-P009-find-the-same.json",
+      "source_prompt": "LT-NURSERY-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "LT-NURSERY-V4-P010",
+      "title": "Find the Different One",
+      "markdown": "pages/LT-NURSERY-V4-P010-find-the-different-one.md",
+      "json": "pages/LT-NURSERY-V4-P010-find-the-different-one.json",
+      "source_prompt": "LT-NURSERY-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "LT-NURSERY-V4-P011",
+      "title": "Match the Shadows",
+      "markdown": "pages/LT-NURSERY-V4-P011-match-the-shadows.md",
+      "json": "pages/LT-NURSERY-V4-P011-match-the-shadows.json",
+      "source_prompt": "LT-NURSERY-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "LT-NURSERY-V4-P012",
+      "title": "Match the Halves",
+      "markdown": "pages/LT-NURSERY-V4-P012-match-the-halves.md",
+      "json": "pages/LT-NURSERY-V4-P012-match-the-halves.json",
+      "source_prompt": "LT-NURSERY-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "LT-NURSERY-V4-P013",
+      "title": "Animal and Home",
+      "markdown": "pages/LT-NURSERY-V4-P013-animal-and-home.md",
+      "json": "pages/LT-NURSERY-V4-P013-animal-and-home.json",
+      "source_prompt": "LT-NURSERY-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "LT-NURSERY-V4-P014",
+      "title": "Object and Use",
+      "markdown": "pages/LT-NURSERY-V4-P014-object-and-use.md",
+      "json": "pages/LT-NURSERY-V4-P014-object-and-use.json",
+      "source_prompt": "LT-NURSERY-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "LT-NURSERY-V4-P015",
+      "title": "Sort by Colour",
+      "markdown": "pages/LT-NURSERY-V4-P015-sort-by-colour.md",
+      "json": "pages/LT-NURSERY-V4-P015-sort-by-colour.json",
+      "source_prompt": "LT-NURSERY-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "LT-NURSERY-V4-P016",
+      "title": "Sort by Shape",
+      "markdown": "pages/LT-NURSERY-V4-P016-sort-by-shape.md",
+      "json": "pages/LT-NURSERY-V4-P016-sort-by-shape.json",
+      "source_prompt": "LT-NURSERY-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "LT-NURSERY-V4-P017",
+      "title": "Sort by Size",
+      "markdown": "pages/LT-NURSERY-V4-P017-sort-by-size.md",
+      "json": "pages/LT-NURSERY-V4-P017-sort-by-size.json",
+      "source_prompt": "LT-NURSERY-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "LT-NURSERY-V4-P018",
+      "title": "Living and Non-Living",
+      "markdown": "pages/LT-NURSERY-V4-P018-living-and-non-living.md",
+      "json": "pages/LT-NURSERY-V4-P018-living-and-non-living.json",
+      "source_prompt": "LT-NURSERY-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "LT-NURSERY-V4-P019",
+      "title": "Big, Bigger, Biggest",
+      "markdown": "pages/LT-NURSERY-V4-P019-big-bigger-biggest.md",
+      "json": "pages/LT-NURSERY-V4-P019-big-bigger-biggest.json",
+      "source_prompt": "LT-NURSERY-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "LT-NURSERY-V4-P020",
+      "title": "Long and Short",
+      "markdown": "pages/LT-NURSERY-V4-P020-long-and-short.md",
+      "json": "pages/LT-NURSERY-V4-P020-long-and-short.json",
+      "source_prompt": "LT-NURSERY-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "LT-NURSERY-V4-P021",
+      "title": "More, Less, Same",
+      "markdown": "pages/LT-NURSERY-V4-P021-more-less-same.md",
+      "json": "pages/LT-NURSERY-V4-P021-more-less-same.json",
+      "source_prompt": "LT-NURSERY-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "LT-NURSERY-V4-P022",
+      "title": "Which One Belongs?",
+      "markdown": "pages/LT-NURSERY-V4-P022-which-one-belongs.md",
+      "json": "pages/LT-NURSERY-V4-P022-which-one-belongs.json",
+      "source_prompt": "LT-NURSERY-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "LT-NURSERY-V4-P023",
+      "title": "Find the Pattern",
+      "markdown": "pages/LT-NURSERY-V4-P023-find-the-pattern.md",
+      "json": "pages/LT-NURSERY-V4-P023-find-the-pattern.json",
+      "source_prompt": "LT-NURSERY-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "LT-NURSERY-V4-P024",
+      "title": "Copy the Pattern",
+      "markdown": "pages/LT-NURSERY-V4-P024-copy-the-pattern.md",
+      "json": "pages/LT-NURSERY-V4-P024-copy-the-pattern.json",
+      "source_prompt": "LT-NURSERY-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "LT-NURSERY-V4-P025",
+      "title": "First, Next, Last",
+      "markdown": "pages/LT-NURSERY-V4-P025-first-next-last.md",
+      "json": "pages/LT-NURSERY-V4-P025-first-next-last.json",
+      "source_prompt": "LT-NURSERY-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "LT-NURSERY-V4-P026",
+      "title": "What Comes Next?",
+      "markdown": "pages/LT-NURSERY-V4-P026-what-comes-next.md",
+      "json": "pages/LT-NURSERY-V4-P026-what-comes-next.json",
+      "source_prompt": "LT-NURSERY-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "LT-NURSERY-V4-P027",
+      "title": "Before and After",
+      "markdown": "pages/LT-NURSERY-V4-P027-before-and-after.md",
+      "json": "pages/LT-NURSERY-V4-P027-before-and-after.json",
+      "source_prompt": "LT-NURSERY-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "LT-NURSERY-V4-P028",
+      "title": "Complete the Story",
+      "markdown": "pages/LT-NURSERY-V4-P028-complete-the-story.md",
+      "json": "pages/LT-NURSERY-V4-P028-complete-the-story.json",
+      "source_prompt": "LT-NURSERY-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "LT-NURSERY-V4-P029",
+      "title": "Cause and Effect",
+      "markdown": "pages/LT-NURSERY-V4-P029-cause-and-effect.md",
+      "json": "pages/LT-NURSERY-V4-P029-cause-and-effect.json",
+      "source_prompt": "LT-NURSERY-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "LT-NURSERY-V4-P030",
+      "title": "Inside and Outside",
+      "markdown": "pages/LT-NURSERY-V4-P030-inside-and-outside.md",
+      "json": "pages/LT-NURSERY-V4-P030-inside-and-outside.json",
+      "source_prompt": "LT-NURSERY-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "LT-NURSERY-V4-P031",
+      "title": "Above and Below",
+      "markdown": "pages/LT-NURSERY-V4-P031-above-and-below.md",
+      "json": "pages/LT-NURSERY-V4-P031-above-and-below.json",
+      "source_prompt": "LT-NURSERY-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "LT-NURSERY-V4-P032",
+      "title": "Near and Far",
+      "markdown": "pages/LT-NURSERY-V4-P032-near-and-far.md",
+      "json": "pages/LT-NURSERY-V4-P032-near-and-far.json",
+      "source_prompt": "LT-NURSERY-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "LT-NURSERY-V4-P033",
+      "title": "Left and Right",
+      "markdown": "pages/LT-NURSERY-V4-P033-left-and-right.md",
+      "json": "pages/LT-NURSERY-V4-P033-left-and-right.json",
+      "source_prompt": "LT-NURSERY-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "LT-NURSERY-V4-P034",
+      "title": "Follow the Arrows",
+      "markdown": "pages/LT-NURSERY-V4-P034-follow-the-arrows.md",
+      "json": "pages/LT-NURSERY-V4-P034-follow-the-arrows.json",
+      "source_prompt": "LT-NURSERY-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "LT-NURSERY-V4-P035",
+      "title": "Find the Way",
+      "markdown": "pages/LT-NURSERY-V4-P035-find-the-way.md",
+      "json": "pages/LT-NURSERY-V4-P035-find-the-way.json",
+      "source_prompt": "LT-NURSERY-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "LT-NURSERY-V4-P036",
+      "title": "Choose the Helpful Tool",
+      "markdown": "pages/LT-NURSERY-V4-P036-choose-the-helpful-tool.md",
+      "json": "pages/LT-NURSERY-V4-P036-choose-the-helpful-tool.json",
+      "source_prompt": "LT-NURSERY-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "LT-NURSERY-V4-P037",
+      "title": "Fix the Picture",
+      "markdown": "pages/LT-NURSERY-V4-P037-fix-the-picture.md",
+      "json": "pages/LT-NURSERY-V4-P037-fix-the-picture.json",
+      "source_prompt": "LT-NURSERY-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "LT-NURSERY-V4-P038",
+      "title": "Safe and Helpful Choice",
+      "markdown": "pages/LT-NURSERY-V4-P038-safe-and-helpful-choice.md",
+      "json": "pages/LT-NURSERY-V4-P038-safe-and-helpful-choice.json",
+      "source_prompt": "LT-NURSERY-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "LT-NURSERY-V4-P039",
+      "title": "Remember and Match",
+      "markdown": "pages/LT-NURSERY-V4-P039-remember-and-match.md",
+      "json": "pages/LT-NURSERY-V4-P039-remember-and-match.json",
+      "source_prompt": "LT-NURSERY-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "LT-NURSERY-V4-P040",
+      "title": "Think of Another Way",
+      "markdown": "pages/LT-NURSERY-V4-P040-think-of-another-way.md",
+      "json": "pages/LT-NURSERY-V4-P040-think-of-another-way.json",
+      "source_prompt": "LT-NURSERY-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "LT-NURSERY-V4-P041",
+      "title": "My Thinking Journal",
+      "markdown": "pages/LT-NURSERY-V4-P041-my-thinking-journal.md",
+      "json": "pages/LT-NURSERY-V4-P041-my-thinking-journal.json",
+      "source_prompt": "LT-NURSERY-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "LT-NURSERY-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/LT-NURSERY-V4-P042-certificate-of-completion.md",
+      "json": "pages/LT-NURSERY-V4-P042-certificate-of-completion.json",
+      "source_prompt": "LT-NURSERY-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "LT-NURSERY-V4-P043",
+      "title": "I Am a Logical Thinker!",
+      "markdown": "pages/LT-NURSERY-V4-P043-i-am-a-logical-thinker.md",
+      "json": "pages/LT-NURSERY-V4-P043-i-am-a-logical-thinker.json",
+      "source_prompt": "LT-NURSERY-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "LT-NURSERY-V4-P044",
+      "title": "Logical Thinking Adventures — Back Cover",
+      "markdown": "pages/LT-NURSERY-V4-P044-logical-thinking-adventures-back-cover.md",
+      "json": "pages/LT-NURSERY-V4-P044-logical-thinking-adventures-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

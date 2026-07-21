@@ -1,0 +1,413 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Fine Motor Fun",
+  "slug": "fine-motor-fun",
+  "prefix": "FM",
+  "level": "Nursery (3+)",
+  "physical_pages": 44,
+  "learning_pages": 38,
+  "printed_learning_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "FM-NURSERY-V4-P001",
+      "title": "Fine Motor Fun",
+      "markdown": "pages/FM-NURSERY-V4-P001-fine-motor-fun.md",
+      "json": "pages/FM-NURSERY-V4-P001-fine-motor-fun.json",
+      "source_prompt": "FM-NURSERY-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "FM-NURSERY-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/FM-NURSERY-V4-P002-about-this-book.md",
+      "json": "pages/FM-NURSERY-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "FM-NURSERY-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/FM-NURSERY-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/FM-NURSERY-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "FM-NURSERY-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "FM-NURSERY-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/FM-NURSERY-V4-P004-contents-part-1.md",
+      "json": "pages/FM-NURSERY-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "FM-NURSERY-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/FM-NURSERY-V4-P005-contents-part-2.md",
+      "json": "pages/FM-NURSERY-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "FM-NURSERY-V4-P006",
+      "title": "Welcome to Fine Motor Fun",
+      "markdown": "pages/FM-NURSERY-V4-P006-welcome-to-fine-motor-fun.md",
+      "json": "pages/FM-NURSERY-V4-P006-welcome-to-fine-motor-fun.json",
+      "source_prompt": "FM-NURSERY-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "FM-NURSERY-V4-P007",
+      "title": "Meet Skill Star",
+      "markdown": "pages/FM-NURSERY-V4-P007-meet-skill-star.md",
+      "json": "pages/FM-NURSERY-V4-P007-meet-skill-star.json",
+      "source_prompt": "FM-NURSERY-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "FM-NURSERY-V4-P008",
+      "title": "My Busy Hands",
+      "markdown": "pages/FM-NURSERY-V4-P008-my-busy-hands.md",
+      "json": "pages/FM-NURSERY-V4-P008-my-busy-hands.json",
+      "source_prompt": "FM-NURSERY-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "FM-NURSERY-V4-P009",
+      "title": "Finger Gym",
+      "markdown": "pages/FM-NURSERY-V4-P009-finger-gym.md",
+      "json": "pages/FM-NURSERY-V4-P009-finger-gym.json",
+      "source_prompt": "FM-NURSERY-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "FM-NURSERY-V4-P010",
+      "title": "Playdough Pinch and Roll",
+      "markdown": "pages/FM-NURSERY-V4-P010-playdough-pinch-and-roll.md",
+      "json": "pages/FM-NURSERY-V4-P010-playdough-pinch-and-roll.json",
+      "source_prompt": "FM-NURSERY-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "FM-NURSERY-V4-P011",
+      "title": "Pick and Place",
+      "markdown": "pages/FM-NURSERY-V4-P011-pick-and-place.md",
+      "json": "pages/FM-NURSERY-V4-P011-pick-and-place.json",
+      "source_prompt": "FM-NURSERY-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "FM-NURSERY-V4-P012",
+      "title": "Tear and Paste",
+      "markdown": "pages/FM-NURSERY-V4-P012-tear-and-paste.md",
+      "json": "pages/FM-NURSERY-V4-P012-tear-and-paste.json",
+      "source_prompt": "FM-NURSERY-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "FM-NURSERY-V4-P013",
+      "title": "Trace Standing Lines",
+      "markdown": "pages/FM-NURSERY-V4-P013-trace-standing-lines.md",
+      "json": "pages/FM-NURSERY-V4-P013-trace-standing-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "FM-NURSERY-V4-P014",
+      "title": "Trace Sleeping Lines",
+      "markdown": "pages/FM-NURSERY-V4-P014-trace-sleeping-lines.md",
+      "json": "pages/FM-NURSERY-V4-P014-trace-sleeping-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "FM-NURSERY-V4-P015",
+      "title": "Trace Slanting Lines",
+      "markdown": "pages/FM-NURSERY-V4-P015-trace-slanting-lines.md",
+      "json": "pages/FM-NURSERY-V4-P015-trace-slanting-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "FM-NURSERY-V4-P016",
+      "title": "Trace Curved Lines",
+      "markdown": "pages/FM-NURSERY-V4-P016-trace-curved-lines.md",
+      "json": "pages/FM-NURSERY-V4-P016-trace-curved-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "FM-NURSERY-V4-P017",
+      "title": "Trace Zigzag Lines",
+      "markdown": "pages/FM-NURSERY-V4-P017-trace-zigzag-lines.md",
+      "json": "pages/FM-NURSERY-V4-P017-trace-zigzag-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "FM-NURSERY-V4-P018",
+      "title": "Trace Wavy Lines",
+      "markdown": "pages/FM-NURSERY-V4-P018-trace-wavy-lines.md",
+      "json": "pages/FM-NURSERY-V4-P018-trace-wavy-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "FM-NURSERY-V4-P019",
+      "title": "Trace Loops",
+      "markdown": "pages/FM-NURSERY-V4-P019-trace-loops.md",
+      "json": "pages/FM-NURSERY-V4-P019-trace-loops.json",
+      "source_prompt": "FM-NURSERY-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "FM-NURSERY-V4-P020",
+      "title": "Trace Spirals",
+      "markdown": "pages/FM-NURSERY-V4-P020-trace-spirals.md",
+      "json": "pages/FM-NURSERY-V4-P020-trace-spirals.json",
+      "source_prompt": "FM-NURSERY-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "FM-NURSERY-V4-P021",
+      "title": "Follow the Path",
+      "markdown": "pages/FM-NURSERY-V4-P021-follow-the-path.md",
+      "json": "pages/FM-NURSERY-V4-P021-follow-the-path.json",
+      "source_prompt": "FM-NURSERY-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "FM-NURSERY-V4-P022",
+      "title": "Line Practice Review",
+      "markdown": "pages/FM-NURSERY-V4-P022-line-practice-review.md",
+      "json": "pages/FM-NURSERY-V4-P022-line-practice-review.json",
+      "source_prompt": "FM-NURSERY-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "FM-NURSERY-V4-P023",
+      "title": "Trace Circles",
+      "markdown": "pages/FM-NURSERY-V4-P023-trace-circles.md",
+      "json": "pages/FM-NURSERY-V4-P023-trace-circles.json",
+      "source_prompt": "FM-NURSERY-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "FM-NURSERY-V4-P024",
+      "title": "Trace Squares",
+      "markdown": "pages/FM-NURSERY-V4-P024-trace-squares.md",
+      "json": "pages/FM-NURSERY-V4-P024-trace-squares.json",
+      "source_prompt": "FM-NURSERY-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "FM-NURSERY-V4-P025",
+      "title": "Trace Triangles",
+      "markdown": "pages/FM-NURSERY-V4-P025-trace-triangles.md",
+      "json": "pages/FM-NURSERY-V4-P025-trace-triangles.json",
+      "source_prompt": "FM-NURSERY-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "FM-NURSERY-V4-P026",
+      "title": "Trace Rectangles",
+      "markdown": "pages/FM-NURSERY-V4-P026-trace-rectangles.md",
+      "json": "pages/FM-NURSERY-V4-P026-trace-rectangles.json",
+      "source_prompt": "FM-NURSERY-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "FM-NURSERY-V4-P027",
+      "title": "Trace Stars",
+      "markdown": "pages/FM-NURSERY-V4-P027-trace-stars.md",
+      "json": "pages/FM-NURSERY-V4-P027-trace-stars.json",
+      "source_prompt": "FM-NURSERY-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "FM-NURSERY-V4-P028",
+      "title": "Shape Patterns",
+      "markdown": "pages/FM-NURSERY-V4-P028-shape-patterns.md",
+      "json": "pages/FM-NURSERY-V4-P028-shape-patterns.json",
+      "source_prompt": "FM-NURSERY-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "FM-NURSERY-V4-P029",
+      "title": "Complete the Pattern",
+      "markdown": "pages/FM-NURSERY-V4-P029-complete-the-pattern.md",
+      "json": "pages/FM-NURSERY-V4-P029-complete-the-pattern.json",
+      "source_prompt": "FM-NURSERY-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "FM-NURSERY-V4-P030",
+      "title": "Shape Path",
+      "markdown": "pages/FM-NURSERY-V4-P030-shape-path.md",
+      "json": "pages/FM-NURSERY-V4-P030-shape-path.json",
+      "source_prompt": "FM-NURSERY-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "FM-NURSERY-V4-P031",
+      "title": "Thread and Lace",
+      "markdown": "pages/FM-NURSERY-V4-P031-thread-and-lace.md",
+      "json": "pages/FM-NURSERY-V4-P031-thread-and-lace.json",
+      "source_prompt": "FM-NURSERY-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "FM-NURSERY-V4-P032",
+      "title": "Sticker Match",
+      "markdown": "pages/FM-NURSERY-V4-P032-sticker-match.md",
+      "json": "pages/FM-NURSERY-V4-P032-sticker-match.json",
+      "source_prompt": "FM-NURSERY-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "FM-NURSERY-V4-P033",
+      "title": "Dot Marker Fun",
+      "markdown": "pages/FM-NURSERY-V4-P033-dot-marker-fun.md",
+      "json": "pages/FM-NURSERY-V4-P033-dot-marker-fun.json",
+      "source_prompt": "FM-NURSERY-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "FM-NURSERY-V4-P034",
+      "title": "Fingerprint Garden",
+      "markdown": "pages/FM-NURSERY-V4-P034-fingerprint-garden.md",
+      "json": "pages/FM-NURSERY-V4-P034-fingerprint-garden.json",
+      "source_prompt": "FM-NURSERY-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "FM-NURSERY-V4-P035",
+      "title": "Cut Straight Lines",
+      "markdown": "pages/FM-NURSERY-V4-P035-cut-straight-lines.md",
+      "json": "pages/FM-NURSERY-V4-P035-cut-straight-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "FM-NURSERY-V4-P036",
+      "title": "Cut Curved Lines",
+      "markdown": "pages/FM-NURSERY-V4-P036-cut-curved-lines.md",
+      "json": "pages/FM-NURSERY-V4-P036-cut-curved-lines.json",
+      "source_prompt": "FM-NURSERY-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "FM-NURSERY-V4-P037",
+      "title": "Cut and Paste Shapes",
+      "markdown": "pages/FM-NURSERY-V4-P037-cut-and-paste-shapes.md",
+      "json": "pages/FM-NURSERY-V4-P037-cut-and-paste-shapes.json",
+      "source_prompt": "FM-NURSERY-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "FM-NURSERY-V4-P038",
+      "title": "Paper Collage",
+      "markdown": "pages/FM-NURSERY-V4-P038-paper-collage.md",
+      "json": "pages/FM-NURSERY-V4-P038-paper-collage.json",
+      "source_prompt": "FM-NURSERY-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "FM-NURSERY-V4-P039",
+      "title": "Draw a Happy Face",
+      "markdown": "pages/FM-NURSERY-V4-P039-draw-a-happy-face.md",
+      "json": "pages/FM-NURSERY-V4-P039-draw-a-happy-face.json",
+      "source_prompt": "FM-NURSERY-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "FM-NURSERY-V4-P040",
+      "title": "Complete the Picture",
+      "markdown": "pages/FM-NURSERY-V4-P040-complete-the-picture.md",
+      "json": "pages/FM-NURSERY-V4-P040-complete-the-picture.json",
+      "source_prompt": "FM-NURSERY-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "FM-NURSERY-V4-P041",
+      "title": "My Fine Motor Creation",
+      "markdown": "pages/FM-NURSERY-V4-P041-my-fine-motor-creation.md",
+      "json": "pages/FM-NURSERY-V4-P041-my-fine-motor-creation.json",
+      "source_prompt": "FM-NURSERY-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "FM-NURSERY-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/FM-NURSERY-V4-P042-certificate-of-completion.md",
+      "json": "pages/FM-NURSERY-V4-P042-certificate-of-completion.json",
+      "source_prompt": "FM-NURSERY-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "FM-NURSERY-V4-P043",
+      "title": "I Am a Fine Motor Star!",
+      "markdown": "pages/FM-NURSERY-V4-P043-i-am-a-fine-motor-star.md",
+      "json": "pages/FM-NURSERY-V4-P043-i-am-a-fine-motor-star.json",
+      "source_prompt": "FM-NURSERY-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "FM-NURSERY-V4-P044",
+      "title": "Fine Motor Fun — Back Cover",
+      "markdown": "pages/FM-NURSERY-V4-P044-fine-motor-fun-back-cover.md",
+      "json": "pages/FM-NURSERY-V4-P044-fine-motor-fun-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

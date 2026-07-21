@@ -1,0 +1,413 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Art & Colour Fun",
+  "slug": "art-colour-fun",
+  "prefix": "AC",
+  "level": "Nursery (3+)",
+  "physical_pages": 44,
+  "learning_pages": 38,
+  "printed_learning_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "AC-NURSERY-V4-P001",
+      "title": "Art & Colour Fun",
+      "markdown": "pages/AC-NURSERY-V4-P001-art-and-colour-fun.md",
+      "json": "pages/AC-NURSERY-V4-P001-art-and-colour-fun.json",
+      "source_prompt": "AC-NURSERY-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "AC-NURSERY-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/AC-NURSERY-V4-P002-about-this-book.md",
+      "json": "pages/AC-NURSERY-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "AC-NURSERY-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/AC-NURSERY-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/AC-NURSERY-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "AC-NURSERY-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "AC-NURSERY-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/AC-NURSERY-V4-P004-contents-part-1.md",
+      "json": "pages/AC-NURSERY-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "AC-NURSERY-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/AC-NURSERY-V4-P005-contents-part-2.md",
+      "json": "pages/AC-NURSERY-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "AC-NURSERY-V4-P006",
+      "title": "Welcome to Art & Colour Fun",
+      "markdown": "pages/AC-NURSERY-V4-P006-welcome-to-art-and-colour-fun.md",
+      "json": "pages/AC-NURSERY-V4-P006-welcome-to-art-and-colour-fun.json",
+      "source_prompt": "AC-NURSERY-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "AC-NURSERY-V4-P007",
+      "title": "Meet Artist Star",
+      "markdown": "pages/AC-NURSERY-V4-P007-meet-artist-star.md",
+      "json": "pages/AC-NURSERY-V4-P007-meet-artist-star.json",
+      "source_prompt": "AC-NURSERY-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "AC-NURSERY-V4-P008",
+      "title": "Meet the Colours",
+      "markdown": "pages/AC-NURSERY-V4-P008-meet-the-colours.md",
+      "json": "pages/AC-NURSERY-V4-P008-meet-the-colours.json",
+      "source_prompt": "AC-NURSERY-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "AC-NURSERY-V4-P009",
+      "title": "Colour Hunt",
+      "markdown": "pages/AC-NURSERY-V4-P009-colour-hunt.md",
+      "json": "pages/AC-NURSERY-V4-P009-colour-hunt.json",
+      "source_prompt": "AC-NURSERY-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "AC-NURSERY-V4-P010",
+      "title": "Warm and Cool Colours",
+      "markdown": "pages/AC-NURSERY-V4-P010-warm-and-cool-colours.md",
+      "json": "pages/AC-NURSERY-V4-P010-warm-and-cool-colours.json",
+      "source_prompt": "AC-NURSERY-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "AC-NURSERY-V4-P011",
+      "title": "Mix the Colours",
+      "markdown": "pages/AC-NURSERY-V4-P011-mix-the-colours.md",
+      "json": "pages/AC-NURSERY-V4-P011-mix-the-colours.json",
+      "source_prompt": "AC-NURSERY-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "AC-NURSERY-V4-P012",
+      "title": "Straight Lines",
+      "markdown": "pages/AC-NURSERY-V4-P012-straight-lines.md",
+      "json": "pages/AC-NURSERY-V4-P012-straight-lines.json",
+      "source_prompt": "AC-NURSERY-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "AC-NURSERY-V4-P013",
+      "title": "Curvy and Wavy Lines",
+      "markdown": "pages/AC-NURSERY-V4-P013-curvy-and-wavy-lines.md",
+      "json": "pages/AC-NURSERY-V4-P013-curvy-and-wavy-lines.json",
+      "source_prompt": "AC-NURSERY-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "AC-NURSERY-V4-P014",
+      "title": "Line Picture",
+      "markdown": "pages/AC-NURSERY-V4-P014-line-picture.md",
+      "json": "pages/AC-NURSERY-V4-P014-line-picture.json",
+      "source_prompt": "AC-NURSERY-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "AC-NURSERY-V4-P015",
+      "title": "Art with Circles",
+      "markdown": "pages/AC-NURSERY-V4-P015-art-with-circles.md",
+      "json": "pages/AC-NURSERY-V4-P015-art-with-circles.json",
+      "source_prompt": "AC-NURSERY-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "AC-NURSERY-V4-P016",
+      "title": "Art with Squares",
+      "markdown": "pages/AC-NURSERY-V4-P016-art-with-squares.md",
+      "json": "pages/AC-NURSERY-V4-P016-art-with-squares.json",
+      "source_prompt": "AC-NURSERY-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "AC-NURSERY-V4-P017",
+      "title": "Art with Triangles",
+      "markdown": "pages/AC-NURSERY-V4-P017-art-with-triangles.md",
+      "json": "pages/AC-NURSERY-V4-P017-art-with-triangles.json",
+      "source_prompt": "AC-NURSERY-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "AC-NURSERY-V4-P018",
+      "title": "Shape Collage",
+      "markdown": "pages/AC-NURSERY-V4-P018-shape-collage.md",
+      "json": "pages/AC-NURSERY-V4-P018-shape-collage.json",
+      "source_prompt": "AC-NURSERY-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "AC-NURSERY-V4-P019",
+      "title": "Make a Pattern",
+      "markdown": "pages/AC-NURSERY-V4-P019-make-a-pattern.md",
+      "json": "pages/AC-NURSERY-V4-P019-make-a-pattern.json",
+      "source_prompt": "AC-NURSERY-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "AC-NURSERY-V4-P020",
+      "title": "Decorate the Border",
+      "markdown": "pages/AC-NURSERY-V4-P020-decorate-the-border.md",
+      "json": "pages/AC-NURSERY-V4-P020-decorate-the-border.json",
+      "source_prompt": "AC-NURSERY-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "AC-NURSERY-V4-P021",
+      "title": "Symmetry Butterfly",
+      "markdown": "pages/AC-NURSERY-V4-P021-symmetry-butterfly.md",
+      "json": "pages/AC-NURSERY-V4-P021-symmetry-butterfly.json",
+      "source_prompt": "AC-NURSERY-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "AC-NURSERY-V4-P022",
+      "title": "Brush Painting",
+      "markdown": "pages/AC-NURSERY-V4-P022-brush-painting.md",
+      "json": "pages/AC-NURSERY-V4-P022-brush-painting.json",
+      "source_prompt": "AC-NURSERY-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "AC-NURSERY-V4-P023",
+      "title": "Finger Painting",
+      "markdown": "pages/AC-NURSERY-V4-P023-finger-painting.md",
+      "json": "pages/AC-NURSERY-V4-P023-finger-painting.json",
+      "source_prompt": "AC-NURSERY-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "AC-NURSERY-V4-P024",
+      "title": "Sponge Printing",
+      "markdown": "pages/AC-NURSERY-V4-P024-sponge-printing.md",
+      "json": "pages/AC-NURSERY-V4-P024-sponge-printing.json",
+      "source_prompt": "AC-NURSERY-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "AC-NURSERY-V4-P025",
+      "title": "Leaf Printing",
+      "markdown": "pages/AC-NURSERY-V4-P025-leaf-printing.md",
+      "json": "pages/AC-NURSERY-V4-P025-leaf-printing.json",
+      "source_prompt": "AC-NURSERY-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "AC-NURSERY-V4-P026",
+      "title": "Vegetable Printing",
+      "markdown": "pages/AC-NURSERY-V4-P026-vegetable-printing.md",
+      "json": "pages/AC-NURSERY-V4-P026-vegetable-printing.json",
+      "source_prompt": "AC-NURSERY-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "AC-NURSERY-V4-P027",
+      "title": "Texture Rubbings",
+      "markdown": "pages/AC-NURSERY-V4-P027-texture-rubbings.md",
+      "json": "pages/AC-NURSERY-V4-P027-texture-rubbings.json",
+      "source_prompt": "AC-NURSERY-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "AC-NURSERY-V4-P028",
+      "title": "Colour the Big Picture",
+      "markdown": "pages/AC-NURSERY-V4-P028-colour-the-big-picture.md",
+      "json": "pages/AC-NURSERY-V4-P028-colour-the-big-picture.json",
+      "source_prompt": "AC-NURSERY-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "AC-NURSERY-V4-P029",
+      "title": "Tear and Paste",
+      "markdown": "pages/AC-NURSERY-V4-P029-tear-and-paste.md",
+      "json": "pages/AC-NURSERY-V4-P029-tear-and-paste.json",
+      "source_prompt": "AC-NURSERY-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "AC-NURSERY-V4-P030",
+      "title": "Cut and Paste Colours",
+      "markdown": "pages/AC-NURSERY-V4-P030-cut-and-paste-colours.md",
+      "json": "pages/AC-NURSERY-V4-P030-cut-and-paste-colours.json",
+      "source_prompt": "AC-NURSERY-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "AC-NURSERY-V4-P031",
+      "title": "Paper Mosaic",
+      "markdown": "pages/AC-NURSERY-V4-P031-paper-mosaic.md",
+      "json": "pages/AC-NURSERY-V4-P031-paper-mosaic.json",
+      "source_prompt": "AC-NURSERY-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "AC-NURSERY-V4-P032",
+      "title": "Playdough Art",
+      "markdown": "pages/AC-NURSERY-V4-P032-playdough-art.md",
+      "json": "pages/AC-NURSERY-V4-P032-playdough-art.json",
+      "source_prompt": "AC-NURSERY-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "AC-NURSERY-V4-P033",
+      "title": "Recycled Art",
+      "markdown": "pages/AC-NURSERY-V4-P033-recycled-art.md",
+      "json": "pages/AC-NURSERY-V4-P033-recycled-art.json",
+      "source_prompt": "AC-NURSERY-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "AC-NURSERY-V4-P034",
+      "title": "Nature Collage",
+      "markdown": "pages/AC-NURSERY-V4-P034-nature-collage.md",
+      "json": "pages/AC-NURSERY-V4-P034-nature-collage.json",
+      "source_prompt": "AC-NURSERY-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "AC-NURSERY-V4-P035",
+      "title": "Draw a Happy Place",
+      "markdown": "pages/AC-NURSERY-V4-P035-draw-a-happy-place.md",
+      "json": "pages/AC-NURSERY-V4-P035-draw-a-happy-place.json",
+      "source_prompt": "AC-NURSERY-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "AC-NURSERY-V4-P036",
+      "title": "My Favourite Animal Art",
+      "markdown": "pages/AC-NURSERY-V4-P036-my-favourite-animal-art.md",
+      "json": "pages/AC-NURSERY-V4-P036-my-favourite-animal-art.json",
+      "source_prompt": "AC-NURSERY-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "AC-NURSERY-V4-P037",
+      "title": "Make a Story Picture",
+      "markdown": "pages/AC-NURSERY-V4-P037-make-a-story-picture.md",
+      "json": "pages/AC-NURSERY-V4-P037-make-a-story-picture.json",
+      "source_prompt": "AC-NURSERY-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "AC-NURSERY-V4-P038",
+      "title": "Art from Music",
+      "markdown": "pages/AC-NURSERY-V4-P038-art-from-music.md",
+      "json": "pages/AC-NURSERY-V4-P038-art-from-music.json",
+      "source_prompt": "AC-NURSERY-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "AC-NURSERY-V4-P039",
+      "title": "Team Art",
+      "markdown": "pages/AC-NURSERY-V4-P039-team-art.md",
+      "json": "pages/AC-NURSERY-V4-P039-team-art.json",
+      "source_prompt": "AC-NURSERY-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "AC-NURSERY-V4-P040",
+      "title": "My Art Gallery",
+      "markdown": "pages/AC-NURSERY-V4-P040-my-art-gallery.md",
+      "json": "pages/AC-NURSERY-V4-P040-my-art-gallery.json",
+      "source_prompt": "AC-NURSERY-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "AC-NURSERY-V4-P041",
+      "title": "My Art Journal",
+      "markdown": "pages/AC-NURSERY-V4-P041-my-art-journal.md",
+      "json": "pages/AC-NURSERY-V4-P041-my-art-journal.json",
+      "source_prompt": "AC-NURSERY-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "AC-NURSERY-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/AC-NURSERY-V4-P042-certificate-of-completion.md",
+      "json": "pages/AC-NURSERY-V4-P042-certificate-of-completion.json",
+      "source_prompt": "AC-NURSERY-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "AC-NURSERY-V4-P043",
+      "title": "I Am a Little Artist!",
+      "markdown": "pages/AC-NURSERY-V4-P043-i-am-a-little-artist.md",
+      "json": "pages/AC-NURSERY-V4-P043-i-am-a-little-artist.json",
+      "source_prompt": "AC-NURSERY-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "AC-NURSERY-V4-P044",
+      "title": "Art & Colour Fun — Back Cover",
+      "markdown": "pages/AC-NURSERY-V4-P044-art-and-colour-fun-back-cover.md",
+      "json": "pages/AC-NURSERY-V4-P044-art-and-colour-fun-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

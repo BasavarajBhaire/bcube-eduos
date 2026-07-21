@@ -1,0 +1,83 @@
+{
+  "validation_version": "4.0.0",
+  "books": 10,
+  "page_prompts": 440,
+  "markdown_files": 440,
+  "json_files": 440,
+  "checks": 3550,
+  "critical_defects": 0,
+  "status": "PASS",
+  "errors": [],
+  "book_results": [
+    {
+      "book": "Art & Colour Fun",
+      "slug": "art-colour-fun",
+      "prefix": "AC",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Communication Champions",
+      "slug": "communication-champions",
+      "prefix": "CC",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Confidence Builders",
+      "slug": "confidence-builders",
+      "prefix": "CB",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Creativity Challenges",
+      "slug": "creativity-challenges",
+      "prefix": "CR",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Curiosity Explorers",
+      "slug": "curiosity-explorers",
+      "prefix": "CE",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Fine Motor Fun",
+      "slug": "fine-motor-fun",
+      "prefix": "FM",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Healthy Habits & Safety",
+      "slug": "healthy-habits-safety",
+      "prefix": "HH",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "Logical Thinking Adventures",
+      "slug": "logical-thinking-adventures",
+      "prefix": "LT",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "My World & General Awareness",
+      "slug": "my-world-general-awareness",
+      "prefix": "MW",
+      "prompts": 44,
+      "status": "PASS"
+    },
+    {
+      "book": "STEM Explorers",
+      "slug": "stem-explorers",
+      "prefix": "SE",
+      "prompts": 44,
+      "status": "PASS"
+    }
+  ]
+}

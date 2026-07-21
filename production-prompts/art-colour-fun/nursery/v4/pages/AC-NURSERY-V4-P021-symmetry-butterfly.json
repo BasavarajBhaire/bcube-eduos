@@ -1,0 +1,65 @@
+{
+  "prompt_id": "AC-NURSERY-V4-P021",
+  "version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPT",
+  "series": "BCube Future Skills Learning Seriesâ„¢",
+  "book": {
+    "name": "Art & Colour Fun",
+    "slug": "art-colour-fun",
+    "prefix": "AC"
+  },
+  "level": "Nursery (3+)",
+  "page": {
+    "physical": 21,
+    "total_physical": 44,
+    "printed": 20,
+    "printed_visible": true,
+    "type": "activity_page",
+    "title": "Symmetry Butterfly"
+  },
+  "curriculum": {
+    "objective": "Complete a simple balanced butterfly design.",
+    "instruction": "One guided activity aligned to â€œSymmetry Butterflyâ€. One short speaking, reflection, or independent practice response.",
+    "evidence": "Child demonstrates observable progress toward: Complete a simple balanced butterfly design.",
+    "scene": "Half-pattern butterfly",
+    "contents_entries": []
+  },
+  "source_lineage": {
+    "prompt_id": "AC-NURSERY-V3-P019",
+    "relative_file": "production-prompts/art-colour-fun/nursery/v3/pages/AC-NURSERY-V3-P019-symmetry-butterfly.json",
+    "sha256": "d44289aadbbd59fd74788555cf4b38e413a7756cefb338ce34030edcf93f6919"
+  },
+  "design_lock": {
+    "canvas": "A4 portrait; 2480x3508; 300 DPI",
+    "series_name": "BCube Future Skills Learning Seriesâ„¢",
+    "official_logo": "deterministic asset only",
+    "approved_star": "deterministic asset only",
+    "interior_header": "logo top-left; centred navy title; yellow top-right corner; no overlap",
+    "instruction_banner": "below header; fully visible; padded; no activity overlap",
+    "core_pillars": [
+      "Creativity",
+      "Communication",
+      "Curiosity",
+      "Confidence"
+    ],
+    "text": "deterministically composited",
+    "illustration": "unique; page-specific; no cross-book reuse"
+  },
+  "publisher_lock": {
+    "name": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyright": "Â© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+  },
+  "rejection_gates": [
+    "wrong identity/title/number",
+    "generated or obstructed logo/mascot",
+    "missing or broken banner/frame",
+    "crop or overlap",
+    "changed curriculum intent",
+    "unapproved wording",
+    "unresolved variable",
+    "non-A4 or non-300-DPI target"
+  ],
+  "compiled_prompt": "# BCube Production Prompt V4 â€” AC-NURSERY-V4-P021\n\n## 1. Release metadata\n\n- Prompt ID: AC-NURSERY-V4-P021\n- Version: 4.0.0\n- Series: BCube Future Skills Learning Seriesâ„¢\n- Book: Art & Colour Fun\n- Level: Nursery (3+)\n- Physical page: 21 of 44\n- Printed page: 20\n- Page type: activity_page\n- Exact title: Symmetry Butterfly\n- Source prompt: `AC-NURSERY-V3-P019`\n- Source file: `production-prompts/art-colour-fun/nursery/v3/pages/AC-NURSERY-V3-P019-symmetry-butterfly.json`\n- Source SHA-256: `d44289aadbbd59fd74788555cf4b38e413a7756cefb338ce34030edcf93f6919`\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for â€œSymmetry Butterflyâ€. Follow thi}»ëmí¢G§²ÚîÆ­yÒÖæ–fW7BåÆåÆâ22â6ö×–ÆW"fö÷FW%ÆåÆä2ÔåU%4U%’ÕcBÕ#rÂcBããÂ‡—6–6Â#róCBÂ&–çFVB#bÂvöÆBóÂ7&—F–6ÂFVfV7G2Âd”äÄ•¤TBcB$ôÕBåÆâ"À¢'fÆ–FF–öâ#¢°¢'66÷&R#¢À¢&7&—F–6ÅöFVfV7G2#¢À¢'7FGW2#¢$f–æÆ—¦VBcB&ö×B ¢Ğ§Ğ
