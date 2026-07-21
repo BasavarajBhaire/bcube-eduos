@@ -1,0 +1,13 @@
+{
+  "book": "Problem Solvers Gold",
+  "page_count": 44,
+  "approved_pages": 0,
+  "artwork_status": "not_started",
+  "required_assets": [
+    "official_bcube_logo",
+    "approved_star_mascot",
+    "locked_font_family",
+    "page_template"
+  ],
+  "release_allowed": false
+}
