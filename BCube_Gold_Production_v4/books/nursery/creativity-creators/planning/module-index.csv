@@ -1,0 +1,9 @@
+module_id,module_name,start_page,end_page,page_count,primary_focus
+M00,Opening,1,4,4,Orientation and creative habits
+M01,My Creative World,5,11,7,Imagination and visual storytelling
+M02,Shapes and Patterns,12,18,7,Shape transformation and pattern design
+M03,Colours Everywhere,19,25,7,Colour choice and expression
+M04,Build and Create,26,32,7,Construction and redesign
+M05,Creative Nature,33,39,7,Nature observation and reinterpretation
+M06,My Big Ideas,40,43,4,Invention and presentation
+M07,Celebration,44,44,1,Reflection and confidence
