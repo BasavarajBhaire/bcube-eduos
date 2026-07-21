@@ -1,0 +1,45 @@
+name: Generate Nursery Gold v5 Normalization
+
+on:
+  push:
+    branches:
+      - normalization/nursery-gold-v5
+    paths:
+      - 'BCube_Gold_Production_v4/scripts/generate_nursery_normalization_v5.py'
+      - '.github/workflows/generate-nursery-normalization-v5.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: normalization/nursery-gold-v5
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate normalization package
+        run: python BCube_Gold_Production_v4/scripts/generate_nursery_normalization_v5.py
+
+      - name: Commit generated normalization files
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add BCube_Gold_Production_v4/books/catalog.json \
+                  BCube_Gold_Production_v4/books/README.md \
+                  BCube_Gold_Production_v4/normalization/nursery-gold-v5
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+          else
+            git commit -m 'feat(normalization): establish official Nursery Gold v5 catalog [skip ci]'
+            git push origin HEAD:normalization/nursery-gold-v5
+          fi
