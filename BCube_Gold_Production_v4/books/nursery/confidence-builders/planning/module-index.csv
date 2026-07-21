@@ -1,0 +1,9 @@
+module_id,module_name,start_page,end_page,page_count
+M00,Opening,1,4,4
+M01,Knowing Myself,5,11,7
+M02,Trying New Things,12,18,7
+M03,Feelings and Courage,19,25,7
+M04,Small Problems,26,32,7
+M05,Confident Communication,33,39,7
+M06,Growing Confidence,40,43,4
+M07,Celebration,44,44,1

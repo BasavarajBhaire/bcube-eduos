@@ -1,0 +1,46 @@
+# Complete 44-Page Map
+
+- P001: Confidence Builders — Opening — Believe in Myself
+- P002: This Book Belongs to Me — Opening — Believe in Myself
+- P003: Meet Star — Opening — Speak with Confidence
+- P004: I Can Try — Opening — Try New Things
+- P005: This Is Me — Knowing Myself — Believe in Myself
+- P006: My Happy Face — Knowing Myself — Believe in Myself
+- P007: Things I Like — Knowing Myself — Speak with Confidence
+- P008: I Can Choose — Knowing Myself — Believe in Myself
+- P009: My Special Talent — Knowing Myself — Believe in Myself
+- P010: I Can Say My Name — Knowing Myself — Speak with Confidence
+- P011: I Am Proud of Me — Knowing Myself — Believe in Myself
+- P012: Try One Small Step — Trying New Things — Try New Things
+- P013: I Can Do It Slowly — Trying New Things — Try New Things
+- P014: Try Again — Trying New Things — Solve Small Problems
+- P015: New Food Adventure — Trying New Things — Try New Things
+- P016: Join the Game — Trying New Things — Speak with Confidence
+- P017: Ask for Help — Trying New Things — Speak with Confidence
+- P018: Celebrate My Effort — Trying New Things — Believe in Myself
+- P019: How Do I Feel? — Feelings and Courage — Speak with Confidence
+- P020: When I Feel Shy — Feelings and Courage — Believe in Myself
+- P021: Calm My Body — Feelings and Courage — Solve Small Problems
+- P022: Say What I Need — Feelings and Courage — Speak with Confidence
+- P023: Brave Little Voice — Feelings and Courage — Speak with Confidence
+- P024: It Is Okay to Make Mistakes — Feelings and Courage — Try New Things
+- P025: I Can Feel Better — Feelings and Courage — Solve Small Problems
+- P026: Choose a Solution — Small Problems — Solve Small Problems
+- P027: Fix the Puzzle — Small Problems — Solve Small Problems
+- P028: Share and Take Turns — Small Problems — Speak with Confidence
+- P029: Find Another Way — Small Problems — Solve Small Problems
+- P030: What Can I Do Next? — Small Problems — Solve Small Problems
+- P031: Help a Friend — Small Problems — Speak with Confidence
+- P032: I Solved It — Small Problems — Believe in Myself
+- P033: Stand Tall — Confident Communication — Speak with Confidence
+- P034: Look and Listen — Confident Communication — Speak with Confidence
+- P035: Say It Clearly — Confident Communication — Speak with Confidence
+- P036: My Turn to Speak — Confident Communication — Speak with Confidence
+- P037: Kind Words — Confident Communication — Speak with Confidence
+- P038: Tell My Idea — Confident Communication — Speak with Confidence
+- P039: Speak to the Group — Confident Communication — Believe in Myself
+- P040: My Big Challenge — Growing Confidence — Try New Things
+- P041: My Confidence Ladder — Growing Confidence — Believe in Myself
+- P042: I Can Help — Growing Confidence — Speak with Confidence
+- P043: Show What I Can Do — Growing Confidence — Believe in Myself
+- P044: I Am a Confidence Builder — Celebration — Believe in Myself

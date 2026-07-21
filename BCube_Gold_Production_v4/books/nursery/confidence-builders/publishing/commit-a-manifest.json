@@ -1,0 +1,18 @@
+{
+  "book": "Confidence Builders Gold\u2122",
+  "age": "Nursery (3+)",
+  "commit": "A",
+  "phases": [
+    1,
+    2,
+    3
+  ],
+  "page_count": 44,
+  "prompt_range": "P001-P044",
+  "prompt_id_range": "CB-NURSERY-V5-P001-P044",
+  "workbooks": [
+    "Confidence_Builders_Gold_Production_Prompts_v5.csv",
+    "Confidence_Builders_Gold_Production_Prompts_v5.xlsx"
+  ],
+  "status": "production_package_complete"
+}
