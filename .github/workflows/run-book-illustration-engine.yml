@@ -61,6 +61,12 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Prepare selected-book Stage 1 queue
+        shell: bash
+        run: |
+          python BCube_Gold_Production_v4/pipeline/stage2-illustration-runtime/prepare_book_queue.py \
+            --book "${{ inputs.book }}"
+
       - name: Validate real-generation credentials
         if: ${{ inputs.mode == 'generate' || inputs.mode == 'resume' }}
         shell: bash
