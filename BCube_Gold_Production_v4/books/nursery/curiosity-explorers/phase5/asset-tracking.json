@@ -1,0 +1,10 @@
+{
+  "book_id": "CURIOSITY_EXPLORERS_NURSERY",
+  "phase": 5,
+  "expected_pages": 44,
+  "approved_pages": 0,
+  "candidate_pages": 0,
+  "status": "artwork_not_started",
+  "approval_policy": "human_visual_qa_required",
+  "page_assets": {}
+}
