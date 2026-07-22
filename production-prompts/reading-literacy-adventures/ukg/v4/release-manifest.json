@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Reading & Literacy Adventures",
+  "slug": "reading-literacy-adventures",
+  "prefix": "RL",
+  "level": "UKG (5+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "RL-UKG-V4-P001",
+      "title": "Reading & Literacy Adventures",
+      "markdown": "pages/RL-UKG-V4-P001-reading-and-literacy-adventures.md",
+      "json": "pages/RL-UKG-V4-P001-reading-and-literacy-adventures.json",
+      "source_prompt": "RL-UKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "RL-UKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/RL-UKG-V4-P002-about-this-book.md",
+      "json": "pages/RL-UKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "RL-UKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/RL-UKG-V4-P003-copyright.md",
+      "json": "pages/RL-UKG-V4-P003-copyright.json",
+      "source_prompt": "RL-UKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "RL-UKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/RL-UKG-V4-P004-contents-part-1.md",
+      "json": "pages/RL-UKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "RL-UKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/RL-UKG-V4-P005-contents-part-2.md",
+      "json": "pages/RL-UKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "RL-UKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/RL-UKG-V4-P006-welcome.md",
+      "json": "pages/RL-UKG-V4-P006-welcome.json",
+      "source_prompt": "RL-UKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "RL-UKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/RL-UKG-V4-P007-meet-star.md",
+      "json": "pages/RL-UKG-V4-P007-meet-star.json",
+      "source_prompt": "RL-UKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "RL-UKG-V4-P008",
+      "title": "Letter Sounds Review",
+      "markdown": "pages/RL-UKG-V4-P008-letter-sounds-review.md",
+      "json": "pages/RL-UKG-V4-P008-letter-sounds-review.json",
+      "source_prompt": "RL-UKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "RL-UKG-V4-P009",
+      "title": "Blend the Sounds",
+      "markdown": "pages/RL-UKG-V4-P009-blend-the-sounds.md",
+      "json": "pages/RL-UKG-V4-P009-blend-the-sounds.json",
+      "source_prompt": "RL-UKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "RL-UKG-V4-P010",
+      "title": "Read CVC Words",
+      "markdown": "pages/RL-UKG-V4-P010-read-cvc-words.md",
+      "json": "pages/RL-UKG-V4-P010-read-cvc-words.json",
+      "source_prompt": "RL-UKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "RL-UKG-V4-P011",
+      "title": "Picture to Word",
+      "markdown": "pages/RL-UKG-V4-P011-picture-to-word.md",
+      "json": "pages/RL-UKG-V4-P011-picture-to-word.json",
+      "source_prompt": "RL-UKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "RL-UKG-V4-P012",
+      "title": "Sight Words",
+      "markdown": "pages/RL-UKG-V4-P012-sight-words.md",
+      "json": "pages/RL-UKG-V4-P012-sight-words.json",
+      "source_prompt": "RL-UKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "RL-UKG-V4-P013",
+      "title": "Rhyming Families",
+      "markdown": "pages/RL-UKG-V4-P013-rhyming-families.md",
+      "json": "pages/RL-UKG-V4-P013-rhyming-families.json",
+      "source_prompt": "RL-UKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "RL-UKG-V4-P014",
+      "title": "Read the Sentence",
+      "markdown": "pages/RL-UKG-V4-P014-read-the-sentence.md",
+      "json": "pages/RL-UKG-V4-P014-read-the-sentence.json",
+      "source_prompt": "RL-UKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "RL-UKG-V4-P015",
+      "title": "Match Word & Picture",
+      "markdown": "pages/RL-UKG-V4-P015-match-word-and-picture.md",
+      "json": "pages/RL-UKG-V4-P015-match-word-and-picture.json",
+      "source_prompt": "RL-UKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "RL-UKG-V4-P016",
+      "title": "Beginning Sounds",
+      "markdown": "pages/RL-UKG-V4-P016-beginning-sounds.md",
+      "json": "pages/RL-UKG-V4-P016-beginning-sounds.json",
+      "source_prompt": "RL-UKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "RL-UKG-V4-P017",
+      "title": "Ending Sounds",
+      "markdown": "pages/RL-UKG-V4-P017-ending-sounds.md",
+      "json": "pages/RL-UKG-V4-P017-ending-sounds.json",
+      "source_prompt": "RL-UKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "RL-UKG-V4-P018",
+      "title": "Middle Sounds",
+      "markdown": "pages/RL-UKG-V4-P018-middle-sounds.md",
+      "json": "pages/RL-UKG-V4-P018-middle-sounds.json",
+      "source_prompt": "RL-UKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "RL-UKG-V4-P019",
+      "title": "Read and Draw",
+      "markdown": "pages/RL-UKG-V4-P019-read-and-draw.md",
+      "json": "pages/RL-UKG-V4-P019-read-and-draw.json",
+      "source_prompt": "RL-UKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "RL-UKG-V4-P020",
+      "title": "Story Time",
+      "markdown": "pages/RL-UKG-V4-P020-story-time.md",
+      "json": "pages/RL-UKG-V4-P020-story-time.json",
+      "source_prompt": "RL-UKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "RL-UKG-V4-P021",
+      "title": "Story Sequence",
+      "markdown": "pages/RL-UKG-V4-P021-story-sequence.md",
+      "json": "pages/RL-UKG-V4-P021-story-sequence.json",
+      "source_prompt": "RL-UKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "RL-UKG-V4-P022",
+      "title": "Who? What? Where?",
+      "markdown": "pages/RL-UKG-V4-P022-who-what-where.md",
+      "json": "pages/RL-UKG-V4-P022-who-what-where.json",
+      "source_prompt": "RL-UKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "RL-UKG-V4-P023",
+      "title": "Answer the Question",
+      "markdown": "pages/RL-UKG-V4-P023-answer-the-question.md",
+      "json": "pages/RL-UKG-V4-P023-answer-the-question.json",
+      "source_prompt": "RL-UKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "RL-UKG-V4-P024",
+      "title": "Vocabulary Boost",
+      "markdown": "pages/RL-UKG-V4-P024-vocabulary-boost.md",
+      "json": "pages/RL-UKG-V4-P024-vocabulary-boost.json",
+      "source_prompt": "RL-UKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "RL-UKG-V4-P025",
+      "title": "Opposites",
+      "markdown": "pages/RL-UKG-V4-P025-opposites.md",
+      "json": "pages/RL-UKG-V4-P025-opposites.json",
+      "source_prompt": "RL-UKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "RL-UKG-V4-P026",
+      "title": "Describing Words",
+      "markdown": "pages/RL-UKG-V4-P026-describing-words.md",
+      "json": "pages/RL-UKG-V4-P026-describing-words.json",
+      "source_prompt": "RL-UKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "RL-UKG-V4-P027",
+      "title": "Action Words",
+      "markdown": "pages/RL-UKG-V4-P027-action-words.md",
+      "json": "pages/RL-UKG-V4-P027-action-words.json",
+      "source_prompt": "RL-UKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "RL-UKG-V4-P028",
+      "title": "Punctuation Fun",
+      "markdown": "pages/RL-UKG-V4-P028-punctuation-fun.md",
+      "json": "pages/RL-UKG-V4-P028-punctuation-fun.json",
+      "source_prompt": "RL-UKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "RL-UKG-V4-P029",
+      "title": "Build a Sentence",
+      "markdown": "pages/RL-UKG-V4-P029-build-a-sentence.md",
+      "json": "pages/RL-UKG-V4-P029-build-a-sentence.json",
+      "source_prompt": "RL-UKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "RL-UKG-V4-P030",
+      "title": "Read with Expression",
+      "markdown": "pages/RL-UKG-V4-P030-read-with-expression.md",
+      "json": "pages/RL-UKG-V4-P030-read-with-expression.json",
+      "source_prompt": "RL-UKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "RL-UKG-V4-P031",
+      "title": "Mini Reading",
+      "markdown": "pages/RL-UKG-V4-P031-mini-reading.md",
+      "json": "pages/RL-UKG-V4-P031-mini-reading.json",
+      "source_prompt": "RL-UKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "RL-UKG-V4-P032",
+      "title": "Library Adventure",
+      "markdown": "pages/RL-UKG-V4-P032-library-adventure.md",
+      "json": "pages/RL-UKG-V4-P032-library-adventure.json",
+      "source_prompt": "RL-UKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "RL-UKG-V4-P033",
+      "title": "Reading Review",
+      "markdown": "pages/RL-UKG-V4-P033-reading-review.md",
+      "json": "pages/RL-UKG-V4-P033-reading-review.json",
+      "source_prompt": "RL-UKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "RL-UKG-V4-P034",
+      "title": "Mini Project",
+      "markdown": "pages/RL-UKG-V4-P034-mini-project.md",
+      "json": "pages/RL-UKG-V4-P034-mini-project.json",
+      "source_prompt": "RL-UKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "RL-UKG-V4-P035",
+      "title": "Reflection",
+      "markdown": "pages/RL-UKG-V4-P035-reflection.md",
+      "json": "pages/RL-UKG-V4-P035-reflection.json",
+      "source_prompt": "RL-UKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "RL-UKG-V4-P036",
+      "title": "Showcase",
+      "markdown": "pages/RL-UKG-V4-P036-showcase.md",
+      "json": "pages/RL-UKG-V4-P036-showcase.json",
+      "source_prompt": "RL-UKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "RL-UKG-V4-P037",
+      "title": "Grand Review",
+      "markdown": "pages/RL-UKG-V4-P037-grand-review.md",
+      "json": "pages/RL-UKG-V4-P037-grand-review.json",
+      "source_prompt": "RL-UKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "RL-UKG-V4-P038",
+      "title": "My Achievement",
+      "markdown": "pages/RL-UKG-V4-P038-my-achievement.md",
+      "json": "pages/RL-UKG-V4-P038-my-achievement.json",
+      "source_prompt": "RL-UKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "RL-UKG-V4-P039",
+      "title": "My Reading Goals",
+      "markdown": "pages/RL-UKG-V4-P039-my-reading-goals.md",
+      "json": "pages/RL-UKG-V4-P039-my-reading-goals.json",
+      "source_prompt": "RL-UKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "RL-UKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/RL-UKG-V4-P040-celebration.md",
+      "json": "pages/RL-UKG-V4-P040-celebration.json",
+      "source_prompt": "RL-UKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "RL-UKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/RL-UKG-V4-P041-certificate.md",
+      "json": "pages/RL-UKG-V4-P041-certificate.json",
+      "source_prompt": "RL-UKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "RL-UKG-V4-P042",
+      "title": "I Am a Reader",
+      "markdown": "pages/RL-UKG-V4-P042-i-am-a-reader.md",
+      "json": "pages/RL-UKG-V4-P042-i-am-a-reader.json",
+      "source_prompt": "RL-UKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "RL-UKG-V4-P043",
+      "title": "My Reading Celebration",
+      "markdown": "pages/RL-UKG-V4-P043-my-reading-celebration.md",
+      "json": "pages/RL-UKG-V4-P043-my-reading-celebration.json",
+      "source_prompt": "RL-UKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "RL-UKG-V4-P044",
+      "title": "Reading & Literacy Adventures — Back Cover",
+      "markdown": "pages/RL-UKG-V4-P044-reading-and-literacy-adventures-back-cover.md",
+      "json": "pages/RL-UKG-V4-P044-reading-and-literacy-adventures-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

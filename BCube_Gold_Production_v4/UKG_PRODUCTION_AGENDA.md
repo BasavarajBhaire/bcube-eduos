@@ -32,7 +32,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | No. | Book | Prefix | Status |
 | ---: | --- | --- | --- |
 | 1 | Communication Masters | CM | COMPLETE — V4 prompts |
-| 2 | Reading & Literacy Adventures | RL | QUEUED |
+| 2 | Reading & Literacy Adventures | RL | COMPLETE — V4 prompts |
 | 3 | Maths Explorers | ME | QUEUED |
 | 4 | Logic & Brain Builders | LB | QUEUED |
 | 5 | Young Scientists | YS | QUEUED |
