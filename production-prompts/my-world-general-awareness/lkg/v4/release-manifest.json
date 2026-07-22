@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "My World & General Awareness",
+  "slug": "my-world-general-awareness",
+  "prefix": "MW",
+  "level": "LKG (4+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "MW-LKG-V4-P001",
+      "title": "My World & General Awareness",
+      "markdown": "pages/MW-LKG-V4-P001-my-world-and-general-awareness.md",
+      "json": "pages/MW-LKG-V4-P001-my-world-and-general-awareness.json",
+      "source_prompt": "MW-LKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "MW-LKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/MW-LKG-V4-P002-about-this-book.md",
+      "json": "pages/MW-LKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "MW-LKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/MW-LKG-V4-P003-copyright.md",
+      "json": "pages/MW-LKG-V4-P003-copyright.json",
+      "source_prompt": "MW-LKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "MW-LKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/MW-LKG-V4-P004-contents-part-1.md",
+      "json": "pages/MW-LKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "MW-LKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/MW-LKG-V4-P005-contents-part-2.md",
+      "json": "pages/MW-LKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "MW-LKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/MW-LKG-V4-P006-welcome.md",
+      "json": "pages/MW-LKG-V4-P006-welcome.json",
+      "source_prompt": "MW-LKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "MW-LKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/MW-LKG-V4-P007-meet-star.md",
+      "json": "pages/MW-LKG-V4-P007-meet-star.json",
+      "source_prompt": "MW-LKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "MW-LKG-V4-P008",
+      "title": "My Family",
+      "markdown": "pages/MW-LKG-V4-P008-my-family.md",
+      "json": "pages/MW-LKG-V4-P008-my-family.json",
+      "source_prompt": "MW-LKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "MW-LKG-V4-P009",
+      "title": "My Home",
+      "markdown": "pages/MW-LKG-V4-P009-my-home.md",
+      "json": "pages/MW-LKG-V4-P009-my-home.json",
+      "source_prompt": "MW-LKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "MW-LKG-V4-P010",
+      "title": "My School",
+      "markdown": "pages/MW-LKG-V4-P010-my-school.md",
+      "json": "pages/MW-LKG-V4-P010-my-school.json",
+      "source_prompt": "MW-LKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "MW-LKG-V4-P011",
+      "title": "Community Helpers",
+      "markdown": "pages/MW-LKG-V4-P011-community-helpers.md",
+      "json": "pages/MW-LKG-V4-P011-community-helpers.json",
+      "source_prompt": "MW-LKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "MW-LKG-V4-P012",
+      "title": "My Classroom",
+      "markdown": "pages/MW-LKG-V4-P012-my-classroom.md",
+      "json": "pages/MW-LKG-V4-P012-my-classroom.json",
+      "source_prompt": "MW-LKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "MW-LKG-V4-P013",
+      "title": "My City",
+      "markdown": "pages/MW-LKG-V4-P013-my-city.md",
+      "json": "pages/MW-LKG-V4-P013-my-city.json",
+      "source_prompt": "MW-LKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "MW-LKG-V4-P014",
+      "title": "Transport Around Us",
+      "markdown": "pages/MW-LKG-V4-P014-transport-around-us.md",
+      "json": "pages/MW-LKG-V4-P014-transport-around-us.json",
+      "source_prompt": "MW-LKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "MW-LKG-V4-P015",
+      "title": "Road Safety",
+      "markdown": "pages/MW-LKG-V4-P015-road-safety.md",
+      "json": "pages/MW-LKG-V4-P015-road-safety.json",
+      "source_prompt": "MW-LKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "MW-LKG-V4-P016",
+      "title": "Places Around Me",
+      "markdown": "pages/MW-LKG-V4-P016-places-around-me.md",
+      "json": "pages/MW-LKG-V4-P016-places-around-me.json",
+      "source_prompt": "MW-LKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "MW-LKG-V4-P017",
+      "title": "Weather Around Me",
+      "markdown": "pages/MW-LKG-V4-P017-weather-around-me.md",
+      "json": "pages/MW-LKG-V4-P017-weather-around-me.json",
+      "source_prompt": "MW-LKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "MW-LKG-V4-P018",
+      "title": "Seasons",
+      "markdown": "pages/MW-LKG-V4-P018-seasons.md",
+      "json": "pages/MW-LKG-V4-P018-seasons.json",
+      "source_prompt": "MW-LKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "MW-LKG-V4-P019",
+      "title": "Plants Around Us",
+      "markdown": "pages/MW-LKG-V4-P019-plants-around-us.md",
+      "json": "pages/MW-LKG-V4-P019-plants-around-us.json",
+      "source_prompt": "MW-LKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "MW-LKG-V4-P020",
+      "title": "Animals Around Us",
+      "markdown": "pages/MW-LKG-V4-P020-animals-around-us.md",
+      "json": "pages/MW-LKG-V4-P020-animals-around-us.json",
+      "source_prompt": "MW-LKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "MW-LKG-V4-P021",
+      "title": "Birds & Insects",
+      "markdown": "pages/MW-LKG-V4-P021-birds-and-insects.md",
+      "json": "pages/MW-LKG-V4-P021-birds-and-insects.json",
+      "source_prompt": "MW-LKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "MW-LKG-V4-P022",
+      "title": "Water Around Us",
+      "markdown": "pages/MW-LKG-V4-P022-water-around-us.md",
+      "json": "pages/MW-LKG-V4-P022-water-around-us.json",
+      "source_prompt": "MW-LKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "MW-LKG-V4-P023",
+      "title": "Healthy Food",
+      "markdown": "pages/MW-LKG-V4-P023-healthy-food.md",
+      "json": "pages/MW-LKG-V4-P023-healthy-food.json",
+      "source_prompt": "MW-LKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "MW-LKG-V4-P024",
+      "title": "Fruits & Vegetables",
+      "markdown": "pages/MW-LKG-V4-P024-fruits-and-vegetables.md",
+      "json": "pages/MW-LKG-V4-P024-fruits-and-vegetables.json",
+      "source_prompt": "MW-LKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "MW-LKG-V4-P025",
+      "title": "Good Manners",
+      "markdown": "pages/MW-LKG-V4-P025-good-manners.md",
+      "json": "pages/MW-LKG-V4-P025-good-manners.json",
+      "source_prompt": "MW-LKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "MW-LKG-V4-P026",
+      "title": "Festivals",
+      "markdown": "pages/MW-LKG-V4-P026-festivals.md",
+      "json": "pages/MW-LKG-V4-P026-festivals.json",
+      "source_prompt": "MW-LKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "MW-LKG-V4-P027",
+      "title": "National Symbols",
+      "markdown": "pages/MW-LKG-V4-P027-national-symbols.md",
+      "json": "pages/MW-LKG-V4-P027-national-symbols.json",
+      "source_prompt": "MW-LKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "MW-LKG-V4-P028",
+      "title": "Our Earth",
+      "markdown": "pages/MW-LKG-V4-P028-our-earth.md",
+      "json": "pages/MW-LKG-V4-P028-our-earth.json",
+      "source_prompt": "MW-LKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "MW-LKG-V4-P029",
+      "title": "Reduce Reuse Recycle",
+      "markdown": "pages/MW-LKG-V4-P029-reduce-reuse-recycle.md",
+      "json": "pages/MW-LKG-V4-P029-reduce-reuse-recycle.json",
+      "source_prompt": "MW-LKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "MW-LKG-V4-P030",
+      "title": "Maps & Directions",
+      "markdown": "pages/MW-LKG-V4-P030-maps-and-directions.md",
+      "json": "pages/MW-LKG-V4-P030-maps-and-directions.json",
+      "source_prompt": "MW-LKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "MW-LKG-V4-P031",
+      "title": "People Around Me",
+      "markdown": "pages/MW-LKG-V4-P031-people-around-me.md",
+      "json": "pages/MW-LKG-V4-P031-people-around-me.json",
+      "source_prompt": "MW-LKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "MW-LKG-V4-P032",
+      "title": "Jobs We See",
+      "markdown": "pages/MW-LKG-V4-P032-jobs-we-see.md",
+      "json": "pages/MW-LKG-V4-P032-jobs-we-see.json",
+      "source_prompt": "MW-LKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "MW-LKG-V4-P033",
+      "title": "My Daily Routine",
+      "markdown": "pages/MW-LKG-V4-P033-my-daily-routine.md",
+      "json": "pages/MW-LKG-V4-P033-my-daily-routine.json",
+      "source_prompt": "MW-LKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "MW-LKG-V4-P034",
+      "title": "Technology Around Me",
+      "markdown": "pages/MW-LKG-V4-P034-technology-around-me.md",
+      "json": "pages/MW-LKG-V4-P034-technology-around-me.json",
+      "source_prompt": "MW-LKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "MW-LKG-V4-P035",
+      "title": "Safety at Home",
+      "markdown": "pages/MW-LKG-V4-P035-safety-at-home.md",
+      "json": "pages/MW-LKG-V4-P035-safety-at-home.json",
+      "source_prompt": "MW-LKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "MW-LKG-V4-P036",
+      "title": "Safety Outside",
+      "markdown": "pages/MW-LKG-V4-P036-safety-outside.md",
+      "json": "pages/MW-LKG-V4-P036-safety-outside.json",
+      "source_prompt": "MW-LKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "MW-LKG-V4-P037",
+      "title": "General Awareness Review",
+      "markdown": "pages/MW-LKG-V4-P037-general-awareness-review.md",
+      "json": "pages/MW-LKG-V4-P037-general-awareness-review.json",
+      "source_prompt": "MW-LKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "MW-LKG-V4-P038",
+      "title": "My Discovery",
+      "markdown": "pages/MW-LKG-V4-P038-my-discovery.md",
+      "json": "pages/MW-LKG-V4-P038-my-discovery.json",
+      "source_prompt": "MW-LKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "MW-LKG-V4-P039",
+      "title": "My World Journal",
+      "markdown": "pages/MW-LKG-V4-P039-my-world-journal.md",
+      "json": "pages/MW-LKG-V4-P039-my-world-journal.json",
+      "source_prompt": "MW-LKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "MW-LKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/MW-LKG-V4-P040-celebration.md",
+      "json": "pages/MW-LKG-V4-P040-celebration.json",
+      "source_prompt": "MW-LKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "MW-LKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/MW-LKG-V4-P041-certificate.md",
+      "json": "pages/MW-LKG-V4-P041-certificate.json",
+      "source_prompt": "MW-LKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "MW-LKG-V4-P042",
+      "title": "I Know My World",
+      "markdown": "pages/MW-LKG-V4-P042-i-know-my-world.md",
+      "json": "pages/MW-LKG-V4-P042-i-know-my-world.json",
+      "source_prompt": "MW-LKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "MW-LKG-V4-P043",
+      "title": "My World Celebration",
+      "markdown": "pages/MW-LKG-V4-P043-my-world-celebration.md",
+      "json": "pages/MW-LKG-V4-P043-my-world-celebration.json",
+      "source_prompt": "MW-LKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "MW-LKG-V4-P044",
+      "title": "My World & General Awareness — Back Cover",
+      "markdown": "pages/MW-LKG-V4-P044-my-world-and-general-awareness-back-cover.md",
+      "json": "pages/MW-LKG-V4-P044-my-world-and-general-awareness-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

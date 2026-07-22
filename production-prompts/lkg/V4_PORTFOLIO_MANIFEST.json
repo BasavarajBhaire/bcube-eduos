@@ -4,7 +4,7 @@
   "level": "LKG (4+)",
   "status": "PASS",
   "books_total": 10,
-  "books_completed": 6,
+  "books_completed": 7,
   "completed": [
     {
       "slug": "communication-champions",
@@ -35,20 +35,24 @@
       "slug": "creativity-challenges",
       "book": "Creativity Challenges",
       "prompts": 44
+    },
+    {
+      "slug": "my-world-general-awareness",
+      "book": "My World & General Awareness",
+      "prompts": 44
     }
   ],
   "queue": [
-    "my-world-general-awareness",
     "healthy-habits-safety",
     "art-colour-fun",
     "confidence-social-skills"
   ],
   "totals": {
-    "page_prompts": 264,
-    "markdown_files": 264,
-    "json_files": 264,
-    "source_backed_pages": 240,
-    "checks": 3432,
+    "page_prompts": 308,
+    "markdown_files": 308,
+    "json_files": 308,
+    "source_backed_pages": 280,
+    "checks": 4004,
     "critical_defects": 0
   },
   "validation_report": "BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json"
