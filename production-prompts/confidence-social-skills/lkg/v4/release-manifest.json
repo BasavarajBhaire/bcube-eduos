@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Confidence & Social Skills",
+  "slug": "confidence-social-skills",
+  "prefix": "CS",
+  "level": "LKG (4+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "CS-LKG-V4-P001",
+      "title": "Confidence & Social Skills",
+      "markdown": "pages/CS-LKG-V4-P001-confidence-and-social-skills.md",
+      "json": "pages/CS-LKG-V4-P001-confidence-and-social-skills.json",
+      "source_prompt": "CS-LKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "CS-LKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/CS-LKG-V4-P002-about-this-book.md",
+      "json": "pages/CS-LKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "CS-LKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/CS-LKG-V4-P003-copyright.md",
+      "json": "pages/CS-LKG-V4-P003-copyright.json",
+      "source_prompt": "CS-LKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "CS-LKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/CS-LKG-V4-P004-contents-part-1.md",
+      "json": "pages/CS-LKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "CS-LKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/CS-LKG-V4-P005-contents-part-2.md",
+      "json": "pages/CS-LKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "CS-LKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/CS-LKG-V4-P006-welcome.md",
+      "json": "pages/CS-LKG-V4-P006-welcome.json",
+      "source_prompt": "CS-LKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "CS-LKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/CS-LKG-V4-P007-meet-star.md",
+      "json": "pages/CS-LKG-V4-P007-meet-star.json",
+      "source_prompt": "CS-LKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "CS-LKG-V4-P008",
+      "title": "I Am Growing",
+      "markdown": "pages/CS-LKG-V4-P008-i-am-growing.md",
+      "json": "pages/CS-LKG-V4-P008-i-am-growing.json",
+      "source_prompt": "CS-LKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "CS-LKG-V4-P009",
+      "title": "My Strengths",
+      "markdown": "pages/CS-LKG-V4-P009-my-strengths.md",
+      "json": "pages/CS-LKG-V4-P009-my-strengths.json",
+      "source_prompt": "CS-LKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "CS-LKG-V4-P010",
+      "title": "I Can Try",
+      "markdown": "pages/CS-LKG-V4-P010-i-can-try.md",
+      "json": "pages/CS-LKG-V4-P010-i-can-try.json",
+      "source_prompt": "CS-LKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "CS-LKG-V4-P011",
+      "title": "Trying Again",
+      "markdown": "pages/CS-LKG-V4-P011-trying-again.md",
+      "json": "pages/CS-LKG-V4-P011-trying-again.json",
+      "source_prompt": "CS-LKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "CS-LKG-V4-P012",
+      "title": "Asking for Help",
+      "markdown": "pages/CS-LKG-V4-P012-asking-for-help.md",
+      "json": "pages/CS-LKG-V4-P012-asking-for-help.json",
+      "source_prompt": "CS-LKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "CS-LKG-V4-P013",
+      "title": "Naming Feelings",
+      "markdown": "pages/CS-LKG-V4-P013-naming-feelings.md",
+      "json": "pages/CS-LKG-V4-P013-naming-feelings.json",
+      "source_prompt": "CS-LKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "CS-LKG-V4-P014",
+      "title": "Calm Breathing",
+      "markdown": "pages/CS-LKG-V4-P014-calm-breathing.md",
+      "json": "pages/CS-LKG-V4-P014-calm-breathing.json",
+      "source_prompt": "CS-LKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "CS-LKG-V4-P015",
+      "title": "When I Feel Angry",
+      "markdown": "pages/CS-LKG-V4-P015-when-i-feel-angry.md",
+      "json": "pages/CS-LKG-V4-P015-when-i-feel-angry.json",
+      "source_prompt": "CS-LKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "CS-LKG-V4-P016",
+      "title": "When I Feel Sad",
+      "markdown": "pages/CS-LKG-V4-P016-when-i-feel-sad.md",
+      "json": "pages/CS-LKG-V4-P016-when-i-feel-sad.json",
+      "source_prompt": "CS-LKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "CS-LKG-V4-P017",
+      "title": "Feeling Proud",
+      "markdown": "pages/CS-LKG-V4-P017-feeling-proud.md",
+      "json": "pages/CS-LKG-V4-P017-feeling-proud.json",
+      "source_prompt": "CS-LKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "CS-LKG-V4-P018",
+      "title": "My Friends",
+      "markdown": "pages/CS-LKG-V4-P018-my-friends.md",
+      "json": "pages/CS-LKG-V4-P018-my-friends.json",
+      "source_prompt": "CS-LKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "CS-LKG-V4-P019",
+      "title": "Kind Words",
+      "markdown": "pages/CS-LKG-V4-P019-kind-words.md",
+      "json": "pages/CS-LKG-V4-P019-kind-words.json",
+      "source_prompt": "CS-LKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "CS-LKG-V4-P020",
+      "title": "Sharing",
+      "markdown": "pages/CS-LKG-V4-P020-sharing.md",
+      "json": "pages/CS-LKG-V4-P020-sharing.json",
+      "source_prompt": "CS-LKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "CS-LKG-V4-P021",
+      "title": "Taking Turns",
+      "markdown": "pages/CS-LKG-V4-P021-taking-turns.md",
+      "json": "pages/CS-LKG-V4-P021-taking-turns.json",
+      "source_prompt": "CS-LKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "CS-LKG-V4-P022",
+      "title": "Joining Play",
+      "markdown": "pages/CS-LKG-V4-P022-joining-play.md",
+      "json": "pages/CS-LKG-V4-P022-joining-play.json",
+      "source_prompt": "CS-LKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "CS-LKG-V4-P023",
+      "title": "Listening to Others",
+      "markdown": "pages/CS-LKG-V4-P023-listening-to-others.md",
+      "json": "pages/CS-LKG-V4-P023-listening-to-others.json",
+      "source_prompt": "CS-LKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "CS-LKG-V4-P024",
+      "title": "Please and Thank You",
+      "markdown": "pages/CS-LKG-V4-P024-please-and-thank-you.md",
+      "json": "pages/CS-LKG-V4-P024-please-and-thank-you.json",
+      "source_prompt": "CS-LKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "CS-LKG-V4-P025",
+      "title": "Solving Small Problems",
+      "markdown": "pages/CS-LKG-V4-P025-solving-small-problems.md",
+      "json": "pages/CS-LKG-V4-P025-solving-small-problems.json",
+      "source_prompt": "CS-LKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "CS-LKG-V4-P026",
+      "title": "Saying Sorry",
+      "markdown": "pages/CS-LKG-V4-P026-saying-sorry.md",
+      "json": "pages/CS-LKG-V4-P026-saying-sorry.json",
+      "source_prompt": "CS-LKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "CS-LKG-V4-P027",
+      "title": "Forgiving",
+      "markdown": "pages/CS-LKG-V4-P027-forgiving.md",
+      "json": "pages/CS-LKG-V4-P027-forgiving.json",
+      "source_prompt": "CS-LKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "CS-LKG-V4-P028",
+      "title": "Working Together",
+      "markdown": "pages/CS-LKG-V4-P028-working-together.md",
+      "json": "pages/CS-LKG-V4-P028-working-together.json",
+      "source_prompt": "CS-LKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "CS-LKG-V4-P029",
+      "title": "Classroom Responsibility",
+      "markdown": "pages/CS-LKG-V4-P029-classroom-responsibility.md",
+      "json": "pages/CS-LKG-V4-P029-classroom-responsibility.json",
+      "source_prompt": "CS-LKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "CS-LKG-V4-P030",
+      "title": "I Can Choose",
+      "markdown": "pages/CS-LKG-V4-P030-i-can-choose.md",
+      "json": "pages/CS-LKG-V4-P030-i-can-choose.json",
+      "source_prompt": "CS-LKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "CS-LKG-V4-P031",
+      "title": "I Can Wait",
+      "markdown": "pages/CS-LKG-V4-P031-i-can-wait.md",
+      "json": "pages/CS-LKG-V4-P031-i-can-wait.json",
+      "source_prompt": "CS-LKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "CS-LKG-V4-P032",
+      "title": "I Can Finish",
+      "markdown": "pages/CS-LKG-V4-P032-i-can-finish.md",
+      "json": "pages/CS-LKG-V4-P032-i-can-finish.json",
+      "source_prompt": "CS-LKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "CS-LKG-V4-P033",
+      "title": "Safe and Unsafe Choices",
+      "markdown": "pages/CS-LKG-V4-P033-safe-and-unsafe-choices.md",
+      "json": "pages/CS-LKG-V4-P033-safe-and-unsafe-choices.json",
+      "source_prompt": "CS-LKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "CS-LKG-V4-P034",
+      "title": "Trusted Adults",
+      "markdown": "pages/CS-LKG-V4-P034-trusted-adults.md",
+      "json": "pages/CS-LKG-V4-P034-trusted-adults.json",
+      "source_prompt": "CS-LKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "CS-LKG-V4-P035",
+      "title": "Speaking Up",
+      "markdown": "pages/CS-LKG-V4-P035-speaking-up.md",
+      "json": "pages/CS-LKG-V4-P035-speaking-up.json",
+      "source_prompt": "CS-LKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "CS-LKG-V4-P036",
+      "title": "Personal Space",
+      "markdown": "pages/CS-LKG-V4-P036-personal-space.md",
+      "json": "pages/CS-LKG-V4-P036-personal-space.json",
+      "source_prompt": "CS-LKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "CS-LKG-V4-P037",
+      "title": "Helping Others",
+      "markdown": "pages/CS-LKG-V4-P037-helping-others.md",
+      "json": "pages/CS-LKG-V4-P037-helping-others.json",
+      "source_prompt": "CS-LKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "CS-LKG-V4-P038",
+      "title": "Confidence Challenge",
+      "markdown": "pages/CS-LKG-V4-P038-confidence-challenge.md",
+      "json": "pages/CS-LKG-V4-P038-confidence-challenge.json",
+      "source_prompt": "CS-LKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "CS-LKG-V4-P039",
+      "title": "Friendship Review",
+      "markdown": "pages/CS-LKG-V4-P039-friendship-review.md",
+      "json": "pages/CS-LKG-V4-P039-friendship-review.json",
+      "source_prompt": "CS-LKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "CS-LKG-V4-P040",
+      "title": "My Social Skills",
+      "markdown": "pages/CS-LKG-V4-P040-my-social-skills.md",
+      "json": "pages/CS-LKG-V4-P040-my-social-skills.json",
+      "source_prompt": "CS-LKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "CS-LKG-V4-P041",
+      "title": "My Confidence Portfolio",
+      "markdown": "pages/CS-LKG-V4-P041-my-confidence-portfolio.md",
+      "json": "pages/CS-LKG-V4-P041-my-confidence-portfolio.json",
+      "source_prompt": "CS-LKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "CS-LKG-V4-P042",
+      "title": "Certificate",
+      "markdown": "pages/CS-LKG-V4-P042-certificate.md",
+      "json": "pages/CS-LKG-V4-P042-certificate.json",
+      "source_prompt": "CS-LKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "CS-LKG-V4-P043",
+      "title": "I Am Confident and Kind",
+      "markdown": "pages/CS-LKG-V4-P043-i-am-confident-and-kind.md",
+      "json": "pages/CS-LKG-V4-P043-i-am-confident-and-kind.json",
+      "source_prompt": "CS-LKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "CS-LKG-V4-P044",
+      "title": "Confidence & Social Skills — Back Cover",
+      "markdown": "pages/CS-LKG-V4-P044-confidence-and-social-skills-back-cover.md",
+      "json": "pages/CS-LKG-V4-P044-confidence-and-social-skills-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

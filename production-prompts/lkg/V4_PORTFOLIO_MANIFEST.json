@@ -4,7 +4,7 @@
   "level": "LKG (4+)",
   "status": "PASS",
   "books_total": 10,
-  "books_completed": 9,
+  "books_completed": 10,
   "completed": [
     {
       "slug": "communication-champions",
@@ -50,17 +50,20 @@
       "slug": "art-colour-fun",
       "book": "Art & Colour Fun",
       "prompts": 44
+    },
+    {
+      "slug": "confidence-social-skills",
+      "book": "Confidence & Social Skills",
+      "prompts": 44
     }
   ],
-  "queue": [
-    "confidence-social-skills"
-  ],
+  "queue": [],
   "totals": {
-    "page_prompts": 396,
-    "markdown_files": 396,
-    "json_files": 396,
-    "source_backed_pages": 360,
-    "checks": 5148,
+    "page_prompts": 440,
+    "markdown_files": 440,
+    "json_files": 440,
+    "source_backed_pages": 400,
+    "checks": 5720,
     "critical_defects": 0
   },
   "validation_report": "BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json"
