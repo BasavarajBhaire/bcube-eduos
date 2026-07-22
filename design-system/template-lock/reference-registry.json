@@ -1,0 +1,70 @@
+{
+  "registry_version": "pre-print-pilot",
+  "canvas": {
+    "width_px": 2480,
+    "height_px": 3508,
+    "dpi": 300,
+    "orientation": "portrait"
+  },
+  "policy": {
+    "ai_output_scope": "illustration-layer-only",
+    "full_page_ai_generation": "prohibited",
+    "deterministic_composition_required": true,
+    "render_qa_required": true,
+    "fail_closed": true
+  },
+  "page_types": {
+    "cover": {
+      "reference_status": "LOCKED",
+      "reference_source": "approved Communication Champions Nursery cover",
+      "required_components": [
+        "official_logo",
+        "series_banner",
+        "book_title",
+        "age_badge",
+        "book_tagline",
+        "illustration_frame",
+        "six_skill_capsules",
+        "five_core_pillars",
+        "footer"
+      ],
+      "prohibited_components": ["visible_page_number", "teacher_panel", "parent_panel", "production_metadata"],
+      "component_counts": {
+        "official_logo": 1,
+        "series_banner": 1,
+        "age_badge": 1,
+        "illustration_frame": 1,
+        "six_skill_capsules": 6,
+        "five_core_pillars": 5
+      }
+    },
+    "about": {
+      "reference_status": "LOCKED",
+      "header_type": "BOOK_HEADER",
+      "required_components": ["official_logo", "book_title", "page_title", "learning_outcomes", "illustration_frame"],
+      "prohibited_components": ["series_banner", "age_badge", "visible_page_number", "teacher_panel", "parent_panel"]
+    },
+    "publisher": {
+      "reference_status": "LOCKED",
+      "header_type": "MINIMAL_HEADER",
+      "required_components": ["official_logo", "book_title", "publisher_details", "publication_code", "document_id"],
+      "prohibited_components": ["illustration", "star", "age_badge", "visible_page_number", "teacher_panel", "parent_panel"]
+    },
+    "contents": {
+      "reference_status": "LOCKED",
+      "header_type": "BOOK_HEADER",
+      "required_components": ["official_logo", "book_title", "book_tagline", "contents_title", "module_headers", "lesson_entries", "five_core_pillars"],
+      "prohibited_components": ["series_banner", "age_badge", "visible_page_number", "teacher_panel", "parent_panel", "sticky_note", "callout_box", "large_illustration"]
+    },
+    "back_cover": {
+      "reference_status": "LOCKED",
+      "required_components": ["official_logo", "book_title", "series_identity", "publisher_contact", "footer"],
+      "prohibited_components": ["visible_page_number", "teacher_panel", "parent_panel", "production_metadata"]
+    }
+  },
+  "acceptance": {
+    "score": 100,
+    "critical_defects": 0,
+    "report_schema": "validation/rendered-pages/render-report.schema.json"
+  }
+}
