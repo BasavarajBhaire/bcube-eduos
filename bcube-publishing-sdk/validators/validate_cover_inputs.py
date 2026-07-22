@@ -44,6 +44,8 @@ def validate_image(path: Path, label: str) -> tuple[int, int]:
     with Image.open(path) as image:
         return image.size
 
+    print("STAR ASSET =", star)
+    print("EXISTS =", Path(star).exists())
 
 def validate_star(path: Path) -> dict[str, Any]:
     width, height = validate_image(path, "official Star asset")

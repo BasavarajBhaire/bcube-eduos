@@ -174,7 +174,7 @@ def draw_vector_icon(draw: ImageDraw.ImageDraw, key: str, bounds: list[int], col
 def validate_data(data: dict[str, Any]) -> None:
     required = ["page_id", "book_key", "title_lines", "tagline", "level", "age", "skills", "pillars",
                 "skill_icon_keys", "pillar_icon_keys", "illustration_path", "official_logo_path",
-                "official_star_path", "official_star_crop", "illustration_evidence"]
+                "official_star_path", "illustration_evidence"]
     missing = [key for key in required if key not in data]
     if missing: raise ValueError(f"Missing cover data: {missing}")
     if len(data["title_lines"]) != 2: raise ValueError("Cover title must contain exactly two lines")
@@ -227,7 +227,11 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
     illustration_render = paste_safe_illustration(canvas, illustration_path, bounds["illustration_frame"], colours["background"], safe_inset=template["rules"].get("illustration_safe_inset",28))
     draw.rounded_rectangle(tuple(bounds["illustration_frame"]),radius=42,outline="#D6BCE7",width=7)
     star_bounds=data.get("official_star_bounds",[1280,2160,1720,2660])
-    star_render=paste_contain(canvas,star_path,star_bounds,crop=data["official_star_crop"],remove_near_white=True)
+    star_render = paste_contain(
+    canvas,
+    star_path,
+    star_bounds,
+)
 
     skill_colours=["#F47B16","#2F95CF","#4FAE2A","#EC3481","#7D3EAB","#1EA0B9"]
     region=bounds["six_skill_capsules"]; y=region[1]; skill_evidence=[]
@@ -286,7 +290,7 @@ def self_test() -> int:
         Image.new("RGBA",(300,180),"blue").save(temp/"logo.png")
         Image.new("RGBA",(500,500),"gold").save(temp/"star.png")
         Image.new("RGB",(1200,900),"#F4E0B8").save(temp/"illustration.png")
-        test={"page_id":"TEST-COVER","book_key":"nursery/confidence-builders","title_lines":["Confidence","Builders"],"tagline":"I Believe • I Can • I Will","level":"Nursery","age":"3+","skills":["Believe in Myself","Try New Things","Speak with Confidence","Make Good Choices","Be Kind to Others","Celebrate Success"],"skill_icon_keys":["person","spark","speech","shield","heart","trophy"],"pillars":[{"code":c,"name":n} for c,n in [("CR","Creativity"),("CO","Communication"),("CU","Curiosity"),("CF","Confidence"),("CL","Collaboration")]],"pillar_icon_keys":["palette","chat","search","confidence","puzzle"],"footer_keywords":"Self-belief • Courage • Expression • Kindness • Independence","illustration_path":str(temp/"illustration.png"),"official_logo_path":str(temp/"logo.png"),"official_star_path":str(temp/"star.png"),"official_star_crop":[0,0,500,500],"illustration_evidence":{"contains_text":False,"contains_logo":False,"contains_mascot":False,"contains_badge":False,"contains_page_layout":False,"contains_embedded_page":False},"text_evidence":{"detector":{"name":"self-test","version":"1"},"detected_text":["CONFIDENCE BUILDERS","I BELIEVE","I CAN","I WILL","BCUBE FUTURE SKILLS LEARNING SERIES","NURSERY","3+"]},"human_approval":{"reviewer":"SDK Self Test","approved_on":"2026-07-22","status":"APPROVED","artifact_sha256":"0"*64}}
+        test={"page_id":"TEST-COVER","book_key":"nursery/confidence-builders","title_lines":["Confidence","Builders"],"tagline":"I Believe • I Can • I Will","level":"Nursery","age":"3+","skills":["Believe in Myself","Try New Things","Speak with Confidence","Make Good Choices","Be Kind to Others","Celebrate Success"],"skill_icon_keys":["person","spark","speech","shield","heart","trophy"],"pillars":[{"code":c,"name":n} for c,n in [("CR","Creativity"),("CO","Communication"),("CU","Curiosity"),("CF","Confidence"),("CL","Collaboration")]],"pillar_icon_keys":["palette","chat","search","confidence","puzzle"],"footer_keywords":"Self-belief • Courage • Expression • Kindness • Independence","illustration_path":str(temp/"illustration.png"),"official_logo_path":str(temp/"logo.png"),"official_star_path":str(temp/"star.png"),"illustration_evidence":{"contains_text":False,"contains_logo":False,"contains_mascot":False,"contains_badge":False,"contains_page_layout":False,"contains_embedded_page":False},"text_evidence":{"detector":{"name":"self-test","version":"1"},"detected_text":["CONFIDENCE BUILDERS","I BELIEVE","I CAN","I WILL","BCUBE FUTURE SKILLS LEARNING SERIES","NURSERY","3+"]},"human_approval":{"reviewer":"SDK Self Test","approved_on":"2026-07-22","status":"APPROVED","artifact_sha256":"0"*64}}
         data_path=temp/"data.json"; data_path.write_text(json.dumps(test),encoding="utf-8")
         compose(data_path,temp/"cover.png",temp/"evidence.json")
     print("deterministic Nursery cover compositor self-test passed"); return 0
