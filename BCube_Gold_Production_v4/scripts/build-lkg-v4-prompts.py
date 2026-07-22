@@ -482,6 +482,26 @@ def compile_book(slug: str) -> dict:
         if "source_index" in spec:
             source_path, source = sources[spec["source_index"]]
             fields = source_fields(source)
+            if slug == "early-literacy-adventures" and source.get("prompt_id") == "EL-LKG-V3-P041":
+                fields.update({
+                    "title": "My Literacy Celebration",
+                    "page_type": "reflection",
+                    "objective": "Reflect on and celebrate literacy learning.",
+                    "instruction": "Share one literacy skill you learned. Complete one short speaking, reflection, or independent practice response.",
+                    "evidence": "I am proud that I can ______.",
+                    "questions": ["What literacy skill are you proud of?"],
+                    "home": "Invite the child to choose a favourite letter, word, or story and explain why.",
+                    "conversation": "I am proud that I can ______.",
+                    "scene": "Teacher-led literacy celebration with six expressive LKG children and approved Star; each child shares one short literacy reflection.",
+                    "focal": "Children confidently sharing one reading or literacy achievement with their teacher and classmates.",
+                })
+                fields["overrides"] = list(fields.get("overrides", [])) + [
+                    "V4 editorial correction: source metadata title 'Back Cover' conflicts with its teacher-led classroom reflection activity. Render this source-backed page as 'My Literacy Celebration' on printed page 42; preserve its reflection intent, facilitation, illustration intent, and source lineage while replacing contradictory placeholder wording with an exact literacy reflection response."
+                ]
+                fields["approved_source_instruction"] += (
+                    "\n\nV4 EDITORIAL CORRECTION: The canonical source title 'Back Cover' conflicts with the approved classroom celebration and reflection content. "
+                    "Use the exact visible title 'My Literacy Celebration' on printed page 42. Preserve the source activity, expected evidence, teacher reflection question, parent connection, six-child classroom scene, and all negative constraints."
+                )
             if physical == 1:
                 fields["title"] = book
                 fields["page_type"] = "cover"
@@ -635,12 +655,24 @@ def validate_book(slug: str) -> dict:
     }
 
 def write_agenda(completed_slug: str, result: dict) -> None:
+    completed = [
+        slug for slug in ORDER
+        if (PROMPTS / slug / "lkg" / "v4" / "release-manifest.json").is_file()
+    ]
+    results = [validate_book(slug) for slug in completed]
     rows = []
     for index, slug in enumerate(ORDER, start=1):
         profile = BOOKS[slug]
-        status = "COMPLETE — V4 prompts" if slug == completed_slug else "QUEUED"
+        status = "COMPLETE — V4 prompts" if slug in completed else "QUEUED"
         rows.append(f"| {index} | {profile['book']} | {profile['prefix']} | {status} |")
-    agenda = f"""# BCube LKG V4 Production Agenda
+
+    overall_status = "PASS" if results and all(item["status"] == "PASS" for item in results) else "FAIL"
+    next_book = next((slug for slug in ORDER if slug not in completed), None)
+    totals = {
+        key: sum(item[key] for item in results)
+        for key in ("page_prompts", "markdown_files", "json_files", "source_backed_pages", "checks", "critical_defects")
+    }
+    agenda = f'''# BCube LKG V4 Production Agenda
 
 Status date: 22 July 2026
 
@@ -667,6 +699,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 - Never leave completed work on a diverged branch.
 - Keep one exact identity across source, prompt ID, title, numbering, manifest, and output filename.
 - Treat About This Book, split Contents, and Back Cover as controlled portfolio additions, not curriculum rewrites.
+- Correct contradictory source metadata transparently while preserving source lineage and educational intent.
 
 ## Official LKG sequence
 
@@ -689,23 +722,19 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 - LKG (4+) badge on cover only.
 - Maximum two core activities and one optional extension.
 - British English and one approved Star identity.
-"""
+'''
     (V4_ROOT / "LKG_PRODUCTION_AGENDA.md").write_text(agenda, encoding="utf-8")
 
     qa = {
         "validation_version": "4.0.0",
         "level": LEVEL,
-        "books_validated": 1,
-        "books_total": 10,
-        "completed_books": [completed_slug],
-        "page_prompts": result["page_prompts"],
-        "markdown_files": result["markdown_files"],
-        "json_files": result["json_files"],
-        "source_backed_pages": result["source_backed_pages"],
-        "checks": result["checks"],
-        "critical_defects": result["critical_defects"],
-        "status": result["status"],
-        "next_book": ORDER[ORDER.index(completed_slug) + 1] if completed_slug != ORDER[-1] else None,
+        "books_validated": len(results),
+        "books_total": len(ORDER),
+        "completed_books": completed,
+        **totals,
+        "status": overall_status,
+        "next_book": next_book,
+        "book_results": results,
     }
     qa_path = V4_ROOT / "qa" / "lkg-v4-prompts-validation.json"
     qa_path.parent.mkdir(parents=True, exist_ok=True)
@@ -715,11 +744,15 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
         "manifest_version": "4.0.0",
         "series": SERIES,
         "level": LEVEL,
-        "status": result["status"],
-        "books_total": 10,
-        "books_completed": 1,
-        "completed": [{"slug": completed_slug, "book": BOOKS[completed_slug]["book"], "prompts": 44}],
-        "queue": [slug for slug in ORDER if slug != completed_slug],
+        "status": overall_status,
+        "books_total": len(ORDER),
+        "books_completed": len(completed),
+        "completed": [
+            {"slug": slug, "book": BOOKS[slug]["book"], "prompts": 44}
+            for slug in completed
+        ],
+        "queue": [slug for slug in ORDER if slug not in completed],
+        "totals": totals,
         "validation_report": str(qa_path.relative_to(ROOT)),
     }
     portfolio_path = PROMPTS / "lkg" / "V4_PORTFOLIO_MANIFEST.json"
