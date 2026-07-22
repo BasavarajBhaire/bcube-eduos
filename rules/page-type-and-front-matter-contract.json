@@ -18,36 +18,130 @@
     "{Learning Objective}",
     "{Illustration Layer}"
   ],
-  "page_types": {
-    "cover": {
-      "visible_page_number": false,
-      "illustration": "full",
+  "header_contracts": {
+    "SERIES_HEADER": {
+      "allowed_page_types": ["cover"],
+      "required": ["{Official Logo}", "{Series Name}", "{Book Name}", "{Age Group}"],
       "series_banner": true
     },
+    "MINIMAL_HEADER": {
+      "allowed_page_types": ["publisher"],
+      "required": ["{Book Name}", "{Age Group}"],
+      "series_banner": false,
+      "star": "prohibited"
+    },
+    "BOOK_HEADER": {
+      "allowed_page_types": ["about", "contents", "character_introduction", "how_to_use", "certificate"],
+      "required": ["{Official Logo}", "{Book Name}", "{Page Title}"],
+      "series_banner": false
+    },
+    "LESSON_HEADER": {
+      "allowed_page_types": ["lesson", "assessment", "reflection"],
+      "required": ["{Official Logo}", "{Lesson Title}"],
+      "visible_page_number": "manifest-controlled"
+    }
+  },
+  "page_types": {
+    "cover": {
+      "header_contract": "SERIES_HEADER",
+      "visible_page_number": false,
+      "illustration": "full",
+      "series_banner": true,
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
+    },
     "publisher": {
+      "header_contract": "MINIMAL_HEADER",
       "visible_page_number": false,
       "illustration": "prohibited",
       "star": "prohibited",
-      "teacher_parent_panels": "prohibited"
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
     },
     "about": {
+      "header_contract": "BOOK_HEADER",
       "visible_page_number": false,
       "header_primary": "{Book Name}",
       "header_secondary": "{Page Title}",
-      "series_banner": false
+      "series_banner": false,
+      "illustration": "allowed",
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
     },
     "contents": {
+      "header_contract": "BOOK_HEADER",
       "visible_page_number": false,
-      "dominant_illustration": false
+      "dominant_illustration": false,
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
+    },
+    "character_introduction": {
+      "header_contract": "BOOK_HEADER",
+      "visible_page_number": false,
+      "illustration": "page-specific"
+    },
+    "how_to_use": {
+      "header_contract": "BOOK_HEADER",
+      "visible_page_number": false,
+      "illustration": "instructional-graphics"
     },
     "lesson": {
+      "header_contract": "LESSON_HEADER",
       "visible_page_number": true,
       "numbering": "count-hidden-front-matter"
+    },
+    "assessment": {
+      "header_contract": "LESSON_HEADER",
+      "visible_page_number": "manifest-controlled"
+    },
+    "reflection": {
+      "header_contract": "LESSON_HEADER",
+      "visible_page_number": "manifest-controlled"
+    },
+    "certificate": {
+      "header_contract": "BOOK_HEADER",
+      "visible_page_number": "manifest-controlled",
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
     },
     "back_cover": {
       "visible_page_number": false,
       "single_true_back_cover": true
     }
+  },
+  "pre_generation_preflight": {
+    "required": true,
+    "source_ref": "main",
+    "must_read": [
+      "release-manifest",
+      "individual-v4-page-package",
+      "rules/page-type-and-front-matter-contract.json",
+      "global-pixel-design-tokens",
+      "official-asset-registry"
+    ],
+    "must_resolve": [
+      "page_type",
+      "header_contract",
+      "allowed_components",
+      "prohibited_components",
+      "visible_page_number",
+      "pixel_layout",
+      "official_logo_path",
+      "official_star_path_when_allowed",
+      "page_objective",
+      "illustration_brief"
+    ],
+    "fail_closed_on": [
+      "missing-file",
+      "missing-field",
+      "missing-asset",
+      "stale-rule",
+      "contradiction",
+      "wrong-header-contract",
+      "prohibited-component"
+    ],
+    "chat_memory_authoritative": false,
+    "prior_generated_image_authoritative": false
   },
   "maturity_labels": [
     "DRAFT",
