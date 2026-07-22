@@ -1,0 +1,23 @@
+{
+  "contract_version": "1.0.0",
+  "reference_cover": "Nursery Communication Champions approved cover",
+  "canvas": {"width_px": 2480, "height_px": 3508, "dpi": 300, "orientation": "portrait"},
+  "pipeline": ["resolve_page_package", "verify_locked_assets", "generate_illustration_only", "deterministic_composition", "golden_reference_validation", "promotion"],
+  "protected_assets": {
+    "official_logo": {"required": true, "generation_prohibited": true, "substitution_prohibited": true},
+    "approved_star": {"required_when_declared": true, "generation_prohibited": true, "substitution_prohibited": true},
+    "series_banner": {"required": true, "deterministic": true},
+    "age_badge": {"required": true, "deterministic": true},
+    "title_system": {"required": true, "deterministic": true},
+    "skill_capsules": {"count": 6, "deterministic_text": true},
+    "core_pillars": {"count": 5, "exact_declared_order": true},
+    "footer": {"required": true, "deterministic": true}
+  },
+  "illustration_layer": {
+    "allowed": ["teacher", "children", "classroom_or_learning_environment", "book_specific_learning_objects"],
+    "prohibited": ["logo", "star_mascot", "title", "series_banner", "age_badge", "skill_text", "pillar_text", "footer", "page_number", "qa_metadata", "prompt_metadata"]
+  },
+  "visible_cover_regions": ["official_logo", "series_banner", "two_line_title", "age_badge", "strapline", "main_illustration", "six_skill_capsules", "five_core_pillars", "build_create_become_footer", "keyword_footer"],
+  "fail_closed": true,
+  "acceptance": {"score": 100, "critical_defects": 0, "exact_asset_hashes": true, "golden_reference_comparison": true}
+}
