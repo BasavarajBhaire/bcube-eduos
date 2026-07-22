@@ -1,0 +1,164 @@
+#!/usr/bin/env python3
+"""Compile and validate BCube LKG V4 prompt packages from canonical LKG V3 JSON sources.
+
+The compiler preserves every book/page-specific V3 instruction. It adds only the
+approved V4 portfolio structure: About This Book, split Contents, and Back Cover.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+PROMPTS = ROOT / "production-prompts"
+V4_ROOT = ROOT / "BCube_Gold_Production_v4"
+
+SERIES = "BCube Future Skills Learning Series™"
+LEVEL = "LKG (4+)"
+PUBLISHER = "BCube Future Academy"
+ADDRESS = "407, DSMAX Sky Supreme KST Bangalore - 560060"
+EMAIL = "info@bcubefutureacademy.in"
+WEBSITE = "bcubefutureacademy.in"
+COPYRIGHT = "© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+PILLARS = ["Creativity", "Communication", "Curiosity", "Confidence"]
+
+BOOKS = {
+    "communication-champions": {
+        "book": "Communication Champions",
+        "prefix": "CC",
+        "domain": "Communication & Language",
+        "focus": "Listening, speaking, vocabulary, sentence building, conversation, questions, storytelling, and presentation.",
+    },
+    "early-literacy-adventures": {
+        "book": "Early Literacy Adventures",
+        "prefix": "EL",
+        "domain": "Literacy",
+        "focus": "Phonological awareness, rhymes, beginning sounds, alphabet recognition, picture reading, and early word building.",
+    },
+    "early-maths-adventures": {
+        "book": "Early Maths Adventures",
+        "prefix": "EM",
+        "domain": "Numeracy",
+        "focus": "Numbers 1–20, counting, quantity, comparison, patterns, shapes, position, measurement, and simple data handling.",
+    },
+    "logical-thinking-adventures": {
+        "book": "Logical Thinking Adventures",
+        "prefix": "LT",
+        "domain": "Logical Reasoning",
+        "focus": "Classification, odd-one-out, sequencing, visual discrimination, spatial reasoning, beginner coding, and problem solving.",
+    },
+    "stem-explorers": {
+        "book": "STEM Explorers",
+        "prefix": "SE",
+        "domain": "STEM",
+        "focus": "Observation, simple experiments, materials, forces, machines, building, coding, and early data thinking.",
+    },
+    "creativity-challenges": {
+        "book": "Creativity Challenges",
+        "prefix": "CR",
+        "domain": "Creativity & Design",
+        "focus": "Drawing, design, imagination, storytelling, making, invention, and teamwork.",
+    },
+    "my-world-general-awareness": {
+        "book": "My World & General Awareness",
+        "prefix": "MW",
+        "domain": "General Awareness",
+        "focus": "Self, family, school, community, India, seasons, animals, plants, transport, and Earth.",
+    },
+    "healthy-habits-safety": {
+        "book": "Healthy Habits & Safety",
+        "prefix": "HH",
+        "domain": "Health & Safety",
+        "focus": "Hygiene, nutrition, movement, rest, body safety, road, home, school, and digital safety.",
+    },
+    "art-colour-fun": {
+        "book": "Art & Colour Fun",
+        "prefix": "AC",
+        "domain": "Visual Arts",
+        "focus": "Colour mixing, line, shape, pattern, painting, collage, printing, texture, craft, and art appreciation.",
+    },
+    "confidence-social-skills": {
+        "book": "Confidence & Social Skills",
+        "prefix": "CS",
+        "domain": "SEL & Life Skills",
+        "focus": "Self-confidence, empathy, friendship, cooperation, emotional regulation, independence, and problem solving.",
+    },
+}
+ORDER = list(BOOKS)
+
+def slugify(value: str) -> str:
+    value = value.lower().replace("&", "and")
+    return re.sub(r"[^a-z0-9]+", "-", value).strip("-")
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def visible_number(physical: int) -> int | None:
+    return physical - 1 if 6 <= physical <= 43 else None
+
+def v4_id(prefix: str, physical: int) -> str:
+    return f"{prefix}-LKG-V4-P{physical:03d}"
+
+def load_sources(slug: str, prefix: str) -> list[tuple[Path, dict]]:
+    folder = PROMPTS / slug / "lkg" / "v3" / "pages"
+    paths = sorted(folder.glob("*-P*.json"))
+    if len(paths) != 41:
+        raise ValueError(f"{slug}: expected 41 canonical V3 JSON prompts, found {len(paths)}")
+    sources = [(path, json.loads(path.read_text(encoding="utf-8"))) for path in paths]
+    expected = [f"{prefix}-LKG-V3-P{i:03d}" for i in range(1, 42)]
+    actual = [data.get("prompt_id") for _, data in sources]
+    if actual != expected:
+        raise ValueError(f"{slug}: canonical V3 prompt sequence mismatch")
+    return sources
+
+def extract_approved_instruction(source: dict) -> str:
+    compiled = source.get("compiled_prompt", "")
+    match = re.search(
+        r"## 10\. Approved source instruction\s*(.*?)\s*## 11\.",
+        compiled,
+        flags=re.DOTALL,
+    )
+    return match.group(1).strip() if match else compiled.strip()
+
+def source_fields(source: dict) -> dict:
+    page = source["page_data"]
+    teacher = page.get("teacher_prompt", {})
+    parent = page.get("parent_prompt", {})
+    illustration = page.get("illustration", {})
+    activity = page.get("activity", {})
+    return {
+        "title": page["title"],
+        "page_type": page.get("page_type", "activity_page"),
+        "objective": page["learning_objective"],
+        "instruction": activity.get("instruction", ""),
+        "evidence": activity.get("evidence", ""),
+        "teacher": teacher.get("facilitation", ""),
+        "questions": teacher.get("questions", []),
+        "home": parent.get("home_activity") or parent.get("conversation", ""),
+        "conversation": parent.get("conversation", ""),
+        "scene": illustration.get("scene", page["title"]),
+        "focal": illustration.get("focal_point", f"One dominant focus for {page['title']}."),
+        "style": illustration.get("style", "Premium BCube preschool workbook illustration."),
+        "negatives": illustration.get("negative_constraints", []),
+        "character_refs": page.get("character_refs", []),
+        "overrides": page.get("overrides", []),
+        "approved_source_instruction": extract_approved_instruction(source),
+    }
+
+def front_matter(book: str, focus: str, physical: int, contents: list[dict] | None = None) -> dict:
+    if physical == 2:
+        return {
+            "title": "About This Book",
+            "page_type": "front_matter",
+            "objective": f"Introduce families and teachers to the purpose and progression of {book}.",
+            "instruction": f"Read the overview and support the child through guided oral language, picture-supported activities, and short independent responses. Focus: {focus}",
+            "evidence": "Adults understand the book purpose, LKG progression, four BCube pillars, and supportive facilitation approach.",
+            "teacher": "Model briefly, invite the child to respond, pause, scaffold, and affirm effort.",
+            "questions": ["How will this book support the child's next step?"],
+            "home": "Use familiar home routines and everyday objects to extend learning without adding a scored task.",
+            "conversation": "Talk about one learning goal at a time.",
+            "scene": "Welcoming book overview with approved Star, four label-only pillars, and concise teacher and parent guidance panels.",
+            "focal": "A clear book-purpose panel supported by one warm teacher–child learning scene.",
