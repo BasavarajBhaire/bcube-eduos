@@ -34,7 +34,9 @@ jobs:
 
       - name: Prepare LKG compiler
         if: ${{ steps.book.outputs.build == 'true' }}
-        run: python BCube_Gold_Production_v4/scripts/prepare-lkg-v4-book.py
+        run: |
+          python BCube_Gold_Production_v4/scripts/.lkg-patches/fix-prepare-raw-string.py
+          python BCube_Gold_Production_v4/scripts/prepare-lkg-v4-book.py
 
       - name: Check compiler syntax
         if: ${{ steps.book.outputs.build == 'true' }}
@@ -106,6 +108,7 @@ jobs:
           BOOK_SLUG: ${{ steps.book.outputs.slug }}
         run: |
           rm -f "BCube_Gold_Production_v4/queue/${BOOK_SLUG}.trigger"
+          rm -f BCube_Gold_Production_v4/scripts/.lkg-patches/fix-prepare-raw-string.py
           git checkout origin/main -- .github/workflows/validate.yml
           book_name="$(python - <<'PY'
           import json, os
