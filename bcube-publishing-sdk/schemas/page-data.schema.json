@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/page-data.schema.json",
+  "title": "BCube Publishing Page Data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["prompt_id", "page_type", "book", "level", "physical_page", "printed_page", "content", "assets"],
+  "properties": {
+    "prompt_id": {"type": "string", "minLength": 1},
+    "page_type": {"enum": ["cover", "about", "publisher", "contents", "back_cover"]},
+    "book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "tagline", "publication_code", "document_id"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "tagline": {"type": "string"},
+        "publication_code": {"type": "string", "minLength": 1},
+        "document_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "level": {"type": "string", "minLength": 1},
+    "physical_page": {"type": "integer", "minimum": 1},
+    "printed_page": {"type": ["integer", "null"]},
+    "content": {
+      "type": "object",
+      "required": ["page_title"],
+      "properties": {
+        "page_title": {"type": "string"},
+        "skills": {"type": "array", "items": {"type": "string"}},
+        "pillars": {"type": "array", "items": {"type": "string"}},
+        "modules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "entries"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "entries": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["title", "page"],
+                  "properties": {
+                    "title": {"type": "string", "minLength": 1},
+                    "page": {"type": "integer", "minimum": 1}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "publisher": {"type": "object"}
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["logo_id"],
+      "properties": {
+        "logo_id": {"type": "string", "minLength": 1},
+        "star_id": {"type": ["string", "null"]},
+        "illustration_path": {"type": ["string", "null"]}
+      }
+    }
+  }
+}
