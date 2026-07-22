@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Art & Colour Fun",
+  "slug": "art-colour-fun",
+  "prefix": "AC",
+  "level": "LKG (4+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "AC-LKG-V4-P001",
+      "title": "Art & Colour Fun",
+      "markdown": "pages/AC-LKG-V4-P001-art-and-colour-fun.md",
+      "json": "pages/AC-LKG-V4-P001-art-and-colour-fun.json",
+      "source_prompt": "AC-LKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "AC-LKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/AC-LKG-V4-P002-about-this-book.md",
+      "json": "pages/AC-LKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "AC-LKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/AC-LKG-V4-P003-copyright.md",
+      "json": "pages/AC-LKG-V4-P003-copyright.json",
+      "source_prompt": "AC-LKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "AC-LKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/AC-LKG-V4-P004-contents-part-1.md",
+      "json": "pages/AC-LKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "AC-LKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/AC-LKG-V4-P005-contents-part-2.md",
+      "json": "pages/AC-LKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "AC-LKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/AC-LKG-V4-P006-welcome.md",
+      "json": "pages/AC-LKG-V4-P006-welcome.json",
+      "source_prompt": "AC-LKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "AC-LKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/AC-LKG-V4-P007-meet-star.md",
+      "json": "pages/AC-LKG-V4-P007-meet-star.json",
+      "source_prompt": "AC-LKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "AC-LKG-V4-P008",
+      "title": "Primary Colours",
+      "markdown": "pages/AC-LKG-V4-P008-primary-colours.md",
+      "json": "pages/AC-LKG-V4-P008-primary-colours.json",
+      "source_prompt": "AC-LKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "AC-LKG-V4-P009",
+      "title": "Secondary Colours",
+      "markdown": "pages/AC-LKG-V4-P009-secondary-colours.md",
+      "json": "pages/AC-LKG-V4-P009-secondary-colours.json",
+      "source_prompt": "AC-LKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "AC-LKG-V4-P010",
+      "title": "Colour Hunt",
+      "markdown": "pages/AC-LKG-V4-P010-colour-hunt.md",
+      "json": "pages/AC-LKG-V4-P010-colour-hunt.json",
+      "source_prompt": "AC-LKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "AC-LKG-V4-P011",
+      "title": "Rainbow Fun",
+      "markdown": "pages/AC-LKG-V4-P011-rainbow-fun.md",
+      "json": "pages/AC-LKG-V4-P011-rainbow-fun.json",
+      "source_prompt": "AC-LKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "AC-LKG-V4-P012",
+      "title": "Colour Mixing",
+      "markdown": "pages/AC-LKG-V4-P012-colour-mixing.md",
+      "json": "pages/AC-LKG-V4-P012-colour-mixing.json",
+      "source_prompt": "AC-LKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "AC-LKG-V4-P013",
+      "title": "Lines & Patterns",
+      "markdown": "pages/AC-LKG-V4-P013-lines-and-patterns.md",
+      "json": "pages/AC-LKG-V4-P013-lines-and-patterns.json",
+      "source_prompt": "AC-LKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "AC-LKG-V4-P014",
+      "title": "Shapes in Art",
+      "markdown": "pages/AC-LKG-V4-P014-shapes-in-art.md",
+      "json": "pages/AC-LKG-V4-P014-shapes-in-art.json",
+      "source_prompt": "AC-LKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "AC-LKG-V4-P015",
+      "title": "Colour by Number",
+      "markdown": "pages/AC-LKG-V4-P015-colour-by-number.md",
+      "json": "pages/AC-LKG-V4-P015-colour-by-number.json",
+      "source_prompt": "AC-LKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "AC-LKG-V4-P016",
+      "title": "Trace & Colour",
+      "markdown": "pages/AC-LKG-V4-P016-trace-and-colour.md",
+      "json": "pages/AC-LKG-V4-P016-trace-and-colour.json",
+      "source_prompt": "AC-LKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "AC-LKG-V4-P017",
+      "title": "My First Drawing",
+      "markdown": "pages/AC-LKG-V4-P017-my-first-drawing.md",
+      "json": "pages/AC-LKG-V4-P017-my-first-drawing.json",
+      "source_prompt": "AC-LKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "AC-LKG-V4-P018",
+      "title": "Finger Painting",
+      "markdown": "pages/AC-LKG-V4-P018-finger-painting.md",
+      "json": "pages/AC-LKG-V4-P018-finger-painting.json",
+      "source_prompt": "AC-LKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "AC-LKG-V4-P019",
+      "title": "Sponge Painting",
+      "markdown": "pages/AC-LKG-V4-P019-sponge-painting.md",
+      "json": "pages/AC-LKG-V4-P019-sponge-painting.json",
+      "source_prompt": "AC-LKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "AC-LKG-V4-P020",
+      "title": "Leaf Printing",
+      "markdown": "pages/AC-LKG-V4-P020-leaf-printing.md",
+      "json": "pages/AC-LKG-V4-P020-leaf-printing.json",
+      "source_prompt": "AC-LKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "AC-LKG-V4-P021",
+      "title": "Nature Colours",
+      "markdown": "pages/AC-LKG-V4-P021-nature-colours.md",
+      "json": "pages/AC-LKG-V4-P021-nature-colours.json",
+      "source_prompt": "AC-LKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "AC-LKG-V4-P022",
+      "title": "Texture Art",
+      "markdown": "pages/AC-LKG-V4-P022-texture-art.md",
+      "json": "pages/AC-LKG-V4-P022-texture-art.json",
+      "source_prompt": "AC-LKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "AC-LKG-V4-P023",
+      "title": "Tear & Paste",
+      "markdown": "pages/AC-LKG-V4-P023-tear-and-paste.md",
+      "json": "pages/AC-LKG-V4-P023-tear-and-paste.json",
+      "source_prompt": "AC-LKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "AC-LKG-V4-P024",
+      "title": "Paper Collage",
+      "markdown": "pages/AC-LKG-V4-P024-paper-collage.md",
+      "json": "pages/AC-LKG-V4-P024-paper-collage.json",
+      "source_prompt": "AC-LKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "AC-LKG-V4-P025",
+      "title": "Sticker Fun",
+      "markdown": "pages/AC-LKG-V4-P025-sticker-fun.md",
+      "json": "pages/AC-LKG-V4-P025-sticker-fun.json",
+      "source_prompt": "AC-LKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "AC-LKG-V4-P026",
+      "title": "Clay Creations",
+      "markdown": "pages/AC-LKG-V4-P026-clay-creations.md",
+      "json": "pages/AC-LKG-V4-P026-clay-creations.json",
+      "source_prompt": "AC-LKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "AC-LKG-V4-P027",
+      "title": "Simple Craft",
+      "markdown": "pages/AC-LKG-V4-P027-simple-craft.md",
+      "json": "pages/AC-LKG-V4-P027-simple-craft.json",
+      "source_prompt": "AC-LKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "AC-LKG-V4-P028",
+      "title": "Festival Art",
+      "markdown": "pages/AC-LKG-V4-P028-festival-art.md",
+      "json": "pages/AC-LKG-V4-P028-festival-art.json",
+      "source_prompt": "AC-LKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "AC-LKG-V4-P029",
+      "title": "Animal Art",
+      "markdown": "pages/AC-LKG-V4-P029-animal-art.md",
+      "json": "pages/AC-LKG-V4-P029-animal-art.json",
+      "source_prompt": "AC-LKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "AC-LKG-V4-P030",
+      "title": "Bird Art",
+      "markdown": "pages/AC-LKG-V4-P030-bird-art.md",
+      "json": "pages/AC-LKG-V4-P030-bird-art.json",
+      "source_prompt": "AC-LKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "AC-LKG-V4-P031",
+      "title": "Underwater World",
+      "markdown": "pages/AC-LKG-V4-P031-underwater-world.md",
+      "json": "pages/AC-LKG-V4-P031-underwater-world.json",
+      "source_prompt": "AC-LKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "AC-LKG-V4-P032",
+      "title": "Space Art",
+      "markdown": "pages/AC-LKG-V4-P032-space-art.md",
+      "json": "pages/AC-LKG-V4-P032-space-art.json",
+      "source_prompt": "AC-LKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "AC-LKG-V4-P033",
+      "title": "My Favourite Colour",
+      "markdown": "pages/AC-LKG-V4-P033-my-favourite-colour.md",
+      "json": "pages/AC-LKG-V4-P033-my-favourite-colour.json",
+      "source_prompt": "AC-LKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "AC-LKG-V4-P034",
+      "title": "Art Around Me",
+      "markdown": "pages/AC-LKG-V4-P034-art-around-me.md",
+      "json": "pages/AC-LKG-V4-P034-art-around-me.json",
+      "source_prompt": "AC-LKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "AC-LKG-V4-P035",
+      "title": "Creative Poster",
+      "markdown": "pages/AC-LKG-V4-P035-creative-poster.md",
+      "json": "pages/AC-LKG-V4-P035-creative-poster.json",
+      "source_prompt": "AC-LKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "AC-LKG-V4-P036",
+      "title": "Art Review",
+      "markdown": "pages/AC-LKG-V4-P036-art-review.md",
+      "json": "pages/AC-LKG-V4-P036-art-review.json",
+      "source_prompt": "AC-LKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "AC-LKG-V4-P037",
+      "title": "Gallery Walk",
+      "markdown": "pages/AC-LKG-V4-P037-gallery-walk.md",
+      "json": "pages/AC-LKG-V4-P037-gallery-walk.json",
+      "source_prompt": "AC-LKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "AC-LKG-V4-P038",
+      "title": "My Art Journal",
+      "markdown": "pages/AC-LKG-V4-P038-my-art-journal.md",
+      "json": "pages/AC-LKG-V4-P038-my-art-journal.json",
+      "source_prompt": "AC-LKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "AC-LKG-V4-P039",
+      "title": "My Best Artwork",
+      "markdown": "pages/AC-LKG-V4-P039-my-best-artwork.md",
+      "json": "pages/AC-LKG-V4-P039-my-best-artwork.json",
+      "source_prompt": "AC-LKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "AC-LKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/AC-LKG-V4-P040-celebration.md",
+      "json": "pages/AC-LKG-V4-P040-celebration.json",
+      "source_prompt": "AC-LKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "AC-LKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/AC-LKG-V4-P041-certificate.md",
+      "json": "pages/AC-LKG-V4-P041-certificate.json",
+      "source_prompt": "AC-LKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "AC-LKG-V4-P042",
+      "title": "I Am an Artist",
+      "markdown": "pages/AC-LKG-V4-P042-i-am-an-artist.md",
+      "json": "pages/AC-LKG-V4-P042-i-am-an-artist.json",
+      "source_prompt": "AC-LKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "AC-LKG-V4-P043",
+      "title": "My Art Celebration",
+      "markdown": "pages/AC-LKG-V4-P043-my-art-celebration.md",
+      "json": "pages/AC-LKG-V4-P043-my-art-celebration.json",
+      "source_prompt": "AC-LKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "AC-LKG-V4-P044",
+      "title": "Art & Colour Fun — Back Cover",
+      "markdown": "pages/AC-LKG-V4-P044-art-and-colour-fun-back-cover.md",
+      "json": "pages/AC-LKG-V4-P044-art-and-colour-fun-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
