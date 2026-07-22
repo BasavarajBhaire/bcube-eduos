@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Communication Champions",
+  "slug": "communication-champions",
+  "prefix": "CC",
+  "level": "LKG (4+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "CC-LKG-V4-P001",
+      "title": "Communication Champions",
+      "markdown": "pages/CC-LKG-V4-P001-communication-champions.md",
+      "json": "pages/CC-LKG-V4-P001-communication-champions.json",
+      "source_prompt": "CC-LKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "CC-LKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/CC-LKG-V4-P002-about-this-book.md",
+      "json": "pages/CC-LKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "CC-LKG-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/CC-LKG-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/CC-LKG-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "CC-LKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "CC-LKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/CC-LKG-V4-P004-contents-part-1.md",
+      "json": "pages/CC-LKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "CC-LKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/CC-LKG-V4-P005-contents-part-2.md",
+      "json": "pages/CC-LKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "CC-LKG-V4-P006",
+      "title": "Welcome to Communication Champions",
+      "markdown": "pages/CC-LKG-V4-P006-welcome-to-communication-champions.md",
+      "json": "pages/CC-LKG-V4-P006-welcome-to-communication-champions.json",
+      "source_prompt": "CC-LKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "CC-LKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/CC-LKG-V4-P007-meet-star.md",
+      "json": "pages/CC-LKG-V4-P007-meet-star.json",
+      "source_prompt": "CC-LKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "CC-LKG-V4-P008",
+      "title": "Good Listening",
+      "markdown": "pages/CC-LKG-V4-P008-good-listening.md",
+      "json": "pages/CC-LKG-V4-P008-good-listening.json",
+      "source_prompt": "CC-LKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "CC-LKG-V4-P009",
+      "title": "Follow One Instruction",
+      "markdown": "pages/CC-LKG-V4-P009-follow-one-instruction.md",
+      "json": "pages/CC-LKG-V4-P009-follow-one-instruction.json",
+      "source_prompt": "CC-LKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "CC-LKG-V4-P010",
+      "title": "Follow Two Instructions",
+      "markdown": "pages/CC-LKG-V4-P010-follow-two-instructions.md",
+      "json": "pages/CC-LKG-V4-P010-follow-two-instructions.json",
+      "source_prompt": "CC-LKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "CC-LKG-V4-P011",
+      "title": "Speak in a Full Sentence",
+      "markdown": "pages/CC-LKG-V4-P011-speak-in-a-full-sentence.md",
+      "json": "pages/CC-LKG-V4-P011-speak-in-a-full-sentence.json",
+      "source_prompt": "CC-LKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "CC-LKG-V4-P012",
+      "title": "My Name and Age",
+      "markdown": "pages/CC-LKG-V4-P012-my-name-and-age.md",
+      "json": "pages/CC-LKG-V4-P012-my-name-and-age.json",
+      "source_prompt": "CC-LKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "CC-LKG-V4-P013",
+      "title": "About Me",
+      "markdown": "pages/CC-LKG-V4-P013-about-me.md",
+      "json": "pages/CC-LKG-V4-P013-about-me.json",
+      "source_prompt": "CC-LKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "CC-LKG-V4-P014",
+      "title": "People at School",
+      "markdown": "pages/CC-LKG-V4-P014-people-at-school.md",
+      "json": "pages/CC-LKG-V4-P014-people-at-school.json",
+      "source_prompt": "CC-LKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "CC-LKG-V4-P015",
+      "title": "Things in My Classroom",
+      "markdown": "pages/CC-LKG-V4-P015-things-in-my-classroom.md",
+      "json": "pages/CC-LKG-V4-P015-things-in-my-classroom.json",
+      "source_prompt": "CC-LKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "CC-LKG-V4-P016",
+      "title": "Action Words",
+      "markdown": "pages/CC-LKG-V4-P016-action-words.md",
+      "json": "pages/CC-LKG-V4-P016-action-words.json",
+      "source_prompt": "CC-LKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "CC-LKG-V4-P017",
+      "title": "Describing Words",
+      "markdown": "pages/CC-LKG-V4-P017-describing-words.md",
+      "json": "pages/CC-LKG-V4-P017-describing-words.json",
+      "source_prompt": "CC-LKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "CC-LKG-V4-P018",
+      "title": "Opposite Words",
+      "markdown": "pages/CC-LKG-V4-P018-opposite-words.md",
+      "json": "pages/CC-LKG-V4-P018-opposite-words.json",
+      "source_prompt": "CC-LKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "CC-LKG-V4-P019",
+      "title": "Position Words",
+      "markdown": "pages/CC-LKG-V4-P019-position-words.md",
+      "json": "pages/CC-LKG-V4-P019-position-words.json",
+      "source_prompt": "CC-LKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "CC-LKG-V4-P020",
+      "title": "Make a Sentence",
+      "markdown": "pages/CC-LKG-V4-P020-make-a-sentence.md",
+      "json": "pages/CC-LKG-V4-P020-make-a-sentence.json",
+      "source_prompt": "CC-LKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "CC-LKG-V4-P021",
+      "title": "Greetings",
+      "markdown": "pages/CC-LKG-V4-P021-greetings.md",
+      "json": "pages/CC-LKG-V4-P021-greetings.json",
+      "source_prompt": "CC-LKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "CC-LKG-V4-P022",
+      "title": "Please and Thank You",
+      "markdown": "pages/CC-LKG-V4-P022-please-and-thank-you.md",
+      "json": "pages/CC-LKG-V4-P022-please-and-thank-you.json",
+      "source_prompt": "CC-LKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "CC-LKG-V4-P023",
+      "title": "Taking Turns",
+      "markdown": "pages/CC-LKG-V4-P023-taking-turns.md",
+      "json": "pages/CC-LKG-V4-P023-taking-turns.json",
+      "source_prompt": "CC-LKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "CC-LKG-V4-P024",
+      "title": "Asking for Help",
+      "markdown": "pages/CC-LKG-V4-P024-asking-for-help.md",
+      "json": "pages/CC-LKG-V4-P024-asking-for-help.json",
+      "source_prompt": "CC-LKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "CC-LKG-V4-P025",
+      "title": "Joining a Group",
+      "markdown": "pages/CC-LKG-V4-P025-joining-a-group.md",
+      "json": "pages/CC-LKG-V4-P025-joining-a-group.json",
+      "source_prompt": "CC-LKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "CC-LKG-V4-P026",
+      "title": "Sharing an Idea",
+      "markdown": "pages/CC-LKG-V4-P026-sharing-an-idea.md",
+      "json": "pages/CC-LKG-V4-P026-sharing-an-idea.json",
+      "source_prompt": "CC-LKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "CC-LKG-V4-P027",
+      "title": "Solve a Small Problem",
+      "markdown": "pages/CC-LKG-V4-P027-solve-a-small-problem.md",
+      "json": "pages/CC-LKG-V4-P027-solve-a-small-problem.json",
+      "source_prompt": "CC-LKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "CC-LKG-V4-P028",
+      "title": "Who, What and Where",
+      "markdown": "pages/CC-LKG-V4-P028-who-what-and-where.md",
+      "json": "pages/CC-LKG-V4-P028-who-what-and-where.json",
+      "source_prompt": "CC-LKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "CC-LKG-V4-P029",
+      "title": "Ask a Question",
+      "markdown": "pages/CC-LKG-V4-P029-ask-a-question.md",
+      "json": "pages/CC-LKG-V4-P029-ask-a-question.json",
+      "source_prompt": "CC-LKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "CC-LKG-V4-P030",
+      "title": "Yes or No?",
+      "markdown": "pages/CC-LKG-V4-P030-yes-or-no.md",
+      "json": "pages/CC-LKG-V4-P030-yes-or-no.json",
+      "source_prompt": "CC-LKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "CC-LKG-V4-P031",
+      "title": "Answer in a Sentence",
+      "markdown": "pages/CC-LKG-V4-P031-answer-in-a-sentence.md",
+      "json": "pages/CC-LKG-V4-P031-answer-in-a-sentence.json",
+      "source_prompt": "CC-LKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "CC-LKG-V4-P032",
+      "title": "Picture Talk",
+      "markdown": "pages/CC-LKG-V4-P032-picture-talk.md",
+      "json": "pages/CC-LKG-V4-P032-picture-talk.json",
+      "source_prompt": "CC-LKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "CC-LKG-V4-P033",
+      "title": "Story Sequence",
+      "markdown": "pages/CC-LKG-V4-P033-story-sequence.md",
+      "json": "pages/CC-LKG-V4-P033-story-sequence.json",
+      "source_prompt": "CC-LKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "CC-LKG-V4-P034",
+      "title": "Retell a Short Story",
+      "markdown": "pages/CC-LKG-V4-P034-retell-a-short-story.md",
+      "json": "pages/CC-LKG-V4-P034-retell-a-short-story.json",
+      "source_prompt": "CC-LKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "CC-LKG-V4-P035",
+      "title": "Make a Story Ending",
+      "markdown": "pages/CC-LKG-V4-P035-make-a-story-ending.md",
+      "json": "pages/CC-LKG-V4-P035-make-a-story-ending.json",
+      "source_prompt": "CC-LKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "CC-LKG-V4-P036",
+      "title": "Describe a Character",
+      "markdown": "pages/CC-LKG-V4-P036-describe-a-character.md",
+      "json": "pages/CC-LKG-V4-P036-describe-a-character.json",
+      "source_prompt": "CC-LKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "CC-LKG-V4-P037",
+      "title": "Show and Tell",
+      "markdown": "pages/CC-LKG-V4-P037-show-and-tell.md",
+      "json": "pages/CC-LKG-V4-P037-show-and-tell.json",
+      "source_prompt": "CC-LKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "CC-LKG-V4-P038",
+      "title": "My News",
+      "markdown": "pages/CC-LKG-V4-P038-my-news.md",
+      "json": "pages/CC-LKG-V4-P038-my-news.json",
+      "source_prompt": "CC-LKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "CC-LKG-V4-P039",
+      "title": "Speak to the Group",
+      "markdown": "pages/CC-LKG-V4-P039-speak-to-the-group.md",
+      "json": "pages/CC-LKG-V4-P039-speak-to-the-group.json",
+      "source_prompt": "CC-LKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "CC-LKG-V4-P040",
+      "title": "Listen and Respond",
+      "markdown": "pages/CC-LKG-V4-P040-listen-and-respond.md",
+      "json": "pages/CC-LKG-V4-P040-listen-and-respond.json",
+      "source_prompt": "CC-LKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "CC-LKG-V4-P041",
+      "title": "My Communication Journal",
+      "markdown": "pages/CC-LKG-V4-P041-my-communication-journal.md",
+      "json": "pages/CC-LKG-V4-P041-my-communication-journal.json",
+      "source_prompt": "CC-LKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "CC-LKG-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/CC-LKG-V4-P042-certificate-of-completion.md",
+      "json": "pages/CC-LKG-V4-P042-certificate-of-completion.json",
+      "source_prompt": "CC-LKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "CC-LKG-V4-P043",
+      "title": "I Am a Communication Champion!",
+      "markdown": "pages/CC-LKG-V4-P043-i-am-a-communication-champion.md",
+      "json": "pages/CC-LKG-V4-P043-i-am-a-communication-champion.json",
+      "source_prompt": "CC-LKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "CC-LKG-V4-P044",
+      "title": "Communication Champions — Back Cover",
+      "markdown": "pages/CC-LKG-V4-P044-communication-champions-back-cover.md",
+      "json": "pages/CC-LKG-V4-P044-communication-champions-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

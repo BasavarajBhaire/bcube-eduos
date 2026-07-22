@@ -1,0 +1,27 @@
+{
+  "manifest_version": "4.0.0",
+  "series": "BCube Future Skills Learning Series™",
+  "level": "LKG (4+)",
+  "status": "PASS",
+  "books_total": 10,
+  "books_completed": 1,
+  "completed": [
+    {
+      "slug": "communication-champions",
+      "book": "Communication Champions",
+      "prompts": 44
+    }
+  ],
+  "queue": [
+    "early-literacy-adventures",
+    "early-maths-adventures",
+    "logical-thinking-adventures",
+    "stem-explorers",
+    "creativity-challenges",
+    "my-world-general-awareness",
+    "healthy-habits-safety",
+    "art-colour-fun",
+    "confidence-social-skills"
+  ],
+  "validation_report": "BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json"
+}
