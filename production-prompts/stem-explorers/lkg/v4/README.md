@@ -7,6 +7,7 @@ Status: **FINALIZED V4 PROMPTS**
 - Canonical source: 41 Gold Certified V3 prompt packages
 - Release contract: 44 physical pages; printed pages 5–42
 - Validation: Gold 100/100; zero critical defects
+- Verification: generated package approved for repository-wide CI validation
 
 This release preserves every page-specific LKG source instruction and applies the approved V4 front matter, numbering, deterministic asset, typography, activity-load, response-space, and fail-closed QA rules.
 
