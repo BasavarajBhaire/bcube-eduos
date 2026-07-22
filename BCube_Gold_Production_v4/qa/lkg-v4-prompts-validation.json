@@ -1,7 +1,7 @@
 {
   "validation_version": "4.0.0",
   "level": "LKG (4+)",
-  "books_validated": 7,
+  "books_validated": 8,
   "books_total": 10,
   "completed_books": [
     "communication-champions",
@@ -10,16 +10,17 @@
     "logical-thinking-adventures",
     "stem-explorers",
     "creativity-challenges",
-    "my-world-general-awareness"
+    "my-world-general-awareness",
+    "healthy-habits-safety"
   ],
-  "page_prompts": 308,
-  "markdown_files": 308,
-  "json_files": 308,
-  "source_backed_pages": 280,
-  "checks": 4004,
+  "page_prompts": 352,
+  "markdown_files": 352,
+  "json_files": 352,
+  "source_backed_pages": 320,
+  "checks": 4576,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "healthy-habits-safety",
+  "next_book": "art-colour-fun",
   "book_results": [
     {
       "slug": "communication-champions",
@@ -96,6 +97,18 @@
     {
       "slug": "my-world-general-awareness",
       "book": "My World & General Awareness",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "healthy-habits-safety",
+      "book": "Healthy Habits & Safety",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,

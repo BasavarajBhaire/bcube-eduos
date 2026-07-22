@@ -38,7 +38,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | 5 | STEM Explorers | ST | COMPLETE — V4 prompts |
 | 6 | Creativity Challenges | CR | COMPLETE — V4 prompts |
 | 7 | My World & General Awareness | MW | COMPLETE — V4 prompts |
-| 8 | Healthy Habits & Safety | HH | QUEUED |
+| 8 | Healthy Habits & Safety | HH | COMPLETE — V4 prompts |
 | 9 | Art & Colour Fun | AC | QUEUED |
 | 10 | Confidence & Social Skills | CS | QUEUED |
 
