@@ -1,0 +1,107 @@
+name: Build LKG V4 Book
+
+on:
+  push:
+    branches:
+      - 'agent/lkg-*-v4'
+    paths:
+      - 'BCube_Gold_Production_v4/queue/*.trigger'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lkg-v4-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: ${{ !contains(github.event.head_commit.message, '[skip lkg auto]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Resolve book slug
+        id: book
+        shell: bash
+        run: |
+          slug="${GITHUB_REF_NAME#agent/lkg-}"
+          slug="${slug%-v4}"
+          test -d "production-prompts/${slug}/lkg/v3/pages"
+          echo "slug=${slug}" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare, compile and validate
+        shell: bash
+        env:
+          BOOK_SLUG: ${{ steps.book.outputs.slug }}
+        run: |
+          python BCube_Gold_Production_v4/scripts/prepare-lkg-v4-book.py
+          python -m py_compile BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py "$BOOK_SLUG"
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py "$BOOK_SLUG" --validate-only
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          slug = os.environ['BOOK_SLUG']
+          root = Path('production-prompts') / slug / 'lkg' / 'v4'
+          manifest = json.loads((root / 'release-manifest.json').read_text(encoding='utf-8'))
+          qa = json.loads(Path('BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json').read_text(encoding='utf-8'))
+          portfolio = json.loads(Path('production-prompts/lkg/V4_PORTFOLIO_MANIFEST.json').read_text(encoding='utf-8'))
+
+          assert len(manifest['pages']) == 44
+          assert [page['physical'] for page in manifest['pages']] == list(range(1, 45))
+          assert len(list((root / 'pages').glob('*.md'))) == 44
+          assert len(list((root / 'pages').glob('*.json'))) == 44
+          assert manifest['pages'][43]['printed'] is None
+          assert 'Back Cover' in manifest['pages'][43]['title']
+          assert sum(1 for page in manifest['pages'] if 'Back Cover' in page['title']) == 1
+
+          corrected_titles = {
+              'stem-explorers': 'My STEM Celebration',
+              'creativity-challenges': 'My Creative Celebration',
+              'my-world-general-awareness': 'My World Celebration',
+              'healthy-habits-safety': 'Healthy & Safe Celebration',
+              'art-colour-fun': 'My Art Celebration',
+              'confidence-social-skills': 'I Am Confident and Kind',
+          }
+          if slug in corrected_titles:
+              assert manifest['pages'][42]['printed'] == 42
+              assert manifest['pages'][42]['title'] == corrected_titles[slug]
+
+          count = portfolio['books_completed']
+          assert slug in qa['completed_books']
+          assert qa['books_validated'] == count
+          assert qa['page_prompts'] == 44 * count
+          assert qa['markdown_files'] == 44 * count
+          assert qa['json_files'] == 44 * count
+          assert qa['source_backed_pages'] == 40 * count
+          assert qa['checks'] == 572 * count
+          assert qa['critical_defects'] == 0
+          assert qa['status'] == 'PASS'
+          PY
+
+      - name: Commit generated book
+        shell: bash
+        env:
+          BOOK_SLUG: ${{ steps.book.outputs.slug }}
+        run: |
+          rm -f "BCube_Gold_Production_v4/queue/${BOOK_SLUG}.trigger"
+          book_name="$(python - <<'PY'
+          import json, os
+          from pathlib import Path
+          slug = os.environ['BOOK_SLUG']
+          data = json.loads((Path('production-prompts') / slug / 'lkg' / 'v4' / 'release-manifest.json').read_text(encoding='utf-8'))
+          print(data['book'])
+          PY
+          )"
+          git config user.name 'BCube Production Bot'
+          git config user.email 'info@bcubefutureacademy.in'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Finalize LKG ${book_name} V4 prompts [skip lkg auto]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
