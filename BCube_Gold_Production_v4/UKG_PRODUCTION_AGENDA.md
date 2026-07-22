@@ -40,7 +40,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | 7 | My Amazing World | MA | COMPLETE — V4 prompts |
 | 8 | Digital Explorers | DE | COMPLETE — V4 prompts |
 | 9 | Healthy Me & Wellbeing | HW | COMPLETE — V4 prompts |
-| 10 | Financial Literacy & Life Skills | FL | QUEUED |
+| 10 | Financial Literacy & Life Skills | FL | COMPLETE — V4 prompts |
 
 ## Locked UKG structure
 

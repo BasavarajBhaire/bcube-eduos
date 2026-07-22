@@ -1,7 +1,7 @@
 {
   "validation_version": "4.0.0",
   "level": "UKG (5+)",
-  "books_validated": 9,
+  "books_validated": 10,
   "books_total": 10,
   "completed_books": [
     "communication-masters",
@@ -12,16 +12,17 @@
     "creative-design-studio",
     "my-amazing-world",
     "digital-explorers",
-    "healthy-me-wellbeing"
+    "healthy-me-wellbeing",
+    "financial-literacy-life-skills"
   ],
-  "page_prompts": 396,
-  "markdown_files": 396,
-  "json_files": 396,
-  "source_backed_pages": 360,
-  "checks": 5148,
+  "page_prompts": 440,
+  "markdown_files": 440,
+  "json_files": 440,
+  "source_backed_pages": 400,
+  "checks": 5720,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "financial-literacy-life-skills",
+  "next_book": null,
   "book_results": [
     {
       "slug": "communication-masters",
@@ -122,6 +123,18 @@
     {
       "slug": "healthy-me-wellbeing",
       "book": "Healthy Me & Wellbeing",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "financial-literacy-life-skills",
+      "book": "Financial Literacy & Life Skills",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,
