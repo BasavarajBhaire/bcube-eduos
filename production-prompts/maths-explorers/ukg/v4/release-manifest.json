@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Maths Explorers",
+  "slug": "maths-explorers",
+  "prefix": "ME",
+  "level": "UKG (5+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "ME-UKG-V4-P001",
+      "title": "Maths Explorers",
+      "markdown": "pages/ME-UKG-V4-P001-maths-explorers.md",
+      "json": "pages/ME-UKG-V4-P001-maths-explorers.json",
+      "source_prompt": "ME-UKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "ME-UKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/ME-UKG-V4-P002-about-this-book.md",
+      "json": "pages/ME-UKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "ME-UKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/ME-UKG-V4-P003-copyright.md",
+      "json": "pages/ME-UKG-V4-P003-copyright.json",
+      "source_prompt": "ME-UKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "ME-UKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/ME-UKG-V4-P004-contents-part-1.md",
+      "json": "pages/ME-UKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "ME-UKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/ME-UKG-V4-P005-contents-part-2.md",
+      "json": "pages/ME-UKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "ME-UKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/ME-UKG-V4-P006-welcome.md",
+      "json": "pages/ME-UKG-V4-P006-welcome.json",
+      "source_prompt": "ME-UKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "ME-UKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/ME-UKG-V4-P007-meet-star.md",
+      "json": "pages/ME-UKG-V4-P007-meet-star.json",
+      "source_prompt": "ME-UKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "ME-UKG-V4-P008",
+      "title": "Numbers to 100",
+      "markdown": "pages/ME-UKG-V4-P008-numbers-to-100.md",
+      "json": "pages/ME-UKG-V4-P008-numbers-to-100.json",
+      "source_prompt": "ME-UKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "ME-UKG-V4-P009",
+      "title": "Count Forward & Backward",
+      "markdown": "pages/ME-UKG-V4-P009-count-forward-and-backward.md",
+      "json": "pages/ME-UKG-V4-P009-count-forward-and-backward.json",
+      "source_prompt": "ME-UKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "ME-UKG-V4-P010",
+      "title": "Place Value",
+      "markdown": "pages/ME-UKG-V4-P010-place-value.md",
+      "json": "pages/ME-UKG-V4-P010-place-value.json",
+      "source_prompt": "ME-UKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "ME-UKG-V4-P011",
+      "title": "Compare Numbers",
+      "markdown": "pages/ME-UKG-V4-P011-compare-numbers.md",
+      "json": "pages/ME-UKG-V4-P011-compare-numbers.json",
+      "source_prompt": "ME-UKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "ME-UKG-V4-P012",
+      "title": "Number Patterns",
+      "markdown": "pages/ME-UKG-V4-P012-number-patterns.md",
+      "json": "pages/ME-UKG-V4-P012-number-patterns.json",
+      "source_prompt": "ME-UKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "ME-UKG-V4-P013",
+      "title": "Addition Stories",
+      "markdown": "pages/ME-UKG-V4-P013-addition-stories.md",
+      "json": "pages/ME-UKG-V4-P013-addition-stories.json",
+      "source_prompt": "ME-UKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "ME-UKG-V4-P014",
+      "title": "Subtraction Stories",
+      "markdown": "pages/ME-UKG-V4-P014-subtraction-stories.md",
+      "json": "pages/ME-UKG-V4-P014-subtraction-stories.json",
+      "source_prompt": "ME-UKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "ME-UKG-V4-P015",
+      "title": "Make 10",
+      "markdown": "pages/ME-UKG-V4-P015-make-10.md",
+      "json": "pages/ME-UKG-V4-P015-make-10.json",
+      "source_prompt": "ME-UKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "ME-UKG-V4-P016",
+      "title": "Number Bonds",
+      "markdown": "pages/ME-UKG-V4-P016-number-bonds.md",
+      "json": "pages/ME-UKG-V4-P016-number-bonds.json",
+      "source_prompt": "ME-UKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "ME-UKG-V4-P017",
+      "title": "Missing Numbers",
+      "markdown": "pages/ME-UKG-V4-P017-missing-numbers.md",
+      "json": "pages/ME-UKG-V4-P017-missing-numbers.json",
+      "source_prompt": "ME-UKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "ME-UKG-V4-P018",
+      "title": "Shapes Around Us",
+      "markdown": "pages/ME-UKG-V4-P018-shapes-around-us.md",
+      "json": "pages/ME-UKG-V4-P018-shapes-around-us.json",
+      "source_prompt": "ME-UKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "ME-UKG-V4-P019",
+      "title": "2D & 3D Shapes",
+      "markdown": "pages/ME-UKG-V4-P019-2d-and-3d-shapes.md",
+      "json": "pages/ME-UKG-V4-P019-2d-and-3d-shapes.json",
+      "source_prompt": "ME-UKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "ME-UKG-V4-P020",
+      "title": "Measure Length",
+      "markdown": "pages/ME-UKG-V4-P020-measure-length.md",
+      "json": "pages/ME-UKG-V4-P020-measure-length.json",
+      "source_prompt": "ME-UKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "ME-UKG-V4-P021",
+      "title": "Weight & Capacity",
+      "markdown": "pages/ME-UKG-V4-P021-weight-and-capacity.md",
+      "json": "pages/ME-UKG-V4-P021-weight-and-capacity.json",
+      "source_prompt": "ME-UKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "ME-UKG-V4-P022",
+      "title": "Time on the Clock",
+      "markdown": "pages/ME-UKG-V4-P022-time-on-the-clock.md",
+      "json": "pages/ME-UKG-V4-P022-time-on-the-clock.json",
+      "source_prompt": "ME-UKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "ME-UKG-V4-P023",
+      "title": "Days & Months",
+      "markdown": "pages/ME-UKG-V4-P023-days-and-months.md",
+      "json": "pages/ME-UKG-V4-P023-days-and-months.json",
+      "source_prompt": "ME-UKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "ME-UKG-V4-P024",
+      "title": "Money Fun",
+      "markdown": "pages/ME-UKG-V4-P024-money-fun.md",
+      "json": "pages/ME-UKG-V4-P024-money-fun.json",
+      "source_prompt": "ME-UKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "ME-UKG-V4-P025",
+      "title": "Simple Graphs",
+      "markdown": "pages/ME-UKG-V4-P025-simple-graphs.md",
+      "json": "pages/ME-UKG-V4-P025-simple-graphs.json",
+      "source_prompt": "ME-UKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "ME-UKG-V4-P026",
+      "title": "Sorting & Classifying",
+      "markdown": "pages/ME-UKG-V4-P026-sorting-and-classifying.md",
+      "json": "pages/ME-UKG-V4-P026-sorting-and-classifying.json",
+      "source_prompt": "ME-UKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "ME-UKG-V4-P027",
+      "title": "Ordinal Numbers",
+      "markdown": "pages/ME-UKG-V4-P027-ordinal-numbers.md",
+      "json": "pages/ME-UKG-V4-P027-ordinal-numbers.json",
+      "source_prompt": "ME-UKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "ME-UKG-V4-P028",
+      "title": "Skip Counting",
+      "markdown": "pages/ME-UKG-V4-P028-skip-counting.md",
+      "json": "pages/ME-UKG-V4-P028-skip-counting.json",
+      "source_prompt": "ME-UKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "ME-UKG-V4-P029",
+      "title": "Word Problems",
+      "markdown": "pages/ME-UKG-V4-P029-word-problems.md",
+      "json": "pages/ME-UKG-V4-P029-word-problems.json",
+      "source_prompt": "ME-UKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "ME-UKG-V4-P030",
+      "title": "Maths in Daily Life",
+      "markdown": "pages/ME-UKG-V4-P030-maths-in-daily-life.md",
+      "json": "pages/ME-UKG-V4-P030-maths-in-daily-life.json",
+      "source_prompt": "ME-UKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "ME-UKG-V4-P031",
+      "title": "Logic Challenge",
+      "markdown": "pages/ME-UKG-V4-P031-logic-challenge.md",
+      "json": "pages/ME-UKG-V4-P031-logic-challenge.json",
+      "source_prompt": "ME-UKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "ME-UKG-V4-P032",
+      "title": "Math Games",
+      "markdown": "pages/ME-UKG-V4-P032-math-games.md",
+      "json": "pages/ME-UKG-V4-P032-math-games.json",
+      "source_prompt": "ME-UKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "ME-UKG-V4-P033",
+      "title": "Maths Review",
+      "markdown": "pages/ME-UKG-V4-P033-maths-review.md",
+      "json": "pages/ME-UKG-V4-P033-maths-review.json",
+      "source_prompt": "ME-UKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "ME-UKG-V4-P034",
+      "title": "Mini Project",
+      "markdown": "pages/ME-UKG-V4-P034-mini-project.md",
+      "json": "pages/ME-UKG-V4-P034-mini-project.json",
+      "source_prompt": "ME-UKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "ME-UKG-V4-P035",
+      "title": "Reflection",
+      "markdown": "pages/ME-UKG-V4-P035-reflection.md",
+      "json": "pages/ME-UKG-V4-P035-reflection.json",
+      "source_prompt": "ME-UKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "ME-UKG-V4-P036",
+      "title": "Showcase",
+      "markdown": "pages/ME-UKG-V4-P036-showcase.md",
+      "json": "pages/ME-UKG-V4-P036-showcase.json",
+      "source_prompt": "ME-UKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "ME-UKG-V4-P037",
+      "title": "Grand Review",
+      "markdown": "pages/ME-UKG-V4-P037-grand-review.md",
+      "json": "pages/ME-UKG-V4-P037-grand-review.json",
+      "source_prompt": "ME-UKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "ME-UKG-V4-P038",
+      "title": "My Achievement",
+      "markdown": "pages/ME-UKG-V4-P038-my-achievement.md",
+      "json": "pages/ME-UKG-V4-P038-my-achievement.json",
+      "source_prompt": "ME-UKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "ME-UKG-V4-P039",
+      "title": "My Maths Goals",
+      "markdown": "pages/ME-UKG-V4-P039-my-maths-goals.md",
+      "json": "pages/ME-UKG-V4-P039-my-maths-goals.json",
+      "source_prompt": "ME-UKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "ME-UKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/ME-UKG-V4-P040-celebration.md",
+      "json": "pages/ME-UKG-V4-P040-celebration.json",
+      "source_prompt": "ME-UKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "ME-UKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/ME-UKG-V4-P041-certificate.md",
+      "json": "pages/ME-UKG-V4-P041-certificate.json",
+      "source_prompt": "ME-UKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "ME-UKG-V4-P042",
+      "title": "I Am a Maths Explorer",
+      "markdown": "pages/ME-UKG-V4-P042-i-am-a-maths-explorer.md",
+      "json": "pages/ME-UKG-V4-P042-i-am-a-maths-explorer.json",
+      "source_prompt": "ME-UKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "ME-UKG-V4-P043",
+      "title": "My Maths Celebration",
+      "markdown": "pages/ME-UKG-V4-P043-my-maths-celebration.md",
+      "json": "pages/ME-UKG-V4-P043-my-maths-celebration.json",
+      "source_prompt": "ME-UKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "ME-UKG-V4-P044",
+      "title": "Maths Explorers — Back Cover",
+      "markdown": "pages/ME-UKG-V4-P044-maths-explorers-back-cover.md",
+      "json": "pages/ME-UKG-V4-P044-maths-explorers-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
