@@ -20,34 +20,38 @@ def fail(errors,msg): errors.append(msg)
 
 def validate_manifest(manifest, errors):
     jobs=manifest.get("jobs",[])
+    if not re.fullmatch(r"[A-Z][A-Z0-9_]+_NURSERY",manifest.get("book_id","")):
+        fail(errors,"book_id must identify a canonical Nursery book")
+    book_prefix=(jobs[0].get("prompt_id","").rsplit("-P",1)[0] if jobs else "")
+    if not re.fullmatch(r"[A-Z]{2,4}-NURSERY-V4",book_prefix): fail(errors,"manifest prompt prefix must be <BOOK>-NURSERY-V4")
     if manifest.get("release_mode")!="approved-assets-only": fail(errors,"release_mode must be approved-assets-only")
     if manifest.get("total_packages")!=44 or len(jobs)!=44: fail(errors,"manifest must contain exactly 44 packages")
     seen=set()
     templates=json.loads(TEMPLATES.read_text()).get("templates",{})
     for expected,job in enumerate(jobs,1):
-        prefix=f"job P{expected:03d}"
-        if job.get("production_position")!=expected: fail(errors,f"{prefix}: non-sequential production position")
-        expected_id=f"CC-NURSERY-V4-P{expected:03d}"
-        if job.get("prompt_id")!=expected_id: fail(errors,f"{prefix}: prompt id must be {expected_id}")
-        if job.get("prompt_id") in seen: fail(errors,f"{prefix}: duplicate prompt id")
+        label=f"job P{expected:03d}"
+        if job.get("production_position")!=expected: fail(errors,f"{label}: non-sequential production position")
+        expected_id=f"{book_prefix}-P{expected:03d}"
+        if job.get("prompt_id")!=expected_id: fail(errors,f"{label}: prompt id must be {expected_id}")
+        if job.get("prompt_id") in seen: fail(errors,f"{label}: duplicate prompt id")
         seen.add(job.get("prompt_id"))
         is_cover=expected in (1,44)
         logical=None if is_cover else expected-1
         visible=6<=expected<=43
-        if job.get("logical_page_number")!=logical: fail(errors,f"{prefix}: logical page must be {logical}")
-        if job.get("printed_number_visible") is not visible: fail(errors,f"{prefix}: printed visibility must be {visible}")
-        if job.get("template_id") not in templates: fail(errors,f"{prefix}: unknown template {job.get('template_id')}")
+        if job.get("logical_page_number")!=logical: fail(errors,f"{label}: logical page must be {logical}")
+        if job.get("printed_number_visible") is not visible: fail(errors,f"{label}: printed visibility must be {visible}")
+        if job.get("template_id") not in templates: fail(errors,f"{label}: unknown template {job.get('template_id')}")
         for key in ("source_json","source_markdown"):
             p=ROOT/job.get(key,"")
-            if not p.is_file(): fail(errors,f"{prefix}: missing {key} {p}")
+            if not p.is_file(): fail(errors,f"{label}: missing {key} {p}")
         src=ROOT/job.get("source_json","")
         if src.is_file():
             data=json.loads(src.read_text())
             source_title=data.get("page_data",{}).get("title")
             if expected not in (4,5) and source_title!=job.get("title"):
-                fail(errors,f"{prefix}: manifest title {job.get('title')!r} differs from canonical source {source_title!r}")
+                fail(errors,f"{label}: manifest title {job.get('title')!r} differs from canonical source {source_title!r}")
         if not re.fullmatch(rf"{re.escape(expected_id)}-[a-z0-9-]+\.png",job.get("output_file","")):
-            fail(errors,f"{prefix}: output filename is not canonical")
+            fail(errors,f"{label}: output filename is not canonical")
 
 def validate_brand(lock, errors, require_approved):
     brand=lock.get("brand_assets",{})
@@ -88,7 +92,14 @@ def main():
     args=ap.parse_args()
     manifest=json.loads(args.manifest.read_text()); lock=json.loads(args.asset_lock.read_text()); errors=[]
     validate_manifest(manifest,errors)
-    validate_brand(lock,errors,args.mode=="release")
+    brand_path=ROOT/manifest.get("brand_lock","")
+    if not brand_path.is_file():
+        fail(errors,f"brand lock is missing: {brand_path}")
+        brand_lock={}
+    else:
+        brand_lock=json.loads(brand_path.read_text())
+    # The shared brand lock uses `assets`; legacy book locks used `brand_assets`.
+    validate_brand({"brand_assets":brand_lock.get("assets",brand_lock.get("brand_assets",{}))},errors,args.mode=="release")
     if args.mode=="release": validate_pages(manifest,lock,errors)
     if errors:
         print("REJECTED")
