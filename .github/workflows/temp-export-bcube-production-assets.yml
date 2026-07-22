@@ -1,9 +1,9 @@
 name: Temporary BCube Production Assets Export
 
 on:
-  push:
+  pull_request:
     branches:
-      - temp/export-bcube-production-assets
+      - main
 
 permissions:
   contents: read
