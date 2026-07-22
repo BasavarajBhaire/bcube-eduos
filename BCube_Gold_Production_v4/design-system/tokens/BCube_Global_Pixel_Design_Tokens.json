@@ -1,0 +1,128 @@
+{
+  "status": "PRE-PRINT PILOT",
+  "scope": ["nursery", "lkg", "ukg", "future-levels"],
+  "canvas": {
+    "width_px": 2480,
+    "height_px": 3508,
+    "dpi": 300,
+    "orientation": "portrait",
+    "trim_mm": {"width": 210, "height": 297},
+    "bleed_mm": 3,
+    "minimum_safe_margin_mm": 10,
+    "binding_margin_mm": 12
+  },
+  "coordinate_system": {
+    "origin": "top-left",
+    "units": "pixels",
+    "rounding": "integer",
+    "scale_policy": "proportional-from-2480x3508-only"
+  },
+  "global_safe_zones": {
+    "trim_safe": {"x": 118, "y": 118, "width": 2244, "height": 3272},
+    "header": {"x": 60, "y": 40, "width": 2360, "height": 430},
+    "title": {"x": 240, "y": 420, "width": 1780, "height": 480},
+    "age_badge": {"x": 1980, "y": 60, "width": 380, "height": 380},
+    "main_content": {"x": 60, "y": 900, "width": 2360, "height": 2070},
+    "teacher_panel": {"x": 60, "y": 2710, "width": 1140, "height": 390},
+    "parent_panel": {"x": 1280, "y": 2710, "width": 1140, "height": 390},
+    "pillar_panel": {"x": 60, "y": 3070, "width": 2360, "height": 280},
+    "footer": {"x": 0, "y": 3290, "width": 2480, "height": 218}
+  },
+  "page_type_layouts": {
+    "cover": {
+      "logo": {"x": 60, "y": 40, "width": 520, "height": 360},
+      "series_banner": {"x": 820, "y": 60, "width": 1560, "height": 310},
+      "book_title": {"x": 260, "y": 420, "width": 1600, "height": 460},
+      "age_badge": {"x": 1940, "y": 440, "width": 410, "height": 410},
+      "strapline": {"x": 370, "y": 900, "width": 1460, "height": 150},
+      "illustration_frame": {"x": 80, "y": 1070, "width": 1680, "height": 1740},
+      "skills_column": {"x": 1810, "y": 1160, "width": 580, "height": 890},
+      "core_pillars_label": {"x": 780, "y": 2820, "width": 900, "height": 110},
+      "core_pillars_panel": {"x": 65, "y": 2885, "width": 2350, "height": 405},
+      "footer_primary": {"x": 0, "y": 3290, "width": 2480, "height": 145},
+      "footer_secondary": {"x": 0, "y": 3435, "width": 2480, "height": 73}
+    },
+    "publisher": {
+      "logo": {"x": 760, "y": 90, "width": 960, "height": 650},
+      "book_name": {"x": 180, "y": 760, "width": 2120, "height": 230},
+      "age_label": {"x": 850, "y": 1010, "width": 780, "height": 110},
+      "publisher_identity": {"x": 260, "y": 1200, "width": 1960, "height": 500},
+      "contact_row": {"x": 160, "y": 1750, "width": 2160, "height": 180},
+      "copyright_block": {"x": 250, "y": 2020, "width": 1980, "height": 520},
+      "publication_identity": {"x": 460, "y": 2570, "width": 1560, "height": 320},
+      "printed_in": {"x": 840, "y": 2910, "width": 800, "height": 90},
+      "qr_block": {"x": 760, "y": 3030, "width": 960, "height": 360},
+      "illustration": "prohibited",
+      "star": "prohibited",
+      "visible_page_number": false
+    },
+    "about": {
+      "logo": {"x": 60, "y": 40, "width": 480, "height": 330},
+      "book_name": {"x": 560, "y": 60, "width": 1300, "height": 170},
+      "page_title": {"x": 380, "y": 260, "width": 1720, "height": 220},
+      "age_badge": {"x": 1970, "y": 40, "width": 380, "height": 380},
+      "intro_text": {"x": 90, "y": 650, "width": 840, "height": 950},
+      "learning_outcomes": {"x": 1000, "y": 650, "width": 1390, "height": 950},
+      "illustration_frame": {"x": 60, "y": 1620, "width": 2360, "height": 1040},
+      "optional_teacher_panel": {"x": 60, "y": 2690, "width": 1140, "height": 350},
+      "optional_parent_panel": {"x": 1280, "y": 2690, "width": 1140, "height": 350},
+      "pillar_panel": {"x": 60, "y": 3070, "width": 2360, "height": 280},
+      "footer": {"x": 0, "y": 3290, "width": 2480, "height": 218},
+      "series_banner": false,
+      "visible_page_number": false
+    },
+    "contents": {
+      "logo": {"x": 60, "y": 40, "width": 440, "height": 300},
+      "book_name": {"x": 520, "y": 60, "width": 1420, "height": 140},
+      "page_title": {"x": 500, "y": 230, "width": 1480, "height": 180},
+      "navigation_area": {"x": 100, "y": 520, "width": 2280, "height": 2510},
+      "footer": {"x": 0, "y": 3290, "width": 2480, "height": 218},
+      "dominant_illustration": false,
+      "visible_page_number": false
+    },
+    "lesson": {
+      "logo": {"x": 60, "y": 40, "width": 360, "height": 250},
+      "book_name": {"x": 440, "y": 55, "width": 1220, "height": 100},
+      "page_title": {"x": 380, "y": 190, "width": 1720, "height": 170},
+      "age_badge": "prohibited",
+      "illustration_or_activity": {"x": 60, "y": 430, "width": 2360, "height": 1900},
+      "teacher_panel": {"x": 60, "y": 2380, "width": 1140, "height": 500},
+      "parent_panel": {"x": 1280, "y": 2380, "width": 1140, "height": 500},
+      "pillar_panel": {"x": 60, "y": 2930, "width": 2360, "height": 340},
+      "footer": {"x": 0, "y": 3290, "width": 2480, "height": 218},
+      "page_number": {"x": 2290, "y": 3360, "width": 120, "height": 120},
+      "visible_page_number": true
+    }
+  },
+  "spacing_tokens": {
+    "xxs": 8,
+    "xs": 16,
+    "sm": 24,
+    "md": 40,
+    "lg": 64,
+    "xl": 96,
+    "xxl": 140
+  },
+  "shape_tokens": {
+    "border_width": 6,
+    "outer_border_width": 8,
+    "corner_radius_small": 24,
+    "corner_radius_medium": 40,
+    "corner_radius_large": 58,
+    "capsule_radius": 60
+  },
+  "validation": {
+    "no_region_overlap": true,
+    "no_duplicate_logo": true,
+    "no_duplicate_star": true,
+    "no_generated_brand_assets": true,
+    "no_generated_typography": true,
+    "no_double_illustration_frame": true,
+    "pillar_label_clearance_px": 20,
+    "minimum_region_clearance_px": 16,
+    "all_content_inside_trim_safe": true,
+    "acceptance_score": 100,
+    "critical_defects": 0,
+    "fail_closed": true
+  }
+}
