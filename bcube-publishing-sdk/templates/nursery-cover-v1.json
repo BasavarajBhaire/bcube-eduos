@@ -1,0 +1,30 @@
+{
+  "template_id": "BCUBE-NURSERY-COVER-V1",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "bounds": {
+    "official_logo": [90, 45, 560, 360],
+    "series_banner": [730, 55, 2290, 360],
+    "age_badge": [1990, 390, 2360, 760],
+    "book_title": [260, 400, 1880, 750],
+    "book_tagline": [420, 770, 1920, 920],
+    "illustration_frame": [90, 970, 1760, 2700],
+    "six_skill_capsules": [1810, 1080, 2380, 2160],
+    "five_core_pillars": [65, 2780, 2415, 3150],
+    "footer": [0, 3150, 2480, 3508]
+  },
+  "colours": {
+    "purple": "#63358F",
+    "blue": "#1454A3",
+    "pink": "#EA347E",
+    "gold": "#F3C51C",
+    "background": "#FFFDF9"
+  },
+  "rules": {
+    "illustration_only": true,
+    "illustration_text_allowed": false,
+    "illustration_branding_allowed": false,
+    "official_star_generated": false,
+    "skill_count": 6,
+    "pillar_count": 5
+  }
+}
