@@ -1,0 +1,71 @@
+{
+  "registry_version": "pre-print-pilot",
+  "defaults": {
+    "level": "Nursery",
+    "age": "3+",
+    "pillars": [
+      {"code": "CR", "name": "Creativity"},
+      {"code": "CO", "name": "Communication"},
+      {"code": "CU", "name": "Curiosity"},
+      {"code": "CF", "name": "Confidence"},
+      {"code": "CL", "name": "Collaboration"}
+    ],
+    "official_logo_candidates": [
+      "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
+      "BCube_Gold_Production_v4/assets/nursery/communication-champions/P006/bcube-academy-logo.jpg"
+    ],
+    "official_star_candidates": [
+      "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P007-meet-star.png"
+    ]
+  },
+  "books": {
+    "confidence-builders": {
+      "page_id": "CB-NURSERY-V4-P001",
+      "book_key": "nursery/confidence-builders",
+      "title_lines": ["Confidence", "Builders"],
+      "tagline": "I Believe • I Can • I Will",
+      "skills": [
+        "Believe in Myself",
+        "Try New Things",
+        "Speak with Confidence",
+        "Make Good Choices",
+        "Be Kind to Others",
+        "Celebrate Success"
+      ],
+      "footer_keywords": "Self-belief • Courage • Expression • Kindness • Independence",
+      "required_detected_text": [
+        "CONFIDENCE BUILDERS",
+        "I BELIEVE",
+        "I CAN",
+        "I WILL",
+        "BCUBE FUTURE SKILLS LEARNING SERIES",
+        "NURSERY",
+        "3+"
+      ]
+    },
+    "communication-champions": {
+      "page_id": "CC-NURSERY-V4-P001",
+      "book_key": "nursery/communication-champions",
+      "title_lines": ["Communication", "Champions"],
+      "tagline": "Listen • Speak • Share",
+      "skills": [
+        "Listen Carefully",
+        "Speak Clearly",
+        "Share Ideas",
+        "Use Kind Words",
+        "Take Turns",
+        "Express Feelings"
+      ],
+      "footer_keywords": "Listening • Speaking • Sharing • Expression • Friendship",
+      "required_detected_text": [
+        "COMMUNICATION CHAMPIONS",
+        "LISTEN",
+        "SPEAK",
+        "SHARE",
+        "BCUBE FUTURE SKILLS LEARNING SERIES",
+        "NURSERY",
+        "3+"
+      ]
+    }
+  }
+}

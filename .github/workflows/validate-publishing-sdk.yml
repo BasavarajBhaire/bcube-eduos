@@ -4,12 +4,14 @@ on:
   pull_request:
     paths:
       - 'bcube-publishing-sdk/**'
+      - 'scripts/run_bcube_cover_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
   push:
     branches: [main]
     paths:
       - 'bcube-publishing-sdk/**'
+      - 'scripts/run_bcube_cover_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
 
@@ -23,9 +25,25 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Compile SDK
-        run: python -m py_compile bcube-publishing-sdk/composer/*.py bcube-publishing-sdk/validators/*.py
+      - name: Compile SDK and pipeline
+        run: python -m py_compile bcube-publishing-sdk/composer/*.py bcube-publishing-sdk/validators/*.py scripts/run_bcube_cover_pipeline.py
       - name: Validate SDK contracts
         run: python bcube-publishing-sdk/validators/validate_sdk.py
+      - name: Validate Nursery book registry
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          registry = json.loads(Path('bcube-publishing-sdk/books/nursery-books.json').read_text(encoding='utf-8'))
+          assert registry['defaults']['level'] == 'Nursery'
+          assert len(registry['defaults']['pillars']) == 5
+          for slug, book in registry['books'].items():
+              assert len(book['title_lines']) == 2, slug
+              assert len(book['skills']) == 6, slug
+              assert book['page_id'].endswith('P001'), slug
+          print('Nursery book registry validation passed')
+          PY
       - name: Test deterministic Nursery cover compositor
         run: python bcube-publishing-sdk/composer/compose_nursery_cover.py --self-test
+      - name: Check smart pipeline help
+        run: python scripts/run_bcube_cover_pipeline.py --help
