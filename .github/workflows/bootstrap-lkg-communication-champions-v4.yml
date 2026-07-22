@@ -1,0 +1,57 @@
+name: Bootstrap LKG Communication Champions V4
+
+on:
+  push:
+    branches:
+      - agent/lkg-communication-champions-v4
+    paths:
+      - 'BCube_Gold_Production_v4/scripts/.lkg-generator-parts/**'
+      - '.github/workflows/bootstrap-lkg-communication-champions-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bootstrap-lkg-communication-champions-v4
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: ${{ !contains(github.event.head_commit.message, '[skip lkg bootstrap]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/lkg-communication-champions-v4
+          fetch-depth: 0
+
+      - name: Assemble deterministic compiler
+        shell: bash
+        run: |
+          cat BCube_Gold_Production_v4/scripts/.lkg-generator-parts/chunk-*.b64 | tr -d '\n' | base64 --decode > BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+          echo 'e3459f8caeb0fb5f7d7f81032de226619aad08ccef50ddfbf3c8acb537d5e6be  BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py' | sha256sum --check
+          chmod +x BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+          python -m py_compile BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+
+      - name: Generate and validate Communication Champions
+        shell: bash
+        run: |
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py communication-champions
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py communication-champions --validate-only
+
+      - name: Remove bootstrap-only files
+        shell: bash
+        run: |
+          rm -rf BCube_Gold_Production_v4/scripts/.lkg-generator-parts
+          rm -f .github/workflows/bootstrap-lkg-communication-champions-v4.yml
+
+      - name: Commit generated book
+        shell: bash
+        run: |
+          git config user.name 'BCube Production Bot'
+          git config user.email 'info@bcubefutureacademy.in'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'Finalize LKG Communication Champions V4 prompts [skip lkg bootstrap]'
+          git push origin HEAD:agent/lkg-communication-champions-v4
