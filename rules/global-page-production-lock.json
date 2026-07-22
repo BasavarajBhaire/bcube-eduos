@@ -1,0 +1,105 @@
+{
+  "policy_id": "BCUBE-GLOBAL-PAGE-PRODUCTION-LOCK-V1",
+  "version": "1.0.0",
+  "status": "MANDATORY_FAIL_CLOSED",
+  "scope": {
+    "levels": ["Nursery", "LKG", "UKG", "future-levels"],
+    "books": "all",
+    "page_types": ["cover", "front_matter", "learning", "activity", "reflection", "certificate", "back_cover"],
+    "workflows": ["manual", "Canva", "Figma", "Illustrator", "InDesign", "Python", "image_model", "automation"]
+  },
+  "approved_baseline": "Communication Champions finalized production method plus merged V4 page architecture",
+  "pipeline": [
+    "load_exact_v4_page_package",
+    "resolve_approved_page_template",
+    "resolve_official_logo_asset",
+    "resolve_approved_star_asset_when_required",
+    "generate_illustration_layer_only",
+    "compose_editable_text_and_layout_deterministically",
+    "validate_against_manifest_and_global_lock",
+    "export_one_flat_front_facing_print_page"
+  ],
+  "asset_locks": {
+    "official_logo": {
+      "required": true,
+      "placement": "deterministic_composition",
+      "generation_allowed": false,
+      "redraw_allowed": false,
+      "substitution_allowed": false,
+      "missing_asset_action": "STOP"
+    },
+    "approved_star": {
+      "required_when_page_package_requires_star": true,
+      "placement": "deterministic_composition_or_approved_master_pose",
+      "generation_allowed": false,
+      "redraw_allowed": false,
+      "substitution_allowed": false,
+      "missing_asset_action": "STOP"
+    }
+  },
+  "typography_lock": {
+    "source": "exact_finalized_page_package",
+    "editable_text_layers_required": true,
+    "image_model_text_allowed": false,
+    "paraphrase_allowed": false,
+    "pseudo_text_allowed": false
+  },
+  "illustration_layer": {
+    "allowed": ["required_scene", "required_objects", "required_characters", "required_background"],
+    "prohibited": ["logo", "title", "instruction", "badge", "page_number", "footer", "activity_text", "teacher_text", "parent_text", "production_metadata", "qa_table"]
+  },
+  "publishing_lock": {
+    "format": "A4_portrait",
+    "dimensions_mm": [210, 297],
+    "target_pixels": [2480, 3508],
+    "target_dpi": 300,
+    "bleed_mm": 3,
+    "minimum_safe_margin_mm": 10,
+    "binding_margin_mm": 12,
+    "one_physical_page_per_output": true,
+    "flat_front_facing_only": true,
+    "mockup_allowed": false,
+    "contact_sheet_allowed": false,
+    "poster_or_infographic_substitution_allowed": false,
+    "internal_metadata_on_child_page_allowed": false
+  },
+  "mandatory_execution_declaration": [
+    "book",
+    "level",
+    "prompt_id",
+    "physical_page",
+    "printed_page",
+    "page_type",
+    "exact_title",
+    "v4_source_package_path",
+    "template_id",
+    "official_logo_asset_id",
+    "official_logo_checksum",
+    "approved_star_asset_id_when_required",
+    "approved_star_checksum_when_required",
+    "illustration_only_brief",
+    "deterministic_composition_plan",
+    "output_path",
+    "qa_result"
+  ],
+  "critical_defects": [
+    "official_logo_missing_invented_or_altered",
+    "approved_star_missing_invented_or_altered_when_required",
+    "generated_or_corrupted_typography",
+    "wrong_title_wording_or_numbering",
+    "poster_infographic_or_specification_sheet_instead_of_workbook_page",
+    "internal_metadata_visible_on_child_page",
+    "wrong_template_or_page_type",
+    "required_teaching_parent_activity_or_response_component_missing",
+    "cropped_overlapping_or_unusable_response_region",
+    "illustration_reused_from_another_page_or_book",
+    "multiple_pages_or_mockup_in_one_output",
+    "unresolved_asset_reference_or_placeholder"
+  ],
+  "acceptance": {
+    "score": 100,
+    "critical_defects": 0,
+    "manifest_identity_match": true,
+    "official_assets_confirmed": true
+  }
+}
