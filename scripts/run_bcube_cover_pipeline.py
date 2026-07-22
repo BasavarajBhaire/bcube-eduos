@@ -20,7 +20,7 @@ from typing import Any
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover.py"
+COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover_v12.py"
 FINALIZER = ROOT / "bcube-publishing-sdk/composer/finalize_cover_evidence.py"
 PREFLIGHT = ROOT / "bcube-publishing-sdk/validators/validate_cover_inputs.py"
 VALIDATOR = ROOT / "scripts/validate_rendered_page.py"
