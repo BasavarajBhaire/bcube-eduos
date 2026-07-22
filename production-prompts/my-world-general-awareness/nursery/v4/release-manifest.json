@@ -1,0 +1,413 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "My World & General Awareness",
+  "slug": "my-world-general-awareness",
+  "prefix": "MW",
+  "level": "Nursery (3+)",
+  "physical_pages": 44,
+  "learning_pages": 38,
+  "printed_learning_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "MW-NURSERY-V4-P001",
+      "title": "My World & General Awareness",
+      "markdown": "pages/MW-NURSERY-V4-P001-my-world-and-general-awareness.md",
+      "json": "pages/MW-NURSERY-V4-P001-my-world-and-general-awareness.json",
+      "source_prompt": "MW-NURSERY-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "MW-NURSERY-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/MW-NURSERY-V4-P002-about-this-book.md",
+      "json": "pages/MW-NURSERY-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "MW-NURSERY-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/MW-NURSERY-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/MW-NURSERY-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "MW-NURSERY-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "MW-NURSERY-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/MW-NURSERY-V4-P004-contents-part-1.md",
+      "json": "pages/MW-NURSERY-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "MW-NURSERY-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/MW-NURSERY-V4-P005-contents-part-2.md",
+      "json": "pages/MW-NURSERY-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "MW-NURSERY-V4-P006",
+      "title": "Welcome to My World",
+      "markdown": "pages/MW-NURSERY-V4-P006-welcome-to-my-world.md",
+      "json": "pages/MW-NURSERY-V4-P006-welcome-to-my-world.json",
+      "source_prompt": "MW-NURSERY-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "MW-NURSERY-V4-P007",
+      "title": "Meet World Star",
+      "markdown": "pages/MW-NURSERY-V4-P007-meet-world-star.md",
+      "json": "pages/MW-NURSERY-V4-P007-meet-world-star.json",
+      "source_prompt": "MW-NURSERY-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "MW-NURSERY-V4-P008",
+      "title": "My Body",
+      "markdown": "pages/MW-NURSERY-V4-P008-my-body.md",
+      "json": "pages/MW-NURSERY-V4-P008-my-body.json",
+      "source_prompt": "MW-NURSERY-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "MW-NURSERY-V4-P009",
+      "title": "My Five Senses",
+      "markdown": "pages/MW-NURSERY-V4-P009-my-five-senses.md",
+      "json": "pages/MW-NURSERY-V4-P009-my-five-senses.json",
+      "source_prompt": "MW-NURSERY-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "MW-NURSERY-V4-P010",
+      "title": "Healthy Me",
+      "markdown": "pages/MW-NURSERY-V4-P010-healthy-me.md",
+      "json": "pages/MW-NURSERY-V4-P010-healthy-me.json",
+      "source_prompt": "MW-NURSERY-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "MW-NURSERY-V4-P011",
+      "title": "My Family",
+      "markdown": "pages/MW-NURSERY-V4-P011-my-family.md",
+      "json": "pages/MW-NURSERY-V4-P011-my-family.json",
+      "source_prompt": "MW-NURSERY-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "MW-NURSERY-V4-P012",
+      "title": "My Home",
+      "markdown": "pages/MW-NURSERY-V4-P012-my-home.md",
+      "json": "pages/MW-NURSERY-V4-P012-my-home.json",
+      "source_prompt": "MW-NURSERY-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "MW-NURSERY-V4-P013",
+      "title": "My School",
+      "markdown": "pages/MW-NURSERY-V4-P013-my-school.md",
+      "json": "pages/MW-NURSERY-V4-P013-my-school.json",
+      "source_prompt": "MW-NURSERY-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "MW-NURSERY-V4-P014",
+      "title": "My Classroom",
+      "markdown": "pages/MW-NURSERY-V4-P014-my-classroom.md",
+      "json": "pages/MW-NURSERY-V4-P014-my-classroom.json",
+      "source_prompt": "MW-NURSERY-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "MW-NURSERY-V4-P015",
+      "title": "My Neighbourhood",
+      "markdown": "pages/MW-NURSERY-V4-P015-my-neighbourhood.md",
+      "json": "pages/MW-NURSERY-V4-P015-my-neighbourhood.json",
+      "source_prompt": "MW-NURSERY-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "MW-NURSERY-V4-P016",
+      "title": "People Who Help Us",
+      "markdown": "pages/MW-NURSERY-V4-P016-people-who-help-us.md",
+      "json": "pages/MW-NURSERY-V4-P016-people-who-help-us.json",
+      "source_prompt": "MW-NURSERY-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "MW-NURSERY-V4-P017",
+      "title": "Doctor and Nurse",
+      "markdown": "pages/MW-NURSERY-V4-P017-doctor-and-nurse.md",
+      "json": "pages/MW-NURSERY-V4-P017-doctor-and-nurse.json",
+      "source_prompt": "MW-NURSERY-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "MW-NURSERY-V4-P018",
+      "title": "Farmer and Food",
+      "markdown": "pages/MW-NURSERY-V4-P018-farmer-and-food.md",
+      "json": "pages/MW-NURSERY-V4-P018-farmer-and-food.json",
+      "source_prompt": "MW-NURSERY-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "MW-NURSERY-V4-P019",
+      "title": "Police Officer and Firefighter",
+      "markdown": "pages/MW-NURSERY-V4-P019-police-officer-and-firefighter.md",
+      "json": "pages/MW-NURSERY-V4-P019-police-officer-and-firefighter.json",
+      "source_prompt": "MW-NURSERY-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "MW-NURSERY-V4-P020",
+      "title": "Post and Delivery",
+      "markdown": "pages/MW-NURSERY-V4-P020-post-and-delivery.md",
+      "json": "pages/MW-NURSERY-V4-P020-post-and-delivery.json",
+      "source_prompt": "MW-NURSERY-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "MW-NURSERY-V4-P021",
+      "title": "At the Market",
+      "markdown": "pages/MW-NURSERY-V4-P021-at-the-market.md",
+      "json": "pages/MW-NURSERY-V4-P021-at-the-market.json",
+      "source_prompt": "MW-NURSERY-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "MW-NURSERY-V4-P022",
+      "title": "Places Around Me",
+      "markdown": "pages/MW-NURSERY-V4-P022-places-around-me.md",
+      "json": "pages/MW-NURSERY-V4-P022-places-around-me.json",
+      "source_prompt": "MW-NURSERY-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "MW-NURSERY-V4-P023",
+      "title": "Road Safety",
+      "markdown": "pages/MW-NURSERY-V4-P023-road-safety.md",
+      "json": "pages/MW-NURSERY-V4-P023-road-safety.json",
+      "source_prompt": "MW-NURSERY-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "MW-NURSERY-V4-P024",
+      "title": "Animals Around Us",
+      "markdown": "pages/MW-NURSERY-V4-P024-animals-around-us.md",
+      "json": "pages/MW-NURSERY-V4-P024-animals-around-us.json",
+      "source_prompt": "MW-NURSERY-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "MW-NURSERY-V4-P025",
+      "title": "Farm Animals",
+      "markdown": "pages/MW-NURSERY-V4-P025-farm-animals.md",
+      "json": "pages/MW-NURSERY-V4-P025-farm-animals.json",
+      "source_prompt": "MW-NURSERY-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "MW-NURSERY-V4-P026",
+      "title": "Wild Animals",
+      "markdown": "pages/MW-NURSERY-V4-P026-wild-animals.md",
+      "json": "pages/MW-NURSERY-V4-P026-wild-animals.json",
+      "source_prompt": "MW-NURSERY-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "MW-NURSERY-V4-P027",
+      "title": "Birds and Insects",
+      "markdown": "pages/MW-NURSERY-V4-P027-birds-and-insects.md",
+      "json": "pages/MW-NURSERY-V4-P027-birds-and-insects.json",
+      "source_prompt": "MW-NURSERY-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "MW-NURSERY-V4-P028",
+      "title": "Animal Homes",
+      "markdown": "pages/MW-NURSERY-V4-P028-animal-homes.md",
+      "json": "pages/MW-NURSERY-V4-P028-animal-homes.json",
+      "source_prompt": "MW-NURSERY-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "MW-NURSERY-V4-P029",
+      "title": "Plants Around Us",
+      "markdown": "pages/MW-NURSERY-V4-P029-plants-around-us.md",
+      "json": "pages/MW-NURSERY-V4-P029-plants-around-us.json",
+      "source_prompt": "MW-NURSERY-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "MW-NURSERY-V4-P030",
+      "title": "Fruits and Vegetables",
+      "markdown": "pages/MW-NURSERY-V4-P030-fruits-and-vegetables.md",
+      "json": "pages/MW-NURSERY-V4-P030-fruits-and-vegetables.json",
+      "source_prompt": "MW-NURSERY-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "MW-NURSERY-V4-P031",
+      "title": "Weather Around Us",
+      "markdown": "pages/MW-NURSERY-V4-P031-weather-around-us.md",
+      "json": "pages/MW-NURSERY-V4-P031-weather-around-us.json",
+      "source_prompt": "MW-NURSERY-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "MW-NURSERY-V4-P032",
+      "title": "My Country India",
+      "markdown": "pages/MW-NURSERY-V4-P032-my-country-india.md",
+      "json": "pages/MW-NURSERY-V4-P032-my-country-india.json",
+      "source_prompt": "MW-NURSERY-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "MW-NURSERY-V4-P033",
+      "title": "The Indian Flag",
+      "markdown": "pages/MW-NURSERY-V4-P033-the-indian-flag.md",
+      "json": "pages/MW-NURSERY-V4-P033-the-indian-flag.json",
+      "source_prompt": "MW-NURSERY-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "MW-NURSERY-V4-P034",
+      "title": "National Symbols",
+      "markdown": "pages/MW-NURSERY-V4-P034-national-symbols.md",
+      "json": "pages/MW-NURSERY-V4-P034-national-symbols.json",
+      "source_prompt": "MW-NURSERY-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "MW-NURSERY-V4-P035",
+      "title": "Festivals and Celebrations",
+      "markdown": "pages/MW-NURSERY-V4-P035-festivals-and-celebrations.md",
+      "json": "pages/MW-NURSERY-V4-P035-festivals-and-celebrations.json",
+      "source_prompt": "MW-NURSERY-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "MW-NURSERY-V4-P036",
+      "title": "Clothes and Food Around India",
+      "markdown": "pages/MW-NURSERY-V4-P036-clothes-and-food-around-india.md",
+      "json": "pages/MW-NURSERY-V4-P036-clothes-and-food-around-india.json",
+      "source_prompt": "MW-NURSERY-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "MW-NURSERY-V4-P037",
+      "title": "Transport Around Us",
+      "markdown": "pages/MW-NURSERY-V4-P037-transport-around-us.md",
+      "json": "pages/MW-NURSERY-V4-P037-transport-around-us.json",
+      "source_prompt": "MW-NURSERY-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "MW-NURSERY-V4-P038",
+      "title": "Earth Is Our Home",
+      "markdown": "pages/MW-NURSERY-V4-P038-earth-is-our-home.md",
+      "json": "pages/MW-NURSERY-V4-P038-earth-is-our-home.json",
+      "source_prompt": "MW-NURSERY-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "MW-NURSERY-V4-P039",
+      "title": "Day and Night",
+      "markdown": "pages/MW-NURSERY-V4-P039-day-and-night.md",
+      "json": "pages/MW-NURSERY-V4-P039-day-and-night.json",
+      "source_prompt": "MW-NURSERY-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "MW-NURSERY-V4-P040",
+      "title": "Keep My World Clean",
+      "markdown": "pages/MW-NURSERY-V4-P040-keep-my-world-clean.md",
+      "json": "pages/MW-NURSERY-V4-P040-keep-my-world-clean.json",
+      "source_prompt": "MW-NURSERY-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "MW-NURSERY-V4-P041",
+      "title": "My World Journal",
+      "markdown": "pages/MW-NURSERY-V4-P041-my-world-journal.md",
+      "json": "pages/MW-NURSERY-V4-P041-my-world-journal.json",
+      "source_prompt": "MW-NURSERY-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "MW-NURSERY-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/MW-NURSERY-V4-P042-certificate-of-completion.md",
+      "json": "pages/MW-NURSERY-V4-P042-certificate-of-completion.json",
+      "source_prompt": "MW-NURSERY-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "MW-NURSERY-V4-P043",
+      "title": "I Am a World Explorer!",
+      "markdown": "pages/MW-NURSERY-V4-P043-i-am-a-world-explorer.md",
+      "json": "pages/MW-NURSERY-V4-P043-i-am-a-world-explorer.json",
+      "source_prompt": "MW-NURSERY-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "MW-NURSERY-V4-P044",
+      "title": "My World & General Awareness — Back Cover",
+      "markdown": "pages/MW-NURSERY-V4-P044-my-world-and-general-awareness-back-cover.md",
+      "json": "pages/MW-NURSERY-V4-P044-my-world-and-general-awareness-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

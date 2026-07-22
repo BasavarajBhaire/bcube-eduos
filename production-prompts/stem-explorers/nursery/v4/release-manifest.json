@@ -1,0 +1,413 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "STEM Explorers",
+  "slug": "stem-explorers",
+  "prefix": "SE",
+  "level": "Nursery (3+)",
+  "physical_pages": 44,
+  "learning_pages": 38,
+  "printed_learning_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "SE-NURSERY-V4-P001",
+      "title": "STEM Explorers",
+      "markdown": "pages/SE-NURSERY-V4-P001-stem-explorers.md",
+      "json": "pages/SE-NURSERY-V4-P001-stem-explorers.json",
+      "source_prompt": "ST-NURSERY-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "SE-NURSERY-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/SE-NURSERY-V4-P002-about-this-book.md",
+      "json": "pages/SE-NURSERY-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "SE-NURSERY-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/SE-NURSERY-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/SE-NURSERY-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "ST-NURSERY-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "SE-NURSERY-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/SE-NURSERY-V4-P004-contents-part-1.md",
+      "json": "pages/SE-NURSERY-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "SE-NURSERY-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/SE-NURSERY-V4-P005-contents-part-2.md",
+      "json": "pages/SE-NURSERY-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "SE-NURSERY-V4-P006",
+      "title": "Welcome to STEM Explorers",
+      "markdown": "pages/SE-NURSERY-V4-P006-welcome-to-stem-explorers.md",
+      "json": "pages/SE-NURSERY-V4-P006-welcome-to-stem-explorers.json",
+      "source_prompt": "ST-NURSERY-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "SE-NURSERY-V4-P007",
+      "title": "Meet STEM Star",
+      "markdown": "pages/SE-NURSERY-V4-P007-meet-stem-star.md",
+      "json": "pages/SE-NURSERY-V4-P007-meet-stem-star.json",
+      "source_prompt": "ST-NURSERY-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "SE-NURSERY-V4-P008",
+      "title": "What Is STEM?",
+      "markdown": "pages/SE-NURSERY-V4-P008-what-is-stem.md",
+      "json": "pages/SE-NURSERY-V4-P008-what-is-stem.json",
+      "source_prompt": "ST-NURSERY-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "SE-NURSERY-V4-P009",
+      "title": "Explore with My Senses",
+      "markdown": "pages/SE-NURSERY-V4-P009-explore-with-my-senses.md",
+      "json": "pages/SE-NURSERY-V4-P009-explore-with-my-senses.json",
+      "source_prompt": "ST-NURSERY-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "SE-NURSERY-V4-P010",
+      "title": "Colour Mixing",
+      "markdown": "pages/SE-NURSERY-V4-P010-colour-mixing.md",
+      "json": "pages/SE-NURSERY-V4-P010-colour-mixing.json",
+      "source_prompt": "ST-NURSERY-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "SE-NURSERY-V4-P011",
+      "title": "Sink or Float?",
+      "markdown": "pages/SE-NURSERY-V4-P011-sink-or-float.md",
+      "json": "pages/SE-NURSERY-V4-P011-sink-or-float.json",
+      "source_prompt": "ST-NURSERY-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "SE-NURSERY-V4-P012",
+      "title": "Magnet Test",
+      "markdown": "pages/SE-NURSERY-V4-P012-magnet-test.md",
+      "json": "pages/SE-NURSERY-V4-P012-magnet-test.json",
+      "source_prompt": "ST-NURSERY-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "SE-NURSERY-V4-P013",
+      "title": "Light and Shadow",
+      "markdown": "pages/SE-NURSERY-V4-P013-light-and-shadow.md",
+      "json": "pages/SE-NURSERY-V4-P013-light-and-shadow.json",
+      "source_prompt": "ST-NURSERY-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "SE-NURSERY-V4-P014",
+      "title": "Weather Watchers",
+      "markdown": "pages/SE-NURSERY-V4-P014-weather-watchers.md",
+      "json": "pages/SE-NURSERY-V4-P014-weather-watchers.json",
+      "source_prompt": "ST-NURSERY-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "SE-NURSERY-V4-P015",
+      "title": "From Seed to Plant",
+      "markdown": "pages/SE-NURSERY-V4-P015-from-seed-to-plant.md",
+      "json": "pages/SE-NURSERY-V4-P015-from-seed-to-plant.json",
+      "source_prompt": "ST-NURSERY-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "SE-NURSERY-V4-P016",
+      "title": "Tools Help Us",
+      "markdown": "pages/SE-NURSERY-V4-P016-tools-help-us.md",
+      "json": "pages/SE-NURSERY-V4-P016-tools-help-us.json",
+      "source_prompt": "ST-NURSERY-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "SE-NURSERY-V4-P017",
+      "title": "Technology Around Me",
+      "markdown": "pages/SE-NURSERY-V4-P017-technology-around-me.md",
+      "json": "pages/SE-NURSERY-V4-P017-technology-around-me.json",
+      "source_prompt": "ST-NURSERY-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "SE-NURSERY-V4-P018",
+      "title": "Cause and Effect",
+      "markdown": "pages/SE-NURSERY-V4-P018-cause-and-effect.md",
+      "json": "pages/SE-NURSERY-V4-P018-cause-and-effect.json",
+      "source_prompt": "ST-NURSERY-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "SE-NURSERY-V4-P019",
+      "title": "Follow the Arrows",
+      "markdown": "pages/SE-NURSERY-V4-P019-follow-the-arrows.md",
+      "json": "pages/SE-NURSERY-V4-P019-follow-the-arrows.json",
+      "source_prompt": "ST-NURSERY-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "SE-NURSERY-V4-P020",
+      "title": "Make a Command Pattern",
+      "markdown": "pages/SE-NURSERY-V4-P020-make-a-command-pattern.md",
+      "json": "pages/SE-NURSERY-V4-P020-make-a-command-pattern.json",
+      "source_prompt": "ST-NURSERY-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "SE-NURSERY-V4-P021",
+      "title": "Guide the Robot",
+      "markdown": "pages/SE-NURSERY-V4-P021-guide-the-robot.md",
+      "json": "pages/SE-NURSERY-V4-P021-guide-the-robot.json",
+      "source_prompt": "ST-NURSERY-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "SE-NURSERY-V4-P022",
+      "title": "Build a Strong Tower",
+      "markdown": "pages/SE-NURSERY-V4-P022-build-a-strong-tower.md",
+      "json": "pages/SE-NURSERY-V4-P022-build-a-strong-tower.json",
+      "source_prompt": "ST-NURSERY-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "SE-NURSERY-V4-P023",
+      "title": "Bridge Challenge",
+      "markdown": "pages/SE-NURSERY-V4-P023-bridge-challenge.md",
+      "json": "pages/SE-NURSERY-V4-P023-bridge-challenge.json",
+      "source_prompt": "ST-NURSERY-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "SE-NURSERY-V4-P024",
+      "title": "Ramp and Roll",
+      "markdown": "pages/SE-NURSERY-V4-P024-ramp-and-roll.md",
+      "json": "pages/SE-NURSERY-V4-P024-ramp-and-roll.json",
+      "source_prompt": "ST-NURSERY-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "SE-NURSERY-V4-P025",
+      "title": "Build a Safe Shelter",
+      "markdown": "pages/SE-NURSERY-V4-P025-build-a-safe-shelter.md",
+      "json": "pages/SE-NURSERY-V4-P025-build-a-safe-shelter.json",
+      "source_prompt": "ST-NURSERY-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "SE-NURSERY-V4-P026",
+      "title": "Make a Floating Boat",
+      "markdown": "pages/SE-NURSERY-V4-P026-make-a-floating-boat.md",
+      "json": "pages/SE-NURSERY-V4-P026-make-a-floating-boat.json",
+      "source_prompt": "ST-NURSERY-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "SE-NURSERY-V4-P027",
+      "title": "Balance Challenge",
+      "markdown": "pages/SE-NURSERY-V4-P027-balance-challenge.md",
+      "json": "pages/SE-NURSERY-V4-P027-balance-challenge.json",
+      "source_prompt": "ST-NURSERY-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "SE-NURSERY-V4-P028",
+      "title": "Fix the Road",
+      "markdown": "pages/SE-NURSERY-V4-P028-fix-the-road.md",
+      "json": "pages/SE-NURSERY-V4-P028-fix-the-road.json",
+      "source_prompt": "ST-NURSERY-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "SE-NURSERY-V4-P029",
+      "title": "Design a Playground",
+      "markdown": "pages/SE-NURSERY-V4-P029-design-a-playground.md",
+      "json": "pages/SE-NURSERY-V4-P029-design-a-playground.json",
+      "source_prompt": "ST-NURSERY-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "SE-NURSERY-V4-P030",
+      "title": "Build with Shapes",
+      "markdown": "pages/SE-NURSERY-V4-P030-build-with-shapes.md",
+      "json": "pages/SE-NURSERY-V4-P030-build-with-shapes.json",
+      "source_prompt": "ST-NURSERY-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "SE-NURSERY-V4-P031",
+      "title": "My STEM Invention",
+      "markdown": "pages/SE-NURSERY-V4-P031-my-stem-invention.md",
+      "json": "pages/SE-NURSERY-V4-P031-my-stem-invention.json",
+      "source_prompt": "ST-NURSERY-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "SE-NURSERY-V4-P032",
+      "title": "Count and Build",
+      "markdown": "pages/SE-NURSERY-V4-P032-count-and-build.md",
+      "json": "pages/SE-NURSERY-V4-P032-count-and-build.json",
+      "source_prompt": "ST-NURSERY-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "SE-NURSERY-V4-P033",
+      "title": "More, Less, Same",
+      "markdown": "pages/SE-NURSERY-V4-P033-more-less-same.md",
+      "json": "pages/SE-NURSERY-V4-P033-more-less-same.json",
+      "source_prompt": "ST-NURSERY-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "SE-NURSERY-V4-P034",
+      "title": "Sort and Group",
+      "markdown": "pages/SE-NURSERY-V4-P034-sort-and-group.md",
+      "json": "pages/SE-NURSERY-V4-P034-sort-and-group.json",
+      "source_prompt": "ST-NURSERY-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "SE-NURSERY-V4-P035",
+      "title": "Shapes in Buildings",
+      "markdown": "pages/SE-NURSERY-V4-P035-shapes-in-buildings.md",
+      "json": "pages/SE-NURSERY-V4-P035-shapes-in-buildings.json",
+      "source_prompt": "ST-NURSERY-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "SE-NURSERY-V4-P036",
+      "title": "Measure with Blocks",
+      "markdown": "pages/SE-NURSERY-V4-P036-measure-with-blocks.md",
+      "json": "pages/SE-NURSERY-V4-P036-measure-with-blocks.json",
+      "source_prompt": "ST-NURSERY-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "SE-NURSERY-V4-P037",
+      "title": "Heavy and Light",
+      "markdown": "pages/SE-NURSERY-V4-P037-heavy-and-light.md",
+      "json": "pages/SE-NURSERY-V4-P037-heavy-and-light.json",
+      "source_prompt": "ST-NURSERY-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "SE-NURSERY-V4-P038",
+      "title": "Make a Math Pattern",
+      "markdown": "pages/SE-NURSERY-V4-P038-make-a-math-pattern.md",
+      "json": "pages/SE-NURSERY-V4-P038-make-a-math-pattern.json",
+      "source_prompt": "ST-NURSERY-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "SE-NURSERY-V4-P039",
+      "title": "Position Words",
+      "markdown": "pages/SE-NURSERY-V4-P039-position-words.md",
+      "json": "pages/SE-NURSERY-V4-P039-position-words.json",
+      "source_prompt": "ST-NURSERY-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "SE-NURSERY-V4-P040",
+      "title": "My Picture Graph",
+      "markdown": "pages/SE-NURSERY-V4-P040-my-picture-graph.md",
+      "json": "pages/SE-NURSERY-V4-P040-my-picture-graph.json",
+      "source_prompt": "ST-NURSERY-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "SE-NURSERY-V4-P041",
+      "title": "My STEM Journal",
+      "markdown": "pages/SE-NURSERY-V4-P041-my-stem-journal.md",
+      "json": "pages/SE-NURSERY-V4-P041-my-stem-journal.json",
+      "source_prompt": "ST-NURSERY-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "SE-NURSERY-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/SE-NURSERY-V4-P042-certificate-of-completion.md",
+      "json": "pages/SE-NURSERY-V4-P042-certificate-of-completion.json",
+      "source_prompt": "ST-NURSERY-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "SE-NURSERY-V4-P043",
+      "title": "I Am a STEM Explorer!",
+      "markdown": "pages/SE-NURSERY-V4-P043-i-am-a-stem-explorer.md",
+      "json": "pages/SE-NURSERY-V4-P043-i-am-a-stem-explorer.json",
+      "source_prompt": "ST-NURSERY-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "SE-NURSERY-V4-P044",
+      "title": "STEM Explorers — Back Cover",
+      "markdown": "pages/SE-NURSERY-V4-P044-stem-explorers-back-cover.md",
+      "json": "pages/SE-NURSERY-V4-P044-stem-explorers-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

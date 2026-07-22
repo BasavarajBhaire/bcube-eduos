@@ -1,0 +1,71 @@
+{
+  "prompt_id": "SE-NURSERY-V4-P008",
+  "version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPT",
+  "series": "BCube Future Skills Learning Series™",
+  "book": {
+    "name": "STEM Explorers",
+    "slug": "stem-explorers",
+    "prefix": "SE"
+  },
+  "level": "Nursery (3+)",
+  "page": {
+    "physical": 8,
+    "total_physical": 44,
+    "printed": 7,
+    "printed_visible": true,
+    "type": "activity_page",
+    "title": "What Is STEM?"
+  },
+  "curriculum": {
+    "objective": "Recognize simple examples of science, technology, engineering, and mathematics.",
+    "instruction": "One guided activity aligned to “What Is STEM?”. One short speaking, reflection, or independent practice response.",
+    "evidence": "Child demonstrates observable progress toward: Recognize simple examples of science, technology, engineering, and mathematics.",
+    "scene": "Four large STEM domain cards",
+    "contents_entries": []
+  },
+  "source_lineage": {
+    "prompt_id": "ST-NURSERY-V3-P006",
+    "relative_file": "production-prompts/stem-explorers/nursery/v3/pages/ST-NURSERY-V3-P006-what-is-stem.json",
+    "sha256": "d345577d2b6a3f2196cfb93c6491f5847970108c9ec52de8e6a93a4571b060f6"
+  },
+  "design_lock": {
+    "canvas": "A4 portrait; 2480x3508; 300 DPI",
+    "series_name": "BCube Future Skills Learning Series™",
+    "official_logo": "deterministic asset only",
+    "approved_star": "deterministic asset only",
+    "interior_header": "logo top-left; centred navy title; yellow top-right corner; no overlap",
+    "instruction_banner": "below header; fully visible; padded; no activity overlap",
+    "core_pillars": [
+      "Creativity",
+      "Communication",
+      "Curiosity",
+      "Confidence"
+    ],
+    "text": "deterministically composited",
+    "illustration": "unique; page-specific; no cross-book reuse"
+  },
+  "publisher_lock": {
+    "name": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyright": "© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+  },
+  "rejection_gates": [
+    "wrong identity/title/number",
+    "generated or obstructed logo/mascot",
+    "missing or broken banner/frame",
+    "crop or overlap",
+    "changed curriculum intent",
+    "unapproved wording",
+    "unresolved variable",
+    "non-A4 or non-300-DPI target"
+  ],
+  "compiled_prompt": "# BCube Production Prompt V4 — SE-NURSERY-V4-P008\n\n## 1. Release metadata\n\n- Prompt ID: SE-NURSERY-V4-P008\n- Version: 4.0.0\n- Series: BCube Future Skills Learning Series™\n- Book: STEM Explorers\n- Level: Nursery (3+)\n- Physical page: 8 of 44\n- Printed page: 7\n- Page type: activity_page\n- Exact title: What Is STEM?\n- Source prompt: `ST-NURSERY-V3-P006`\n- Source file: `production-prompts/stem-explorers/nursery/v3/pages/ST-NURSERY-V3-P006-what-is-stem.json`\n- Source SHA-256: `d345577d2b6a3f2196cfb93c6491f5847970108c9ec52de8e6a93a4571b060f6`\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “What Is STEM?”. Follow this deterministic package only. Produce no explanation, alternate, mockup, photograph, contact sheet, collage, or additional page.\n\n## 3. Engine order and precedence\n\nPublishing Engine → Design Engine → Visual Grammar Engine → Educational Engine → Teaching Engine → Parent Partnership Engine → Illustration Engine → Character Engine → Quality Assurance.\n\nPrecedence: approved page instruction > approved book/level rule > global rule. Preserve the source curriculum intent and exact visible wording. Do not guess or invent.\n\n## 4. Publishing specification\n\n- A4 portrait, 210 × 297 mm; 2480 × 3508 px target; 300 DPI; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin.\n- Clean white or very light pastel base; CMYK-safe palette; thick rounded outlines; flat front-facing print composition.\n- Apply the exact official BCube logo as a deterministic asset; never generate, redraw, crop, distort, or cover it.\n- Apply the exact approved Star master as a deterministic asset when Star is required; never regenerate or substitute Star.\n- Display printed page number 7 at bottom-right.\n- Use the locked interior header: exact official logo isolated at top-left; exact title centred in navy; small yellow decoration confined to top-right; no banner behind or overlapping the logo/title.\n- Place the instruction banner fully below the header with readable padding; it must not cover the activity.\n\n## 5. Design and visual grammar\n\n- Layout anchor: Four large STEM domain cards\n- Maintain 70–80% visual and 20–30% text with one dominant focal point and a clear title → model → action → response path.\n- Use large nursery-recognisable objects, generous spacing, large response targets, strong contrast, and no visual clutter.\n- Every label, instruction, title, page number, badge, and logo is deterministically composited and remains editable; never generate typography inside illustration artwork.\n- Preserve all required activity frames, borders, banners, response areas, and educational illustrations. Reject rather than silently remove or replace them.\n\n## 6. Educational engine\n\n- Objective: Recognize simple examples of science, technology, engineering, and mathematics.\n- Activity: One guided activity aligned to “What Is STEM?”. One short speaking, reflection, or independent practice response.\n- Observable evidence: Child demonstrates observable progress toward: Recognize simple examples of science, technology, engineering, and mathematics.\n- Developmental response modes: pointing, gesture, one word, short phrase, colouring, tracing, drawing, matching, or adult-supported dictation.\n\n## 7. Teaching and parent partnership\n\n- Model once, invite one response, pause for processing, scaffold through gesture/choice/model language, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and connected to the exact objective when the page package calls for people.\n- Home extension must use familiar routines and common household materials only; do not add a scored task, device, purchase, or printing requirement.\n\n## 8. Illustration and character lock\n\n- Required scene: Four large STEM domain cards\n- Show natural expressions, correct anatomy, inclusive children and families, clear turn-taking, unobstructed activity areas, and nursery-safe actions.\n- Star identity: approved bright-yellow rounded five-point mascot with expressive face, blue shoes, and small blue cape. Star encourages or demonstrates but never completes the child's answer.\n- Illustration must be unique to this book/page and must not reuse another book's cover or learning scene.\n\n## 9. Negative constraints and fail-closed QA\n\n- No generated/redrawn logo or mascot; no unapproved wording; no empty decorative speech balloons; no watermark, QR code, third-party mark, mockup, perspective, page curl, device frame, or hands holding the page.\n- No cropped key element, broken frame, missing banner, title duplication, overlap, unreadable text, unexplained blank area, unsafe behaviour, stereotype, anatomy error, or developmentally excessive writing.\n- Compare page identity, title, numbering, activity, instruction, illustration brief, protected response region, and source lineage. Any mismatch is a critical defect.\n- Acceptance requires 100/100 prompt validation, zero critical defects, all variables resolved, and exact compliance with the 44-page release manifest.\n\n## 11. Compiler footer\n\nSE-NURSERY-V4-P008 | v4.0.0 | physical 8/44 | printed 7 | Gold 100/100 | critical defects 0 | FINALIZED V4 PROMPT.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Finalized V4 Prompt"
+  }
+}

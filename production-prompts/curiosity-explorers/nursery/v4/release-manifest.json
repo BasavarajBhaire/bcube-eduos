@@ -1,0 +1,413 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Curiosity Explorers",
+  "slug": "curiosity-explorers",
+  "prefix": "CE",
+  "level": "Nursery (3+)",
+  "physical_pages": 44,
+  "learning_pages": 38,
+  "printed_learning_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "CE-NURSERY-V4-P001",
+      "title": "Curiosity Explorers",
+      "markdown": "pages/CE-NURSERY-V4-P001-curiosity-explorers.md",
+      "json": "pages/CE-NURSERY-V4-P001-curiosity-explorers.json",
+      "source_prompt": "CE-NURSERY-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "CE-NURSERY-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/CE-NURSERY-V4-P002-about-this-book.md",
+      "json": "pages/CE-NURSERY-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "CE-NURSERY-V4-P003",
+      "title": "Copyright & Publication Details",
+      "markdown": "pages/CE-NURSERY-V4-P003-copyright-and-publication-details.md",
+      "json": "pages/CE-NURSERY-V4-P003-copyright-and-publication-details.json",
+      "source_prompt": "CE-NURSERY-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "CE-NURSERY-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/CE-NURSERY-V4-P004-contents-part-1.md",
+      "json": "pages/CE-NURSERY-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "CE-NURSERY-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/CE-NURSERY-V4-P005-contents-part-2.md",
+      "json": "pages/CE-NURSERY-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "CE-NURSERY-V4-P006",
+      "title": "Welcome to Curiosity Explorers",
+      "markdown": "pages/CE-NURSERY-V4-P006-welcome-to-curiosity-explorers.md",
+      "json": "pages/CE-NURSERY-V4-P006-welcome-to-curiosity-explorers.json",
+      "source_prompt": "CE-NURSERY-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "CE-NURSERY-V4-P007",
+      "title": "Meet Curious Star",
+      "markdown": "pages/CE-NURSERY-V4-P007-meet-curious-star.md",
+      "json": "pages/CE-NURSERY-V4-P007-meet-curious-star.json",
+      "source_prompt": "CE-NURSERY-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "CE-NURSERY-V4-P008",
+      "title": "What Is Curiosity?",
+      "markdown": "pages/CE-NURSERY-V4-P008-what-is-curiosity.md",
+      "json": "pages/CE-NURSERY-V4-P008-what-is-curiosity.json",
+      "source_prompt": "CE-NURSERY-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "CE-NURSERY-V4-P009",
+      "title": "Look Closely",
+      "markdown": "pages/CE-NURSERY-V4-P009-look-closely.md",
+      "json": "pages/CE-NURSERY-V4-P009-look-closely.json",
+      "source_prompt": "CE-NURSERY-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "CE-NURSERY-V4-P010",
+      "title": "What Do You See?",
+      "markdown": "pages/CE-NURSERY-V4-P010-what-do-you-see.md",
+      "json": "pages/CE-NURSERY-V4-P010-what-do-you-see.json",
+      "source_prompt": "CE-NURSERY-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "CE-NURSERY-V4-P011",
+      "title": "Same and Different",
+      "markdown": "pages/CE-NURSERY-V4-P011-same-and-different.md",
+      "json": "pages/CE-NURSERY-V4-P011-same-and-different.json",
+      "source_prompt": "CE-NURSERY-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "CE-NURSERY-V4-P012",
+      "title": "Big and Small",
+      "markdown": "pages/CE-NURSERY-V4-P012-big-and-small.md",
+      "json": "pages/CE-NURSERY-V4-P012-big-and-small.json",
+      "source_prompt": "CE-NURSERY-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "CE-NURSERY-V4-P013",
+      "title": "Long and Short",
+      "markdown": "pages/CE-NURSERY-V4-P013-long-and-short.md",
+      "json": "pages/CE-NURSERY-V4-P013-long-and-short.json",
+      "source_prompt": "CE-NURSERY-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "CE-NURSERY-V4-P014",
+      "title": "More and Less",
+      "markdown": "pages/CE-NURSERY-V4-P014-more-and-less.md",
+      "json": "pages/CE-NURSERY-V4-P014-more-and-less.json",
+      "source_prompt": "CE-NURSERY-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "CE-NURSERY-V4-P015",
+      "title": "Colours Around Us",
+      "markdown": "pages/CE-NURSERY-V4-P015-colours-around-us.md",
+      "json": "pages/CE-NURSERY-V4-P015-colours-around-us.json",
+      "source_prompt": "CE-NURSERY-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "CE-NURSERY-V4-P016",
+      "title": "Shapes Around Us",
+      "markdown": "pages/CE-NURSERY-V4-P016-shapes-around-us.md",
+      "json": "pages/CE-NURSERY-V4-P016-shapes-around-us.json",
+      "source_prompt": "CE-NURSERY-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "CE-NURSERY-V4-P017",
+      "title": "Match the Shadows",
+      "markdown": "pages/CE-NURSERY-V4-P017-match-the-shadows.md",
+      "json": "pages/CE-NURSERY-V4-P017-match-the-shadows.json",
+      "source_prompt": "CE-NURSERY-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "CE-NURSERY-V4-P018",
+      "title": "Odd One Out",
+      "markdown": "pages/CE-NURSERY-V4-P018-odd-one-out.md",
+      "json": "pages/CE-NURSERY-V4-P018-odd-one-out.json",
+      "source_prompt": "CE-NURSERY-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "CE-NURSERY-V4-P019",
+      "title": "Where Does It Belong?",
+      "markdown": "pages/CE-NURSERY-V4-P019-where-does-it-belong.md",
+      "json": "pages/CE-NURSERY-V4-P019-where-does-it-belong.json",
+      "source_prompt": "CE-NURSERY-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "CE-NURSERY-V4-P020",
+      "title": "Sort by Colour",
+      "markdown": "pages/CE-NURSERY-V4-P020-sort-by-colour.md",
+      "json": "pages/CE-NURSERY-V4-P020-sort-by-colour.json",
+      "source_prompt": "CE-NURSERY-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "CE-NURSERY-V4-P021",
+      "title": "Sort by Shape",
+      "markdown": "pages/CE-NURSERY-V4-P021-sort-by-shape.md",
+      "json": "pages/CE-NURSERY-V4-P021-sort-by-shape.json",
+      "source_prompt": "CE-NURSERY-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "CE-NURSERY-V4-P022",
+      "title": "Find the Pattern",
+      "markdown": "pages/CE-NURSERY-V4-P022-find-the-pattern.md",
+      "json": "pages/CE-NURSERY-V4-P022-find-the-pattern.json",
+      "source_prompt": "CE-NURSERY-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "CE-NURSERY-V4-P023",
+      "title": "What Comes Next?",
+      "markdown": "pages/CE-NURSERY-V4-P023-what-comes-next.md",
+      "json": "pages/CE-NURSERY-V4-P023-what-comes-next.json",
+      "source_prompt": "CE-NURSERY-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "CE-NURSERY-V4-P024",
+      "title": "Inside and Outside",
+      "markdown": "pages/CE-NURSERY-V4-P024-inside-and-outside.md",
+      "json": "pages/CE-NURSERY-V4-P024-inside-and-outside.json",
+      "source_prompt": "CE-NURSERY-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "CE-NURSERY-V4-P025",
+      "title": "Above and Below",
+      "markdown": "pages/CE-NURSERY-V4-P025-above-and-below.md",
+      "json": "pages/CE-NURSERY-V4-P025-above-and-below.json",
+      "source_prompt": "CE-NURSERY-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "CE-NURSERY-V4-P026",
+      "title": "Near and Far",
+      "markdown": "pages/CE-NURSERY-V4-P026-near-and-far.md",
+      "json": "pages/CE-NURSERY-V4-P026-near-and-far.json",
+      "source_prompt": "CE-NURSERY-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "CE-NURSERY-V4-P027",
+      "title": "Sink or Float?",
+      "markdown": "pages/CE-NURSERY-V4-P027-sink-or-float.md",
+      "json": "pages/CE-NURSERY-V4-P027-sink-or-float.json",
+      "source_prompt": "CE-NURSERY-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "CE-NURSERY-V4-P028",
+      "title": "Heavy and Light",
+      "markdown": "pages/CE-NURSERY-V4-P028-heavy-and-light.md",
+      "json": "pages/CE-NURSERY-V4-P028-heavy-and-light.json",
+      "source_prompt": "CE-NURSERY-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "CE-NURSERY-V4-P029",
+      "title": "Rough and Smooth",
+      "markdown": "pages/CE-NURSERY-V4-P029-rough-and-smooth.md",
+      "json": "pages/CE-NURSERY-V4-P029-rough-and-smooth.json",
+      "source_prompt": "CE-NURSERY-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "CE-NURSERY-V4-P030",
+      "title": "Hot and Cold",
+      "markdown": "pages/CE-NURSERY-V4-P030-hot-and-cold.md",
+      "json": "pages/CE-NURSERY-V4-P030-hot-and-cold.json",
+      "source_prompt": "CE-NURSERY-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "CE-NURSERY-V4-P031",
+      "title": "Loud and Quiet",
+      "markdown": "pages/CE-NURSERY-V4-P031-loud-and-quiet.md",
+      "json": "pages/CE-NURSERY-V4-P031-loud-and-quiet.json",
+      "source_prompt": "CE-NURSERY-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "CE-NURSERY-V4-P032",
+      "title": "Light and Dark",
+      "markdown": "pages/CE-NURSERY-V4-P032-light-and-dark.md",
+      "json": "pages/CE-NURSERY-V4-P032-light-and-dark.json",
+      "source_prompt": "CE-NURSERY-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "CE-NURSERY-V4-P033",
+      "title": "Day and Night",
+      "markdown": "pages/CE-NURSERY-V4-P033-day-and-night.md",
+      "json": "pages/CE-NURSERY-V4-P033-day-and-night.json",
+      "source_prompt": "CE-NURSERY-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "CE-NURSERY-V4-P034",
+      "title": "Weather Watch",
+      "markdown": "pages/CE-NURSERY-V4-P034-weather-watch.md",
+      "json": "pages/CE-NURSERY-V4-P034-weather-watch.json",
+      "source_prompt": "CE-NURSERY-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "CE-NURSERY-V4-P035",
+      "title": "Wheels and Ramps",
+      "markdown": "pages/CE-NURSERY-V4-P035-wheels-and-ramps.md",
+      "json": "pages/CE-NURSERY-V4-P035-wheels-and-ramps.json",
+      "source_prompt": "CE-NURSERY-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "CE-NURSERY-V4-P036",
+      "title": "Magnet Hunt",
+      "markdown": "pages/CE-NURSERY-V4-P036-magnet-hunt.md",
+      "json": "pages/CE-NURSERY-V4-P036-magnet-hunt.json",
+      "source_prompt": "CE-NURSERY-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "CE-NURSERY-V4-P037",
+      "title": "Living and Non-Living",
+      "markdown": "pages/CE-NURSERY-V4-P037-living-and-non-living.md",
+      "json": "pages/CE-NURSERY-V4-P037-living-and-non-living.json",
+      "source_prompt": "CE-NURSERY-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "CE-NURSERY-V4-P038",
+      "title": "Plants Grow",
+      "markdown": "pages/CE-NURSERY-V4-P038-plants-grow.md",
+      "json": "pages/CE-NURSERY-V4-P038-plants-grow.json",
+      "source_prompt": "CE-NURSERY-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "CE-NURSERY-V4-P039",
+      "title": "Animal Homes",
+      "markdown": "pages/CE-NURSERY-V4-P039-animal-homes.md",
+      "json": "pages/CE-NURSERY-V4-P039-animal-homes.json",
+      "source_prompt": "CE-NURSERY-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "CE-NURSERY-V4-P040",
+      "title": "Ask a Question",
+      "markdown": "pages/CE-NURSERY-V4-P040-ask-a-question.md",
+      "json": "pages/CE-NURSERY-V4-P040-ask-a-question.json",
+      "source_prompt": "CE-NURSERY-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "CE-NURSERY-V4-P041",
+      "title": "My Curiosity Journal",
+      "markdown": "pages/CE-NURSERY-V4-P041-my-curiosity-journal.md",
+      "json": "pages/CE-NURSERY-V4-P041-my-curiosity-journal.json",
+      "source_prompt": "CE-NURSERY-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "CE-NURSERY-V4-P042",
+      "title": "Certificate of Completion",
+      "markdown": "pages/CE-NURSERY-V4-P042-certificate-of-completion.md",
+      "json": "pages/CE-NURSERY-V4-P042-certificate-of-completion.json",
+      "source_prompt": "CE-NURSERY-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "CE-NURSERY-V4-P043",
+      "title": "I Am a Curiosity Explorer!",
+      "markdown": "pages/CE-NURSERY-V4-P043-i-am-a-curiosity-explorer.md",
+      "json": "pages/CE-NURSERY-V4-P043-i-am-a-curiosity-explorer.json",
+      "source_prompt": "CE-NURSERY-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "CE-NURSERY-V4-P044",
+      "title": "Curiosity Explorers — Back Cover",
+      "markdown": "pages/CE-NURSERY-V4-P044-curiosity-explorers-back-cover.md",
+      "json": "pages/CE-NURSERY-V4-P044-curiosity-explorers-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
