@@ -1,6 +1,10 @@
 {
-  "template_id": "BCUBE-NURSERY-COVER-V1.1",
-  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "template_id": "BCUBE-NURSERY-COVER-V1.2",
+  "canvas": {
+    "width": 2480,
+    "height": 3508,
+    "dpi": 300
+  },
   "bounds": {
     "official_logo": [90, 45, 560, 360],
     "series_banner": [730, 55, 2290, 360],
@@ -8,6 +12,7 @@
     "book_title": [260, 400, 1880, 750],
     "book_tagline": [420, 770, 1920, 920],
     "illustration_frame": [90, 970, 1760, 2700],
+    "official_star": [1220, 2100, 1750, 2690],
     "six_skill_capsules": [1810, 1080, 2380, 2160],
     "five_core_pillars": [65, 2780, 2415, 3150],
     "core_pillars_label": [760, 2745, 1720, 2835],
@@ -25,9 +30,15 @@
     "illustration_text_allowed": false,
     "illustration_branding_allowed": false,
     "official_star_generated": false,
-    "illustration_placement": "contain",
+    "illustration_placement": "contain-trimmed-bottom",
     "illustration_safe_inset": 28,
+    "illustration_trim_near_white": true,
+    "illustration_trim_padding": 12,
+    "illustration_vertical_align": "bottom",
     "illustration_crop_allowed": false,
+    "illustration_min_occupancy_ratio": 0.55,
+    "official_star_anchor": "bottom-right",
+    "official_star_required": true,
     "skill_count": 6,
     "pillar_count": 5,
     "skill_icons_required": true,
