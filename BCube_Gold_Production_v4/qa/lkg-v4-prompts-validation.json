@@ -1,7 +1,7 @@
 {
   "validation_version": "4.0.0",
   "level": "LKG (4+)",
-  "books_validated": 8,
+  "books_validated": 9,
   "books_total": 10,
   "completed_books": [
     "communication-champions",
@@ -11,16 +11,17 @@
     "stem-explorers",
     "creativity-challenges",
     "my-world-general-awareness",
-    "healthy-habits-safety"
+    "healthy-habits-safety",
+    "art-colour-fun"
   ],
-  "page_prompts": 352,
-  "markdown_files": 352,
-  "json_files": 352,
-  "source_backed_pages": 320,
-  "checks": 4576,
+  "page_prompts": 396,
+  "markdown_files": 396,
+  "json_files": 396,
+  "source_backed_pages": 360,
+  "checks": 5148,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "art-colour-fun",
+  "next_book": "confidence-social-skills",
   "book_results": [
     {
       "slug": "communication-champions",
@@ -109,6 +110,18 @@
     {
       "slug": "healthy-habits-safety",
       "book": "Healthy Habits & Safety",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "art-colour-fun",
+      "book": "Art & Colour Fun",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,
