@@ -1,0 +1,125 @@
+{
+  "prompt_id": "HW-UKG-V4-P019",
+  "version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPT",
+  "series": "BCube Future Skills Learning Series™",
+  "book": {
+    "name": "Healthy Me & Wellbeing",
+    "slug": "healthy-me-wellbeing",
+    "prefix": "HW"
+  },
+  "level": "UKG (5+)",
+  "page": {
+    "physical": 19,
+    "total_physical": 44,
+    "printed": 18,
+    "printed_visible": true,
+    "type": "activity_page",
+    "title": "Safety at Home"
+  },
+  "curriculum": {
+    "objective": "Develop personal hygiene, emotional wellbeing, mindfulness and safety awareness.",
+    "instruction": "Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities. One short speaking, reflection, or independent practice response.",
+    "evidence": "Children practise routines, share feelings, encourage friends and explain safe choices.",
+    "teacher_facilitation": "Encourage children to model healthy routines, express feelings and make safe choices.",
+    "teacher_questions": [
+      "What can you show or tell about safety at home?"
+    ],
+    "parent_home_activity": "Practise healthy routines together and discuss trusted adults and safety rules.",
+    "parent_conversation": "Practise healthy routines together and discuss trusted adults and safety rules.",
+    "scene": "Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities.",
+    "focal_point": "One dominant focus for “Safety at Home”.",
+    "contents_entries": []
+  },
+  "source_lineage": {
+    "prompt_id": "HW-UKG-V3-P017",
+    "relative_file": "production-prompts/healthy-me-wellbeing/ukg/v3/pages/HW-UKG-V3-P017-safety-at-home.json",
+    "sha256": "93678124bf7e346c8e5beee549a5c502cc872445eb639d4d539de760d6b56860",
+    "source_version": "3.0.0",
+    "source_validation": {
+      "score": 100,
+      "critical_defects": 0,
+      "status": "Gold Certified"
+    }
+  },
+  "preserved_source": {
+    "page_data": {
+      "page_id": "HW-UKG-V3-P017",
+      "book_id": "HEALTHY_ME_WELLBEING_UKG",
+      "unit_id": "CORE_LEARNING",
+      "page_number": 17,
+      "page_type": "activity_page",
+      "title": "Safety at Home",
+      "age_level": "UKG (5+)",
+      "learning_objective": "Develop personal hygiene, emotional wellbeing, mindfulness and safety awareness.",
+      "competencies": [
+        "HLT-02"
+      ],
+      "activity": {
+        "instruction": "Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities. One short speaking, reflection, or independent practice response.",
+        "evidence": "Children practise routines, share feelings, encourage friends and explain safe choices."
+      },
+      "teacher_prompt": {
+        "facilitation": "Encourage children to model healthy routines, express feelings and make safe choices.",
+        "questions": [
+          "What can you show or tell about safety at home?"
+        ]
+      },
+      "parent_prompt": {
+        "conversation": "Practise healthy routines together and discuss trusted adults and safety rules.",
+        "home_activity": "Practise healthy routines together and discuss trusted adults and safety rules."
+      },
+      "illustration": {
+        "scene": "Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities.",
+        "focal_point": "One dominant focus for “Safety at Home”.",
+        "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+        "negative_constraints": [
+          "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+          "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+          "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+          "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+          "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+          "No unrelated activity or decorative response space."
+        ]
+      },
+      "character_refs": [
+        "STAR-MASCOT-V3"
+      ],
+      "overrides": []
+    },
+    "approved_source_instruction": "Create a premium BCube Gold Production v2 A4 workbook page titled 'Safety at Home' with teacher-led health and wellbeing activities, Star mascot, six expressive UKG children, purposeful classroom storytelling, commercial publishing quality, 300 DPI."
+  },
+  "design_lock": {
+    "canvas": "A4 portrait; 2480x3508; 300 DPI",
+    "visual_ratio": "55–65% visual; 35–45% text/activity",
+    "activity_load": "maximum two core activities and one optional extension",
+    "model_phrase": "generally 4–10 familiar words",
+    "writing": "short independent reading/writing; simple sentences; adult support where needed",
+    "official_logo": "deterministic asset only",
+    "approved_star": "deterministic asset only",
+    "text": "deterministically composited and editable",
+    "one_page_output": true
+  },
+  "publisher_lock": {
+    "name": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyright": "© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+  },
+  "rejection_gates": [
+    "wrong identity, title, physical number, or printed number",
+    "lost or genericised page-specific source instruction",
+    "generated, redrawn, obstructed, or substituted logo or Star",
+    "missing model phrase, activity, expected response, or purposeful response area",
+    "crop, overlap, broken banner, unreadable text, unsafe behaviour, or excessive writing",
+    "contact sheet, collage, multi-page output, mockup, or perspective",
+    "unresolved variable, non-A4 geometry, or non-300-DPI target"
+  ],
+  "compiled_prompt": "# BCube Production Prompt V4 — HW-UKG-V4-P019\n\n## 1. Release metadata\n\n- Prompt ID: HW-UKG-V4-P019\n- Version: 4.0.0\n- Series: BCube Future Skills Learning Series™\n- Book: Healthy Me & Wellbeing\n- Level: UKG (5+)\n- Physical page: 19 of 44\n- Printed page: 18\n- Page type: activity_page\n- Exact title: Safety at Home\n- Source prompt: `HW-UKG-V3-P017`\n- Source file: `production-prompts/healthy-me-wellbeing/ukg/v3/pages/HW-UKG-V3-P017-safety-at-home.json`\n- Source SHA-256: `93678124bf7e346c8e5beee549a5c502cc872445eb639d4d539de760d6b56860`\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Safety at Home”. Follow this deterministic package only. Produce no explanation, alternate, mockup, photograph, contact sheet, collage, or additional page.\n\n## 3. Precedence and lessons carried forward\n\nPublishing Engine → Design Engine → Visual Grammar Engine → Educational Engine → Teaching Engine → Parent Partnership Engine → Illustration Engine → Character Engine → Quality Assurance.\n\nPreserve the individual source instruction, model phrase, activity, response mode, response area, teacher prompt, parent extension, and prohibited extras. Never replace a page-specific instruction with a generic activity. Approved page instruction overrides book, level, and global rules.\n\n## 4. Publishing specification\n\n- A4 portrait, 210 × 297 mm; 2480 × 3508 px target; 300 DPI; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin.\n- Clean white or very light pastel base; CMYK-safe palette; thick rounded outlines; flat front-facing print composition.\n- Apply the exact official BCube logo as a deterministic asset; never generate, redraw, crop, distort, cover, or approximate it.\n- Apply the exact approved Star master as a deterministic asset when Star is required; never regenerate or substitute Star.\n- Display printed page number 18 at bottom-right.\n\n- Use the locked interior header: exact official logo isolated at top-left; exact title centred in navy; small yellow decoration confined to top-right.\n- Place the instruction banner fully below the header with readable padding; it must not cover the model, activity, or response area.\n\n## 5. UKG design and visual grammar\n\n- Layout anchor: Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities.\n- Focal point: One dominant focus for “Safety at Home”.\n- Style: Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.\n- Maintain approximately 55–65% visual and 35–45% text/activity.\n- Use one dominant focus and a clear title → model → guided action → child response path.\n- Maximum two core child activities and one optional extension.\n- Model phrases should generally contain 3–8 familiar words.\n- Use short independent reading/writing and simple sentences; provide adult support where the approved source requires it.\n- Every visible box, line, card, circle, balloon, frame, and blank area must serve a named child action.\n- All typography is deterministically composited and remains editable; never generate text inside illustration artwork.\n\n## 6. Educational engine\n\n- Objective: Develop personal hygiene, emotional wellbeing, mindfulness and safety awareness.\n- Exact child action: Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities. One short speaking, reflection, or independent practice response.\n- Observable evidence or accepted response: Children practise routines, share feelings, encourage friends and explain safe choices.\n- Progression: guided recall and oral explanation → short independent reading/writing/sequencing → simple reasoning, problem solving, and Grade 1-ready response.\n- Story and sequence pages use 4–5 clear steps unless the approved source explicitly requires otherwise.\n\n## 7. Teaching engine\n\n- Facilitation: Encourage children to model healthy routines, express feelings and make safe choices.\n- Model once, invite participation, pause for processing, scaffold through gesture, choice, picture cue, or sentence starter, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and directly connected to the objective.\n- Questions:\n- What can you show or tell about safety at home?\n\n## 8. Parent partnership engine\n\n- Home connection: Practise healthy routines together and discuss trusted adults and safety rules.\n- Conversation support: Practise healthy routines together and discuss trusted adults and safety rules.\n- Use familiar routines and common household materials only; do not add a scored task, device, purchase, printing requirement, or homework burden.\n\n## 9. Illustration and character lock\n\n- Required scene: Teacher, Star mascot and six UKG children learning 'Safety at Home' through hands-on wellbeing activities.\n- Show natural expressions, correct anatomy, diverse Indian and global children, respectful inclusion, clear turn-taking, and unobstructed learning areas.\n- Star identity: approved bright-yellow rounded five-point mascot with expressive face, blue shoes, and small blue cape.\n- Star demonstrates or encourages but never completes the child's answer.\n- Illustration must be unique to this book and page; no cross-book reuse.\n\n## 10. Approved source instruction\n\nCreate a premium BCube Gold Production v2 A4 workbook page titled 'Safety at Home' with teacher-led health and wellbeing activities, Star mascot, six expressive UKG children, purposeful classroom storytelling, commercial publishing quality, 300 DPI.\n\n## 12. Negative constraints and fail-closed QA\n\n- No generated/redrawn logo or mascot; no unapproved wording; no decorative empty speech balloon.\n- No crop, overlap, broken frame, missing banner, title duplication, unreadable text, unexplained blank area, unsafe behaviour, stereotype, anatomy error, or excessive writing.\n- No watermark, QR code, third-party mark, mockup, perspective, page curl, device frame, hands holding the page, contact sheet, or multiple pages.\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No unrelated activity or decorative response space.\n- Compare identity, title, physical/printed numbering, source lineage, exact activity, model language, expected response, protected response region, illustration brief, and prohibited extras.\n- Acceptance requires Gold 100/100, zero critical defects, all variables resolved, and exact compliance with the 44-page manifest.\n\n## 13. Compiler footer\n\nHW-UKG-V4-P019 | v4.0.0 | physical 19/44 | printed 18 | Gold 100/100 | critical defects 0 | FINALIZED V4 PROMPT.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Finalized V4 Prompt"
+  }
+}
