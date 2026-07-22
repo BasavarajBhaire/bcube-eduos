@@ -2,8 +2,9 @@
 """Evidence-based, fail-closed validator for BCube rendered publishing pages.
 
 Machine-verifiable facts are derived from artifact files, approved source assets,
-component geometry, text-detector evidence, and a signed human approval record.
-Self-declared visual PASS booleans are not accepted as proof.
+component geometry, repository-owned text policies, detector evidence, and a
+human approval record bound to the exact artifact hash. Self-declared visual
+PASS booleans are not accepted as proof.
 """
 from __future__ import annotations
 
@@ -19,6 +20,8 @@ from typing import Any
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "design-system/template-lock/reference-registry.json"
+TEXT_POLICIES = ROOT / "design-system/template-lock/book-text-policies.json"
+EVIDENCE_SCHEMA = ROOT / "validation/rendered-pages/render-evidence.schema.json"
 
 
 def read_png_metadata(path: Path) -> tuple[int, int, float, float]:
@@ -82,7 +85,8 @@ def overlaps(a: list[int], b: list[int]) -> bool:
 
 
 def normalize_text(value: str) -> str:
-    return " ".join(value.upper().split())
+    cleaned = "".join(ch if ch.isalnum() else " " for ch in value.upper())
+    return " ".join(cleaned.split())
 
 
 def validate_components(manifest: dict[str, Any], page_contract: dict[str, Any], checks: list[dict[str, Any]]) -> None:
@@ -138,29 +142,33 @@ def validate_components(manifest: dict[str, Any], page_contract: dict[str, Any],
             check(checks, f"overlap.{name_a}.{name_b}", not overlaps(a, b), f"no prohibited overlap: {name_a} vs {name_b}")
 
 
-def validate_text_evidence(manifest: dict[str, Any], checks: list[dict[str, Any]]) -> None:
+def validate_text_evidence(manifest: dict[str, Any], page_type: str, checks: list[dict[str, Any]]) -> None:
     evidence = manifest.get("text_evidence")
     check(checks, "evidence.text", isinstance(evidence, dict), "text detector evidence is supplied")
     if not isinstance(evidence, dict):
         return
     detector = evidence.get("detector")
     detected = evidence.get("detected_text")
-    prohibited = evidence.get("prohibited_terms", [])
-    required = evidence.get("required_terms", [])
     check(checks, "text.detector", isinstance(detector, dict) and bool(detector.get("name")) and bool(detector.get("version")),
           "text evidence identifies detector name and version")
     check(checks, "text.detected", isinstance(detected, list) and all(isinstance(v, str) for v in detected), "detected text is a string list")
-    check(checks, "text.prohibited_terms", isinstance(prohibited, list) and all(isinstance(v, str) for v in prohibited), "prohibited term list is valid")
-    check(checks, "text.required_terms", isinstance(required, list) and all(isinstance(v, str) for v in required), "required term list is valid")
     if not isinstance(detected, list):
         return
+
+    policies = load_json(TEXT_POLICIES)
+    book_key = manifest.get("book_key")
+    check(checks, "text.book_key", isinstance(book_key, str) and book_key in policies.get("books", {}), f"registered book text policy: {book_key}")
+    policy = policies.get("books", {}).get(book_key, {}) if isinstance(book_key, str) else {}
+    required_key = f"required_{page_type}_terms"
+    required = policy.get(required_key, [])
+    prohibited = list(policies.get("default", {}).get("prohibited_terms", [])) + list(policy.get("prohibited_terms", []))
     corpus = normalize_text(" ".join(detected))
-    for term in prohibited if isinstance(prohibited, list) else []:
+    for term in prohibited:
         normalized = normalize_text(term)
         check(checks, f"text.prohibited.{normalized}", normalized not in corpus, f"cross-book/prohibited text absent: {term}")
-    for term in required if isinstance(required, list) else []:
+    for term in required:
         normalized = normalize_text(term)
-        check(checks, f"text.required.{normalized}", normalized in corpus, f"required exact text detected: {term}")
+        check(checks, f"text.required.{normalized}", normalized in corpus, f"repository-required text detected: {term}")
 
 
 def validate_human_approval(manifest: dict[str, Any], artifact_hash: str, checks: list[dict[str, Any]]) -> None:
@@ -186,7 +194,7 @@ def validate_human_approval(manifest: dict[str, Any], artifact_hash: str, checks
 def validate(artifact: Path, manifest_path: Path, output: Path) -> int:
     registry = load_json(REGISTRY)
     manifest = load_json(manifest_path)
-    page_type = manifest.get("page_type")
+    page_type = str(manifest.get("page_type") or "")
     page_id = manifest.get("page_id")
     checks: list[dict[str, Any]] = []
 
@@ -210,7 +218,7 @@ def validate(artifact: Path, manifest_path: Path, output: Path) -> int:
     check(checks, "contract.page_type", isinstance(page_contract, dict), f"registered page type: {page_type}")
     if isinstance(page_contract, dict):
         validate_components(manifest, page_contract, checks)
-    validate_text_evidence(manifest, checks)
+    validate_text_evidence(manifest, page_type, checks)
     validate_human_approval(manifest, artifact_hash, checks)
 
     composition = manifest.get("composition")
@@ -221,7 +229,7 @@ def validate(artifact: Path, manifest_path: Path, output: Path) -> int:
     check(checks, "composition.single_flat_page", isinstance(composition, dict) and composition.get("single_flat_page") is True,
           "one flat front-facing page")
 
-    return write_report(output, str(page_id or "UNKNOWN"), str(page_type or "UNKNOWN"), artifact, checks, width, height, dpi_x, dpi_y)
+    return write_report(output, str(page_id or "UNKNOWN"), page_type or "UNKNOWN", artifact, checks, width, height, dpi_x, dpi_y)
 
 
 def write_report(output: Path, page_id: str, page_type: str, artifact: Path, checks: list[dict[str, Any]], width: int = 0, height: int = 0, dpi_x: float = 0.0, dpi_y: float = 0.0) -> int:
@@ -252,10 +260,18 @@ def write_report(output: Path, page_id: str, page_type: str, artifact: Path, che
 
 def self_test() -> int:
     registry = load_json(REGISTRY)
+    policies = load_json(TEXT_POLICIES)
+    schema = load_json(EVIDENCE_SCHEMA)
     expected = {"cover", "about", "publisher", "contents", "back_cover"}
     missing = expected - set(registry.get("page_types", {}))
     if missing:
         print(f"missing page contracts: {sorted(missing)}", file=sys.stderr)
+        return 1
+    if not policies.get("books"):
+        print("book text policies are missing", file=sys.stderr)
+        return 1
+    if schema.get("title") != "BCube Render Evidence Manifest":
+        print("render evidence schema is invalid", file=sys.stderr)
         return 1
     print("evidence-based render validator self-test passed")
     return 0
