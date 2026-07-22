@@ -1,0 +1,44 @@
+{
+  "policy_version": "pre-print-pilot",
+  "default": {
+    "prohibited_terms": [
+      "PLACEHOLDER",
+      "LOREM IPSUM",
+      "SAMPLE TEXT",
+      "WATERMARK"
+    ]
+  },
+  "books": {
+    "nursery/confidence-builders": {
+      "required_cover_terms": [
+        "CONFIDENCE BUILDERS",
+        "I BELIEVE",
+        "I CAN",
+        "I WILL",
+        "BCUBE FUTURE SKILLS LEARNING SERIES",
+        "NURSERY",
+        "3+"
+      ],
+      "prohibited_terms": [
+        "GOOD COMMUNICATION MAKES FRIENDS",
+        "COMMUNICATION CHAMPIONS",
+        "LISTEN SPEAK SHARE"
+      ]
+    },
+    "nursery/communication-champions": {
+      "required_cover_terms": [
+        "COMMUNICATION CHAMPIONS",
+        "LISTEN",
+        "SPEAK",
+        "SHARE",
+        "BCUBE FUTURE SKILLS LEARNING SERIES",
+        "NURSERY",
+        "3+"
+      ],
+      "prohibited_terms": [
+        "CONFIDENCE BUILDERS",
+        "I BELIEVE I CAN I WILL"
+      ]
+    }
+  }
+}
