@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Logical Thinking Adventures",
+  "slug": "logical-thinking-adventures",
+  "prefix": "LT",
+  "level": "LKG (4+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "LT-LKG-V4-P001",
+      "title": "Logical Thinking Adventures",
+      "markdown": "pages/LT-LKG-V4-P001-logical-thinking-adventures.md",
+      "json": "pages/LT-LKG-V4-P001-logical-thinking-adventures.json",
+      "source_prompt": "LT-LKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "LT-LKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/LT-LKG-V4-P002-about-this-book.md",
+      "json": "pages/LT-LKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "LT-LKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/LT-LKG-V4-P003-copyright.md",
+      "json": "pages/LT-LKG-V4-P003-copyright.json",
+      "source_prompt": "LT-LKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "LT-LKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/LT-LKG-V4-P004-contents-part-1.md",
+      "json": "pages/LT-LKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "LT-LKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/LT-LKG-V4-P005-contents-part-2.md",
+      "json": "pages/LT-LKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "LT-LKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/LT-LKG-V4-P006-welcome.md",
+      "json": "pages/LT-LKG-V4-P006-welcome.json",
+      "source_prompt": "LT-LKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "LT-LKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/LT-LKG-V4-P007-meet-star.md",
+      "json": "pages/LT-LKG-V4-P007-meet-star.json",
+      "source_prompt": "LT-LKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "LT-LKG-V4-P008",
+      "title": "Find the Difference",
+      "markdown": "pages/LT-LKG-V4-P008-find-the-difference.md",
+      "json": "pages/LT-LKG-V4-P008-find-the-difference.json",
+      "source_prompt": "LT-LKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "LT-LKG-V4-P009",
+      "title": "Spot the Same",
+      "markdown": "pages/LT-LKG-V4-P009-spot-the-same.md",
+      "json": "pages/LT-LKG-V4-P009-spot-the-same.json",
+      "source_prompt": "LT-LKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "LT-LKG-V4-P010",
+      "title": "Odd One Out",
+      "markdown": "pages/LT-LKG-V4-P010-odd-one-out.md",
+      "json": "pages/LT-LKG-V4-P010-odd-one-out.json",
+      "source_prompt": "LT-LKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "LT-LKG-V4-P011",
+      "title": "Picture Match",
+      "markdown": "pages/LT-LKG-V4-P011-picture-match.md",
+      "json": "pages/LT-LKG-V4-P011-picture-match.json",
+      "source_prompt": "LT-LKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "LT-LKG-V4-P012",
+      "title": "Hidden Objects",
+      "markdown": "pages/LT-LKG-V4-P012-hidden-objects.md",
+      "json": "pages/LT-LKG-V4-P012-hidden-objects.json",
+      "source_prompt": "LT-LKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "LT-LKG-V4-P013",
+      "title": "What Comes Next",
+      "markdown": "pages/LT-LKG-V4-P013-what-comes-next.md",
+      "json": "pages/LT-LKG-V4-P013-what-comes-next.json",
+      "source_prompt": "LT-LKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "LT-LKG-V4-P014",
+      "title": "Story Sequence",
+      "markdown": "pages/LT-LKG-V4-P014-story-sequence.md",
+      "json": "pages/LT-LKG-V4-P014-story-sequence.json",
+      "source_prompt": "LT-LKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "LT-LKG-V4-P015",
+      "title": "Pattern Logic",
+      "markdown": "pages/LT-LKG-V4-P015-pattern-logic.md",
+      "json": "pages/LT-LKG-V4-P015-pattern-logic.json",
+      "source_prompt": "LT-LKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "LT-LKG-V4-P016",
+      "title": "Complete the Series",
+      "markdown": "pages/LT-LKG-V4-P016-complete-the-series.md",
+      "json": "pages/LT-LKG-V4-P016-complete-the-series.json",
+      "source_prompt": "LT-LKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "LT-LKG-V4-P017",
+      "title": "Sort by Colour",
+      "markdown": "pages/LT-LKG-V4-P017-sort-by-colour.md",
+      "json": "pages/LT-LKG-V4-P017-sort-by-colour.json",
+      "source_prompt": "LT-LKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "LT-LKG-V4-P018",
+      "title": "Sort by Shape",
+      "markdown": "pages/LT-LKG-V4-P018-sort-by-shape.md",
+      "json": "pages/LT-LKG-V4-P018-sort-by-shape.json",
+      "source_prompt": "LT-LKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "LT-LKG-V4-P019",
+      "title": "Sort by Size",
+      "markdown": "pages/LT-LKG-V4-P019-sort-by-size.md",
+      "json": "pages/LT-LKG-V4-P019-sort-by-size.json",
+      "source_prompt": "LT-LKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "LT-LKG-V4-P020",
+      "title": "Belongs Together",
+      "markdown": "pages/LT-LKG-V4-P020-belongs-together.md",
+      "json": "pages/LT-LKG-V4-P020-belongs-together.json",
+      "source_prompt": "LT-LKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "LT-LKG-V4-P021",
+      "title": "Big Problem Small Problem",
+      "markdown": "pages/LT-LKG-V4-P021-big-problem-small-problem.md",
+      "json": "pages/LT-LKG-V4-P021-big-problem-small-problem.json",
+      "source_prompt": "LT-LKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "LT-LKG-V4-P022",
+      "title": "Cause and Effect",
+      "markdown": "pages/LT-LKG-V4-P022-cause-and-effect.md",
+      "json": "pages/LT-LKG-V4-P022-cause-and-effect.json",
+      "source_prompt": "LT-LKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "LT-LKG-V4-P023",
+      "title": "Left and Right",
+      "markdown": "pages/LT-LKG-V4-P023-left-and-right.md",
+      "json": "pages/LT-LKG-V4-P023-left-and-right.json",
+      "source_prompt": "LT-LKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "LT-LKG-V4-P024",
+      "title": "Above and Below",
+      "markdown": "pages/LT-LKG-V4-P024-above-and-below.md",
+      "json": "pages/LT-LKG-V4-P024-above-and-below.json",
+      "source_prompt": "LT-LKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "LT-LKG-V4-P025",
+      "title": "Inside and Outside",
+      "markdown": "pages/LT-LKG-V4-P025-inside-and-outside.md",
+      "json": "pages/LT-LKG-V4-P025-inside-and-outside.json",
+      "source_prompt": "LT-LKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "LT-LKG-V4-P026",
+      "title": "Maze Challenge",
+      "markdown": "pages/LT-LKG-V4-P026-maze-challenge.md",
+      "json": "pages/LT-LKG-V4-P026-maze-challenge.json",
+      "source_prompt": "LT-LKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "LT-LKG-V4-P027",
+      "title": "Remember the Pictures",
+      "markdown": "pages/LT-LKG-V4-P027-remember-the-pictures.md",
+      "json": "pages/LT-LKG-V4-P027-remember-the-pictures.json",
+      "source_prompt": "LT-LKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "LT-LKG-V4-P028",
+      "title": "Picture Recall",
+      "markdown": "pages/LT-LKG-V4-P028-picture-recall.md",
+      "json": "pages/LT-LKG-V4-P028-picture-recall.json",
+      "source_prompt": "LT-LKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "LT-LKG-V4-P029",
+      "title": "Choose the Best Answer",
+      "markdown": "pages/LT-LKG-V4-P029-choose-the-best-answer.md",
+      "json": "pages/LT-LKG-V4-P029-choose-the-best-answer.json",
+      "source_prompt": "LT-LKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "LT-LKG-V4-P030",
+      "title": "Finish the Picture",
+      "markdown": "pages/LT-LKG-V4-P030-finish-the-picture.md",
+      "json": "pages/LT-LKG-V4-P030-finish-the-picture.json",
+      "source_prompt": "LT-LKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "LT-LKG-V4-P031",
+      "title": "Visual Puzzle",
+      "markdown": "pages/LT-LKG-V4-P031-visual-puzzle.md",
+      "json": "pages/LT-LKG-V4-P031-visual-puzzle.json",
+      "source_prompt": "LT-LKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "LT-LKG-V4-P032",
+      "title": "Shadow Match",
+      "markdown": "pages/LT-LKG-V4-P032-shadow-match.md",
+      "json": "pages/LT-LKG-V4-P032-shadow-match.json",
+      "source_prompt": "LT-LKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "LT-LKG-V4-P033",
+      "title": "Complete the Puzzle",
+      "markdown": "pages/LT-LKG-V4-P033-complete-the-puzzle.md",
+      "json": "pages/LT-LKG-V4-P033-complete-the-puzzle.json",
+      "source_prompt": "LT-LKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "LT-LKG-V4-P034",
+      "title": "Picture Logic",
+      "markdown": "pages/LT-LKG-V4-P034-picture-logic.md",
+      "json": "pages/LT-LKG-V4-P034-picture-logic.json",
+      "source_prompt": "LT-LKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "LT-LKG-V4-P035",
+      "title": "Simple Coding",
+      "markdown": "pages/LT-LKG-V4-P035-simple-coding.md",
+      "json": "pages/LT-LKG-V4-P035-simple-coding.json",
+      "source_prompt": "LT-LKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "LT-LKG-V4-P036",
+      "title": "Thinking Challenge",
+      "markdown": "pages/LT-LKG-V4-P036-thinking-challenge.md",
+      "json": "pages/LT-LKG-V4-P036-thinking-challenge.json",
+      "source_prompt": "LT-LKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "LT-LKG-V4-P037",
+      "title": "Mixed Logic Review",
+      "markdown": "pages/LT-LKG-V4-P037-mixed-logic-review.md",
+      "json": "pages/LT-LKG-V4-P037-mixed-logic-review.json",
+      "source_prompt": "LT-LKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "LT-LKG-V4-P038",
+      "title": "Brain Challenge",
+      "markdown": "pages/LT-LKG-V4-P038-brain-challenge.md",
+      "json": "pages/LT-LKG-V4-P038-brain-challenge.json",
+      "source_prompt": "LT-LKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "LT-LKG-V4-P039",
+      "title": "Thinking Assessment",
+      "markdown": "pages/LT-LKG-V4-P039-thinking-assessment.md",
+      "json": "pages/LT-LKG-V4-P039-thinking-assessment.json",
+      "source_prompt": "LT-LKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "LT-LKG-V4-P040",
+      "title": "My Thinking Journal",
+      "markdown": "pages/LT-LKG-V4-P040-my-thinking-journal.md",
+      "json": "pages/LT-LKG-V4-P040-my-thinking-journal.json",
+      "source_prompt": "LT-LKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "LT-LKG-V4-P041",
+      "title": "Logic Celebration",
+      "markdown": "pages/LT-LKG-V4-P041-logic-celebration.md",
+      "json": "pages/LT-LKG-V4-P041-logic-celebration.json",
+      "source_prompt": "LT-LKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "LT-LKG-V4-P042",
+      "title": "Certificate",
+      "markdown": "pages/LT-LKG-V4-P042-certificate.md",
+      "json": "pages/LT-LKG-V4-P042-certificate.json",
+      "source_prompt": "LT-LKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "LT-LKG-V4-P043",
+      "title": "I Am a Logic Explorer",
+      "markdown": "pages/LT-LKG-V4-P043-i-am-a-logic-explorer.md",
+      "json": "pages/LT-LKG-V4-P043-i-am-a-logic-explorer.json",
+      "source_prompt": "LT-LKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "LT-LKG-V4-P044",
+      "title": "Logical Thinking Adventures — Back Cover",
+      "markdown": "pages/LT-LKG-V4-P044-logical-thinking-adventures-back-cover.md",
+      "json": "pages/LT-LKG-V4-P044-logical-thinking-adventures-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
