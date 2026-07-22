@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'bcube-publishing-engine-v5/**'
+      - 'design-system/BCUBE_DESIGN_CONSTITUTION_V1.md'
+      - 'design-system/bcube-design-constitution-v1.json'
       - 'scripts/bcube_publish.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-engine-v5.yml'
@@ -11,6 +13,8 @@ on:
     branches: [main]
     paths:
       - 'bcube-publishing-engine-v5/**'
+      - 'design-system/BCUBE_DESIGN_CONSTITUTION_V1.md'
+      - 'design-system/bcube-design-constitution-v1.json'
       - 'scripts/bcube_publish.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-engine-v5.yml'
@@ -27,6 +31,35 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile V5
         run: python -m py_compile scripts/bcube_publish.py
+      - name: Validate BCube Design Constitution
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          md = Path('design-system/BCUBE_DESIGN_CONSTITUTION_V1.md')
+          machine = Path('design-system/bcube-design-constitution-v1.json')
+          assert md.is_file(), 'Design Constitution Markdown is missing'
+          data = json.loads(machine.read_text(encoding='utf-8'))
+          assert data['constitution_id'] == 'BCUBE-DESIGN-CONSTITUTION-V1'
+          assert data['status'] == 'canonical'
+          assert data['canvas'] == {
+              'format': 'A4_PORTRAIT',
+              'width_px': 2480,
+              'height_px': 3508,
+              'dpi': 300,
+              'one_physical_page_per_output': True,
+          }
+          assert data['architecture']['full_page_ai_generation_allowed'] is False
+          assert data['cover']['skill_count'] == 6
+          assert data['cover']['pillar_count'] == 5
+          assert data['illustration_layer']['text_allowed'] is False
+          assert data['illustration_layer']['mascot_allowed'] is False
+          assert data['assets']['missing_required_asset_policy'] == 'FAIL_CLOSED'
+          assert data['qa']['human_approval_required'] is True
+          assert data['qa']['approval_bound_to_artifact_sha256'] is True
+          assert data['permanent_learning_rule'] is True
+          print('BCube Design Constitution PASS')
+          PY
       - name: Validate review manifest schema JSON
         run: |
           python - <<'PY'
