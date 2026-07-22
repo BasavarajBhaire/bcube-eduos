@@ -1,0 +1,37 @@
+{
+  "template_version": "pre-print-pilot",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "safe_margin": 118,
+  "templates": {
+    "cover": {
+      "header_type": "SERIES_HEADER",
+      "required": ["official_logo", "series_banner", "age_badge", "book_title", "tagline_ribbon", "illustration_frame", "skill_capsules", "core_pillars", "footer"],
+      "prohibited": ["page_number", "publisher_details", "module_groups"],
+      "constraints": {"skill_capsules": 6, "core_pillars": 5, "visible_page_number": false}
+    },
+    "about": {
+      "header_type": "BOOK_HEADER",
+      "required": ["official_logo", "book_title", "page_title", "illustration_frame", "core_pillars", "footer"],
+      "prohibited": ["series_banner", "age_badge", "publisher_details", "module_groups", "page_number", "teacher_panel", "parent_panel"],
+      "constraints": {"visible_page_number": false}
+    },
+    "publisher": {
+      "header_type": "MINIMAL_HEADER",
+      "required": ["official_logo", "book_title", "publisher_details", "footer"],
+      "prohibited": ["series_banner", "age_badge", "official_star", "illustration_frame", "illustration_layer", "skill_capsules", "module_groups", "core_pillars", "page_number", "teacher_panel", "parent_panel"],
+      "constraints": {"visible_page_number": false, "illustration": false}
+    },
+    "contents": {
+      "header_type": "BOOK_HEADER",
+      "required": ["official_logo", "book_title", "page_title", "tagline_ribbon", "module_groups", "core_pillars", "footer"],
+      "prohibited": ["series_banner", "age_badge", "illustration_frame", "illustration_layer", "teacher_panel", "parent_panel", "page_number", "sticky_note", "callout"],
+      "constraints": {"visible_page_number": false, "columns": 2, "show_module_names": true, "show_all_manifest_learning_pages": true}
+    },
+    "back_cover": {
+      "header_type": "BOOK_HEADER",
+      "required": ["official_logo", "book_title", "tagline_ribbon", "footer"],
+      "prohibited": ["age_badge", "page_number", "teacher_panel", "parent_panel", "module_groups"],
+      "constraints": {"visible_page_number": false, "single_true_back_cover": true}
+    }
+  }
+}
