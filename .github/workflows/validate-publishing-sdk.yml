@@ -1,0 +1,23 @@
+name: Validate Publishing SDK
+
+on:
+  pull_request:
+    paths:
+      - 'bcube-publishing-sdk/**'
+      - '.github/workflows/validate-publishing-sdk.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bcube-publishing-sdk/**'
+      - '.github/workflows/validate-publishing-sdk.yml'
+
+jobs:
+  validate-sdk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate SDK contracts
+        run: python bcube-publishing-sdk/validators/validate_sdk.py
