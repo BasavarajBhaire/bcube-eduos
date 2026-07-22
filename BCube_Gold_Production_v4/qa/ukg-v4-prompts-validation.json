@@ -1,22 +1,23 @@
 {
   "validation_version": "4.0.0",
   "level": "UKG (5+)",
-  "books_validated": 4,
+  "books_validated": 5,
   "books_total": 10,
   "completed_books": [
     "communication-masters",
     "reading-literacy-adventures",
     "maths-explorers",
-    "logic-brain-builders"
+    "logic-brain-builders",
+    "young-scientists"
   ],
-  "page_prompts": 176,
-  "markdown_files": 176,
-  "json_files": 176,
-  "source_backed_pages": 160,
-  "checks": 2288,
+  "page_prompts": 220,
+  "markdown_files": 220,
+  "json_files": 220,
+  "source_backed_pages": 200,
+  "checks": 2860,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "young-scientists",
+  "next_book": "creative-design-studio",
   "book_results": [
     {
       "slug": "communication-masters",
@@ -57,6 +58,18 @@
     {
       "slug": "logic-brain-builders",
       "book": "Logic & Brain Builders",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "young-scientists",
+      "book": "Young Scientists",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,
