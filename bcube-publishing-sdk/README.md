@@ -1,0 +1,43 @@
+# BCube Publishing SDK
+
+Status: PRE-PRINT PILOT
+
+This SDK is the only approved path for producing BCube publication pages.
+
+## Production flow
+
+1. Resolve the exact V4 page package from the release manifest.
+2. Load the page-type master template and component registry.
+3. Generate only the page-specific illustration layer when an illustration is allowed.
+4. Compose official assets, editable typography and book/page data deterministically.
+5. Validate the final render and composition manifest.
+6. Accept only at 100/100 with zero critical defects.
+
+Direct full-page generation by an image model is prohibited.
+
+## Structure
+
+- `templates/` — immutable page-type geometry and component slots.
+- `components/` — reusable component contracts.
+- `schemas/` — page-data and composition-manifest schemas.
+- `composer/` — deterministic composition entry point.
+- `validators/` — SDK and page-data validation.
+- `books/` — book-specific data only; no duplicated layout rules.
+
+## Locked publishing page types
+
+- Cover
+- About This Book
+- Publisher / Copyright
+- Contents
+- Back Cover
+
+Learning-page templates will be added only after the two-book publishing-framework validation is approved.
+
+## Non-negotiable rules
+
+- Official logo and Star assets are referenced by registry ID and verified hash.
+- Branding, typography, badges, page numbers, skill capsules, pillars and footers are never generated inside illustration artwork.
+- One physical page produces one flat front-facing output.
+- A4 portrait: 2480 × 3508 px, 300 DPI.
+- Missing, stale or contradictory inputs fail closed.
