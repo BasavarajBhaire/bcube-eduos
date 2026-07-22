@@ -1,0 +1,82 @@
+{
+  "constitution_id": "BCUBE-DESIGN-CONSTITUTION-V1",
+  "version": "1.0.0",
+  "status": "canonical",
+  "canvas": {
+    "format": "A4_PORTRAIT",
+    "width_px": 2480,
+    "height_px": 3508,
+    "dpi": 300,
+    "one_physical_page_per_output": true
+  },
+  "architecture": {
+    "ai_scope": ["illustration_layer"],
+    "full_page_ai_generation_allowed": false,
+    "deterministic_components": [
+      "official_logo",
+      "series_banner",
+      "age_badge",
+      "book_title",
+      "tagline",
+      "skills",
+      "pillars",
+      "footer",
+      "page_number",
+      "publisher_information"
+    ]
+  },
+  "cover": {
+    "nursery_age_badge_required": true,
+    "skill_count": 6,
+    "pillar_count": 5,
+    "pillars": ["Creativity", "Communication", "Curiosity", "Confidence", "Collaboration"],
+    "printed_page_number": false
+  },
+  "front_matter": {
+    "printed_page_number_hidden_for": ["about", "publisher", "copyright", "contents"],
+    "publisher_illustration_allowed": false,
+    "publisher_mascot_allowed": false,
+    "contents_age_badge_allowed": false,
+    "contents_requires_modules": true,
+    "contents_requires_all_learning_pages": true
+  },
+  "illustration_layer": {
+    "text_allowed": false,
+    "logo_allowed": false,
+    "mascot_allowed": false,
+    "badge_allowed": false,
+    "page_layout_allowed": false,
+    "embedded_page_allowed": false,
+    "placement_mode": "safe_contain",
+    "crop_faces_or_limbs_allowed": false
+  },
+  "assets": {
+    "registry_required": true,
+    "sha256_evidence_required": true,
+    "ai_redraw_logo_allowed": false,
+    "ai_redraw_star_allowed": false,
+    "missing_required_asset_policy": "FAIL_CLOSED"
+  },
+  "qa": {
+    "zero_critical_defects_required": true,
+    "machine_pass_required": true,
+    "human_approval_required": true,
+    "approval_bound_to_artifact_sha256": true,
+    "self_declared_visual_booleans_sufficient": false,
+    "cross_book_contamination_policy": "FAIL_CLOSED",
+    "unsupported_glyph_policy": "FAIL_CLOSED",
+    "duplicate_component_policy": "FAIL_CLOSED"
+  },
+  "workflow": {
+    "candidate_root": "production-renders/v5/candidates",
+    "approved_root": "production-renders/v5/approved",
+    "promotion_requires_explicit_approval": true
+  },
+  "permanent_learning_rule": true,
+  "change_control": {
+    "version_increment_required": true,
+    "pull_request_required": true,
+    "ci_required": true,
+    "migration_impact_required": true
+  }
+}
