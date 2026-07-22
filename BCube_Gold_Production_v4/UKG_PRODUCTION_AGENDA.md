@@ -34,7 +34,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | 1 | Communication Masters | CM | COMPLETE — V4 prompts |
 | 2 | Reading & Literacy Adventures | RL | COMPLETE — V4 prompts |
 | 3 | Maths Explorers | ME | COMPLETE — V4 prompts |
-| 4 | Logic & Brain Builders | LB | QUEUED |
+| 4 | Logic & Brain Builders | LB | COMPLETE — V4 prompts |
 | 5 | Young Scientists | YS | QUEUED |
 | 6 | Creative Design Studio | CD | QUEUED |
 | 7 | My Amazing World | MA | QUEUED |

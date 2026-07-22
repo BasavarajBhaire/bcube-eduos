@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Logic & Brain Builders",
+  "slug": "logic-brain-builders",
+  "prefix": "LB",
+  "level": "UKG (5+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "LB-UKG-V4-P001",
+      "title": "Logic & Brain Builders",
+      "markdown": "pages/LB-UKG-V4-P001-logic-and-brain-builders.md",
+      "json": "pages/LB-UKG-V4-P001-logic-and-brain-builders.json",
+      "source_prompt": "LB-UKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "LB-UKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/LB-UKG-V4-P002-about-this-book.md",
+      "json": "pages/LB-UKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "LB-UKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/LB-UKG-V4-P003-copyright.md",
+      "json": "pages/LB-UKG-V4-P003-copyright.json",
+      "source_prompt": "LB-UKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "LB-UKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/LB-UKG-V4-P004-contents-part-1.md",
+      "json": "pages/LB-UKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "LB-UKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/LB-UKG-V4-P005-contents-part-2.md",
+      "json": "pages/LB-UKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "LB-UKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/LB-UKG-V4-P006-welcome.md",
+      "json": "pages/LB-UKG-V4-P006-welcome.json",
+      "source_prompt": "LB-UKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "LB-UKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/LB-UKG-V4-P007-meet-star.md",
+      "json": "pages/LB-UKG-V4-P007-meet-star.json",
+      "source_prompt": "LB-UKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "LB-UKG-V4-P008",
+      "title": "Find the Pattern",
+      "markdown": "pages/LB-UKG-V4-P008-find-the-pattern.md",
+      "json": "pages/LB-UKG-V4-P008-find-the-pattern.json",
+      "source_prompt": "LB-UKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "LB-UKG-V4-P009",
+      "title": "Complete the Sequence",
+      "markdown": "pages/LB-UKG-V4-P009-complete-the-sequence.md",
+      "json": "pages/LB-UKG-V4-P009-complete-the-sequence.json",
+      "source_prompt": "LB-UKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "LB-UKG-V4-P010",
+      "title": "Odd One Out",
+      "markdown": "pages/LB-UKG-V4-P010-odd-one-out.md",
+      "json": "pages/LB-UKG-V4-P010-odd-one-out.json",
+      "source_prompt": "LB-UKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "LB-UKG-V4-P011",
+      "title": "Spot the Difference",
+      "markdown": "pages/LB-UKG-V4-P011-spot-the-difference.md",
+      "json": "pages/LB-UKG-V4-P011-spot-the-difference.json",
+      "source_prompt": "LB-UKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "LB-UKG-V4-P012",
+      "title": "Picture Logic",
+      "markdown": "pages/LB-UKG-V4-P012-picture-logic.md",
+      "json": "pages/LB-UKG-V4-P012-picture-logic.json",
+      "source_prompt": "LB-UKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "LB-UKG-V4-P013",
+      "title": "Big to Small",
+      "markdown": "pages/LB-UKG-V4-P013-big-to-small.md",
+      "json": "pages/LB-UKG-V4-P013-big-to-small.json",
+      "source_prompt": "LB-UKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "LB-UKG-V4-P014",
+      "title": "Before & After",
+      "markdown": "pages/LB-UKG-V4-P014-before-and-after.md",
+      "json": "pages/LB-UKG-V4-P014-before-and-after.json",
+      "source_prompt": "LB-UKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "LB-UKG-V4-P015",
+      "title": "Maze Challenge",
+      "markdown": "pages/LB-UKG-V4-P015-maze-challenge.md",
+      "json": "pages/LB-UKG-V4-P015-maze-challenge.json",
+      "source_prompt": "LB-UKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "LB-UKG-V4-P016",
+      "title": "Coding Arrows",
+      "markdown": "pages/LB-UKG-V4-P016-coding-arrows.md",
+      "json": "pages/LB-UKG-V4-P016-coding-arrows.json",
+      "source_prompt": "LB-UKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "LB-UKG-V4-P017",
+      "title": "Follow the Path",
+      "markdown": "pages/LB-UKG-V4-P017-follow-the-path.md",
+      "json": "pages/LB-UKG-V4-P017-follow-the-path.json",
+      "source_prompt": "LB-UKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "LB-UKG-V4-P018",
+      "title": "Finish the Pattern",
+      "markdown": "pages/LB-UKG-V4-P018-finish-the-pattern.md",
+      "json": "pages/LB-UKG-V4-P018-finish-the-pattern.json",
+      "source_prompt": "LB-UKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "LB-UKG-V4-P019",
+      "title": "Shadow Match",
+      "markdown": "pages/LB-UKG-V4-P019-shadow-match.md",
+      "json": "pages/LB-UKG-V4-P019-shadow-match.json",
+      "source_prompt": "LB-UKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "LB-UKG-V4-P020",
+      "title": "Mirror Images",
+      "markdown": "pages/LB-UKG-V4-P020-mirror-images.md",
+      "json": "pages/LB-UKG-V4-P020-mirror-images.json",
+      "source_prompt": "LB-UKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "LB-UKG-V4-P021",
+      "title": "Shape Puzzles",
+      "markdown": "pages/LB-UKG-V4-P021-shape-puzzles.md",
+      "json": "pages/LB-UKG-V4-P021-shape-puzzles.json",
+      "source_prompt": "LB-UKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "LB-UKG-V4-P022",
+      "title": "Tangram Fun",
+      "markdown": "pages/LB-UKG-V4-P022-tangram-fun.md",
+      "json": "pages/LB-UKG-V4-P022-tangram-fun.json",
+      "source_prompt": "LB-UKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "LB-UKG-V4-P023",
+      "title": "Sort the Rules",
+      "markdown": "pages/LB-UKG-V4-P023-sort-the-rules.md",
+      "json": "pages/LB-UKG-V4-P023-sort-the-rules.json",
+      "source_prompt": "LB-UKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "LB-UKG-V4-P024",
+      "title": "Think First",
+      "markdown": "pages/LB-UKG-V4-P024-think-first.md",
+      "json": "pages/LB-UKG-V4-P024-think-first.json",
+      "source_prompt": "LB-UKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "LB-UKG-V4-P025",
+      "title": "Cause & Effect",
+      "markdown": "pages/LB-UKG-V4-P025-cause-and-effect.md",
+      "json": "pages/LB-UKG-V4-P025-cause-and-effect.json",
+      "source_prompt": "LB-UKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "LB-UKG-V4-P026",
+      "title": "If...Then...",
+      "markdown": "pages/LB-UKG-V4-P026-if-then.md",
+      "json": "pages/LB-UKG-V4-P026-if-then.json",
+      "source_prompt": "LB-UKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "LB-UKG-V4-P027",
+      "title": "Logic Stories",
+      "markdown": "pages/LB-UKG-V4-P027-logic-stories.md",
+      "json": "pages/LB-UKG-V4-P027-logic-stories.json",
+      "source_prompt": "LB-UKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "LB-UKG-V4-P028",
+      "title": "Strategy Game",
+      "markdown": "pages/LB-UKG-V4-P028-strategy-game.md",
+      "json": "pages/LB-UKG-V4-P028-strategy-game.json",
+      "source_prompt": "LB-UKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "LB-UKG-V4-P029",
+      "title": "Visual Puzzle",
+      "markdown": "pages/LB-UKG-V4-P029-visual-puzzle.md",
+      "json": "pages/LB-UKG-V4-P029-visual-puzzle.json",
+      "source_prompt": "LB-UKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "LB-UKG-V4-P030",
+      "title": "Memory Challenge",
+      "markdown": "pages/LB-UKG-V4-P030-memory-challenge.md",
+      "json": "pages/LB-UKG-V4-P030-memory-challenge.json",
+      "source_prompt": "LB-UKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "LB-UKG-V4-P031",
+      "title": "Brain Builder",
+      "markdown": "pages/LB-UKG-V4-P031-brain-builder.md",
+      "json": "pages/LB-UKG-V4-P031-brain-builder.json",
+      "source_prompt": "LB-UKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "LB-UKG-V4-P032",
+      "title": "Think & Solve",
+      "markdown": "pages/LB-UKG-V4-P032-think-and-solve.md",
+      "json": "pages/LB-UKG-V4-P032-think-and-solve.json",
+      "source_prompt": "LB-UKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "LB-UKG-V4-P033",
+      "title": "Logic Review",
+      "markdown": "pages/LB-UKG-V4-P033-logic-review.md",
+      "json": "pages/LB-UKG-V4-P033-logic-review.json",
+      "source_prompt": "LB-UKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "LB-UKG-V4-P034",
+      "title": "Mini Project",
+      "markdown": "pages/LB-UKG-V4-P034-mini-project.md",
+      "json": "pages/LB-UKG-V4-P034-mini-project.json",
+      "source_prompt": "LB-UKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "LB-UKG-V4-P035",
+      "title": "Reflection",
+      "markdown": "pages/LB-UKG-V4-P035-reflection.md",
+      "json": "pages/LB-UKG-V4-P035-reflection.json",
+      "source_prompt": "LB-UKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "LB-UKG-V4-P036",
+      "title": "Showcase",
+      "markdown": "pages/LB-UKG-V4-P036-showcase.md",
+      "json": "pages/LB-UKG-V4-P036-showcase.json",
+      "source_prompt": "LB-UKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "LB-UKG-V4-P037",
+      "title": "Grand Review",
+      "markdown": "pages/LB-UKG-V4-P037-grand-review.md",
+      "json": "pages/LB-UKG-V4-P037-grand-review.json",
+      "source_prompt": "LB-UKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "LB-UKG-V4-P038",
+      "title": "My Achievement",
+      "markdown": "pages/LB-UKG-V4-P038-my-achievement.md",
+      "json": "pages/LB-UKG-V4-P038-my-achievement.json",
+      "source_prompt": "LB-UKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "LB-UKG-V4-P039",
+      "title": "My Thinking Goals",
+      "markdown": "pages/LB-UKG-V4-P039-my-thinking-goals.md",
+      "json": "pages/LB-UKG-V4-P039-my-thinking-goals.json",
+      "source_prompt": "LB-UKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "LB-UKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/LB-UKG-V4-P040-celebration.md",
+      "json": "pages/LB-UKG-V4-P040-celebration.json",
+      "source_prompt": "LB-UKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "LB-UKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/LB-UKG-V4-P041-certificate.md",
+      "json": "pages/LB-UKG-V4-P041-certificate.json",
+      "source_prompt": "LB-UKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "LB-UKG-V4-P042",
+      "title": "I Am a Logic Builder",
+      "markdown": "pages/LB-UKG-V4-P042-i-am-a-logic-builder.md",
+      "json": "pages/LB-UKG-V4-P042-i-am-a-logic-builder.json",
+      "source_prompt": "LB-UKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "LB-UKG-V4-P043",
+      "title": "My Logic Celebration",
+      "markdown": "pages/LB-UKG-V4-P043-my-logic-celebration.md",
+      "json": "pages/LB-UKG-V4-P043-my-logic-celebration.json",
+      "source_prompt": "LB-UKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "LB-UKG-V4-P044",
+      "title": "Logic & Brain Builders — Back Cover",
+      "markdown": "pages/LB-UKG-V4-P044-logic-and-brain-builders-back-cover.md",
+      "json": "pages/LB-UKG-V4-P044-logic-and-brain-builders-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}

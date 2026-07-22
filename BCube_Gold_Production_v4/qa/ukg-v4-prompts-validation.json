@@ -1,21 +1,22 @@
 {
   "validation_version": "4.0.0",
   "level": "UKG (5+)",
-  "books_validated": 3,
+  "books_validated": 4,
   "books_total": 10,
   "completed_books": [
     "communication-masters",
     "reading-literacy-adventures",
-    "maths-explorers"
+    "maths-explorers",
+    "logic-brain-builders"
   ],
-  "page_prompts": 132,
-  "markdown_files": 132,
-  "json_files": 132,
-  "source_backed_pages": 120,
-  "checks": 1716,
+  "page_prompts": 176,
+  "markdown_files": 176,
+  "json_files": 176,
+  "source_backed_pages": 160,
+  "checks": 2288,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "logic-brain-builders",
+  "next_book": "young-scientists",
   "book_results": [
     {
       "slug": "communication-masters",
@@ -44,6 +45,18 @@
     {
       "slug": "maths-explorers",
       "book": "Maths Explorers",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "logic-brain-builders",
+      "book": "Logic & Brain Builders",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,
