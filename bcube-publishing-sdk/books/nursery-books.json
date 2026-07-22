@@ -1,5 +1,5 @@
 {
-  "registry_version": "pre-print-pilot",
+  "registry_version": "pre-print-pilot-v1.1",
   "defaults": {
     "level": "Nursery",
     "age": "3+",
@@ -10,13 +10,15 @@
       {"code": "CF", "name": "Confidence"},
       {"code": "CL", "name": "Collaboration"}
     ],
+    "pillar_icon_keys": ["palette", "chat", "search", "confidence", "puzzle"],
     "official_logo_candidates": [
       "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
       "BCube_Gold_Production_v4/assets/nursery/communication-champions/P006/bcube-academy-logo.jpg"
     ],
     "official_star_candidates": [
       "BCube_Gold_Production_v4/approved-assets/nursery/communication-champions/pages/CC-NURSERY-V4-P007-meet-star.png"
-    ]
+    ],
+    "official_star_crop": [65, 360, 560, 800]
   },
   "books": {
     "confidence-builders": {
@@ -32,6 +34,7 @@
         "Be Kind to Others",
         "Celebrate Success"
       ],
+      "skill_icon_keys": ["person", "spark", "speech", "shield", "heart", "trophy"],
       "footer_keywords": "Self-belief • Courage • Expression • Kindness • Independence",
       "required_detected_text": [
         "CONFIDENCE BUILDERS",
@@ -56,6 +59,7 @@
         "Take Turns",
         "Express Feelings"
       ],
+      "skill_icon_keys": ["person", "speech", "spark", "heart", "shield", "trophy"],
       "footer_keywords": "Listening • Speaking • Sharing • Expression • Friendship",
       "required_detected_text": [
         "COMMUNICATION CHAMPIONS",
