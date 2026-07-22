@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Young Scientists",
+  "slug": "young-scientists",
+  "prefix": "YS",
+  "level": "UKG (5+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "YS-UKG-V4-P001",
+      "title": "Young Scientists",
+      "markdown": "pages/YS-UKG-V4-P001-young-scientists.md",
+      "json": "pages/YS-UKG-V4-P001-young-scientists.json",
+      "source_prompt": "YS-UKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "YS-UKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/YS-UKG-V4-P002-about-this-book.md",
+      "json": "pages/YS-UKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "YS-UKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/YS-UKG-V4-P003-copyright.md",
+      "json": "pages/YS-UKG-V4-P003-copyright.json",
+      "source_prompt": "YS-UKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "YS-UKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/YS-UKG-V4-P004-contents-part-1.md",
+      "json": "pages/YS-UKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "YS-UKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/YS-UKG-V4-P005-contents-part-2.md",
+      "json": "pages/YS-UKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "YS-UKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/YS-UKG-V4-P006-welcome.md",
+      "json": "pages/YS-UKG-V4-P006-welcome.json",
+      "source_prompt": "YS-UKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "YS-UKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/YS-UKG-V4-P007-meet-star.md",
+      "json": "pages/YS-UKG-V4-P007-meet-star.json",
+      "source_prompt": "YS-UKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "YS-UKG-V4-P008",
+      "title": "My Five Senses",
+      "markdown": "pages/YS-UKG-V4-P008-my-five-senses.md",
+      "json": "pages/YS-UKG-V4-P008-my-five-senses.json",
+      "source_prompt": "YS-UKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "YS-UKG-V4-P009",
+      "title": "Observe Carefully",
+      "markdown": "pages/YS-UKG-V4-P009-observe-carefully.md",
+      "json": "pages/YS-UKG-V4-P009-observe-carefully.json",
+      "source_prompt": "YS-UKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "YS-UKG-V4-P010",
+      "title": "Living & Non-Living",
+      "markdown": "pages/YS-UKG-V4-P010-living-and-non-living.md",
+      "json": "pages/YS-UKG-V4-P010-living-and-non-living.json",
+      "source_prompt": "YS-UKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "YS-UKG-V4-P011",
+      "title": "Plant Parts",
+      "markdown": "pages/YS-UKG-V4-P011-plant-parts.md",
+      "json": "pages/YS-UKG-V4-P011-plant-parts.json",
+      "source_prompt": "YS-UKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "YS-UKG-V4-P012",
+      "title": "Animal Homes",
+      "markdown": "pages/YS-UKG-V4-P012-animal-homes.md",
+      "json": "pages/YS-UKG-V4-P012-animal-homes.json",
+      "source_prompt": "YS-UKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "YS-UKG-V4-P013",
+      "title": "Weather Watch",
+      "markdown": "pages/YS-UKG-V4-P013-weather-watch.md",
+      "json": "pages/YS-UKG-V4-P013-weather-watch.json",
+      "source_prompt": "YS-UKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "YS-UKG-V4-P014",
+      "title": "Day & Night",
+      "markdown": "pages/YS-UKG-V4-P014-day-and-night.md",
+      "json": "pages/YS-UKG-V4-P014-day-and-night.json",
+      "source_prompt": "YS-UKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "YS-UKG-V4-P015",
+      "title": "Floating & Sinking",
+      "markdown": "pages/YS-UKG-V4-P015-floating-and-sinking.md",
+      "json": "pages/YS-UKG-V4-P015-floating-and-sinking.json",
+      "source_prompt": "YS-UKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "YS-UKG-V4-P016",
+      "title": "Magnet Fun",
+      "markdown": "pages/YS-UKG-V4-P016-magnet-fun.md",
+      "json": "pages/YS-UKG-V4-P016-magnet-fun.json",
+      "source_prompt": "YS-UKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "YS-UKG-V4-P017",
+      "title": "Light & Shadow",
+      "markdown": "pages/YS-UKG-V4-P017-light-and-shadow.md",
+      "json": "pages/YS-UKG-V4-P017-light-and-shadow.json",
+      "source_prompt": "YS-UKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "YS-UKG-V4-P018",
+      "title": "Hot & Cold",
+      "markdown": "pages/YS-UKG-V4-P018-hot-and-cold.md",
+      "json": "pages/YS-UKG-V4-P018-hot-and-cold.json",
+      "source_prompt": "YS-UKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "YS-UKG-V4-P019",
+      "title": "Push & Pull",
+      "markdown": "pages/YS-UKG-V4-P019-push-and-pull.md",
+      "json": "pages/YS-UKG-V4-P019-push-and-pull.json",
+      "source_prompt": "YS-UKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "YS-UKG-V4-P020",
+      "title": "Healthy Habits",
+      "markdown": "pages/YS-UKG-V4-P020-healthy-habits.md",
+      "json": "pages/YS-UKG-V4-P020-healthy-habits.json",
+      "source_prompt": "YS-UKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "YS-UKG-V4-P021",
+      "title": "Water Around Us",
+      "markdown": "pages/YS-UKG-V4-P021-water-around-us.md",
+      "json": "pages/YS-UKG-V4-P021-water-around-us.json",
+      "source_prompt": "YS-UKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "YS-UKG-V4-P022",
+      "title": "Reduce, Reuse, Recycle",
+      "markdown": "pages/YS-UKG-V4-P022-reduce-reuse-recycle.md",
+      "json": "pages/YS-UKG-V4-P022-reduce-reuse-recycle.json",
+      "source_prompt": "YS-UKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "YS-UKG-V4-P023",
+      "title": "Nature Walk",
+      "markdown": "pages/YS-UKG-V4-P023-nature-walk.md",
+      "json": "pages/YS-UKG-V4-P023-nature-walk.json",
+      "source_prompt": "YS-UKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "YS-UKG-V4-P024",
+      "title": "Insect Explorer",
+      "markdown": "pages/YS-UKG-V4-P024-insect-explorer.md",
+      "json": "pages/YS-UKG-V4-P024-insect-explorer.json",
+      "source_prompt": "YS-UKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "YS-UKG-V4-P025",
+      "title": "Bird Watch",
+      "markdown": "pages/YS-UKG-V4-P025-bird-watch.md",
+      "json": "pages/YS-UKG-V4-P025-bird-watch.json",
+      "source_prompt": "YS-UKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "YS-UKG-V4-P026",
+      "title": "Seed Experiment",
+      "markdown": "pages/YS-UKG-V4-P026-seed-experiment.md",
+      "json": "pages/YS-UKG-V4-P026-seed-experiment.json",
+      "source_prompt": "YS-UKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "YS-UKG-V4-P027",
+      "title": "Growing Plants",
+      "markdown": "pages/YS-UKG-V4-P027-growing-plants.md",
+      "json": "pages/YS-UKG-V4-P027-growing-plants.json",
+      "source_prompt": "YS-UKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "YS-UKG-V4-P028",
+      "title": "Build a Bridge",
+      "markdown": "pages/YS-UKG-V4-P028-build-a-bridge.md",
+      "json": "pages/YS-UKG-V4-P028-build-a-bridge.json",
+      "source_prompt": "YS-UKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "YS-UKG-V4-P029",
+      "title": "Simple Machines",
+      "markdown": "pages/YS-UKG-V4-P029-simple-machines.md",
+      "json": "pages/YS-UKG-V4-P029-simple-machines.json",
+      "source_prompt": "YS-UKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "YS-UKG-V4-P030",
+      "title": "STEM Challenge",
+      "markdown": "pages/YS-UKG-V4-P030-stem-challenge.md",
+      "json": "pages/YS-UKG-V4-P030-stem-challenge.json",
+      "source_prompt": "YS-UKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "YS-UKG-V4-P031",
+      "title": "Science in Daily Life",
+      "markdown": "pages/YS-UKG-V4-P031-science-in-daily-life.md",
+      "json": "pages/YS-UKG-V4-P031-science-in-daily-life.json",
+      "source_prompt": "YS-UKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "YS-UKG-V4-P032",
+      "title": "Young Inventor",
+      "markdown": "pages/YS-UKG-V4-P032-young-inventor.md",
+      "json": "pages/YS-UKG-V4-P032-young-inventor.json",
+      "source_prompt": "YS-UKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "YS-UKG-V4-P033",
+      "title": "Science Review",
+      "markdown": "pages/YS-UKG-V4-P033-science-review.md",
+      "json": "pages/YS-UKG-V4-P033-science-review.json",
+      "source_prompt": "YS-UKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "YS-UKG-V4-P034",
+      "title": "Mini Project",
+      "markdown": "pages/YS-UKG-V4-P034-mini-project.md",
+      "json": "pages/YS-UKG-V4-P034-mini-project.json",
+      "source_prompt": "YS-UKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "YS-UKG-V4-P035",
+      "title": "Reflection",
+      "markdown": "pages/YS-UKG-V4-P035-reflection.md",
+      "json": "pages/YS-UKG-V4-P035-reflection.json",
+      "source_prompt": "YS-UKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "YS-UKG-V4-P036",
+      "title": "Showcase",
+      "markdown": "pages/YS-UKG-V4-P036-showcase.md",
+      "json": "pages/YS-UKG-V4-P036-showcase.json",
+      "source_prompt": "YS-UKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "YS-UKG-V4-P037",
+      "title": "Grand Review",
+      "markdown": "pages/YS-UKG-V4-P037-grand-review.md",
+      "json": "pages/YS-UKG-V4-P037-grand-review.json",
+      "source_prompt": "YS-UKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "YS-UKG-V4-P038",
+      "title": "My Achievement",
+      "markdown": "pages/YS-UKG-V4-P038-my-achievement.md",
+      "json": "pages/YS-UKG-V4-P038-my-achievement.json",
+      "source_prompt": "YS-UKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "YS-UKG-V4-P039",
+      "title": "My Science Goals",
+      "markdown": "pages/YS-UKG-V4-P039-my-science-goals.md",
+      "json": "pages/YS-UKG-V4-P039-my-science-goals.json",
+      "source_prompt": "YS-UKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "YS-UKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/YS-UKG-V4-P040-celebration.md",
+      "json": "pages/YS-UKG-V4-P040-celebration.json",
+      "source_prompt": "YS-UKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "YS-UKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/YS-UKG-V4-P041-certificate.md",
+      "json": "pages/YS-UKG-V4-P041-certificate.json",
+      "source_prompt": "YS-UKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "YS-UKG-V4-P042",
+      "title": "I Am a Young Scientist",
+      "markdown": "pages/YS-UKG-V4-P042-i-am-a-young-scientist.md",
+      "json": "pages/YS-UKG-V4-P042-i-am-a-young-scientist.json",
+      "source_prompt": "YS-UKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "YS-UKG-V4-P043",
+      "title": "My Science Celebration",
+      "markdown": "pages/YS-UKG-V4-P043-my-science-celebration.md",
+      "json": "pages/YS-UKG-V4-P043-my-science-celebration.json",
+      "source_prompt": "YS-UKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "YS-UKG-V4-P044",
+      "title": "Young Scientists — Back Cover",
+      "markdown": "pages/YS-UKG-V4-P044-young-scientists-back-cover.md",
+      "json": "pages/YS-UKG-V4-P044-young-scientists-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
