@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover.py"
+FINALIZER = ROOT / "bcube-publishing-sdk/composer/finalize_cover_evidence.py"
 VALIDATOR = ROOT / "scripts/validate_rendered_page.py"
 
 
@@ -35,6 +36,7 @@ def main() -> int:
         "--output", str(args.output),
         "--evidence-output", str(args.evidence),
     ])
+    run([sys.executable, str(FINALIZER), "--evidence", str(args.evidence)])
     run([
         sys.executable, str(VALIDATOR),
         "--artifact", str(args.output),
