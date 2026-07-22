@@ -1,0 +1,26 @@
+name: Temporary BCube Production Assets Export
+
+on:
+  push:
+    branches:
+      - temp/export-bcube-production-assets
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect locked assets
+        run: |
+          mkdir -p export
+          cp BCube_Gold_Production_v4/assets/nursery/communication-champions/P006/bcube-academy-logo.jpg export/
+          cp BCube_Gold_Production_v4/OFFICIAL_ASSETS/STAR-MASCOT-APPROVED-V4.png export/
+          cp production-prompts/confidence-builders/nursery/v4/pages/CB-NURSERY-V4-P001-confidence-builders.json export/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bcube-production-assets
+          path: export/
+          retention-days: 1
