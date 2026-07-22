@@ -1,0 +1,46 @@
+name: Validate Publishing Engine V5
+
+on:
+  pull_request:
+    paths:
+      - 'bcube-publishing-engine-v5/**'
+      - 'scripts/bcube_publish.py'
+      - 'requirements.txt'
+      - '.github/workflows/validate-publishing-engine-v5.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bcube-publishing-engine-v5/**'
+      - 'scripts/bcube_publish.py'
+      - 'requirements.txt'
+      - '.github/workflows/validate-publishing-engine-v5.yml'
+
+jobs:
+  validate-v5:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile V5
+        run: python -m py_compile scripts/bcube_publish.py
+      - name: Validate Confidence Builders prompt compilation
+        run: |
+          python scripts/bcube_publish.py \
+            --level nursery \
+            --book confidence-builders \
+            --page cover \
+            --provider reuse \
+            --prompt-only > /tmp/cb-prompt.txt
+          grep -q 'Hard exclusions' /tmp/cb-prompt.txt
+          grep -q 'no logo' /tmp/cb-prompt.txt
+          grep -q 'no mascot' /tmp/cb-prompt.txt
+      - name: Validate fail-closed unsupported page type
+        run: |
+          if python scripts/bcube_publish.py --level nursery --book confidence-builders --page about --provider reuse --prompt-only; then
+            echo 'Unsupported compositor unexpectedly passed'
+            exit 1
+          fi
