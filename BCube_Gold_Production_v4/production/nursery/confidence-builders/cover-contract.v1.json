@@ -1,0 +1,21 @@
+{
+  "contract_version": "1.0.0",
+  "book": "Confidence Builders",
+  "level": "Nursery",
+  "age_badge": ["NURSERY", "3+", "YEARS"],
+  "series_name": "BCube Future Skills Learning Series™",
+  "title_lines": ["CONFIDENCE", "BUILDERS"],
+  "title_colours": ["purple", "blue"],
+  "strapline": "I BELIEVE • I CAN • I WILL",
+  "illustration_brief": "Premium warm preschool classroom scene with one teacher facilitating confidence-building participation, inclusive Nursery children responding naturally, and the approved Star composited separately as an encouraging model.",
+  "skill_capsules": ["BELIEVE IN MYSELF", "TRY NEW THINGS", "SPEAK WITH CONFIDENCE", "MAKE GOOD CHOICES", "BE KIND TO OTHERS", "CELEBRATE SUCCESS"],
+  "core_pillars": ["CREATIVITY", "COMMUNICATION", "CURIOSITY", "CONFIDENCE", "COLLABORATION"],
+  "footer_motto": "BUILD • CREATE • BECOME",
+  "footer_keywords": ["Self-belief", "Courage", "Expression", "Kindness", "Independence"],
+  "official_logo": "locked repository asset",
+  "approved_star": "locked repository asset",
+  "illustration_must_exclude": ["logo", "mascot", "title", "age badge", "series banner", "skill text", "pillar labels", "footer text"],
+  "page_number_visible": false,
+  "production_metadata_visible": false,
+  "acceptance": {"score": 100, "critical_defects": 0}
+}
