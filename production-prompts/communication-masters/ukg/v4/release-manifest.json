@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Communication Masters",
+  "slug": "communication-masters",
+  "prefix": "CM",
+  "level": "UKG (5+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "CM-UKG-V4-P001",
+      "title": "Communication Masters",
+      "markdown": "pages/CM-UKG-V4-P001-communication-masters.md",
+      "json": "pages/CM-UKG-V4-P001-communication-masters.json",
+      "source_prompt": "CM-UKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "CM-UKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/CM-UKG-V4-P002-about-this-book.md",
+      "json": "pages/CM-UKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "CM-UKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/CM-UKG-V4-P003-copyright.md",
+      "json": "pages/CM-UKG-V4-P003-copyright.json",
+      "source_prompt": "CM-UKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "CM-UKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/CM-UKG-V4-P004-contents-part-1.md",
+      "json": "pages/CM-UKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "CM-UKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/CM-UKG-V4-P005-contents-part-2.md",
+      "json": "pages/CM-UKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "CM-UKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/CM-UKG-V4-P006-welcome.md",
+      "json": "pages/CM-UKG-V4-P006-welcome.json",
+      "source_prompt": "CM-UKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "CM-UKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/CM-UKG-V4-P007-meet-star.md",
+      "json": "pages/CM-UKG-V4-P007-meet-star.json",
+      "source_prompt": "CM-UKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "CM-UKG-V4-P008",
+      "title": "Listening Carefully",
+      "markdown": "pages/CM-UKG-V4-P008-listening-carefully.md",
+      "json": "pages/CM-UKG-V4-P008-listening-carefully.json",
+      "source_prompt": "CM-UKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "CM-UKG-V4-P009",
+      "title": "Speak in Complete Sentences",
+      "markdown": "pages/CM-UKG-V4-P009-speak-in-complete-sentences.md",
+      "json": "pages/CM-UKG-V4-P009-speak-in-complete-sentences.json",
+      "source_prompt": "CM-UKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "CM-UKG-V4-P010",
+      "title": "Picture Conversation",
+      "markdown": "pages/CM-UKG-V4-P010-picture-conversation.md",
+      "json": "pages/CM-UKG-V4-P010-picture-conversation.json",
+      "source_prompt": "CM-UKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "CM-UKG-V4-P011",
+      "title": "My Family Story",
+      "markdown": "pages/CM-UKG-V4-P011-my-family-story.md",
+      "json": "pages/CM-UKG-V4-P011-my-family-story.json",
+      "source_prompt": "CM-UKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "CM-UKG-V4-P012",
+      "title": "Story Sequencing",
+      "markdown": "pages/CM-UKG-V4-P012-story-sequencing.md",
+      "json": "pages/CM-UKG-V4-P012-story-sequencing.json",
+      "source_prompt": "CM-UKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "CM-UKG-V4-P013",
+      "title": "Question Time",
+      "markdown": "pages/CM-UKG-V4-P013-question-time.md",
+      "json": "pages/CM-UKG-V4-P013-question-time.json",
+      "source_prompt": "CM-UKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "CM-UKG-V4-P014",
+      "title": "Vocabulary Builder",
+      "markdown": "pages/CM-UKG-V4-P014-vocabulary-builder.md",
+      "json": "pages/CM-UKG-V4-P014-vocabulary-builder.json",
+      "source_prompt": "CM-UKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "CM-UKG-V4-P015",
+      "title": "Rhyming Fun",
+      "markdown": "pages/CM-UKG-V4-P015-rhyming-fun.md",
+      "json": "pages/CM-UKG-V4-P015-rhyming-fun.json",
+      "source_prompt": "CM-UKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "CM-UKG-V4-P016",
+      "title": "Show and Tell",
+      "markdown": "pages/CM-UKG-V4-P016-show-and-tell.md",
+      "json": "pages/CM-UKG-V4-P016-show-and-tell.json",
+      "source_prompt": "CM-UKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "CM-UKG-V4-P017",
+      "title": "Following Instructions",
+      "markdown": "pages/CM-UKG-V4-P017-following-instructions.md",
+      "json": "pages/CM-UKG-V4-P017-following-instructions.json",
+      "source_prompt": "CM-UKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "CM-UKG-V4-P018",
+      "title": "Role Play",
+      "markdown": "pages/CM-UKG-V4-P018-role-play.md",
+      "json": "pages/CM-UKG-V4-P018-role-play.json",
+      "source_prompt": "CM-UKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "CM-UKG-V4-P019",
+      "title": "Feelings Through Words",
+      "markdown": "pages/CM-UKG-V4-P019-feelings-through-words.md",
+      "json": "pages/CM-UKG-V4-P019-feelings-through-words.json",
+      "source_prompt": "CM-UKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "CM-UKG-V4-P020",
+      "title": "Magic Words",
+      "markdown": "pages/CM-UKG-V4-P020-magic-words.md",
+      "json": "pages/CM-UKG-V4-P020-magic-words.json",
+      "source_prompt": "CM-UKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "CM-UKG-V4-P021",
+      "title": "Telephone Game",
+      "markdown": "pages/CM-UKG-V4-P021-telephone-game.md",
+      "json": "pages/CM-UKG-V4-P021-telephone-game.json",
+      "source_prompt": "CM-UKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "CM-UKG-V4-P022",
+      "title": "Describe the Picture",
+      "markdown": "pages/CM-UKG-V4-P022-describe-the-picture.md",
+      "json": "pages/CM-UKG-V4-P022-describe-the-picture.json",
+      "source_prompt": "CM-UKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "CM-UKG-V4-P023",
+      "title": "Guess What?",
+      "markdown": "pages/CM-UKG-V4-P023-guess-what.md",
+      "json": "pages/CM-UKG-V4-P023-guess-what.json",
+      "source_prompt": "CM-UKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "CM-UKG-V4-P024",
+      "title": "Story Creation",
+      "markdown": "pages/CM-UKG-V4-P024-story-creation.md",
+      "json": "pages/CM-UKG-V4-P024-story-creation.json",
+      "source_prompt": "CM-UKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "CM-UKG-V4-P025",
+      "title": "My Favourite Book",
+      "markdown": "pages/CM-UKG-V4-P025-my-favourite-book.md",
+      "json": "pages/CM-UKG-V4-P025-my-favourite-book.json",
+      "source_prompt": "CM-UKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "CM-UKG-V4-P026",
+      "title": "Community Conversations",
+      "markdown": "pages/CM-UKG-V4-P026-community-conversations.md",
+      "json": "pages/CM-UKG-V4-P026-community-conversations.json",
+      "source_prompt": "CM-UKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "CM-UKG-V4-P027",
+      "title": "Listening Challenge",
+      "markdown": "pages/CM-UKG-V4-P027-listening-challenge.md",
+      "json": "pages/CM-UKG-V4-P027-listening-challenge.json",
+      "source_prompt": "CM-UKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "CM-UKG-V4-P028",
+      "title": "Presentation Practice",
+      "markdown": "pages/CM-UKG-V4-P028-presentation-practice.md",
+      "json": "pages/CM-UKG-V4-P028-presentation-practice.json",
+      "source_prompt": "CM-UKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "CM-UKG-V4-P029",
+      "title": "Problem Talk",
+      "markdown": "pages/CM-UKG-V4-P029-problem-talk.md",
+      "json": "pages/CM-UKG-V4-P029-problem-talk.json",
+      "source_prompt": "CM-UKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "CM-UKG-V4-P030",
+      "title": "Conversation Circle",
+      "markdown": "pages/CM-UKG-V4-P030-conversation-circle.md",
+      "json": "pages/CM-UKG-V4-P030-conversation-circle.json",
+      "source_prompt": "CM-UKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "CM-UKG-V4-P031",
+      "title": "Class Reporter",
+      "markdown": "pages/CM-UKG-V4-P031-class-reporter.md",
+      "json": "pages/CM-UKG-V4-P031-class-reporter.json",
+      "source_prompt": "CM-UKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "CM-UKG-V4-P032",
+      "title": "Creative Speaking",
+      "markdown": "pages/CM-UKG-V4-P032-creative-speaking.md",
+      "json": "pages/CM-UKG-V4-P032-creative-speaking.json",
+      "source_prompt": "CM-UKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "CM-UKG-V4-P033",
+      "title": "Communication Review",
+      "markdown": "pages/CM-UKG-V4-P033-communication-review.md",
+      "json": "pages/CM-UKG-V4-P033-communication-review.json",
+      "source_prompt": "CM-UKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "CM-UKG-V4-P034",
+      "title": "Mini Project",
+      "markdown": "pages/CM-UKG-V4-P034-mini-project.md",
+      "json": "pages/CM-UKG-V4-P034-mini-project.json",
+      "source_prompt": "CM-UKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "CM-UKG-V4-P035",
+      "title": "Reflection",
+      "markdown": "pages/CM-UKG-V4-P035-reflection.md",
+      "json": "pages/CM-UKG-V4-P035-reflection.json",
+      "source_prompt": "CM-UKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "CM-UKG-V4-P036",
+      "title": "Showcase",
+      "markdown": "pages/CM-UKG-V4-P036-showcase.md",
+      "json": "pages/CM-UKG-V4-P036-showcase.json",
+      "source_prompt": "CM-UKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "CM-UKG-V4-P037",
+      "title": "Grand Review",
+      "markdown": "pages/CM-UKG-V4-P037-grand-review.md",
+      "json": "pages/CM-UKG-V4-P037-grand-review.json",
+      "source_prompt": "CM-UKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "CM-UKG-V4-P038",
+      "title": "My Achievement",
+      "markdown": "pages/CM-UKG-V4-P038-my-achievement.md",
+      "json": "pages/CM-UKG-V4-P038-my-achievement.json",
+      "source_prompt": "CM-UKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "CM-UKG-V4-P039",
+      "title": "My Goals",
+      "markdown": "pages/CM-UKG-V4-P039-my-goals.md",
+      "json": "pages/CM-UKG-V4-P039-my-goals.json",
+      "source_prompt": "CM-UKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "CM-UKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/CM-UKG-V4-P040-celebration.md",
+      "json": "pages/CM-UKG-V4-P040-celebration.json",
+      "source_prompt": "CM-UKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "CM-UKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/CM-UKG-V4-P041-certificate.md",
+      "json": "pages/CM-UKG-V4-P041-certificate.json",
+      "source_prompt": "CM-UKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "CM-UKG-V4-P042",
+      "title": "I Am a Confident Communicator",
+      "markdown": "pages/CM-UKG-V4-P042-i-am-a-confident-communicator.md",
+      "json": "pages/CM-UKG-V4-P042-i-am-a-confident-communicator.json",
+      "source_prompt": "CM-UKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "CM-UKG-V4-P043",
+      "title": "My Communication Celebration",
+      "markdown": "pages/CM-UKG-V4-P043-my-communication-celebration.md",
+      "json": "pages/CM-UKG-V4-P043-my-communication-celebration.json",
+      "source_prompt": "CM-UKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "CM-UKG-V4-P044",
+      "title": "Communication Masters — Back Cover",
+      "markdown": "pages/CM-UKG-V4-P044-communication-masters-back-cover.md",
+      "json": "pages/CM-UKG-V4-P044-communication-masters-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
