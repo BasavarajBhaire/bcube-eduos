@@ -4,7 +4,7 @@
   "level": "LKG (4+)",
   "status": "PASS",
   "books_total": 10,
-  "books_completed": 2,
+  "books_completed": 3,
   "completed": [
     {
       "slug": "communication-champions",
@@ -15,10 +15,14 @@
       "slug": "early-literacy-adventures",
       "book": "Early Literacy Adventures",
       "prompts": 44
+    },
+    {
+      "slug": "early-maths-adventures",
+      "book": "Early Maths Adventures",
+      "prompts": 44
     }
   ],
   "queue": [
-    "early-maths-adventures",
     "logical-thinking-adventures",
     "stem-explorers",
     "creativity-challenges",
@@ -28,11 +32,11 @@
     "confidence-social-skills"
   ],
   "totals": {
-    "page_prompts": 88,
-    "markdown_files": 88,
-    "json_files": 88,
-    "source_backed_pages": 80,
-    "checks": 1144,
+    "page_prompts": 132,
+    "markdown_files": 132,
+    "json_files": 132,
+    "source_backed_pages": 120,
+    "checks": 1716,
     "critical_defects": 0
   },
   "validation_report": "BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json"

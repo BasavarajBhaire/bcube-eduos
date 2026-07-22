@@ -1,20 +1,21 @@
 {
   "validation_version": "4.0.0",
   "level": "LKG (4+)",
-  "books_validated": 2,
+  "books_validated": 3,
   "books_total": 10,
   "completed_books": [
     "communication-champions",
-    "early-literacy-adventures"
+    "early-literacy-adventures",
+    "early-maths-adventures"
   ],
-  "page_prompts": 88,
-  "markdown_files": 88,
-  "json_files": 88,
-  "source_backed_pages": 80,
-  "checks": 1144,
+  "page_prompts": 132,
+  "markdown_files": 132,
+  "json_files": 132,
+  "source_backed_pages": 120,
+  "checks": 1716,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "early-maths-adventures",
+  "next_book": "logical-thinking-adventures",
   "book_results": [
     {
       "slug": "communication-champions",
@@ -31,6 +32,18 @@
     {
       "slug": "early-literacy-adventures",
       "book": "Early Literacy Adventures",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "early-maths-adventures",
+      "book": "Early Maths Adventures",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,
