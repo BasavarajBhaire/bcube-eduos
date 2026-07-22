@@ -36,7 +36,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | 3 | Early Maths Adventures | EM | COMPLETE — V4 prompts |
 | 4 | Logical Thinking Adventures | LT | COMPLETE — V4 prompts |
 | 5 | STEM Explorers | ST | COMPLETE — V4 prompts |
-| 6 | Creativity Challenges | CR | QUEUED |
+| 6 | Creativity Challenges | CR | COMPLETE — V4 prompts |
 | 7 | My World & General Awareness | MW | QUEUED |
 | 8 | Healthy Habits & Safety | HH | QUEUED |
 | 9 | Art & Colour Fun | AC | QUEUED |

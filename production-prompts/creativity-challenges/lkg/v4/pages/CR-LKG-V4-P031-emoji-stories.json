@@ -1,0 +1,125 @@
+{
+  "prompt_id": "CR-LKG-V4-P031",
+  "version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPT",
+  "series": "BCube Future Skills Learning Series™",
+  "book": {
+    "name": "Creativity Challenges",
+    "slug": "creativity-challenges",
+    "prefix": "CR"
+  },
+  "level": "LKG (4+)",
+  "page": {
+    "physical": 31,
+    "total_physical": 44,
+    "printed": 30,
+    "printed_visible": true,
+    "type": "activity_page",
+    "title": "Emoji Stories"
+  },
+  "curriculum": {
+    "objective": "Express emotions through stories.",
+    "instruction": "Creative activity Discussion",
+    "evidence": "Child creates an original response and confidently explains it.",
+    "teacher_facilitation": "Demonstrate the idea, encourage exploration, then support individual creativity.",
+    "teacher_questions": [
+      "What can you show or tell about emoji stories?"
+    ],
+    "parent_home_activity": "Repeat the activity at home using safe recycled or craft materials.",
+    "parent_conversation": "Repeat the activity at home using safe recycled or craft materials.",
+    "scene": "One dominant learning scene with a clearly protected child-response area.",
+    "focal_point": "One dominant focus for “Emoji Stories”.",
+    "contents_entries": []
+  },
+  "source_lineage": {
+    "prompt_id": "CR-LKG-V3-P029",
+    "relative_file": "production-prompts/creativity-challenges/lkg/v3/pages/CR-LKG-V3-P029-emoji-stories.json",
+    "sha256": "137bb0a2d1265c901e5274f03a91ca7e9d6566d7c9caa15e65b84e4109173e71",
+    "source_version": "3.0.0",
+    "source_validation": {
+      "score": 100,
+      "critical_defects": 0,
+      "status": "Gold Certified"
+    }
+  },
+  "preserved_source": {
+    "page_data": {
+      "page_id": "CR-LKG-V3-P029",
+      "book_id": "CREATIVITY_CHALLENGES_LKG",
+      "unit_id": "CREATIVE_PROJECTS",
+      "page_number": 29,
+      "page_type": "activity_page",
+      "title": "Emoji Stories",
+      "age_level": "LKG (4+)",
+      "learning_objective": "Express emotions through stories.",
+      "competencies": [
+        "future skills"
+      ],
+      "activity": {
+        "instruction": "Creative activity Discussion",
+        "evidence": "Child creates an original response and confidently explains it."
+      },
+      "teacher_prompt": {
+        "facilitation": "Demonstrate the idea, encourage exploration, then support individual creativity.",
+        "questions": [
+          "What can you show or tell about emoji stories?"
+        ]
+      },
+      "parent_prompt": {
+        "conversation": "Repeat the activity at home using safe recycled or craft materials.",
+        "home_activity": "Repeat the activity at home using safe recycled or craft materials."
+      },
+      "illustration": {
+        "scene": "One dominant learning scene with a clearly protected child-response area.",
+        "focal_point": "One dominant focus for “Emoji Stories”.",
+        "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+        "negative_constraints": [
+          "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+          "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+          "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+          "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+          "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+          "No unrelated activity or decorative response space."
+        ]
+      },
+      "character_refs": [
+        "STAR-MASCOT-V3"
+      ],
+      "overrides": []
+    },
+    "approved_source_instruction": "TECHNICAL: A4 portrait, 300 DPI, premium BCube creativity workbook, teacher-guided, Star mascot, purposeful response spaces, British English, print-ready. PAGE 29: Create a short story using emoji picture prompts. Include one teacher demonstration, one guided creative activity, one independent child activity, one speaking opportunity, parent extension, expected child response, premium illustration composition, and ensure every activity area has a clear learning purpose."
+  },
+  "design_lock": {
+    "canvas": "A4 portrait; 2480x3508; 300 DPI",
+    "visual_ratio": "60–70% visual; 30–40% text/activity",
+    "activity_load": "maximum two core activities and one optional extension",
+    "model_phrase": "generally 3–8 familiar words",
+    "writing": "short tracing/copying only; adult-supported open response",
+    "official_logo": "deterministic asset only",
+    "approved_star": "deterministic asset only",
+    "text": "deterministically composited and editable",
+    "one_page_output": true
+  },
+  "publisher_lock": {
+    "name": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyright": "© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+  },
+  "rejection_gates": [
+    "wrong identity, title, physical number, or printed number",
+    "lost or genericised page-specific source instruction",
+    "generated, redrawn, obstructed, or substituted logo or Star",
+    "missing model phrase, activity, expected response, or purposeful response area",
+    "crop, overlap, broken banner, unreadable text, unsafe behaviour, or excessive writing",
+    "contact sheet, collage, multi-page output, mockup, or perspective",
+    "unresolved variable, non-A4 geometry, or non-300-DPI target"
+  ],
+  "compiled_prompt": "# BCube Production Prompt V4 — CR-LKG-V4-P031\n\n## 1. Release metadata\n\n- Prompt ID: CR-LKG-V4-P031\n- Version: 4.0.0\n- Series: BCube Future Skills Learning Series™\n- Book: Creativity Challenges\n- Level: LKG (4+)\n- Physical page: 31 of 44\n- Printed page: 30\n- Page type: activity_page\n- Exact title: Emoji Stories\n- Source prompt: `CR-LKG-V3-P029`\n- Source file: `production-prompts/creativity-challenges/lkg/v3/pages/CR-LKG-V3-P029-emoji-stories.json`\n- Source SHA-256: `137bb0a2d1265c901e5274f03a91ca7e9d6566d7c9caa15e65b84e4109173e71`\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Emoji Stories”. Follow this deterministic package only. Produce no explanation, alternate, mockup, photograph, contact sheet, collage, or additional page.\n\n## 3. Precedence and lessons carried forward\n\nPublishing Engine → Design Engine → Visual Grammar Engine → Educational Engine → Teaching Engine → Parent Partnership Engine → Illustration Engine → Character Engine → Quality Assurance.\n\nPreserve the individual source instruction, model phrase, activity, response mode, response area, teacher prompt, parent extension, and prohibited extras. Never replace a page-specific instruction with a generic activity. Approved page instruction overrides book, level, and global rules.\n\n## 4. Publishing specification\n\n- A4 portrait, 210 × 297 mm; 2480 × 3508 px target; 300 DPI; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin.\n- Clean white or very light pastel base; CMYK-safe palette; thick rounded outlines; flat front-facing print composition.\n- Apply the exact official BCube logo as a deterministic asset; never generate, redraw, crop, distort, cover, or approximate it.\n- Apply the exact approved Star master as a deterministic asset when Star is required; never regenerate or substitute Star.\n- Display printed page number 30 at bottom-right.\n\n- Use the locked interior header: exact official logo isolated at top-left; exact title centred in navy; small yellow decoration confined to top-right.\n- Place the instruction banner fully below the header with readable padding; it must not cover the model, activity, or response area.\n\n## 5. LKG design and visual grammar\n\n- Layout anchor: One dominant learning scene with a clearly protected child-response area.\n- Focal point: One dominant focus for “Emoji Stories”.\n- Style: Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.\n- Maintain approximately 60–70% visual and 30–40% text/activity.\n- Use one dominant focus and a clear title → model → guided action → child response path.\n- Maximum two core child activities and one optional extension.\n- Model phrases should generally contain 3–8 familiar words.\n- Use short tracing/copying only; use adult support for personal or open responses.\n- Every visible box, line, card, circle, balloon, frame, and blank area must serve a named child action.\n- All typography is deterministically composited and remains editable; never generate text inside illustration artwork.\n\n## 6. Educational engine\n\n- Objective: Express emotions through stories.\n- Exact child action: Creative activity Discussion\n- Observable evidence or accepted response: Child creates an original response and confidently explains it.\n- Progression: recognition and oral response → guided tracing/copying/sequencing → simple supported independent response.\n- Story pages use only 3–4 clear picture steps unless the approved source explicitly requires otherwise.\n\n## 7. Teaching engine\n\n- Facilitation: Demonstrate the idea, encourage exploration, then support individual creativity.\n- Model once, invite participation, pause for processing, scaffold through gesture, choice, picture cue, or sentence starter, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and directly connected to the objective.\n- Questions:\n- What can you show or tell about emoji stories?\n\n## 8. Parent partnership engine\n\n- Home connection: Repeat the activity at home using safe recycled or craft materials.\n- Conversation support: Repeat the activity at home using safe recycled or craft materials.\n- Use familiar routines and common household materials only; do not add a scored task, device, purchase, printing requirement, or homework burden.\n\n## 9. Illustration and character lock\n\n- Required scene: One dominant learning scene with a clearly protected child-response area.\n- Show natural expressions, correct anatomy, diverse Indian and global children, respectful inclusion, clear turn-taking, and unobstructed learning areas.\n- Star identity: approved bright-yellow rounded five-point mascot with expressive face, blue shoes, and small blue cape.\n- Star demonstrates or encourages but never completes the child's answer.\n- Illustration must be unique to this book and page; no cross-book reuse.\n\n## 10. Approved source instruction\n\nTECHNICAL: A4 portrait, 300 DPI, premium BCube creativity workbook, teacher-guided, Star mascot, purposeful response spaces, British English, print-ready. PAGE 29: Create a short story using emoji picture prompts. Include one teacher demonstration, one guided creative activity, one independent child activity, one speaking opportunity, parent extension, expected child response, premium illustration composition, and ensure every activity area has a clear learning purpose.\n\n## 12. Negative constraints and fail-closed QA\n\n- No generated/redrawn logo or mascot; no unapproved wording; no decorative empty speech balloon.\n- No crop, overlap, broken frame, missing banner, title duplication, unreadable text, unexplained blank area, unsafe behaviour, stereotype, anatomy error, or excessive writing.\n- No watermark, QR code, third-party mark, mockup, perspective, page curl, device frame, hands holding the page, contact sheet, or multiple pages.\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No unrelated activity or decorative response space.\n- Compare identity, title, physical/printed numbering, source lineage, exact activity, model language, expected response, protected response region, illustration brief, and prohibited extras.\n- Acceptance requires Gold 100/100, zero critical defects, all variables resolved, and exact compliance with the 44-page manifest.\n\n## 13. Compiler footer\n\nCR-LKG-V4-P031 | v4.0.0 | physical 31/44 | printed 30 | Gold 100/100 | critical defects 0 | FINALIZED V4 PROMPT.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Finalized V4 Prompt"
+  }
+}

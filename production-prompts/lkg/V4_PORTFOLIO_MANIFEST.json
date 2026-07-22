@@ -4,7 +4,7 @@
   "level": "LKG (4+)",
   "status": "PASS",
   "books_total": 10,
-  "books_completed": 5,
+  "books_completed": 6,
   "completed": [
     {
       "slug": "communication-champions",
@@ -30,21 +30,25 @@
       "slug": "stem-explorers",
       "book": "STEM Explorers",
       "prompts": 44
+    },
+    {
+      "slug": "creativity-challenges",
+      "book": "Creativity Challenges",
+      "prompts": 44
     }
   ],
   "queue": [
-    "creativity-challenges",
     "my-world-general-awareness",
     "healthy-habits-safety",
     "art-colour-fun",
     "confidence-social-skills"
   ],
   "totals": {
-    "page_prompts": 220,
-    "markdown_files": 220,
-    "json_files": 220,
-    "source_backed_pages": 200,
-    "checks": 2860,
+    "page_prompts": 264,
+    "markdown_files": 264,
+    "json_files": 264,
+    "source_backed_pages": 240,
+    "checks": 3432,
     "critical_defects": 0
   },
   "validation_report": "BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json"
