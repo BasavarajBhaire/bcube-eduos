@@ -59,7 +59,7 @@ Preserve the individual source instruction, model phrase, activity, response mod
 
 ## 7. Teaching engine
 
-- Facilitation: Model back cover, invite a child response, and affirm effort.
+- Facilitation: Model one confident or kind action, invite a child response, and affirm effort.
 - Model once, invite participation, pause for processing, scaffold through gesture, choice, picture cue, or sentence starter, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and directly connected to the objective.
 - Questions:
