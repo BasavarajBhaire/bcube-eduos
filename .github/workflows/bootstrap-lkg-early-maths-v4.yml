@@ -1,0 +1,99 @@
+name: Bootstrap LKG Early Maths V4
+
+on:
+  push:
+    branches:
+      - agent/lkg-early-maths-v4
+    paths:
+      - '.github/workflows/bootstrap-lkg-early-maths-v4.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bootstrap-lkg-early-maths-v4
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: ${{ !contains(github.event.head_commit.message, '[skip lkg bootstrap]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/lkg-early-maths-v4
+          fetch-depth: 0
+
+      - name: Compile and validate Early Maths Adventures
+        shell: bash
+        run: |
+          python -m py_compile BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py early-maths-adventures
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py early-maths-adventures --validate-only
+
+      - name: Verify cumulative three-book portfolio
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('.')
+          qa = json.loads((root / 'BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json').read_text(encoding='utf-8'))
+          portfolio = json.loads((root / 'production-prompts/lkg/V4_PORTFOLIO_MANIFEST.json').read_text(encoding='utf-8'))
+          release = json.loads((root / 'production-prompts/early-maths-adventures/lkg/v4/release-manifest.json').read_text(encoding='utf-8'))
+
+          assert qa['status'] == 'PASS', qa
+          assert qa['books_validated'] == 3, qa
+          assert qa['completed_books'] == [
+              'communication-champions',
+              'early-literacy-adventures',
+              'early-maths-adventures',
+          ], qa
+          assert qa['page_prompts'] == 132, qa
+          assert qa['markdown_files'] == 132, qa
+          assert qa['json_files'] == 132, qa
+          assert qa['source_backed_pages'] == 120, qa
+          assert qa['checks'] == 1716, qa
+          assert qa['critical_defects'] == 0, qa
+          assert qa['next_book'] == 'logical-thinking-adventures', qa
+
+          assert portfolio['status'] == 'PASS', portfolio
+          assert portfolio['books_completed'] == 3, portfolio
+          assert len(portfolio['completed']) == 3, portfolio
+          assert portfolio['queue'][0] == 'logical-thinking-adventures', portfolio
+
+          pages = release['pages']
+          assert len(pages) == 44, len(pages)
+          assert [page['physical'] for page in pages] == list(range(1, 45))
+          assert [page['printed'] for page in pages] == [None] * 5 + list(range(5, 43)) + [None]
+          assert pages[0]['title'] == 'Early Maths Adventures'
+          assert pages[1]['title'] == 'About This Book'
+          assert pages[3]['title'] == 'Contents — Part 1'
+          assert pages[4]['title'] == 'Contents — Part 2'
+          assert pages[41]['title'] == 'Certificate'
+          assert pages[42]['title'] == 'I Am a Maths Explorer'
+          assert pages[43]['title'] == 'Early Maths Adventures — Back Cover'
+          assert pages[43]['source_prompt'] is None
+          assert sum(page['source_prompt'] is not None for page in pages) == 40
+
+          pages_dir = root / 'production-prompts/early-maths-adventures/lkg/v4/pages'
+          assert len(list(pages_dir.glob('*.md'))) == 44
+          assert len(list(pages_dir.glob('*.json'))) == 44
+          print('PASS: cumulative three-book LKG V4 portfolio verified')
+          PY
+
+      - name: Remove bootstrap workflow
+        shell: bash
+        run: rm -f .github/workflows/bootstrap-lkg-early-maths-v4.yml
+
+      - name: Commit generated book
+        shell: bash
+        run: |
+          git config user.name 'BCube Production Bot'
+          git config user.email 'info@bcubefutureacademy.in'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'Finalize LKG Early Maths Adventures V4 prompts [skip lkg bootstrap]'
+          git push origin HEAD:agent/lkg-early-maths-v4
