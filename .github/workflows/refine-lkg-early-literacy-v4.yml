@@ -1,0 +1,59 @@
+name: Refine LKG Early Literacy V4
+
+on:
+  push:
+    branches:
+      - agent/lkg-early-literacy-v4
+    paths:
+      - '.github/workflows/refine-lkg-early-literacy-v4.yml'
+      - 'BCube_Gold_Production_v4/scripts/.lkg-patches/refine-early-literacy-reflection.py'
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    if: ${{ !contains(github.event.head_commit.message, '[skip lkg refine]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/lkg-early-literacy-v4
+          fetch-depth: 0
+
+      - name: Refine compiler and regenerate book
+        run: |
+          python BCube_Gold_Production_v4/scripts/.lkg-patches/refine-early-literacy-reflection.py
+          python -m py_compile BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py early-literacy-adventures
+          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py early-literacy-adventures --validate-only
+
+      - name: Verify exact reflection language
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('production-prompts/early-literacy-adventures/lkg/v4/pages/EL-LKG-V4-P043-my-literacy-celebration.json')
+          page = json.loads(path.read_text())
+          curriculum = page['curriculum']
+          assert curriculum['instruction'] == 'Share one literacy skill you learned. Complete one short speaking, reflection, or independent practice response.'
+          assert curriculum['evidence'] == 'I am proud that I can ______.'
+          assert curriculum['teacher_questions'] == ['What literacy skill are you proud of?']
+          assert curriculum['parent_conversation'] == 'I am proud that I can ______.'
+          assert 'back cover' not in ' '.join(curriculum['teacher_questions']).lower()
+          qa = json.loads(Path('BCube_Gold_Production_v4/qa/lkg-v4-prompts-validation.json').read_text())
+          assert qa['status'] == 'PASS'
+          assert qa['critical_defects'] == 0
+          assert qa['books_validated'] == 2
+          PY
+
+      - name: Remove temporary files and commit refinement
+        run: |
+          rm -rf BCube_Gold_Production_v4/scripts/.lkg-patches
+          rm -f .github/workflows/refine-lkg-early-literacy-v4.yml
+          git config user.name 'BCube Production Bot'
+          git config user.email 'info@bcubefutureacademy.in'
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m 'Refine LKG Early Literacy celebration page [skip lkg refine]'
+          git push origin HEAD:agent/lkg-early-literacy-v4
