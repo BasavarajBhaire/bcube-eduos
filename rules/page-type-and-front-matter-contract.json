@@ -1,0 +1,68 @@
+{
+  "contract_version": "pre-print-pilot",
+  "scope": ["nursery", "lkg", "ukg", "future-levels"],
+  "layers": ["global-publishing", "book", "individual-page"],
+  "global_placeholders": [
+    "{Book Name}",
+    "{Series Name}",
+    "{Page Title}",
+    "{Age Group}",
+    "{Module Name}",
+    "{Lesson Title}",
+    "{Physical Page}",
+    "{Printed Page}",
+    "{Official Logo}",
+    "{Official Star Mascot}",
+    "{Teacher Guidance}",
+    "{Parent Guidance}",
+    "{Learning Objective}",
+    "{Illustration Layer}"
+  ],
+  "page_types": {
+    "cover": {
+      "visible_page_number": false,
+      "illustration": "full",
+      "series_banner": true
+    },
+    "publisher": {
+      "visible_page_number": false,
+      "illustration": "prohibited",
+      "star": "prohibited",
+      "teacher_parent_panels": "prohibited"
+    },
+    "about": {
+      "visible_page_number": false,
+      "header_primary": "{Book Name}",
+      "header_secondary": "{Page Title}",
+      "series_banner": false
+    },
+    "contents": {
+      "visible_page_number": false,
+      "dominant_illustration": false
+    },
+    "lesson": {
+      "visible_page_number": true,
+      "numbering": "count-hidden-front-matter"
+    },
+    "back_cover": {
+      "visible_page_number": false,
+      "single_true_back_cover": true
+    }
+  },
+  "maturity_labels": [
+    "DRAFT",
+    "DESIGN REVIEW",
+    "PILOT",
+    "PRINT PROOF",
+    "PRINT APPROVED"
+  ],
+  "edition_versioning": {
+    "starts_after_first_approved_physical_print": true,
+    "first_release": "First Edition / v1.0"
+  },
+  "acceptance": {
+    "score": 100,
+    "critical_defects": 0,
+    "fail_closed": true
+  }
+}
