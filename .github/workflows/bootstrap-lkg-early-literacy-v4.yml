@@ -61,7 +61,7 @@ jobs:
 
           start = text.index('def write_agenda(')
           end = text.index('\ndef main()', start)
-          new_function = '''def write_agenda(completed_slug: str, result: dict) -> None:
+          new_function = """def write_agenda(completed_slug: str, result: dict) -> None:
               completed = [
                   slug for slug in ORDER
                   if (PROMPTS / slug / "lkg" / "v4" / "release-manifest.json").is_file()
@@ -165,7 +165,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
               portfolio_path = PROMPTS / "lkg" / "V4_PORTFOLIO_MANIFEST.json"
               portfolio_path.parent.mkdir(parents=True, exist_ok=True)
               portfolio_path.write_text(json.dumps(portfolio, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-'''
+"""
           text = text[:start] + new_function + text[end:]
           path.write_text(text, encoding='utf-8')
           PY
