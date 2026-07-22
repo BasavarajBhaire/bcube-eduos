@@ -27,7 +27,7 @@ if registry_marker not in text:
     if text.count(insertion_marker) != 1:
         raise SystemExit("Unable to locate the LKG compiler correction insertion point")
 
-    correction_block = '''            # V4 controlled closing-source correction registry
+    correction_block = r'''            # V4 controlled closing-source correction registry
             closing_corrections = {
                 ("stem-explorers", "ST-LKG-V3-P041"): {
                     "title": "My STEM Celebration",

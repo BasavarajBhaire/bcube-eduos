@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "STEM Explorers",
+  "slug": "stem-explorers",
+  "prefix": "ST",
+  "level": "LKG (4+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "ST-LKG-V4-P001",
+      "title": "STEM Explorers",
+      "markdown": "pages/ST-LKG-V4-P001-stem-explorers.md",
+      "json": "pages/ST-LKG-V4-P001-stem-explorers.json",
+      "source_prompt": "ST-LKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "ST-LKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/ST-LKG-V4-P002-about-this-book.md",
+      "json": "pages/ST-LKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "ST-LKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/ST-LKG-V4-P003-copyright.md",
+      "json": "pages/ST-LKG-V4-P003-copyright.json",
+      "source_prompt": "ST-LKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "ST-LKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/ST-LKG-V4-P004-contents-part-1.md",
+      "json": "pages/ST-LKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "ST-LKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/ST-LKG-V4-P005-contents-part-2.md",
+      "json": "pages/ST-LKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "ST-LKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/ST-LKG-V4-P006-welcome.md",
+      "json": "pages/ST-LKG-V4-P006-welcome.json",
+      "source_prompt": "ST-LKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "ST-LKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/ST-LKG-V4-P007-meet-star.md",
+      "json": "pages/ST-LKG-V4-P007-meet-star.json",
+      "source_prompt": "ST-LKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "ST-LKG-V4-P008",
+      "title": "Observe Like a Scientist",
+      "markdown": "pages/ST-LKG-V4-P008-observe-like-a-scientist.md",
+      "json": "pages/ST-LKG-V4-P008-observe-like-a-scientist.json",
+      "source_prompt": "ST-LKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "ST-LKG-V4-P009",
+      "title": "Five Senses",
+      "markdown": "pages/ST-LKG-V4-P009-five-senses.md",
+      "json": "pages/ST-LKG-V4-P009-five-senses.json",
+      "source_prompt": "ST-LKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "ST-LKG-V4-P010",
+      "title": "Living & Non-living",
+      "markdown": "pages/ST-LKG-V4-P010-living-and-non-living.md",
+      "json": "pages/ST-LKG-V4-P010-living-and-non-living.json",
+      "source_prompt": "ST-LKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "ST-LKG-V4-P011",
+      "title": "Plants Around Us",
+      "markdown": "pages/ST-LKG-V4-P011-plants-around-us.md",
+      "json": "pages/ST-LKG-V4-P011-plants-around-us.json",
+      "source_prompt": "ST-LKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "ST-LKG-V4-P012",
+      "title": "Animals Around Us",
+      "markdown": "pages/ST-LKG-V4-P012-animals-around-us.md",
+      "json": "pages/ST-LKG-V4-P012-animals-around-us.json",
+      "source_prompt": "ST-LKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "ST-LKG-V4-P013",
+      "title": "Weather Watch",
+      "markdown": "pages/ST-LKG-V4-P013-weather-watch.md",
+      "json": "pages/ST-LKG-V4-P013-weather-watch.json",
+      "source_prompt": "ST-LKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "ST-LKG-V4-P014",
+      "title": "Day & Night",
+      "markdown": "pages/ST-LKG-V4-P014-day-and-night.md",
+      "json": "pages/ST-LKG-V4-P014-day-and-night.json",
+      "source_prompt": "ST-LKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "ST-LKG-V4-P015",
+      "title": "Water Explorers",
+      "markdown": "pages/ST-LKG-V4-P015-water-explorers.md",
+      "json": "pages/ST-LKG-V4-P015-water-explorers.json",
+      "source_prompt": "ST-LKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "ST-LKG-V4-P016",
+      "title": "Floating & Sinking",
+      "markdown": "pages/ST-LKG-V4-P016-floating-and-sinking.md",
+      "json": "pages/ST-LKG-V4-P016-floating-and-sinking.json",
+      "source_prompt": "ST-LKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "ST-LKG-V4-P017",
+      "title": "Magnets",
+      "markdown": "pages/ST-LKG-V4-P017-magnets.md",
+      "json": "pages/ST-LKG-V4-P017-magnets.json",
+      "source_prompt": "ST-LKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "ST-LKG-V4-P018",
+      "title": "Light & Shadow",
+      "markdown": "pages/ST-LKG-V4-P018-light-and-shadow.md",
+      "json": "pages/ST-LKG-V4-P018-light-and-shadow.json",
+      "source_prompt": "ST-LKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "ST-LKG-V4-P019",
+      "title": "Building Bridges",
+      "markdown": "pages/ST-LKG-V4-P019-building-bridges.md",
+      "json": "pages/ST-LKG-V4-P019-building-bridges.json",
+      "source_prompt": "ST-LKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "ST-LKG-V4-P020",
+      "title": "Simple Machines",
+      "markdown": "pages/ST-LKG-V4-P020-simple-machines.md",
+      "json": "pages/ST-LKG-V4-P020-simple-machines.json",
+      "source_prompt": "ST-LKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "ST-LKG-V4-P021",
+      "title": "Patterns in Nature",
+      "markdown": "pages/ST-LKG-V4-P021-patterns-in-nature.md",
+      "json": "pages/ST-LKG-V4-P021-patterns-in-nature.json",
+      "source_prompt": "ST-LKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "ST-LKG-V4-P022",
+      "title": "Healthy Earth",
+      "markdown": "pages/ST-LKG-V4-P022-healthy-earth.md",
+      "json": "pages/ST-LKG-V4-P022-healthy-earth.json",
+      "source_prompt": "ST-LKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "ST-LKG-V4-P023",
+      "title": "Technology Around Me",
+      "markdown": "pages/ST-LKG-V4-P023-technology-around-me.md",
+      "json": "pages/ST-LKG-V4-P023-technology-around-me.json",
+      "source_prompt": "ST-LKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "ST-LKG-V4-P024",
+      "title": "Safe Technology",
+      "markdown": "pages/ST-LKG-V4-P024-safe-technology.md",
+      "json": "pages/ST-LKG-V4-P024-safe-technology.json",
+      "source_prompt": "ST-LKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "ST-LKG-V4-P025",
+      "title": "Coding Patterns",
+      "markdown": "pages/ST-LKG-V4-P025-coding-patterns.md",
+      "json": "pages/ST-LKG-V4-P025-coding-patterns.json",
+      "source_prompt": "ST-LKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "ST-LKG-V4-P026",
+      "title": "Robot Thinking",
+      "markdown": "pages/ST-LKG-V4-P026-robot-thinking.md",
+      "json": "pages/ST-LKG-V4-P026-robot-thinking.json",
+      "source_prompt": "ST-LKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "ST-LKG-V4-P027",
+      "title": "Engineering Challenge",
+      "markdown": "pages/ST-LKG-V4-P027-engineering-challenge.md",
+      "json": "pages/ST-LKG-V4-P027-engineering-challenge.json",
+      "source_prompt": "ST-LKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "ST-LKG-V4-P028",
+      "title": "Build a Tower",
+      "markdown": "pages/ST-LKG-V4-P028-build-a-tower.md",
+      "json": "pages/ST-LKG-V4-P028-build-a-tower.json",
+      "source_prompt": "ST-LKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "ST-LKG-V4-P029",
+      "title": "Strong & Weak",
+      "markdown": "pages/ST-LKG-V4-P029-strong-and-weak.md",
+      "json": "pages/ST-LKG-V4-P029-strong-and-weak.json",
+      "source_prompt": "ST-LKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "ST-LKG-V4-P030",
+      "title": "Measure & Compare",
+      "markdown": "pages/ST-LKG-V4-P030-measure-and-compare.md",
+      "json": "pages/ST-LKG-V4-P030-measure-and-compare.json",
+      "source_prompt": "ST-LKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "ST-LKG-V4-P031",
+      "title": "Sort & Investigate",
+      "markdown": "pages/ST-LKG-V4-P031-sort-and-investigate.md",
+      "json": "pages/ST-LKG-V4-P031-sort-and-investigate.json",
+      "source_prompt": "ST-LKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "ST-LKG-V4-P032",
+      "title": "Predict & Test",
+      "markdown": "pages/ST-LKG-V4-P032-predict-and-test.md",
+      "json": "pages/ST-LKG-V4-P032-predict-and-test.json",
+      "source_prompt": "ST-LKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "ST-LKG-V4-P033",
+      "title": "Ask a Question",
+      "markdown": "pages/ST-LKG-V4-P033-ask-a-question.md",
+      "json": "pages/ST-LKG-V4-P033-ask-a-question.json",
+      "source_prompt": "ST-LKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "ST-LKG-V4-P034",
+      "title": "Record My Discovery",
+      "markdown": "pages/ST-LKG-V4-P034-record-my-discovery.md",
+      "json": "pages/ST-LKG-V4-P034-record-my-discovery.json",
+      "source_prompt": "ST-LKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "ST-LKG-V4-P035",
+      "title": "Science Vocabulary",
+      "markdown": "pages/ST-LKG-V4-P035-science-vocabulary.md",
+      "json": "pages/ST-LKG-V4-P035-science-vocabulary.json",
+      "source_prompt": "ST-LKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "ST-LKG-V4-P036",
+      "title": "STEM Review",
+      "markdown": "pages/ST-LKG-V4-P036-stem-review.md",
+      "json": "pages/ST-LKG-V4-P036-stem-review.json",
+      "source_prompt": "ST-LKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "ST-LKG-V4-P037",
+      "title": "Mini Investigation",
+      "markdown": "pages/ST-LKG-V4-P037-mini-investigation.md",
+      "json": "pages/ST-LKG-V4-P037-mini-investigation.json",
+      "source_prompt": "ST-LKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "ST-LKG-V4-P038",
+      "title": "Think Like an Engineer",
+      "markdown": "pages/ST-LKG-V4-P038-think-like-an-engineer.md",
+      "json": "pages/ST-LKG-V4-P038-think-like-an-engineer.json",
+      "source_prompt": "ST-LKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "ST-LKG-V4-P039",
+      "title": "Young Scientist Challenge",
+      "markdown": "pages/ST-LKG-V4-P039-young-scientist-challenge.md",
+      "json": "pages/ST-LKG-V4-P039-young-scientist-challenge.json",
+      "source_prompt": "ST-LKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "ST-LKG-V4-P040",
+      "title": "My STEM Journal",
+      "markdown": "pages/ST-LKG-V4-P040-my-stem-journal.md",
+      "json": "pages/ST-LKG-V4-P040-my-stem-journal.json",
+      "source_prompt": "ST-LKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "ST-LKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/ST-LKG-V4-P041-certificate.md",
+      "json": "pages/ST-LKG-V4-P041-certificate.json",
+      "source_prompt": "ST-LKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "ST-LKG-V4-P042",
+      "title": "I Am a STEM Explorer",
+      "markdown": "pages/ST-LKG-V4-P042-i-am-a-stem-explorer.md",
+      "json": "pages/ST-LKG-V4-P042-i-am-a-stem-explorer.json",
+      "source_prompt": "ST-LKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "ST-LKG-V4-P043",
+      "title": "My STEM Celebration",
+      "markdown": "pages/ST-LKG-V4-P043-my-stem-celebration.md",
+      "json": "pages/ST-LKG-V4-P043-my-stem-celebration.json",
+      "source_prompt": "ST-LKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "ST-LKG-V4-P044",
+      "title": "STEM Explorers — Back Cover",
+      "markdown": "pages/ST-LKG-V4-P044-stem-explorers-back-cover.md",
+      "json": "pages/ST-LKG-V4-P044-stem-explorers-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
