@@ -1,0 +1,34 @@
+{
+  "registry_version": "pre-print-pilot",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "components": {
+    "official_logo": {"source": "asset_registry", "generated": false, "editable": false, "max_instances": 1},
+    "official_star": {"source": "asset_registry", "generated": false, "editable": false, "max_instances": 1},
+    "series_banner": {"source": "template", "generated": false, "editable_text": true},
+    "age_badge": {"source": "template", "generated": false, "editable_text": true},
+    "book_title": {"source": "composer", "generated": false, "editable_text": true},
+    "page_title": {"source": "composer", "generated": false, "editable_text": true},
+    "tagline_ribbon": {"source": "template", "generated": false, "editable_text": true},
+    "illustration_frame": {"source": "template", "generated": false, "accepts": ["illustration_layer"]},
+    "illustration_layer": {"source": "ai_or_approved_art", "generated": true, "text_allowed": false, "branding_allowed": false},
+    "skill_capsules": {"source": "composer", "generated": false, "editable_text": true, "exact_count_cover": 6},
+    "module_groups": {"source": "composer", "generated": false, "editable_text": true},
+    "core_pillars": {"source": "composer", "generated": false, "editable_text": true, "exact_count": 5},
+    "publisher_details": {"source": "composer", "generated": false, "editable_text": true},
+    "footer": {"source": "template", "generated": false, "editable_text": true},
+    "page_number": {"source": "composer", "generated": false, "editable_text": true}
+  },
+  "global_rejections": [
+    "direct_full_page_ai_generation",
+    "generated_logo",
+    "generated_mascot",
+    "generated_typography",
+    "duplicate_component",
+    "component_overlap",
+    "safe_margin_violation",
+    "wrong_canvas",
+    "wrong_dpi",
+    "contact_sheet",
+    "mockup"
+  ]
+}
