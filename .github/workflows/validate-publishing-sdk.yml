@@ -4,11 +4,13 @@ on:
   pull_request:
     paths:
       - 'bcube-publishing-sdk/**'
+      - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
   push:
     branches: [main]
     paths:
       - 'bcube-publishing-sdk/**'
+      - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
 
 jobs:
@@ -19,5 +21,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile SDK
+        run: python -m py_compile bcube-publishing-sdk/composer/*.py bcube-publishing-sdk/validators/*.py
       - name: Validate SDK contracts
         run: python bcube-publishing-sdk/validators/validate_sdk.py
+      - name: Test deterministic Nursery cover compositor
+        run: python bcube-publishing-sdk/composer/compose_nursery_cover.py --self-test
