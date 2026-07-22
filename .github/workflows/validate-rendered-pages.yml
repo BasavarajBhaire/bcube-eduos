@@ -1,0 +1,44 @@
+name: Validate rendered pages
+
+on:
+  pull_request:
+    paths:
+      - 'production-renders/**'
+      - 'design-system/template-lock/**'
+      - 'validation/rendered-pages/**'
+      - 'scripts/compose_publishing_page.py'
+      - 'scripts/validate_rendered_page.py'
+      - '.github/workflows/validate-rendered-pages.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-render-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile render tools
+        run: python -m py_compile scripts/compose_publishing_page.py scripts/validate_rendered_page.py
+      - name: Validate template registry
+        run: python scripts/validate_rendered_page.py --self-test
+      - name: Validate composition examples
+        run: |
+          shopt -s nullglob
+          manifests=(production-renders/manifests/*.json)
+          for manifest in "${manifests[@]}"; do
+            python scripts/compose_publishing_page.py --manifest "$manifest" --validate-only
+          done
+      - name: Validate committed rendered pages
+        run: |
+          shopt -s nullglob
+          manifests=(production-renders/qa-manifests/*.json)
+          for manifest in "${manifests[@]}"; do
+            artifact=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["artifact_path"])' "$manifest")
+            page_id=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["page_id"])' "$manifest")
+            python scripts/validate_rendered_page.py \
+              --artifact "$artifact" \
+              --manifest "$manifest" \
+              --output "validation/rendered-pages/${page_id}.render-report.json"
+          done

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/render-report.schema.json",
+  "title": "BCube Render QA Report",
+  "type": "object",
+  "required": ["page_id", "page_type", "artifact", "checks", "score", "critical_defects", "status"],
+  "properties": {
+    "page_id": {"type": "string", "minLength": 1},
+    "page_type": {"enum": ["cover", "about", "publisher", "contents", "back_cover", "lesson", "assessment", "certificate", "reflection"]},
+    "artifact": {
+      "type": "object",
+      "required": ["path", "sha256", "width_px", "height_px", "dpi_x", "dpi_y"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "width_px": {"const": 2480},
+        "height_px": {"const": 3508},
+        "dpi_x": {"minimum": 299, "maximum": 301},
+        "dpi_y": {"minimum": 299, "maximum": 301}
+      },
+      "additionalProperties": false
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "passed", "severity", "message"],
+        "properties": {
+          "id": {"type": "string"},
+          "passed": {"type": "boolean"},
+          "severity": {"enum": ["critical", "major", "minor"]},
+          "message": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "score": {"const": 100},
+    "critical_defects": {"const": 0},
+    "status": {"const": "PASS"}
+  },
+  "additionalProperties": false
+}
