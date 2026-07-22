@@ -1,0 +1,414 @@
+{
+  "manifest_version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPTS",
+  "series": "BCube Future Skills Learning Series™",
+  "book": "Digital Explorers",
+  "slug": "digital-explorers",
+  "prefix": "DE",
+  "level": "UKG (5+)",
+  "canonical_source_pages": 41,
+  "physical_pages": 44,
+  "visible_learning_pages": 38,
+  "printed_range": [
+    5,
+    42
+  ],
+  "pages": [
+    {
+      "physical": 1,
+      "printed": null,
+      "prompt_id": "DE-UKG-V4-P001",
+      "title": "Digital Explorers",
+      "markdown": "pages/DE-UKG-V4-P001-digital-explorers.md",
+      "json": "pages/DE-UKG-V4-P001-digital-explorers.json",
+      "source_prompt": "DE-UKG-V3-P001"
+    },
+    {
+      "physical": 2,
+      "printed": null,
+      "prompt_id": "DE-UKG-V4-P002",
+      "title": "About This Book",
+      "markdown": "pages/DE-UKG-V4-P002-about-this-book.md",
+      "json": "pages/DE-UKG-V4-P002-about-this-book.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 3,
+      "printed": null,
+      "prompt_id": "DE-UKG-V4-P003",
+      "title": "Copyright",
+      "markdown": "pages/DE-UKG-V4-P003-copyright.md",
+      "json": "pages/DE-UKG-V4-P003-copyright.json",
+      "source_prompt": "DE-UKG-V3-P002"
+    },
+    {
+      "physical": 4,
+      "printed": null,
+      "prompt_id": "DE-UKG-V4-P004",
+      "title": "Contents — Part 1",
+      "markdown": "pages/DE-UKG-V4-P004-contents-part-1.md",
+      "json": "pages/DE-UKG-V4-P004-contents-part-1.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 5,
+      "printed": null,
+      "prompt_id": "DE-UKG-V4-P005",
+      "title": "Contents — Part 2",
+      "markdown": "pages/DE-UKG-V4-P005-contents-part-2.md",
+      "json": "pages/DE-UKG-V4-P005-contents-part-2.json",
+      "source_prompt": null
+    },
+    {
+      "physical": 6,
+      "printed": 5,
+      "prompt_id": "DE-UKG-V4-P006",
+      "title": "Welcome",
+      "markdown": "pages/DE-UKG-V4-P006-welcome.md",
+      "json": "pages/DE-UKG-V4-P006-welcome.json",
+      "source_prompt": "DE-UKG-V3-P004"
+    },
+    {
+      "physical": 7,
+      "printed": 6,
+      "prompt_id": "DE-UKG-V4-P007",
+      "title": "Meet Star",
+      "markdown": "pages/DE-UKG-V4-P007-meet-star.md",
+      "json": "pages/DE-UKG-V4-P007-meet-star.json",
+      "source_prompt": "DE-UKG-V3-P005"
+    },
+    {
+      "physical": 8,
+      "printed": 7,
+      "prompt_id": "DE-UKG-V4-P008",
+      "title": "My Digital World",
+      "markdown": "pages/DE-UKG-V4-P008-my-digital-world.md",
+      "json": "pages/DE-UKG-V4-P008-my-digital-world.json",
+      "source_prompt": "DE-UKG-V3-P006"
+    },
+    {
+      "physical": 9,
+      "printed": 8,
+      "prompt_id": "DE-UKG-V4-P009",
+      "title": "Know My Devices",
+      "markdown": "pages/DE-UKG-V4-P009-know-my-devices.md",
+      "json": "pages/DE-UKG-V4-P009-know-my-devices.json",
+      "source_prompt": "DE-UKG-V3-P007"
+    },
+    {
+      "physical": 10,
+      "printed": 9,
+      "prompt_id": "DE-UKG-V4-P010",
+      "title": "Technology Around Me",
+      "markdown": "pages/DE-UKG-V4-P010-technology-around-me.md",
+      "json": "pages/DE-UKG-V4-P010-technology-around-me.json",
+      "source_prompt": "DE-UKG-V3-P008"
+    },
+    {
+      "physical": 11,
+      "printed": 10,
+      "prompt_id": "DE-UKG-V4-P011",
+      "title": "Computer Parts",
+      "markdown": "pages/DE-UKG-V4-P011-computer-parts.md",
+      "json": "pages/DE-UKG-V4-P011-computer-parts.json",
+      "source_prompt": "DE-UKG-V3-P009"
+    },
+    {
+      "physical": 12,
+      "printed": 11,
+      "prompt_id": "DE-UKG-V4-P012",
+      "title": "Using a Mouse",
+      "markdown": "pages/DE-UKG-V4-P012-using-a-mouse.md",
+      "json": "pages/DE-UKG-V4-P012-using-a-mouse.json",
+      "source_prompt": "DE-UKG-V3-P010"
+    },
+    {
+      "physical": 13,
+      "printed": 12,
+      "prompt_id": "DE-UKG-V4-P013",
+      "title": "Keyboard Fun",
+      "markdown": "pages/DE-UKG-V4-P013-keyboard-fun.md",
+      "json": "pages/DE-UKG-V4-P013-keyboard-fun.json",
+      "source_prompt": "DE-UKG-V3-P011"
+    },
+    {
+      "physical": 14,
+      "printed": 13,
+      "prompt_id": "DE-UKG-V4-P014",
+      "title": "Touchscreen Skills",
+      "markdown": "pages/DE-UKG-V4-P014-touchscreen-skills.md",
+      "json": "pages/DE-UKG-V4-P014-touchscreen-skills.json",
+      "source_prompt": "DE-UKG-V3-P012"
+    },
+    {
+      "physical": 15,
+      "printed": 14,
+      "prompt_id": "DE-UKG-V4-P015",
+      "title": "Digital Safety",
+      "markdown": "pages/DE-UKG-V4-P015-digital-safety.md",
+      "json": "pages/DE-UKG-V4-P015-digital-safety.json",
+      "source_prompt": "DE-UKG-V3-P013"
+    },
+    {
+      "physical": 16,
+      "printed": 15,
+      "prompt_id": "DE-UKG-V4-P016",
+      "title": "Kind Online",
+      "markdown": "pages/DE-UKG-V4-P016-kind-online.md",
+      "json": "pages/DE-UKG-V4-P016-kind-online.json",
+      "source_prompt": "DE-UKG-V3-P014"
+    },
+    {
+      "physical": 17,
+      "printed": 16,
+      "prompt_id": "DE-UKG-V4-P017",
+      "title": "Follow the Steps",
+      "markdown": "pages/DE-UKG-V4-P017-follow-the-steps.md",
+      "json": "pages/DE-UKG-V4-P017-follow-the-steps.json",
+      "source_prompt": "DE-UKG-V3-P015"
+    },
+    {
+      "physical": 18,
+      "printed": 17,
+      "prompt_id": "DE-UKG-V4-P018",
+      "title": "Picture Coding",
+      "markdown": "pages/DE-UKG-V4-P018-picture-coding.md",
+      "json": "pages/DE-UKG-V4-P018-picture-coding.json",
+      "source_prompt": "DE-UKG-V3-P016"
+    },
+    {
+      "physical": 19,
+      "printed": 18,
+      "prompt_id": "DE-UKG-V4-P019",
+      "title": "Arrow Coding",
+      "markdown": "pages/DE-UKG-V4-P019-arrow-coding.md",
+      "json": "pages/DE-UKG-V4-P019-arrow-coding.json",
+      "source_prompt": "DE-UKG-V3-P017"
+    },
+    {
+      "physical": 20,
+      "printed": 19,
+      "prompt_id": "DE-UKG-V4-P020",
+      "title": "Find the Pattern",
+      "markdown": "pages/DE-UKG-V4-P020-find-the-pattern.md",
+      "json": "pages/DE-UKG-V4-P020-find-the-pattern.json",
+      "source_prompt": "DE-UKG-V3-P018"
+    },
+    {
+      "physical": 21,
+      "printed": 20,
+      "prompt_id": "DE-UKG-V4-P021",
+      "title": "Robot Path",
+      "markdown": "pages/DE-UKG-V4-P021-robot-path.md",
+      "json": "pages/DE-UKG-V4-P021-robot-path.json",
+      "source_prompt": "DE-UKG-V3-P019"
+    },
+    {
+      "physical": 22,
+      "printed": 21,
+      "prompt_id": "DE-UKG-V4-P022",
+      "title": "Debug the Route",
+      "markdown": "pages/DE-UKG-V4-P022-debug-the-route.md",
+      "json": "pages/DE-UKG-V4-P022-debug-the-route.json",
+      "source_prompt": "DE-UKG-V3-P020"
+    },
+    {
+      "physical": 23,
+      "printed": 22,
+      "prompt_id": "DE-UKG-V4-P023",
+      "title": "Sequencing",
+      "markdown": "pages/DE-UKG-V4-P023-sequencing.md",
+      "json": "pages/DE-UKG-V4-P023-sequencing.json",
+      "source_prompt": "DE-UKG-V3-P021"
+    },
+    {
+      "physical": 24,
+      "printed": 23,
+      "prompt_id": "DE-UKG-V4-P024",
+      "title": "Solve with Technology",
+      "markdown": "pages/DE-UKG-V4-P024-solve-with-technology.md",
+      "json": "pages/DE-UKG-V4-P024-solve-with-technology.json",
+      "source_prompt": "DE-UKG-V3-P022"
+    },
+    {
+      "physical": 25,
+      "printed": 24,
+      "prompt_id": "DE-UKG-V4-P025",
+      "title": "Digital Art",
+      "markdown": "pages/DE-UKG-V4-P025-digital-art.md",
+      "json": "pages/DE-UKG-V4-P025-digital-art.json",
+      "source_prompt": "DE-UKG-V3-P023"
+    },
+    {
+      "physical": 26,
+      "printed": 25,
+      "prompt_id": "DE-UKG-V4-P026",
+      "title": "Record My Voice",
+      "markdown": "pages/DE-UKG-V4-P026-record-my-voice.md",
+      "json": "pages/DE-UKG-V4-P026-record-my-voice.json",
+      "source_prompt": "DE-UKG-V3-P024"
+    },
+    {
+      "physical": 27,
+      "printed": 26,
+      "prompt_id": "DE-UKG-V4-P027",
+      "title": "Take a Photo",
+      "markdown": "pages/DE-UKG-V4-P027-take-a-photo.md",
+      "json": "pages/DE-UKG-V4-P027-take-a-photo.json",
+      "source_prompt": "DE-UKG-V3-P025"
+    },
+    {
+      "physical": 28,
+      "printed": 27,
+      "prompt_id": "DE-UKG-V4-P028",
+      "title": "Create a Story",
+      "markdown": "pages/DE-UKG-V4-P028-create-a-story.md",
+      "json": "pages/DE-UKG-V4-P028-create-a-story.json",
+      "source_prompt": "DE-UKG-V3-P026"
+    },
+    {
+      "physical": 29,
+      "printed": 28,
+      "prompt_id": "DE-UKG-V4-P029",
+      "title": "Think Like a Coder",
+      "markdown": "pages/DE-UKG-V4-P029-think-like-a-coder.md",
+      "json": "pages/DE-UKG-V4-P029-think-like-a-coder.json",
+      "source_prompt": "DE-UKG-V3-P027"
+    },
+    {
+      "physical": 30,
+      "printed": 29,
+      "prompt_id": "DE-UKG-V4-P030",
+      "title": "Technology Helpers",
+      "markdown": "pages/DE-UKG-V4-P030-technology-helpers.md",
+      "json": "pages/DE-UKG-V4-P030-technology-helpers.json",
+      "source_prompt": "DE-UKG-V3-P028"
+    },
+    {
+      "physical": 31,
+      "printed": 30,
+      "prompt_id": "DE-UKG-V4-P031",
+      "title": "Digital Challenge",
+      "markdown": "pages/DE-UKG-V4-P031-digital-challenge.md",
+      "json": "pages/DE-UKG-V4-P031-digital-challenge.json",
+      "source_prompt": "DE-UKG-V3-P029"
+    },
+    {
+      "physical": 32,
+      "printed": 31,
+      "prompt_id": "DE-UKG-V4-P032",
+      "title": "Innovation Time",
+      "markdown": "pages/DE-UKG-V4-P032-innovation-time.md",
+      "json": "pages/DE-UKG-V4-P032-innovation-time.json",
+      "source_prompt": "DE-UKG-V3-P030"
+    },
+    {
+      "physical": 33,
+      "printed": 32,
+      "prompt_id": "DE-UKG-V4-P033",
+      "title": "Digital Review",
+      "markdown": "pages/DE-UKG-V4-P033-digital-review.md",
+      "json": "pages/DE-UKG-V4-P033-digital-review.json",
+      "source_prompt": "DE-UKG-V3-P031"
+    },
+    {
+      "physical": 34,
+      "printed": 33,
+      "prompt_id": "DE-UKG-V4-P034",
+      "title": "Mini Project",
+      "markdown": "pages/DE-UKG-V4-P034-mini-project.md",
+      "json": "pages/DE-UKG-V4-P034-mini-project.json",
+      "source_prompt": "DE-UKG-V3-P032"
+    },
+    {
+      "physical": 35,
+      "printed": 34,
+      "prompt_id": "DE-UKG-V4-P035",
+      "title": "Reflection",
+      "markdown": "pages/DE-UKG-V4-P035-reflection.md",
+      "json": "pages/DE-UKG-V4-P035-reflection.json",
+      "source_prompt": "DE-UKG-V3-P033"
+    },
+    {
+      "physical": 36,
+      "printed": 35,
+      "prompt_id": "DE-UKG-V4-P036",
+      "title": "Showcase",
+      "markdown": "pages/DE-UKG-V4-P036-showcase.md",
+      "json": "pages/DE-UKG-V4-P036-showcase.json",
+      "source_prompt": "DE-UKG-V3-P034"
+    },
+    {
+      "physical": 37,
+      "printed": 36,
+      "prompt_id": "DE-UKG-V4-P037",
+      "title": "Grand Review",
+      "markdown": "pages/DE-UKG-V4-P037-grand-review.md",
+      "json": "pages/DE-UKG-V4-P037-grand-review.json",
+      "source_prompt": "DE-UKG-V3-P035"
+    },
+    {
+      "physical": 38,
+      "printed": 37,
+      "prompt_id": "DE-UKG-V4-P038",
+      "title": "My Achievement",
+      "markdown": "pages/DE-UKG-V4-P038-my-achievement.md",
+      "json": "pages/DE-UKG-V4-P038-my-achievement.json",
+      "source_prompt": "DE-UKG-V3-P036"
+    },
+    {
+      "physical": 39,
+      "printed": 38,
+      "prompt_id": "DE-UKG-V4-P039",
+      "title": "My Digital Goals",
+      "markdown": "pages/DE-UKG-V4-P039-my-digital-goals.md",
+      "json": "pages/DE-UKG-V4-P039-my-digital-goals.json",
+      "source_prompt": "DE-UKG-V3-P037"
+    },
+    {
+      "physical": 40,
+      "printed": 39,
+      "prompt_id": "DE-UKG-V4-P040",
+      "title": "Celebration",
+      "markdown": "pages/DE-UKG-V4-P040-celebration.md",
+      "json": "pages/DE-UKG-V4-P040-celebration.json",
+      "source_prompt": "DE-UKG-V3-P038"
+    },
+    {
+      "physical": 41,
+      "printed": 40,
+      "prompt_id": "DE-UKG-V4-P041",
+      "title": "Certificate",
+      "markdown": "pages/DE-UKG-V4-P041-certificate.md",
+      "json": "pages/DE-UKG-V4-P041-certificate.json",
+      "source_prompt": "DE-UKG-V3-P039"
+    },
+    {
+      "physical": 42,
+      "printed": 41,
+      "prompt_id": "DE-UKG-V4-P042",
+      "title": "I Am a Digital Explorer",
+      "markdown": "pages/DE-UKG-V4-P042-i-am-a-digital-explorer.md",
+      "json": "pages/DE-UKG-V4-P042-i-am-a-digital-explorer.json",
+      "source_prompt": "DE-UKG-V3-P040"
+    },
+    {
+      "physical": 43,
+      "printed": 42,
+      "prompt_id": "DE-UKG-V4-P043",
+      "title": "My Digital Learning Celebration",
+      "markdown": "pages/DE-UKG-V4-P043-my-digital-learning-celebration.md",
+      "json": "pages/DE-UKG-V4-P043-my-digital-learning-celebration.json",
+      "source_prompt": "DE-UKG-V3-P041"
+    },
+    {
+      "physical": 44,
+      "printed": null,
+      "prompt_id": "DE-UKG-V4-P044",
+      "title": "Digital Explorers — Back Cover",
+      "markdown": "pages/DE-UKG-V4-P044-digital-explorers-back-cover.md",
+      "json": "pages/DE-UKG-V4-P044-digital-explorers-back-cover.json",
+      "source_prompt": null
+    }
+  ]
+}
