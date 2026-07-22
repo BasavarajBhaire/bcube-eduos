@@ -40,7 +40,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | 7 | My World & General Awareness | MW | COMPLETE — V4 prompts |
 | 8 | Healthy Habits & Safety | HH | COMPLETE — V4 prompts |
 | 9 | Art & Colour Fun | AC | COMPLETE — V4 prompts |
-| 10 | Confidence & Social Skills | CS | QUEUED |
+| 10 | Confidence & Social Skills | CS | COMPLETE — V4 prompts |
 
 ## Locked LKG structure
 
