@@ -7,6 +7,7 @@
   "required": [
     "page_id",
     "page_type",
+    "book_key",
     "artifact_path",
     "composition",
     "component_evidence",
@@ -16,6 +17,7 @@
   "properties": {
     "page_id": {"type": "string", "minLength": 3},
     "page_type": {"enum": ["cover", "about", "publisher", "contents", "back_cover"]},
+    "book_key": {"type": "string", "pattern": "^[a-z0-9-]+/[a-z0-9-]+$"},
     "artifact_path": {"type": "string", "minLength": 1},
     "composition": {
       "type": "object",
@@ -54,10 +56,11 @@
     "text_evidence": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["detector", "detected_text", "required_terms", "prohibited_terms"],
+      "required": ["detector", "detected_text"],
       "properties": {
         "detector": {
           "type": "object",
+          "additionalProperties": false,
           "required": ["name", "version"],
           "properties": {
             "name": {"type": "string", "minLength": 1},
@@ -65,9 +68,7 @@
             "evidence_path": {"type": "string"}
           }
         },
-        "detected_text": {"type": "array", "items": {"type": "string"}},
-        "required_terms": {"type": "array", "items": {"type": "string"}},
-        "prohibited_terms": {"type": "array", "items": {"type": "string"}}
+        "detected_text": {"type": "array", "items": {"type": "string"}}
       }
     },
     "human_approval": {
