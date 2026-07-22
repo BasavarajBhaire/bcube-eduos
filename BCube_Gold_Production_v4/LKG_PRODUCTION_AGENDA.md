@@ -33,7 +33,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | ---: | --- | --- | --- |
 | 1 | Communication Champions | CC | COMPLETE — V4 prompts |
 | 2 | Early Literacy Adventures | EL | COMPLETE — V4 prompts |
-| 3 | Early Maths Adventures | EM | QUEUED |
+| 3 | Early Maths Adventures | EM | COMPLETE — V4 prompts |
 | 4 | Logical Thinking Adventures | LT | QUEUED |
 | 5 | STEM Explorers | SE | QUEUED |
 | 6 | Creativity Challenges | CR | QUEUED |
