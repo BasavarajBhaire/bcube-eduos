@@ -1,0 +1,125 @@
+{
+  "prompt_id": "CC-LKG-V4-P003",
+  "version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPT",
+  "series": "BCube Future Skills Learning Series™",
+  "book": {
+    "name": "Communication Champions",
+    "slug": "communication-champions",
+    "prefix": "CC"
+  },
+  "level": "LKG (4+)",
+  "page": {
+    "physical": 3,
+    "total_physical": 44,
+    "printed": null,
+    "printed_visible": false,
+    "type": "teacher_guide",
+    "title": "Copyright & Publication Details"
+  },
+  "curriculum": {
+    "objective": "Present publication details clearly.",
+    "instruction": "Adult-facing page only. Use clear editable text and icons.",
+    "evidence": "No child response.",
+    "teacher_facilitation": "Not applicable.",
+    "teacher_questions": [
+      "What can you show or tell about copyright & publication details?"
+    ],
+    "parent_home_activity": "Repeat learning at home using everyday situations.",
+    "parent_conversation": "Repeat learning at home using everyday situations.",
+    "scene": "Adult-facing text page",
+    "focal_point": "One dominant focus for “Copyright & Publication Details”.",
+    "contents_entries": []
+  },
+  "source_lineage": {
+    "prompt_id": "CC-LKG-V3-P002",
+    "relative_file": "production-prompts/communication-champions/lkg/v3/pages/CC-LKG-V3-P002-copyright-publication-details.json",
+    "sha256": "69c380d93823663d156bf025c2899fc3750e02fc689e2ad1606bccdd0d0f987b",
+    "source_version": "3.0.0",
+    "source_validation": {
+      "score": 100,
+      "critical_defects": 0,
+      "status": "Gold Certified"
+    }
+  },
+  "preserved_source": {
+    "page_data": {
+      "page_id": "CC-LKG-V3-P002",
+      "book_id": "COMMUNICATION_CHAMPIONS_LKG",
+      "unit_id": "FRONT_MATTER",
+      "page_number": 2,
+      "page_type": "teacher_guide",
+      "title": "Copyright & Publication Details",
+      "age_level": "LKG (4+)",
+      "learning_objective": "Present publication details clearly.",
+      "competencies": [
+        "future skills"
+      ],
+      "activity": {
+        "instruction": "Adult-facing page only. Use clear editable text and icons.",
+        "evidence": "No child response."
+      },
+      "teacher_prompt": {
+        "facilitation": "Not applicable.",
+        "questions": [
+          "What can you show or tell about copyright & publication details?"
+        ]
+      },
+      "parent_prompt": {
+        "conversation": "Repeat learning at home using everyday situations.",
+        "home_activity": "Repeat learning at home using everyday situations."
+      },
+      "illustration": {
+        "scene": "Adult-facing text page",
+        "focal_point": "One dominant focus for “Copyright & Publication Details”.",
+        "style": "Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.",
+        "negative_constraints": [
+          "No generated or redrawn BCube logo; reserve the approved position for the official vector asset.",
+          "No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.",
+          "No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.",
+          "No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.",
+          "No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.",
+          "No worksheet activities or speech balloons."
+        ]
+      },
+      "character_refs": [
+        "STAR-MASCOT-V3"
+      ],
+      "overrides": []
+    },
+    "approved_source_instruction": "TECHNICAL AND PUBLISHING SPECIFICATION: Create an A4 portrait educational workbook page, 210 × 297 mm, 300 DPI, print-ready, with a clean white background, pastel accents, thick rounded black outlines, generous safe margins, and a premium preschool publishing finish. Use the official BCube logo at top left, exact page title centred at the top, and page number at bottom right. Do not show the LKG (4+) badge on interior pages. LKG DEVELOPMENT RULES: Designed for children aged approximately 4–5. Use familiar vocabulary, short model sentences, picture-supported instructions, guided tracing or copying, and one clear communication focus. Use a maximum of two core activities and one optional extension. TEACHING CLARITY RULES: Every page must show the exact child action, a short teacher or parent prompt, the expected child response, and purposeful response space. Do not use decorative blank balloons or unexplained boxes. Every visible frame, line, card, and balloon must have a learning purpose. PAGE-SPECIFIC ART DIRECTION: Exact title “Copyright & Publication Details”, page number 2. Use a clean editable publication layout with title, publisher, copyright, edition, ISBN placeholder, website, email, credits, rights statement, and Printed in India. INDIVIDUAL PAGE EXECUTION BLUEPRINT: Primary activity: Adult-facing page only. Secondary task: Use clear editable text and icons. Teacher prompt: Not applicable. Expected child response: No child response. Blank-space allocation: Whitespace for readability only. Activity load: 0 child activities. Do not add: No worksheet activities or speech balloons. OFFICIAL STAR MASCOT: Use one consistent bright yellow five-point Star with softly rounded points, large expressive eyes, rosy cheeks, friendly smile, blue shoes, and a small blue cape. Keep Star outside all response areas. QUALITY RULES: No watermark, unrelated logo, photorealism, gibberish text, distorted anatomy, extra fingers, crowded layouts, long passages, unsafe scenes, or blocked activity spaces. Use British English consistently."
+  },
+  "design_lock": {
+    "canvas": "A4 portrait; 2480x3508; 300 DPI",
+    "visual_ratio": "60–70% visual; 30–40% text/activity",
+    "activity_load": "maximum two core activities and one optional extension",
+    "model_phrase": "generally 3–8 familiar words",
+    "writing": "short tracing/copying only; adult-supported open response",
+    "official_logo": "deterministic asset only",
+    "approved_star": "deterministic asset only",
+    "text": "deterministically composited and editable",
+    "one_page_output": true
+  },
+  "publisher_lock": {
+    "name": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyright": "© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+  },
+  "rejection_gates": [
+    "wrong identity, title, physical number, or printed number",
+    "lost or genericised page-specific source instruction",
+    "generated, redrawn, obstructed, or substituted logo or Star",
+    "missing model phrase, activity, expected response, or purposeful response area",
+    "crop, overlap, broken banner, unreadable text, unsafe behaviour, or excessive writing",
+    "contact sheet, collage, multi-page output, mockup, or perspective",
+    "unresolved variable, non-A4 geometry, or non-300-DPI target"
+  ],
+  "compiled_prompt": "# BCube Production Prompt V4 — CC-LKG-V4-P003\n\n## 1. Release metadata\n\n- Prompt ID: CC-LKG-V4-P003\n- Version: 4.0.0\n- Series: BCube Future Skills Learning Series™\n- Book: Communication Champions\n- Level: LKG (4+)\n- Physical page: 3 of 44\n- Printed page: hidden\n- Page type: teacher_guide\n- Exact title: Copyright & Publication Details\n- Source prompt: `CC-LKG-V3-P002`\n- Source file: `production-prompts/communication-champions/lkg/v3/pages/CC-LKG-V3-P002-copyright-publication-details.json`\n- Source SHA-256: `69c380d93823663d156bf025c2899fc3750e02fc689e2ad1606bccdd0d0f987b`\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Copyright & Publication Details”. Follow this deterministic package only. Produce no explanation, alternate, mockup, photograph, contact sheet, collage, or additional page.\n\n## 3. Precedence and lessons carried forward\n\nPublishing Engine → Design Engine → Visual Grammar Engine → Educational Engine → Teaching Engine → Parent Partnership Engine → Illustration Engine → Character Engine → Quality Assurance.\n\nPreserve the individual source instruction, model phrase, activity, response mode, response area, teacher prompt, parent extension, and prohibited extras. Never replace a page-specific instruction with a generic activity. Approved page instruction overrides book, level, and global rules.\n\n## 4. Publishing specification\n\n- A4 portrait, 210 × 297 mm; 2480 × 3508 px target; 300 DPI; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin.\n- Clean white or very light pastel base; CMYK-safe palette; thick rounded outlines; flat front-facing print composition.\n- Apply the exact official BCube logo as a deterministic asset; never generate, redraw, crop, distort, cover, or approximate it.\n- Apply the exact approved Star master as a deterministic asset when Star is required; never regenerate or substitute Star.\n- Do not display a printed page number.\n\n- Use the locked interior header: exact official logo isolated at top-left; exact title centred in navy; small yellow decoration confined to top-right.\n- Place the instruction banner fully below the header with readable padding; it must not cover the model, activity, or response area.\n\n- Publisher: BCube Future Academy.\n- Address: 407, DSMAX Sky Supreme KST Bangalore - 560060.\n- Email: info@bcubefutureacademy.in. Website: bcubefutureacademy.in.\n- Copyright and edition: © 2026 BCube Future Academy. First Edition, 2026. All rights reserved.\n\n## 5. LKG design and visual grammar\n\n- Layout anchor: Adult-facing text page\n- Focal point: One dominant focus for “Copyright & Publication Details”.\n- Style: Premium BCube preschool workbook illustration; clean white base; soft pastels; thick rounded outlines.\n- Maintain approximately 60–70% visual and 30–40% text/activity.\n- Use one dominant focus and a clear title → model → guided action → child response path.\n- Maximum two core child activities and one optional extension.\n- Model phrases should generally contain 3–8 familiar words.\n- Use short tracing/copying only; use adult support for personal or open responses.\n- Every visible box, line, card, circle, balloon, frame, and blank area must serve a named child action.\n- All typography is deterministically composited and remains editable; never generate text inside illustration artwork.\n\n## 6. Educational engine\n\n- Objective: Present publication details clearly.\n- Exact child action: Adult-facing page only. Use clear editable text and icons.\n- Observable evidence or accepted response: No child response.\n- Progression: recognition and oral response → guided tracing/copying/sequencing → simple supported independent response.\n- Story pages use only 3–4 clear picture steps unless the approved source explicitly requires otherwise.\n\n## 7. Teaching engine\n\n- Facilitation: Not applicable.\n- Model once, invite participation, pause for processing, scaffold through gesture, choice, picture cue, or sentence starter, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and directly connected to the objective.\n- Questions:\n- What can you show or tell about copyright & publication details?\n\n## 8. Parent partnership engine\n\n- Home connection: Repeat learning at home using everyday situations.\n- Conversation support: Repeat learning at home using everyday situations.\n- Use familiar routines and common household materials only; do not add a scored task, device, purchase, printing requirement, or homework burden.\n\n## 9. Illustration and character lock\n\n- Required scene: Adult-facing text page\n- Show natural expressions, correct anatomy, diverse Indian and global children, respectful inclusion, clear turn-taking, and unobstructed learning areas.\n- Star identity: approved bright-yellow rounded five-point mascot with expressive face, blue shoes, and small blue cape.\n- Star demonstrates or encourages but never completes the child's answer.\n- Illustration must be unique to this book and page; no cross-book reuse.\n\n## 10. Approved source instruction\n\nTECHNICAL AND PUBLISHING SPECIFICATION: Create an A4 portrait educational workbook page, 210 × 297 mm, 300 DPI, print-ready, with a clean white background, pastel accents, thick rounded black outlines, generous safe margins, and a premium preschool publishing finish. Use the official BCube logo at top left, exact page title centred at the top, and page number at bottom right. Do not show the LKG (4+) badge on interior pages. LKG DEVELOPMENT RULES: Designed for children aged approximately 4–5. Use familiar vocabulary, short model sentences, picture-supported instructions, guided tracing or copying, and one clear communication focus. Use a maximum of two core activities and one optional extension. TEACHING CLARITY RULES: Every page must show the exact child action, a short teacher or parent prompt, the expected child response, and purposeful response space. Do not use decorative blank balloons or unexplained boxes. Every visible frame, line, card, and balloon must have a learning purpose. PAGE-SPECIFIC ART DIRECTION: Exact title “Copyright & Publication Details”, page number 2. Use a clean editable publication layout with title, publisher, copyright, edition, ISBN placeholder, website, email, credits, rights statement, and Printed in India. INDIVIDUAL PAGE EXECUTION BLUEPRINT: Primary activity: Adult-facing page only. Secondary task: Use clear editable text and icons. Teacher prompt: Not applicable. Expected child response: No child response. Blank-space allocation: Whitespace for readability only. Activity load: 0 child activities. Do not add: No worksheet activities or speech balloons. OFFICIAL STAR MASCOT: Use one consistent bright yellow five-point Star with softly rounded points, large expressive eyes, rosy cheeks, friendly smile, blue shoes, and a small blue cape. Keep Star outside all response areas. QUALITY RULES: No watermark, unrelated logo, photorealism, gibberish text, distorted anatomy, extra fingers, crowded layouts, long passages, unsafe scenes, or blocked activity spaces. Use British English consistently.\n\n## 12. Negative constraints and fail-closed QA\n\n- No generated/redrawn logo or mascot; no unapproved wording; no decorative empty speech balloon.\n- No crop, overlap, broken frame, missing banner, title duplication, unreadable text, unexplained blank area, unsafe behaviour, stereotype, anatomy error, or excessive writing.\n- No watermark, QR code, third-party mark, mockup, perspective, page curl, device frame, hands holding the page, contact sheet, or multiple pages.\n- No generated or redrawn BCube logo; reserve the approved position for the official vector asset.\n- No unapproved text, labels, tasks, decorative frames, empty balloons, watermarks, QR codes, or third-party marks.\n- No unexplained blank areas; every box, line, card, balloon, frame, and open area serves a named learning action.\n- No frightening imagery, stereotypes, shame, unsafe behaviour, inaccessible instructions, anatomy errors, cropped key elements, or developmentally excessive writing.\n- No mockup, perspective view, page curl, device frame, hands holding the page, or multiple variants.\n- No worksheet activities or speech balloons.\n- Compare identity, title, physical/printed numbering, source lineage, exact activity, model language, expected response, protected response region, illustration brief, and prohibited extras.\n- Acceptance requires Gold 100/100, zero critical defects, all variables resolved, and exact compliance with the 44-page manifest.\n\n## 13. Compiler footer\n\nCC-LKG-V4-P003 | v4.0.0 | physical 3/44 | printed hidden | Gold 100/100 | critical defects 0 | FINALIZED V4 PROMPT.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Finalized V4 Prompt"
+  }
+}

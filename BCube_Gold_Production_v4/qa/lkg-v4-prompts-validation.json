@@ -1,0 +1,17 @@
+{
+  "validation_version": "4.0.0",
+  "level": "LKG (4+)",
+  "books_validated": 1,
+  "books_total": 10,
+  "completed_books": [
+    "communication-champions"
+  ],
+  "page_prompts": 44,
+  "markdown_files": 44,
+  "json_files": 44,
+  "source_backed_pages": 40,
+  "checks": 572,
+  "critical_defects": 0,
+  "status": "PASS",
+  "next_book": "early-literacy-adventures"
+}
