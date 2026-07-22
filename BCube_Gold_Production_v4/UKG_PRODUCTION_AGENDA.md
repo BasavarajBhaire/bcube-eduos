@@ -37,7 +37,7 @@ No completed book may remain only in chat, only locally, or on an unmerged branc
 | 4 | Logic & Brain Builders | LB | COMPLETE — V4 prompts |
 | 5 | Young Scientists | YS | COMPLETE — V4 prompts |
 | 6 | Creative Design Studio | CD | COMPLETE — V4 prompts |
-| 7 | My Amazing World | MA | QUEUED |
+| 7 | My Amazing World | MA | COMPLETE — V4 prompts |
 | 8 | Digital Explorers | DE | QUEUED |
 | 9 | Healthy Me & Wellbeing | HW | QUEUED |
 | 10 | Financial Literacy & Life Skills | FL | QUEUED |

@@ -4,7 +4,7 @@
   "level": "UKG (5+)",
   "status": "PASS",
   "books_total": 10,
-  "books_completed": 6,
+  "books_completed": 7,
   "completed": [
     {
       "slug": "communication-masters",
@@ -35,20 +35,24 @@
       "slug": "creative-design-studio",
       "book": "Creative Design Studio",
       "prompts": 44
+    },
+    {
+      "slug": "my-amazing-world",
+      "book": "My Amazing World",
+      "prompts": 44
     }
   ],
   "queue": [
-    "my-amazing-world",
     "digital-explorers",
     "healthy-me-wellbeing",
     "financial-literacy-life-skills"
   ],
   "totals": {
-    "page_prompts": 264,
-    "markdown_files": 264,
-    "json_files": 264,
-    "source_backed_pages": 240,
-    "checks": 3432,
+    "page_prompts": 308,
+    "markdown_files": 308,
+    "json_files": 308,
+    "source_backed_pages": 280,
+    "checks": 4004,
     "critical_defects": 0
   },
   "validation_report": "BCube_Gold_Production_v4/qa/ukg-v4-prompts-validation.json"
