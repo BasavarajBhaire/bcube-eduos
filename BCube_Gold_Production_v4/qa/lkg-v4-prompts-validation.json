@@ -1,23 +1,24 @@
 {
   "validation_version": "4.0.0",
   "level": "LKG (4+)",
-  "books_validated": 5,
+  "books_validated": 6,
   "books_total": 10,
   "completed_books": [
     "communication-champions",
     "early-literacy-adventures",
     "early-maths-adventures",
     "logical-thinking-adventures",
-    "stem-explorers"
+    "stem-explorers",
+    "creativity-challenges"
   ],
-  "page_prompts": 220,
-  "markdown_files": 220,
-  "json_files": 220,
-  "source_backed_pages": 200,
-  "checks": 2860,
+  "page_prompts": 264,
+  "markdown_files": 264,
+  "json_files": 264,
+  "source_backed_pages": 240,
+  "checks": 3432,
   "critical_defects": 0,
   "status": "PASS",
-  "next_book": "creativity-challenges",
+  "next_book": "my-world-general-awareness",
   "book_results": [
     {
       "slug": "communication-champions",
@@ -70,6 +71,18 @@
     {
       "slug": "stem-explorers",
       "book": "STEM Explorers",
+      "page_prompts": 44,
+      "markdown_files": 44,
+      "json_files": 44,
+      "source_backed_pages": 40,
+      "checks": 572,
+      "critical_defects": 0,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "slug": "creativity-challenges",
+      "book": "Creativity Challenges",
       "page_prompts": 44,
       "markdown_files": 44,
       "json_files": 44,
