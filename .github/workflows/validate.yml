@@ -60,12 +60,11 @@ jobs:
           assert qa['next_book'] is None
           PY
 
-      - name: Restore permanent repository files
+      - name: Remove temporary generation files
         shell: bash
         run: |
           rm -f BCube_Gold_Production_v4/queue/confidence-social-skills.trigger
           rm -f BCube_Gold_Production_v4/scripts/.lkg-patches/fix-confidence-teacher.py
-          git checkout origin/main -- .github/workflows/validate.yml
 
       - name: Publish generated tree atomically
         env:
