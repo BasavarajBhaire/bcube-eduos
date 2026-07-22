@@ -32,16 +32,31 @@ jobs:
             echo "build=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Prepare, compile and validate LKG book
+      - name: Prepare LKG compiler
         if: ${{ steps.book.outputs.build == 'true' }}
-        shell: bash
+        run: python BCube_Gold_Production_v4/scripts/prepare-lkg-v4-book.py
+
+      - name: Check compiler syntax
+        if: ${{ steps.book.outputs.build == 'true' }}
+        run: python -m py_compile BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
+
+      - name: Generate LKG book
+        if: ${{ steps.book.outputs.build == 'true' }}
+        env:
+          BOOK_SLUG: ${{ steps.book.outputs.slug }}
+        run: python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py "$BOOK_SLUG"
+
+      - name: Validate generated LKG book
+        if: ${{ steps.book.outputs.build == 'true' }}
+        env:
+          BOOK_SLUG: ${{ steps.book.outputs.slug }}
+        run: python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py "$BOOK_SLUG" --validate-only
+
+      - name: Verify generated package and portfolio
+        if: ${{ steps.book.outputs.build == 'true' }}
         env:
           BOOK_SLUG: ${{ steps.book.outputs.slug }}
         run: |
-          python BCube_Gold_Production_v4/scripts/prepare-lkg-v4-book.py
-          python -m py_compile BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py
-          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py "$BOOK_SLUG"
-          python BCube_Gold_Production_v4/scripts/build-lkg-v4-prompts.py "$BOOK_SLUG" --validate-only
           python - <<'PY'
           import json
           import os
@@ -87,11 +102,11 @@ jobs:
 
       - name: Commit generated LKG book
         if: ${{ steps.book.outputs.build == 'true' }}
-        shell: bash
         env:
           BOOK_SLUG: ${{ steps.book.outputs.slug }}
         run: |
           rm -f "BCube_Gold_Production_v4/queue/${BOOK_SLUG}.trigger"
+          git checkout origin/main -- .github/workflows/validate.yml
           book_name="$(python - <<'PY'
           import json, os
           from pathlib import Path
