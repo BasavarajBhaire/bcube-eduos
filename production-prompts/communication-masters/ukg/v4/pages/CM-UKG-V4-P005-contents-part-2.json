@@ -1,0 +1,151 @@
+{
+  "prompt_id": "CM-UKG-V4-P005",
+  "version": "4.0.0",
+  "status": "FINALIZED_V4_PROMPT",
+  "series": "BCube Future Skills Learning Series™",
+  "book": {
+    "name": "Communication Masters",
+    "slug": "communication-masters",
+    "prefix": "CM"
+  },
+  "level": "UKG (5+)",
+  "page": {
+    "physical": 5,
+    "total_physical": 44,
+    "printed": null,
+    "printed_visible": false,
+    "type": "contents",
+    "title": "Contents — Part 2"
+  },
+  "curriculum": {
+    "objective": "Help adults locate Communication Masters learning pages 24–42.",
+    "instruction": "Show every listed learning-page title and printed page number exactly once in a clean, readable sequence.",
+    "evidence": "The reader can locate every learning page without ambiguity.",
+    "teacher_facilitation": "Use the contents page to preview the learning journey.",
+    "teacher_questions": [
+      "Which learning page will we explore today?"
+    ],
+    "parent_home_activity": "Invite the child to choose one page by picture, title, or number.",
+    "parent_conversation": "Name the chosen page together.",
+    "scene": "Two-column contents navigation with small book-specific icons and no activity frames.",
+    "focal_point": "Exact titles and printed page numbers in a calm navigation hierarchy.",
+    "contents_entries": [
+      {
+        "title": "My Favourite Book",
+        "page": 24
+      },
+      {
+        "title": "Community Conversations",
+        "page": 25
+      },
+      {
+        "title": "Listening Challenge",
+        "page": 26
+      },
+      {
+        "title": "Presentation Practice",
+        "page": 27
+      },
+      {
+        "title": "Problem Talk",
+        "page": 28
+      },
+      {
+        "title": "Conversation Circle",
+        "page": 29
+      },
+      {
+        "title": "Class Reporter",
+        "page": 30
+      },
+      {
+        "title": "Creative Speaking",
+        "page": 31
+      },
+      {
+        "title": "Communication Review",
+        "page": 32
+      },
+      {
+        "title": "Mini Project",
+        "page": 33
+      },
+      {
+        "title": "Reflection",
+        "page": 34
+      },
+      {
+        "title": "Showcase",
+        "page": 35
+      },
+      {
+        "title": "Grand Review",
+        "page": 36
+      },
+      {
+        "title": "My Achievement",
+        "page": 37
+      },
+      {
+        "title": "My Goals",
+        "page": 38
+      },
+      {
+        "title": "Celebration",
+        "page": 39
+      },
+      {
+        "title": "Certificate",
+        "page": 40
+      },
+      {
+        "title": "I Am a Confident Communicator",
+        "page": 41
+      },
+      {
+        "title": "Back Cover",
+        "page": 42
+      }
+    ]
+  },
+  "source_lineage": {
+    "contract": "V4 portfolio front/back-matter contract"
+  },
+  "preserved_source": {
+    "page_data": null,
+    "approved_source_instruction": "Controlled split of the legacy single Contents source. Preserve all learning-page titles and order."
+  },
+  "design_lock": {
+    "canvas": "A4 portrait; 2480x3508; 300 DPI",
+    "visual_ratio": "55–65% visual; 35–45% text/activity",
+    "activity_load": "maximum two core activities and one optional extension",
+    "model_phrase": "generally 4–10 familiar words",
+    "writing": "short independent reading/writing; simple sentences; adult support where needed",
+    "official_logo": "deterministic asset only",
+    "approved_star": "deterministic asset only",
+    "text": "deterministically composited and editable",
+    "one_page_output": true
+  },
+  "publisher_lock": {
+    "name": "BCube Future Academy",
+    "address": "407, DSMAX Sky Supreme KST Bangalore - 560060",
+    "email": "info@bcubefutureacademy.in",
+    "website": "bcubefutureacademy.in",
+    "copyright": "© 2026 BCube Future Academy. First Edition, 2026. All rights reserved."
+  },
+  "rejection_gates": [
+    "wrong identity, title, physical number, or printed number",
+    "lost or genericised page-specific source instruction",
+    "generated, redrawn, obstructed, or substituted logo or Star",
+    "missing model phrase, activity, expected response, or purposeful response area",
+    "crop, overlap, broken banner, unreadable text, unsafe behaviour, or excessive writing",
+    "contact sheet, collage, multi-page output, mockup, or perspective",
+    "unresolved variable, non-A4 geometry, or non-300-DPI target"
+  ],
+  "compiled_prompt": "# BCube Production Prompt V4 — CM-UKG-V4-P005\n\n## 1. Release metadata\n\n- Prompt ID: CM-UKG-V4-P005\n- Version: 4.0.0\n- Series: BCube Future Skills Learning Series™\n- Book: Communication Masters\n- Level: UKG (5+)\n- Physical page: 5 of 44\n- Printed page: hidden\n- Page type: contents\n- Exact title: Contents — Part 2\n- Source: controlled V4 portfolio front/back-matter contract\n\n## 2. Production command\n\nCreate exactly one final, flat, front-facing A4 portrait page for “Contents — Part 2”. Follow this deterministic package only. Produce no explanation, alternate, mockup, photograph, contact sheet, collage, or additional page.\n\n## 3. Precedence and lessons carried forward\n\nPublishing Engine → Design Engine → Visual Grammar Engine → Educational Engine → Teaching Engine → Parent Partnership Engine → Illustration Engine → Character Engine → Quality Assurance.\n\nPreserve the individual source instruction, model phrase, activity, response mode, response area, teacher prompt, parent extension, and prohibited extras. Never replace a page-specific instruction with a generic activity. Approved page instruction overrides book, level, and global rules.\n\n## 4. Publishing specification\n\n- A4 portrait, 210 × 297 mm; 2480 × 3508 px target; 300 DPI; 3 mm bleed; minimum 10 mm safe margin; 12 mm binding margin.\n- Clean white or very light pastel base; CMYK-safe palette; thick rounded outlines; flat front-facing print composition.\n- Apply the exact official BCube logo as a deterministic asset; never generate, redraw, crop, distort, cover, or approximate it.\n- Apply the exact approved Star master as a deterministic asset when Star is required; never regenerate or substitute Star.\n- Do not display a printed page number.\n\n- Use the locked interior header: exact official logo isolated at top-left; exact title centred in navy; small yellow decoration confined to top-right.\n- Place the instruction banner fully below the header with readable padding; it must not cover the model, activity, or response area.\n\n## 5. UKG design and visual grammar\n\n- Layout anchor: Two-column contents navigation with small book-specific icons and no activity frames.\n- Focal point: Exact titles and printed page numbers in a calm navigation hierarchy.\n- Style: Premium UKG contents layout with generous spacing and strong readability.\n- Maintain approximately 55–65% visual and 35–45% text/activity.\n- Use one dominant focus and a clear title → model → guided action → child response path.\n- Maximum two core child activities and one optional extension.\n- Model phrases should generally contain 3–8 familiar words.\n- Use short independent reading/writing and simple sentences; provide adult support where the approved source requires it.\n- Every visible box, line, card, circle, balloon, frame, and blank area must serve a named child action.\n- All typography is deterministically composited and remains editable; never generate text inside illustration artwork.\n\n## 6. Educational engine\n\n- Objective: Help adults locate Communication Masters learning pages 24–42.\n- Exact child action: Show every listed learning-page title and printed page number exactly once in a clean, readable sequence.\n- Observable evidence or accepted response: The reader can locate every learning page without ambiguity.\n- Progression: guided recall and oral explanation → short independent reading/writing/sequencing → simple reasoning, problem solving, and Grade 1-ready response.\n- Story and sequence pages use 4–5 clear steps unless the approved source explicitly requires otherwise.\n\n## 7. Teaching engine\n\n- Facilitation: Use the contents page to preview the learning journey.\n- Model once, invite participation, pause for processing, scaffold through gesture, choice, picture cue, or sentence starter, and affirm effort without shame.\n- Teacher–student interaction must be visible, purposeful, inclusive, and directly connected to the objective.\n- Questions:\n- Which learning page will we explore today?\n\n## 8. Parent partnership engine\n\n- Home connection: Invite the child to choose one page by picture, title, or number.\n- Conversation support: Name the chosen page together.\n- Use familiar routines and common household materials only; do not add a scored task, device, purchase, printing requirement, or homework burden.\n\n## 9. Illustration and character lock\n\n- Required scene: Two-column contents navigation with small book-specific icons and no activity frames.\n- Show natural expressions, correct anatomy, diverse Indian and global children, respectful inclusion, clear turn-taking, and unobstructed learning areas.\n- Star identity: approved bright-yellow rounded five-point mascot with expressive face, blue shoes, and small blue cape.\n- Star demonstrates or encourages but never completes the child's answer.\n- Illustration must be unique to this book and page; no cross-book reuse.\n\n## 10. Approved source instruction\n\nControlled split of the legacy single Contents source. Preserve all learning-page titles and order.\n\n## 11. Exact contents entries\n\n| Exact title | Printed page |\n| --- | ---: |\n| My Favourite Book | 24 |\n| Community Conversations | 25 |\n| Listening Challenge | 26 |\n| Presentation Practice | 27 |\n| Problem Talk | 28 |\n| Conversation Circle | 29 |\n| Class Reporter | 30 |\n| Creative Speaking | 31 |\n| Communication Review | 32 |\n| Mini Project | 33 |\n| Reflection | 34 |\n| Showcase | 35 |\n| Grand Review | 36 |\n| My Achievement | 37 |\n| My Goals | 38 |\n| Celebration | 39 |\n| Certificate | 40 |\n| I Am a Confident Communicator | 41 |\n| Back Cover | 42 |\n\n## 12. Negative constraints and fail-closed QA\n\n- No generated/redrawn logo or mascot; no unapproved wording; no decorative empty speech balloon.\n- No crop, overlap, broken frame, missing banner, title duplication, unreadable text, unexplained blank area, unsafe behaviour, stereotype, anatomy error, or excessive writing.\n- No watermark, QR code, third-party mark, mockup, perspective, page curl, device frame, hands holding the page, contact sheet, or multiple pages.\n- No missing title.\n- No repeated entry.\n- No activity box.\n- No decorative blank frame.\n- Compare identity, title, physical/printed numbering, source lineage, exact activity, model language, expected response, protected response region, illustration brief, and prohibited extras.\n- Acceptance requires Gold 100/100, zero critical defects, all variables resolved, and exact compliance with the 44-page manifest.\n\n## 13. Compiler footer\n\nCM-UKG-V4-P005 | v4.0.0 | physical 5/44 | printed hidden | Gold 100/100 | critical defects 0 | FINALIZED V4 PROMPT.\n",
+  "validation": {
+    "score": 100,
+    "critical_defects": 0,
+    "status": "Finalized V4 Prompt"
+  }
+}

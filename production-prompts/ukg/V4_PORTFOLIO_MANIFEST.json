@@ -1,0 +1,35 @@
+{
+  "manifest_version": "4.0.0",
+  "series": "BCube Future Skills Learning Series™",
+  "level": "UKG (5+)",
+  "status": "PASS",
+  "books_total": 10,
+  "books_completed": 1,
+  "completed": [
+    {
+      "slug": "communication-masters",
+      "book": "Communication Masters",
+      "prompts": 44
+    }
+  ],
+  "queue": [
+    "reading-literacy-adventures",
+    "maths-explorers",
+    "logic-brain-builders",
+    "young-scientists",
+    "creative-design-studio",
+    "my-amazing-world",
+    "digital-explorers",
+    "healthy-me-wellbeing",
+    "financial-literacy-life-skills"
+  ],
+  "totals": {
+    "page_prompts": 44,
+    "markdown_files": 44,
+    "json_files": 44,
+    "source_backed_pages": 40,
+    "checks": 572,
+    "critical_defects": 0
+  },
+  "validation_report": "BCube_Gold_Production_v4/qa/ukg-v4-prompts-validation.json"
+}
