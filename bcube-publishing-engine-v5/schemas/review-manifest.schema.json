@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/v5-review-manifest.schema.json",
+  "title": "BCube Publishing Engine V5 Review Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["engine", "page_id", "book", "level", "state", "provider", "review", "artifacts"],
+  "properties": {
+    "engine": {"const": "BCube Publishing Engine v5"},
+    "page_id": {"type": "string", "minLength": 1},
+    "book": {"type": "string", "minLength": 1},
+    "level": {"enum": ["nursery", "lkg", "ukg"]},
+    "state": {"enum": ["REVIEW_CANDIDATE", "PRODUCTION_PASS"]},
+    "provider": {"enum": ["manual", "openai", "reuse"]},
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "reviewed_on"],
+      "properties": {
+        "status": {"enum": ["PENDING", "APPROVED"]},
+        "reviewer": {"type": ["string", "null"]},
+        "reviewed_on": {"type": ["string", "null"], "format": "date"}
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    }
+  }
+}

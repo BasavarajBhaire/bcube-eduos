@@ -27,6 +27,17 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile V5
         run: python -m py_compile scripts/bcube_publish.py
+      - name: Validate review manifest schema JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('bcube-publishing-engine-v5/schemas/review-manifest.schema.json')
+          schema = json.loads(path.read_text(encoding='utf-8'))
+          assert schema['title'] == 'BCube Publishing Engine V5 Review Manifest'
+          assert set(schema['properties']['state']['enum']) == {'REVIEW_CANDIDATE', 'PRODUCTION_PASS'}
+          print('review manifest schema PASS')
+          PY
       - name: Validate Confidence Builders prompt compilation
         run: |
           python scripts/bcube_publish.py \
@@ -38,6 +49,11 @@ jobs:
           grep -q 'Hard exclusions' /tmp/cb-prompt.txt
           grep -q 'no logo' /tmp/cb-prompt.txt
           grep -q 'no mascot' /tmp/cb-prompt.txt
+      - name: Validate staging paths are encoded in CLI
+        run: |
+          grep -q 'candidates/illustrations' scripts/bcube_publish.py
+          grep -q 'approved/pages' scripts/bcube_publish.py
+          grep -q 'PRODUCTION_PASS' scripts/bcube_publish.py
       - name: Validate fail-closed unsupported page type
         run: |
           if python scripts/bcube_publish.py --level nursery --book confidence-builders --page about --provider reuse --prompt-only; then

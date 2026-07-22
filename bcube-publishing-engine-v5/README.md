@@ -1,43 +1,55 @@
 # BCube Publishing Engine v5
 
-V5 is the executable orchestration layer above the approved V4 production prompts, the BCube Publishing SDK, deterministic composers, and evidence-based render QA.
-
-It does not replace V4. V4 remains the source specification.
+V5 is the executable orchestration layer above the approved V4 production prompts, the BCube Publishing SDK, deterministic composers, and evidence-based render QA. It does not replace V4; V4 remains the source specification.
 
 ## Pipeline
 
-1. Resolve level, book, page type and V4 source prompt.
+1. Resolve the registered level, book and page type.
 2. Compile an illustration-only prompt.
-3. Generate or import an illustration candidate through a provider adapter.
-4. Run fail-closed illustration QA.
-5. Call the existing deterministic page compositor.
-6. Generate evidence and run rendered-page QA.
-7. Require human approval bound to the exact artifact hash before production eligibility.
+3. Generate or import an illustration into the candidate staging area.
+4. Run fail-closed illustration checks.
+5. Call the existing deterministic compositor.
+6. Store the composed page as a review candidate.
+7. Preserve prompt, page data, composition evidence and artifact hashes.
+8. Require explicit human approval.
+9. Run final rendered-page QA.
+10. Promote the exact approved illustration and page into the approved area.
+
+Raw AI or manual input is never placed directly in the approved area.
 
 ## Providers
 
-- `manual`: imports an existing clean illustration.
-- `openai`: generates an illustration through the OpenAI Images API using `OPENAI_API_KEY`.
+- `manual`: imports an existing clean illustration, such as an illustration created in ChatGPT.
+- `reuse`: reuses the already staged illustration candidate for review or approval.
+- `openai`: optional API-backed generation using `OPENAI_API_KEY`.
 
-The provider is selected with `--provider` or `BCUBE_IMAGE_PROVIDER`.
+## Traceable artifact structure
+
+```text
+production-renders/v5/
+├── prompts/
+├── candidates/
+│   ├── illustrations/
+│   └── pages/
+├── approved/
+│   ├── illustrations/
+│   └── pages/
+├── manifests/
+├── evidence/
+└── reports/
+```
+
+Each page receives a review manifest containing its workflow state, reviewer, artifact paths and SHA-256 hashes.
 
 ## Current production scope
 
-The V5 orchestrator supports the locked Nursery cover compositor already present in the SDK. The orchestration contracts are page-type-neutral so About, Publisher, Contents, Back Cover and learning-page composers can be registered without changing the CLI.
+The registered executable path is Nursery cover composition. Unsupported page types fail closed until their deterministic composers are registered. About, Publisher, Contents and Back Cover are not generated through full-page AI as a fallback.
 
-## Commands
+## No-API workflow
 
-Generate a review candidate with the OpenAI provider:
+Create an illustration-only scene in ChatGPT and save it locally. It must contain no text, logo, mascot, badge, panels, pillars, footer or cover layout.
 
-```bash
-python scripts/bcube_publish.py \
-  --level nursery \
-  --book confidence-builders \
-  --page cover \
-  --provider openai
-```
-
-Import an existing illustration:
+Create the review candidate:
 
 ```bash
 python scripts/bcube_publish.py \
@@ -49,7 +61,13 @@ python scripts/bcube_publish.py \
   --confirm-clean-illustration
 ```
 
-After reviewing the candidate, bind approval and run final QA:
+Review:
+
+```text
+production-renders/v5/candidates/pages/CB-NURSERY-V4-P001.png
+```
+
+After visual approval, run:
 
 ```bash
 python scripts/bcube_publish.py \
@@ -61,7 +79,15 @@ python scripts/bcube_publish.py \
   --reviewer "Basavaraj Bhaire"
 ```
 
-## Environment
+The production-eligible result is promoted to:
+
+```text
+production-renders/v5/approved/pages/CB-NURSERY-V4-P001.png
+```
+
+The final QA report is stored under `production-renders/v5/reports/`. A page is production eligible only when the engine reports `PRODUCTION_PASS`.
+
+## Optional API environment
 
 ```bash
 export OPENAI_API_KEY="..."

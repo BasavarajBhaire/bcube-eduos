@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 """BCube Publishing Engine v5 unified orchestration CLI.
 
-V5 consumes the existing V4/SDK assets and deterministic cover pipeline. It
-never treats a raw provider image as a production page.
+V5 consumes the existing V4/SDK assets and deterministic cover pipeline. Raw
+provider images are staged as candidates and never treated as production pages.
+Approved artifacts are promoted only after explicit reviewer approval and QA.
 """
 from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import shutil
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -31,9 +34,17 @@ def load_json(path: Path) -> dict[str, Any]:
     return value
 
 
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
 def resolve_book(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any]]:
     if level != "nursery":
-        raise ValueError("V5 pilot currently has a deterministic compositor registered for Nursery covers only")
+        raise ValueError("V5 currently has a deterministic compositor registered for Nursery covers only")
     registry = load_json(BOOKS)
     book = registry.get("books", {}).get(slug)
     if not isinstance(book, dict):
@@ -76,18 +87,12 @@ def generate_openai(prompt: str, destination: Path) -> None:
         raise RuntimeError("Install dependencies with: python -m pip install -r requirements.txt") from exc
     if not os.getenv("OPENAI_API_KEY"):
         raise RuntimeError("OPENAI_API_KEY is required for --provider openai")
-    model = os.getenv("BCUBE_IMAGE_MODEL", "gpt-image-1.5")
     client = OpenAI()
     response = client.images.generate(
-        model=model,
-        prompt=prompt,
-        size="1024x1536",
-        quality="high",
-        output_format="png",
-        n=1,
+        model=os.getenv("BCUBE_IMAGE_MODEL", "gpt-image-1.5"), prompt=prompt,
+        size="1024x1536", quality="high", output_format="png", n=1,
     )
-    item = response.data[0]
-    encoded = getattr(item, "b64_json", None)
+    encoded = getattr(response.data[0], "b64_json", None)
     if not encoded:
         raise RuntimeError("Image provider returned no base64 image data")
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -97,6 +102,16 @@ def generate_openai(prompt: str, destination: Path) -> None:
 def run(command: list[str]) -> None:
     print("+", " ".join(command))
     subprocess.run(command, cwd=ROOT, check=True)
+
+
+def copy_artifact(source: Path, destination: Path, *, required: bool = True) -> str | None:
+    if not source.is_file():
+        if required:
+            raise FileNotFoundError(f"Expected pipeline artifact was not created: {source}")
+        return None
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source, destination)
+    return sha256(destination)
 
 
 def stage_candidate(provider: str, source: Path | None, prompt: str, staged: Path, confirm: bool) -> None:
@@ -119,10 +134,34 @@ def stage_candidate(provider: str, source: Path | None, prompt: str, staged: Pat
     validate_image(staged)
 
 
+def write_review_manifest(*, page_id: str, book: str, level: str, state: str,
+                          provider: str, reviewer: str | None, paths: dict[str, Path]) -> Path:
+    hashes = {name: sha256(path) for name, path in paths.items() if path.is_file()}
+    manifest = {
+        "engine": "BCube Publishing Engine v5",
+        "page_id": page_id,
+        "book": book,
+        "level": level,
+        "state": state,
+        "provider": provider,
+        "review": {
+            "status": "APPROVED" if state == "PRODUCTION_PASS" else "PENDING",
+            "reviewer": reviewer,
+            "reviewed_on": str(date.today()) if reviewer else None,
+        },
+        "artifacts": {name: {"path": str(path.relative_to(ROOT)), "sha256": hashes.get(name)}
+                      for name, path in paths.items() if path.is_file()},
+    }
+    target = WORK / "manifests" / f"{page_id}.review.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    return target
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="BCube Publishing Engine v5")
     parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], required=True)
-    parser.add_argument("--book", required=True, help="Book slug, e.g. confidence-builders")
+    parser.add_argument("--book", required=True)
     parser.add_argument("--page", default="cover", choices=["cover", "about", "publisher", "contents", "back-cover"])
     parser.add_argument("--provider", choices=["manual", "openai", "reuse"], default=os.getenv("BCUBE_IMAGE_PROVIDER", "manual"))
     parser.add_argument("--illustration", type=Path)
@@ -134,44 +173,67 @@ def main() -> int:
 
     if args.page != "cover":
         raise ValueError(f"No deterministic {args.page} compositor is registered yet; V5 fails closed")
-
     _, book = resolve_book(args.level, args.book)
-    prompt = illustration_prompt(book)
     page_id = book["page_id"]
+    prompt = illustration_prompt(book)
+
     prompt_path = WORK / "prompts" / f"{page_id}.illustration.txt"
-    staged = ROOT / "production-renders/illustrations" / f"{page_id}.png"
+    candidate_illustration = WORK / "candidates/illustrations" / f"{page_id}.png"
+    candidate_page = WORK / "candidates/pages" / f"{page_id}.png"
+    approved_illustration = WORK / "approved/illustrations" / f"{page_id}.png"
+    approved_page = WORK / "approved/pages" / f"{page_id}.png"
+    evidence_copy = WORK / "evidence" / f"{page_id}.json"
+    page_data_copy = WORK / "manifests" / f"{page_id}.page-data.json"
+    report_copy = WORK / "reports" / f"{page_id}.render-report.json"
+
     prompt_path.parent.mkdir(parents=True, exist_ok=True)
     prompt_path.write_text(prompt, encoding="utf-8")
-
     if args.prompt_only:
         print(prompt)
         print(f"Saved: {prompt_path}")
         return 0
 
     source = args.illustration.expanduser().resolve() if args.illustration else None
-    stage_candidate(args.provider, source, prompt, staged, args.confirm_clean_illustration)
+    stage_candidate(args.provider, source, prompt, candidate_illustration, args.confirm_clean_illustration)
 
-    command = [
-        sys.executable, str(COVER_PIPELINE),
-        "--book", args.book,
-        "--illustration", str(staged),
-        "--confirm-clean-illustration",
-    ]
+    command = [sys.executable, str(COVER_PIPELINE), "--book", args.book,
+               "--illustration", str(candidate_illustration), "--confirm-clean-illustration"]
     if args.approve:
         if not args.reviewer:
             raise ValueError("--reviewer is required with --approve")
         command += ["--approve", "--reviewer", args.reviewer]
     run(command)
 
-    final_page = ROOT / "production-renders/pages" / f"{page_id}.png"
-    report = ROOT / "validation/rendered-pages" / f"{page_id}.render-report.json"
-    state = "PRODUCTION PASS" if args.approve else "REVIEW CANDIDATE"
+    legacy_page = ROOT / "production-renders/pages" / f"{page_id}.png"
+    legacy_evidence = ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
+    legacy_page_data = ROOT / "production-renders/page-data" / f"{page_id}.json"
+    legacy_report = ROOT / "validation/rendered-pages" / f"{page_id}.render-report.json"
+
+    copy_artifact(legacy_page, candidate_page)
+    copy_artifact(legacy_evidence, evidence_copy)
+    copy_artifact(legacy_page_data, page_data_copy)
+
+    state = "REVIEW_CANDIDATE"
+    active_page = candidate_page
+    if args.approve:
+        copy_artifact(candidate_illustration, approved_illustration)
+        copy_artifact(candidate_page, approved_page)
+        copy_artifact(legacy_report, report_copy)
+        state = "PRODUCTION_PASS"
+        active_page = approved_page
+
+    manifest = write_review_manifest(
+        page_id=page_id, book=args.book, level=args.level, state=state,
+        provider=args.provider, reviewer=args.reviewer,
+        paths={"prompt": prompt_path, "candidate_illustration": candidate_illustration,
+               "candidate_page": candidate_page, "approved_illustration": approved_illustration,
+               "approved_page": approved_page, "composition_evidence": evidence_copy,
+               "page_data": page_data_copy, "qa_report": report_copy},
+    )
     print(json.dumps({
-        "engine": "BCube Publishing Engine v5",
-        "state": state,
-        "page": str(final_page),
-        "qa_report": str(report) if args.approve else None,
-        "illustration_prompt": str(prompt_path),
+        "engine": "BCube Publishing Engine v5", "state": state,
+        "page": str(active_page), "review_manifest": str(manifest),
+        "qa_report": str(report_copy) if args.approve else None,
     }, indent=2))
     return 0
 
