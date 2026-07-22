@@ -52,8 +52,8 @@ Preserve the individual source instruction, model phrase, activity, response mod
 ## 6. Educational engine
 
 - Objective: Reflect on and celebrate literacy learning.
-- Exact child action: Celebratory, premium classroom scene for 'Page 41' with teacher, Star mascot and engaged children. One short speaking, reflection, or independent practice response.
-- Observable evidence or accepted response: Children confidently present ideas, appreciate classmates and celebrate progress.
+- Exact child action: Share one literacy skill you learned. Complete one short speaking, reflection, or independent practice response.
+- Observable evidence or accepted response: I am proud that I can ______.
 - Progression: recognition and oral response → guided tracing/copying/sequencing → simple supported independent response.
 - Story pages use only 3–4 clear picture steps unless the approved source explicitly requires otherwise.
 
@@ -63,12 +63,12 @@ Preserve the individual source instruction, model phrase, activity, response mod
 - Model once, invite participation, pause for processing, scaffold through gesture, choice, picture cue, or sentence starter, and affirm effort without shame.
 - Teacher–student interaction must be visible, purposeful, inclusive, and directly connected to the objective.
 - Questions:
-- What can you show or tell about back cover?
+- What literacy skill are you proud of?
 
 ## 8. Parent partnership engine
 
-- Home connection: Repeat learning at home using everyday situations.
-- Conversation support: Repeat learning at home using everyday situations.
+- Home connection: Invite the child to choose a favourite letter, word, or story and explain why.
+- Conversation support: I am proud that I can ______.
 - Use familiar routines and common household materials only; do not add a scored task, device, purchase, printing requirement, or homework burden.
 
 ## 9. Illustration and character lock

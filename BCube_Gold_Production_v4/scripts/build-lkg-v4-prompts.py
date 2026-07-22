@@ -487,11 +487,16 @@ def compile_book(slug: str) -> dict:
                     "title": "My Literacy Celebration",
                     "page_type": "reflection",
                     "objective": "Reflect on and celebrate literacy learning.",
+                    "instruction": "Share one literacy skill you learned. Complete one short speaking, reflection, or independent practice response.",
+                    "evidence": "I am proud that I can ______.",
+                    "questions": ["What literacy skill are you proud of?"],
+                    "home": "Invite the child to choose a favourite letter, word, or story and explain why.",
+                    "conversation": "I am proud that I can ______.",
                     "scene": "Teacher-led literacy celebration with six expressive LKG children and approved Star; each child shares one short literacy reflection.",
                     "focal": "Children confidently sharing one reading or literacy achievement with their teacher and classmates.",
                 })
                 fields["overrides"] = list(fields.get("overrides", [])) + [
-                    "V4 editorial correction: source metadata title 'Back Cover' conflicts with its teacher-led classroom reflection activity. Render this source-backed page as 'My Literacy Celebration' on printed page 42; preserve its activity, evidence, facilitation, parent connection, illustration intent, and source lineage."
+                    "V4 editorial correction: source metadata title 'Back Cover' conflicts with its teacher-led classroom reflection activity. Render this source-backed page as 'My Literacy Celebration' on printed page 42; preserve its reflection intent, facilitation, illustration intent, and source lineage while replacing contradictory placeholder wording with an exact literacy reflection response."
                 ]
                 fields["approved_source_instruction"] += (
                     "\n\nV4 EDITORIAL CORRECTION: The canonical source title 'Back Cover' conflicts with the approved classroom celebration and reflection content. "
