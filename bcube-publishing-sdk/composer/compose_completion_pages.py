@@ -40,15 +40,39 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def wrap_text(draw: ImageDraw.ImageDraw, text: str, active_font: ImageFont.FreeTypeFont, max_width: int) -> str:
+    paragraphs = str(text).splitlines() or ['']
+    wrapped: list[str] = []
+    for paragraph in paragraphs:
+        words = paragraph.split()
+        if not words:
+            wrapped.append('')
+            continue
+        line = words[0]
+        for word in words[1:]:
+            candidate = f'{line} {word}'
+            bounds = draw.textbbox((0, 0), candidate, font=active_font)
+            if bounds[2] - bounds[0] <= max_width:
+                line = candidate
+            else:
+                wrapped.append(line)
+                line = word
+        wrapped.append(line)
+    return '\n'.join(wrapped)
+
+
 def fit_text(draw: ImageDraw.ImageDraw, text: str, box: tuple[int, int, int, int], max_size: int,
              colour: str, *, bold: bool = False, min_size: int = 24) -> None:
     x0, y0, x1, y1 = box
+    max_width = x1 - x0
+    max_height = y1 - y0
     for size in range(max_size, min_size - 1, -2):
         active = font(size, bold)
-        bounds = draw.multiline_textbbox((0, 0), text, font=active, spacing=12, align='center')
+        wrapped = wrap_text(draw, text, active, max_width)
+        bounds = draw.multiline_textbbox((0, 0), wrapped, font=active, spacing=12, align='center')
         w, h = bounds[2] - bounds[0], bounds[3] - bounds[1]
-        if w <= x1 - x0 and h <= y1 - y0:
-            draw.multiline_text((x0 + (x1 - x0 - w) / 2, y0 + (y1 - y0 - h) / 2), text,
+        if w <= max_width and h <= max_height:
+            draw.multiline_text((x0 + (max_width - w) / 2, y0 + (max_height - h) / 2), wrapped,
                                 font=active, fill=colour, spacing=12, align='center')
             return
     raise ValueError(f'Text does not fit: {text!r}')
