@@ -1,0 +1,63 @@
+name: Validate Illustration Preview Cost Control
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_preview_illustrations.py'
+      - '.github/workflows/validate-preview-cost-control.yml'
+      - 'docs/BCUBE_ILLUSTRATION_PREVIEW.md'
+  workflow_dispatch:
+
+jobs:
+  validate-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: python -m pip install pillow openpyxl
+      - name: Compile preview command
+        run: python -m py_compile scripts/bcube_preview_illustrations.py
+      - name: Create workbook fixture
+        run: |
+          python - <<'PY'
+          from openpyxl import Workbook
+          wb = Workbook()
+          ws = wb.active
+          ws.title = 'Complete Book List'
+          ws.append(['Level','Age','Book Slug','Book Title','Prefix','Cover Page ID','Illustration Prompt ID','Tagline','Six Skills','Footer Keywords','Full Cover Illustration Prompt'])
+          for index in range(1, 6):
+              ws.append(['Nursery','3+','book-%d' % index,'Book %d' % index,'B%d' % index,'B%d-NURSERY-V4-P001' % index,'','','','','Distinctive preschool illustration %d, pure white background, no text.' % index])
+          wb.save('/tmp/bcube-preview.xlsx')
+          PY
+      - name: Generate bounded preview
+        run: |
+          python scripts/bcube_preview_illustrations.py \
+            --workbook /tmp/bcube-preview.xlsx \
+            --level nursery \
+            --preview 2 \
+            --provider mock \
+            --workers 2 \
+            --batch-name preview-ci \
+            --output-root /tmp/bcube-preview-output
+      - name: Verify hard preview gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('/tmp/bcube-preview-output/preview-ci')
+          gate = json.loads((root / 'preview-gate.json').read_text())
+          manifest = json.loads((root / 'batch-manifest.json').read_text())
+          assert gate['mode'] == 'PREVIEW'
+          assert gate['available_matching_rows'] == 5
+          assert gate['selected'] == 2
+          assert gate['full_run_authorized'] is False
+          assert gate['max_retries'] == 0
+          assert manifest['selected'] == 2
+          assert manifest['approved'] == 2
+          assert len(list((root / 'images').rglob('*.png'))) == 2
+          assert (root / 'illustration-review.html').is_file()
+          print('BCube illustration preview cost-control validation PASS')
+          PY
