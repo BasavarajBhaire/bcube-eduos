@@ -25,14 +25,14 @@ def resolve(value: str) -> Path:
     return path if path.is_absolute() else ROOT / path
 
 
-def image_info(path: Path, label: str) -> dict[str, Any]:
+def image_info(path: Path, label: str, minimum_side: int) -> dict[str, Any]:
     if not path.is_file():
         raise FileNotFoundError(f"Missing {label}: {path}")
     with Image.open(path) as image:
         image.verify()
     with Image.open(path) as image:
-        if image.width < 600 or image.height < 600:
-            raise ValueError(f"{label} is too small: {image.width}x{image.height}")
+        if image.width < minimum_side or image.height < minimum_side:
+            raise ValueError(f"{label} is too small: {image.width}x{image.height}; minimum side is {minimum_side}px")
         return {"path": str(path), "size": [image.width, image.height], "mode": image.mode}
 
 
@@ -65,9 +65,9 @@ def validate(data_path: Path) -> dict[str, Any]:
         "status": "PASS",
         "page_id": data["page_id"],
         "activity_type": data["activity_type"],
-        "illustration": image_info(resolve(data["illustration_path"]), "illustration"),
-        "official_logo": image_info(resolve(data["official_logo_path"]), "official logo"),
-        "official_star": image_info(resolve(data["official_star_path"]), "official Star"),
+        "illustration": image_info(resolve(data["illustration_path"]), "illustration", 600),
+        "official_logo": image_info(resolve(data["official_logo_path"]), "official logo", 128),
+        "official_star": image_info(resolve(data["official_star_path"]), "official Star", 256),
     }
 
 
