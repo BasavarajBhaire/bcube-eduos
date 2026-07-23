@@ -5,11 +5,15 @@ import json
 ROOT = Path(__file__).resolve().parents[1]
 runner = ROOT / "scripts/run_bcube_cover_pipeline.py"
 text = runner.read_text(encoding="utf-8")
-old = 'COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover.py"'
 new = 'COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover_strict.py"'
-if old not in text and new not in text:
+for old in (
+    'COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover.py"',
+    'COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover_v12.py"',
+):
+    text = text.replace(old, new)
+if new not in text:
     raise SystemExit("Expected COMPOSER declaration not found")
-runner.write_text(text.replace(old, new), encoding="utf-8")
+runner.write_text(text, encoding="utf-8")
 
 template_path = ROOT / "bcube-publishing-sdk/templates/nursery-cover-v1.json"
 template = json.loads(template_path.read_text(encoding="utf-8"))
