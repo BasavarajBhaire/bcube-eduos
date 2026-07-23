@@ -1,0 +1,69 @@
+name: Validate Phase 6.5 Cloud Illustration
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_cloud_illustrations.py'
+      - 'scripts/bcube_generate_from_excel.py'
+      - 'docs/BCUBE_CLOUD_ILLUSTRATION_ENGINE.md'
+      - '.github/workflows/validate-phase65-cloud-illustration.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-cloud-illustration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: python -m pip install pillow openpyxl
+      - name: Compile cloud engine
+        run: python -m py_compile scripts/bcube_cloud_illustrations.py
+      - name: Create prompt workbook fixture
+        run: |
+          python - <<'PY'
+          from openpyxl import Workbook
+          wb = Workbook()
+          ws = wb.active
+          ws.title = 'Complete Book List'
+          ws.append(['Level','Age','Book Slug','Book Title','Prefix','Cover Page ID','Illustration Prompt ID','Tagline','Six Skills','Footer Keywords','Full Cover Illustration Prompt'])
+          ws.append(['Nursery','3+','communication-champions','Communication Champions','CC','CC-NURSERY-V4-P001','CC-NURSERY-V5-COVER-ILLUSTRATION','','','','Distinctive communication illustration, pure white background, no text.'])
+          ws.append(['LKG','4+','early-maths-adventures','Early Maths Adventures','EM','EM-LKG-V4-P001','EM-LKG-V5-COVER-ILLUSTRATION','','','','Distinctive maths market illustration, pure white background, no text.'])
+          ws.append(['UKG','5+','young-scientists','Young Scientists','YS','YS-UKG-V4-P001','YS-UKG-V5-COVER-ILLUSTRATION','','','','Distinctive science experiment illustration, pure white background, no text.'])
+          wb.save('/tmp/bcube-cloud-prompts.xlsx')
+          PY
+      - name: Generate concurrent mock batch
+        run: |
+          python scripts/bcube_cloud_illustrations.py \
+            --workbook /tmp/bcube-cloud-prompts.xlsx \
+            --level all \
+            --provider mock \
+            --workers 3 \
+            --batch-name phase65-ci \
+            --output-root /tmp/bcube-cloud-output \
+            --require-complete
+      - name: Verify evidence and packages
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from zipfile import ZipFile
+          root = Path('/tmp/bcube-cloud-output/phase65-ci')
+          manifest = json.loads((root / 'batch-manifest.json').read_text())
+          assert manifest['phase'] == '6.5'
+          assert manifest['provider'] == 'mock'
+          assert manifest['selected'] == 3
+          assert manifest['approved'] == 3
+          assert manifest['failed'] == 0
+          assert manifest['complete'] is True
+          assert (root / 'illustration-review.html').is_file()
+          assert len(list((root / 'images').rglob('*.png'))) == 3
+          assert len(list((root / 'reports').rglob('*.json'))) == 3
+          with ZipFile(root / 'phase65-ci-ILLUSTRATIONS.zip') as archive:
+              assert len([name for name in archive.namelist() if name.endswith('.png')]) == 3
+          with ZipFile(root / 'phase65-ci-PROMPTS.zip') as archive:
+              assert len([name for name in archive.namelist() if name.endswith('.txt')]) == 3
+          print('BCube Phase 6.5 cloud illustration validation PASS')
+          PY
