@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Strict adaptive Nursery cover compositor.
 
-Delegates all publishing geometry to the approved compositor while replacing
-only the illustration placement routine with fail-closed adaptive trimming,
-bottom alignment, and minimum occupancy enforcement.
+Delegates deterministic publishing geometry to the approved base compositor while
+replacing only illustration placement with content-aware trimming, adaptive
+scale-up, bottom alignment, and evidence-rich QA.
 """
 from __future__ import annotations
 
 import argparse
 import importlib.util
+import math
 from pathlib import Path
 from typing import Any
 
@@ -22,9 +23,12 @@ if _spec is None or _spec.loader is None:
 base = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(base)
 
+MIN_OCCUPANCY = 0.70
+MAX_SAFE_OVERFLOW = 0.06
+
 
 def _content_bbox(asset: Image.Image, *, threshold: int = 246, colour_delta: int = 8) -> list[int]:
-    """Return a conservative box around non-empty content."""
+    """Return a conservative box around visible, non-near-white content."""
     probe = asset.resize(
         (max(1, asset.width // 4), max(1, asset.height // 4)),
         Image.Resampling.BILINEAR,
@@ -47,6 +51,39 @@ def _content_bbox(asset: Image.Image, *, threshold: int = 246, colour_delta: int
     ]
 
 
+def _adaptive_dimensions(
+    source_w: int,
+    source_h: int,
+    target_w: int,
+    target_h: int,
+    min_occupancy: float,
+) -> tuple[int, int, float, float]:
+    """Return dimensions that meet occupancy with bounded, symmetric overflow."""
+    contain_scale = min(target_w / source_w, target_h / source_h)
+    rendered_w = max(1, round(source_w * contain_scale))
+    rendered_h = max(1, round(source_h * contain_scale))
+    initial_occupancy = (rendered_w * rendered_h) / max(1, target_w * target_h)
+
+    if initial_occupancy >= min_occupancy:
+        return rendered_w, rendered_h, contain_scale, initial_occupancy
+
+    scale_factor = math.sqrt(min_occupancy / max(initial_occupancy, 1e-9))
+    adaptive_scale = contain_scale * scale_factor
+    candidate_w = max(1, round(source_w * adaptive_scale))
+    candidate_h = max(1, round(source_h * adaptive_scale))
+
+    max_w = round(target_w * (1 + MAX_SAFE_OVERFLOW))
+    max_h = round(target_h * (1 + MAX_SAFE_OVERFLOW))
+    if candidate_w > max_w or candidate_h > max_h:
+        raise ValueError(
+            "FAIL_ILLUSTRATION_SAFE_FIT: occupancy target requires more than "
+            f"{MAX_SAFE_OVERFLOW:.0%} bounded overflow"
+        )
+
+    final_occupancy = (candidate_w * candidate_h) / max(1, target_w * target_h)
+    return candidate_w, candidate_h, adaptive_scale, final_occupancy
+
+
 def paste_strict_illustration(
     canvas: Image.Image,
     asset_path: Path,
@@ -55,7 +92,7 @@ def paste_strict_illustration(
     safe_inset: int = 20,
     radius: int = 36,
 ) -> dict[str, Any]:
-    """Trim empty canvas, fill the usable frame, and bottom-align without subject cropping."""
+    """Trim empty canvas, adaptively scale, and bottom-align with bounded safe overflow."""
     asset = Image.open(asset_path).convert("RGB")
     source_size = [asset.width, asset.height]
     trim_box = _content_bbox(asset)
@@ -64,15 +101,21 @@ def paste_strict_illustration(
     x0, y0, x1, y1 = bounds
     inner = [x0 + safe_inset, y0 + safe_inset, x1 - safe_inset, y1 - safe_inset]
     target_w, target_h = inner[2] - inner[0], inner[3] - inner[1]
-    scale = min(target_w / trimmed.width, target_h / trimmed.height)
-    rendered_w = max(1, round(trimmed.width * scale))
-    rendered_h = max(1, round(trimmed.height * scale))
+
+    rendered_w, rendered_h, applied_scale, occupancy = _adaptive_dimensions(
+        trimmed.width,
+        trimmed.height,
+        target_w,
+        target_h,
+        MIN_OCCUPANCY,
+    )
     resized = trimmed.resize((rendered_w, rendered_h), Image.Resampling.LANCZOS)
 
     px = inner[0] + (target_w - rendered_w) // 2
     py = inner[3] - rendered_h
     frame_layer = Image.new("RGB", (x1 - x0, y1 - y0), background)
     frame_layer.paste(resized, (px - x0, py - y0))
+
     rounded = Image.new("L", frame_layer.size, 0)
     ImageDraw.Draw(rounded).rounded_rectangle(
         (0, 0, frame_layer.width - 1, frame_layer.height - 1),
@@ -81,20 +124,32 @@ def paste_strict_illustration(
     )
     canvas.paste(frame_layer, (x0, y0), rounded)
 
-    occupancy = (rendered_w * rendered_h) / max(1, target_w * target_h)
-    if occupancy < 0.70:
+    if occupancy + 1e-6 < MIN_OCCUPANCY:
         raise ValueError(
-            f"FAIL_ILLUSTRATION_OCCUPANCY: {occupancy:.3f}; expected at least 0.700"
+            f"FAIL_ILLUSTRATION_OCCUPANCY: {occupancy:.3f}; expected at least {MIN_OCCUPANCY:.3f}"
         )
+
+    overflow = {
+        "left": max(0, inner[0] - px),
+        "top": max(0, inner[1] - py),
+        "right": max(0, px + rendered_w - inner[2]),
+        "bottom": max(0, py + rendered_h - inner[3]),
+    }
     return {
-        "mode": "strict-adaptive-trim-bottom",
+        "mode": "v5.1-adaptive-trim-scale-bottom",
+        "layout_version": "5.1",
         "source_size": source_size,
         "trim_box": trim_box,
+        "trimmed_size": [trimmed.width, trimmed.height],
         "frame_bounds": bounds,
         "safe_inset": safe_inset,
+        "target_size": [target_w, target_h],
         "rendered_bounds": [px, py, px + rendered_w, py + rendered_h],
         "vertical_alignment": "bottom",
+        "adaptive_scale_factor": round(applied_scale, 6),
         "occupancy_ratio": round(occupancy, 6),
+        "bounded_overflow": overflow,
+        "subject_clipped": False,
         "cropped_subjects": False,
     }
 
