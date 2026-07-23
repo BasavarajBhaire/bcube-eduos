@@ -35,7 +35,10 @@ jobs:
           wb.save('/tmp/bcube-cloud-prompts.xlsx')
           PY
       - name: Generate concurrent mock batch
+        id: generate
+        continue-on-error: true
         run: |
+          set -o pipefail
           python scripts/bcube_cloud_illustrations.py \
             --workbook /tmp/bcube-cloud-prompts.xlsx \
             --level all \
@@ -43,7 +46,22 @@ jobs:
             --workers 3 \
             --batch-name phase65-ci \
             --output-root /tmp/bcube-cloud-output \
-            --require-complete
+            --require-complete 2>&1 | tee /tmp/phase65-run.log
+      - name: Upload diagnostic output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase65-diagnostics
+          path: |
+            /tmp/phase65-run.log
+            /tmp/bcube-cloud-output
+          if-no-files-found: warn
+      - name: Fail when generation failed
+        if: steps.generate.outcome != 'success'
+        run: |
+          echo 'Cloud illustration generation failed:'
+          cat /tmp/phase65-run.log
+          exit 1
       - name: Verify evidence and packages
         run: |
           python - <<'PY'
