@@ -56,12 +56,29 @@ jobs:
           spec = importlib.util.spec_from_file_location('strict_cover', p)
           module = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(module)
-          w, h, scale, occupancy = module._adaptive_dimensions(1448, 1086, 1630, 1690, 0.70)
-          assert occupancy >= 0.70, occupancy
-          assert w <= round(1630 * 1.06), w
-          assert h <= round(1690 * 1.06), h
-          assert scale > 0
-          print({'rendered': [w, h], 'scale': scale, 'occupancy': occupancy})
+
+          cases = [
+              (1448, 1086, 1630, 1690, 0.70),
+              (1280, 960, 1630, 1690, 0.70),
+              (1024, 1024, 1630, 1690, 0.70),
+          ]
+          for source_w, source_h, target_w, target_h, minimum in cases:
+              w, h, scale, occupancy = module._adaptive_dimensions(
+                  source_w, source_h, target_w, target_h, minimum
+              )
+              assert occupancy + module.OCCUPANCY_EPSILON >= minimum, (
+                  source_w, source_h, w, h, occupancy
+              )
+              assert w <= round(target_w * (1 + module.MAX_SAFE_OVERFLOW)), w
+              assert h <= round(target_h * (1 + module.MAX_SAFE_OVERFLOW)), h
+              assert scale > 0
+              print({'source': [source_w, source_h], 'rendered': [w, h], 'scale': scale, 'occupancy': occupancy})
+
+          # Regression: an occupancy that formats as 0.700 must never fail because
+          # integer rasterisation placed it microscopically below the boundary.
+          w, h, _, occupancy = module._adaptive_dimensions(1448, 1086, 1630, 1690, 0.70)
+          assert f'{occupancy:.3f}' == '0.700' or occupancy > 0.70
+          assert occupancy + module.OCCUPANCY_EPSILON >= 0.70
           PY
       - name: Check smart pipeline help
         run: python scripts/run_bcube_cover_pipeline.py --help
