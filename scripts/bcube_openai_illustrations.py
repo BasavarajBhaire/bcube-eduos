@@ -10,26 +10,28 @@ from __future__ import annotations
 import argparse
 import base64
 import concurrent.futures
+import importlib.util
 import json
 import os
+import sys
 import threading
 import time
 import urllib.error
 import urllib.request
 from pathlib import Path
-from typing import Any, Dict, List, Optional
-
-import importlib.util
+from typing import Any, Dict, List
 
 ROOT = Path(__file__).resolve().parents[1]
 CLOUD_SCRIPT = ROOT / "scripts" / "bcube_cloud_illustrations.py"
 
 
 def load_cloud_module():
-    spec = importlib.util.spec_from_file_location("bcube_cloud_illustrations", CLOUD_SCRIPT)
+    module_name = "bcube_cloud_illustrations"
+    spec = importlib.util.spec_from_file_location(module_name, CLOUD_SCRIPT)
     if spec is None or spec.loader is None:
         raise RuntimeError("Unable to load BCube cloud illustration engine")
     module = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = module
     spec.loader.exec_module(module)
     return module
 
@@ -40,18 +42,7 @@ cloud = load_cloud_module()
 class OpenAIImagesProvider(cloud.Provider):
     name = "openai"
 
-    def __init__(
-        self,
-        api_key: str,
-        model: str,
-        quality: str,
-        size: str,
-        background: str,
-        output_format: str,
-        timeout: int,
-        base_url: str,
-        cost_per_image: float,
-    ) -> None:
+    def __init__(self, api_key: str, model: str, quality: str, size: str, background: str, output_format: str, timeout: int, base_url: str, cost_per_image: float) -> None:
         self.api_key = api_key
         self.model = model
         self.quality = quality
@@ -76,10 +67,7 @@ class OpenAIImagesProvider(cloud.Provider):
         request = urllib.request.Request(
             self.base_url + "/images/generations",
             data=json.dumps(payload).encode("utf-8"),
-            headers={
-                "Authorization": "Bearer " + self.api_key,
-                "Content-Type": "application/json",
-            },
+            headers={"Authorization": "Bearer " + self.api_key, "Content-Type": "application/json"},
             method="POST",
         )
         try:
@@ -152,42 +140,22 @@ def main() -> int:
     required = {"Level", "Book Slug", "Book Title", "Cover Page ID", "Full Cover Illustration Prompt"}
     if not rows or not required.issubset(rows[0]):
         raise ValueError("Workbook must contain columns: %s" % sorted(required))
-    selected = [
-        cloud.WorkItem(row["Level"].lower(), row["Book Slug"], row["Book Title"], row["Cover Page ID"], row["Full Cover Illustration Prompt"])
-        for row in rows
-        if args.level == "all" or row["Level"].lower() == args.level
-    ]
+    selected = [cloud.WorkItem(row["Level"].lower(), row["Book Slug"], row["Book Title"], row["Cover Page ID"], row["Full Cover Illustration Prompt"]) for row in rows if args.level == "all" or row["Level"].lower() == args.level]
     if not selected:
         raise ValueError("No workbook rows matched the selected level")
 
     estimated_max = round(len(selected) * args.cost_per_image * (args.max_retries + 1), 4)
     if args.max_budget_usd is not None and estimated_max > args.max_budget_usd:
-        raise ValueError(
-            "Estimated maximum cost $%.4f exceeds --max-budget-usd $%.4f; no API request was sent"
-            % (estimated_max, args.max_budget_usd)
-        )
+        raise ValueError("Estimated maximum cost $%.4f exceeds --max-budget-usd $%.4f; no API request was sent" % (estimated_max, args.max_budget_usd))
 
-    provider = OpenAIImagesProvider(
-        args.api_key,
-        args.model,
-        args.quality,
-        args.size,
-        args.background,
-        args.output_format,
-        args.timeout,
-        args.base_url,
-        args.cost_per_image,
-    )
+    provider = OpenAIImagesProvider(args.api_key, args.model, args.quality, args.size, args.background, args.output_format, args.timeout, args.base_url, args.cost_per_image)
     name = args.batch_name or (args.workbook.stem.replace(" ", "_") + "-openai")
     root = args.output_root / name
     root.mkdir(parents=True, exist_ok=True)
     lock = threading.Lock()
     results: List[Dict[str, Any]] = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = [
-            pool.submit(cloud.process, item, provider, root, args.max_retries, args.min_occupancy, args.resume, lock)
-            for item in selected
-        ]
+        futures = [pool.submit(cloud.process, item, provider, root, args.max_retries, args.min_occupancy, args.resume, lock) for item in selected]
         for future in concurrent.futures.as_completed(futures):
             results.append(future.result())
     results.sort(key=lambda item: (item.get("level", ""), item.get("book", ""), item.get("page_id", "")))
