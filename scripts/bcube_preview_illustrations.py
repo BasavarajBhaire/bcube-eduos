@@ -2,14 +2,15 @@
 """Generate a bounded BCube illustration preview before a paid full batch.
 
 The command copies only the first N matching workbook rows into a temporary
-workbook and delegates generation to ``bcube_cloud_illustrations.py``. This
-provides a hard request-count gate: the provider never receives more than the
-requested preview size.
+workbook and delegates generation to the selected provider script. This creates
+a hard request-count gate: no provider receives more than the requested preview
+size, and preview mode never starts a full batch automatically.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -20,6 +21,7 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 CLOUD_SCRIPT = ROOT / "scripts" / "bcube_cloud_illustrations.py"
+OPENAI_SCRIPT = ROOT / "scripts" / "bcube_openai_illustrations.py"
 
 
 def filtered_rows(workbook: Path, sheet_name: str, level: str) -> tuple[list[str], list[list[object]]]:
@@ -63,25 +65,20 @@ def write_preview_workbook(source_path: Path, sheet_name: str, headers: Sequence
 
 
 def build_delegate_command(args: argparse.Namespace, preview_workbook: Path, batch_name: str) -> List[str]:
+    script = OPENAI_SCRIPT if args.provider == "openai" else CLOUD_SCRIPT
     command = [
         sys.executable,
-        str(CLOUD_SCRIPT),
+        str(script),
         "--workbook",
         str(preview_workbook),
         "--sheet",
         args.sheet,
         "--level",
         "all",
-        "--provider",
-        args.provider,
         "--workers",
         str(args.workers),
         "--timeout",
         str(args.timeout),
-        "--poll-interval",
-        str(args.poll_interval),
-        "--cost-per-second",
-        str(args.cost_per_second),
         "--max-retries",
         str(args.max_retries),
         "--min-occupancy",
@@ -94,12 +91,33 @@ def build_delegate_command(args: argparse.Namespace, preview_workbook: Path, bat
     ]
     if args.resume:
         command.append("--resume")
-    if args.endpoint_id:
-        command.extend(["--endpoint-id", args.endpoint_id])
-    if args.api_key:
-        command.extend(["--api-key", args.api_key])
-    if args.workflow:
-        command.extend(["--workflow", str(args.workflow)])
+
+    if args.provider == "openai":
+        command.extend([
+            "--model", args.openai_model,
+            "--quality", args.openai_quality,
+            "--size", args.openai_size,
+            "--background", args.openai_background,
+            "--output-format", args.openai_output_format,
+            "--base-url", args.openai_base_url,
+            "--cost-per-image", str(args.cost_per_image),
+        ])
+        if args.max_budget_usd is not None:
+            command.extend(["--max-budget-usd", str(args.max_budget_usd)])
+        if args.openai_api_key:
+            command.extend(["--api-key", args.openai_api_key])
+    else:
+        command.extend([
+            "--provider", args.provider,
+            "--poll-interval", str(args.poll_interval),
+            "--cost-per-second", str(args.cost_per_second),
+        ])
+        if args.endpoint_id:
+            command.extend(["--endpoint-id", args.endpoint_id])
+        if args.api_key:
+            command.extend(["--api-key", args.api_key])
+        if args.workflow:
+            command.extend(["--workflow", str(args.workflow)])
     return command
 
 
@@ -109,14 +127,26 @@ def main() -> int:
     parser.add_argument("--sheet", default="Complete Book List")
     parser.add_argument("--level", choices=["all", "nursery", "lkg", "ukg"], default="nursery")
     parser.add_argument("--preview", type=int, default=1, help="Maximum prompts sent to the provider")
-    parser.add_argument("--provider", choices=["runpod", "mock"], default="mock")
+    parser.add_argument("--provider", choices=["openai", "runpod", "mock"], default="mock")
+
     parser.add_argument("--endpoint-id")
     parser.add_argument("--api-key")
     parser.add_argument("--workflow", type=Path)
-    parser.add_argument("--workers", type=int, default=1)
-    parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--poll-interval", type=float, default=2.0)
     parser.add_argument("--cost-per-second", type=float, default=0.0)
+
+    parser.add_argument("--openai-api-key", default=os.environ.get("OPENAI_API_KEY"))
+    parser.add_argument("--openai-model", default="gpt-image-1")
+    parser.add_argument("--openai-quality", choices=["low", "medium", "high", "auto"], default="medium")
+    parser.add_argument("--openai-size", choices=["1024x1024", "1024x1536", "1536x1024", "auto"], default="1024x1024")
+    parser.add_argument("--openai-background", choices=["opaque", "transparent", "auto"], default="opaque")
+    parser.add_argument("--openai-output-format", choices=["png", "jpeg", "webp"], default="png")
+    parser.add_argument("--openai-base-url", default="https://api.openai.com/v1")
+    parser.add_argument("--cost-per-image", type=float, default=0.0, help="Manual estimate used for budget gating and reporting")
+    parser.add_argument("--max-budget-usd", type=float)
+
+    parser.add_argument("--workers", type=int, default=1)
+    parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--max-retries", type=int, default=0, help="Defaults to zero for strict cost control")
     parser.add_argument("--min-occupancy", type=float, default=0.55)
     parser.add_argument("--resume", action="store_true")
@@ -130,12 +160,16 @@ def main() -> int:
         raise ValueError("--workers must be at least 1")
     if args.provider == "runpod" and (not args.endpoint_id or not args.api_key):
         raise ValueError("RunPod preview requires --endpoint-id and --api-key")
+    if args.provider == "openai" and not args.openai_api_key:
+        raise ValueError("OpenAI preview requires OPENAI_API_KEY or --openai-api-key")
 
     headers, available = filtered_rows(args.workbook, args.sheet, args.level)
     if not available:
         raise ValueError("No workbook rows matched the selected level")
     selected = available[: args.preview]
-    name = args.batch_name or "%s-%s-preview-%d" % (args.workbook.stem.replace(" ", "_"), args.level, len(selected))
+    name = args.batch_name or "%s-%s-%s-preview-%d" % (
+        args.workbook.stem.replace(" ", "_"), args.level, args.provider, len(selected)
+    )
     batch_root = args.output_root / name
     batch_root.mkdir(parents=True, exist_ok=True)
 
@@ -154,8 +188,10 @@ def main() -> int:
         "selected": len(selected),
         "provider": args.provider,
         "max_retries": args.max_retries,
+        "max_budget_usd": args.max_budget_usd,
+        "cost_per_image": args.cost_per_image if args.provider == "openai" else None,
         "full_run_authorized": False,
-        "next_step": "Review illustration-review.html. Run bcube_cloud_illustrations.py separately only after explicit approval.",
+        "next_step": "Review illustration-review.html. Run the full provider script separately only after explicit approval.",
         "delegate_exit_code": completed.returncode,
     }
     manifest_path = batch_root / "preview-gate.json"
@@ -163,6 +199,7 @@ def main() -> int:
     print(json.dumps({
         "status": "PASS" if completed.returncode == 0 else "FAIL",
         "mode": "PREVIEW",
+        "provider": args.provider,
         "selected": len(selected),
         "available_matching_rows": len(available),
         "batch_root": str(batch_root),
