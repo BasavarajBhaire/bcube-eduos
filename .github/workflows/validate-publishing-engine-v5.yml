@@ -1,21 +1,26 @@
+# BCube V5.2 multi-level registry validation
 name: Validate Publishing Engine V5
 
 on:
   pull_request:
     paths:
       - 'bcube-publishing-engine-v5/**'
+      - 'bcube-publishing-sdk/books/cover-books.json'
       - 'design-system/BCUBE_DESIGN_CONSTITUTION_V1.md'
       - 'design-system/bcube-design-constitution-v1.json'
       - 'scripts/bcube_publish.py'
+      - 'scripts/run_bcube_cover_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-engine-v5.yml'
   push:
     branches: [main]
     paths:
       - 'bcube-publishing-engine-v5/**'
+      - 'bcube-publishing-sdk/books/cover-books.json'
       - 'design-system/BCUBE_DESIGN_CONSTITUTION_V1.md'
       - 'design-system/bcube-design-constitution-v1.json'
       - 'scripts/bcube_publish.py'
+      - 'scripts/run_bcube_cover_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-engine-v5.yml'
 
@@ -30,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Compile V5
-        run: python -m py_compile scripts/bcube_publish.py
+        run: python -m py_compile scripts/bcube_publish.py scripts/run_bcube_cover_pipeline.py
       - name: Validate BCube Design Constitution
         run: |
           python - <<'PY'
@@ -42,13 +47,7 @@ jobs:
           data = json.loads(machine.read_text(encoding='utf-8'))
           assert data['constitution_id'] == 'BCUBE-DESIGN-CONSTITUTION-V1'
           assert data['status'] == 'canonical'
-          assert data['canvas'] == {
-              'format': 'A4_PORTRAIT',
-              'width_px': 2480,
-              'height_px': 3508,
-              'dpi': 300,
-              'one_physical_page_per_output': True,
-          }
+          assert data['canvas'] == {'format':'A4_PORTRAIT','width_px':2480,'height_px':3508,'dpi':300,'one_physical_page_per_output':True}
           assert data['architecture']['full_page_ai_generation_allowed'] is False
           assert data['cover']['skill_count'] == 6
           assert data['cover']['pillar_count'] == 5
@@ -65,23 +64,20 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          path = Path('bcube-publishing-engine-v5/schemas/review-manifest.schema.json')
-          schema = json.loads(path.read_text(encoding='utf-8'))
+          schema = json.loads(Path('bcube-publishing-engine-v5/schemas/review-manifest.schema.json').read_text(encoding='utf-8'))
           assert schema['title'] == 'BCube Publishing Engine V5 Review Manifest'
           assert set(schema['properties']['state']['enum']) == {'REVIEW_CANDIDATE', 'PRODUCTION_PASS'}
           print('review manifest schema PASS')
           PY
-      - name: Validate Confidence Builders prompt compilation
+      - name: Validate multi-level prompt compilation
         run: |
-          python scripts/bcube_publish.py \
-            --level nursery \
-            --book confidence-builders \
-            --page cover \
-            --provider reuse \
-            --prompt-only > /tmp/cb-prompt.txt
-          grep -q 'Hard exclusions' /tmp/cb-prompt.txt
-          grep -q 'no logo' /tmp/cb-prompt.txt
-          grep -q 'no mascot' /tmp/cb-prompt.txt
+          for spec in 'nursery confidence-builders' 'lkg early-maths-adventures' 'ukg young-scientists'; do
+            set -- $spec
+            python scripts/bcube_publish.py --level "$1" --book "$2" --page cover --provider reuse --prompt-only > "/tmp/$1-prompt.txt"
+            grep -q 'Hard exclusions' "/tmp/$1-prompt.txt"
+            grep -q 'logo' "/tmp/$1-prompt.txt"
+            grep -q 'mascot' "/tmp/$1-prompt.txt"
+          done
       - name: Validate staging paths are encoded in CLI
         run: |
           grep -q 'candidates/illustrations' scripts/bcube_publish.py

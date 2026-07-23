@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the deterministic BCube Nursery cover pipeline."""
+"""Run the deterministic BCube cover pipeline for Nursery, LKG, and UKG."""
 from __future__ import annotations
 
 import argparse
@@ -18,7 +18,7 @@ COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover_strict.py
 FINALIZER = ROOT / "bcube-publishing-sdk/composer/finalize_cover_evidence.py"
 PREFLIGHT = ROOT / "bcube-publishing-sdk/validators/validate_cover_inputs.py"
 VALIDATOR = ROOT / "scripts/validate_rendered_page.py"
-BOOKS = ROOT / "bcube-publishing-sdk/books/nursery-books.json"
+BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 
 
 def run(command: list[str]) -> None:
@@ -69,6 +69,19 @@ def find_asset(candidates: list[str], label: str) -> Path:
     raise FileNotFoundError(f"No valid {label} asset was found. Checked:\n  - " + "\n  - ".join(attempted))
 
 
+def resolve_book(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+    registry = load_json(BOOKS)
+    levels = registry.get("levels", {})
+    level_data = levels.get(level)
+    if not isinstance(level_data, dict):
+        raise ValueError(f"Unknown level {level!r}. Available: {', '.join(sorted(levels))}")
+    books = level_data.get("books", {})
+    book = books.get(slug)
+    if not isinstance(book, dict):
+        raise ValueError(f"Unknown {level.upper()} book {slug!r}. Available: {', '.join(sorted(books))}")
+    return registry, level_data, book
+
+
 def stage_illustration(source: Path, page_id: str) -> tuple[Path, str]:
     source = source.expanduser().resolve()
     if not valid_image(source):
@@ -85,21 +98,17 @@ def stage_illustration(source: Path, page_id: str) -> tuple[Path, str]:
 
 
 def build_smart_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
-    registry = load_json(BOOKS)
-    defaults = registry.get("defaults", {})
-    books = registry.get("books", {})
-    if args.book not in books:
-        raise ValueError(f"Unknown Nursery book {args.book!r}. Available: {', '.join(sorted(books))}")
+    registry, level_data, book = resolve_book(args.level, args.book)
+    shared = registry.get("shared", {})
     if not args.illustration:
         raise ValueError("--illustration is required with --book")
     if not args.confirm_clean_illustration:
         raise ValueError("Inspect the image and rerun with --confirm-clean-illustration only when it has no text, logo, mascot, badge, embedded page, or page layout.")
 
-    book = books[args.book]
-    page_id = str(book["page_id"])
+    page_id = f"{book['prefix']}-{level_data['id_level']}-V4-P001"
     illustration, source_hash = stage_illustration(args.illustration, page_id)
-    logo = find_asset(list(defaults.get("official_logo_candidates", [])), "official BCube logo")
-    star = find_asset(list(defaults.get("official_star_candidates", [])), "standalone official Star")
+    logo = find_asset(list(shared.get("official_logo_candidates", [])), "official BCube logo")
+    star = find_asset(list(shared.get("official_star_candidates", [])), "standalone official Star")
     output = args.output or ROOT / "production-renders/pages" / f"{page_id}.png"
     evidence = args.evidence or ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
     report = args.report or ROOT / "validation/rendered-pages" / f"{page_id}.render-report.json"
@@ -114,34 +123,30 @@ def build_smart_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
         "artifact_sha256": "0" * 64,
         "notes": "Approved after reviewing deterministic candidate." if args.approve else "Candidate awaiting visual approval.",
     }
+    title = " ".join(book["title_lines"])
+    required_text = [title.upper(), *[part.strip().upper() for part in book["tagline"].split("•")],
+                     "BCUBE FUTURE SKILLS LEARNING SERIES", level_data["display_level"].upper(), level_data["age"]]
     page_data = {
         "page_id": page_id,
-        "book_key": book["book_key"],
+        "book_key": f"{args.level}/{args.book}",
         "title_lines": book["title_lines"],
         "tagline": book["tagline"],
-        "level": defaults["level"],
-        "age": defaults["age"],
+        "level": level_data["display_level"],
+        "age": level_data["age"],
         "skills": book["skills"],
         "skill_icon_keys": book["skill_icon_keys"],
-        "pillars": defaults["pillars"],
-        "pillar_icon_keys": defaults["pillar_icon_keys"],
+        "pillars": shared["pillars"],
+        "pillar_icon_keys": shared["pillar_icon_keys"],
         "footer_keywords": book["footer_keywords"],
         "illustration_path": repo_relative(illustration),
         "illustration_source_sha256": source_hash,
         "official_logo_path": repo_relative(logo),
         "official_star_path": repo_relative(star),
         "illustration_evidence": {
-            "contains_text": False,
-            "contains_logo": False,
-            "contains_mascot": False,
-            "contains_badge": False,
-            "contains_page_layout": False,
-            "contains_embedded_page": False,
+            "contains_text": False, "contains_logo": False, "contains_mascot": False,
+            "contains_badge": False, "contains_page_layout": False, "contains_embedded_page": False,
         },
-        "text_evidence": {
-            "detector": {"name": "bcube-composer-known-text", "version": "1.3"},
-            "detected_text": book["required_detected_text"],
-        },
+        "text_evidence": {"detector": {"name": "bcube-composer-known-text", "version": "2.0"}, "detected_text": required_text},
         "human_approval": human,
     }
     data_path.parent.mkdir(parents=True, exist_ok=True)
@@ -154,6 +159,7 @@ def parse_args() -> argparse.Namespace:
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--data", type=Path)
     mode.add_argument("--book")
+    parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], default="nursery")
     parser.add_argument("--illustration", type=Path)
     parser.add_argument("--confirm-clean-illustration", action="store_true")
     parser.add_argument("--approve", action="store_true")
@@ -181,11 +187,7 @@ def main() -> int:
     staged_illustration = ROOT / page_data["illustration_path"]
     preflight_report = ROOT / "validation/rendered-pages" / f"{page_data['page_id']}.input-report.json"
     preflight_report.unlink(missing_ok=True)
-    run([
-        sys.executable, str(PREFLIGHT), "--page-data", str(data),
-        "--expected-illustration-sha256", sha256(staged_illustration),
-        "--output", str(preflight_report),
-    ])
+    run([sys.executable, str(PREFLIGHT), "--page-data", str(data), "--expected-illustration-sha256", sha256(staged_illustration), "--output", str(preflight_report)])
     run([sys.executable, str(COMPOSER), "--data", str(data), "--output", str(output), "--evidence-output", str(evidence)])
     run([sys.executable, str(FINALIZER), "--evidence", str(evidence)])
     if args.book and not args.approve:

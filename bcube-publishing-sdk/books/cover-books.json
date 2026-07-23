@@ -1,0 +1,74 @@
+{
+  "registry_version": "v5.2.0",
+  "series": "BCube Future Skills Learning Series™",
+  "shared": {
+    "pillars": [
+      {"code": "CR", "name": "Creativity"},
+      {"code": "CO", "name": "Communication"},
+      {"code": "CU", "name": "Curiosity"},
+      {"code": "CF", "name": "Confidence"},
+      {"code": "CL", "name": "Collaboration"}
+    ],
+    "pillar_icon_keys": ["palette", "chat", "search", "confidence", "puzzle"],
+    "official_logo_candidates": [
+      "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png",
+      "BCube_Gold_Production_v4/assets/nursery/communication-champions/P006/bcube-academy-logo.jpg"
+    ],
+    "official_star_candidates": [
+      "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Star.png"
+    ]
+  },
+  "levels": {
+    "nursery": {
+      "display_level": "Nursery",
+      "age": "3+",
+      "id_level": "NURSERY",
+      "books": {
+        "art-colour-fun": {"prefix":"AC","title_lines":["Art & Colour","Fun"],"tagline":"Colour • Create • Enjoy","skills":["Explore Colours","Hold Art Tools","Make Simple Art","Choose Colours","Create Freely","Enjoy Making"],"skill_icon_keys":["palette","person","spark","search","heart","trophy"],"footer_keywords":"Colour • Art • Expression • Imagination • Joy"},
+        "communication-champions": {"prefix":"CC","title_lines":["Communication","Champions"],"tagline":"Listen • Speak • Share","skills":["Listen Carefully","Speak Clearly","Share Ideas","Use Kind Words","Take Turns","Express Feelings"],"skill_icon_keys":["person","speech","spark","heart","shield","trophy"],"footer_keywords":"Listening • Speaking • Sharing • Expression • Friendship"},
+        "confidence-builders": {"prefix":"CB","title_lines":["Confidence","Builders"],"tagline":"I Believe • I Can • I Will","skills":["Believe in Myself","Try New Things","Speak with Confidence","Make Good Choices","Be Kind to Others","Celebrate Success"],"skill_icon_keys":["person","spark","speech","shield","heart","trophy"],"footer_keywords":"Self-belief • Courage • Expression • Kindness • Independence"},
+        "creativity-challenges": {"prefix":"CR","title_lines":["Creativity","Challenges"],"tagline":"Imagine • Create • Discover","skills":["Imagine Freely","Create Art","Build Ideas","Try New Ways","Express Myself","Celebrate Creativity"],"skill_icon_keys":["palette","spark","puzzle","search","speech","trophy"],"footer_keywords":"Imagination • Making • Ideas • Expression • Creativity"},
+        "curiosity-explorers": {"prefix":"CE","title_lines":["Curiosity","Explorers"],"tagline":"Observe • Explore • Discover","skills":["Ask Questions","Look Closely","Explore Nature","Notice Differences","Discover New Things","Love Learning"],"skill_icon_keys":["speech","search","spark","puzzle","confidence","trophy"],"footer_keywords":"Observation • Questions • Exploration • Wonder • Discovery"},
+        "fine-motor-fun": {"prefix":"FM","title_lines":["Fine Motor","Fun"],"tagline":"Grip • Move • Make","skills":["Strengthen Fingers","Hold Tools","Trace Shapes","Thread Objects","Cut Safely","Create Carefully"],"skill_icon_keys":["person","puzzle","search","shield","palette","trophy"],"footer_keywords":"Grip • Control • Coordination • Precision • Independence"},
+        "healthy-habits-safety": {"prefix":"HH","title_lines":["Healthy Habits","& Safety"],"tagline":"Healthy • Safe • Strong","skills":["Wash Hands","Eat Well","Stay Active","Follow Safety Rules","Express Needs","Care for Myself"],"skill_icon_keys":["heart","person","spark","shield","speech","trophy"],"footer_keywords":"Health • Hygiene • Safety • Movement • Wellbeing"},
+        "logical-thinking-adventures": {"prefix":"LT","title_lines":["Logical Thinking","Adventures"],"tagline":"Think • Match • Solve","skills":["Match Objects","Sort Groups","Find Patterns","Compare Shapes","Solve Simple Problems","Explain Choices"],"skill_icon_keys":["puzzle","search","spark","confidence","speech","trophy"],"footer_keywords":"Matching • Sorting • Patterns • Reasoning • Problem-solving"},
+        "my-world-general-awareness": {"prefix":"MW","title_lines":["My World &","General Awareness"],"tagline":"Know • Explore • Care","skills":["Know My Family","Explore My Community","Recognise Helpers","Discover Nature","Respect Differences","Care for My World"],"skill_icon_keys":["person","search","speech","spark","heart","trophy"],"footer_keywords":"Family • Community • Nature • Awareness • Care"},
+        "stem-explorers": {"prefix":"SE","title_lines":["STEM","Explorers"],"tagline":"Build • Test • Discover","skills":["Observe Closely","Build Simple Models","Test Ideas","Notice Patterns","Solve Problems","Share Discoveries"],"skill_icon_keys":["search","puzzle","spark","confidence","speech","trophy"],"footer_keywords":"Science • Building • Testing • Discovery • Thinking"}
+      }
+    },
+    "lkg": {
+      "display_level": "LKG",
+      "age": "4+",
+      "id_level": "LKG",
+      "books": {
+        "communication-champions": {"prefix":"CC","title_lines":["Communication","Champions"],"tagline":"Listen • Speak • Connect","skills":["Listen with Attention","Speak in Sentences","Share Ideas","Ask Questions","Use Kind Words","Present Confidently"],"skill_icon_keys":["person","speech","spark","search","heart","trophy"],"footer_keywords":"Listening • Speaking • Vocabulary • Expression • Friendship"},
+        "early-literacy-adventures": {"prefix":"EL","title_lines":["Early Literacy","Adventures"],"tagline":"Sounds • Letters • Stories","skills":["Hear Sounds","Recognise Letters","Build Words","Enjoy Rhymes","Understand Stories","Express Ideas"],"skill_icon_keys":["search","speech","spark","puzzle","heart","trophy"],"footer_keywords":"Phonics • Letters • Words • Rhymes • Stories"},
+        "early-maths-adventures": {"prefix":"EM","title_lines":["Early Maths","Adventures"],"tagline":"Count • Compare • Solve","skills":["Count Objects","Recognise Numbers","Compare Quantities","Explore Shapes","Find Patterns","Solve Problems"],"skill_icon_keys":["search","puzzle","spark","confidence","speech","trophy"],"footer_keywords":"Numbers • Counting • Shapes • Patterns • Reasoning"},
+        "logical-thinking-adventures": {"prefix":"LT","title_lines":["Logical Thinking","Adventures"],"tagline":"Think • Reason • Solve","skills":["Sort and Classify","Compare Objects","Complete Patterns","Sequence Events","Spot Differences","Explain Thinking"],"skill_icon_keys":["puzzle","search","spark","confidence","speech","trophy"],"footer_keywords":"Sorting • Sequencing • Patterns • Reasoning • Logic"},
+        "stem-explorers": {"prefix":"SE","title_lines":["STEM","Explorers"],"tagline":"Question • Build • Test","skills":["Ask Questions","Observe Changes","Build Models","Test Ideas","Measure Simply","Share Results"],"skill_icon_keys":["speech","search","puzzle","spark","confidence","trophy"],"footer_keywords":"Science • Technology • Engineering • Maths • Discovery"},
+        "creativity-challenges": {"prefix":"CR","title_lines":["Creativity","Challenges"],"tagline":"Imagine • Design • Create","skills":["Generate Ideas","Draw Creatively","Build Designs","Try Alternatives","Solve Creatively","Share Creations"],"skill_icon_keys":["palette","spark","puzzle","search","speech","trophy"],"footer_keywords":"Ideas • Design • Art • Innovation • Expression"},
+        "my-world-general-awareness": {"prefix":"MW","title_lines":["My World &","General Awareness"],"tagline":"Explore • Understand • Care","skills":["Know My Community","Understand Helpers","Explore Nature","Recognise Places","Respect Cultures","Care for Earth"],"skill_icon_keys":["person","search","speech","spark","heart","trophy"],"footer_keywords":"Community • Nature • Places • Culture • Responsibility"},
+        "healthy-habits-safety": {"prefix":"HH","title_lines":["Healthy Habits","& Safety"],"tagline":"Choose • Protect • Thrive","skills":["Choose Healthy Food","Practise Hygiene","Exercise Daily","Recognise Danger","Follow Safety Rules","Manage Feelings"],"skill_icon_keys":["heart","person","spark","shield","speech","trophy"],"footer_keywords":"Nutrition • Hygiene • Safety • Fitness • Wellbeing"},
+        "art-colour-fun": {"prefix":"AC","title_lines":["Art & Colour","Fun"],"tagline":"Explore • Mix • Create","skills":["Mix Colours","Draw Shapes","Paint Pictures","Make Crafts","Explore Texture","Present Artwork"],"skill_icon_keys":["palette","search","spark","puzzle","speech","trophy"],"footer_keywords":"Colour • Drawing • Painting • Craft • Creativity"},
+        "confidence-social-skills": {"prefix":"CS","title_lines":["Confidence &","Social Skills"],"tagline":"Believe • Connect • Grow","skills":["Speak Confidently","Make Friends","Take Turns","Manage Feelings","Solve Conflicts","Celebrate Progress"],"skill_icon_keys":["confidence","speech","heart","shield","puzzle","trophy"],"footer_keywords":"Confidence • Friendship • Empathy • Choices • Growth"}
+      }
+    },
+    "ukg": {
+      "display_level": "UKG",
+      "age": "5+",
+      "id_level": "UKG",
+      "books": {
+        "communication-masters": {"prefix":"CM","title_lines":["Communication","Masters"],"tagline":"Listen • Express • Present","skills":["Listen Critically","Speak Clearly","Build Vocabulary","Tell Stories","Discuss Ideas","Present Confidently"],"skill_icon_keys":["person","speech","search","spark","confidence","trophy"],"footer_keywords":"Listening • Vocabulary • Conversation • Storytelling • Presentation"},
+        "reading-literacy-adventures": {"prefix":"RL","title_lines":["Reading & Literacy","Adventures"],"tagline":"Read • Understand • Imagine","skills":["Decode Words","Read Sentences","Build Vocabulary","Understand Text","Sequence Stories","Write Ideas"],"skill_icon_keys":["search","speech","spark","puzzle","confidence","trophy"],"footer_keywords":"Reading • Phonics • Vocabulary • Comprehension • Writing"},
+        "maths-explorers": {"prefix":"ME","title_lines":["Maths","Explorers"],"tagline":"Count • Calculate • Reason","skills":["Work with Numbers","Add and Subtract","Compare Values","Explore Geometry","Measure Objects","Solve Problems"],"skill_icon_keys":["search","puzzle","spark","confidence","speech","trophy"],"footer_keywords":"Numbers • Operations • Geometry • Measurement • Reasoning"},
+        "logic-brain-builders": {"prefix":"LB","title_lines":["Logic & Brain","Builders"],"tagline":"Analyse • Reason • Solve","skills":["Classify Information","Complete Sequences","Find Relationships","Use Spatial Thinking","Solve Puzzles","Explain Reasoning"],"skill_icon_keys":["puzzle","search","spark","confidence","speech","trophy"],"footer_keywords":"Logic • Sequences • Spatial Thinking • Puzzles • Reasoning"},
+        "young-scientists": {"prefix":"YS","title_lines":["Young","Scientists"],"tagline":"Observe • Experiment • Explain","skills":["Ask Scientific Questions","Make Predictions","Run Simple Tests","Record Observations","Compare Results","Explain Findings"],"skill_icon_keys":["speech","search","spark","puzzle","confidence","trophy"],"footer_keywords":"Science • Prediction • Experiment • Evidence • Discovery"},
+        "creative-design-studio": {"prefix":"CD","title_lines":["Creative Design","Studio"],"tagline":"Imagine • Design • Improve","skills":["Identify Needs","Generate Ideas","Sketch Designs","Build Prototypes","Improve Solutions","Present Designs"],"skill_icon_keys":["palette","search","spark","puzzle","speech","trophy"],"footer_keywords":"Design • Prototyping • Innovation • Improvement • Creativity"},
+        "my-amazing-world": {"prefix":"MA","title_lines":["My Amazing","World"],"tagline":"Discover • Respect • Protect","skills":["Explore Communities","Understand Cultures","Study Nature","Know Our Planet","Respect Diversity","Protect Resources"],"skill_icon_keys":["person","search","speech","spark","heart","trophy"],"footer_keywords":"World • Community • Culture • Environment • Responsibility"},
+        "digital-explorers": {"prefix":"DE","title_lines":["Digital","Explorers"],"tagline":"Learn • Create • Stay Safe","skills":["Understand Devices","Follow Digital Rules","Create Digitally","Think in Steps","Protect Privacy","Use Technology Kindly"],"skill_icon_keys":["search","shield","spark","puzzle","heart","trophy"],"footer_keywords":"Technology • Digital Safety • Creativity • Logic • Citizenship"},
+        "healthy-me-wellbeing": {"prefix":"HM","title_lines":["Healthy Me &","Wellbeing"],"tagline":"Balance • Care • Flourish","skills":["Choose Nutrition","Build Fitness","Practise Hygiene","Understand Emotions","Stay Safe","Develop Resilience"],"skill_icon_keys":["heart","person","spark","speech","shield","trophy"],"footer_keywords":"Nutrition • Fitness • Emotions • Safety • Resilience"},
+        "financial-literacy-life-skills": {"prefix":"FL","title_lines":["Financial Literacy","& Life Skills"],"tagline":"Choose • Save • Grow","skills":["Recognise Money","Understand Needs","Make Choices","Save Resources","Plan Simply","Act Responsibly"],"skill_icon_keys":["search","puzzle","shield","confidence","heart","trophy"],"footer_keywords":"Money • Needs • Choices • Saving • Responsibility"}
+      }
+    }
+  }
+}

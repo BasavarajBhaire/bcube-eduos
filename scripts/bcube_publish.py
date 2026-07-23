@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""BCube Publishing Engine v5 unified orchestration CLI.
-
-V5 consumes the existing V4/SDK assets and deterministic cover pipeline. Raw
-provider images are staged as candidates and never treated as production pages.
-Approved artifacts are promoted only after explicit reviewer approval and QA.
-"""
+"""BCube Publishing Engine v5 unified orchestration CLI."""
 from __future__ import annotations
 
 import argparse
@@ -22,7 +17,7 @@ from typing import Any
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOKS = ROOT / "bcube-publishing-sdk/books/nursery-books.json"
+BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 COVER_PIPELINE = ROOT / "scripts/run_bcube_cover_pipeline.py"
 WORK = ROOT / "production-renders/v5"
 
@@ -42,29 +37,32 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def resolve_book(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any]]:
-    if level != "nursery":
-        raise ValueError("V5 currently has a deterministic compositor registered for Nursery covers only")
+def resolve_book(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     registry = load_json(BOOKS)
-    book = registry.get("books", {}).get(slug)
+    levels = registry.get("levels", {})
+    level_data = levels.get(level)
+    if not isinstance(level_data, dict):
+        raise ValueError(f"Unknown level {level!r}. Registered levels: {', '.join(sorted(levels))}")
+    books = level_data.get("books", {})
+    book = books.get(slug)
     if not isinstance(book, dict):
-        available = ", ".join(sorted(registry.get("books", {})))
-        raise ValueError(f"Unknown Nursery book {slug!r}. Registered books: {available}")
-    return registry, book
+        raise ValueError(f"Unknown {level.upper()} book {slug!r}. Registered books: {', '.join(sorted(books))}")
+    return registry, level_data, book
 
 
-def illustration_prompt(book: dict[str, Any]) -> str:
+def illustration_prompt(level_data: dict[str, Any], book: dict[str, Any]) -> str:
     title = " ".join(book["title_lines"])
     skills = ", ".join(book["skills"])
-    return f"""Create only one premium preschool illustration layer for the Nursery book {title}.
+    return f"""BCube Publishing Engine™ V5.2
+{title}
+Cover Illustration Only
 
-Scene: a warm Indian preschool classroom with one friendly teacher and four diverse Nursery children participating in a confidence-building activity. One child proudly completes a simple achievable task while the teacher and classmates encourage the child. Show natural joy, courage, kindness, independence and participation. The illustration should visually support these skills: {skills}.
+Create exactly one central illustration for {level_data['display_level']} children aged {level_data['age']}.
+Show one warm teacher and six children participating in an activity that visually supports: {skills}.
+Use premium commercial preschool publishing quality, a pure white background, a centred group, and approximately 88–92% foreground occupancy.
 
-Style: premium commercial preschool workbook illustration, rounded friendly characters, expressive natural faces, clean thick outlines, bright but balanced colours, soft pastel classroom, simple large recognisable objects, uncluttered composition, suitable for children aged 3+.
-
-Composition: illustration only, portrait-oriented scene designed to crop into a tall rounded rectangular frame. Keep important characters away from the extreme edges.
-
-Hard exclusions: no words, no letters, no numbers, no signs, no posters with writing, no logo, no brand marks, no BCube text, no book title, no series banner, no age badge, no mascot, no star character, no ribbons, no skill capsules, no pillar icons, no footer, no border, no page number, no book-cover layout, no watermark.
+Hard exclusions: no text, letters, numbers, logo, branding, mascot, Star character, badge, border, page layout, watermark, classroom walls, blackboard, posters, windows, or bookshelves.
+Keep every head, hand, foot, chair, table and learning object fully visible inside the canvas.
 """
 
 
@@ -88,10 +86,8 @@ def generate_openai(prompt: str, destination: Path) -> None:
     if not os.getenv("OPENAI_API_KEY"):
         raise RuntimeError("OPENAI_API_KEY is required for --provider openai")
     client = OpenAI()
-    response = client.images.generate(
-        model=os.getenv("BCUBE_IMAGE_MODEL", "gpt-image-1.5"), prompt=prompt,
-        size="1024x1536", quality="high", output_format="png", n=1,
-    )
+    response = client.images.generate(model=os.getenv("BCUBE_IMAGE_MODEL", "gpt-image-1.5"), prompt=prompt,
+                                      size="1024x1536", quality="high", output_format="png", n=1)
     encoded = getattr(response.data[0], "b64_json", None)
     if not encoded:
         raise RuntimeError("Image provider returned no base64 image data")
@@ -138,17 +134,10 @@ def write_review_manifest(*, page_id: str, book: str, level: str, state: str,
                           provider: str, reviewer: str | None, paths: dict[str, Path]) -> Path:
     hashes = {name: sha256(path) for name, path in paths.items() if path.is_file()}
     manifest = {
-        "engine": "BCube Publishing Engine v5",
-        "page_id": page_id,
-        "book": book,
-        "level": level,
-        "state": state,
-        "provider": provider,
-        "review": {
-            "status": "APPROVED" if state == "PRODUCTION_PASS" else "PENDING",
-            "reviewer": reviewer,
-            "reviewed_on": str(date.today()) if reviewer else None,
-        },
+        "engine": "BCube Publishing Engine v5.2", "page_id": page_id, "book": book,
+        "level": level, "state": state, "provider": provider,
+        "review": {"status": "APPROVED" if state == "PRODUCTION_PASS" else "PENDING",
+                   "reviewer": reviewer, "reviewed_on": str(date.today()) if reviewer else None},
         "artifacts": {name: {"path": str(path.relative_to(ROOT)), "sha256": hashes.get(name)}
                       for name, path in paths.items() if path.is_file()},
     }
@@ -159,7 +148,7 @@ def write_review_manifest(*, page_id: str, book: str, level: str, state: str,
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="BCube Publishing Engine v5")
+    parser = argparse.ArgumentParser(description="BCube Publishing Engine v5.2")
     parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], required=True)
     parser.add_argument("--book", required=True)
     parser.add_argument("--page", default="cover", choices=["cover", "about", "publisher", "contents", "back-cover"])
@@ -173,9 +162,9 @@ def main() -> int:
 
     if args.page != "cover":
         raise ValueError(f"No deterministic {args.page} compositor is registered yet; V5 fails closed")
-    _, book = resolve_book(args.level, args.book)
-    page_id = book["page_id"]
-    prompt = illustration_prompt(book)
+    _, level_data, book = resolve_book(args.level, args.book)
+    page_id = f"{book['prefix']}-{level_data['id_level']}-V4-P001"
+    prompt = illustration_prompt(level_data, book)
 
     prompt_path = WORK / "prompts" / f"{page_id}.illustration.txt"
     candidate_illustration = WORK / "candidates/illustrations" / f"{page_id}.png"
@@ -195,8 +184,7 @@ def main() -> int:
 
     source = args.illustration.expanduser().resolve() if args.illustration else None
     stage_candidate(args.provider, source, prompt, candidate_illustration, args.confirm_clean_illustration)
-
-    command = [sys.executable, str(COVER_PIPELINE), "--book", args.book,
+    command = [sys.executable, str(COVER_PIPELINE), "--level", args.level, "--book", args.book,
                "--illustration", str(candidate_illustration), "--confirm-clean-illustration"]
     if args.approve:
         if not args.reviewer:
@@ -208,33 +196,26 @@ def main() -> int:
     legacy_evidence = ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
     legacy_page_data = ROOT / "production-renders/page-data" / f"{page_id}.json"
     legacy_report = ROOT / "validation/rendered-pages" / f"{page_id}.render-report.json"
-
     copy_artifact(legacy_page, candidate_page)
     copy_artifact(legacy_evidence, evidence_copy)
     copy_artifact(legacy_page_data, page_data_copy)
 
-    state = "REVIEW_CANDIDATE"
-    active_page = candidate_page
+    state, active_page = "REVIEW_CANDIDATE", candidate_page
     if args.approve:
         copy_artifact(candidate_illustration, approved_illustration)
         copy_artifact(candidate_page, approved_page)
         copy_artifact(legacy_report, report_copy)
-        state = "PRODUCTION_PASS"
-        active_page = approved_page
+        state, active_page = "PRODUCTION_PASS", approved_page
 
-    manifest = write_review_manifest(
-        page_id=page_id, book=args.book, level=args.level, state=state,
-        provider=args.provider, reviewer=args.reviewer,
-        paths={"prompt": prompt_path, "candidate_illustration": candidate_illustration,
-               "candidate_page": candidate_page, "approved_illustration": approved_illustration,
-               "approved_page": approved_page, "composition_evidence": evidence_copy,
-               "page_data": page_data_copy, "qa_report": report_copy},
-    )
-    print(json.dumps({
-        "engine": "BCube Publishing Engine v5", "state": state,
-        "page": str(active_page), "review_manifest": str(manifest),
-        "qa_report": str(report_copy) if args.approve else None,
-    }, indent=2))
+    manifest = write_review_manifest(page_id=page_id, book=args.book, level=args.level, state=state,
+                                     provider=args.provider, reviewer=args.reviewer,
+                                     paths={"prompt": prompt_path, "candidate_illustration": candidate_illustration,
+                                            "candidate_page": candidate_page, "approved_illustration": approved_illustration,
+                                            "approved_page": approved_page, "composition_evidence": evidence_copy,
+                                            "page_data": page_data_copy, "qa_report": report_copy})
+    print(json.dumps({"engine": "BCube Publishing Engine v5.2", "state": state,
+                      "page": str(active_page), "review_manifest": str(manifest),
+                      "qa_report": str(report_copy) if args.approve else None}, indent=2))
     return 0
 
 
