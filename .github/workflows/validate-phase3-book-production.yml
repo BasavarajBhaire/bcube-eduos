@@ -1,0 +1,76 @@
+name: Validate Phase 3 Book Production
+
+on:
+  pull_request:
+    paths:
+      - 'bcube-publishing-sdk/composer/compose_completion_pages.py'
+      - 'scripts/run_bcube_completion_pipeline.py'
+      - 'scripts/build_bcube_book.py'
+      - 'scripts/bcube_batch_publish.py'
+      - '.github/workflows/validate-phase3-book-production.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bcube-publishing-sdk/composer/compose_completion_pages.py'
+      - 'scripts/run_bcube_completion_pipeline.py'
+      - 'scripts/build_bcube_book.py'
+      - 'scripts/bcube_batch_publish.py'
+      - '.github/workflows/validate-phase3-book-production.yml'
+
+jobs:
+  validate-phase3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Phase 3 engine
+        run: python -m py_compile bcube-publishing-sdk/composer/compose_completion_pages.py scripts/run_bcube_completion_pipeline.py scripts/build_bcube_book.py scripts/bcube_batch_publish.py
+      - name: Build Nursery certificate
+        run: python scripts/run_bcube_completion_pipeline.py --level nursery --book communication-champions --page certificate
+      - name: Build LKG back cover
+        run: python scripts/run_bcube_completion_pipeline.py --level lkg --book early-maths-adventures --page back-cover
+      - name: Build UKG certificate
+        run: python scripts/run_bcube_completion_pipeline.py --level ukg --book young-scientists --page certificate
+      - name: Create isolated contiguous A4 test sequence
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageDraw
+          root=Path('production-renders/test-pages')
+          root.mkdir(parents=True,exist_ok=True)
+          for n in range(1,7):
+              path=root/f'CC-NURSERY-V4-P{n:03d}.png'
+              image=Image.new('RGB',(2480,3508),'white')
+              ImageDraw.Draw(image).text((120,120),f'Test page {n}',fill='black')
+              image.save(path,'PNG',dpi=(300,300))
+          PY
+      - name: Assemble and validate partial PDF
+        run: |
+          python scripts/build_bcube_book.py \
+            --level nursery \
+            --book communication-champions \
+            --pages-dir production-renders/test-pages \
+            --output production-renders/books/CC-NURSERY-V4.pdf \
+            --manifest production-renders/books/CC-NURSERY-V4.manifest.json
+      - name: Verify outputs
+        run: |
+          test -f production-renders/pages/CC-NURSERY-V4-P043.png
+          test -f production-renders/pages/EM-LKG-V4-P044.png
+          test -f production-renders/pages/YS-UKG-V4-P043.png
+          test -f production-renders/books/CC-NURSERY-V4.pdf
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          manifest=json.loads(Path('production-renders/books/CC-NURSERY-V4.manifest.json').read_text())
+          assert manifest['status']=='PASS'
+          assert manifest['page_count'] == 6
+          assert manifest['first_physical'] == 1
+          assert manifest['last_physical'] == 6
+          assert Path(manifest['pdf']).is_file()
+          PY
+      - name: Check batch command help
+        run: python scripts/bcube_batch_publish.py --help
