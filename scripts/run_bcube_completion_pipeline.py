@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / 'bcube-publishing-sdk/books/cover-books.json'
 COMPOSER = ROOT / 'bcube-publishing-sdk/composer/compose_completion_pages.py'
@@ -21,11 +23,23 @@ def load(path: Path) -> dict[str, Any]:
     return value
 
 
-def first_existing(candidates: list[str]) -> str:
+def first_valid_image(candidates: list[str]) -> str:
+    rejected: list[str] = []
     for value in candidates:
-        if (ROOT / value).is_file():
-            return value
-    raise FileNotFoundError(f'No registered asset exists: {candidates}')
+        path = ROOT / value
+        if not path.is_file():
+            rejected.append(f'{value}: missing')
+            continue
+        try:
+            with Image.open(path) as image:
+                image.verify()
+            with Image.open(path) as image:
+                image.load()
+        except (OSError, ValueError) as exc:
+            rejected.append(f'{value}: unreadable ({exc})')
+            continue
+        return value
+    raise FileNotFoundError(f'No valid registered image asset found: {rejected}')
 
 
 def resolve_book(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
@@ -51,8 +65,8 @@ def build(level: str, slug: str, page_type: str) -> tuple[Path, Path, Path]:
         'level': level_data['display_level'],
         'age': level_data['age'],
         'tagline': book.get('tagline', ''),
-        'official_logo_path': first_existing(shared['official_logo_candidates']),
-        'official_star_path': first_existing(shared['official_star_candidates']),
+        'official_logo_path': first_valid_image(shared['official_logo_candidates']),
+        'official_star_path': first_valid_image(shared['official_star_candidates']),
     }
     if page_type == 'certificate':
         data['achievement_message'] = f"for successfully completing {data['book_title']} and showing growth in {', '.join(book['skills'][:3])}."
