@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """BCube Phase 6 provider-independent illustration automation.
 
-No OpenAI dependency. Supports manual queueing, a local command provider,
-ComfyUI HTTP generation, and a deterministic mock provider for CI.
+No OpenAI dependency. Supports manual queueing, local command execution,
+ComfyUI HTTP generation, deterministic CI generation, QA, retries and queues.
 """
 from __future__ import annotations
 
@@ -14,16 +14,17 @@ import shutil
 import subprocess
 import sys
 import time
+import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from PIL import Image, ImageChops, ImageStat
+from PIL import Image, ImageChops, ImageDraw, ImageStat
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
-QUEUE_ROOT = ROOT / "illustration-engine"
+ENGINE = ROOT / "illustration-engine"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -41,37 +42,36 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def book_info(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any]]:
+def validate_book(level: str, slug: str) -> None:
     registry = load_json(REGISTRY)
-    level_data = registry["levels"].get(level)
+    level_data = registry.get("levels", {}).get(level)
     if not isinstance(level_data, dict):
         raise ValueError(f"Unknown level: {level}")
-    book = level_data["books"].get(slug)
-    if not isinstance(book, dict):
+    if slug not in level_data.get("books", {}):
         raise ValueError(f"Unknown {level.upper()} book {slug!r}")
-    return level_data, book
 
 
-def find_prompt_files(level: str, slug: str) -> list[Path]:
+def prompt_files(level: str, slug: str) -> list[Path]:
     candidates = [
         ROOT / "production-prompts" / slug / level / "v4" / "pages",
         ROOT / "production-prompts" / slug / level / "V4" / "pages",
         ROOT / "production-prompts" / level / slug / "v4" / "pages",
     ]
-    files: list[Path] = []
     for directory in candidates:
         if directory.is_dir():
-            files.extend(sorted(directory.glob("*.json")))
-    if files:
-        return files
+            found = sorted(directory.glob("*.json"))
+            if found:
+                return found
     token = f"-{level.upper()}-V4-P"
-    return sorted(path for path in (ROOT / "production-prompts").rglob("*.json") if token in path.name and slug in str(path).lower())
+    return sorted(
+        path for path in (ROOT / "production-prompts").rglob("*.json")
+        if token in path.name and slug in str(path).lower()
+    )
 
 
 def extract_prompt(data: dict[str, Any], path: Path) -> tuple[str, str]:
     page_id = str(data.get("page_id") or data.get("prompt_id") or path.stem)
-    keys = ["illustration_prompt", "prompt", "production_prompt", "full_prompt", "art_direction"]
-    for key in keys:
+    for key in ("illustration_prompt", "prompt", "production_prompt", "full_prompt", "art_direction"):
         value = data.get(key)
         if isinstance(value, str) and value.strip():
             return page_id, value.strip()
@@ -88,8 +88,6 @@ def extract_prompt(data: dict[str, Any], path: Path) -> tuple[str, str]:
 
 @dataclass
 class Job:
-    level: str
-    book: str
     page_id: str
     prompt: str
     source: str
@@ -113,13 +111,16 @@ class MockProvider(Provider):
     def generate(self, job: Job) -> Path:
         job.output.parent.mkdir(parents=True, exist_ok=True)
         image = Image.new("RGB", (1254, 1254), "white")
+        draw = ImageDraw.Draw(image)
+        draw.rounded_rectangle((70, 70, 1184, 1184), radius=100, fill="#F7D66A")
+        draw.ellipse((250, 250, 1004, 1004), fill="#7CC8F5")
         image.save(job.output, "PNG", dpi=(300, 300))
         return job.output
 
 
 class CommandProvider(Provider):
     name = "command"
-    def __init__(self, command: str):
+    def __init__(self, command: str | None):
         if not command:
             raise ValueError("--command is required for provider=command")
         self.command = command
@@ -137,15 +138,15 @@ class CommandProvider(Provider):
 
 class ComfyUIProvider(Provider):
     name = "comfyui"
-    def __init__(self, server: str, workflow: Path, timeout: int):
+    def __init__(self, server: str, workflow: Path | None, timeout: int):
+        if workflow is None:
+            raise ValueError("--workflow is required for provider=comfyui")
         self.server = server.rstrip("/")
         self.workflow = load_json(workflow)
         self.timeout = timeout
 
     def generate(self, job: Job) -> Path:
-        workflow = json.loads(json.dumps(self.workflow))
-        raw = json.dumps(workflow)
-        raw = raw.replace("{{BCUBE_PROMPT}}", job.prompt).replace("{{BCUBE_PAGE_ID}}", job.page_id)
+        raw = json.dumps(self.workflow).replace("{{BCUBE_PROMPT}}", job.prompt).replace("{{BCUBE_PAGE_ID}}", job.page_id)
         payload = json.dumps({"prompt": json.loads(raw)}).encode("utf-8")
         request = urllib.request.Request(self.server + "/prompt", data=payload, headers={"Content-Type": "application/json"})
         with urllib.request.urlopen(request, timeout=30) as response:
@@ -182,9 +183,7 @@ def validate_image(path: Path, min_occupancy: float, require_square: bool) -> di
             rgb.paste(rgba, mask=rgba.getchannel("A"))
             diff = ImageChops.difference(rgb, Image.new("RGB", rgb.size, "white")).convert("L")
             bbox = diff.point(lambda p: 255 if p > 18 else 0).getbbox()
-            occupancy = 0.0
-            if bbox:
-                occupancy = ((bbox[2]-bbox[0]) * (bbox[3]-bbox[1])) / (width * height)
+            occupancy = 0.0 if not bbox else ((bbox[2]-bbox[0]) * (bbox[3]-bbox[1])) / (width * height)
             if occupancy < min_occupancy:
                 defects.append("LOW_OCCUPANCY")
             border = max(4, int(min(width, height) * 0.02))
@@ -193,12 +192,12 @@ def validate_image(path: Path, min_occupancy: float, require_square: bool) -> di
             if border_mean < 235:
                 defects.append("BORDER_NOT_WHITE")
             dpi = image.info.get("dpi", (0,0))[0]
-            return {"status": "PASS" if not defects else "FAIL", "path": str(path), "size": [width,height], "dpi": dpi, "occupancy": round(occupancy,4), "border_mean": round(border_mean,2), "sha256": sha256(path), "defects": defects}
+            return {"status":"PASS" if not defects else "FAIL","path":str(path),"size":[width,height],"dpi":dpi,"occupancy":round(occupancy,4),"border_mean":round(border_mean,2),"sha256":sha256(path),"defects":defects}
     except Exception as exc:
-        return {"status": "FAIL", "path": str(path), "defects": [f"UNREADABLE_IMAGE: {exc}"]}
+        return {"status":"FAIL","path":str(path),"defects":[f"UNREADABLE_IMAGE: {exc}"]}
 
 
-def provider_from_args(args: argparse.Namespace) -> Provider:
+def make_provider(args: argparse.Namespace) -> Provider:
     if args.provider == "manual": return ManualProvider()
     if args.provider == "mock": return MockProvider()
     if args.provider == "command": return CommandProvider(args.command)
@@ -221,17 +220,17 @@ def main() -> int:
     parser.add_argument("--require-square", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    book_info(args.level, args.book)
-    prompt_files = find_prompt_files(args.level, args.book)
-    if not prompt_files:
+    validate_book(args.level, args.book)
+    sources = prompt_files(args.level, args.book)
+    if not sources:
         raise FileNotFoundError(f"No V4 prompt JSON files found for {args.level}/{args.book}")
-    provider = provider_from_args(args)
-    pending = QUEUE_ROOT / "queue" / "pending" / args.level / args.book
-    approved = QUEUE_ROOT / "queue" / "approved" / args.level / args.book
-    rejected = QUEUE_ROOT / "queue" / "rejected" / args.level / args.book
-    reports = QUEUE_ROOT / "reports" / args.level / args.book
-    results = []
-    for source in prompt_files:
+    provider = make_provider(args)
+    pending = ENGINE / "queue/pending" / args.level / args.book
+    approved = ENGINE / "queue/approved" / args.level / args.book
+    rejected = ENGINE / "queue/rejected" / args.level / args.book
+    reports = ENGINE / "reports" / args.level / args.book
+    results: list[dict[str, Any]] = []
+    for source in sources:
         try:
             page_id, prompt = extract_prompt(load_json(source), source)
         except ValueError:
@@ -239,13 +238,11 @@ def main() -> int:
         if args.page_id and page_id != args.page_id:
             continue
         output = pending / f"{page_id}.png"
-        job = Job(args.level, args.book, page_id, prompt, str(source.relative_to(ROOT)), output)
+        job = Job(page_id, prompt, str(source.relative_to(ROOT)), output)
         if args.dry_run:
-            results.append({"page_id":page_id,"state":"PLANNED","output":str(output),"source":job.source})
+            results.append({"page_id":page_id,"state":"PLANNED","source":job.source,"output":str(output)})
             continue
-        state = "FAILED"
-        report: dict[str, Any] = {}
-        error = None
+        state, report, error = "FAILED", {}, None
         for attempt in range(args.max_retries + 1):
             try:
                 generated = provider.generate(job)
@@ -255,13 +252,12 @@ def main() -> int:
                     approved.mkdir(parents=True, exist_ok=True)
                     final = approved / generated.name
                     shutil.copy2(generated, final)
-                    state = "APPROVED"
                     report["approved_path"] = str(final)
+                    state = "APPROVED"
                     break
                 error = ", ".join(report.get("defects", []))
             except RuntimeError as exc:
-                error = str(exc)
-                state = "MANUAL_REQUIRED"
+                error, state = str(exc), "MANUAL_REQUIRED"
                 break
             except Exception as exc:
                 error = str(exc)
@@ -274,7 +270,7 @@ def main() -> int:
         (reports / f"{page_id}.json").write_text(json.dumps(item, indent=2) + "\n", encoding="utf-8")
         results.append(item)
     summary = {"phase":"6","level":args.level,"book":args.book,"provider":provider.name,"total":len(results),"approved":sum(r.get("state")=="APPROVED" for r in results),"manual_required":sum(r.get("state")=="MANUAL_REQUIRED" for r in results),"failed":sum(r.get("state") in {"FAILED","REJECTED"} for r in results),"results":results}
-    summary_path = QUEUE_ROOT / "reports" / args.level / args.book / "summary.json"
+    summary_path = reports / "summary.json"
     summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({k:v for k,v in summary.items() if k != "results"} | {"summary":str(summary_path)}, indent=2))
