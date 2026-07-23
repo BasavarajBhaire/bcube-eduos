@@ -1,0 +1,64 @@
+name: Validate Phase 4 Production Release
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_preflight.py'
+      - 'scripts/bcube_release.py'
+      - 'scripts/bcube_portfolio_qa.py'
+      - '.github/workflows/validate-phase4-production-release.yml'
+      - 'docs/BCube_Phase4_Production_Release.md'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/bcube_preflight.py'
+      - 'scripts/bcube_release.py'
+      - 'scripts/bcube_portfolio_qa.py'
+      - '.github/workflows/validate-phase4-production-release.yml'
+
+jobs:
+  validate-phase4:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Phase 4 tools
+        run: python -m py_compile scripts/bcube_preflight.py scripts/bcube_release.py scripts/bcube_portfolio_qa.py
+      - name: Create complete 44-page test book
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageDraw
+          root=Path('production-renders/pages')
+          root.mkdir(parents=True,exist_ok=True)
+          for n in range(1,45):
+              path=root/f'CC-NURSERY-V4-P{n:03d}.png'
+              image=Image.new('RGB',(2480,3508),'white')
+              ImageDraw.Draw(image).text((120,120),f'Phase 4 test page {n}',fill='black')
+              image.save(path,'PNG',dpi=(300,300))
+          PY
+      - name: Run strict production preflight
+        run: python scripts/bcube_preflight.py --level nursery --book communication-champions
+      - name: Create approved and locked release
+        run: python scripts/bcube_release.py --level nursery --book communication-champions --approve --reviewer 'GitHub Actions QA'
+      - name: Verify release package
+        run: |
+          test -f production-releases/nursery/communication-champions/v4/CC-NURSERY-V4-PRINT-READY.pdf
+          test -f production-releases/nursery/communication-champions/v4/CC-NURSERY-V4.release.json
+          test -f production-releases/nursery/communication-champions/v4/CC-NURSERY-V4.release.lock
+          test -f production-releases/nursery/communication-champions/v4/CC-NURSERY-V4-RELEASE.zip
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          manifest=json.loads(Path('production-releases/nursery/communication-champions/v4/CC-NURSERY-V4.release.json').read_text())
+          assert manifest['state']=='APPROVED_LOCKED'
+          assert manifest['approved'] is True
+          assert manifest['page_count']==44
+          assert manifest['critical_defects']==0
+          PY
+      - name: Check portfolio command help
+        run: python scripts/bcube_portfolio_qa.py --help
