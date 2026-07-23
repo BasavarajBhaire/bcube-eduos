@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""BCube Publishing Engine v5 unified orchestration CLI."""
+"""BCube Publishing Engine unified orchestration CLI."""
 from __future__ import annotations
 
 import argparse
@@ -19,6 +19,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 COVER_PIPELINE = ROOT / "scripts/run_bcube_cover_pipeline.py"
+ACTIVITY_PIPELINE = ROOT / "scripts/run_bcube_activity_pipeline.py"
 WORK = ROOT / "production-renders/v5"
 
 
@@ -61,7 +62,7 @@ Create exactly one central illustration for {level_data['display_level']} childr
 Show one warm teacher and six children participating in an activity that visually supports: {skills}.
 Use premium commercial preschool publishing quality, a pure white background, a centred group, and approximately 88–92% foreground occupancy.
 
-Hard exclusions: no text, letters, numbers, logo, branding, mascot, Star character, badge, border, page layout, watermark, classroom walls, blackboard, posters, windows, or bookshelves.
+Hard exclusions: no text, no letters, no numbers, no logo, no branding, no mascot, no Star character, no badge, no border, no page layout, no watermark, no classroom walls, no blackboard, no posters, no windows, and no bookshelves.
 Keep every head, hand, foot, chair, table and learning object fully visible inside the canvas.
 """
 
@@ -147,25 +148,40 @@ def write_review_manifest(*, page_id: str, book: str, level: str, state: str,
     return target
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description="BCube Publishing Engine v5.2")
-    parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], required=True)
-    parser.add_argument("--book", required=True)
-    parser.add_argument("--page", default="cover", choices=["cover", "about", "publisher", "contents", "back-cover"])
-    parser.add_argument("--provider", choices=["manual", "openai", "reuse"], default=os.getenv("BCUBE_IMAGE_PROVIDER", "manual"))
-    parser.add_argument("--illustration", type=Path)
-    parser.add_argument("--confirm-clean-illustration", action="store_true")
-    parser.add_argument("--approve", action="store_true")
-    parser.add_argument("--reviewer")
-    parser.add_argument("--prompt-only", action="store_true")
-    args = parser.parse_args()
+def run_activity(args: argparse.Namespace) -> int:
+    required = {
+        "physical_page": args.physical_page,
+        "page_number": args.page_number,
+        "activity_type": args.activity_type,
+        "title": args.title,
+        "objective": args.objective,
+        "instruction": args.instruction,
+        "teacher_prompt": args.teacher_prompt,
+        "parent_prompt": args.parent_prompt,
+        "illustration": args.illustration,
+    }
+    missing = [name.replace("_", "-") for name, value in required.items() if value is None]
+    if missing:
+        raise ValueError(f"Activity pages require: {', '.join('--' + name for name in missing)}")
+    command = [
+        sys.executable, str(ACTIVITY_PIPELINE),
+        "--level", args.level, "--book", args.book,
+        "--physical-page", str(args.physical_page), "--page-number", str(args.page_number),
+        "--activity-type", args.activity_type, "--title", args.title,
+        "--objective", args.objective, "--instruction", args.instruction,
+        "--teacher-prompt", args.teacher_prompt, "--parent-prompt", args.parent_prompt,
+        "--illustration", str(args.illustration),
+    ]
+    if args.page_id:
+        command += ["--page-id", args.page_id]
+    run(command)
+    return 0
 
-    if args.page != "cover":
-        raise ValueError(f"No deterministic {args.page} compositor is registered yet; V5 fails closed")
+
+def run_cover(args: argparse.Namespace) -> int:
     _, level_data, book = resolve_book(args.level, args.book)
     page_id = f"{book['prefix']}-{level_data['id_level']}-V4-P001"
     prompt = illustration_prompt(level_data, book)
-
     prompt_path = WORK / "prompts" / f"{page_id}.illustration.txt"
     candidate_illustration = WORK / "candidates/illustrations" / f"{page_id}.png"
     candidate_page = WORK / "candidates/pages" / f"{page_id}.png"
@@ -174,14 +190,12 @@ def main() -> int:
     evidence_copy = WORK / "evidence" / f"{page_id}.json"
     page_data_copy = WORK / "manifests" / f"{page_id}.page-data.json"
     report_copy = WORK / "reports" / f"{page_id}.render-report.json"
-
     prompt_path.parent.mkdir(parents=True, exist_ok=True)
     prompt_path.write_text(prompt, encoding="utf-8")
     if args.prompt_only:
         print(prompt)
         print(f"Saved: {prompt_path}")
         return 0
-
     source = args.illustration.expanduser().resolve() if args.illustration else None
     stage_candidate(args.provider, source, prompt, candidate_illustration, args.confirm_clean_illustration)
     command = [sys.executable, str(COVER_PIPELINE), "--level", args.level, "--book", args.book,
@@ -191,7 +205,6 @@ def main() -> int:
             raise ValueError("--reviewer is required with --approve")
         command += ["--approve", "--reviewer", args.reviewer]
     run(command)
-
     legacy_page = ROOT / "production-renders/pages" / f"{page_id}.png"
     legacy_evidence = ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
     legacy_page_data = ROOT / "production-renders/page-data" / f"{page_id}.json"
@@ -199,14 +212,12 @@ def main() -> int:
     copy_artifact(legacy_page, candidate_page)
     copy_artifact(legacy_evidence, evidence_copy)
     copy_artifact(legacy_page_data, page_data_copy)
-
     state, active_page = "REVIEW_CANDIDATE", candidate_page
     if args.approve:
         copy_artifact(candidate_illustration, approved_illustration)
         copy_artifact(candidate_page, approved_page)
         copy_artifact(legacy_report, report_copy)
         state, active_page = "PRODUCTION_PASS", approved_page
-
     manifest = write_review_manifest(page_id=page_id, book=args.book, level=args.level, state=state,
                                      provider=args.provider, reviewer=args.reviewer,
                                      paths={"prompt": prompt_path, "candidate_illustration": candidate_illustration,
@@ -219,9 +230,34 @@ def main() -> int:
     return 0
 
 
+def main() -> int:
+    parser = argparse.ArgumentParser(description="BCube Publishing Engine")
+    parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], required=True)
+    parser.add_argument("--book", required=True)
+    parser.add_argument("--page", default="cover", choices=["cover", "activity"])
+    parser.add_argument("--provider", choices=["manual", "openai", "reuse"], default=os.getenv("BCUBE_IMAGE_PROVIDER", "manual"))
+    parser.add_argument("--illustration", type=Path)
+    parser.add_argument("--confirm-clean-illustration", action="store_true")
+    parser.add_argument("--approve", action="store_true")
+    parser.add_argument("--reviewer")
+    parser.add_argument("--prompt-only", action="store_true")
+    parser.add_argument("--physical-page", type=int)
+    parser.add_argument("--page-number", type=int)
+    parser.add_argument("--page-id")
+    parser.add_argument("--activity-type")
+    parser.add_argument("--title")
+    parser.add_argument("--objective")
+    parser.add_argument("--instruction")
+    parser.add_argument("--teacher-prompt")
+    parser.add_argument("--parent-prompt")
+    args = parser.parse_args()
+    resolve_book(args.level, args.book)
+    return run_activity(args) if args.page == "activity" else run_cover(args)
+
+
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except (ValueError, FileNotFoundError, RuntimeError, subprocess.CalledProcessError) as exc:
-        print(f"BCube V5 FAIL: {exc}", file=sys.stderr)
+        print(f"BCube Publishing FAIL: {exc}", file=sys.stderr)
         raise SystemExit(1)
