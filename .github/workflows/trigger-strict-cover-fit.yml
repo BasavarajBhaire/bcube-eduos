@@ -1,0 +1,37 @@
+name: Trigger Strict Cover Fit
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  patch-fix-branch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/strict-cover-illustration-fit
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/_patch_strict_cover_fit.py
+      - run: python bcube-publishing-sdk/composer/compose_nursery_cover.py --self-test
+      - run: python scripts/validate_publishing_sdk.py
+      - name: Remove branch bootstrap files
+        run: |
+          rm -f scripts/_patch_strict_cover_fit.py
+          rm -f .github/workflows/apply-strict-cover-fit.yml
+          rm -f .github/strict-cover-fit-trigger.txt
+      - name: Commit production changes to fix branch
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -A
+          git commit -m "feat(publishing-v5): enforce strict adaptive cover illustration fit"
+          git push origin HEAD:agent/strict-cover-illustration-fit
