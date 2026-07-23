@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 """Generate BCube cover illustrations directly from the prompt workbook.
 
-This pipeline has no OpenAI dependency. It supports:
-- manual prompt export
-- an arbitrary local command provider
-- a local ComfyUI server
-- a deterministic mock provider for CI
-
-It writes individual PNG files, per-image QA reports, a batch manifest, and ZIPs.
+This pipeline has no OpenAI dependency. It supports manual prompt export,
+an arbitrary local command, a local ComfyUI server, and a mock CI provider.
+It writes individual PNGs, QA reports, a batch manifest, and ZIP packages.
 """
 from __future__ import annotations
 
@@ -15,7 +11,6 @@ import argparse
 import hashlib
 import json
 import os
-import shutil
 import subprocess
 import sys
 import time
@@ -29,7 +24,10 @@ from xml.etree import ElementTree as ET
 from PIL import Image, ImageChops, ImageDraw, ImageStat
 
 ROOT = Path(__file__).resolve().parents[1]
-NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main", "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships"}
+NS = {
+    "m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+}
 
 
 def sha256(path: Path) -> str:
@@ -46,6 +44,17 @@ def column_index(reference: str) -> int:
     for ch in letters.upper():
         value = value * 26 + ord(ch) - 64
     return value - 1
+
+
+def resolve_sheet_path(archive: zipfile.ZipFile, target: str) -> str:
+    clean = target.replace("\\", "/").lstrip("/")
+    candidates = [clean]
+    if not clean.startswith("xl/"):
+        candidates.insert(0, "xl/" + clean)
+    for candidate in candidates:
+        if candidate in archive.namelist():
+            return candidate
+    raise ValueError(f"Worksheet XML target not found in workbook: {target}")
 
 
 def read_xlsx_table(path: Path, sheet_name: str) -> list[dict[str, str]]:
@@ -69,14 +78,12 @@ def read_xlsx_table(path: Path, sheet_name: str) -> list[dict[str, str]]:
                 break
         if not target:
             raise ValueError(f"Worksheet {sheet_name!r} not found")
-        sheet_path = "xl/" + target.lstrip("/") if not target.startswith("xl/") else target
-        root = ET.fromstring(archive.read(sheet_path))
+        root = ET.fromstring(archive.read(resolve_sheet_path(archive, target)))
         rows: list[list[str]] = []
         for row in root.findall(".//m:sheetData/m:row", NS):
             values: dict[int, str] = {}
             for cell in row.findall("m:c", NS):
-                ref = cell.attrib.get("r", "A1")
-                idx = column_index(ref)
+                idx = column_index(cell.attrib.get("r", "A1"))
                 cell_type = cell.attrib.get("t")
                 value_node = cell.find("m:v", NS)
                 inline = cell.find("m:is", NS)
@@ -89,8 +96,7 @@ def read_xlsx_table(path: Path, sheet_name: str) -> list[dict[str, str]]:
                     value = value_node.text or ""
                 values[idx] = value
             if values:
-                max_idx = max(values)
-                rows.append([values.get(i, "") for i in range(max_idx + 1)])
+                rows.append([values.get(i, "") for i in range(max(values) + 1)])
     if not rows:
         return []
     headers = [str(value).strip() for value in rows[0]]
@@ -157,7 +163,11 @@ def generate_mock(output: Path, seed_text: str) -> None:
     draw = ImageDraw.Draw(image)
     draw.rounded_rectangle((75, 75, 1179, 1179), radius=110, fill=colour)
     draw.ellipse((300, 260, 954, 914), fill=(255, 255, 255))
-    draw.rounded_rectangle((420, 480, 834, 1000), radius=70, fill=tuple(min(255, c + 35) for c in colour))
+    draw.rounded_rectangle(
+        (420, 480, 834, 1000),
+        radius=70,
+        fill=tuple(min(255, channel + 35) for channel in colour),
+    )
     image.save(output, "PNG", dpi=(300, 300))
 
 
@@ -171,11 +181,22 @@ def generate_command(command: str, prompt: str, output: Path, page_id: str) -> N
         raise FileNotFoundError(f"Local generator did not create {output}")
 
 
-def generate_comfyui(server: str, workflow_path: Path, prompt: str, output: Path, page_id: str, timeout: int) -> None:
+def generate_comfyui(
+    server: str,
+    workflow_path: Path,
+    prompt: str,
+    output: Path,
+    page_id: str,
+    timeout: int,
+) -> None:
     workflow = json.loads(workflow_path.read_text(encoding="utf-8"))
     raw = json.dumps(workflow).replace("{{BCUBE_PROMPT}}", prompt).replace("{{BCUBE_PAGE_ID}}", page_id)
     payload = json.dumps({"prompt": json.loads(raw)}).encode("utf-8")
-    request = urllib.request.Request(server.rstrip("/") + "/prompt", data=payload, headers={"Content-Type": "application/json"})
+    request = urllib.request.Request(
+        server.rstrip("/") + "/prompt",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+    )
     with urllib.request.urlopen(request, timeout=30) as response:
         prompt_id = json.loads(response.read().decode("utf-8"))["prompt_id"]
     deadline = time.time() + timeout
@@ -186,11 +207,13 @@ def generate_comfyui(server: str, workflow_path: Path, prompt: str, output: Path
         if entry:
             for node in entry.get("outputs", {}).values():
                 for image in node.get("images", []):
-                    params = urllib.parse.urlencode({
-                        "filename": image["filename"],
-                        "subfolder": image.get("subfolder", ""),
-                        "type": image.get("type", "output"),
-                    })
+                    params = urllib.parse.urlencode(
+                        {
+                            "filename": image["filename"],
+                            "subfolder": image.get("subfolder", ""),
+                            "type": image.get("type", "output"),
+                        }
+                    )
                     output.parent.mkdir(parents=True, exist_ok=True)
                     urllib.request.urlretrieve(server.rstrip("/") + "/view?" + params, output)
                     return
@@ -259,17 +282,32 @@ def main() -> int:
         if args.resume and output.is_file():
             qa = validate_image(output, args.min_occupancy)
             if qa["status"] == "PASS":
-                results.append({"level": level, "book": slug, "page_id": page_id, "state": "SKIPPED_APPROVED", "qa": qa})
+                results.append(
+                    {
+                        "level": level,
+                        "book": slug,
+                        "page_id": page_id,
+                        "state": "SKIPPED_APPROVED",
+                        "qa": qa,
+                    }
+                )
                 continue
 
         if args.provider == "manual":
-            item = {"level": level, "book": slug, "page_id": page_id, "state": "MANUAL_REQUIRED", "prompt": str(prompt_file), "expected_output": str(output)}
+            item = {
+                "level": level,
+                "book": slug,
+                "page_id": page_id,
+                "state": "MANUAL_REQUIRED",
+                "prompt": str(prompt_file),
+                "expected_output": str(output),
+            }
             report_file.parent.mkdir(parents=True, exist_ok=True)
             report_file.write_text(json.dumps(item, indent=2) + "\n", encoding="utf-8")
             results.append(item)
             continue
 
-        item: dict[str, Any] | None = None
+        item = None
         error = None
         for attempt in range(1, args.max_retries + 2):
             try:
@@ -278,16 +316,38 @@ def main() -> int:
                 elif args.provider == "command":
                     generate_command(args.command or "", prompt, output, page_id)
                 else:
-                    generate_comfyui(args.comfyui_server, args.workflow or Path(), prompt, output, page_id, args.timeout)
+                    generate_comfyui(
+                        args.comfyui_server,
+                        args.workflow or Path(),
+                        prompt,
+                        output,
+                        page_id,
+                        args.timeout,
+                    )
                 qa = validate_image(output, args.min_occupancy)
                 state = "APPROVED" if qa["status"] == "PASS" else "REJECTED"
-                item = {"level": level, "book": slug, "page_id": page_id, "state": state, "attempt": attempt, "qa": qa, "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest()}
+                item = {
+                    "level": level,
+                    "book": slug,
+                    "page_id": page_id,
+                    "state": state,
+                    "attempt": attempt,
+                    "qa": qa,
+                    "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
+                }
                 if state == "APPROVED":
                     break
                 error = ", ".join(qa.get("defects", []))
             except Exception as exc:
                 error = str(exc)
-                item = {"level": level, "book": slug, "page_id": page_id, "state": "FAILED", "attempt": attempt, "error": error}
+                item = {
+                    "level": level,
+                    "book": slug,
+                    "page_id": page_id,
+                    "state": "FAILED",
+                    "attempt": attempt,
+                    "error": error,
+                }
         assert item is not None
         item["error"] = error
         report_file.parent.mkdir(parents=True, exist_ok=True)
@@ -322,17 +382,23 @@ def main() -> int:
         images_zip = batch_root / f"{batch_name}-ILLUSTRATIONS.zip"
         write_zip(images_root, images_zip)
 
-    print(json.dumps({
-        "status": "PASS" if failed == 0 and (not args.require_complete or summary["complete"]) else "FAIL",
-        "batch_root": str(batch_root),
-        "manifest": str(manifest),
-        "prompt_zip": str(prompt_zip),
-        "illustration_zip": str(images_zip) if images_zip else None,
-        "selected": len(selected),
-        "approved": approved,
-        "manual_required": manual,
-        "failed": failed,
-    }, indent=2))
+    status = "PASS" if failed == 0 and (not args.require_complete or summary["complete"]) else "FAIL"
+    print(
+        json.dumps(
+            {
+                "status": status,
+                "batch_root": str(batch_root),
+                "manifest": str(manifest),
+                "prompt_zip": str(prompt_zip),
+                "illustration_zip": str(images_zip) if images_zip else None,
+                "selected": len(selected),
+                "approved": approved,
+                "manual_required": manual,
+                "failed": failed,
+            },
+            indent=2,
+        )
+    )
     if failed or (args.require_complete and not summary["complete"]):
         return 2
     return 0
@@ -341,6 +407,12 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except (ValueError, FileNotFoundError, subprocess.CalledProcessError, TimeoutError, zipfile.BadZipFile) as exc:
+    except (
+        ValueError,
+        FileNotFoundError,
+        subprocess.CalledProcessError,
+        TimeoutError,
+        zipfile.BadZipFile,
+    ) as exc:
         print(f"BCube Excel illustration automation ERROR: {exc}", file=sys.stderr)
         raise SystemExit(2)
