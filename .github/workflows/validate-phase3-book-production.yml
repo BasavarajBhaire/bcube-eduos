@@ -30,12 +30,32 @@ jobs:
       - name: Compile Phase 3 engine
         run: python -m py_compile bcube-publishing-sdk/composer/compose_completion_pages.py scripts/run_bcube_completion_pipeline.py scripts/build_bcube_book.py scripts/bcube_batch_publish.py
       - name: Build Nursery certificate
-        run: python scripts/run_bcube_completion_pipeline.py --level nursery --book communication-champions --page certificate
+        id: nursery_certificate
+        continue-on-error: true
+        run: |
+          python scripts/run_bcube_completion_pipeline.py --level nursery --book communication-champions --page certificate > phase3-nursery.log 2>&1
+      - name: Upload Nursery diagnostic
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase3-nursery-diagnostic
+          path: phase3-nursery.log
+      - name: Fail when Nursery certificate failed
+        if: steps.nursery_certificate.outcome == 'failure'
+        run: |
+          cat phase3-nursery.log
+          exit 1
       - name: Build LKG back cover
         run: python scripts/run_bcube_completion_pipeline.py --level lkg --book early-maths-adventures --page back-cover
       - name: Build UKG certificate
         run: python scripts/run_bcube_completion_pipeline.py --level ukg --book young-scientists --page certificate
       - name: Create contiguous A4 test sequence
+        run: |
+          python - <<'PY'
+          from pathlib import import Path
+          PY
+        continue-on-error: true
+      - name: Create valid contiguous A4 test sequence
         run: |
           python - <<'PY'
           from pathlib import Path
