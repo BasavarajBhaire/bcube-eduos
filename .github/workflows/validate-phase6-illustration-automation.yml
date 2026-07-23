@@ -1,0 +1,61 @@
+name: Validate Phase 6 Illustration Automation
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_generate_illustrations.py'
+      - 'scripts/bcube_generate_illustration_portfolio.py'
+      - 'docs/BCube_Illustration_Automation_Phase6.md'
+      - '.github/workflows/validate-phase6-illustration-automation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/bcube_generate_illustrations.py'
+      - 'scripts/bcube_generate_illustration_portfolio.py'
+      - '.github/workflows/validate-phase6-illustration-automation.yml'
+
+jobs:
+  validate-phase6:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Phase 6 tools
+        run: python -m py_compile scripts/bcube_generate_illustrations.py scripts/bcube_generate_illustration_portfolio.py
+      - name: Create deterministic prompt fixture
+        run: |
+          mkdir -p production-prompts/communication-champions/nursery/v4/pages
+          cat > production-prompts/communication-champions/nursery/v4/pages/CC-NURSERY-V4-P999.json <<'JSON'
+          {
+            "page_id": "CC-NURSERY-V4-P999",
+            "illustration_prompt": "Create a clean text-free preschool activity illustration on a pure white background. No logo. No mascot."
+          }
+          JSON
+      - name: Run local mock provider and QA
+        run: |
+          python scripts/bcube_generate_illustrations.py \
+            --level nursery \
+            --book communication-champions \
+            --page-id CC-NURSERY-V4-P999 \
+            --provider mock \
+            --require-square
+      - name: Verify approved queue and evidence
+        run: |
+          test -f illustration-engine/queue/approved/nursery/communication-champions/CC-NURSERY-V4-P999.png
+          test -f illustration-engine/reports/nursery/communication-champions/CC-NURSERY-V4-P999.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path('illustration-engine/reports/nursery/communication-champions/CC-NURSERY-V4-P999.json').read_text())
+          assert report['state']=='APPROVED'
+          assert report['qa']['status']=='PASS'
+          assert report['qa']['occupancy'] >= 0.55
+          PY
+      - name: Validate manual dry-run and portfolio CLI
+        run: |
+          python scripts/bcube_generate_illustrations.py --level nursery --book communication-champions --page-id CC-NURSERY-V4-P999 --provider manual --dry-run
+          python scripts/bcube_generate_illustration_portfolio.py --help
