@@ -37,6 +37,8 @@ jobs:
           registry = json.loads(Path('bcube-publishing-sdk/books/nursery-books.json').read_text(encoding='utf-8'))
           assert registry['defaults']['level'] == 'Nursery'
           assert len(registry['defaults']['pillars']) == 5
+          assert registry['defaults']['official_logo_candidates'][0].startswith('BCube_Gold_Production_v4/OFFICIAL_ASSETS/')
+          assert registry['defaults']['official_star_candidates'][0].startswith('BCube_Gold_Production_v4/OFFICIAL_ASSETS/')
           for slug, book in registry['books'].items():
               assert len(book['title_lines']) == 2, slug
               assert len(book['skills']) == 6, slug
@@ -44,6 +46,22 @@ jobs:
           print('Nursery book registry validation passed')
           PY
       - name: Test deterministic Nursery cover compositor
-        run: python bcube-publishing-sdk/composer/compose_nursery_cover.py --self-test
+        run: python bcube-publishing-sdk/composer/compose_nursery_cover_strict.py --self-test
+      - name: Test V5.1 adaptive occupancy scaling
+        run: |
+          python - <<'PY'
+          import importlib.util
+          from pathlib import Path
+          p = Path('bcube-publishing-sdk/composer/compose_nursery_cover_strict.py')
+          spec = importlib.util.spec_from_file_location('strict_cover', p)
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          w, h, scale, occupancy = module._adaptive_dimensions(1448, 1086, 1630, 1690, 0.70)
+          assert occupancy >= 0.70, occupancy
+          assert w <= round(1630 * 1.06), w
+          assert h <= round(1690 * 1.06), h
+          assert scale > 0
+          print({'rendered': [w, h], 'scale': scale, 'occupancy': occupancy})
+          PY
       - name: Check smart pipeline help
         run: python scripts/run_bcube_cover_pipeline.py --help
