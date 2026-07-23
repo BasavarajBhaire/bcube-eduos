@@ -1,5 +1,5 @@
 {
-  "template_id": "BCUBE-NURSERY-COVER-V1.2",
+  "template_id": "BCUBE-NURSERY-COVER-V1.3",
   "canvas": {
     "width": 2480,
     "height": 3508,
@@ -30,13 +30,13 @@
     "illustration_text_allowed": false,
     "illustration_branding_allowed": false,
     "official_star_generated": false,
-    "illustration_placement": "contain-trimmed-bottom",
-    "illustration_safe_inset": 28,
+    "illustration_placement": "strict-adaptive-trim-bottom",
+    "illustration_safe_inset": 20,
     "illustration_trim_near_white": true,
     "illustration_trim_padding": 12,
     "illustration_vertical_align": "bottom",
     "illustration_crop_allowed": false,
-    "illustration_min_occupancy_ratio": 0.55,
+    "illustration_min_occupancy_ratio": 0.70,
     "official_star_anchor": "bottom-right",
     "official_star_required": true,
     "skill_count": 6,

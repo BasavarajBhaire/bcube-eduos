@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""Run the deterministic BCube Nursery cover pipeline.
-
-Smart mode builds page data from the book registry. Candidate composition is
-separate from final approval and evidence-based QA. Inputs fail closed before
-composition when the illustration source changes or the official Star is not a
-standalone visible transparent asset.
-"""
+"""Run the deterministic BCube Nursery cover pipeline."""
 from __future__ import annotations
 
 import argparse
@@ -20,7 +14,7 @@ from typing import Any
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover_v12.py"
+COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_nursery_cover_strict.py"
 FINALIZER = ROOT / "bcube-publishing-sdk/composer/finalize_cover_evidence.py"
 PREFLIGHT = ROOT / "bcube-publishing-sdk/validators/validate_cover_inputs.py"
 VALIDATOR = ROOT / "scripts/validate_rendered_page.py"
@@ -59,11 +53,10 @@ def valid_image(path: Path) -> bool:
 
 
 def repo_relative(path: Path) -> str:
-    resolved = path.resolve()
     try:
-        return resolved.relative_to(ROOT.resolve()).as_posix()
+        return path.resolve().relative_to(ROOT.resolve()).as_posix()
     except ValueError as exc:
-        raise ValueError(f"Input must be inside the repository after staging: {resolved}") from exc
+        raise ValueError(f"Input must be inside the repository after staging: {path}") from exc
 
 
 def find_asset(candidates: list[str], label: str) -> Path:
@@ -146,7 +139,7 @@ def build_smart_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
             "contains_embedded_page": False,
         },
         "text_evidence": {
-            "detector": {"name": "bcube-composer-known-text", "version": "1.2"},
+            "detector": {"name": "bcube-composer-known-text", "version": "1.3"},
             "detected_text": book["required_detected_text"],
         },
         "human_approval": human,
@@ -182,21 +175,17 @@ def main() -> int:
 
     for path in (output, evidence, report):
         path.parent.mkdir(parents=True, exist_ok=True)
+        path.unlink(missing_ok=True)
 
     page_data = load_json(data)
     staged_illustration = ROOT / page_data["illustration_path"]
     preflight_report = ROOT / "validation/rendered-pages" / f"{page_data['page_id']}.input-report.json"
+    preflight_report.unlink(missing_ok=True)
     run([
-        sys.executable,
-        str(PREFLIGHT),
-        "--page-data",
-        str(data),
-        "--expected-illustration-sha256",
-        sha256(staged_illustration),
-        "--output",
-        str(preflight_report),
+        sys.executable, str(PREFLIGHT), "--page-data", str(data),
+        "--expected-illustration-sha256", sha256(staged_illustration),
+        "--output", str(preflight_report),
     ])
-
     run([sys.executable, str(COMPOSER), "--data", str(data), "--output", str(output), "--evidence-output", str(evidence)])
     run([sys.executable, str(FINALIZER), "--evidence", str(evidence)])
     if args.book and not args.approve:
