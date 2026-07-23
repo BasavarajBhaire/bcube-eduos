@@ -1,0 +1,65 @@
+name: Validate Phase 5 Commercial Publishing
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_publish_portfolio.py'
+      - 'scripts/bcube_verify_release.py'
+      - 'scripts/bcube_bundle_catalog.py'
+      - 'docs/BCube_Publishing_Engine_Phase5.md'
+      - '.github/workflows/validate-phase5-commercial-publishing.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/bcube_publish_portfolio.py'
+      - 'scripts/bcube_verify_release.py'
+      - 'scripts/bcube_bundle_catalog.py'
+      - '.github/workflows/validate-phase5-commercial-publishing.yml'
+
+jobs:
+  validate-phase5:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Phase 5 tools
+        run: python -m py_compile scripts/bcube_publish_portfolio.py scripts/bcube_verify_release.py scripts/bcube_bundle_catalog.py
+      - name: Create complete 44-page fixture
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageDraw
+          root=Path('production-renders/pages')
+          root.mkdir(parents=True,exist_ok=True)
+          for n in range(1,45):
+              path=root/f'CC-NURSERY-V4-P{n:03d}.png'
+              image=Image.new('RGB',(2480,3508),'white')
+              ImageDraw.Draw(image).text((120,120),f'Phase 5 test page {n}',fill='black')
+              image.save(path,'PNG',dpi=(300,300))
+          PY
+      - name: Run approved one-book portfolio publish
+        run: python scripts/bcube_publish_portfolio.py --level nursery --book communication-champions --approve --reviewer "CI Reviewer"
+      - name: Verify release directly
+        run: python scripts/bcube_verify_release.py --release-dir production-releases/nursery/communication-champions/v4
+      - name: Build partial Nursery catalog
+        run: python scripts/bcube_bundle_catalog.py --level nursery
+      - name: Verify Phase 5 outputs
+        run: |
+          test -f production-releases/portfolio-run.json
+          test -f production-releases/nursery/communication-champions/v4/phase5.verify.json
+          test -f production-releases/catalog/BCUBE-NURSERY-COMMERCIAL-CATALOG-V4.zip
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          state=json.loads(Path('production-releases/portfolio-run.json').read_text())
+          assert state['status']=='PASS'
+          assert state['summary']['passed']==1
+          verify=json.loads(Path('production-releases/nursery/communication-champions/v4/phase5.verify.json').read_text())
+          assert verify['status']=='PASS'
+          PY
+      - name: Check dry-run across all books
+        run: python scripts/bcube_publish_portfolio.py --level all --dry-run --state-file production-releases/dry-run.json
