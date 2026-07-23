@@ -9,10 +9,11 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_front_matter.py"
-LOGO = "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Logo.png"
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -22,7 +23,26 @@ def load(path: Path) -> dict[str, Any]:
     return value
 
 
-def resolve(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any]]:
+def valid_image(path: Path) -> bool:
+    if not path.is_file():
+        return False
+    try:
+        with Image.open(path) as image:
+            image.verify()
+        return True
+    except Exception:
+        return False
+
+
+def resolve_logo(registry: dict[str, Any]) -> str:
+    candidates = registry.get("shared", {}).get("official_logo_candidates", [])
+    for candidate in candidates:
+        if valid_image(ROOT / candidate):
+            return candidate
+    raise FileNotFoundError("No valid official BCube logo found in shared registry candidates")
+
+
+def resolve(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     registry = load(REGISTRY)
     level_data = registry.get("levels", {}).get(level)
     if not isinstance(level_data, dict):
@@ -30,7 +50,7 @@ def resolve(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any]]:
     book = level_data.get("books", {}).get(slug)
     if not isinstance(book, dict):
         raise ValueError(f"Unknown {level.upper()} book {slug!r}")
-    return level_data, book
+    return registry, level_data, book
 
 
 def prompt_manifest(level: str, slug: str) -> Path:
@@ -57,7 +77,7 @@ def contents_entries(level: str, slug: str) -> list[dict[str, Any]]:
 
 
 def build_data(level: str, slug: str, page_type: str) -> tuple[Path, Path, Path]:
-    level_data, book = resolve(level, slug)
+    registry, level_data, book = resolve(level, slug)
     physical = {"about": 2, "publisher": 3, "contents": 4}[page_type]
     page_id = f"{book['prefix']}-{level_data['id_level']}-V4-P{physical:03d}"
     title = " ".join(book["title_lines"])
@@ -68,7 +88,7 @@ def build_data(level: str, slug: str, page_type: str) -> tuple[Path, Path, Path]
         "level": level_data["display_level"],
         "age": level_data["age"],
         "series": "BCube Future Skills Learning Series™",
-        "logo_path": LOGO,
+        "logo_path": resolve_logo(registry),
     }
     if page_type == "about":
         data["paragraphs"] = [
@@ -102,7 +122,8 @@ def main() -> int:
     parser.add_argument("--page", choices=["about", "publisher", "contents"], required=True)
     args = parser.parse_args()
     data, output, evidence = build_data(args.level, args.book, args.page)
-    subprocess.run([sys.executable, str(COMPOSER), "--data", str(data), "--output", str(output), "--evidence-output", str(evidence)], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(COMPOSER), "--data", str(data), "--output", str(output),
+                    "--evidence-output", str(evidence)], cwd=ROOT, check=True)
     print(f"BCube V6 front matter COMPOSED: {output}")
     return 0
 
