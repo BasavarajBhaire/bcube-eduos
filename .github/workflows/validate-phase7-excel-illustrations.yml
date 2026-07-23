@@ -1,0 +1,60 @@
+name: Validate Phase 7 Excel Illustration Batch
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_generate_from_excel.py'
+      - 'docs/PHASE_7_EXCEL_ILLUSTRATION_AUTOMATION.md'
+      - '.github/workflows/validate-phase7-excel-illustrations.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-phase7:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: python -m pip install pillow openpyxl
+      - name: Compile automation
+        run: python -m py_compile scripts/bcube_generate_from_excel.py
+      - name: Create workbook fixture
+        run: |
+          python - <<'PY'
+          from openpyxl import Workbook
+          wb = Workbook()
+          ws = wb.active
+          ws.title = 'Complete Book List'
+          ws.append(['Level','Book Slug','Cover Page ID','Full Cover Illustration Prompt'])
+          ws.append(['Nursery','communication-champions','CC-NURSERY-V4-P001','Create a distinctive text-free communication scene on white.'])
+          ws.append(['LKG','early-maths-adventures','EM-LKG-V4-P001','Create a distinctive text-free maths market scene on white.'])
+          ws.append(['UKG','young-scientists','YS-UKG-V4-P001','Create a distinctive text-free science discovery scene on white.'])
+          wb.save('/tmp/bcube-phase7.xlsx')
+          PY
+      - name: Generate and validate all fixture images
+        run: |
+          python scripts/bcube_generate_from_excel.py \
+            --workbook /tmp/bcube-phase7.xlsx \
+            --level all \
+            --provider mock \
+            --output-root /tmp/bcube-phase7-output \
+            --batch-name ci \
+            --require-complete
+      - name: Verify individual images, manifest and ZIP
+        run: |
+          test -f /tmp/bcube-phase7-output/ci/images/nursery/communication-champions/CC-NURSERY-V4-P001.png
+          test -f /tmp/bcube-phase7-output/ci/images/lkg/early-maths-adventures/EM-LKG-V4-P001.png
+          test -f /tmp/bcube-phase7-output/ci/images/ukg/young-scientists/YS-UKG-V4-P001.png
+          test -f /tmp/bcube-phase7-output/ci/batch-manifest.json
+          test -f /tmp/bcube-phase7-output/ci/ci-PROMPTS.zip
+          test -f /tmp/bcube-phase7-output/ci/ci-ILLUSTRATIONS.zip
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('/tmp/bcube-phase7-output/ci/batch-manifest.json').read_text())
+          assert data['selected'] == 3
+          assert data['approved'] == 3
+          assert data['complete'] is True
+          PY
