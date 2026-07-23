@@ -44,7 +44,8 @@ def sha256(path: Path) -> str:
 
 def collect(level: str, slug: str, pages_dir: Path) -> tuple[str, list[Path]]:
     level_data, book = resolve(level, slug)
-    stem = f"{book['prefix']}-{level_data['id_level']}-V4-P"
+    book_key = f"{book['prefix']}-{level_data['id_level']}-V4"
+    stem = f'{book_key}-P'
     pages = sorted(pages_dir.glob(f'{stem}*.png'))
     if not pages:
         raise FileNotFoundError(f'No rendered pages found for {level}/{slug} in {pages_dir}')
@@ -58,7 +59,7 @@ def collect(level: str, slug: str, pages_dir: Path) -> tuple[str, list[Path]]:
             raise ValueError(f'Duplicate physical page {physical}: {parsed[physical]} and {path}')
         parsed[physical] = path
     ordered = [parsed[key] for key in sorted(parsed)]
-    return stem[:-1], ordered
+    return book_key, ordered
 
 
 def validate_pages(paths: list[Path], require_complete: bool) -> dict[str, Any]:
@@ -106,7 +107,7 @@ def main() -> int:
     output = args.output or ROOT / 'production-renders/books' / f'{book_key}.pdf'
     manifest = args.manifest or ROOT / 'production-renders/books' / f'{book_key}.manifest.json'
     assemble(paths, output)
-    report.update({'status': 'PASS', 'level': args.level, 'book': args.book, 'pdf': str(output), 'pdf_sha256': sha256(output)})
+    report.update({'status': 'PASS', 'level': args.level, 'book': args.book, 'book_id': book_key, 'pdf': str(output), 'pdf_sha256': sha256(output)})
     manifest.parent.mkdir(parents=True, exist_ok=True)
     manifest.write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'status': 'PASS', 'pdf': str(output), 'manifest': str(manifest), 'page_count': report['page_count']}, indent=2))
