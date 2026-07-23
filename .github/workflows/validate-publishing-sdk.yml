@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'bcube-publishing-sdk/**'
+      - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_cover_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - 'bcube-publishing-sdk/**'
+      - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_cover_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
@@ -26,26 +28,45 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Compile SDK and pipeline
-        run: python -m py_compile bcube-publishing-sdk/composer/*.py bcube-publishing-sdk/validators/*.py scripts/run_bcube_cover_pipeline.py
+        run: python -m py_compile bcube-publishing-sdk/composer/*.py bcube-publishing-sdk/validators/*.py scripts/bcube_publish.py scripts/run_bcube_cover_pipeline.py
       - name: Validate SDK contracts
         run: python bcube-publishing-sdk/validators/validate_sdk.py
-      - name: Validate Nursery book registry
+      - name: Validate Nursery LKG UKG cover registry
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          registry = json.loads(Path('bcube-publishing-sdk/books/nursery-books.json').read_text(encoding='utf-8'))
-          assert registry['defaults']['level'] == 'Nursery'
-          assert len(registry['defaults']['pillars']) == 5
-          assert registry['defaults']['official_logo_candidates'][0].startswith('BCube_Gold_Production_v4/OFFICIAL_ASSETS/')
-          assert registry['defaults']['official_star_candidates'][0].startswith('BCube_Gold_Production_v4/OFFICIAL_ASSETS/')
-          for slug, book in registry['books'].items():
-              assert len(book['title_lines']) == 2, slug
-              assert len(book['skills']) == 6, slug
-              assert book['page_id'].endswith('P001'), slug
-          print('Nursery book registry validation passed')
+
+          registry = json.loads(Path('bcube-publishing-sdk/books/cover-books.json').read_text(encoding='utf-8'))
+          shared = registry['shared']
+          assert len(shared['pillars']) == 5
+          assert shared['official_logo_candidates'][0].startswith('BCube_Gold_Production_v4/OFFICIAL_ASSETS/')
+          assert shared['official_star_candidates'][0].startswith('BCube_Gold_Production_v4/OFFICIAL_ASSETS/')
+          expected = {'nursery': ('Nursery', '3+', 'NURSERY'), 'lkg': ('LKG', '4+', 'LKG'), 'ukg': ('UKG', '5+', 'UKG')}
+          total = 0
+          page_ids = set()
+          for level, (display, age, id_level) in expected.items():
+              data = registry['levels'][level]
+              assert (data['display_level'], data['age'], data['id_level']) == (display, age, id_level)
+              assert len(data['books']) == 10, (level, len(data['books']))
+              for slug, book in data['books'].items():
+                  assert len(book['title_lines']) == 2, (level, slug)
+                  assert len(book['skills']) == 6, (level, slug)
+                  assert len(book['skill_icon_keys']) == 6, (level, slug)
+                  assert book['prefix'], (level, slug)
+                  page_id = f"{book['prefix']}-{id_level}-V4-P001"
+                  assert page_id not in page_ids, page_id
+                  page_ids.add(page_id)
+                  total += 1
+          assert total == 30, total
+          print(f'Unified cover registry validation passed: {total} books')
           PY
-      - name: Test deterministic Nursery cover compositor
+      - name: Test registry-driven prompt discovery
+        run: |
+          python scripts/bcube_publish.py --level nursery --book curiosity-explorers --page cover --prompt-only
+          python scripts/bcube_publish.py --level lkg --book early-maths-adventures --page cover --prompt-only
+          python scripts/bcube_publish.py --level ukg --book young-scientists --page cover --prompt-only
+      - name: Test deterministic cover compositor
         run: python bcube-publishing-sdk/composer/compose_nursery_cover_strict.py --self-test
       - name: Test V5.1 adaptive occupancy scaling
         run: |
@@ -56,29 +77,13 @@ jobs:
           spec = importlib.util.spec_from_file_location('strict_cover', p)
           module = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(module)
-
-          cases = [
-              (1448, 1086, 1630, 1690, 0.70),
-              (1280, 960, 1630, 1690, 0.70),
-              (1024, 1024, 1630, 1690, 0.70),
-          ]
+          cases = [(1448,1086,1630,1690,0.70),(1280,960,1630,1690,0.70),(1024,1024,1630,1690,0.70)]
           for source_w, source_h, target_w, target_h, minimum in cases:
-              w, h, scale, occupancy = module._adaptive_dimensions(
-                  source_w, source_h, target_w, target_h, minimum
-              )
-              assert occupancy + module.OCCUPANCY_EPSILON >= minimum, (
-                  source_w, source_h, w, h, occupancy
-              )
-              assert w <= round(target_w * (1 + module.MAX_SAFE_OVERFLOW)), w
-              assert h <= round(target_h * (1 + module.MAX_SAFE_OVERFLOW)), h
+              w, h, scale, occupancy = module._adaptive_dimensions(source_w, source_h, target_w, target_h, minimum)
+              assert occupancy + module.OCCUPANCY_EPSILON >= minimum
+              assert w <= round(target_w * (1 + module.MAX_SAFE_OVERFLOW))
+              assert h <= round(target_h * (1 + module.MAX_SAFE_OVERFLOW))
               assert scale > 0
-              print({'source': [source_w, source_h], 'rendered': [w, h], 'scale': scale, 'occupancy': occupancy})
-
-          # Regression: an occupancy that formats as 0.700 must never fail because
-          # integer rasterisation placed it microscopically below the boundary.
-          w, h, _, occupancy = module._adaptive_dimensions(1448, 1086, 1630, 1690, 0.70)
-          assert f'{occupancy:.3f}' == '0.700' or occupancy > 0.70
-          assert occupancy + module.OCCUPANCY_EPSILON >= 0.70
           PY
       - name: Check smart pipeline help
         run: python scripts/run_bcube_cover_pipeline.py --help
