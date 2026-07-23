@@ -1,0 +1,123 @@
+name: Validate OpenAI Illustration Provider
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/bcube_openai_illustrations.py'
+      - 'scripts/bcube_preview_illustrations.py'
+      - 'docs/BCUBE_OPENAI_ILLUSTRATION_PROVIDER.md'
+      - '.github/workflows/validate-openai-illustration-provider.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-openai-provider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: python -m pip install pillow openpyxl
+      - name: Compile provider
+        run: |
+          python -m py_compile scripts/bcube_openai_illustrations.py
+          python -m py_compile scripts/bcube_preview_illustrations.py
+      - name: Create one-row workbook
+        run: |
+          python - <<'PY'
+          from openpyxl import Workbook
+          wb = Workbook()
+          ws = wb.active
+          ws.title = 'Complete Book List'
+          ws.append(['Level','Age','Book Slug','Book Title','Prefix','Cover Page ID','Illustration Prompt ID','Tagline','Six Skills','Footer Keywords','Full Cover Illustration Prompt'])
+          ws.append(['Nursery','3+','communication-champions','Communication Champions','CC','CC-NURSERY-V4-P001','CC-NURSERY-V5-COVER-ILLUSTRATION','','','','Distinctive communication illustration, pure white background, no text.'])
+          wb.save('/tmp/bcube-openai-prompts.xlsx')
+          PY
+      - name: Start fake OpenAI Images API
+        run: |
+          cat > /tmp/fake_openai.py <<'PY'
+          import base64, io, json
+          from http.server import BaseHTTPRequestHandler, HTTPServer
+          from PIL import Image, ImageDraw
+
+          image = Image.new('RGB', (1024, 1024), 'white')
+          draw = ImageDraw.Draw(image)
+          draw.rounded_rectangle((60, 60, 964, 964), radius=100, fill=(80, 160, 220))
+          buffer = io.BytesIO()
+          image.save(buffer, 'PNG', dpi=(300, 300))
+          encoded = base64.b64encode(buffer.getvalue()).decode('ascii')
+
+          class Handler(BaseHTTPRequestHandler):
+              def do_POST(self):
+                  length = int(self.headers.get('content-length', '0'))
+                  payload = json.loads(self.rfile.read(length) or b'{}')
+                  assert self.path == '/v1/images/generations'
+                  assert payload['model'] == 'gpt-image-1'
+                  assert payload['size'] == '1024x1024'
+                  assert payload['background'] == 'opaque'
+                  body = json.dumps({'data': [{'b64_json': encoded}], 'usage': {'total_tokens': 123}}).encode()
+                  self.send_response(200)
+                  self.send_header('content-type', 'application/json')
+                  self.send_header('x-request-id', 'req_bcube_ci')
+                  self.send_header('content-length', str(len(body)))
+                  self.end_headers()
+                  self.wfile.write(body)
+              def log_message(self, *args):
+                  pass
+
+          HTTPServer(('127.0.0.1', 8765), Handler).serve_forever()
+          PY
+          python /tmp/fake_openai.py > /tmp/fake-openai.log 2>&1 &
+          echo $! > /tmp/fake-openai.pid
+      - name: Generate bounded OpenAI preview
+        env:
+          OPENAI_API_KEY: test-key-not-real
+        run: |
+          python scripts/bcube_preview_illustrations.py \
+            --workbook /tmp/bcube-openai-prompts.xlsx \
+            --level nursery \
+            --preview 1 \
+            --provider openai \
+            --openai-base-url http://127.0.0.1:8765/v1 \
+            --cost-per-image 0.25 \
+            --max-budget-usd 0.25 \
+            --batch-name openai-preview-ci \
+            --output-root /tmp/bcube-openai-output
+      - name: Verify provider evidence and cost gate
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('/tmp/bcube-openai-output/openai-preview-ci')
+          batch = json.loads((root / 'batch-manifest.json').read_text())
+          gate = json.loads((root / 'preview-gate.json').read_text())
+          assert batch['provider'] == 'openai'
+          assert batch['model'] == 'gpt-image-1'
+          assert batch['selected'] == 1
+          assert batch['approved'] == 1
+          assert batch['estimated_maximum_cost_usd'] == 0.25
+          assert batch['estimated_cost_usd'] == 0.25
+          assert gate['full_run_authorized'] is False
+          assert gate['provider'] == 'openai'
+          assert len(list((root / 'images').rglob('*.png'))) == 1
+          assert (root / 'illustration-review.html').is_file()
+          print('BCube OpenAI illustration provider validation PASS')
+          PY
+      - name: Verify pre-request budget rejection
+        env:
+          OPENAI_API_KEY: test-key-not-real
+        run: |
+          set +e
+          python scripts/bcube_openai_illustrations.py \
+            --workbook /tmp/bcube-openai-prompts.xlsx \
+            --level nursery \
+            --base-url http://127.0.0.1:8765/v1 \
+            --cost-per-image 0.25 \
+            --max-retries 1 \
+            --max-budget-usd 0.40 \
+            --batch-name budget-reject-ci \
+            --output-root /tmp/bcube-openai-output
+          code=$?
+          test "$code" -eq 2
+          test ! -e /tmp/bcube-openai-output/budget-reject-ci/images
