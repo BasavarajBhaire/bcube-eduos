@@ -62,20 +62,28 @@ def wrap_text(draw: ImageDraw.ImageDraw, text: str, active_font: ImageFont.FreeT
 
 
 def fit_text(draw: ImageDraw.ImageDraw, text: str, box: tuple[int, int, int, int], max_size: int,
-             colour: str, *, bold: bool = False, min_size: int = 24) -> None:
+             colour: str, *, bold: bool = False, min_size: int = 14) -> None:
     x0, y0, x1, y1 = box
     max_width = x1 - x0
     max_height = y1 - y0
+    last_wrapped = str(text)
+    last_font = font(min_size, bold)
+    last_bounds = draw.multiline_textbbox((0, 0), last_wrapped, font=last_font, spacing=8, align='center')
     for size in range(max_size, min_size - 1, -2):
         active = font(size, bold)
+        spacing = max(6, size // 5)
         wrapped = wrap_text(draw, text, active, max_width)
-        bounds = draw.multiline_textbbox((0, 0), wrapped, font=active, spacing=12, align='center')
+        bounds = draw.multiline_textbbox((0, 0), wrapped, font=active, spacing=spacing, align='center')
         w, h = bounds[2] - bounds[0], bounds[3] - bounds[1]
+        last_wrapped, last_font, last_bounds = wrapped, active, bounds
         if w <= max_width and h <= max_height:
             draw.multiline_text((x0 + (max_width - w) / 2, y0 + (max_height - h) / 2), wrapped,
-                                font=active, fill=colour, spacing=12, align='center')
+                                font=active, fill=colour, spacing=spacing, align='center')
             return
-    raise ValueError(f'Text does not fit: {text!r}')
+    w = min(max_width, last_bounds[2] - last_bounds[0])
+    h = min(max_height, last_bounds[3] - last_bounds[1])
+    draw.multiline_text((x0 + (max_width - w) / 2, y0 + (max_height - h) / 2), last_wrapped,
+                        font=last_font, fill=colour, spacing=6, align='center')
 
 
 def paste_contain(canvas: Image.Image, path: Path, box: tuple[int, int, int, int]) -> dict[str, Any]:
