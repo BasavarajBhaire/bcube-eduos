@@ -1,0 +1,114 @@
+name: Validate Phase 2 Interior Engine
+
+on:
+  pull_request:
+    paths:
+      - 'bcube-publishing-sdk/composer/compose_activity_page.py'
+      - 'bcube-publishing-sdk/templates/activity-page-v1.json'
+      - 'bcube-publishing-sdk/validators/validate_activity_inputs.py'
+      - 'scripts/run_bcube_activity_pipeline.py'
+      - 'docs/BCUBE_PHASE2_INTERIOR_ENGINE.md'
+      - '.github/workflows/validate-phase2-interior-engine.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'bcube-publishing-sdk/composer/compose_activity_page.py'
+      - 'bcube-publishing-sdk/templates/activity-page-v1.json'
+      - 'bcube-publishing-sdk/validators/validate_activity_inputs.py'
+      - 'scripts/run_bcube_activity_pipeline.py'
+      - '.github/workflows/validate-phase2-interior-engine.yml'
+
+jobs:
+  validate-phase2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Phase 2 engine
+        run: |
+          python -m py_compile \
+            bcube-publishing-sdk/composer/compose_activity_page.py \
+            bcube-publishing-sdk/validators/validate_activity_inputs.py \
+            scripts/run_bcube_activity_pipeline.py
+      - name: Validate activity template contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('bcube-publishing-sdk/templates/activity-page-v1.json').read_text())
+          assert data['canvas'] == {'width': 2480, 'height': 3508, 'dpi': 300}
+          assert data['rules']['one_physical_page_per_output'] is True
+          expected = {'observe','match','trace','colour','draw','speak','listen','count','connect','complete','maze','explore','think','reflect','sequence','sort','circle','assessment'}
+          assert set(data['supported_activity_types']) == expected
+          for key in ('logo','title','objective','instruction','activity_frame','teacher_panel','parent_panel','star','page_number'):
+              assert key in data['bounds'], key
+          print('Phase 2 template contract PASS')
+          PY
+      - name: Create deterministic test illustration
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageDraw
+          from pathlib import Path
+          p = Path('/tmp/activity-test.png')
+          image = Image.new('RGB', (1254, 1254), 'white')
+          d = ImageDraw.Draw(image)
+          d.rounded_rectangle((90,100,1164,1140), radius=60, fill='#DFF2FF', outline='#163B65', width=10)
+          d.ellipse((300,260,520,480), fill='#FFD36A')
+          d.ellipse((730,260,950,480), fill='#FF9DB9')
+          d.rounded_rectangle((280,560,975,930), radius=40, fill='#E5F6DE', outline='#5F9D50', width=8)
+          image.save(p)
+          print(p)
+          PY
+      - name: Run Nursery activity regression
+        run: |
+          python scripts/run_bcube_activity_pipeline.py \
+            --level nursery --book communication-champions \
+            --physical-page 7 --page-number 6 --activity-type speak \
+            --title 'Speak and Share' \
+            --objective 'Speak clearly and listen while others share.' \
+            --instruction 'Look at the picture. Share one idea, then listen to a friend.' \
+            --teacher-prompt 'Model one complete sentence. Invite each child to speak in turn and acknowledge every response.' \
+            --parent-prompt 'Ask the child to describe one favourite object using a complete sentence.' \
+            --illustration /tmp/activity-test.png
+      - name: Run LKG activity regression
+        run: |
+          python scripts/run_bcube_activity_pipeline.py \
+            --level lkg --book early-maths-adventures \
+            --physical-page 8 --page-number 7 --activity-type count \
+            --title 'Count the Groups' \
+            --objective 'Count objects accurately and compare two groups.' \
+            --instruction 'Count each group. Point to the group that has more objects.' \
+            --teacher-prompt 'Encourage one-to-one counting and ask the child to explain how the groups are different.' \
+            --parent-prompt 'Count two small groups of safe household objects and compare which group has more.' \
+            --illustration /tmp/activity-test.png
+      - name: Run UKG activity regression
+        run: |
+          python scripts/run_bcube_activity_pipeline.py \
+            --level ukg --book young-scientists \
+            --physical-page 9 --page-number 8 --activity-type observe \
+            --title 'Observe the Change' \
+            --objective 'Observe a simple change and explain what happened.' \
+            --instruction 'Look closely at the experiment picture. Tell what changed from first to last.' \
+            --teacher-prompt 'Invite predictions before observation, then compare the prediction with the visible result.' \
+            --parent-prompt 'Observe a safe everyday change at home and ask the child to describe before and after.' \
+            --illustration /tmp/activity-test.png
+      - name: Validate outputs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          pages = sorted(Path('production-renders/activity/pages').glob('*.png'))
+          assert len(pages) == 3, pages
+          for page in pages:
+              with Image.open(page) as image:
+                  assert image.size == (2480, 3508), (page, image.size)
+              evidence = Path('production-renders/activity/evidence') / f'{page.stem}.json'
+              report = Path('validation/rendered-pages') / f'{page.stem}.activity-input.json'
+              assert evidence.is_file(), evidence
+              assert report.is_file(), report
+          print('Phase 2 cross-level regression PASS')
+          PY
