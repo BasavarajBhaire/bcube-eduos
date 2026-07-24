@@ -128,6 +128,8 @@ def main() -> None:
     render_rules = about_render.get("rules", {})
     if render_rules.get("learning_outcome_count") != 6 or render_rules.get("core_pillar_count") != 5:
         raise SystemExit("Rendered About template must contain six outcomes and five core pillars")
+    if render_rules.get("single_line_book_title") is not True:
+        raise SystemExit("Every About page must keep the registered book title on one line")
     for forbidden in ("series_banner", "age_badge", "visible_page_number", "teacher_panel",
                       "parent_panel", "official_star"):
         if forbidden not in render_rules.get("prohibited_components", []):

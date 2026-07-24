@@ -71,6 +71,9 @@ def validate(data_path: Path) -> dict[str, Any]:
         raise ValueError("book_title_lines must contain one or two lines")
     if any(not isinstance(line, str) or not line.strip() for line in title_lines):
         raise ValueError("book_title_lines cannot contain blank values")
+    canonical_title = " ".join(line.strip() for line in title_lines)
+    if data["book_title"] != canonical_title:
+        raise ValueError("book_title must equal the registered title segments joined on one line")
 
     rules = template["rules"]
     limits = {
@@ -101,6 +104,7 @@ def validate(data_path: Path) -> dict[str, Any]:
         "page_type": "about",
         "header_type": template["header_type"],
         "visible_page_number": False,
+        "single_line_book_title": template["rules"]["single_line_book_title"],
         "component_counts": {
             "official_logo": 1,
             "book_title": 1,

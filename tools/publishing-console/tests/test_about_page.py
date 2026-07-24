@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import importlib.util
 import json
 import subprocess
 import sys
@@ -14,6 +15,15 @@ ROOT = Path(__file__).resolve().parents[3]
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_about_inputs.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_about_page.py"
 BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
+
+
+def load_composer_module():
+    specification = importlib.util.spec_from_file_location("compose_about_page", COMPOSER)
+    if specification is None or specification.loader is None:
+        raise AssertionError("Unable to load the About-page composer")
+    module = importlib.util.module_from_spec(specification)
+    specification.loader.exec_module(module)
+    return module
 
 
 def official_logo() -> str:
@@ -99,6 +109,12 @@ class AboutPageTests(unittest.TestCase):
             self.assertFalse(report["visible_page_number"])
             self.assertEqual("BOOK_HEADER", evidence["header_type"])
             self.assertIn("book_title", evidence["components"])
+            self.assertEqual(["Art & Colour Fun"], evidence["components"]["book_title"]["lines"])
+            self.assertEqual(
+                ["Art & Colour", "Fun"],
+                evidence["components"]["book_title"]["coloured_segments"],
+            )
+            self.assertTrue(evidence["qa"]["single_line_book_title"])
             self.assertIn("page_title", evidence["components"])
             self.assertIn("learning_outcomes", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
@@ -108,6 +124,28 @@ class AboutPageTests(unittest.TestCase):
             with Image.open(output) as rendered:
                 self.assertEqual((2480, 3508), rendered.size)
                 self.assertGreaterEqual(rendered.info.get("dpi", (0, 0))[0], 299)
+
+    def test_every_registered_book_title_fits_one_about_header_line(self) -> None:
+        module = load_composer_module()
+        template = json.loads(
+            (ROOT / "bcube-publishing-sdk/templates/about-page-v1.json").read_text(encoding="utf-8")
+        )
+        registry = json.loads(BOOKS.read_text(encoding="utf-8"))
+        canvas = Image.new("RGB", (2480, 350), "white")
+        draw = ImageDraw.Draw(canvas)
+        checked = 0
+        for level in registry["levels"].values():
+            for book in level["books"].values():
+                rendered = module.draw_title(
+                    draw,
+                    book["title_lines"],
+                    template["bounds"]["book_title"],
+                    template["colours"],
+                )
+                self.assertEqual([" ".join(book["title_lines"])], rendered["lines"])
+                self.assertEqual(book["title_lines"], rendered["coloured_segments"])
+                checked += 1
+        self.assertEqual(30, checked)
 
     def test_validator_rejects_teacher_or_parent_panel_data(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

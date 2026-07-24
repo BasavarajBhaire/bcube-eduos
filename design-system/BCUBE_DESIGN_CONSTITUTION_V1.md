@@ -64,7 +64,7 @@ The cover must not contain a printed page number.
 - Internal counting starts at About This Book.
 - The first learning page displays the correct internal number after all front-matter pages.
 - Publisher/Copyright pages contain no illustration and no mascot.
-- About pages use the book title in the header, not the generic series banner.
+- About pages use the complete book title on one colour-segmented line in the header, not the generic series banner.
 - Contents pages show the book title, module names and all learning-page titles.
 - Contents pages do not show the age badge, sticky notes, teacher panels, parent panels or decorative callouts.
 
