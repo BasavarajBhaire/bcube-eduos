@@ -11,6 +11,8 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE_PATH = ROOT / "bcube-publishing-sdk/templates/special-page-v1.json"
+LOCKED_COPY_SOURCE = "locked_special_page_copy_registry"
+LOCKED_COPY_VERSION = "special-pages-v1.2"
 PLACEHOLDER_PHRASES = (
     "use the page for its stated front-matter purpose",
     "no additional worksheet task",
@@ -48,7 +50,7 @@ def image_info(value: str, label: str, minimum_side: int) -> dict[str, Any]:
 
 
 def validate_locked_copy(data: dict[str, Any], page_type: str) -> None:
-    """Reject production placeholders on child-facing Welcome and Meet Star pages."""
+    """Reject production placeholders and enforce the locked special-page contract."""
     if page_type not in {"welcome", "meet_star"}:
         return
     fields = ["page_title", "message"]
@@ -58,6 +60,26 @@ def validate_locked_copy(data: dict[str, Any], page_type: str) -> None:
     for phrase in PLACEHOLDER_PHRASES:
         if phrase in combined:
             raise ValueError(f"{page_type} contains prohibited placeholder copy: {phrase!r}")
+    source = data.get("content_source")
+    version = data.get("content_policy_version")
+    if source is None and version is None:
+        return
+    if source != LOCKED_COPY_SOURCE:
+        raise ValueError(f"{page_type} must use the locked special-page copy registry")
+    if version != LOCKED_COPY_VERSION:
+        raise ValueError(f"{page_type} must use content policy {LOCKED_COPY_VERSION}")
+    if page_type == "welcome":
+        if str(data.get("page_title") or "").strip() != "Welcome!":
+            raise ValueError("Locked Welcome page title must be exactly 'Welcome!'")
+        if len(str(data.get("message") or "")) > 130:
+            raise ValueError("Locked Welcome message is too long")
+    else:
+        if str(data.get("page_title") or "").strip() != "Meet Star":
+            raise ValueError("Locked Meet Star page title must be exactly 'Meet Star'")
+        if not str(data.get("message") or "").startswith("Hello! I am Star"):
+            raise ValueError("Locked Meet Star message must begin with 'Hello! I am Star'")
+        if len(str(data.get("purpose") or "")) > 150:
+            raise ValueError("Locked Meet Star purpose is too long")
 
 
 def validate(data_path: Path) -> dict[str, Any]:

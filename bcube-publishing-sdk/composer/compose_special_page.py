@@ -78,25 +78,58 @@ def fitted_text(draw: ImageDraw.ImageDraw, text: str, bounds: list[int], *, max_
     raise ValueError(f"Text does not fit locked bounds: {text!r}")
 
 
-def paste_contain(canvas: Image.Image, source: Path, bounds: list[int], *, inset: int = 0,
-                  remove_near_white: bool = False) -> dict[str, Any]:
+def paste_contain(
+    canvas: Image.Image,
+    source: Path,
+    bounds: list[int],
+    *,
+    inset: int = 0,
+    remove_near_white: bool = False,
+    trim_transparent: bool = False,
+    y_offset: int = 0,
+) -> dict[str, Any]:
     image = Image.open(source).convert("RGBA")
     original = [image.width, image.height]
+    source_crop = [0, 0, image.width, image.height]
     if remove_near_white:
         pixels = [
             (255, 255, 255, 0) if r > 246 and g > 246 and b > 246 else (r, g, b, a)
             for r, g, b, a in image.getdata()
         ]
         image.putdata(pixels)
+    if trim_transparent:
+        crop = image.getbbox()
+        if crop is None:
+            raise ValueError(f"Asset contains no visible artwork after background removal: {source}")
+        source_crop = list(crop)
+        image = image.crop(crop)
     x0, y0, x1, y1 = bounds
-    x0 += inset; y0 += inset; x1 -= inset; y1 -= inset
-    scale = min((x1 - x0) / image.width, (y1 - y0) / image.height)
+    x0 += inset
+    y0 += inset
+    x1 -= inset
+    y1 -= inset
+    available_width = x1 - x0
+    available_height = y1 - y0
+    if available_width <= 0 or available_height <= 0:
+        raise ValueError("Asset bounds collapse after applying the configured inset")
+    scale = min(available_width / image.width, available_height / image.height)
     width, height = max(1, round(image.width * scale)), max(1, round(image.height * scale))
     image = image.resize((width, height), Image.Resampling.LANCZOS)
-    x = x0 + (x1 - x0 - width) // 2
-    y = y0 + (y1 - y0 - height) // 2
+    x = x0 + (available_width - width) // 2
+    centred_y = y0 + (available_height - height) // 2
+    y = max(y0, min(y1 - height, centred_y + y_offset))
     canvas.paste(image, (x, y), image)
-    return {"source_size": original, "rendered_bounds": [x, y, x + width, y + height]}
+    occupancy = round((width * height) / (available_width * available_height), 4)
+    return {
+        "source_size": original,
+        "source_crop": source_crop,
+        "available_bounds": [x0, y0, x1, y1],
+        "rendered_bounds": [x, y, x + width, y + height],
+        "visible_occupancy": occupancy,
+        "background_removed": remove_near_white,
+        "trimmed_to_visible_artwork": trim_transparent,
+        "y_offset": y_offset,
+    }
 
 
 def brand_title(draw: ImageDraw.ImageDraw, title_lines: list[str], bounds: list[int], colours: dict[str, str]) -> dict[str, Any]:
@@ -138,10 +171,10 @@ def draw_pillars(draw: ImageDraw.ImageDraw, bounds: list[int], pillars: list[str
     rendered: list[dict[str, Any]] = []
     for index, pillar in enumerate(pillars):
         left = x0 + index * (width + gap)
-        box = [left, y0 + 30, left + width, y1 - 20]
-        draw.rounded_rectangle(box, radius=38, fill=PILLAR_COLOURS[index])
-        item = fitted_text(draw, pillar, [left + 20, y0 + 48, left + width - 20, y1 - 35],
-                           max_size=32, min_size=24, colour="white", bold=True, max_lines=2)
+        box = [left, y0 + 24, left + width, y1 - 18]
+        draw.rounded_rectangle(box, radius=34, fill=PILLAR_COLOURS[index])
+        item = fitted_text(draw, pillar, [left + 20, y0 + 38, left + width - 20, y1 - 28],
+                           max_size=30, min_size=23, colour="white", bold=True, max_lines=2)
         rendered.append(item)
     return {"count": 5, "items": rendered, "bounds": bounds}
 
@@ -197,8 +230,8 @@ def draw_contents(draw: ImageDraw.ImageDraw, data: dict[str, Any], template: dic
             page_text = str(item["page"])
             page_width = draw.textlength(page_text, font=page_font)
             title = str(item["title"])
-            if item.get("physical") == 6 and not title.casefold().startswith("welcome to"):
-                title = f"Welcome to {data['book_title']}"
+            if item.get("physical") == 6:
+                title = "Welcome!"
             available = x1 - x0 - page_width - 95
             active = None
             active_size = 0
@@ -286,36 +319,91 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
         "tagline": tagline_render,
     }
     page_type = data["page_type"]
+    occupancy_gate: dict[str, Any] | None = None
     if page_type == "contents":
         components["module_groups"] = draw_contents(draw, data, template)
     elif page_type == "welcome":
         spec = template["welcome"]
         draw.rounded_rectangle(spec["message"], radius=34, fill="#EAF5FF", outline=colours["blue"], width=4)
-        components["welcome_message"] = fitted_text(draw, data["message"],
-                                                     [spec["message"][0] + 40, spec["message"][1] + 22,
-                                                      spec["message"][2] - 40, spec["message"][3] - 22],
-                                                     max_size=44, min_size=30, colour=colours["navy"],
-                                                     bold=True, max_lines=4)
-        draw.rounded_rectangle(spec["illustration_frame"], radius=44, fill="#FFFFFF",
-                               outline=colours["purple"], width=6)
-        components["illustration"] = paste_contain(canvas, resolve(data["illustration_path"]),
-                                                    spec["illustration_frame"], inset=36)
+        components["welcome_message"] = fitted_text(
+            draw,
+            data["message"],
+            [spec["message"][0] + 40, spec["message"][1] + 20,
+             spec["message"][2] - 40, spec["message"][3] - 20],
+            max_size=44,
+            min_size=30,
+            colour=colours["navy"],
+            bold=True,
+            max_lines=3,
+        )
+        draw.rounded_rectangle(
+            spec["illustration_frame"],
+            radius=44,
+            fill=spec["illustration_fill"],
+            outline=spec["illustration_outline"],
+            width=spec["illustration_border_width"],
+        )
+        illustration = paste_contain(
+            canvas,
+            resolve(data["illustration_path"]),
+            spec["illustration_frame"],
+            inset=spec["illustration_inset"],
+            remove_near_white=spec["illustration_trim_near_white"],
+            trim_transparent=spec["illustration_trim_near_white"],
+            y_offset=spec["illustration_y_offset"],
+        )
+        components["illustration"] = illustration
+        occupancy_gate = {
+            "component": "illustration",
+            "actual": illustration["visible_occupancy"],
+            "minimum": spec["minimum_visible_occupancy"],
+        }
     else:
         spec = template["meet_star"]
         draw.rounded_rectangle(spec["message"], radius=34, fill="#EAF5FF", outline=colours["blue"], width=4)
-        components["star_message"] = fitted_text(draw, data["message"],
-                                                  [spec["message"][0] + 40, spec["message"][1] + 20,
-                                                   spec["message"][2] - 40, spec["message"][3] - 20],
-                                                  max_size=44, min_size=30, colour=colours["navy"],
-                                                  bold=True, max_lines=4)
-        components["official_star"] = paste_contain(canvas, resolve(data["official_star_path"]),
-                                                     spec["star"], remove_near_white=True)
-        draw.rounded_rectangle(spec["purpose"], radius=34, fill="#F3EAF9", outline=colours["purple"], width=4)
-        components["purpose"] = fitted_text(draw, data["purpose"],
-                                             [spec["purpose"][0] + 50, spec["purpose"][1] + 30,
-                                              spec["purpose"][2] - 50, spec["purpose"][3] - 30],
-                                             max_size=42, min_size=28, colour=colours["text"], max_lines=5)
-    components["core_pillars"] = draw_pillars(draw, bounds["pillars"], data["core_pillars"])
+        components["star_message"] = fitted_text(
+            draw,
+            data["message"],
+            [spec["message"][0] + 40, spec["message"][1] + 20,
+             spec["message"][2] - 40, spec["message"][3] - 20],
+            max_size=44,
+            min_size=30,
+            colour=colours["navy"],
+            bold=True,
+            max_lines=3,
+        )
+        star = paste_contain(
+            canvas,
+            resolve(data["official_star_path"]),
+            spec["star"],
+            remove_near_white=spec["star_trim_near_white"],
+            trim_transparent=spec["star_trim_near_white"],
+            y_offset=spec["star_y_offset"],
+        )
+        components["official_star"] = star
+        occupancy_gate = {
+            "component": "official_star",
+            "actual": star["visible_occupancy"],
+            "minimum": spec["minimum_visible_occupancy"],
+        }
+        draw.rounded_rectangle(spec["purpose"], radius=34, fill="#F3EAF9", outline=colours["soft_purple"], width=4)
+        components["purpose"] = fitted_text(
+            draw,
+            data["purpose"],
+            [spec["purpose"][0] + 50, spec["purpose"][1] + 28,
+             spec["purpose"][2] - 50, spec["purpose"][3] - 28],
+            max_size=42,
+            min_size=28,
+            colour=colours["text"],
+            max_lines=4,
+        )
+    if occupancy_gate is not None and occupancy_gate["actual"] < occupancy_gate["minimum"]:
+        raise ValueError(
+            f"{occupancy_gate['component']} visible occupancy {occupancy_gate['actual']} is below "
+            f"the locked minimum {occupancy_gate['minimum']}"
+        )
+    pillar_bounds = template.get(page_type, {}).get("pillars", bounds["pillars"])
+    components["core_pillars"] = draw_pillars(draw, pillar_bounds, data["core_pillars"])
     if page_type != "contents":
         components["page_number"] = fitted_text(draw, str(data["page_number"]), bounds["page_number"],
                                                  max_size=46, min_size=36, colour=colours["muted"],
@@ -332,6 +420,7 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
         "canvas": canvas_spec,
         "artifact_sha256": sha256(output),
         "components": components,
+        "occupancy_gate": occupancy_gate,
         "prohibited_component_counts": {
             "series_banner": 0,
             "age_badge": 0,
@@ -341,7 +430,7 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
             "illustration": 1 if page_type == "welcome" else 0,
             "official_star": 1 if page_type == "meet_star" else 0,
         },
-        "qa": {"one_physical_page": True, "text_overflow": False, "status": "PASS"},
+        "qa": {"one_physical_page": True, "text_overflow": False, "occupancy_pass": True, "status": "PASS"},
     }
     evidence_output.parent.mkdir(parents=True, exist_ok=True)
     evidence_output.write_text(json.dumps(evidence, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

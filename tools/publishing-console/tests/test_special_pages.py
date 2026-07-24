@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-import json
 import importlib.util
+import json
 import subprocess
 import sys
 import tempfile
@@ -60,7 +60,7 @@ def common(page_type: str, physical: int) -> dict:
         "book_title_lines": ["Art & Colour", "Fun"],
         "page_title": {
             "contents": "Contents — Part 1",
-            "welcome": "Welcome",
+            "welcome": "Welcome!",
             "meet_star": "Meet Star",
         }[page_type],
         "level": "LKG",
@@ -119,6 +119,12 @@ class SpecialPageTests(unittest.TestCase):
             report, evidence, _ = self.render(data, Path(folder))
             self.assertFalse(report["visible_page_number"])
             self.assertEqual(19, evidence["components"]["module_groups"]["entry_count"])
+            welcome = next(
+                item for item in evidence["components"]["module_groups"]["items"]
+                if item.get("component") == "contents_entry" and item.get("physical") is None
+                and item.get("page") == 5
+            )
+            self.assertEqual("Welcome!", welcome["title"])
             self.assertNotIn("illustration", evidence["components"])
             self.assertNotIn("official_star", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
@@ -176,7 +182,7 @@ class SpecialPageTests(unittest.TestCase):
                     checked += 1
         self.assertEqual(60, checked)
 
-    def test_long_welcome_entry_uses_the_locked_fit_range(self) -> None:
+    def test_welcome_contents_entry_is_compact_and_matches_the_page_title(self) -> None:
         composer = load_special_composer()
         template = json.loads(
             (ROOT / "bcube-publishing-sdk/templates/special-page-v1.json").read_text(encoding="utf-8")
@@ -197,13 +203,13 @@ class SpecialPageTests(unittest.TestCase):
         )
         welcome = next(
             item for item in result["items"]
-            if item.get("component") == "contents_entry"
-            and item.get("title") == "Welcome to My World & General Awareness"
+            if item.get("component") == "contents_entry" and item.get("page") == 5
         )
+        self.assertEqual("Welcome!", welcome["title"])
         self.assertGreaterEqual(welcome["font_size"], template["contents"]["entry_min_px"])
         self.assertLessEqual(welcome["font_size"], template["contents"]["entry_max_px"])
 
-    def test_welcome_uses_hero_illustration_without_star_or_lesson_panels(self) -> None:
+    def test_welcome_trims_empty_canvas_and_meets_locked_occupancy(self) -> None:
         with tempfile.TemporaryDirectory() as folder:
             temporary = Path(folder)
             illustration = temporary / "welcome.png"
@@ -214,28 +220,38 @@ class SpecialPageTests(unittest.TestCase):
             data = common("welcome", 6)
             data.update({
                 "page_number": 5,
-                "message": "Welcome to a joyful journey of colour, drawing, painting, and making.",
+                "message": "Let us mix colours, draw shapes, paint pictures, make crafts, and explore textures.",
                 "illustration_path": str(illustration),
             })
             report, evidence, _ = self.render(data, temporary)
             self.assertTrue(report["visible_page_number"])
-            self.assertIn("illustration", evidence["components"])
+            illustration_evidence = evidence["components"]["illustration"]
+            self.assertTrue(illustration_evidence["background_removed"])
+            self.assertTrue(illustration_evidence["trimmed_to_visible_artwork"])
+            self.assertGreaterEqual(
+                illustration_evidence["visible_occupancy"],
+                evidence["occupancy_gate"]["minimum"],
+            )
+            self.assertLess(illustration_evidence["source_crop"][0], illustration_evidence["source_crop"][2])
             self.assertNotIn("official_star", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
             self.assertNotIn("parent_panel", evidence["components"])
 
-    def test_meet_star_uses_one_registered_star_without_uploaded_illustration(self) -> None:
+    def test_meet_star_is_enlarged_and_uses_one_registered_asset(self) -> None:
         with tempfile.TemporaryDirectory() as folder:
             data = common("meet_star", 7)
             data.update({
                 "page_number": 6,
-                "message": "Meet Star, your friendly guide for this colourful learning journey.",
-                "purpose": "Star encourages you to explore, try, create, and share your artwork.",
+                "message": "Hello! I am Star, your friendly guide through Art & Colour Fun.",
+                "purpose": "Together, we will mix, draw, paint, craft, and explore textures. I will help you create and share your artwork.",
                 "official_star_path": official_asset("official_star_candidates"),
             })
             report, evidence, _ = self.render(data, Path(folder))
             self.assertTrue(report["visible_page_number"])
-            self.assertIn("official_star", evidence["components"])
+            star = evidence["components"]["official_star"]
+            self.assertTrue(star["trimmed_to_visible_artwork"])
+            self.assertGreaterEqual(star["visible_occupancy"], evidence["occupancy_gate"]["minimum"])
+            self.assertLess(star["rendered_bounds"][1], evidence["components"]["purpose"]["bounds"][1])
             self.assertNotIn("illustration", evidence["components"])
             self.assertEqual(1, evidence["prohibited_component_counts"]["official_star"])
             self.assertNotIn("teacher_panel", evidence["components"])

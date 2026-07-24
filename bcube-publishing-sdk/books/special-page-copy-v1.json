@@ -1,0 +1,131 @@
+{
+  "copy_version": "special-pages-v1.2",
+  "levels": {
+    "nursery": {
+      "art-colour-fun": {
+        "welcome_message": "Let us explore colours, use art tools, make simple art, and enjoy creating together.",
+        "meet_star_purpose": "Together, we will explore colours, make art, and try new ideas. I will help you create and celebrate every step."
+      },
+      "communication-champions": {
+        "welcome_message": "Let us listen, speak, share ideas, use kind words, and enjoy talking together.",
+        "meet_star_purpose": "Together, we will listen, speak clearly, share ideas, and use kind words. I will help you try and celebrate every step."
+      },
+      "confidence-builders": {
+        "welcome_message": "Let us believe in ourselves, try new things, speak with confidence, and grow together.",
+        "meet_star_purpose": "Together, we will try new things, make good choices, and believe in ourselves. I will help you be brave and celebrate every step."
+      },
+      "creativity-challenges": {
+        "welcome_message": "Let us imagine, create, build ideas, try new ways, and enjoy making together.",
+        "meet_star_purpose": "Together, we will imagine, create, build, and try new ideas. I will help you express yourself and celebrate every step."
+      },
+      "curiosity-explorers": {
+        "welcome_message": "Let us ask questions, look closely, explore nature, and discover new things together.",
+        "meet_star_purpose": "Together, we will ask questions, look closely, explore, and discover. I will help you try, think, and celebrate every step."
+      },
+      "fine-motor-fun": {
+        "welcome_message": "Let us strengthen our fingers, hold tools, trace, thread, and create carefully together.",
+        "meet_star_purpose": "Together, we will grip, move, trace, thread, and make. I will help you practise carefully and celebrate every step."
+      },
+      "healthy-habits-safety": {
+        "welcome_message": "Let us wash our hands, eat well, stay active, follow safety rules, and care for ourselves.",
+        "meet_star_purpose": "Together, we will practise healthy habits, stay safe, and express our needs. I will help you make caring choices every day."
+      },
+      "logical-thinking-adventures": {
+        "welcome_message": "Let us match, sort, find patterns, compare, and solve simple problems together.",
+        "meet_star_purpose": "Together, we will match, sort, compare, and solve problems. I will help you think, explain, and celebrate every step."
+      },
+      "my-world-general-awareness": {
+        "welcome_message": "Let us learn about our families, communities, helpers, nature, and the world around us.",
+        "meet_star_purpose": "Together, we will explore people, places, nature, and our community. I will help you notice, respect, and care."
+      },
+      "stem-explorers": {
+        "welcome_message": "Let us observe, build, test ideas, find patterns, solve problems, and share discoveries.",
+        "meet_star_purpose": "Together, we will observe, build, test, and discover. I will help you ask questions, think, and celebrate every step."
+      }
+    },
+    "lkg": {
+      "communication-champions": {
+        "welcome_message": "Let us listen with attention, speak in sentences, share ideas, ask questions, and connect.",
+        "meet_star_purpose": "Together, we will listen, speak, ask questions, and share ideas. I will help you communicate kindly and confidently."
+      },
+      "early-literacy-adventures": {
+        "welcome_message": "Let us hear sounds, recognise letters, build words, enjoy rhymes, and explore stories.",
+        "meet_star_purpose": "Together, we will play with sounds, letters, words, rhymes, and stories. I will help you read, think, and express ideas."
+      },
+      "early-maths-adventures": {
+        "welcome_message": "Let us count, recognise numbers, compare quantities, explore shapes, and find patterns.",
+        "meet_star_purpose": "Together, we will count, compare, explore shapes, and solve problems. I will help you think and explain your ideas."
+      },
+      "logical-thinking-adventures": {
+        "welcome_message": "Let us sort, compare, complete patterns, sequence events, and explain our thinking.",
+        "meet_star_purpose": "Together, we will sort, sequence, spot differences, and solve puzzles. I will help you think and explain each choice."
+      },
+      "stem-explorers": {
+        "welcome_message": "Let us ask questions, observe changes, build models, test ideas, and share results.",
+        "meet_star_purpose": "Together, we will question, observe, build, test, and measure. I will help you think and share each discovery."
+      },
+      "creativity-challenges": {
+        "welcome_message": "Let us generate ideas, draw, build designs, try alternatives, and share our creations.",
+        "meet_star_purpose": "Together, we will imagine, draw, design, build, and improve. I will help you try new ways and celebrate your creations."
+      },
+      "my-world-general-awareness": {
+        "welcome_message": "Let us explore our community, helpers, nature, places, cultures, and care for Earth.",
+        "meet_star_purpose": "Together, we will explore people, places, nature, and cultures. I will help you understand, respect, and care for Earth."
+      },
+      "healthy-habits-safety": {
+        "welcome_message": "Let us choose healthy food, practise hygiene, exercise, recognise danger, and stay safe.",
+        "meet_star_purpose": "Together, we will make healthy choices, care for our bodies, manage feelings, and follow safety rules."
+      },
+      "art-colour-fun": {
+        "welcome_message": "Let us mix colours, draw shapes, paint pictures, make crafts, and explore textures.",
+        "meet_star_purpose": "Together, we will mix, draw, paint, craft, and explore textures. I will help you create and proudly share your artwork."
+      },
+      "confidence-social-skills": {
+        "welcome_message": "Let us speak with confidence, make friends, share, take turns, and grow together.",
+        "meet_star_purpose": "Together, we will speak with confidence, make kind choices, understand our feelings, and solve small problems."
+      }
+    },
+    "ukg": {
+      "communication-masters": {
+        "welcome_message": "Let us listen carefully, speak clearly, build vocabulary, tell stories, and present ideas.",
+        "meet_star_purpose": "Together, we will listen, discuss, tell stories, and present ideas. I will help you communicate clearly and confidently."
+      },
+      "reading-literacy-adventures": {
+        "welcome_message": "Let us decode words, read sentences, build vocabulary, understand texts, and write ideas.",
+        "meet_star_purpose": "Together, we will read words and sentences, understand stories, and write ideas. I will help you grow as a reader."
+      },
+      "maths-explorers": {
+        "welcome_message": "Let us work with numbers, add, subtract, compare, measure, and solve problems together.",
+        "meet_star_purpose": "Together, we will calculate, compare, explore geometry, measure, and solve problems. I will help you explain your thinking."
+      },
+      "logic-brain-builders": {
+        "welcome_message": "Let us classify, complete sequences, find relationships, solve puzzles, and explain our reasoning.",
+        "meet_star_purpose": "Together, we will find patterns, use spatial thinking, solve puzzles, and explain our reasoning step by step."
+      },
+      "young-scientists": {
+        "welcome_message": "Let us ask scientific questions, make predictions, test ideas, record observations, and explain findings.",
+        "meet_star_purpose": "Together, we will predict, test, observe, compare results, and explain findings. I will help you think like a scientist."
+      },
+      "creative-design-studio": {
+        "welcome_message": "Let us identify needs, generate ideas, sketch, build prototypes, improve, and present designs.",
+        "meet_star_purpose": "Together, we will imagine, sketch, build, test, and improve designs. I will help you explain and present your ideas."
+      },
+      "my-amazing-world": {
+        "welcome_message": "Let us explore communities, understand cultures, study nature, respect diversity, and protect resources.",
+        "meet_star_purpose": "Together, we will explore communities, cultures, nature, and our planet. I will help you respect and protect our world."
+      },
+      "digital-explorers": {
+        "welcome_message": "Let us understand devices, follow digital rules, create, think in steps, and protect privacy.",
+        "meet_star_purpose": "Together, we will use technology safely, create digitally, think in steps, and act kindly and responsibly."
+      },
+      "healthy-me-wellbeing": {
+        "welcome_message": "Let us choose healthy food, build fitness, practise hygiene, understand emotions, and stay safe.",
+        "meet_star_purpose": "Together, we will care for our bodies and feelings, stay safe, and build healthy, resilient habits."
+      },
+      "financial-literacy-life-skills": {
+        "welcome_message": "Let us recognise money, understand needs, make choices, save resources, and act responsibly.",
+        "meet_star_purpose": "Together, we will explore money, needs, choices, saving, and planning. I will help you make responsible decisions."
+      }
+    }
+  }
+}
