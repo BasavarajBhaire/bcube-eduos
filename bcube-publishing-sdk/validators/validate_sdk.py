@@ -142,6 +142,10 @@ def main() -> None:
         raise SystemExit("About illustration frame geometry must remain locked")
     if render_rules.get("illustration_safe_inset") != 60:
         raise SystemExit("About illustrations must keep the locked 60px frame inset")
+    if render_rules.get("illustration_fit_mode") != "cover":
+        raise SystemExit("About illustrations must proportionally cover the locked frame")
+    if render_rules.get("illustration_focus") != [0.5, 0.5]:
+        raise SystemExit("About illustrations must use the locked centred focal point")
     for forbidden in ("series_banner", "age_badge", "visible_page_number", "teacher_panel",
                       "parent_panel", "official_star"):
         if forbidden not in render_rules.get("prohibited_components", []):
