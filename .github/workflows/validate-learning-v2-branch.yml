@@ -1,0 +1,48 @@
+name: Validate Learning Page V2 Branch
+
+on:
+  push:
+    branches:
+      - agent/learning-v2-pr
+
+jobs:
+  validate-learning-v2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Learning Page V2 and console
+        run: |
+          python -m py_compile \
+            tools/publishing-console/app.py \
+            tools/publishing-console/page_data_registry.py \
+            scripts/bcube_publish.py \
+            scripts/run_bcube_activity_pipeline.py \
+            scripts/run_bcube_learning_pipeline.py \
+            bcube-publishing-sdk/normalizers/build_learning_contract_v2.py \
+            bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py \
+            bcube-publishing-sdk/normalizers/finalise_learning_contract_v2.py \
+            bcube-publishing-sdk/normalizers/enforce_learning_illustration_policy_v2.py \
+            bcube-publishing-sdk/composer/compose_learning_page_v2.py \
+            bcube-publishing-sdk/composer/compose_learning_page_character_v2.py \
+            bcube-publishing-sdk/validators/validate_learning_contract_v2.py
+      - name: Run publishing console and Learning Page V2 tests
+        run: python -m unittest discover -s tools/publishing-console/tests -v
+      - name: Validate publishing SDK
+        run: python bcube-publishing-sdk/validators/validate_sdk.py
+      - name: Validate Learning Page V2 registry
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          contract = json.loads(Path('bcube-publishing-sdk/contracts/learning-page-contract-v2.json').read_text())
+          template = json.loads(Path('bcube-publishing-sdk/templates/learning-page-v2.json').read_text())
+          assert contract['contract_version'] == 'learning-page-contract-v2.0'
+          assert template['template_version'] == 'learning-page-v2.0'
+          assert set(contract['layout_variants']) == set(template['layout_variants'])
+          assert len(contract['layout_variants']) == 11
+          PY
