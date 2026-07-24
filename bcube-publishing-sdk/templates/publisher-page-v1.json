@@ -1,0 +1,63 @@
+{
+  "template_version": "publisher-page-v1.0",
+  "page_type": "publisher",
+  "header_type": "MINIMAL_HEADER",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "safe_margin": 118,
+  "bounds": {
+    "logo": [150, 90, 500, 340],
+    "book_title_line_1": [520, 72, 2290, 190],
+    "book_title_line_2": [520, 184, 2290, 310],
+    "level": [700, 320, 2110, 405],
+    "page_title": [300, 515, 2180, 655],
+    "divider": [300, 700, 2180, 712],
+    "publisher_panel": [250, 815, 2230, 1530],
+    "identifiers_panel": [250, 1600, 2230, 2165],
+    "rights_panel": [250, 2240, 2230, 2945],
+    "footer": [0, 3250, 2480, 3508]
+  },
+  "colours": {
+    "background": "#FFFDF8",
+    "navy": "#163B65",
+    "purple": "#643595",
+    "blue": "#1768B3",
+    "pink": "#ED2F7C",
+    "gold": "#F4B61A",
+    "panel": "#F7F3FA",
+    "panel_alt": "#EEF6FC",
+    "line": "#D8C8E7",
+    "text": "#343434",
+    "muted": "#606A75",
+    "white": "#FFFFFF"
+  },
+  "rules": {
+    "required_components": [
+      "official_logo",
+      "book_title",
+      "page_title",
+      "publisher_details",
+      "publication_code",
+      "document_id",
+      "copyright_notice",
+      "footer"
+    ],
+    "prohibited_components": [
+      "series_banner",
+      "age_badge",
+      "visible_page_number",
+      "illustration_layer",
+      "illustration_frame",
+      "official_star",
+      "learning_goal",
+      "activity_banner",
+      "teacher_panel",
+      "parent_panel",
+      "core_pillars"
+    ],
+    "physical_page": 3,
+    "visible_page_number": false,
+    "illustration_allowed": false,
+    "isbn_allowed_without_assignment": false,
+    "max_book_title_lines": 2
+  }
+}

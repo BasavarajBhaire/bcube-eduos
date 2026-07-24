@@ -103,16 +103,25 @@ def publish():
         if approving:
             require(form, "reviewer")
         record = page_data.get_page(form["level"], form["book"], physical_page)
-        uploaded = save_upload()
         command = [
             sys.executable,
             str(PUBLISH),
             "--level", form["level"],
             "--book", form["book"],
-            "--provider", "manual",
-            "--illustration", str(uploaded),
-            "--confirm-clean-illustration",
         ]
+        if record.page_type == "copyright":
+            command += [
+                "--page", "publisher",
+                "--physical-page", str(record.physical_page),
+                "--page-id", record.page_id,
+            ]
+        else:
+            uploaded = save_upload()
+            command += [
+                "--provider", "manual",
+                "--illustration", str(uploaded),
+                "--confirm-clean-illustration",
+            ]
         if record.page_type == "cover":
             command += ["--page", "cover"]
         elif record.page_type == "about-book":
@@ -124,7 +133,7 @@ def publish():
                 "--objective", record.objective,
                 "--instruction", record.instruction,
             ]
-        else:
+        elif record.page_type != "copyright":
             command += [
                 "--page", "activity",
                 "--physical-page", str(record.physical_page),

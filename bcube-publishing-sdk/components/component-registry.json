@@ -15,6 +15,8 @@
     "module_groups": {"source": "composer", "generated": false, "editable_text": true},
     "core_pillars": {"source": "composer", "generated": false, "editable_text": true, "exact_count": 5},
     "publisher_details": {"source": "composer", "generated": false, "editable_text": true},
+    "publication_code": {"source": "catalog_manifest", "generated": false, "editable_text": true},
+    "document_id": {"source": "composer", "generated": false, "editable_text": true},
     "footer": {"source": "template", "generated": false, "editable_text": true},
     "page_number": {"source": "composer", "generated": false, "editable_text": true}
   },

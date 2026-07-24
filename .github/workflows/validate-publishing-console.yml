@@ -7,8 +7,11 @@ on:
       - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_front_matter_pipeline.py'
       - 'bcube-publishing-sdk/templates/about-page-v1.json'
+      - 'bcube-publishing-sdk/templates/publisher-page-v1.json'
       - 'bcube-publishing-sdk/composer/compose_about_page.py'
+      - 'bcube-publishing-sdk/composer/compose_publisher_page.py'
       - 'bcube-publishing-sdk/validators/validate_about_inputs.py'
+      - 'bcube-publishing-sdk/validators/validate_publisher_inputs.py'
       - 'bcube-publishing-sdk/composer/compose_activity_page.py'
       - 'bcube-publishing-sdk/validators/validate_activity_inputs.py'
       - 'bcube-publishing-sdk/books/cover-books.json'
@@ -21,8 +24,11 @@ on:
       - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_front_matter_pipeline.py'
       - 'bcube-publishing-sdk/templates/about-page-v1.json'
+      - 'bcube-publishing-sdk/templates/publisher-page-v1.json'
       - 'bcube-publishing-sdk/composer/compose_about_page.py'
+      - 'bcube-publishing-sdk/composer/compose_publisher_page.py'
       - 'bcube-publishing-sdk/validators/validate_about_inputs.py'
+      - 'bcube-publishing-sdk/validators/validate_publisher_inputs.py'
       - 'bcube-publishing-sdk/composer/compose_activity_page.py'
       - 'bcube-publishing-sdk/validators/validate_activity_inputs.py'
       - 'bcube-publishing-sdk/books/cover-books.json'
@@ -47,8 +53,10 @@ jobs:
             scripts/bcube_publish.py \
             scripts/run_bcube_front_matter_pipeline.py \
             bcube-publishing-sdk/composer/compose_about_page.py \
+            bcube-publishing-sdk/composer/compose_publisher_page.py \
             bcube-publishing-sdk/composer/compose_activity_page.py \
             bcube-publishing-sdk/validators/validate_about_inputs.py \
+            bcube-publishing-sdk/validators/validate_publisher_inputs.py \
             bcube-publishing-sdk/validators/validate_activity_inputs.py
       - name: Validate all page records and console API
         run: python -m unittest discover -s tools/publishing-console/tests -v

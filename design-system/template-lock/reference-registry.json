@@ -47,8 +47,8 @@
     "publisher": {
       "reference_status": "LOCKED",
       "header_type": "MINIMAL_HEADER",
-      "required_components": ["official_logo", "book_title", "publisher_details", "publication_code", "document_id"],
-      "prohibited_components": ["illustration", "star", "age_badge", "visible_page_number", "teacher_panel", "parent_panel"]
+      "required_components": ["official_logo", "book_title", "publisher_details", "publication_code", "document_id", "copyright_notice", "footer"],
+      "prohibited_components": ["illustration", "star", "age_badge", "visible_page_number", "learning_goal", "activity_banner", "teacher_panel", "parent_panel", "isbn"]
     },
     "contents": {
       "reference_status": "LOCKED",

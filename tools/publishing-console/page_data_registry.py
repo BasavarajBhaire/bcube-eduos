@@ -44,6 +44,7 @@ class PageRecord:
     def public_dict(self) -> dict[str, Any]:
         result = asdict(self)
         result["printed_page_label"] = str(self.printed_page) if self.printed_visible else "Hidden"
+        result["requires_illustration"] = self.page_type != "copyright"
         return result
 
 
