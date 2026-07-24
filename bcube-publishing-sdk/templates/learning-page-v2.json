@@ -1,5 +1,5 @@
 {
-  "template_version": "learning-page-v2.1",
+  "template_version": "learning-page-v2.0",
   "canvas": {"width": 2480, "height": 3508, "dpi": 300},
   "colours": {
     "background": "#FFFDF8",
@@ -27,61 +27,17 @@
     "page_number": [2190, 3265, 2350, 3390]
   },
   "layout_variants": {
-    "observe-speak": {
-      "illustration": [185, 725, 2295, 2110],
-      "response": [330, 2140, 2150, 2780],
-      "illustration_inset": 24
-    },
-    "trace-copy": {
-      "illustration": [185, 725, 2295, 1640],
-      "response": [235, 1680, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "match-connect": {
-      "illustration": [185, 725, 2295, 2010],
-      "response": [235, 2040, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "colour-draw": {
-      "illustration": [185, 725, 2295, 1685],
-      "response": [235, 1720, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "count-compare": {
-      "illustration": [185, 725, 2295, 1990],
-      "response": [235, 2025, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "sort-classify": {
-      "illustration": [185, 725, 2295, 1890],
-      "response": [235, 1925, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "sequence-story": {
-      "illustration": [185, 725, 2295, 1870],
-      "response": [235, 1905, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "choice-circle": {
-      "illustration": [185, 725, 2295, 1990],
-      "response": [235, 2025, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "maze-path": {
-      "illustration": [185, 725, 2295, 1220],
-      "response": [330, 1250, 2150, 2780],
-      "illustration_inset": 20
-    },
-    "build-explore": {
-      "illustration": [185, 725, 2295, 1810],
-      "response": [235, 1845, 2245, 2780],
-      "illustration_inset": 24
-    },
-    "reflect-assess": {
-      "illustration": [185, 725, 2295, 1710],
-      "response": [235, 1745, 2245, 2780],
-      "illustration_inset": 24
-    }
+    "observe-speak": {"illustration": [185, 725, 2295, 2110], "response": [330, 2140, 2150, 2780], "illustration_inset": 24},
+    "trace-copy": {"illustration": [185, 725, 2295, 1640], "response": [235, 1680, 2245, 2780], "illustration_inset": 24},
+    "match-connect": {"illustration": [185, 725, 2295, 2010], "response": [235, 2040, 2245, 2780], "illustration_inset": 24},
+    "colour-draw": {"illustration": [185, 725, 2295, 1685], "response": [235, 1720, 2245, 2780], "illustration_inset": 24},
+    "count-compare": {"illustration": [185, 725, 2295, 1990], "response": [235, 2025, 2245, 2780], "illustration_inset": 24},
+    "sort-classify": {"illustration": [185, 725, 2295, 1890], "response": [235, 1925, 2245, 2780], "illustration_inset": 24},
+    "sequence-story": {"illustration": [185, 725, 2295, 1870], "response": [235, 1905, 2245, 2780], "illustration_inset": 24},
+    "choice-circle": {"illustration": [185, 725, 2295, 1990], "response": [235, 2025, 2245, 2780], "illustration_inset": 24},
+    "maze-path": {"illustration": [185, 725, 2295, 1220], "response": [330, 1250, 2150, 2780], "illustration_inset": 20},
+    "build-explore": {"illustration": [185, 725, 2295, 1810], "response": [235, 1845, 2245, 2780], "illustration_inset": 24},
+    "reflect-assess": {"illustration": [185, 725, 2295, 1710], "response": [235, 1745, 2245, 2780], "illustration_inset": 24}
   },
   "typography": {
     "book_title_max": 44,
