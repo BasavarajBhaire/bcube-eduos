@@ -134,6 +134,14 @@ def main() -> None:
         raise SystemExit("Rendered About template must contain six outcomes and five core pillars")
     if render_rules.get("single_line_book_title") is not True:
         raise SystemExit("Every About page must keep the registered book title on one line")
+    if render_rules.get("trim_empty_white_canvas") is not True:
+        raise SystemExit("About illustrations must trim empty white source canvas before fitting")
+    if render_rules.get("preserve_illustration_aspect_ratio") is not True:
+        raise SystemExit("About illustrations must preserve their source aspect ratio")
+    if render_rules.get("illustration_frame_geometry_locked") is not True:
+        raise SystemExit("About illustration frame geometry must remain locked")
+    if render_rules.get("illustration_safe_inset") != 60:
+        raise SystemExit("About illustrations must keep the locked 60px frame inset")
     for forbidden in ("series_banner", "age_badge", "visible_page_number", "teacher_panel",
                       "parent_panel", "official_star"):
         if forbidden not in render_rules.get("prohibited_components", []):

@@ -1,5 +1,5 @@
 {
-  "template_version": "about-page-v1.1",
+  "template_version": "about-page-v1.2",
   "page_type": "about",
   "header_type": "BOOK_HEADER",
   "canvas": {"width": 2480, "height": 3508, "dpi": 300},
@@ -54,7 +54,10 @@
     ],
     "learning_outcome_count": 6,
     "core_pillar_count": 5,
-    "illustration_safe_inset": 34,
+    "illustration_safe_inset": 60,
+    "trim_empty_white_canvas": true,
+    "preserve_illustration_aspect_ratio": true,
+    "illustration_frame_geometry_locked": true,
     "single_line_book_title": true,
     "visible_page_number": false,
     "max_objective_chars": 220,

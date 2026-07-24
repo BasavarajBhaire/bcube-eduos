@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE_PATH = ROOT / "bcube-publishing-sdk/templates/about-page-v1.json"
@@ -107,15 +107,28 @@ def paste_contain(
     *,
     inset: int = 0,
     remove_near_white: bool = False,
+    trim_near_white: bool = False,
 ) -> dict[str, Any]:
     image = Image.open(source).convert("RGBA")
     original = [image.width, image.height]
+    crop_bounds = [0, 0, image.width, image.height]
+    if trim_near_white:
+        white = Image.new("RGB", image.size, "white")
+        difference = ImageChops.difference(image.convert("RGB"), white).convert("L")
+        foreground = difference.point(lambda value: 255 if value > 6 else 0)
+        foreground = ImageChops.multiply(foreground, image.getchannel("A"))
+        bounding_box = foreground.getbbox()
+        if bounding_box is None:
+            raise ValueError(f"Illustration contains no visible non-white artwork: {source}")
+        crop_bounds = list(bounding_box)
+        image = image.crop(bounding_box)
     if remove_near_white:
         pixels = [
             (255, 255, 255, 0) if r > 246 and g > 246 and b > 246 else (r, g, b, a)
             for r, g, b, a in image.getdata()
         ]
         image.putdata(pixels)
+    trimmed_source = [image.width, image.height]
     x0, y0, x1, y1 = bounds
     x0 += inset
     y0 += inset
@@ -130,6 +143,9 @@ def paste_contain(
     canvas.paste(image, (x, y), image)
     return {
         "source_size": original,
+        "source_crop_bounds": crop_bounds,
+        "trimmed_source_size": trimmed_source,
+        "trim_applied": trim_near_white,
         "rendered_bounds": [x, y, x + width, y + height],
         "scale": scale,
     }
@@ -292,6 +308,8 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
         resolve(data["illustration_path"]),
         bounds["illustration_frame"],
         inset=template["rules"]["illustration_safe_inset"],
+        remove_near_white=True,
+        trim_near_white=True,
     )
 
     outcomes_label_render = draw_fitted_text(
