@@ -117,18 +117,19 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 age="3+",
             )
             self.assertEqual("trace-copy", contract["activity"]["layout_variant"])
-            self.assertEqual("curated-page-override", contract["activity"]["resolution_source"])
+            self.assertEqual("portfolio-learning-content-v1.0", contract["activity"]["resolution_source"])
             self.assertEqual(
                 ["model_phrase", "trace_line", "copy_line"],
                 [item["type"] for item in contract["deterministic_components"]],
             )
-            self.assertEqual("prohibited", contract["illustration"]["star_policy"])
+            self.assertEqual("official-asset-separate", contract["illustration"]["star_policy"])
             self.assertIn("What is your name?", contract["guidance"]["teacher"]["question"])
-            self.assertFalse(contract["source_lineage"]["content_refinement_applied"])
+            self.assertTrue(contract["source_lineage"]["content_refinement_applied"])
+            self.assertEqual("LOCKED", contract["content_status"])
             report, evidence, output = self.render(contract, temporary)
             self.assertEqual("PASS", report["status"])
             self.assertEqual(3, evidence["components"]["worksheet"]["component_count"])
-            self.assertNotIn("official_star", evidence["components"])
+            self.assertIn("official_star", evidence["components"])
             self.assertEqual("compact-highlight", evidence["components"]["teacher_panel"]["style"])
             self.assertEqual("compact-highlight", evidence["components"]["parent_panel"]["style"])
             self.assertEqual("REVIEW_CANDIDATE", evidence["qa"]["status"])
@@ -162,12 +163,13 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 ["model_example", "creative_response_area"],
                 [item["type"] for item in contract["deterministic_components"]],
             )
-            self.assertEqual("prohibited", contract["illustration"]["star_policy"])
+            self.assertEqual("official-asset-separate", contract["illustration"]["star_policy"])
             self.assertIn("red, yellow, and blue", contract["learning"]["student_instruction"])
-            self.assertFalse(contract["source_lineage"]["content_refinement_applied"])
+            self.assertTrue(contract["source_lineage"]["content_refinement_applied"])
+            self.assertEqual("LOCKED", contract["content_status"])
             report, evidence, _ = self.render(contract, temporary)
             self.assertEqual("PASS", report["status"])
-            self.assertNotIn("official_star", evidence["components"])
+            self.assertIn("official_star", evidence["components"])
             self.assertEqual(
                 ["model_example", "creative_response_area"],
                 evidence["components"]["worksheet"]["component_types"],
@@ -180,10 +182,12 @@ class LearningPageContractV2Tests(unittest.TestCase):
 
     def test_portfolio_refiner_replaces_generic_non_curated_content(self) -> None:
         contract = {
-            "identity": {"title": "Colour Play"},
+            "identity": {"page_id": "TEST-NURSERY-V4-P008", "title": "Colour Play"},
             "learning": {
+                "objective": "To be completed",
                 "student_instruction": "Art activity Discussion",
                 "expected_response": "Expected child response",
+                "model_text": "",
             },
             "activity": {"primary": "colour"},
             "guidance": {
@@ -197,17 +201,20 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 "scene": "One dominant learning scene with a clearly protected child-response area.",
                 "focal_point": "One dominant focus for Colour Play.",
             },
+            "deterministic_components": [],
+            "qa_requirements": {},
             "source_lineage": {},
         }
         refined = self.refiner.refine_contract(contract, curated_override_applied=False)
         combined = json.dumps(refined).casefold()
         self.assertNotIn("art activity discussion", combined)
-        self.assertNotIn("one dominant learning scene", combined)
+        self.assertNotIn("to be completed", combined)
         self.assertNotIn("what can you show or tell about", combined)
         self.assertTrue(refined["source_lineage"]["content_refinement_applied"])
+        self.assertEqual("LOCKED", refined["content_status"])
         self.assertGreaterEqual(
             len(refined["source_lineage"]["content_refinement_changes"]),
-            6,
+            8,
         )
 
     def test_blank_illustration_is_rejected(self) -> None:
