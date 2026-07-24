@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[3]
 NORMALIZER = ROOT / "bcube-publishing-sdk/normalizers/build_learning_contract_v2.py"
+REFINER = ROOT / "bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py"
 PIPELINE = ROOT / "scripts/run_bcube_learning_pipeline.py"
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_learning_contract_v2.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_character_v2.py"
@@ -52,6 +53,7 @@ class LearningPageContractV2Tests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.normalizer = load_module("learning_normalizer_v2", NORMALIZER)
+        cls.refiner = load_module("learning_refiner_v2", REFINER)
         cls.pipeline = load_module("learning_pipeline_v2", PIPELINE)
         cls.validator = load_module("learning_validator_v2", VALIDATOR)
         cls.composer = load_module("learning_composer_character_v2", COMPOSER)
@@ -67,6 +69,7 @@ class LearningPageContractV2Tests(unittest.TestCase):
         title_lines: list[str],
         level: str,
         age: str,
+        apply_override: bool = True,
     ) -> dict:
         contract = self.normalizer.build_contract(
             root=ROOT,
@@ -77,7 +80,11 @@ class LearningPageContractV2Tests(unittest.TestCase):
             level_name=level,
             age=age,
         )
-        self.pipeline.apply_curated_override(contract)
+        override_applied = self.pipeline.apply_curated_override(contract) if apply_override else False
+        self.refiner.refine_contract(
+            contract,
+            curated_override_applied=override_applied,
+        )
         self.pipeline.normalise_star_policy(contract, self.star)
         return contract
 
@@ -117,6 +124,7 @@ class LearningPageContractV2Tests(unittest.TestCase):
             )
             self.assertEqual("official-asset-separate", contract["illustration"]["star_policy"])
             self.assertIn("What is your name?", contract["guidance"]["teacher"]["question"])
+            self.assertFalse(contract["source_lineage"]["content_refinement_applied"])
             report, evidence, output = self.render(contract, temporary)
             self.assertEqual("PASS", report["status"])
             self.assertEqual(3, evidence["components"]["worksheet"]["component_count"])
@@ -153,6 +161,7 @@ class LearningPageContractV2Tests(unittest.TestCase):
             )
             self.assertEqual("prohibited", contract["illustration"]["star_policy"])
             self.assertIn("red, yellow, and blue", contract["learning"]["student_instruction"])
+            self.assertFalse(contract["source_lineage"]["content_refinement_applied"])
             report, evidence, _ = self.render(contract, temporary)
             self.assertEqual("PASS", report["status"])
             self.assertNotIn("official_star", evidence["components"])
@@ -160,6 +169,38 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 ["model_example", "creative_response_area"],
                 evidence["components"]["worksheet"]["component_types"],
             )
+
+    def test_portfolio_refiner_replaces_generic_non_curated_content(self) -> None:
+        contract = {
+            "identity": {"title": "Colour Play"},
+            "learning": {
+                "student_instruction": "Art activity Discussion",
+                "expected_response": "Expected child response",
+            },
+            "activity": {"primary": "colour"},
+            "guidance": {
+                "teacher": {
+                    "model": "Demonstrate the art technique before children begin.",
+                    "question": "What can you show or tell about colour play?",
+                },
+                "parent_extension": "Repeat the activity at home using safe art materials.",
+            },
+            "illustration": {
+                "scene": "One dominant learning scene with a clearly protected child-response area.",
+                "focal_point": "One dominant focus for Colour Play.",
+            },
+            "source_lineage": {},
+        }
+        refined = self.refiner.refine_contract(contract, curated_override_applied=False)
+        combined = json.dumps(refined).casefold()
+        self.assertNotIn("art activity discussion", combined)
+        self.assertNotIn("one dominant learning scene", combined)
+        self.assertNotIn("what can you show or tell about", combined)
+        self.assertTrue(refined["source_lineage"]["content_refinement_applied"])
+        self.assertGreaterEqual(
+            len(refined["source_lineage"]["content_refinement_changes"]),
+            6,
+        )
 
     def test_blank_illustration_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as folder:
