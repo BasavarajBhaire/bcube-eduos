@@ -7,6 +7,8 @@ on:
       - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_cover_pipeline.py'
       - 'scripts/run_bcube_front_matter_pipeline.py'
+      - 'scripts/run_bcube_activity_pipeline.py'
+      - 'scripts/run_bcube_learning_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
   push:
@@ -16,6 +18,8 @@ on:
       - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_cover_pipeline.py'
       - 'scripts/run_bcube_front_matter_pipeline.py'
+      - 'scripts/run_bcube_activity_pipeline.py'
+      - 'scripts/run_bcube_learning_pipeline.py'
       - 'requirements.txt'
       - '.github/workflows/validate-publishing-sdk.yml'
 
@@ -30,7 +34,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Compile SDK and pipelines
-        run: python -m py_compile bcube-publishing-sdk/composer/*.py bcube-publishing-sdk/validators/*.py scripts/bcube_publish.py scripts/run_bcube_cover_pipeline.py scripts/run_bcube_front_matter_pipeline.py
+        run: |
+          python -m py_compile \
+            bcube-publishing-sdk/composer/*.py \
+            bcube-publishing-sdk/normalizers/*.py \
+            bcube-publishing-sdk/validators/*.py \
+            scripts/bcube_publish.py \
+            scripts/run_bcube_cover_pipeline.py \
+            scripts/run_bcube_front_matter_pipeline.py \
+            scripts/run_bcube_activity_pipeline.py \
+            scripts/run_bcube_learning_pipeline.py
       - name: Validate SDK contracts
         run: python bcube-publishing-sdk/validators/validate_sdk.py
       - name: Validate Nursery LKG UKG cover registry
@@ -49,6 +62,20 @@ jobs:
               assert len(data['books']) == 10
               total += len(data['books'])
           assert total == 30
+          PY
+      - name: Validate Learning Page Contract V2 registry
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          contract = json.loads(Path('bcube-publishing-sdk/contracts/learning-page-contract-v2.json').read_text(encoding='utf-8'))
+          template = json.loads(Path('bcube-publishing-sdk/templates/learning-page-v2.json').read_text(encoding='utf-8'))
+          assert contract['contract_version'] == 'learning-page-contract-v2.0'
+          assert template['template_version'] == 'learning-page-v2.0'
+          assert set(contract['layout_variants']) == set(template['layout_variants'])
+          assert len(contract['layout_variants']) == 11
+          assert contract['qa_policy']['require_measured_geometry'] is True
+          assert contract['illustration_policy']['artwork_only'] is True
           PY
       - name: Test registry-driven prompt discovery
         run: |
@@ -116,3 +143,5 @@ jobs:
         run: |
           python scripts/run_bcube_cover_pipeline.py --help
           python scripts/run_bcube_front_matter_pipeline.py --help
+          python scripts/run_bcube_activity_pipeline.py --help
+          python scripts/run_bcube_learning_pipeline.py --help
