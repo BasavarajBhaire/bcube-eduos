@@ -83,11 +83,11 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
     page_id = args.page_id or f"{prefix}-{level_data['id_level']}-V4-P{args.physical_page:03d}"
     illustration = stage_illustration(args.illustration, page_id)
     logo = find_asset(list(shared["official_logo_candidates"]), "official BCube logo")
-    star = find_asset(list(shared["official_star_candidates"]), "official Star")
     data = {
         "page_id": page_id,
         "book_key": f"{args.level}/{args.book}",
         "book_title": " ".join(book["title_lines"]),
+        "book_title_lines": book["title_lines"],
         "level": level_data["display_level"],
         "age": level_data["age"],
         "page_number": args.page_number,
@@ -100,7 +100,6 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
         "parent_prompt": args.parent_prompt,
         "illustration_path": repo_relative(illustration),
         "official_logo_path": repo_relative(logo),
-        "official_star_path": repo_relative(star),
     }
     data_path = ROOT / "production-renders/activity/page-data" / f"{page_id}.json"
     output = ROOT / "production-renders/activity/pages" / f"{page_id}.png"

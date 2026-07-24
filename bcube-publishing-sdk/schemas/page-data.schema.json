@@ -7,7 +7,7 @@
   "required": ["prompt_id", "page_type", "book", "level", "physical_page", "printed_page", "content", "assets"],
   "properties": {
     "prompt_id": {"type": "string", "minLength": 1},
-    "page_type": {"enum": ["cover", "about", "publisher", "contents", "back_cover"]},
+    "page_type": {"enum": ["cover", "about", "publisher", "contents", "welcome", "meet_star", "lesson", "back_cover"]},
     "book": {
       "type": "object",
       "additionalProperties": false,

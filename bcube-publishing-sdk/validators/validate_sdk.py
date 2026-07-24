@@ -26,7 +26,9 @@ def main() -> None:
     if components.get("canvas") != canvas or templates.get("canvas") != canvas:
         raise SystemExit("SDK canvas must be exactly 2480x3508 at 300 DPI")
 
-    expected_types = {"cover", "about", "publisher", "contents", "back_cover"}
+    expected_types = {
+        "cover", "about", "publisher", "contents", "welcome", "meet_star", "lesson", "back_cover",
+    }
     actual_types = set(templates.get("templates", {}))
     if actual_types != expected_types:
         raise SystemExit(f"Publishing page types mismatch: {sorted(actual_types)}")
@@ -56,6 +58,39 @@ def main() -> None:
     for forbidden in ("age_badge", "teacher_panel", "parent_panel", "sticky_note", "callout"):
         if forbidden not in contents.get("prohibited", []):
             raise SystemExit(f"Contents must prohibit {forbidden}")
+
+    special_render = load(SDK / "templates/special-page-v1.json")
+    special_rules = special_render.get("rules", {})
+    if special_rules.get("header_type") != "BOOK_HEADER":
+        raise SystemExit("Contents, Welcome, and Meet Star must use BOOK_HEADER")
+    for key in ("series_banner", "age_badge", "teacher_panel", "parent_panel"):
+        if special_rules.get(key) is not False:
+            raise SystemExit(f"Special page template must disable {key}")
+    if special_render.get("contents", {}).get("entries_per_page") != 19:
+        raise SystemExit("Each Contents page must contain exactly 19 reader-facing entries")
+    if special_render.get("welcome", {}).get("expected_printed_page") != 5:
+        raise SystemExit("Welcome must visibly start numbering at page 5")
+    if special_render.get("meet_star", {}).get("expected_printed_page") != 6:
+        raise SystemExit("Meet Star must visibly show page 6")
+    if special_render.get("meet_star", {}).get("official_star_count") != 1:
+        raise SystemExit("Meet Star must contain exactly one official Star")
+
+    welcome = templates["templates"]["welcome"]
+    meet_star = templates["templates"]["meet_star"]
+    lesson = templates["templates"]["lesson"]
+    if welcome["constraints"].get("printed_page") != 5 or welcome.get("header_type") != "BOOK_HEADER":
+        raise SystemExit("Welcome contract must use BOOK_HEADER and printed page 5")
+    if meet_star["constraints"].get("official_star") != 1:
+        raise SystemExit("Meet Star contract must require one official Star")
+    if lesson.get("header_type") != "LESSON_HEADER" or lesson["constraints"].get("default_star") is not False:
+        raise SystemExit("Lesson contract must use LESSON_HEADER without a default Star")
+    activity_render = load(SDK / "templates/activity-page-v1.json")
+    if activity_render.get("rules", {}).get("show_book_title") is not True:
+        raise SystemExit("Lesson pages must show the book identity in the header")
+    if activity_render.get("rules", {}).get("show_star") is not False:
+        raise SystemExit("Lesson pages must not place Star over teacher or parent panels")
+    if "star" in activity_render.get("bounds", {}):
+        raise SystemExit("Lesson layout must not reserve an overlapping default Star region")
 
     publisher = templates["templates"]["publisher"]
     if publisher["constraints"].get("illustration") is not False:

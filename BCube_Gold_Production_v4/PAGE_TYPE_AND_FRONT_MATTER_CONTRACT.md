@@ -108,20 +108,34 @@ A page must never substitute one header contract for another.
 ### Contents
 - Header type: `BOOK_HEADER`.
 - Header shows `{Book Name}` and `{Page Title}`.
-- Small navigation icons only; no dominant full-page illustration.
+- Two-column module index with every learning-page title and printed page number exactly once.
+- No illustration, Star mascot, age badge, sticky note or decorative callout.
 - Teacher and parent panels are prohibited.
 - No visible page number.
 
-### Character Introduction / How to Use
+### Welcome
 - Header type: `BOOK_HEADER`.
-- Page-specific illustration or instructional graphics allowed.
-- No visible page number while part of front matter.
+- Header shows `{Book Name}` and `{Page Title}`.
+- Uses one book-specific hero illustration and no Star mascot.
+- Teacher and parent panels are prohibited.
+- Physical page 6 displays printed page 5.
+
+### Meet Star / Character Introduction
+- Header type: `BOOK_HEADER`.
+- Uses the exact registered `{Official Star Mascot}` once; generated or uploaded substitutes are prohibited.
+- Teacher and parent panels are prohibited.
+- Physical page 7 displays printed page 6 unless the release manifest specifies another mapping.
+
+### How to Use
+- Header type: `BOOK_HEADER`.
+- Page-specific instructional graphics are allowed.
+- Number visibility follows the release manifest.
 
 ### Lesson / Learning Page
 - Header type: `LESSON_HEADER`.
-- First visible page number appears on the first lesson.
-- Front matter counts internally even though its numbers are hidden.
-- Example: four counted front-matter pages means Lesson 1 displays page 5.
+- Shows compact `{Book Name}`, the individual `{Lesson Title}`, child instruction, teacher guidance and parent partnership.
+- Uses the printed page number from the release manifest.
+- The generic lesson template does not add Star; Star is permitted only when the individual page contract explicitly requires it.
 - Individual V4 page content remains authoritative.
 
 ### Assessment / Reflection / Certificate
@@ -139,11 +153,11 @@ A page must never substitute one header contract for another.
 | Series header | Yes | No | No | No | No | No | No | No |
 | Book header | No | Minimal | Yes | Yes | Yes | Compact | Yes | Optional |
 | Official logo | Yes | Optional | Yes | Yes | Yes | Yes | Yes | Yes |
-| Official Star | Yes | No | Optional | Optional | Yes | Page-specific | Optional | Optional |
+| Official Star | Yes | No | No | No | Meet Star: exactly one | Page-specific only | Optional | Optional |
 | Full illustration | Yes | No | Yes | No | Page-specific | Yes | No | Page-specific |
 | Teacher panel | No | No | No | No | No | Yes | No | No |
 | Parent panel | No | No | No | No | No | Yes | No | No |
-| Visible page number | No | No | No | No | No | Yes | Manifest | No |
+| Visible page number | No | No | No | No | Manifest | Manifest | Manifest | No |
 | Core pillars | Yes | No | Optional | No | Optional | Template-specific | No | Optional |
 
 Any component marked `No` is a critical defect if present.
@@ -203,6 +217,9 @@ Reject a page when:
 - the first lesson number does not include counted front matter;
 - the About page repeats the series banner instead of `{Book Name}`;
 - an About or Contents page contains teacher or parent panels;
+- a Contents page contains an illustration, Star, sticky note or incomplete page index;
+- a Meet Star page redraws, duplicates or substitutes the registered Star asset;
+- a generic learning page places Star over the teacher or parent panels;
 - a component prohibited by the page-type matrix is present;
 - global rules override page-specific educational intent;
 - an official asset is generated, redrawn or substituted;

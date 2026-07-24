@@ -109,13 +109,7 @@ def publish():
             "--level", form["level"],
             "--book", form["book"],
         ]
-        if record.page_type == "copyright":
-            command += [
-                "--page", "publisher",
-                "--physical-page", str(record.physical_page),
-                "--page-id", record.page_id,
-            ]
-        else:
+        if record.public_dict()["requires_illustration"]:
             uploaded = save_upload()
             command += [
                 "--provider", "manual",
@@ -133,7 +127,40 @@ def publish():
                 "--objective", record.objective,
                 "--instruction", record.instruction,
             ]
-        elif record.page_type != "copyright":
+        elif record.page_type == "copyright":
+            command += [
+                "--page", "publisher",
+                "--physical-page", str(record.physical_page),
+                "--page-id", record.page_id,
+            ]
+        elif record.page_type == "contents":
+            command += [
+                "--page", "contents",
+                "--physical-page", str(record.physical_page),
+                "--page-id", record.page_id,
+                "--title", record.title,
+            ]
+        elif record.page_type == "welcome":
+            command += [
+                "--page", "welcome",
+                "--physical-page", str(record.physical_page),
+                "--page-number", str(record.printed_page if record.printed_visible else 0),
+                "--page-id", record.page_id,
+                "--title", record.title,
+                "--objective", record.objective,
+                "--instruction", record.instruction,
+            ]
+        elif record.page_type == "meet-star":
+            command += [
+                "--page", "meet-star",
+                "--physical-page", str(record.physical_page),
+                "--page-number", str(record.printed_page if record.printed_visible else 0),
+                "--page-id", record.page_id,
+                "--title", record.title,
+                "--objective", record.objective,
+                "--instruction", record.instruction,
+            ]
+        else:
             command += [
                 "--page", "activity",
                 "--physical-page", str(record.physical_page),

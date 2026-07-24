@@ -27,6 +27,24 @@
       "prohibited": ["series_banner", "age_badge", "illustration_frame", "illustration_layer", "teacher_panel", "parent_panel", "page_number", "sticky_note", "callout"],
       "constraints": {"visible_page_number": false, "columns": 2, "show_module_names": true, "show_all_manifest_learning_pages": true}
     },
+    "welcome": {
+      "header_type": "BOOK_HEADER",
+      "required": ["official_logo", "book_title", "page_title", "tagline_ribbon", "illustration_frame", "core_pillars", "footer", "page_number"],
+      "prohibited": ["series_banner", "age_badge", "official_star", "teacher_panel", "parent_panel"],
+      "constraints": {"visible_page_number": true, "printed_page": 5, "physical_page": 6}
+    },
+    "meet_star": {
+      "header_type": "BOOK_HEADER",
+      "required": ["official_logo", "book_title", "page_title", "tagline_ribbon", "official_star", "core_pillars", "footer", "page_number"],
+      "prohibited": ["series_banner", "age_badge", "illustration_layer", "teacher_panel", "parent_panel"],
+      "constraints": {"visible_page_number": true, "printed_page": 6, "physical_page": 7, "official_star": 1}
+    },
+    "lesson": {
+      "header_type": "LESSON_HEADER",
+      "required": ["official_logo", "book_title", "page_title", "learning_goal", "activity_banner", "illustration_frame", "teacher_panel", "parent_panel", "page_number"],
+      "prohibited": ["series_banner", "age_badge", "official_star"],
+      "constraints": {"visible_page_number": true, "page_specific_content": true, "default_star": false}
+    },
     "back_cover": {
       "header_type": "BOOK_HEADER",
       "required": ["official_logo", "book_title", "tagline_ribbon", "footer"],

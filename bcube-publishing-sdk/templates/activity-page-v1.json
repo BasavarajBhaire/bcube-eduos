@@ -9,13 +9,13 @@
   ],
   "bounds": {
     "logo": [110, 82, 430, 285],
-    "title": [470, 88, 2260, 260],
+    "book_title": [470, 60, 2260, 125],
+    "title": [470, 125, 2260, 285],
     "objective": [150, 300, 2330, 465],
     "instruction": [150, 500, 2330, 680],
     "activity_frame": [150, 720, 2330, 2560],
     "teacher_panel": [150, 2625, 1170, 3230],
     "parent_panel": [1310, 2625, 2330, 3230],
-    "star": [1030, 2860, 1450, 3280],
     "page_number": [2190, 3280, 2350, 3400]
   },
   "colours": {
@@ -37,7 +37,8 @@
     "max_teacher_chars": 420,
     "max_parent_chars": 360,
     "show_logo": true,
-    "show_star": true,
+    "show_book_title": true,
+    "show_star": false,
     "show_page_number": true,
     "one_physical_page_per_output": true
   }

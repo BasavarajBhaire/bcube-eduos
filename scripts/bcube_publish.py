@@ -292,6 +292,102 @@ def run_publisher(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_special(args: argparse.Namespace, page_type: str) -> int:
+    rules = {
+        "contents": {"physical": {4, 5}, "illustration": False},
+        "welcome": {"physical": {6}, "illustration": True, "page_number": 5},
+        "meet-star": {"physical": {7}, "illustration": False, "page_number": 6},
+    }[page_type]
+    if args.physical_page not in rules["physical"]:
+        allowed = ", ".join(str(value) for value in sorted(rules["physical"]))
+        raise ValueError(f"{page_type} must use physical page {allowed}")
+    if "page_number" in rules and args.page_number != rules["page_number"]:
+        raise ValueError(f"{page_type} must visibly show page {rules['page_number']}")
+    if rules["illustration"] and args.illustration is None:
+        raise ValueError(f"{page_type} requires --illustration")
+    if not rules["illustration"] and args.illustration is not None:
+        raise ValueError(f"{page_type} prohibits an uploaded illustration")
+    if args.approve and not args.reviewer:
+        raise ValueError("--reviewer is required with --approve")
+    command = [
+        sys.executable,
+        str(FRONT_MATTER_PIPELINE),
+        "--level", args.level,
+        "--book", args.book,
+        "--page", page_type,
+        "--physical-page", str(args.physical_page),
+    ]
+    if args.page_id:
+        command += ["--page-id", args.page_id]
+    if args.title:
+        command += ["--title", args.title]
+    if page_type in {"welcome", "meet-star"}:
+        command += [
+            "--page-number", str(args.page_number),
+            "--objective", args.objective or "",
+            "--instruction", args.instruction or "",
+        ]
+    if rules["illustration"]:
+        command += ["--illustration", str(args.illustration)]
+    run(command)
+
+    _, level_data, book = resolve_book(args.level, args.book)
+    page_id = args.page_id or f"{book['prefix']}-{level_data['id_level']}-V4-P{args.physical_page:03d}"
+    legacy_illustration = ROOT / "production-renders/front-matter/illustrations" / f"{page_id}.png"
+    legacy_page = ROOT / "production-renders/pages" / f"{page_id}.png"
+    legacy_evidence = ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
+    legacy_page_data = ROOT / "production-renders/page-data" / f"{page_id}.json"
+    legacy_report = ROOT / "validation/rendered-pages" / f"{page_id}.{page_type}-input.json"
+    candidate_illustration = WORK / "candidates/illustrations" / f"{page_id}.png"
+    candidate_page = WORK / "candidates/pages" / f"{page_id}.png"
+    approved_illustration = WORK / "approved/illustrations" / f"{page_id}.png"
+    approved_page = WORK / "approved/pages" / f"{page_id}.png"
+    evidence_copy = WORK / "evidence" / f"{page_id}.json"
+    page_data_copy = WORK / "manifests" / f"{page_id}.page-data.json"
+    report_copy = WORK / "reports" / f"{page_id}.{page_type}-input.json"
+    if rules["illustration"]:
+        copy_artifact(legacy_illustration, candidate_illustration)
+    copy_artifact(legacy_page, candidate_page)
+    copy_artifact(legacy_evidence, evidence_copy)
+    copy_artifact(legacy_page_data, page_data_copy)
+    copy_artifact(legacy_report, report_copy)
+    state, active_page = "REVIEW_CANDIDATE", candidate_page
+    if args.approve:
+        if rules["illustration"]:
+            copy_artifact(candidate_illustration, approved_illustration)
+        copy_artifact(candidate_page, approved_page)
+        state, active_page = "PRODUCTION_PASS", approved_page
+    paths = {
+        "candidate_page": candidate_page,
+        "approved_page": approved_page,
+        "composition_evidence": evidence_copy,
+        "page_data": page_data_copy,
+        "qa_report": report_copy,
+    }
+    if rules["illustration"]:
+        paths.update({
+            "candidate_illustration": candidate_illustration,
+            "approved_illustration": approved_illustration,
+        })
+    manifest = write_review_manifest(
+        page_id=page_id,
+        book=args.book,
+        level=args.level,
+        state=state,
+        provider=args.provider if rules["illustration"] else "deterministic",
+        reviewer=args.reviewer,
+        paths=paths,
+    )
+    print(json.dumps({
+        "engine": "BCube Publishing Engine v5.2",
+        "state": state,
+        "page": str(active_page),
+        "review_manifest": str(manifest),
+        "qa_report": str(report_copy),
+    }, indent=2))
+    return 0
+
+
 def run_activity(args: argparse.Namespace) -> int:
     required = {
         "physical_page": args.physical_page,
@@ -428,7 +524,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="BCube Publishing Engine")
     parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], required=True)
     parser.add_argument("--book", required=True)
-    parser.add_argument("--page", default="cover", choices=["cover", "about", "publisher", "activity"])
+    parser.add_argument(
+        "--page", default="cover",
+        choices=["cover", "about", "publisher", "contents", "welcome", "meet-star", "activity"],
+    )
     parser.add_argument("--provider", choices=["manual", "openai", "reuse"], default=os.getenv("BCUBE_IMAGE_PROVIDER", "manual"))
     parser.add_argument("--illustration", type=Path)
     parser.add_argument("--confirm-clean-illustration", action="store_true")
@@ -452,6 +551,8 @@ def main() -> int:
         return run_about(args)
     if args.page == "publisher":
         return run_publisher(args)
+    if args.page in {"contents", "welcome", "meet-star"}:
+        return run_special(args, args.page)
     return run_cover(args)
 
 

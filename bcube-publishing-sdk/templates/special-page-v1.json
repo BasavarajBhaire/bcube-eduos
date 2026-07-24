@@ -1,0 +1,57 @@
+{
+  "template_version": "page-type-contract-v1",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "colours": {
+    "background": "#FFFDF8",
+    "navy": "#163B65",
+    "purple": "#6F3D91",
+    "blue": "#1768B3",
+    "gold": "#F5B51B",
+    "pink": "#ED2F7C",
+    "text": "#333333",
+    "muted": "#687386"
+  },
+  "common_bounds": {
+    "logo": [110, 70, 430, 285],
+    "book_title": [470, 60, 2310, 175],
+    "page_title": [470, 175, 2310, 305],
+    "tagline": [150, 345, 2330, 490],
+    "pillars": [150, 2940, 2330, 3190],
+    "page_number": [2180, 3180, 2350, 3280],
+    "footer": [0, 3290, 2480, 3508]
+  },
+  "contents": {
+    "body": [150, 545, 2330, 2885],
+    "columns": [[170, 565, 1160, 2855], [1320, 565, 2310, 2855]],
+    "module_heading_min_px": 46,
+    "entry_min_px": 44,
+    "row_advance_min_px": 160,
+    "entries_per_page": 19,
+    "visible_page_number": false,
+    "requires_illustration": false
+  },
+  "welcome": {
+    "message": [250, 535, 2230, 760],
+    "illustration_frame": [150, 810, 2330, 2860],
+    "visible_page_number": true,
+    "expected_printed_page": 5,
+    "requires_illustration": true
+  },
+  "meet_star": {
+    "message": [250, 535, 2230, 790],
+    "star": [650, 820, 1830, 2440],
+    "purpose": [330, 2470, 2150, 2860],
+    "visible_page_number": true,
+    "expected_printed_page": 6,
+    "requires_illustration": false,
+    "official_star_count": 1
+  },
+  "rules": {
+    "header_type": "BOOK_HEADER",
+    "series_banner": false,
+    "age_badge": false,
+    "teacher_panel": false,
+    "parent_panel": false,
+    "one_physical_page_per_output": true
+  }
+}
