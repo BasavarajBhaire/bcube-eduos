@@ -386,16 +386,36 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
             "actual": star["visible_occupancy"],
             "minimum": spec["minimum_visible_occupancy"],
         }
+        message_star_gap = star["rendered_bounds"][1] - spec["message"][3]
+        star_purpose_gap = spec["purpose"][1] - star["rendered_bounds"][3]
+        components["layout_gaps"] = {
+            "message_to_star": message_star_gap,
+            "minimum_message_to_star": spec["minimum_message_star_gap"],
+            "star_to_purpose": star_purpose_gap,
+            "minimum_star_to_purpose": spec["minimum_star_purpose_gap"],
+        }
+        if message_star_gap < spec["minimum_message_star_gap"]:
+            raise ValueError(
+                f"Meet Star message-to-mascot gap {message_star_gap}px is below the locked minimum "
+                f"{spec['minimum_message_star_gap']}px"
+            )
+        if star_purpose_gap < spec["minimum_star_purpose_gap"]:
+            raise ValueError(
+                f"Meet Star mascot-to-purpose gap {star_purpose_gap}px is below the locked minimum "
+                f"{spec['minimum_star_purpose_gap']}px"
+            )
         draw.rounded_rectangle(spec["purpose"], radius=34, fill="#F3EAF9", outline=colours["soft_purple"], width=4)
         components["purpose"] = fitted_text(
             draw,
             data["purpose"],
-            [spec["purpose"][0] + 50, spec["purpose"][1] + 28,
-             spec["purpose"][2] - 50, spec["purpose"][3] - 28],
-            max_size=42,
-            min_size=28,
+            [spec["purpose"][0] + spec["purpose_text_padding_x"],
+             spec["purpose"][1] + spec["purpose_text_padding_y"],
+             spec["purpose"][2] - spec["purpose_text_padding_x"],
+             spec["purpose"][3] - spec["purpose_text_padding_y"]],
+            max_size=spec["purpose_text_max_px"],
+            min_size=spec["purpose_text_min_px"],
             colour=colours["text"],
-            max_lines=4,
+            max_lines=spec["purpose_text_max_lines"],
         )
     if occupancy_gate is not None and occupancy_gate["actual"] < occupancy_gate["minimum"]:
         raise ValueError(
