@@ -116,18 +116,24 @@ def paste_contain(canvas: Image.Image, source: Path, bounds: list[int]) -> dict[
 
 def draw_title(
     draw: ImageDraw.ImageDraw,
+    book_title: str,
     lines: list[str],
     bounds: dict[str, list[int]],
     colours: dict[str, str],
 ) -> list[dict[str, Any]]:
+    combined = [
+        bounds["book_title_line_1"][0],
+        bounds["book_title_line_1"][1],
+        bounds["book_title_line_2"][2],
+        bounds["book_title_line_2"][3],
+    ]
+    try:
+        return [draw_fitted_text(draw, book_title, combined, max_size=88, min_size=46,
+                                 fill=colours["purple"], bold=True, align="center", max_lines=1)]
+    except ValueError:
+        pass
     if len(lines) == 1:
-        combined = [
-            bounds["book_title_line_1"][0],
-            bounds["book_title_line_1"][1],
-            bounds["book_title_line_2"][2],
-            bounds["book_title_line_2"][3],
-        ]
-        return [draw_fitted_text(draw, lines[0], combined, max_size=94, min_size=54,
+        return [draw_fitted_text(draw, lines[0], combined, max_size=88, min_size=46,
                                  fill=colours["purple"], bold=True, align="center", max_lines=2)]
     return [
         draw_fitted_text(draw, lines[0], bounds["book_title_line_1"], max_size=82, min_size=48,
@@ -165,7 +171,7 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
     draw = ImageDraw.Draw(canvas)
 
     logo_render = paste_contain(canvas, resolve(data["official_logo_path"]), bounds["logo"])
-    title_render = draw_title(draw, data["book_title_lines"], bounds, colours)
+    title_render = draw_title(draw, data["book_title"], data["book_title_lines"], bounds, colours)
     level_render = draw_fitted_text(
         draw, data["level"], bounds["level"], max_size=38, min_size=28,
         fill=colours["navy"], bold=True, align="center", max_lines=1,

@@ -60,4 +60,5 @@ contract. It uses `MINIMAL_HEADER` and deterministic publisher metadata. No
 illustration, Star, learning goal, activity banner, teacher/parent panel, age
 badge, page number or unassigned ISBN is permitted. Before the first approved
 physical print, it uses the maturity label `PILOT` rather than an edition
-number.
+number. The full book name stays on one line whenever it fits the locked title
+region; only genuinely long titles use the registered two-line fallback.

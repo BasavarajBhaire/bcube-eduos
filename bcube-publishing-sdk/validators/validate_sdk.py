@@ -74,6 +74,8 @@ def main() -> None:
         raise SystemExit("Rendered Publisher template must prohibit illustrations")
     if publisher_rules.get("isbn_allowed_without_assignment") is not False:
         raise SystemExit("Rendered Publisher template must prohibit unassigned ISBNs")
+    if publisher_rules.get("single_line_book_title_when_fit") is not True:
+        raise SystemExit("Publisher book titles must stay on one line when they fit")
     for forbidden in ("illustration_layer", "official_star", "learning_goal", "activity_banner",
                       "teacher_panel", "parent_panel", "visible_page_number"):
         if forbidden not in publisher_rules.get("prohibited_components", []):

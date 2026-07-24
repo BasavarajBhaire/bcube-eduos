@@ -91,6 +91,11 @@ class PublisherPageTests(unittest.TestCase):
             self.assertEqual("MINIMAL_HEADER", report["header_type"])
             self.assertFalse(report["illustration_required"])
             self.assertEqual("MINIMAL_HEADER", evidence["header_type"])
+            self.assertEqual(1, len(evidence["components"]["book_title"]))
+            self.assertEqual(
+                ["Art & Colour Fun"],
+                evidence["components"]["book_title"][0]["lines"],
+            )
             self.assertIn("publisher_details", evidence["components"])
             self.assertIn("identifiers", evidence["components"])
             self.assertIn("copyright_notice", evidence["components"])
