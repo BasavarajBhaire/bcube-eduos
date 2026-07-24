@@ -93,7 +93,26 @@ jobs:
             bcube-publishing-sdk/validators/validate_activity_inputs.py
       - name: Validate reference learning contracts
         run: python -m unittest tools/publishing-console/tests/test_learning_page_contract_v2.py -v
-      - name: Validate all 1080 learning content contracts
-        run: python -m unittest tools/publishing-console/tests/test_portfolio_learning_content_v1.py -v
+      - name: Generate 1080-page learning content audit
+        id: portfolio-audit
+        shell: bash
+        run: |
+          set +e
+          python -m unittest tools/publishing-console/tests/test_portfolio_learning_content_v1.py -v > /tmp/learning-content-audit.txt 2>&1
+          status=$?
+          echo "$status" > /tmp/learning-content-audit.exit
+          cat /tmp/learning-content-audit.txt
+          exit 0
+      - name: Upload learning content audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-content-audit
+          path: |
+            /tmp/learning-content-audit.txt
+            /tmp/learning-content-audit.exit
+          if-no-files-found: error
+      - name: Enforce 1080-page learning content audit
+        run: test "$(cat /tmp/learning-content-audit.exit)" = "0"
       - name: Validate remaining page records and console API
         run: python -m unittest discover -s tools/publishing-console/tests -v
