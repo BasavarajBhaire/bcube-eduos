@@ -39,6 +39,35 @@ LAYOUT_BY_ACTIVITY = {
     "reflect": "reflect-assess",
     "assessment": "reflect-assess",
 }
+
+GENERIC_OBJECTIVES = (
+    "to be completed",
+    "tbd",
+    "learning objective",
+    "develop skills through this activity",
+)
+OBJECTIVE_TEMPLATES = {
+    "observe": "Observe and identify the key features connected to {topic}.",
+    "speak": "Describe and discuss ideas connected to {topic} using clear language.",
+    "listen": "Listen carefully and identify information connected to {topic}.",
+    "trace": "Develop controlled tracing and copying skills through {topic}.",
+    "match": "Recognise relationships and match items correctly in {topic}.",
+    "connect": "Recognise related items and connect them correctly in {topic}.",
+    "colour": "Recognise and apply the target colours or visual features in {topic}.",
+    "draw": "Represent an idea connected to {topic} through a simple creative response.",
+    "count": "Count accurately and record a response connected to {topic}.",
+    "compare": "Compare groups or features connected to {topic} using appropriate language.",
+    "sort": "Sort and classify familiar items connected to {topic}.",
+    "sequence": "Order the events or stages connected to {topic}.",
+    "circle": "Identify and select an appropriate response connected to {topic}.",
+    "complete": "Use a visual or logical clue to complete the missing part in {topic}.",
+    "think": "Use visual clues and reasoning to solve a problem connected to {topic}.",
+    "maze": "Follow a controlled path from start to finish while practising visual planning.",
+    "explore": "Observe, predict, and explain a simple investigation connected to {topic}.",
+    "reflect": "Review and show understanding of the key ideas in {topic}.",
+    "assessment": "Show independent understanding of the key skills in {topic}.",
+}
+
 RESPONSE_MODES = {
     "observe": ["point", "oral"],
     "speak": ["oral"],
@@ -117,6 +146,14 @@ def resolve_primary(contract: dict[str, Any]) -> str:
     if any(key in text for key in ("draw", "art", "poster", "collage", "craft", "create", "design", "printing", "clay")):
         return "draw"
     return current if current in LAYOUT_BY_ACTIVITY else "observe"
+
+
+def locked_objective_for(contract: dict[str, Any], primary: str) -> str:
+    objective = clean(contract["learning"].get("objective"))
+    if objective and not any(fragment in objective.casefold() for fragment in GENERIC_OBJECTIVES):
+        return objective
+    topic = title_phrase(contract).casefold()
+    return OBJECTIVE_TEMPLATES[primary].format(topic=topic)
 
 
 def instruction_for(contract: dict[str, Any], primary: str) -> str:
@@ -405,6 +442,7 @@ def validate_locked_content(contract: dict[str, Any]) -> None:
 
 def apply_locked_content(contract: dict[str, Any]) -> dict[str, Any]:
     primary = resolve_primary(contract)
+    contract["learning"]["objective"] = locked_objective_for(contract, primary)
     instruction = instruction_for(contract, primary)
     expected = expected_response_for(contract, primary)
     model_text = model_text_for(contract, primary)
