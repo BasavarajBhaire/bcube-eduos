@@ -122,13 +122,16 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 ["model_phrase", "trace_line", "copy_line"],
                 [item["type"] for item in contract["deterministic_components"]],
             )
-            self.assertEqual("official-asset-separate", contract["illustration"]["star_policy"])
+            self.assertEqual("prohibited", contract["illustration"]["star_policy"])
+            self.assertNotIn("name card", contract["illustration"]["required_objects"])
             self.assertIn("What is your name?", contract["guidance"]["teacher"]["question"])
             self.assertFalse(contract["source_lineage"]["content_refinement_applied"])
             report, evidence, output = self.render(contract, temporary)
             self.assertEqual("PASS", report["status"])
             self.assertEqual(3, evidence["components"]["worksheet"]["component_count"])
-            self.assertIn("official_star", evidence["components"])
+            self.assertNotIn("official_star", evidence["components"])
+            self.assertEqual("compact-highlight", evidence["components"]["teacher_panel"]["style"])
+            self.assertEqual("compact-highlight", evidence["components"]["parent_panel"]["style"])
             self.assertEqual("REVIEW_CANDIDATE", evidence["qa"]["status"])
             with Image.open(output) as rendered:
                 self.assertEqual((2480, 3508), rendered.size)
@@ -154,9 +157,10 @@ class LearningPageContractV2Tests(unittest.TestCase):
             self.assertNotIn("art activity discussion", combined)
             self.assertNotIn("one dominant learning scene", combined)
             self.assertNotIn("what can you show or tell about", combined)
+            self.assertNotIn("match each colour", combined)
             self.assertEqual("colour-draw", contract["activity"]["layout_variant"])
             self.assertEqual(
-                ["model_example", "creative_response_area"],
+                ["model_phrase", "creative_response_area"],
                 [item["type"] for item in contract["deterministic_components"]],
             )
             self.assertEqual("prohibited", contract["illustration"]["star_policy"])
@@ -166,9 +170,11 @@ class LearningPageContractV2Tests(unittest.TestCase):
             self.assertEqual("PASS", report["status"])
             self.assertNotIn("official_star", evidence["components"])
             self.assertEqual(
-                ["model_example", "creative_response_area"],
+                ["model_phrase", "creative_response_area"],
                 evidence["components"]["worksheet"]["component_types"],
             )
+            self.assertEqual("compact-highlight", evidence["components"]["teacher_panel"]["style"])
+            self.assertEqual("compact-highlight", evidence["components"]["parent_panel"]["style"])
 
     def test_portfolio_refiner_replaces_generic_non_curated_content(self) -> None:
         contract = {
@@ -231,10 +237,20 @@ class LearningPageContractV2Tests(unittest.TestCase):
             )
         )
         base = self.composer.load_module()
+        teacher = template["common_bounds"]["teacher_panel"]
+        parent = template["common_bounds"]["parent_panel"]
+        self.assertLessEqual(teacher[3] - teacher[1], 360)
+        self.assertLessEqual(parent[3] - parent[1], 360)
+        self.assertEqual("compact-highlight", template["rules"]["adult_support_style"])
         for layout_name, layout in template["layout_variants"].items():
             geometry = base.validate_geometry(template, layout)
             self.assertFalse(geometry["illustration_response_overlap"], layout_name)
             self.assertGreaterEqual(geometry["illustration_response_gap"], 30, layout_name)
+            self.assertGreaterEqual(
+                teacher[1] - layout["response"][3],
+                40,
+                layout_name,
+            )
 
 
 if __name__ == "__main__":
