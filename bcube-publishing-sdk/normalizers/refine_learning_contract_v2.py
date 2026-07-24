@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -28,6 +29,15 @@ GENERIC_FRAGMENTS = (
     "model once, invite one response, pause for processing",
     "use a familiar home routine or everyday object",
 )
+
+ACTION_VERBS = {
+    "ask", "build", "choose", "circle", "colour", "color", "compare", "complete",
+    "connect", "count", "create", "discover", "draw", "explore", "find", "follow",
+    "identify", "join", "listen", "look", "make", "mark", "match", "name", "notice",
+    "observe", "order", "paint", "point", "predict", "read", "recognise", "recognize",
+    "say", "select", "share", "show", "sort", "speak", "tell", "think", "trace",
+    "try", "write",
+}
 
 INSTRUCTION_TEMPLATES = {
     "observe": "Look closely. Point to what you notice and say its name.",
@@ -180,9 +190,21 @@ def is_generic(value: Any) -> bool:
     return any(fragment in text for fragment in GENERIC_FRAGMENTS)
 
 
+def is_non_actionable_instruction(value: Any) -> bool:
+    text = clean(value).casefold()
+    words = re.findall(r"[a-z]+", text)
+    if not words:
+        return True
+    if words[-1:] in (["yes"], ["no"]):
+        return True
+    if len(words) <= 6 and not any(word in ACTION_VERBS for word in words):
+        return True
+    return False
+
+
 def shorten_instruction(value: str, activity: str, maximum: int = 180) -> tuple[str, bool]:
     text = clean(value)
-    if is_generic(text) or len(text) > maximum:
+    if is_generic(text) or is_non_actionable_instruction(text) or len(text) > maximum:
         return INSTRUCTION_TEMPLATES[activity], True
     return text, False
 
@@ -228,7 +250,7 @@ def refine_contract(contract: dict[str, Any], *, curated_override_applied: bool)
             illustration["focal_point"] = FOCAL_TEMPLATES[activity]
             changes.append("illustration.focal_point")
 
-    contract["source_lineage"]["portfolio_content_refiner"] = "learning-content-refiner-v1.0"
+    contract["source_lineage"]["portfolio_content_refiner"] = "learning-content-refiner-v1.1"
     contract["source_lineage"]["content_refinement_changes"] = changes
     contract["source_lineage"]["content_refinement_applied"] = bool(changes)
     return contract
