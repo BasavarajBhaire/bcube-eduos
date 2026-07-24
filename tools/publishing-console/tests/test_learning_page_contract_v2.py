@@ -122,13 +122,15 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 ["model_phrase", "trace_line", "copy_line"],
                 [item["type"] for item in contract["deterministic_components"]],
             )
-            self.assertEqual("official-asset-separate", contract["illustration"]["star_policy"])
+            self.assertEqual("prohibited", contract["illustration"]["star_policy"])
             self.assertIn("What is your name?", contract["guidance"]["teacher"]["question"])
             self.assertFalse(contract["source_lineage"]["content_refinement_applied"])
             report, evidence, output = self.render(contract, temporary)
             self.assertEqual("PASS", report["status"])
             self.assertEqual(3, evidence["components"]["worksheet"]["component_count"])
-            self.assertIn("official_star", evidence["components"])
+            self.assertNotIn("official_star", evidence["components"])
+            self.assertEqual("compact-highlight", evidence["components"]["teacher_panel"]["style"])
+            self.assertEqual("compact-highlight", evidence["components"]["parent_panel"]["style"])
             self.assertEqual("REVIEW_CANDIDATE", evidence["qa"]["status"])
             with Image.open(output) as rendered:
                 self.assertEqual((2480, 3508), rendered.size)
@@ -154,6 +156,7 @@ class LearningPageContractV2Tests(unittest.TestCase):
             self.assertNotIn("art activity discussion", combined)
             self.assertNotIn("one dominant learning scene", combined)
             self.assertNotIn("what can you show or tell about", combined)
+            self.assertNotIn("match each colour", contract["learning"]["student_instruction"].casefold())
             self.assertEqual("colour-draw", contract["activity"]["layout_variant"])
             self.assertEqual(
                 ["model_example", "creative_response_area"],
@@ -169,6 +172,11 @@ class LearningPageContractV2Tests(unittest.TestCase):
                 ["model_example", "creative_response_area"],
                 evidence["components"]["worksheet"]["component_types"],
             )
+            self.assertEqual(
+                "primary-colour-swatches",
+                evidence["components"]["worksheet"]["items"][0]["style"],
+            )
+            self.assertEqual("compact-highlight", evidence["components"]["teacher_panel"]["style"])
 
     def test_portfolio_refiner_replaces_generic_non_curated_content(self) -> None:
         contract = {
