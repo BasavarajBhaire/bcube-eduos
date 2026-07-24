@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BCube Publishing Console</title>
+  <style>
+    :root{font-family:Inter,system-ui,sans-serif;color:#1f2937;background:#f5f7fb}body{margin:0}.wrap{max-width:1100px;margin:32px auto;padding:0 20px}.card{background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(15,23,42,.08);padding:24px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:6px}input,select,textarea{width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;font:inherit}textarea{min-height:92px;resize:vertical}.actions{display:flex;gap:12px;align-items:center;margin-top:20px}button{border:0;border-radius:10px;padding:12px 18px;font-weight:800;cursor:pointer;background:#111827;color:#fff}button.secondary{background:#e5e7eb;color:#111827}.hidden{display:none}pre{white-space:pre-wrap;background:#0f172a;color:#e2e8f0;border-radius:12px;padding:16px;min-height:120px;overflow:auto}.status{font-weight:800}.ok{color:#047857}.bad{color:#b91c1c}@media(max-width:760px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>BCube Publishing Engine — Page Builder</h1>
+  <p>Create cover and interior review pages without typing long CLI commands.</p>
+  <div class="card">
+    <form id="builder">
+      <div class="grid">
+        <div><label>Level</label><select name="level" id="level"></select></div>
+        <div><label>Book</label><select name="book" id="book"></select></div>
+        <div><label>Page type</label><select name="page_type" id="pageType">
+          <option value="cover">Cover</option><option value="about-book">About the Book</option>
+          <option value="copyright">Copyright</option><option value="contents">Contents</option>
+          <option value="welcome">Welcome</option><option value="meet-star">Meet Star</option>
+          <option value="module-intro">Module Intro</option><option value="learning">Learning Page</option>
+          <option value="assessment">Assessment / Review</option><option value="certificate">Certificate</option>
+          <option value="back-cover">Back Cover</option>
+        </select></div>
+        <div><label>Illustration</label><input type="file" name="illustration" accept="image/png,image/jpeg,image/webp" required></div>
+        <div class="interior"><label>Physical page</label><input name="physical_page" id="physicalPage" type="number" min="1" value="2"></div>
+        <div class="interior"><label>Printed page number</label><input name="page_number" type="number" min="0" value="0"></div>
+        <div class="interior"><label>Page ID</label><input name="page_id" id="pageId"></div>
+        <div class="interior"><label>Title</label><input name="title"></div>
+        <div class="interior full"><label>Learning objective / page purpose</label><textarea name="objective"></textarea></div>
+        <div class="interior full"><label>Child instruction / page instruction</label><textarea name="instruction"></textarea></div>
+        <div class="interior full"><label>Teacher prompt</label><textarea name="teacher_prompt"></textarea></div>
+        <div class="interior full"><label>Parent prompt</label><textarea name="parent_prompt"></textarea></div>
+        <div><label>Reviewer</label><input name="reviewer" placeholder="Required only when approving"></div>
+        <div><label><input type="checkbox" id="approve" style="width:auto"> Approve for production</label></div>
+      </div>
+      <div class="actions"><button type="submit">Generate Page</button><button type="button" class="secondary" id="reset">Reset</button><span id="status" class="status"></span></div>
+    </form>
+    <h2>Engine output</h2><pre id="output">Ready.</pre>
+  </div>
+</div>
+<script>
+let registry={};
+const level=document.getElementById('level'), book=document.getElementById('book'), pageType=document.getElementById('pageType');
+const pageId=document.getElementById('pageId'), physicalPage=document.getElementById('physicalPage');
+async function loadBooks(){registry=await (await fetch('/api/books')).json();level.innerHTML=Object.entries(registry).map(([k,v])=>`<option value="${k}">${v.label} (${v.age})</option>`).join('');syncBooks();}
+function syncBooks(){const books=registry[level.value].books;book.innerHTML=Object.entries(books).map(([k,v])=>`<option value="${k}">${v.title}</option>`).join('');syncId();}
+function syncId(){if(!registry[level.value])return;const data=registry[level.value], b=data.books[book.value];if(!b)return;pageId.value=`${b.prefix}-${data.id_level}-V4-P${String(physicalPage.value||1).padStart(3,'0')}`;}
+function syncPage(){document.querySelectorAll('.interior').forEach(e=>e.classList.toggle('hidden',pageType.value==='cover'));}
+level.addEventListener('change',syncBooks);book.addEventListener('change',syncId);physicalPage.addEventListener('input',syncId);pageType.addEventListener('change',syncPage);
+document.getElementById('reset').onclick=()=>{document.getElementById('builder').reset();syncBooks();syncPage();document.getElementById('output').textContent='Ready.';};
+document.getElementById('builder').addEventListener('submit',async e=>{e.preventDefault();const status=document.getElementById('status'),out=document.getElementById('output');status.textContent='Running…';status.className='status';const fd=new FormData(e.target);fd.set('approve',document.getElementById('approve').checked?'true':'false');try{const res=await fetch('/api/publish',{method:'POST',body:fd});const data=await res.json();out.textContent=JSON.stringify(data,null,2);status.textContent=data.ok?'Completed':'Failed';status.className='status '+(data.ok?'ok':'bad');}catch(err){status.textContent='Failed';status.className='status bad';out.textContent=String(err);}});
+loadBooks().then(syncPage);
+</script>
+</body>
+</html>
