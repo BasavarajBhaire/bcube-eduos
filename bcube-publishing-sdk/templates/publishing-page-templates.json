@@ -17,9 +17,9 @@
     },
     "publisher": {
       "header_type": "MINIMAL_HEADER",
-      "required": ["official_logo", "book_title", "publisher_details", "footer"],
-      "prohibited": ["series_banner", "age_badge", "official_star", "illustration_frame", "illustration_layer", "skill_capsules", "module_groups", "core_pillars", "page_number", "teacher_panel", "parent_panel"],
-      "constraints": {"visible_page_number": false, "illustration": false}
+      "required": ["official_logo", "book_title", "publisher_details", "publication_code", "document_id", "footer"],
+      "prohibited": ["series_banner", "age_badge", "official_star", "illustration_frame", "illustration_layer", "skill_capsules", "module_groups", "core_pillars", "page_number", "learning_goal", "activity_banner", "teacher_panel", "parent_panel", "isbn"],
+      "constraints": {"visible_page_number": false, "illustration": false, "isbn_without_assignment": false}
     },
     "contents": {
       "header_type": "BOOK_HEADER",

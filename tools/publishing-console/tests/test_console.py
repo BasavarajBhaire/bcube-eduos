@@ -67,6 +67,7 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertEqual(44, len(payload["pages"]))
         self.assertEqual("YS-UKG-V4-P002", payload["pages"][1]["page_id"])
         self.assertEqual("Hidden", payload["pages"][1]["printed_page_label"])
+        self.assertFalse(payload["pages"][2]["requires_illustration"])
 
     @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
     @patch.object(console_app.subprocess, "run")
@@ -104,6 +105,28 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertEqual("about", command[command.index("--page") + 1])
         self.assertEqual("CB-NURSERY-V4-P002", command[command.index("--page-id") + 1])
         self.assertNotIn("--page-number", command)
+        self.assertNotIn("--activity-type", command)
+        self.assertNotIn("--teacher-prompt", command)
+        self.assertNotIn("--parent-prompt", command)
+
+    @patch.object(console_app, "save_upload")
+    @patch.object(console_app.subprocess, "run")
+    def test_copyright_page_uses_publisher_contract_without_upload_or_lesson_panels(
+        self, run_mock, upload_mock
+    ) -> None:
+        run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
+        response = self.client.post("/api/publish", data={
+            "level": "nursery",
+            "book": "art-colour-fun",
+            "physical_page": "3",
+            "approve": "false",
+        })
+        self.assertEqual(200, response.status_code)
+        command = run_mock.call_args.args[0]
+        upload_mock.assert_not_called()
+        self.assertEqual("publisher", command[command.index("--page") + 1])
+        self.assertEqual("AC-NURSERY-V4-P003", command[command.index("--page-id") + 1])
+        self.assertNotIn("--illustration", command)
         self.assertNotIn("--activity-type", command)
         self.assertNotIn("--teacher-prompt", command)
         self.assertNotIn("--parent-prompt", command)

@@ -18,7 +18,7 @@
         <div><label>Level</label><select name="level" id="level"></select></div>
         <div><label>Book</label><select name="book" id="book"></select></div>
         <div><label>Physical page</label><select name="physical_page" id="physicalPage" required></select></div>
-        <div><label>Illustration</label><input type="file" name="illustration" accept="image/png,image/jpeg,image/webp" required></div>
+        <div id="illustrationField"><label>Illustration</label><input id="illustrationInput" type="file" name="illustration" accept="image/png,image/jpeg,image/webp" required></div>
         <div><label>Reviewer</label><input name="reviewer" placeholder="Required only when approving"></div>
         <div><label><input type="checkbox" id="approve" style="width:auto"> Approve for production</label></div>
       </div>
@@ -29,10 +29,10 @@
           <div class="meta"><span>Page type</span><strong id="metaType">&mdash;</strong></div>
           <div class="meta"><span>Printed page</span><strong id="metaPrinted">&mdash;</strong></div>
           <div class="meta wide"><span>Title</span><strong id="metaTitle">&mdash;</strong></div>
-          <div class="meta wide"><span>Learning objective / purpose</span><strong id="metaObjective">&mdash;</strong></div>
-          <div class="meta wide"><span>Child / page instruction</span><strong id="metaInstruction">&mdash;</strong></div>
-          <div class="meta wide"><span>Teacher guidance</span><strong id="metaTeacher">&mdash;</strong></div>
-          <div class="meta wide"><span>Parent partnership</span><strong id="metaParent">&mdash;</strong></div>
+          <div class="meta wide" id="metaObjectiveRow"><span>Learning objective / purpose</span><strong id="metaObjective">&mdash;</strong></div>
+          <div class="meta wide" id="metaInstructionRow"><span>Child / page instruction</span><strong id="metaInstruction">&mdash;</strong></div>
+          <div class="meta wide" id="metaTeacherRow"><span>Teacher guidance</span><strong id="metaTeacher">&mdash;</strong></div>
+          <div class="meta wide" id="metaParentRow"><span>Parent partnership</span><strong id="metaParent">&mdash;</strong></div>
           <div class="meta wide"><span>Authoritative source</span><strong id="metaSource">&mdash;</strong></div>
         </div>
       </section>
@@ -45,9 +45,10 @@
 let registry={}, pages=[];
 const level=document.getElementById('level'), book=document.getElementById('book'), physicalPage=document.getElementById('physicalPage');
 const status=document.getElementById('status'), output=document.getElementById('output'), submit=document.getElementById('submit');
+const illustrationField=document.getElementById('illustrationField'), illustrationInput=document.getElementById('illustrationInput');
 const meta={id:'metaId',type:'metaType',printed:'metaPrinted',title:'metaTitle',objective:'metaObjective',instruction:'metaInstruction',teacher:'metaTeacher',parent:'metaParent',source:'metaSource'};
 function text(id,value){document.getElementById(id).textContent=value||'—';}
-function showPage(){const page=pages.find(item=>String(item.physical_page)===physicalPage.value);text(meta.id,page?.page_id);text(meta.type,page?.page_type_label);text(meta.printed,page?.printed_page_label);text(meta.title,page?.title);text(meta.objective,page?.objective);text(meta.instruction,page?.instruction);text(meta.teacher,page?.teacher_prompt);text(meta.parent,page?.parent_prompt);text(meta.source,page?.source);submit.disabled=!page;}
+function showPage(){const page=pages.find(item=>String(item.physical_page)===physicalPage.value);const needsIllustration=page?.requires_illustration!==false;illustrationField.classList.toggle('hidden',!needsIllustration);illustrationInput.required=needsIllustration;if(!needsIllustration)illustrationInput.value='';const administrative=page?.page_type==='copyright';['metaObjectiveRow','metaInstructionRow','metaTeacherRow','metaParentRow'].forEach(id=>document.getElementById(id).classList.toggle('hidden',administrative));text(meta.id,page?.page_id);text(meta.type,page?.page_type_label);text(meta.printed,page?.printed_page_label);text(meta.title,page?.title);text(meta.objective,page?.objective);text(meta.instruction,page?.instruction);text(meta.teacher,page?.teacher_prompt);text(meta.parent,page?.parent_prompt);text(meta.source,page?.source);submit.disabled=!page;}
 async function loadPages(){submit.disabled=true;status.textContent='Loading page records…';status.className='status';try{const res=await fetch(`/api/pages?level=${encodeURIComponent(level.value)}&book=${encodeURIComponent(book.value)}`);const data=await res.json();if(!res.ok)throw new Error(data.error||'Could not load page records');pages=data.pages;physicalPage.innerHTML=pages.map(page=>`<option value="${page.physical_page}">P${String(page.physical_page).padStart(3,'0')} — ${page.title}</option>`).join('');status.textContent=`${pages.length} finalized pages loaded`;status.className='status ok';showPage();}catch(err){pages=[];physicalPage.innerHTML='';showPage();status.textContent='Page data unavailable';status.className='status bad';output.textContent=String(err);}}
 async function loadBooks(){registry=await (await fetch('/api/books')).json();level.innerHTML=Object.entries(registry).map(([key,value])=>`<option value="${key}">${value.label} (${value.age})</option>`).join('');syncBooks();}
 function syncBooks(){const books=registry[level.value].books;book.innerHTML=Object.entries(books).map(([key,value])=>`<option value="${key}">${value.title}</option>`).join('');loadPages();}

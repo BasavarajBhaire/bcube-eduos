@@ -16,6 +16,8 @@ REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 LEGACY_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_front_matter.py"
 ABOUT_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_about_page.py"
 ABOUT_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_about_inputs.py"
+PUBLISHER_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_publisher_page.py"
+PUBLISHER_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_publisher_inputs.py"
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -64,6 +66,17 @@ def prompt_manifest(level: str, slug: str) -> Path:
         if path.is_file():
             return path
     raise FileNotFoundError(f"No V4 release manifest found for {level}/{slug}")
+
+
+def publication_number(level: str, slug: str) -> int:
+    portfolio = load(ROOT / f"production-prompts/{level}/V4_PORTFOLIO_MANIFEST.json")
+    books = portfolio.get("books") if level == "nursery" else portfolio.get("completed")
+    if not isinstance(books, list):
+        raise ValueError(f"Portfolio manifest contains no official book sequence for {level}")
+    for index, book in enumerate(books, start=1):
+        if isinstance(book, dict) and book.get("slug") == slug:
+            return index
+    raise ValueError(f"{slug!r} is not in the official {level.upper()} portfolio sequence")
 
 
 def contents_entries(level: str, slug: str) -> list[dict[str, Any]]:
@@ -124,6 +137,27 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "illustration_path": repo_relative(illustration),
             "official_logo_path": resolve_logo(registry),
         }
+    elif page_type == "publisher":
+        publisher = registry.get("shared", {}).get("publisher")
+        if not isinstance(publisher, dict):
+            raise ValueError("Shared publisher registry is missing")
+        code_level = {"nursery": "NUR", "lkg": "LKG", "ukg": "UKG"}[level]
+        number = publication_number(level, slug)
+        year = int(publisher["copyright_year"])
+        data = {
+            "page_id": page_id,
+            "page_type": "publisher",
+            "physical_page": physical,
+            "book_title": title,
+            "book_title_lines": list(book["title_lines"]),
+            "page_title": "Publication & Copyright",
+            "level": level_data["display_level"],
+            "publisher": dict(publisher),
+            "publication_code": f"BCUBE-{code_level}-{book['prefix']}-{number:03d}",
+            "document_id": f"{book['prefix']}-{level_data['id_level']}-PILOT-{year}",
+            "copyright_notice": f"© {year} {publisher['name']}. All rights reserved.",
+            "official_logo_path": resolve_logo(registry),
+        }
     else:
         data = {
             "page_id": page_id,
@@ -133,23 +167,14 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "age": level_data["age"],
             "series": registry["series"],
             "logo_path": resolve_logo(registry),
+            "entries": contents_entries(level, slug),
         }
-        if page_type == "publisher":
-            data["publisher_rows"] = [
-                ["Publisher", "BCube Future Academy"],
-                ["Address", "407, DSMAX Sky Supreme, KST, Bangalore - 560060"],
-                ["Email", "info@bcubefutureacademy.in"],
-                ["Website", "bcubefutureacademy.in"],
-                ["Edition", "First Edition, 2026"],
-                ["Copyright", "© 2026 BCube Future Academy. All rights reserved."],
-            ]
-        else:
-            data["entries"] = contents_entries(level, slug)
 
     data_path = ROOT / "production-renders/page-data" / f"{page_id}.json"
     output = ROOT / "production-renders/pages" / f"{page_id}.png"
     evidence = ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
-    report = ROOT / "validation/rendered-pages" / f"{page_id}.about-input.json" if page_type == "about" else None
+    report_suffix = {"about": "about-input", "publisher": "publisher-input"}.get(page_type)
+    report = ROOT / "validation/rendered-pages" / f"{page_id}.{report_suffix}.json" if report_suffix else None
     data_path.parent.mkdir(parents=True, exist_ok=True)
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return data_path, output, evidence, report
@@ -167,13 +192,21 @@ def main() -> int:
     parser.add_argument("--instruction")
     args = parser.parse_args()
     data, output, evidence, report = build_data(args)
-    composer = ABOUT_COMPOSER if args.page == "about" else LEGACY_COMPOSER
-    if args.page == "about":
+    composer = {
+        "about": ABOUT_COMPOSER,
+        "publisher": PUBLISHER_COMPOSER,
+        "contents": LEGACY_COMPOSER,
+    }[args.page]
+    validator = {
+        "about": ABOUT_VALIDATOR,
+        "publisher": PUBLISHER_VALIDATOR,
+    }.get(args.page)
+    if validator is not None:
         if report is None:
-            raise ValueError("About-page input report path was not resolved")
+            raise ValueError(f"{args.page.title()}-page input report path was not resolved")
         report.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(
-            [sys.executable, str(ABOUT_VALIDATOR), "--data", str(data), "--output", str(report)],
+            [sys.executable, str(validator), "--data", str(data), "--output", str(report)],
             cwd=ROOT,
             check=True,
         )

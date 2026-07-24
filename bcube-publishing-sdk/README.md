@@ -50,3 +50,14 @@ book name is the primary two-colour header and `About This Book` is the
 secondary title. The renderer includes the approved illustration, six learning
 outcomes, five core pillars and standard footer, while failing closed on lesson
 panels, series branding, the age badge, page numbering or Star placement.
+
+## Publisher/Copyright renderer
+
+`templates/publisher-page-v1.json`,
+`validators/validate_publisher_inputs.py` and
+`composer/compose_publisher_page.py` implement the locked administrative-page
+contract. It uses `MINIMAL_HEADER` and deterministic publisher metadata. No
+illustration, Star, learning goal, activity banner, teacher/parent panel, age
+badge, page number or unassigned ISBN is permitted. Before the first approved
+physical print, it uses the maturity label `PILOT` rather than an edition
+number.

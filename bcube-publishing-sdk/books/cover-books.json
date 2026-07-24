@@ -16,7 +16,17 @@
     ],
     "official_star_candidates": [
       "BCube_Gold_Production_v4/OFFICIAL_ASSETS/Official_BCube_Star.png"
-    ]
+    ],
+    "publisher": {
+      "name": "BCube Future Academy",
+      "address": "407, DSMAX Sky Supreme, KST, Bangalore - 560060",
+      "email": "info@bcubefutureacademy.in",
+      "website": "bcubefutureacademy.in",
+      "phone": "+91 79750 59945",
+      "copyright_year": 2026,
+      "production_status": "PILOT",
+      "country_of_print": "India"
+    }
   },
   "levels": {
     "nursery": {

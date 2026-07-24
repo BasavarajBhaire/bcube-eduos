@@ -97,6 +97,16 @@ jobs:
           assert 'teacher_panel' not in evidence['components']
           assert 'parent_panel' not in evidence['components']
           assert evidence['prohibited_component_counts']['visible_page_number'] == 0
+          publisher=json.loads(Path('production-renders/qa-manifests/EM-LKG-V4-P003.json').read_text())
+          assert publisher['header_type'] == 'MINIMAL_HEADER'
+          assert publisher['qa']['illustration_free'] is True
+          for component in ('illustration_layer','official_star','learning_goal','activity_banner',
+                            'teacher_panel','parent_panel','isbn'):
+              assert publisher['prohibited_component_counts'][component] == 0
+          page_data=json.loads(Path('production-renders/page-data/EM-LKG-V4-P003.json').read_text())
+          assert page_data['publication_code'] == 'BCUBE-LKG-EM-003'
+          assert page_data['publisher']['phone'] == '+91 79750 59945'
+          assert 'isbn' not in page_data
           PY
       - name: Test V6 Contents page
         run: |

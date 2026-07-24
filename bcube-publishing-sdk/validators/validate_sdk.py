@@ -60,6 +60,24 @@ def main() -> None:
     publisher = templates["templates"]["publisher"]
     if publisher["constraints"].get("illustration") is not False:
         raise SystemExit("Publisher page must prohibit illustrations")
+    if publisher.get("header_type") != "MINIMAL_HEADER":
+        raise SystemExit("Publisher page must use MINIMAL_HEADER")
+    for forbidden in ("age_badge", "official_star", "illustration_layer", "page_number",
+                      "teacher_panel", "parent_panel"):
+        if forbidden not in publisher.get("prohibited", []):
+            raise SystemExit(f"Publisher page must prohibit {forbidden}")
+    publisher_render = load(SDK / "templates/publisher-page-v1.json")
+    if publisher_render.get("header_type") != "MINIMAL_HEADER":
+        raise SystemExit("Rendered Publisher template must use MINIMAL_HEADER")
+    publisher_rules = publisher_render.get("rules", {})
+    if publisher_rules.get("illustration_allowed") is not False:
+        raise SystemExit("Rendered Publisher template must prohibit illustrations")
+    if publisher_rules.get("isbn_allowed_without_assignment") is not False:
+        raise SystemExit("Rendered Publisher template must prohibit unassigned ISBNs")
+    for forbidden in ("illustration_layer", "official_star", "learning_goal", "activity_banner",
+                      "teacher_panel", "parent_panel", "visible_page_number"):
+        if forbidden not in publisher_rules.get("prohibited_components", []):
+            raise SystemExit(f"Rendered Publisher template must prohibit {forbidden}")
 
     about = templates["templates"]["about"]
     if about.get("header_type") != "BOOK_HEADER":
