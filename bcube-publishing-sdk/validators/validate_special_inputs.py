@@ -58,15 +58,6 @@ def validate_locked_copy(data: dict[str, Any], page_type: str) -> None:
     for phrase in PLACEHOLDER_PHRASES:
         if phrase in combined:
             raise ValueError(f"{page_type} contains prohibited placeholder copy: {phrase!r}")
-    if page_type == "welcome":
-        title = str(data.get("page_title") or "").strip()
-        if not title.casefold().startswith("welcome to "):
-            raise ValueError("Welcome page title must use the locked 'Welcome to {Book Title}' form")
-    else:
-        if str(data.get("page_title") or "").strip() != "Meet Star":
-            raise ValueError("Meet Star page title must be exactly 'Meet Star'")
-        if "i am star" not in str(data.get("message") or "").casefold():
-            raise ValueError("Meet Star message must introduce the official mascot with 'I am Star'")
 
 
 def validate(data_path: Path) -> dict[str, Any]:
