@@ -108,6 +108,9 @@ def paste_contain(
     inset: int = 0,
     remove_near_white: bool = False,
     trim_near_white: bool = False,
+    fit_mode: str = "contain",
+    focus_x: float = 0.5,
+    focus_y: float = 0.5,
 ) -> dict[str, Any]:
     image = Image.open(source).convert("RGBA")
     original = [image.width, image.height]
@@ -134,18 +137,51 @@ def paste_contain(
     y0 += inset
     x1 -= inset
     y1 -= inset
-    scale = min((x1 - x0) / image.width, (y1 - y0) / image.height)
-    width = max(1, round(image.width * scale))
-    height = max(1, round(image.height * scale))
-    image = image.resize((width, height), Image.Resampling.LANCZOS)
-    x = x0 + (x1 - x0 - width) // 2
-    y = y0 + (y1 - y0 - height) // 2
+    if fit_mode not in {"contain", "cover"}:
+        raise ValueError(f"Unsupported illustration fit mode: {fit_mode!r}")
+    if not 0 <= focus_x <= 1 or not 0 <= focus_y <= 1:
+        raise ValueError("Illustration focal positions must be between 0 and 1")
+    target_width = x1 - x0
+    target_height = y1 - y0
+    if fit_mode == "cover":
+        scale = max(target_width / image.width, target_height / image.height)
+    else:
+        scale = min(target_width / image.width, target_height / image.height)
+    resized_width = max(1, round(image.width * scale))
+    resized_height = max(1, round(image.height * scale))
+    image = image.resize((resized_width, resized_height), Image.Resampling.LANCZOS)
+    cover_crop_bounds = [0, 0, resized_width, resized_height]
+    clip_applied = False
+    if fit_mode == "cover":
+        overflow_x = max(0, resized_width - target_width)
+        overflow_y = max(0, resized_height - target_height)
+        crop_x = round(overflow_x * focus_x)
+        crop_y = round(overflow_y * focus_y)
+        cover_crop_bounds = [
+            crop_x,
+            crop_y,
+            crop_x + target_width,
+            crop_y + target_height,
+        ]
+        clip_applied = overflow_x > 0 or overflow_y > 0
+        image = image.crop(tuple(cover_crop_bounds))
+        width, height = target_width, target_height
+        x, y = x0, y0
+    else:
+        width, height = resized_width, resized_height
+        x = x0 + (target_width - width) // 2
+        y = y0 + (target_height - height) // 2
     canvas.paste(image, (x, y), image)
     return {
         "source_size": original,
         "source_crop_bounds": crop_bounds,
         "trimmed_source_size": trimmed_source,
         "trim_applied": trim_near_white,
+        "fit_mode": fit_mode,
+        "focal_point": [focus_x, focus_y],
+        "preclip_rendered_size": [resized_width, resized_height],
+        "cover_crop_bounds": cover_crop_bounds,
+        "clip_applied": clip_applied,
         "rendered_bounds": [x, y, x + width, y + height],
         "scale": scale,
     }
@@ -310,6 +346,9 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
         inset=template["rules"]["illustration_safe_inset"],
         remove_near_white=True,
         trim_near_white=True,
+        fit_mode=template["rules"]["illustration_fit_mode"],
+        focus_x=template["rules"]["illustration_focus"][0],
+        focus_y=template["rules"]["illustration_focus"][1],
     )
 
     outcomes_label_render = draw_fitted_text(
