@@ -11,7 +11,9 @@ on:
       - 'bcube-publishing-sdk/contracts/learning-page-contract-v2.json'
       - 'bcube-publishing-sdk/templates/learning-page-v2.json'
       - 'bcube-publishing-sdk/books/learning-page-overrides-v1.json'
+      - 'bcube-publishing-sdk/books/learning-content-v1/**'
       - 'bcube-publishing-sdk/normalizers/*learning*contract*v2.py'
+      - 'bcube-publishing-sdk/normalizers/curate_learning_content_v1.py'
       - 'bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py'
       - 'bcube-publishing-sdk/composer/compose_learning_page_v2.py'
       - 'bcube-publishing-sdk/composer/compose_learning_page_character_v2.py'
@@ -38,7 +40,9 @@ on:
       - 'bcube-publishing-sdk/contracts/learning-page-contract-v2.json'
       - 'bcube-publishing-sdk/templates/learning-page-v2.json'
       - 'bcube-publishing-sdk/books/learning-page-overrides-v1.json'
+      - 'bcube-publishing-sdk/books/learning-content-v1/**'
       - 'bcube-publishing-sdk/normalizers/*learning*contract*v2.py'
+      - 'bcube-publishing-sdk/normalizers/curate_learning_content_v1.py'
       - 'bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py'
       - 'bcube-publishing-sdk/composer/compose_learning_page_v2.py'
       - 'bcube-publishing-sdk/composer/compose_learning_page_character_v2.py'
@@ -75,6 +79,7 @@ jobs:
             scripts/run_bcube_activity_pipeline.py \
             scripts/run_bcube_learning_pipeline.py \
             bcube-publishing-sdk/normalizers/build_learning_contract_v2.py \
+            bcube-publishing-sdk/normalizers/curate_learning_content_v1.py \
             bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py \
             bcube-publishing-sdk/normalizers/finalise_learning_contract_v2.py \
             bcube-publishing-sdk/composer/compose_learning_page_v2.py \
@@ -86,5 +91,9 @@ jobs:
             bcube-publishing-sdk/validators/validate_about_inputs.py \
             bcube-publishing-sdk/validators/validate_publisher_inputs.py \
             bcube-publishing-sdk/validators/validate_activity_inputs.py
-      - name: Validate all page records and console API
+      - name: Validate reference learning contracts
+        run: python -m unittest tools/publishing-console/tests/test_learning_page_contract_v2.py -v
+      - name: Validate all 1080 learning content contracts
+        run: python -m unittest tools/publishing-console/tests/test_portfolio_learning_content_v1.py -v
+      - name: Validate remaining page records and console API
         run: python -m unittest discover -s tools/publishing-console/tests -v
