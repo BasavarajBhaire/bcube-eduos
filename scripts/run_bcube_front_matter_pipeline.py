@@ -13,13 +13,14 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
+SPECIAL_COPY_REGISTRY = ROOT / "bcube-publishing-sdk/books/special-page-copy-v1.json"
 ABOUT_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_about_page.py"
 ABOUT_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_about_inputs.py"
 PUBLISHER_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_publisher_page.py"
 PUBLISHER_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_publisher_inputs.py"
 SPECIAL_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_special_page.py"
 SPECIAL_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_special_inputs.py"
-SPECIAL_COPY_VERSION = "special-pages-v1.1"
+SPECIAL_COPY_VERSION = "special-pages-v1.2"
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -139,49 +140,34 @@ def stage_illustration(source: Path, page_id: str) -> Path:
     return destination
 
 
-def _skill_phrase(value: Any) -> str:
-    text = " ".join(str(value).split()).strip()
-    if not text:
-        raise ValueError("Registered special-page skills must not be empty")
-    return text.lower()
+def special_copy(level: str, slug: str) -> dict[str, str]:
+    registry = load(SPECIAL_COPY_REGISTRY)
+    if registry.get("copy_version") != SPECIAL_COPY_VERSION:
+        raise ValueError("Special-page copy registry version does not match the publishing pipeline")
+    level_copy = registry.get("levels", {}).get(level)
+    if not isinstance(level_copy, dict):
+        raise ValueError(f"No locked special-page copy exists for level {level!r}")
+    book_copy = level_copy.get(slug)
+    if not isinstance(book_copy, dict):
+        raise ValueError(f"No locked special-page copy exists for {level}/{slug}")
+    required = {"welcome_message", "meet_star_purpose"}
+    missing = sorted(required - set(book_copy))
+    if missing:
+        raise ValueError(f"Locked special-page copy is incomplete for {level}/{slug}: {missing}")
+    return {key: " ".join(str(book_copy[key]).split()) for key in required}
 
 
-def _natural_list(values: list[str]) -> str:
-    if not values:
-        raise ValueError("At least one registered skill is required for special-page copy")
-    if len(values) == 1:
-        return values[0]
-    if len(values) == 2:
-        return f"{values[0]} and {values[1]}"
-    return ", ".join(values[:-1]) + f", and {values[-1]}"
+def welcome_copy(level: str, slug: str) -> dict[str, str]:
+    copy = special_copy(level, slug)
+    return {"page_title": "Welcome!", "message": copy["welcome_message"]}
 
 
-def registered_skills(book: dict[str, Any]) -> list[str]:
-    skills = book.get("skills")
-    if not isinstance(skills, list) or len(skills) != 6:
-        raise ValueError("Each registered book must provide exactly six skills for locked special-page copy")
-    return [_skill_phrase(value) for value in skills]
-
-
-def welcome_copy(title: str, book: dict[str, Any]) -> dict[str, str]:
-    """Return locked, child-facing Welcome copy derived from the registered book identity."""
-    skills = registered_skills(book)
-    return {
-        "page_title": f"Welcome to {title}",
-        "message": f"Let us learn to {_natural_list(skills)}.",
-    }
-
-
-def meet_star_copy(title: str, book: dict[str, Any]) -> dict[str, str]:
-    """Return locked Meet Star copy; V4 placeholder curriculum text is never used."""
-    skills = registered_skills(book)
+def meet_star_copy(title: str, level: str, slug: str) -> dict[str, str]:
+    copy = special_copy(level, slug)
     return {
         "page_title": "Meet Star",
         "message": f"Hello! I am Star, your friendly guide through {title}.",
-        "purpose": (
-            f"Together, we will learn to {_natural_list(skills[:4])}. "
-            "I will encourage you to try, think, and celebrate every step."
-        ),
+        "purpose": copy["meet_star_purpose"],
     }
 
 
@@ -261,7 +247,7 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
         if args.illustration is None:
             raise ValueError("Welcome pages require --illustration")
         illustration = stage_illustration(args.illustration, page_id)
-        copy = welcome_copy(title, book)
+        copy = welcome_copy(level, slug)
         data = {
             "page_id": page_id,
             "page_type": "welcome",
@@ -273,7 +259,7 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "level": level_data["display_level"],
             "tagline": book["tagline"],
             "message": copy["message"],
-            "content_source": "locked_book_registry",
+            "content_source": "locked_special_page_copy_registry",
             "content_policy_version": SPECIAL_COPY_VERSION,
             "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
             "footer_keywords": book["footer_keywords"],
@@ -283,7 +269,7 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
     else:
         if physical != 7 or args.page_number != 6:
             raise ValueError("Meet Star must be physical page 7 and visibly numbered 6")
-        copy = meet_star_copy(title, book)
+        copy = meet_star_copy(title, level, slug)
         data = {
             "page_id": page_id,
             "page_type": "meet_star",
@@ -296,7 +282,7 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "tagline": book["tagline"],
             "message": copy["message"],
             "purpose": copy["purpose"],
-            "content_source": "locked_book_registry",
+            "content_source": "locked_special_page_copy_registry",
             "content_policy_version": SPECIAL_COPY_VERSION,
             "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
             "footer_keywords": book["footer_keywords"],
