@@ -14,6 +14,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 NORMALIZER = ROOT / "bcube-publishing-sdk/normalizers/build_learning_contract_v2.py"
+REFINER = ROOT / "bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py"
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_learning_contract_v2.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_character_v2.py"
 OVERRIDES = ROOT / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
@@ -207,6 +208,21 @@ def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
     )
     contract = load(contract_path)
     override_applied = apply_curated_override(contract)
+    contract["source_lineage"]["html_registry_source"] = repo_relative(source)
+    contract["source_lineage"]["curated_override_applied"] = override_applied
+    contract_path.write_text(json.dumps(contract, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    refine_command = [
+        sys.executable,
+        str(REFINER),
+        "--contract",
+        str(contract_path),
+        "--output",
+        str(contract_path),
+    ]
+    if override_applied:
+        refine_command.append("--curated-override-applied")
+    run(refine_command)
+    contract = load(contract_path)
     normalise_star_policy(contract, star)
     verify_identity(
         contract,
@@ -216,8 +232,6 @@ def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
         level=args.level,
         slug=args.book,
     )
-    contract["source_lineage"]["html_registry_source"] = repo_relative(source)
-    contract["source_lineage"]["curated_override_applied"] = override_applied
     contract_path.write_text(json.dumps(contract, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return contract_path, output, evidence, report
 
