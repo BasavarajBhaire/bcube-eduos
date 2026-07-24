@@ -1,5 +1,5 @@
 {
-  "version": "learning-page-overrides-v1.0",
+  "version": "learning-page-overrides-v1.1",
   "description": "Curated page-owned refinements that override generic or degraded source fields without changing the frozen curriculum objective.",
   "pages": {
     "CC-NURSERY-V4-P008": {
@@ -23,11 +23,11 @@
         "parent_extension": "Say family members’ names and clap the syllables in each name. Let the child trace one familiar name with a finger."
       },
       "illustration": {
-        "scene": "One child looking into a mirror while the official Star asset holds a blank name card. Keep the lower writing area completely clear.",
-        "focal_point": "The child and mirror are the visual model; one dotted trace guide and one blank copy guide are built separately by the page composer.",
-        "required_objects": ["child", "mirror", "blank name card"],
-        "forbidden_objects": ["group classroom", "completed child name", "alphabet drill", "generated Star", "text inside artwork"],
-        "protected_response_zones": ["entire deterministic trace-and-copy area below the illustration"],
+        "scene": "One child looking into a mirror beside a blank picture card. Reserve a clear lower-right area for the official Star asset overlay. Keep the lower writing area completely clear.",
+        "focal_point": "The child and mirror are the visual model; the official Star is added separately, and the trace and copy guides are built by the page composer.",
+        "required_objects": ["child", "mirror", "blank picture card"],
+        "forbidden_objects": ["group classroom", "completed child name", "alphabet drill", "generated or redrawn Star", "text inside artwork"],
+        "protected_response_zones": ["entire deterministic trace-and-copy area below the illustration", "clear lower-right official Star overlay zone"],
         "star_policy": "official-asset-separate",
         "artwork_only": true,
         "no_visible_text": true,
@@ -64,7 +64,7 @@
         "scene": "Three large paint pots—red, yellow, and blue—beside three familiar preschool objects that clearly match those colours. Include one small finished colour sample as the model.",
         "focal_point": "The three primary colours are unmistakable, while the large child artwork area remains empty and unobstructed.",
         "required_objects": ["red paint pot", "yellow paint pot", "blue paint pot", "three familiar matching objects", "small model picture"],
-        "forbidden_objects": ["secondary colour labels", "generated text", "generated Star", "full worksheet layout", "decorative empty frames"],
+        "forbidden_objects": ["secondary colour labels", "generated text", "generated or redrawn Star", "full worksheet layout", "decorative empty frames"],
         "protected_response_zones": ["large deterministic creative-response area below the illustration"],
         "star_policy": "prohibited",
         "artwork_only": true,
