@@ -103,6 +103,7 @@ A page must never substitute one header contract for another.
 - `{Book Name}` is rendered on one line using the registered purple/blue title segments; automatic two-line splitting is prohibited.
 - Do not repeat the series banner.
 - Illustration and learning-outcome icons are allowed.
+- The illustration uses the locked frame, trims only empty white source canvas, fits within a 60 px inset and preserves aspect ratio without cropping or stretching.
 - Teacher and parent panels are prohibited.
 - No visible page number.
 

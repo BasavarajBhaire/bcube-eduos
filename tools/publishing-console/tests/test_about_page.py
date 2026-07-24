@@ -76,7 +76,7 @@ class AboutPageTests(unittest.TestCase):
             illustration = temporary / "illustration.png"
             image = Image.new("RGB", (1200, 1000), "white")
             draw = ImageDraw.Draw(image)
-            draw.rounded_rectangle((120, 100, 1080, 900), radius=80, fill="#F8D7E8")
+            draw.rounded_rectangle((410, 70, 790, 930), radius=80, fill="#F8D7E8")
             image.save(illustration, "PNG", dpi=(300, 300))
             data_path = temporary / "data.json"
             output = temporary / "about.png"
@@ -115,6 +115,19 @@ class AboutPageTests(unittest.TestCase):
                 evidence["components"]["book_title"]["coloured_segments"],
             )
             self.assertTrue(evidence["qa"]["single_line_book_title"])
+            illustration_render = evidence["components"]["illustration"]
+            self.assertTrue(illustration_render["trim_applied"])
+            self.assertNotEqual(
+                [0, 0, 1200, 1000], illustration_render["source_crop_bounds"]
+            )
+            self.assertLess(
+                illustration_render["trimmed_source_size"][0],
+                illustration_render["source_size"][0],
+            )
+            self.assertEqual(
+                [150, 860, 2330, 2330],
+                evidence["components"]["illustration_frame"]["bounds"],
+            )
             self.assertIn("page_title", evidence["components"])
             self.assertIn("learning_outcomes", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
