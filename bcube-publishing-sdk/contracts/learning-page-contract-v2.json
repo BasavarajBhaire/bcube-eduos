@@ -1,0 +1,139 @@
+{
+  "contract_version": "learning-page-contract-v2.0",
+  "description": "Structured source of truth for BCube learning-page content, illustration rules, deterministic worksheet mechanics, and measured QA.",
+  "required_sections": [
+    "identity",
+    "learning",
+    "activity",
+    "guidance",
+    "illustration",
+    "deterministic_components",
+    "prohibitions",
+    "source_lineage"
+  ],
+  "supported_primary_activities": [
+    "observe",
+    "speak",
+    "listen",
+    "trace",
+    "match",
+    "connect",
+    "colour",
+    "draw",
+    "count",
+    "compare",
+    "sort",
+    "sequence",
+    "circle",
+    "complete",
+    "maze",
+    "explore",
+    "think",
+    "reflect",
+    "assessment"
+  ],
+  "layout_variants": {
+    "observe-speak": {
+      "activities": ["observe", "speak", "listen"],
+      "required_component_types": ["speech_response"],
+      "allowed_component_types": ["speech_response", "choice_targets", "response_box"]
+    },
+    "trace-copy": {
+      "activities": ["trace"],
+      "required_component_types": ["trace_line"],
+      "allowed_component_types": ["model_phrase", "trace_line", "copy_line", "response_box"]
+    },
+    "match-connect": {
+      "activities": ["match", "connect"],
+      "required_component_types": ["matching_anchors"],
+      "allowed_component_types": ["matching_anchors", "choice_targets", "response_box"]
+    },
+    "colour-draw": {
+      "activities": ["colour", "draw"],
+      "required_component_types": ["creative_response_area"],
+      "allowed_component_types": ["model_example", "creative_response_area", "choice_targets"]
+    },
+    "count-compare": {
+      "activities": ["count", "compare"],
+      "required_component_types": ["number_response_boxes"],
+      "allowed_component_types": ["number_response_boxes", "choice_targets", "comparison_symbols"]
+    },
+    "sort-classify": {
+      "activities": ["sort"],
+      "required_component_types": ["sort_bins"],
+      "allowed_component_types": ["sort_bins", "choice_targets"]
+    },
+    "sequence-story": {
+      "activities": ["sequence"],
+      "required_component_types": ["sequence_slots"],
+      "allowed_component_types": ["sequence_slots", "speech_response"]
+    },
+    "choice-circle": {
+      "activities": ["circle", "complete", "think"],
+      "required_component_types": ["choice_targets"],
+      "allowed_component_types": ["choice_targets", "response_box", "model_example"]
+    },
+    "maze-path": {
+      "activities": ["maze"],
+      "required_component_types": ["maze_path"],
+      "allowed_component_types": ["maze_path"]
+    },
+    "build-explore": {
+      "activities": ["explore"],
+      "required_component_types": ["prediction_observation"],
+      "allowed_component_types": ["prediction_observation", "response_box", "speech_response"]
+    },
+    "reflect-assess": {
+      "activities": ["reflect", "assessment"],
+      "required_component_types": ["response_box"],
+      "allowed_component_types": ["response_box", "choice_targets", "speech_response", "number_response_boxes"]
+    }
+  },
+  "illustration_policy": {
+    "artwork_only": true,
+    "minimum_side_px": 768,
+    "maximum_full_page_width_px": 2200,
+    "maximum_full_page_height_px": 3200,
+    "minimum_visible_occupancy": 0.16,
+    "maximum_visible_occupancy": 0.92,
+    "prohibit_visible_text": true,
+    "prohibit_logo": true,
+    "prohibit_page_layout": true,
+    "star_policy_values": ["prohibited", "official-asset-separate", "not-required"],
+    "required_fields": [
+      "scene",
+      "focal_point",
+      "required_objects",
+      "forbidden_objects",
+      "protected_response_zones",
+      "star_policy"
+    ]
+  },
+  "content_policy": {
+    "student_instruction_max_chars": 180,
+    "objective_max_chars": 170,
+    "expected_response_max_chars": 220,
+    "teacher_model_max_chars": 260,
+    "teacher_question_max_chars": 180,
+    "parent_extension_max_chars": 260,
+    "placeholder_phrases": [
+      "one dominant learning scene",
+      "one dominant focus for",
+      "introduce the page purpose clearly",
+      "use this page for orientation only",
+      "use the page for its stated front-matter purpose",
+      "art activity discussion",
+      "what can you show or tell about"
+    ]
+  },
+  "qa_policy": {
+    "require_measured_geometry": true,
+    "require_nonblank_illustration": true,
+    "require_component_count_match": true,
+    "require_response_area": true,
+    "require_page_specific_guidance": true,
+    "reject_default_teacher_prompt": true,
+    "reject_default_parent_prompt": true,
+    "one_physical_page_per_output": true
+  }
+}
