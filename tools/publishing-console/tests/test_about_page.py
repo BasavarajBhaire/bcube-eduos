@@ -124,6 +124,13 @@ class AboutPageTests(unittest.TestCase):
                 illustration_render["trimmed_source_size"][0],
                 illustration_render["source_size"][0],
             )
+            self.assertEqual("cover", illustration_render["fit_mode"])
+            self.assertTrue(illustration_render["clip_applied"])
+            self.assertEqual([0.5, 0.5], illustration_render["focal_point"])
+            self.assertEqual(
+                [210, 920, 2270, 2270],
+                illustration_render["rendered_bounds"],
+            )
             self.assertEqual(
                 [150, 860, 2330, 2330],
                 evidence["components"]["illustration_frame"]["bounds"],
