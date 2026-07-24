@@ -115,6 +115,15 @@ def publish():
         ]
         if record.page_type == "cover":
             command += ["--page", "cover"]
+        elif record.page_type == "about-book":
+            command += [
+                "--page", "about",
+                "--physical-page", str(record.physical_page),
+                "--page-id", record.page_id,
+                "--title", record.title,
+                "--objective", record.objective,
+                "--instruction", record.instruction,
+            ]
         else:
             command += [
                 "--page", "activity",

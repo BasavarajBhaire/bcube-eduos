@@ -72,9 +72,19 @@ jobs:
           PY
       - name: Test V6 About and Publisher pages
         run: |
-          python scripts/run_bcube_front_matter_pipeline.py --level nursery --book confidence-builders --page about
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageDraw
+          path = Path('/tmp/bcube-about-illustration.png')
+          image = Image.new('RGB', (1200, 1000), 'white')
+          draw = ImageDraw.Draw(image)
+          draw.rounded_rectangle((100,100,1100,900), radius=80, fill='#F4D9EC')
+          image.save(path, 'PNG', dpi=(300,300))
+          PY
+          python scripts/run_bcube_front_matter_pipeline.py --level nursery --book confidence-builders --page about --illustration /tmp/bcube-about-illustration.png
           python scripts/run_bcube_front_matter_pipeline.py --level lkg --book early-maths-adventures --page publisher
           python - <<'PY'
+          import json
           from pathlib import Path
           from PIL import Image
           for path in [Path('production-renders/pages/CB-NURSERY-V4-P002.png'), Path('production-renders/pages/EM-LKG-V4-P003.png')]:
@@ -82,6 +92,11 @@ jobs:
               with Image.open(path) as image:
                   assert image.size == (2480,3508), (path,image.size)
                   assert image.info.get('dpi',[0])[0] >= 299
+          evidence=json.loads(Path('production-renders/qa-manifests/CB-NURSERY-V4-P002.json').read_text())
+          assert evidence['header_type'] == 'BOOK_HEADER'
+          assert 'teacher_panel' not in evidence['components']
+          assert 'parent_panel' not in evidence['components']
+          assert evidence['prohibited_component_counts']['visible_page_number'] == 0
           PY
       - name: Test V6 Contents page
         run: |

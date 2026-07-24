@@ -91,7 +91,7 @@ class PublishingConsoleTests(unittest.TestCase):
 
     @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
     @patch.object(console_app.subprocess, "run")
-    def test_hidden_front_matter_uses_hidden_number_convention(self, run_mock, _upload_mock) -> None:
+    def test_about_page_uses_dedicated_contract_without_lesson_panels(self, run_mock, _upload_mock) -> None:
         run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
         response = self.client.post("/api/publish", data={
             "level": "nursery",
@@ -101,7 +101,12 @@ class PublishingConsoleTests(unittest.TestCase):
         })
         self.assertEqual(200, response.status_code)
         command = run_mock.call_args.args[0]
-        self.assertEqual("0", command[command.index("--page-number") + 1])
+        self.assertEqual("about", command[command.index("--page") + 1])
+        self.assertEqual("CB-NURSERY-V4-P002", command[command.index("--page-id") + 1])
+        self.assertNotIn("--page-number", command)
+        self.assertNotIn("--activity-type", command)
+        self.assertNotIn("--teacher-prompt", command)
+        self.assertNotIn("--parent-prompt", command)
 
     @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
     @patch.object(console_app.subprocess, "run")
