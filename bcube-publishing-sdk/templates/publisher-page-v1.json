@@ -58,6 +58,7 @@
     "visible_page_number": false,
     "illustration_allowed": false,
     "isbn_allowed_without_assignment": false,
+    "single_line_book_title_when_fit": true,
     "max_book_title_lines": 2
   }
 }
