@@ -1,0 +1,19 @@
+{
+  "version": "portfolio-learning-content-v1.0",
+  "description": "Authoritative portfolio-wide learning content registry for HTML preview and deterministic page rendering.",
+  "files": [
+    "nursery.json",
+    "lkg.json",
+    "ukg.json"
+  ],
+  "expected_pages_per_level": 360,
+  "expected_total_pages": 1080,
+  "required_sections": [
+    "learning",
+    "activity",
+    "guidance",
+    "deterministic_components",
+    "qa_requirements",
+    "content_lineage"
+  ]
+}
