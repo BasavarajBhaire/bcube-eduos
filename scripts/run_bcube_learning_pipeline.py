@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 NORMALIZER = ROOT / "bcube-publishing-sdk/normalizers/build_learning_contract_v2.py"
 REFINER = ROOT / "bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py"
+FINALISER = ROOT / "bcube-publishing-sdk/normalizers/finalise_learning_contract_v2.py"
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_learning_contract_v2.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_character_v2.py"
 OVERRIDES = ROOT / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
@@ -168,6 +169,20 @@ def verify_identity(
         raise ValueError(f"Unknown learning level: {level}")
 
 
+def run_content_pass(script: Path, contract_path: Path, override_applied: bool) -> None:
+    command = [
+        sys.executable,
+        str(script),
+        "--contract",
+        str(contract_path),
+        "--output",
+        str(contract_path),
+    ]
+    if override_applied:
+        command.append("--curated-override-applied")
+    run(command)
+
+
 def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
     registry, level_data, book = resolve_book(args.level, args.book)
     source = safe_source(args.source_page_json)
@@ -213,17 +228,8 @@ def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
     contract["source_lineage"]["html_registry_source"] = repo_relative(source)
     contract["source_lineage"]["curated_override_applied"] = override_applied
     contract_path.write_text(json.dumps(contract, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    refine_command = [
-        sys.executable,
-        str(REFINER),
-        "--contract",
-        str(contract_path),
-        "--output",
-        str(contract_path),
-    ]
-    if override_applied:
-        refine_command.append("--curated-override-applied")
-    run(refine_command)
+    run_content_pass(REFINER, contract_path, override_applied)
+    run_content_pass(FINALISER, contract_path, override_applied)
     contract = load(contract_path)
     normalise_star_policy(contract, star)
     verify_identity(
