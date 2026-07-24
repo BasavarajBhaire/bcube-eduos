@@ -111,12 +111,14 @@ def apply_curated_override(contract: dict[str, Any]) -> bool:
 
 
 def normalise_star_policy(contract: dict[str, Any], official_star: Path) -> None:
+    """Use Star only when the page-owned contract explicitly requires the official asset."""
     illustration = contract["illustration"]
+    curated = bool(contract.get("source_lineage", {}).get("curated_override_applied"))
     policy = illustration.get("star_policy")
-    if policy == "official-asset-separate":
+    if curated and policy == "official-asset-separate":
         contract["assets"]["official_star_path"] = repo_relative(official_star)
         return
-    if policy == "prohibited":
+    if curated and policy == "prohibited":
         contract["assets"].pop("official_star_path", None)
         return
     learning = contract["learning"]
