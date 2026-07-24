@@ -1,5 +1,5 @@
 {
-  "template_version": "page-type-contract-v1.2",
+  "template_version": "page-type-contract-v1.3",
   "canvas": {"width": 2480, "height": 3508, "dpi": 300},
   "colours": {
     "background": "#FFFDF8",
@@ -50,11 +50,18 @@
   },
   "meet_star": {
     "message": [250, 535, 2230, 750],
-    "star": [500, 745, 1980, 2300],
+    "star": [520, 800, 1960, 2260],
     "star_trim_near_white": true,
-    "star_y_offset": -20,
+    "star_y_offset": 0,
     "minimum_visible_occupancy": 0.55,
-    "purpose": [330, 2280, 2150, 2825],
+    "minimum_message_star_gap": 45,
+    "purpose": [330, 2305, 2150, 2750],
+    "minimum_star_purpose_gap": 45,
+    "purpose_text_padding_x": 48,
+    "purpose_text_padding_y": 24,
+    "purpose_text_max_px": 48,
+    "purpose_text_min_px": 32,
+    "purpose_text_max_lines": 4,
     "pillars": [150, 2960, 2330, 3180],
     "visible_page_number": true,
     "expected_printed_page": 6,
