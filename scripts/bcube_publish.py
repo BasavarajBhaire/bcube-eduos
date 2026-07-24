@@ -163,6 +163,8 @@ def run_activity(args: argparse.Namespace) -> int:
     missing = [name.replace("_", "-") for name, value in required.items() if value is None]
     if missing:
         raise ValueError(f"Activity pages require: {', '.join('--' + name for name in missing)}")
+    if args.approve and not args.reviewer:
+        raise ValueError("--reviewer is required with --approve")
     command = [
         sys.executable, str(ACTIVITY_PIPELINE),
         "--level", args.level, "--book", args.book,
@@ -175,6 +177,54 @@ def run_activity(args: argparse.Namespace) -> int:
     if args.page_id:
         command += ["--page-id", args.page_id]
     run(command)
+    _, level_data, book = resolve_book(args.level, args.book)
+    page_id = args.page_id or f"{book['prefix']}-{level_data['id_level']}-V4-P{args.physical_page:03d}"
+    legacy_illustration = ROOT / "production-renders/activity/illustrations" / f"{page_id}.png"
+    legacy_page = ROOT / "production-renders/activity/pages" / f"{page_id}.png"
+    legacy_evidence = ROOT / "production-renders/activity/evidence" / f"{page_id}.json"
+    legacy_page_data = ROOT / "production-renders/activity/page-data" / f"{page_id}.json"
+    legacy_report = ROOT / "validation/rendered-pages" / f"{page_id}.activity-input.json"
+    candidate_illustration = WORK / "candidates/illustrations" / f"{page_id}.png"
+    candidate_page = WORK / "candidates/pages" / f"{page_id}.png"
+    approved_illustration = WORK / "approved/illustrations" / f"{page_id}.png"
+    approved_page = WORK / "approved/pages" / f"{page_id}.png"
+    evidence_copy = WORK / "evidence" / f"{page_id}.json"
+    page_data_copy = WORK / "manifests" / f"{page_id}.page-data.json"
+    report_copy = WORK / "reports" / f"{page_id}.activity-input.json"
+    copy_artifact(legacy_illustration, candidate_illustration)
+    copy_artifact(legacy_page, candidate_page)
+    copy_artifact(legacy_evidence, evidence_copy)
+    copy_artifact(legacy_page_data, page_data_copy)
+    copy_artifact(legacy_report, report_copy)
+    state, active_page = "REVIEW_CANDIDATE", candidate_page
+    if args.approve:
+        copy_artifact(candidate_illustration, approved_illustration)
+        copy_artifact(candidate_page, approved_page)
+        state, active_page = "PRODUCTION_PASS", approved_page
+    manifest = write_review_manifest(
+        page_id=page_id,
+        book=args.book,
+        level=args.level,
+        state=state,
+        provider=args.provider,
+        reviewer=args.reviewer,
+        paths={
+            "candidate_illustration": candidate_illustration,
+            "candidate_page": candidate_page,
+            "approved_illustration": approved_illustration,
+            "approved_page": approved_page,
+            "composition_evidence": evidence_copy,
+            "page_data": page_data_copy,
+            "qa_report": report_copy,
+        },
+    )
+    print(json.dumps({
+        "engine": "BCube Publishing Engine v5.2",
+        "state": state,
+        "page": str(active_page),
+        "review_manifest": str(manifest),
+        "qa_report": str(report_copy),
+    }, indent=2))
     return 0
 
 

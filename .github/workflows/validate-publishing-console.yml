@@ -1,0 +1,43 @@
+name: Validate Publishing Console
+
+on:
+  pull_request:
+    paths:
+      - 'tools/publishing-console/**'
+      - 'scripts/bcube_publish.py'
+      - 'bcube-publishing-sdk/composer/compose_activity_page.py'
+      - 'bcube-publishing-sdk/validators/validate_activity_inputs.py'
+      - 'bcube-publishing-sdk/books/cover-books.json'
+      - 'production-prompts/**/v4/**'
+      - '.github/workflows/validate-publishing-console.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/publishing-console/**'
+      - 'scripts/bcube_publish.py'
+      - 'bcube-publishing-sdk/composer/compose_activity_page.py'
+      - 'bcube-publishing-sdk/validators/validate_activity_inputs.py'
+      - 'bcube-publishing-sdk/books/cover-books.json'
+      - 'production-prompts/**/v4/**'
+      - '.github/workflows/validate-publishing-console.yml'
+
+jobs:
+  validate-console:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile console and publishing engine
+        run: |
+          python -m py_compile \
+            tools/publishing-console/app.py \
+            tools/publishing-console/page_data_registry.py \
+            scripts/bcube_publish.py \
+            bcube-publishing-sdk/composer/compose_activity_page.py \
+            bcube-publishing-sdk/validators/validate_activity_inputs.py
+      - name: Validate all page records and console API
+        run: python -m unittest discover -s tools/publishing-console/tests -v

@@ -14,6 +14,8 @@ from pathlib import Path
 from flask import Flask, jsonify, render_template, request, send_from_directory
 from werkzeug.utils import secure_filename
 
+from page_data_registry import PageDataRegistry
+
 ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 PUBLISH = ROOT / "scripts/bcube_publish.py"
@@ -22,6 +24,7 @@ ALLOWED = {".png", ".jpg", ".jpeg", ".webp"}
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 30 * 1024 * 1024
+page_data = PageDataRegistry(ROOT, REGISTRY)
 
 
 def registry() -> dict:
@@ -73,14 +76,34 @@ def books():
     return jsonify(result)
 
 
+@app.get("/api/pages")
+def pages():
+    try:
+        level = str(request.args.get("level") or "").strip()
+        book = str(request.args.get("book") or "").strip()
+        if not level or not book:
+            raise ValueError("Select a level and book")
+        records = page_data.list_pages(level, book)
+        return jsonify({"ok": True, "pages": [record.public_dict() for record in records]})
+    except ValueError as exc:
+        return jsonify({"ok": False, "error": str(exc)}), 400
+
+
 @app.post("/api/publish")
 def publish():
     uploaded: Path | None = None
     try:
         form = request.form
-        require(form, "level", "book", "page_type")
+        require(form, "level", "book", "physical_page")
+        try:
+            physical_page = int(form["physical_page"])
+        except (TypeError, ValueError) as exc:
+            raise ValueError("Physical page must be a positive integer") from exc
+        approving = form.get("approve") == "true"
+        if approving:
+            require(form, "reviewer")
+        record = page_data.get_page(form["level"], form["book"], physical_page)
         uploaded = save_upload()
-        page_type = form["page_type"]
         command = [
             sys.executable,
             str(PUBLISH),
@@ -90,28 +113,22 @@ def publish():
             "--illustration", str(uploaded),
             "--confirm-clean-illustration",
         ]
-        if page_type == "cover":
+        if record.page_type == "cover":
             command += ["--page", "cover"]
         else:
-            require(
-                form,
-                "physical_page", "page_number", "page_id", "title", "objective",
-                "instruction", "teacher_prompt", "parent_prompt",
-            )
             command += [
                 "--page", "activity",
-                "--physical-page", form["physical_page"],
-                "--page-number", form["page_number"],
-                "--page-id", form["page_id"],
-                "--activity-type", page_type,
-                "--title", form["title"],
-                "--objective", form["objective"],
-                "--instruction", form["instruction"],
-                "--teacher-prompt", form["teacher_prompt"],
-                "--parent-prompt", form["parent_prompt"],
+                "--physical-page", str(record.physical_page),
+                "--page-number", str(record.printed_page if record.printed_visible else 0),
+                "--page-id", record.page_id,
+                "--activity-type", str(record.activity_type),
+                "--title", record.title,
+                "--objective", record.objective,
+                "--instruction", record.instruction,
+                "--teacher-prompt", record.teacher_prompt,
+                "--parent-prompt", record.parent_prompt,
             ]
-        if form.get("approve") == "true":
-            require(form, "reviewer")
+        if approving:
             command += ["--approve", "--reviewer", form["reviewer"]]
         completed = subprocess.run(
             command,
@@ -127,6 +144,7 @@ def publish():
             "command": command[1:],
             "stdout": completed.stdout,
             "stderr": completed.stderr,
+            "page": record.public_dict(),
         }
         return jsonify(payload), 200 if payload["ok"] else 400
     except (ValueError, OSError, subprocess.TimeoutExpired) as exc:

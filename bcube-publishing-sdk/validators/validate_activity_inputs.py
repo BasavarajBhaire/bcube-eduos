@@ -47,8 +47,8 @@ def validate(data_path: Path) -> dict[str, Any]:
         raise ValueError(f"Missing activity page data: {missing}")
     if data["activity_type"] not in template["supported_activity_types"]:
         raise ValueError(f"Unsupported activity_type {data['activity_type']!r}")
-    if not isinstance(data["page_number"], int) or data["page_number"] < 1:
-        raise ValueError("page_number must be a positive integer")
+    if not isinstance(data["page_number"], int) or data["page_number"] < 0:
+        raise ValueError("page_number must be a non-negative integer; use 0 for a hidden number")
     rules = template["rules"]
     limits = {
         "title": rules["max_title_chars"],
