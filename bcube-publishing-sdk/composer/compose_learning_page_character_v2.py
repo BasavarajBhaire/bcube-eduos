@@ -13,13 +13,14 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 BASE_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_v2.py"
+POLICY_ENFORCER = ROOT / "bcube-publishing-sdk/normalizers/enforce_learning_illustration_policy_v2.py"
 TEMPLATE_PATH = ROOT / "bcube-publishing-sdk/templates/learning-page-v2.json"
 
 
-def load_module():
-    spec = importlib.util.spec_from_file_location("bcube_learning_page_v2_base", BASE_COMPOSER)
+def load_module(name: str, path: Path):
+    spec = importlib.util.spec_from_file_location(name, path)
     if spec is None or spec.loader is None:
-        raise RuntimeError(f"Cannot load {BASE_COMPOSER}")
+        raise RuntimeError(f"Cannot load {path}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
@@ -90,13 +91,17 @@ def overlay_official_star(contract: dict[str, Any], output: Path, evidence_outpu
     evidence["inputs"]["star_sha256"] = sha256(resolve(str(star_value)))
     evidence["artifact_sha256"] = sha256(output)
     evidence["semantic_review"]["star_policy"] = policy
+    evidence["semantic_review"]["uploaded_illustration_contains_star"] = False
     evidence_output.write_text(json.dumps(evidence, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def compose(contract_path: Path, output: Path, evidence_output: Path) -> None:
-    base = load_module()
-    base.compose(contract_path, output, evidence_output)
+    policy_module = load_module("bcube_learning_illustration_policy_v2", POLICY_ENFORCER)
     contract = load(contract_path)
+    policy_module.enforce_policy(contract)
+    contract_path.write_text(json.dumps(contract, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    base = load_module("bcube_learning_page_v2_base", BASE_COMPOSER)
+    base.compose(contract_path, output, evidence_output)
     overlay_official_star(contract, output, evidence_output)
 
 
