@@ -138,24 +138,34 @@ def paste_contain(
 def draw_title(
     draw: ImageDraw.ImageDraw,
     lines: list[str],
-    bounds: dict[str, list[int]],
+    bounds: list[int],
     colours: dict[str, str],
-) -> list[dict[str, Any]]:
-    if len(lines) == 1:
-        combined = [
-            bounds["book_title_line_1"][0],
-            bounds["book_title_line_1"][1],
-            bounds["book_title_line_2"][2],
-            bounds["book_title_line_2"][3],
-        ]
-        return [draw_fitted_text(draw, lines[0], combined, max_size=94, min_size=54,
-                                 fill=colours["purple"], bold=True, align="center", max_lines=2)]
-    return [
-        draw_fitted_text(draw, lines[0], bounds["book_title_line_1"], max_size=84, min_size=50,
-                         fill=colours["purple"], bold=True, align="center", max_lines=1),
-        draw_fitted_text(draw, lines[1], bounds["book_title_line_2"], max_size=94, min_size=54,
-                         fill=colours["blue"], bold=True, align="center", max_lines=1),
-    ]
+) -> dict[str, Any]:
+    """Render every registered About-page book name on one colour-segmented line."""
+    segments = [str(value).strip() for value in lines if str(value).strip()]
+    if not segments:
+        raise ValueError("book_title_lines must contain at least one value")
+    first, remainder = segments[0], " ".join(segments[1:])
+    second = f" {remainder}" if remainder else ""
+    x0, y0, x1, y1 = bounds
+    for size in range(84, 31, -2):
+        active = font(size, True)
+        first_width = draw.textlength(first, font=active)
+        second_width = draw.textlength(second, font=active)
+        line_height = int(size * 1.2)
+        if first_width + second_width <= x1 - x0 and line_height <= y1 - y0:
+            x = x0 + ((x1 - x0) - first_width - second_width) / 2
+            y = y0 + ((y1 - y0) - line_height) / 2
+            draw.text((x, y), first, font=active, fill=colours["purple"])
+            if second:
+                draw.text((x + first_width, y), second, font=active, fill=colours["blue"])
+            return {
+                "bounds": bounds,
+                "font_size": size,
+                "lines": [" ".join(segments)],
+                "coloured_segments": segments,
+            }
+    raise ValueError(f"Registered book title does not fit one-line About header: {' '.join(segments)!r}")
 
 
 def draw_outcomes(
@@ -236,7 +246,7 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
         bounds["logo"],
         remove_near_white=True,
     )
-    title_render = draw_title(draw, data["book_title_lines"], bounds, colours)
+    title_render = draw_title(draw, data["book_title_lines"], bounds["book_title"], colours)
     draw.rounded_rectangle(bounds["page_title"], radius=34, fill=colours["purple"])
     page_title_render = draw_fitted_text(
         draw,
@@ -390,6 +400,7 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
         "qa": {
             "one_physical_page": True,
             "book_header": True,
+            "single_line_book_title": title_render["lines"] == [data["book_title"]],
             "subject_clipped": False,
             "text_overflow": False,
             "component_overlap": False,

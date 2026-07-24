@@ -1,13 +1,12 @@
 {
-  "template_version": "about-page-v1.0",
+  "template_version": "about-page-v1.1",
   "page_type": "about",
   "header_type": "BOOK_HEADER",
   "canvas": {"width": 2480, "height": 3508, "dpi": 300},
   "safe_margin": 118,
   "bounds": {
     "logo": [118, 72, 430, 292],
-    "book_title_line_1": [470, 58, 2260, 166],
-    "book_title_line_2": [470, 166, 2260, 282],
+    "book_title": [470, 58, 2260, 282],
     "page_title": [690, 316, 2070, 454],
     "overview_panel": [150, 505, 2330, 810],
     "overview_heading": [205, 540, 2275, 615],
@@ -56,6 +55,7 @@
     "learning_outcome_count": 6,
     "core_pillar_count": 5,
     "illustration_safe_inset": 34,
+    "single_line_book_title": true,
     "visible_page_number": false,
     "max_objective_chars": 220,
     "max_instruction_chars": 220

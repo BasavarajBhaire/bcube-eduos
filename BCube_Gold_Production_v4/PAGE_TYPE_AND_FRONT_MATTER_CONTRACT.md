@@ -100,6 +100,7 @@ A page must never substitute one header contract for another.
 ### About This Book
 - Header type: `BOOK_HEADER`.
 - Header shows `{Book Name}` and `{Page Title}`.
+- `{Book Name}` is rendered on one line using the registered purple/blue title segments; automatic two-line splitting is prohibited.
 - Do not repeat the series banner.
 - Illustration and learning-outcome icons are allowed.
 - Teacher and parent panels are prohibited.
