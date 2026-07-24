@@ -103,6 +103,13 @@ def publish():
         if approving:
             require(form, "reviewer")
         record = page_data.get_page(form["level"], form["book"], physical_page)
+        if record.learning_contract:
+            content_status = record.learning_contract.get("status")
+            if content_status != "READY_FOR_ILLUSTRATION_REVIEW":
+                issues = record.learning_contract.get("issues") or ["Unresolved learning-page contract"]
+                raise ValueError(
+                    f"{record.page_id} is blocked for editorial refinement: " + "; ".join(issues)
+                )
         command = [
             sys.executable,
             str(PUBLISH),

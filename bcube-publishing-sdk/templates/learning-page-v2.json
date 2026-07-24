@@ -1,0 +1,140 @@
+{
+  "template_version": "learning-page-v2.0",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "colours": {
+    "background": "#FFFDF8",
+    "navy": "#163B65",
+    "purple": "#6F3D91",
+    "soft_purple": "#9A6DB5",
+    "blue": "#EAF5FF",
+    "gold": "#FFF3BE",
+    "green": "#E5F6DE",
+    "pink": "#FFE3ED",
+    "white": "#FFFFFF",
+    "line": "#3A3A3A",
+    "muted": "#687386",
+    "guide": "#A8AFB8"
+  },
+  "common_bounds": {
+    "logo": [110, 70, 430, 285],
+    "book_title": [470, 55, 2310, 145],
+    "page_title": [470, 145, 2310, 295],
+    "objective": [150, 315, 2330, 465],
+    "instruction": [150, 490, 2330, 655],
+    "learning_body": [150, 690, 2330, 2600],
+    "teacher_panel": [150, 2640, 1170, 3230],
+    "parent_panel": [1310, 2640, 2330, 3230],
+    "page_number": [2190, 3265, 2350, 3390]
+  },
+  "layout_variants": {
+    "observe-speak": {
+      "illustration": [185, 725, 2295, 2110],
+      "response": [330, 2140, 2150, 2555],
+      "illustration_inset": 24
+    },
+    "trace-copy": {
+      "illustration": [185, 725, 2295, 1640],
+      "response": [235, 1680, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "match-connect": {
+      "illustration": [185, 725, 2295, 2010],
+      "response": [235, 2040, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "colour-draw": {
+      "illustration": [185, 725, 2295, 1725],
+      "response": [235, 1760, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "count-compare": {
+      "illustration": [185, 725, 2295, 1990],
+      "response": [235, 2025, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "sort-classify": {
+      "illustration": [185, 725, 2295, 1890],
+      "response": [235, 1925, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "sequence-story": {
+      "illustration": [185, 725, 2295, 1870],
+      "response": [235, 1905, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "choice-circle": {
+      "illustration": [185, 725, 2295, 1990],
+      "response": [235, 2025, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "maze-path": {
+      "illustration": [185, 725, 2295, 1220],
+      "response": [330, 1250, 2150, 2555],
+      "illustration_inset": 20
+    },
+    "build-explore": {
+      "illustration": [185, 725, 2295, 1810],
+      "response": [235, 1845, 2245, 2555],
+      "illustration_inset": 24
+    },
+    "reflect-assess": {
+      "illustration": [185, 725, 2295, 1710],
+      "response": [235, 1745, 2245, 2555],
+      "illustration_inset": 24
+    }
+  },
+  "typography": {
+    "book_title_max": 44,
+    "book_title_min": 28,
+    "page_title_max": 82,
+    "page_title_min": 48,
+    "objective_max": 40,
+    "objective_min": 27,
+    "instruction_max": 46,
+    "instruction_min": 29,
+    "adult_heading": 34,
+    "adult_body_max": 32,
+    "adult_body_min": 23,
+    "component_label_max": 34,
+    "component_label_min": 24,
+    "model_text_max": 48,
+    "model_text_min": 30
+  },
+  "illustration": {
+    "trim_near_white": true,
+    "minimum_visible_occupancy": 0.16,
+    "maximum_visible_occupancy": 0.92,
+    "frame_radius": 38,
+    "frame_border_width": 4,
+    "frame_fill": "#FFFFFF",
+    "frame_outline": "#9A6DB5"
+  },
+  "worksheet": {
+    "response_radius": 30,
+    "response_fill": "#FFFFFF",
+    "response_outline": "#6F3D91",
+    "response_border_width": 4,
+    "minimum_component_height": 90,
+    "minimum_touch_target": 72,
+    "trace_dash": 18,
+    "copy_line_spacing": 92,
+    "choice_target_diameter": 72,
+    "matching_anchor_diameter": 62,
+    "sequence_slot_count_default": 4,
+    "sort_bin_count_default": 2,
+    "number_box_count_default": 4
+  },
+  "rules": {
+    "max_title_chars": 55,
+    "max_objective_chars": 170,
+    "max_instruction_chars": 180,
+    "max_expected_response_chars": 220,
+    "max_teacher_chars": 440,
+    "max_parent_chars": 320,
+    "show_logo": true,
+    "show_book_title": true,
+    "show_page_number": true,
+    "show_default_star": false,
+    "one_physical_page_per_output": true
+  }
+}

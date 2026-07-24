@@ -6,6 +6,16 @@ on:
       - 'tools/publishing-console/**'
       - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_front_matter_pipeline.py'
+      - 'scripts/run_bcube_activity_pipeline.py'
+      - 'scripts/run_bcube_learning_pipeline.py'
+      - 'bcube-publishing-sdk/contracts/learning-page-contract-v2.json'
+      - 'bcube-publishing-sdk/templates/learning-page-v2.json'
+      - 'bcube-publishing-sdk/books/learning-page-overrides-v1.json'
+      - 'bcube-publishing-sdk/normalizers/*learning*contract*v2.py'
+      - 'bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py'
+      - 'bcube-publishing-sdk/composer/compose_learning_page_v2.py'
+      - 'bcube-publishing-sdk/composer/compose_learning_page_character_v2.py'
+      - 'bcube-publishing-sdk/validators/validate_learning_contract_v2.py'
       - 'bcube-publishing-sdk/templates/about-page-v1.json'
       - 'bcube-publishing-sdk/templates/publisher-page-v1.json'
       - 'bcube-publishing-sdk/composer/compose_about_page.py'
@@ -23,6 +33,16 @@ on:
       - 'tools/publishing-console/**'
       - 'scripts/bcube_publish.py'
       - 'scripts/run_bcube_front_matter_pipeline.py'
+      - 'scripts/run_bcube_activity_pipeline.py'
+      - 'scripts/run_bcube_learning_pipeline.py'
+      - 'bcube-publishing-sdk/contracts/learning-page-contract-v2.json'
+      - 'bcube-publishing-sdk/templates/learning-page-v2.json'
+      - 'bcube-publishing-sdk/books/learning-page-overrides-v1.json'
+      - 'bcube-publishing-sdk/normalizers/*learning*contract*v2.py'
+      - 'bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py'
+      - 'bcube-publishing-sdk/composer/compose_learning_page_v2.py'
+      - 'bcube-publishing-sdk/composer/compose_learning_page_character_v2.py'
+      - 'bcube-publishing-sdk/validators/validate_learning_contract_v2.py'
       - 'bcube-publishing-sdk/templates/about-page-v1.json'
       - 'bcube-publishing-sdk/templates/publisher-page-v1.json'
       - 'bcube-publishing-sdk/composer/compose_about_page.py'
@@ -52,6 +72,14 @@ jobs:
             tools/publishing-console/page_data_registry.py \
             scripts/bcube_publish.py \
             scripts/run_bcube_front_matter_pipeline.py \
+            scripts/run_bcube_activity_pipeline.py \
+            scripts/run_bcube_learning_pipeline.py \
+            bcube-publishing-sdk/normalizers/build_learning_contract_v2.py \
+            bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py \
+            bcube-publishing-sdk/normalizers/finalise_learning_contract_v2.py \
+            bcube-publishing-sdk/composer/compose_learning_page_v2.py \
+            bcube-publishing-sdk/composer/compose_learning_page_character_v2.py \
+            bcube-publishing-sdk/validators/validate_learning_contract_v2.py \
             bcube-publishing-sdk/composer/compose_about_page.py \
             bcube-publishing-sdk/composer/compose_publisher_page.py \
             bcube-publishing-sdk/composer/compose_activity_page.py \
