@@ -1,5 +1,5 @@
 {
-  "version": "learning-page-overrides-v1.0",
+  "version": "learning-page-overrides-v1.1",
   "description": "Curated page-owned refinements that override generic or degraded source fields without changing the frozen curriculum objective.",
   "pages": {
     "CC-NURSERY-V4-P008": {
@@ -17,18 +17,18 @@
       },
       "guidance": {
         "teacher": {
-          "model": "Write the child’s name on the trace guide, model the sentence once, and guide the first tracing movement without completing the copy line.",
+          "model": "Write the child’s name on the trace guide. Model the sentence once.",
           "question": "What is your name?"
         },
-        "parent_extension": "Say family members’ names and clap the syllables in each name. Let the child trace one familiar name with a finger."
+        "parent_extension": "Say family names together and clap the syllables."
       },
       "illustration": {
-        "scene": "One child looking into a mirror while the official Star asset holds a blank name card. Keep the lower writing area completely clear.",
-        "focal_point": "The child and mirror are the visual model; one dotted trace guide and one blank copy guide are built separately by the page composer.",
-        "required_objects": ["child", "mirror", "blank name card"],
-        "forbidden_objects": ["group classroom", "completed child name", "alphabet drill", "generated Star", "text inside artwork"],
+        "scene": "One Nursery child in a large three-quarter view, gently pointing to their own chest beside a complete upright oval mirror with an accurate matching reflection. No Star or name card.",
+        "focal_point": "The child and mirror communicate self-recognition; one dotted trace guide and one blank copy guide are built separately by the page composer.",
+        "required_objects": ["one child", "upright oval mirror", "accurate reflection"],
+        "forbidden_objects": ["Star", "mascot", "name card", "ID badge", "group classroom", "completed child name", "alphabet drill", "text inside artwork"],
         "protected_response_zones": ["entire deterministic trace-and-copy area below the illustration"],
-        "star_policy": "official-asset-separate",
+        "star_policy": "prohibited",
         "artwork_only": true,
         "no_visible_text": true,
         "no_logo": true,
@@ -42,29 +42,29 @@
     },
     "AC-LKG-V4-P008": {
       "learning": {
-        "student_instruction": "Name red, yellow, and blue. Match each colour, then create your own colour picture.",
-        "expected_response": "Child identifies the three primary colours, matches them correctly, and uses them in a simple artwork.",
-        "model_text": "Red • Yellow • Blue"
+        "student_instruction": "Name red, yellow, and blue. Use the three colours to create your own picture.",
+        "expected_response": "Child identifies red, yellow, and blue and uses the three colours in a simple artwork.",
+        "model_text": "Use red, yellow, and blue."
       },
       "activity": {
         "primary": "colour",
-        "secondary": ["match", "speak"],
-        "response_modes": ["point", "match", "colour", "oral"],
+        "secondary": ["speak"],
+        "response_modes": ["point", "colour", "draw", "oral"],
         "layout_variant": "colour-draw",
         "resolution_source": "curated-page-override"
       },
       "guidance": {
         "teacher": {
-          "model": "Show red, yellow, and blue colour cards. Match one card to one familiar object, then demonstrate a small colour sample without completing the child’s artwork.",
-          "question": "Which primary colour will you use, and why?"
+          "model": "Name the three colours and show one small example. Leave the main space for the child.",
+          "question": "Which colour will you use first?"
         },
-        "parent_extension": "Find one red, one yellow, and one blue object at home. Name the colours and make a small picture using safe crayons."
+        "parent_extension": "Find one red, one yellow, and one blue object at home."
       },
       "illustration": {
-        "scene": "Three large paint pots—red, yellow, and blue—beside three familiar preschool objects that clearly match those colours. Include one small finished colour sample as the model.",
-        "focal_point": "The three primary colours are unmistakable, while the large child artwork area remains empty and unobstructed.",
-        "required_objects": ["red paint pot", "yellow paint pot", "blue paint pot", "three familiar matching objects", "small model picture"],
-        "forbidden_objects": ["secondary colour labels", "generated text", "generated Star", "full worksheet layout", "decorative empty frames"],
+        "scene": "Exactly three equally prominent primary-colour sources—one red, one yellow, and one blue—plus one small, simple child-like model made only from those colours.",
+        "focal_point": "The three primary colours are unmistakable; the child-like model stays secondary and the large creative-response area remains empty.",
+        "required_objects": ["red paint pot or crayon", "yellow paint pot or crayon", "blue paint pot or crayon", "small child-like model"],
+        "forbidden_objects": ["matching pairs", "connectors", "labelled swatches", "colour names", "extra colours", "polished professional artwork", "generated Star", "full worksheet layout", "decorative empty frames"],
         "protected_response_zones": ["large deterministic creative-response area below the illustration"],
         "star_policy": "prohibited",
         "artwork_only": true,
@@ -73,7 +73,7 @@
         "no_page_layout": true
       },
       "deterministic_components": [
-        {"type": "model_example", "label": "Look at the colours"},
+        {"type": "model_phrase", "text": "Use red, yellow, and blue."},
         {"type": "creative_response_area", "label": "My primary-colour picture"}
       ]
     }
