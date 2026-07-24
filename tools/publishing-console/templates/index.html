@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BCube Publishing Engine</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<main class="shell">
+  <header><h1>BCube Publishing Engine</h1><p>Local page builder for covers and activity pages.</p></header>
+  <form id="publish-form" enctype="multipart/form-data">
+    <section class="grid">
+      <label>Level<select id="level" name="level" required></select></label>
+      <label>Book<select id="book" name="book" required></select></label>
+      <label>Page type<select id="page_type" name="page_type">
+        <option value="cover">Cover</option>
+        <option value="about-book">About the Book</option>
+        <option value="copyright">Copyright</option>
+        <option value="contents">Contents</option>
+        <option value="welcome">Welcome</option>
+        <option value="meet-star">Meet Star</option>
+        <option value="learning">Learning Page</option>
+        <option value="assessment">Assessment</option>
+        <option value="certificate">Certificate</option>
+        <option value="back-cover">Back Cover</option>
+      </select></label>
+      <label>Provider<select name="provider"><option value="manual">Manual</option><option value="openai">OpenAI</option><option value="reuse">Reuse</option></select></label>
+    </section>
+
+    <section id="activity-fields" class="panel hidden">
+      <div class="grid">
+        <label>Physical page<input id="physical_page" name="physical_page" type="number" min="1" value="2"></label>
+        <label>Printed page<input name="page_number" type="number" min="0" value="0"></label>
+        <label>Page ID<input id="page_id" name="page_id" readonly></label>
+        <label>Activity type<input id="activity_type" name="activity_type"></label>
+      </div>
+      <label>Title<input name="title"></label>
+      <label>Learning objective<textarea name="objective"></textarea></label>
+      <label>Child instruction<textarea name="instruction"></textarea></label>
+      <label>Teacher prompt<textarea name="teacher_prompt"></textarea></label>
+      <label>Parent prompt<textarea name="parent_prompt"></textarea></label>
+    </section>
+
+    <section class="panel">
+      <label>Illustration<input name="illustration" type="file" accept="image/png,image/jpeg,image/webp" required></label>
+      <div class="approval"><label><input id="approve" type="checkbox"> Approve for production</label><label>Reviewer<input id="reviewer" name="reviewer"></label></div>
+    </section>
+
+    <button type="submit">Generate Page</button>
+  </form>
+  <section class="result"><h2>Result</h2><pre id="output">Ready.</pre></section>
+</main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
