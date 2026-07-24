@@ -44,8 +44,11 @@ jobs:
           assert data['rules']['one_physical_page_per_output'] is True
           expected = {'observe','match','trace','colour','draw','speak','listen','count','connect','complete','maze','explore','think','reflect','sequence','sort','circle','assessment'}
           assert set(data['supported_activity_types']) == expected
-          for key in ('logo','title','objective','instruction','activity_frame','teacher_panel','parent_panel','star','page_number'):
+          for key in ('logo','book_title','title','objective','instruction','activity_frame','teacher_panel','parent_panel','page_number'):
               assert key in data['bounds'], key
+          assert 'star' not in data['bounds']
+          assert data['rules']['show_book_title'] is True
+          assert data['rules']['show_star'] is False
           print('Phase 2 template contract PASS')
           PY
       - name: Create deterministic test illustration

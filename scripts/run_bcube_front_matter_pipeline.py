@@ -102,6 +102,15 @@ def contents_entries(level: str, slug: str, contents_physical: int) -> list[dict
         preserved = source.get("preserved_source", {}).get("page_data", {})
         module = str(preserved.get("unit_id") or "").strip() if isinstance(preserved, dict) else ""
         if not module:
+            source_relative = source.get("source_lineage", {}).get("relative_file")
+            if isinstance(source_relative, str) and source_relative.strip():
+                canonical_source = load(ROOT / source_relative)
+                canonical_page_data = canonical_source.get("page_data", {})
+                if isinstance(canonical_page_data, dict):
+                    module = str(canonical_page_data.get("unit_id") or "").strip()
+        if not module and physical in {6, 7}:
+            module = "FRONT_MATTER"
+        if not module:
             raise ValueError(f"Contents entry {page.get('prompt_id')} has no canonical module")
         entries.append({
             "physical": physical,

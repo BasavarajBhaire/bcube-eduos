@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import importlib.util
 import subprocess
 import sys
 import tempfile
@@ -14,6 +15,16 @@ ROOT = Path(__file__).resolve().parents[3]
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_special_inputs.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_special_page.py"
 BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
+FRONT_MATTER_PIPELINE = ROOT / "scripts/run_bcube_front_matter_pipeline.py"
+
+
+def load_front_matter_pipeline():
+    spec = importlib.util.spec_from_file_location("bcube_front_matter_pipeline", FRONT_MATTER_PIPELINE)
+    if spec is None or spec.loader is None:
+        raise AssertionError("Cannot load front-matter pipeline")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def official_asset(key: str) -> str:
@@ -52,6 +63,12 @@ def common(page_type: str, physical: int) -> dict:
 
 
 class SpecialPageTests(unittest.TestCase):
+    def test_contents_assigns_front_matter_module_to_welcome_and_meet_star(self) -> None:
+        pipeline = load_front_matter_pipeline()
+        entries = pipeline.contents_entries("nursery", "communication-champions", 4)
+        self.assertEqual(19, len(entries))
+        self.assertEqual(["FRONT_MATTER", "FRONT_MATTER"], [entry["module"] for entry in entries[:2]])
+
     def render(self, data: dict, directory: Path) -> tuple[dict, dict, Path]:
         data_path = directory / f"{data['page_type']}.json"
         report_path = directory / f"{data['page_type']}-report.json"
