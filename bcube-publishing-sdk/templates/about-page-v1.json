@@ -1,0 +1,63 @@
+{
+  "template_version": "about-page-v1.0",
+  "page_type": "about",
+  "header_type": "BOOK_HEADER",
+  "canvas": {"width": 2480, "height": 3508, "dpi": 300},
+  "safe_margin": 118,
+  "bounds": {
+    "logo": [118, 72, 430, 292],
+    "book_title_line_1": [470, 58, 2260, 166],
+    "book_title_line_2": [470, 166, 2260, 282],
+    "page_title": [690, 316, 2070, 454],
+    "overview_panel": [150, 505, 2330, 810],
+    "overview_heading": [205, 540, 2275, 615],
+    "overview_text": [205, 625, 2275, 775],
+    "illustration_frame": [150, 860, 2330, 2330],
+    "outcomes_label": [150, 2380, 2330, 2470],
+    "outcomes": [150, 2500, 2330, 2925],
+    "pillars_label": [150, 2960, 2330, 3035],
+    "pillars": [150, 3050, 2330, 3280],
+    "footer": [0, 3330, 2480, 3508]
+  },
+  "colours": {
+    "background": "#FFFDF8",
+    "navy": "#163B65",
+    "purple": "#643595",
+    "blue": "#1768B3",
+    "pink": "#ED2F7C",
+    "gold": "#F4B61A",
+    "overview_fill": "#F4EEFA",
+    "overview_line": "#D9C7E9",
+    "frame_line": "#74439A",
+    "text": "#343434",
+    "muted": "#5D6670",
+    "white": "#FFFFFF"
+  },
+  "outcome_colours": ["#FDE8F1", "#E8F4FF", "#EAF7E5", "#FFF3D9", "#F1E9FA", "#E8F7F5"],
+  "pillar_colours": ["#F57C00", "#25A43A", "#2E98CE", "#8E3DB3", "#ED2F7C"],
+  "rules": {
+    "required_components": [
+      "official_logo",
+      "book_title",
+      "page_title",
+      "learning_outcomes",
+      "illustration_frame",
+      "core_pillars",
+      "footer"
+    ],
+    "prohibited_components": [
+      "series_banner",
+      "age_badge",
+      "visible_page_number",
+      "teacher_panel",
+      "parent_panel",
+      "official_star"
+    ],
+    "learning_outcome_count": 6,
+    "core_pillar_count": 5,
+    "illustration_safe_inset": 34,
+    "visible_page_number": false,
+    "max_objective_chars": 220,
+    "max_instruction_chars": 220
+  }
+}

@@ -41,3 +41,12 @@ Learning-page templates will be added only after the two-book publishing-framewo
 - One physical page produces one flat front-facing output.
 - A4 portrait: 2480 × 3508 px, 300 DPI.
 - Missing, stale or contradictory inputs fail closed.
+
+## About-page renderer
+
+`templates/about-page-v1.json`, `validators/validate_about_inputs.py` and
+`composer/compose_about_page.py` implement the locked About-page contract. The
+book name is the primary two-colour header and `About This Book` is the
+secondary title. The renderer includes the approved illustration, six learning
+outcomes, five core pillars and standard footer, while failing closed on lesson
+panels, series branding, the age badge, page numbering or Star placement.

@@ -61,6 +61,23 @@ def main() -> None:
     if publisher["constraints"].get("illustration") is not False:
         raise SystemExit("Publisher page must prohibit illustrations")
 
+    about = templates["templates"]["about"]
+    if about.get("header_type") != "BOOK_HEADER":
+        raise SystemExit("About page must use BOOK_HEADER")
+    for forbidden in ("series_banner", "age_badge", "page_number", "teacher_panel", "parent_panel"):
+        if forbidden not in about.get("prohibited", []):
+            raise SystemExit(f"About page must prohibit {forbidden}")
+    about_render = load(SDK / "templates/about-page-v1.json")
+    if about_render.get("header_type") != "BOOK_HEADER":
+        raise SystemExit("Rendered About template must use BOOK_HEADER")
+    render_rules = about_render.get("rules", {})
+    if render_rules.get("learning_outcome_count") != 6 or render_rules.get("core_pillar_count") != 5:
+        raise SystemExit("Rendered About template must contain six outcomes and five core pillars")
+    for forbidden in ("series_banner", "age_badge", "visible_page_number", "teacher_panel",
+                      "parent_panel", "official_star"):
+        if forbidden not in render_rules.get("prohibited_components", []):
+            raise SystemExit(f"Rendered About template must prohibit {forbidden}")
+
     page_type_enum = set(schema["properties"]["page_type"]["enum"])
     if page_type_enum != expected_types:
         raise SystemExit("Page-data schema page types do not match template registry")
