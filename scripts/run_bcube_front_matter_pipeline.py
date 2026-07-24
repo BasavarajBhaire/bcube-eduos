@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build BCube About, Publisher, and Contents pages for registered books."""
+"""Build BCube About, Publisher, Contents, Welcome, and Meet Star pages."""
 from __future__ import annotations
 
 import argparse
@@ -19,6 +19,7 @@ PUBLISHER_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_publisher_pag
 PUBLISHER_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_publisher_inputs.py"
 SPECIAL_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_special_page.py"
 SPECIAL_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_special_inputs.py"
+SPECIAL_COPY_VERSION = "special-pages-v1.1"
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -92,7 +93,7 @@ def contents_entries(level: str, slug: str, contents_physical: int) -> list[dict
     manifest_path = prompt_manifest(level, slug)
     manifest = load(manifest_path)
     first, last = (6, 24) if contents_physical == 4 else (25, 43)
-    entries = []
+    entries: list[dict[str, Any]] = []
     for page in manifest.get("pages", []):
         printed = page.get("printed")
         physical = page.get("physical")
@@ -136,6 +137,52 @@ def stage_illustration(source: Path, page_id: str) -> Path:
     with Image.open(source) as image:
         image.convert("RGB").save(destination, "PNG", dpi=(300, 300))
     return destination
+
+
+def _skill_phrase(value: Any) -> str:
+    text = " ".join(str(value).split()).strip()
+    if not text:
+        raise ValueError("Registered special-page skills must not be empty")
+    return text.lower()
+
+
+def _natural_list(values: list[str]) -> str:
+    if not values:
+        raise ValueError("At least one registered skill is required for special-page copy")
+    if len(values) == 1:
+        return values[0]
+    if len(values) == 2:
+        return f"{values[0]} and {values[1]}"
+    return ", ".join(values[:-1]) + f", and {values[-1]}"
+
+
+def registered_skills(book: dict[str, Any]) -> list[str]:
+    skills = book.get("skills")
+    if not isinstance(skills, list) or len(skills) != 6:
+        raise ValueError("Each registered book must provide exactly six skills for locked special-page copy")
+    return [_skill_phrase(value) for value in skills]
+
+
+def welcome_copy(title: str, book: dict[str, Any]) -> dict[str, str]:
+    """Return locked, child-facing Welcome copy derived from the registered book identity."""
+    skills = registered_skills(book)
+    return {
+        "page_title": f"Welcome to {title}",
+        "message": f"Let us learn to {_natural_list(skills)}.",
+    }
+
+
+def meet_star_copy(title: str, book: dict[str, Any]) -> dict[str, str]:
+    """Return locked Meet Star copy; V4 placeholder curriculum text is never used."""
+    skills = registered_skills(book)
+    return {
+        "page_title": "Meet Star",
+        "message": f"Hello! I am Star, your friendly guide through {title}.",
+        "purpose": (
+            f"Together, we will learn to {_natural_list(skills[:4])}. "
+            "I will encourage you to try, think, and celebrate every step."
+        ),
+    }
 
 
 def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]:
@@ -214,6 +261,7 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
         if args.illustration is None:
             raise ValueError("Welcome pages require --illustration")
         illustration = stage_illustration(args.illustration, page_id)
+        copy = welcome_copy(title, book)
         data = {
             "page_id": page_id,
             "page_type": "welcome",
@@ -221,10 +269,12 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "page_number": args.page_number,
             "book_title": title,
             "book_title_lines": list(book["title_lines"]),
-            "page_title": args.title or f"Welcome to {title}",
+            "page_title": copy["page_title"],
             "level": level_data["display_level"],
             "tagline": book["tagline"],
-            "message": args.instruction or f"Welcome to the {title} learning journey.",
+            "message": copy["message"],
+            "content_source": "locked_book_registry",
+            "content_policy_version": SPECIAL_COPY_VERSION,
             "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
             "footer_keywords": book["footer_keywords"],
             "illustration_path": repo_relative(illustration),
@@ -233,6 +283,7 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
     else:
         if physical != 7 or args.page_number != 6:
             raise ValueError("Meet Star must be physical page 7 and visibly numbered 6")
+        copy = meet_star_copy(title, book)
         data = {
             "page_id": page_id,
             "page_type": "meet_star",
@@ -240,11 +291,13 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "page_number": args.page_number,
             "book_title": title,
             "book_title_lines": list(book["title_lines"]),
-            "page_title": args.title or "Meet Star",
+            "page_title": copy["page_title"],
             "level": level_data["display_level"],
             "tagline": book["tagline"],
-            "message": args.instruction or "Meet Star, your friendly guide for this learning journey.",
-            "purpose": args.objective or f"Star encourages children as they explore {title}.",
+            "message": copy["message"],
+            "purpose": copy["purpose"],
+            "content_source": "locked_book_registry",
+            "content_policy_version": SPECIAL_COPY_VERSION,
             "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
             "footer_keywords": book["footer_keywords"],
             "official_logo_path": resolve_logo(registry),

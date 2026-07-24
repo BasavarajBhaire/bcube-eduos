@@ -11,6 +11,16 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 TEMPLATE_PATH = ROOT / "bcube-publishing-sdk/templates/special-page-v1.json"
+PLACEHOLDER_PHRASES = (
+    "use the page for its stated front-matter purpose",
+    "no additional worksheet task",
+    "introduce the page purpose clearly",
+    "use this page for orientation only",
+    "one dominant learning scene",
+    "one dominant focus for",
+    "what can you show or tell about welcome",
+    "what can you show or tell about meet star",
+)
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -35,6 +45,19 @@ def image_info(value: str, label: str, minimum_side: int) -> dict[str, Any]:
         if min(image.width, image.height) < minimum_side:
             raise ValueError(f"{label} is too small: {image.width}x{image.height}")
         return {"path": str(path), "size": [image.width, image.height], "mode": image.mode}
+
+
+def validate_locked_copy(data: dict[str, Any], page_type: str) -> None:
+    """Reject production placeholders on child-facing Welcome and Meet Star pages."""
+    if page_type not in {"welcome", "meet_star"}:
+        return
+    fields = ["page_title", "message"]
+    if page_type == "meet_star":
+        fields.append("purpose")
+    combined = " ".join(str(data.get(field) or "") for field in fields).casefold()
+    for phrase in PLACEHOLDER_PHRASES:
+        if phrase in combined:
+            raise ValueError(f"{page_type} contains prohibited placeholder copy: {phrase!r}")
 
 
 def validate(data_path: Path) -> dict[str, Any]:
@@ -66,6 +89,7 @@ def validate(data_path: Path) -> dict[str, Any]:
         raise ValueError("book_title_lines must be a non-empty list")
     if not isinstance(data["core_pillars"], list) or len(data["core_pillars"]) != 5:
         raise ValueError("Exactly five core pillars are required")
+    validate_locked_copy(data, str(page_type))
     assets = {"official_logo": image_info(data["official_logo_path"], "official logo", 128)}
     visible_page_number = False
     if page_type == "contents":
@@ -96,6 +120,8 @@ def validate(data_path: Path) -> dict[str, Any]:
         "page_type": page_type,
         "header_type": template["rules"]["header_type"],
         "visible_page_number": visible_page_number,
+        "content_source": data.get("content_source"),
+        "content_policy_version": data.get("content_policy_version"),
         "assets": assets,
         "prohibited_component_counts": {
             "series_banner": 0,
