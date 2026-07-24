@@ -27,6 +27,15 @@ def load_front_matter_pipeline():
     return module
 
 
+def load_special_composer():
+    spec = importlib.util.spec_from_file_location("bcube_special_composer", COMPOSER)
+    if spec is None or spec.loader is None:
+        raise AssertionError("Cannot load the special-page composer")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 def official_asset(key: str) -> str:
     registry = json.loads(BOOKS.read_text(encoding="utf-8"))
     for candidate in registry["shared"][key]:
@@ -114,6 +123,58 @@ class SpecialPageTests(unittest.TestCase):
             self.assertNotIn("official_star", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
             self.assertNotIn("parent_panel", evidence["components"])
+
+    def test_confidence_builders_contents_part_two_fits_long_module_heading(self) -> None:
+        pipeline = load_front_matter_pipeline()
+        with tempfile.TemporaryDirectory() as folder:
+            data = common("contents", 5)
+            data.update({
+                "page_id": "CB-NURSERY-V4-P005",
+                "physical_page": 5,
+                "book_title": "Confidence Builders",
+                "book_title_lines": ["Confidence", "Builders"],
+                "page_title": "Contents — Part 2",
+                "level": "Nursery",
+                "tagline": "I Believe • I Can • I Will",
+                "footer_keywords": "Self-belief • Courage • Expression • Kindness • Independence",
+                "entries": pipeline.contents_entries("nursery", "confidence-builders", 5),
+            })
+            _, evidence, _ = self.render(data, Path(folder))
+            groups = evidence["components"]["module_groups"]
+            self.assertEqual(19, groups["entry_count"])
+            long_heading = next(
+                item for item in groups["items"]
+                if item.get("module") == "Module 4 Independence And Responsibility"
+                and item.get("component") == "module_heading"
+            )
+            self.assertEqual(1, len(long_heading["typography"]["lines"]))
+            self.assertGreaterEqual(long_heading["typography"]["font_size"], 30)
+
+    def test_all_sixty_registered_contents_pages_fit_the_locked_layout(self) -> None:
+        pipeline = load_front_matter_pipeline()
+        composer = load_special_composer()
+        registry = json.loads(BOOKS.read_text(encoding="utf-8"))
+        template = json.loads(
+            (ROOT / "bcube-publishing-sdk/templates/special-page-v1.json").read_text(encoding="utf-8")
+        )
+        checked = 0
+        for level_slug, level in registry["levels"].items():
+            for book_slug, book in level["books"].items():
+                for physical_page in (4, 5):
+                    canvas = Image.new("RGB", (2480, 3508), "white")
+                    result = composer.draw_contents(
+                        ImageDraw.Draw(canvas),
+                        {
+                            "book_title": " ".join(book["title_lines"]),
+                            "entries": pipeline.contents_entries(
+                                level_slug, book_slug, physical_page
+                            ),
+                        },
+                        template,
+                    )
+                    self.assertEqual(19, result["entry_count"])
+                    checked += 1
+        self.assertEqual(60, checked)
 
     def test_welcome_uses_hero_illustration_without_star_or_lesson_panels(self) -> None:
         with tempfile.TemporaryDirectory() as folder:

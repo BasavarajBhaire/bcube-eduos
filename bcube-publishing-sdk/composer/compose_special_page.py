@@ -173,8 +173,24 @@ def draw_contents(draw: ImageDraw.ImageDraw, data: dict[str, Any], template: dic
                     y += 16
                 draw.rounded_rectangle((x0, y, x1, y + 68), radius=22,
                                        fill=["#6F3D91", "#1768B3"][column_index])
-                fitted_text(draw, module, [x0 + 22, y + 2, x1 - 22, y + 66], max_size=48,
-                            min_size=46, colour="white", bold=True, align="left", max_lines=1)
+                module_render = fitted_text(
+                    draw,
+                    module,
+                    [x0 + 22, y + 2, x1 - 22, y + 66],
+                    max_size=spec["module_heading_max_px"],
+                    min_size=spec["module_heading_min_px"],
+                    colour="white",
+                    bold=True,
+                    align="left",
+                    max_lines=1,
+                )
+                rendered.append({
+                    "component": "module_heading",
+                    "module": module,
+                    "column": column_index,
+                    "y": y,
+                    "typography": module_render,
+                })
                 y += 82
                 previous_module = module
             active = font(44)
@@ -196,12 +212,17 @@ def draw_contents(draw: ImageDraw.ImageDraw, data: dict[str, Any], template: dic
                 draw.ellipse((dot_x, y + 48, dot_x + 4, y + 52), fill="#A6ADBA")
             draw.text((x1 - page_width - 8, y + 18), page_text, font=page_font,
                       fill=template["colours"]["blue"])
-            rendered.append({"title": title, "page": item["page"], "module": module,
-                             "column": column_index, "y": y})
+            rendered.append({"component": "contents_entry", "title": title, "page": item["page"],
+                             "module": module, "column": column_index, "y": y})
             y += spec["row_advance_min_px"]
         if y > y1:
             raise ValueError("Contents entries exceed the locked column bounds")
-    return {"entries": rendered, "entry_count": len(rendered), "columns": 2}
+    return {
+        "items": rendered,
+        "entry_count": sum(item["component"] == "contents_entry" for item in rendered),
+        "module_heading_count": sum(item["component"] == "module_heading" for item in rendered),
+        "columns": 2,
+    }
 
 
 def validate(data: dict[str, Any], template: dict[str, Any]) -> None:
