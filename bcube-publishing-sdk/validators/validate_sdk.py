@@ -68,6 +68,10 @@ def main() -> None:
             raise SystemExit(f"Special page template must disable {key}")
     if special_render.get("contents", {}).get("entries_per_page") != 19:
         raise SystemExit("Each Contents page must contain exactly 19 reader-facing entries")
+    if special_render.get("contents", {}).get("module_heading_min_px") != 30:
+        raise SystemExit("Contents module headings must support long registered names at 30px")
+    if special_render.get("contents", {}).get("entry_min_px") != 30:
+        raise SystemExit("Contents entries must support long registered titles at 30px")
     if special_render.get("welcome", {}).get("expected_printed_page") != 5:
         raise SystemExit("Welcome must visibly start numbering at page 5")
     if special_render.get("meet_star", {}).get("expected_printed_page") != 6:
