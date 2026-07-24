@@ -16,6 +16,7 @@ REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
 NORMALIZER = ROOT / "bcube-publishing-sdk/normalizers/build_learning_contract_v2.py"
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_learning_contract_v2.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_character_v2.py"
+OVERRIDES = ROOT / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -83,8 +84,40 @@ def run(command: list[str]) -> None:
     subprocess.run(command, cwd=ROOT, check=True)
 
 
+def deep_merge(target: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
+    for key, value in update.items():
+        if isinstance(value, dict) and isinstance(target.get(key), dict):
+            deep_merge(target[key], value)
+        else:
+            target[key] = value
+    return target
+
+
+def apply_curated_override(contract: dict[str, Any]) -> bool:
+    registry = load(OVERRIDES)
+    pages = registry.get("pages")
+    if not isinstance(pages, dict):
+        raise ValueError("Learning-page override registry contains no pages object")
+    page_id = contract["identity"]["page_id"]
+    override = pages.get(page_id)
+    if not isinstance(override, dict):
+        return False
+    deep_merge(contract, override)
+    contract["qa_requirements"]["component_count"] = len(contract["deterministic_components"])
+    contract["source_lineage"]["curated_override_registry"] = repo_relative(OVERRIDES)
+    contract["source_lineage"]["curated_override_version"] = registry.get("version")
+    return True
+
+
 def normalise_star_policy(contract: dict[str, Any], official_star: Path) -> None:
     illustration = contract["illustration"]
+    policy = illustration.get("star_policy")
+    if policy == "official-asset-separate":
+        contract["assets"]["official_star_path"] = repo_relative(official_star)
+        return
+    if policy == "prohibited":
+        contract["assets"].pop("official_star_path", None)
+        return
     learning = contract["learning"]
     text = " ".join(
         str(value or "")
@@ -148,7 +181,7 @@ def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
     contract_path = ROOT / "production-renders/activity/page-data" / f"{expected_page_id}.json"
     output = ROOT / "production-renders/activity/pages" / f"{expected_page_id}.png"
     evidence = ROOT / "production-renders/activity/evidence" / f"{expected_page_id}.json"
-    report = ROOT / "validation/rendered-pages" / f"{expected_page_id}.learning-v2-input.json"
+    report = ROOT / "validation/rendered-pages" / f"{expected_page_id}.activity-input.json"
     for path in (contract_path, output, evidence, report):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.unlink(missing_ok=True)
@@ -173,6 +206,7 @@ def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
         ]
     )
     contract = load(contract_path)
+    override_applied = apply_curated_override(contract)
     normalise_star_policy(contract, star)
     verify_identity(
         contract,
@@ -183,6 +217,7 @@ def build_contract(args: argparse.Namespace) -> tuple[Path, Path, Path, Path]:
         slug=args.book,
     )
     contract["source_lineage"]["html_registry_source"] = repo_relative(source)
+    contract["source_lineage"]["curated_override_applied"] = override_applied
     contract_path.write_text(json.dumps(contract, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return contract_path, output, evidence, report
 
