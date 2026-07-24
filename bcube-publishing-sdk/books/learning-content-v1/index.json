@@ -1,19 +1,23 @@
 {
   "version": "portfolio-learning-content-v1.0",
-  "description": "Authoritative portfolio-wide learning content registry for HTML preview and deterministic page rendering.",
-  "files": [
-    "nursery.json",
-    "lkg.json",
-    "ukg.json"
-  ],
+  "description": "Authoritative deterministic content policy for every BCube learning page rendered through Learning Page Contract V2.",
+  "curator": "bcube-publishing-sdk/normalizers/curate_learning_content_v1.py",
   "expected_pages_per_level": 360,
   "expected_total_pages": 1080,
-  "required_sections": [
-    "learning",
-    "activity",
-    "guidance",
+  "locked_fields": [
+    "learning.objective",
+    "learning.student_instruction",
+    "learning.expected_response",
+    "learning.model_text",
+    "activity.primary",
+    "activity.secondary",
+    "activity.response_modes",
+    "activity.layout_variant",
+    "guidance.teacher.model",
+    "guidance.teacher.question",
+    "guidance.parent_extension",
     "deterministic_components",
-    "qa_requirements",
-    "content_lineage"
-  ]
+    "qa_requirements.content_status"
+  ],
+  "status": "LOCKED"
 }
