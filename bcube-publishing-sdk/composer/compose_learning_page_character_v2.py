@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compose Learning Page V2 and add the official Star asset only when the contract requires it."""
+"""Compose Learning Page V2 with compact adult highlights and approved Star policy."""
 from __future__ import annotations
 
 import argparse
@@ -55,6 +55,90 @@ def trim_near_white(path: Path) -> Image.Image:
     return image.crop(bbox)
 
 
+def install_refined_learning_components(base) -> None:
+    """Replace oversized adult panels and improve primary-colour model cues."""
+    original_model_example = base.model_example_box
+
+    def compact_adult_panel(draw, bounds, heading, body, fill, outline, template):
+        colours = template["colours"]
+        typography = template["typography"]
+        x0, y0, x1, y1 = bounds
+        display_heading = {
+            "TEACHER GUIDANCE": "TEACHER TIP",
+            "PARENT PARTNERSHIP": "HOME CONNECTION",
+        }.get(heading, heading)
+        draw.rounded_rectangle(bounds, radius=26, fill=colours["white"], outline=outline, width=4)
+        banner = [x0 + 16, y0 + 14, x1 - 16, y0 + 78]
+        draw.rounded_rectangle(banner, radius=22, fill=fill, outline=outline, width=2)
+        heading_render = base.fitted_text(
+            draw,
+            display_heading,
+            [banner[0] + 20, banner[1] + 4, banner[2] - 20, banner[3] - 4],
+            max_size=typography["adult_heading"],
+            min_size=24,
+            colour=colours["navy"],
+            bold=True,
+            max_lines=1,
+        )
+        body_render = base.fitted_text(
+            draw,
+            body,
+            [x0 + 30, y0 + 92, x1 - 30, y1 - 22],
+            max_size=typography["adult_body_max"],
+            min_size=typography["adult_body_min"],
+            colour=colours["line"],
+            align="left",
+            max_lines=7,
+        )
+        return {
+            "bounds": bounds,
+            "style": "compact-highlight",
+            "banner": banner,
+            "heading": heading_render,
+            "body": body_render,
+        }
+
+    def refined_model_example(draw, bounds, label_text, colours, typography):
+        lowered = str(label_text).casefold()
+        if not all(value in lowered for value in ("red", "yellow", "blue")):
+            return original_model_example(draw, bounds, label_text, colours, typography)
+        draw.rounded_rectangle(bounds, radius=24, fill=colours["gold"], outline="#E1B12C", width=3)
+        x0, y0, x1, y1 = bounds
+        swatches = [
+            ("Red", "#E53935"),
+            ("Yellow", "#FFD600"),
+            ("Blue", "#1565C0"),
+        ]
+        gap = 34
+        usable = x1 - x0 - 80
+        item_width = (usable - gap * 2) // 3
+        rendered = []
+        for index, (name, fill) in enumerate(swatches):
+            left = x0 + 40 + index * (item_width + gap)
+            item = [left, y0 + 18, left + item_width, y1 - 18]
+            draw.rounded_rectangle(item, radius=22, fill=colours["white"], outline=fill, width=4)
+            circle_size = min(74, item[3] - item[1] - 20)
+            circle = [item[0] + 24, item[1] + (item[3] - item[1] - circle_size) // 2,
+                      item[0] + 24 + circle_size, item[1] + (item[3] - item[1] + circle_size) // 2]
+            draw.ellipse(circle, fill=fill, outline="#FFFFFF", width=3)
+            text = base.fitted_text(
+                draw,
+                name,
+                [circle[2] + 18, item[1] + 8, item[2] - 16, item[3] - 8],
+                max_size=typography["component_label_max"],
+                min_size=typography["component_label_min"],
+                colour=colours["navy"],
+                bold=True,
+                align="left",
+                max_lines=1,
+            )
+            rendered.append({"name": name, "bounds": item, "swatch": circle, "text": text})
+        return {"type": "model_example", "bounds": bounds, "style": "primary-colour-swatches", "items": rendered}
+
+    base.adult_panel = compact_adult_panel
+    base.model_example_box = refined_model_example
+
+
 def overlay_official_star(contract: dict[str, Any], output: Path, evidence_output: Path) -> None:
     policy = contract["illustration"]["star_policy"]
     if policy in {"prohibited", "not-required"}:
@@ -95,6 +179,7 @@ def overlay_official_star(contract: dict[str, Any], output: Path, evidence_outpu
 
 def compose(contract_path: Path, output: Path, evidence_output: Path) -> None:
     base = load_module()
+    install_refined_learning_components(base)
     base.compose(contract_path, output, evidence_output)
     contract = load(contract_path)
     overlay_official_star(contract, output, evidence_output)
