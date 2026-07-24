@@ -5,55 +5,56 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>BCube Publishing Console</title>
   <style>
-    :root{font-family:Inter,system-ui,sans-serif;color:#1f2937;background:#f5f7fb}body{margin:0}.wrap{max-width:1100px;margin:32px auto;padding:0 20px}.card{background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(15,23,42,.08);padding:24px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:6px}input,select,textarea{width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;font:inherit}textarea{min-height:92px;resize:vertical}.actions{display:flex;gap:12px;align-items:center;margin-top:20px}button{border:0;border-radius:10px;padding:12px 18px;font-weight:800;cursor:pointer;background:#111827;color:#fff}button.secondary{background:#e5e7eb;color:#111827}.hidden{display:none}pre{white-space:pre-wrap;background:#0f172a;color:#e2e8f0;border-radius:12px;padding:16px;min-height:120px;overflow:auto}.status{font-weight:800}.ok{color:#047857}.bad{color:#b91c1c}@media(max-width:760px){.grid{grid-template-columns:1fr}}
+    :root{font-family:Inter,system-ui,sans-serif;color:#1f2937;background:#f5f7fb}body{margin:0}.wrap{max-width:1100px;margin:32px auto;padding:0 20px}.card{background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(15,23,42,.08);padding:24px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}label{display:block;font-weight:700;margin-bottom:6px}input,select{width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;font:inherit}.metadata{margin-top:20px;border:1px solid #dbe4f0;background:#f8fafc;border-radius:14px;padding:18px}.metadata h2{margin:0 0 14px}.metadata-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.meta{background:#fff;border-radius:10px;padding:12px}.meta.wide{grid-column:1/-1}.meta span{display:block;color:#64748b;font-size:.82rem;font-weight:700;margin-bottom:4px}.meta strong{display:block;white-space:pre-wrap}.actions{display:flex;gap:12px;align-items:center;margin-top:20px}button{border:0;border-radius:10px;padding:12px 18px;font-weight:800;cursor:pointer;background:#111827;color:#fff}button:disabled{opacity:.55;cursor:wait}button.secondary{background:#e5e7eb;color:#111827}.hidden{display:none}pre{white-space:pre-wrap;background:#0f172a;color:#e2e8f0;border-radius:12px;padding:16px;min-height:120px;overflow:auto}.status{font-weight:800}.ok{color:#047857}.bad{color:#b91c1c}@media(max-width:760px){.grid,.metadata-grid{grid-template-columns:1fr}.meta.wide{grid-column:auto}}
   </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>BCube Publishing Engine — Page Builder</h1>
-  <p>Create cover and interior review pages without typing long CLI commands.</p>
+  <h1>BCube Publishing Engine &mdash; Page Builder</h1>
+  <p>Select the book and physical page. The finalized page package supplies all publishing metadata automatically.</p>
   <div class="card">
     <form id="builder">
       <div class="grid">
         <div><label>Level</label><select name="level" id="level"></select></div>
         <div><label>Book</label><select name="book" id="book"></select></div>
-        <div><label>Page type</label><select name="page_type" id="pageType">
-          <option value="cover">Cover</option><option value="about-book">About the Book</option>
-          <option value="copyright">Copyright</option><option value="contents">Contents</option>
-          <option value="welcome">Welcome</option><option value="meet-star">Meet Star</option>
-          <option value="module-intro">Module Intro</option><option value="learning">Learning Page</option>
-          <option value="assessment">Assessment / Review</option><option value="certificate">Certificate</option>
-          <option value="back-cover">Back Cover</option>
-        </select></div>
+        <div><label>Physical page</label><select name="physical_page" id="physicalPage" required></select></div>
         <div><label>Illustration</label><input type="file" name="illustration" accept="image/png,image/jpeg,image/webp" required></div>
-        <div class="interior"><label>Physical page</label><input name="physical_page" id="physicalPage" type="number" min="1" value="2"></div>
-        <div class="interior"><label>Printed page number</label><input name="page_number" type="number" min="0" value="0"></div>
-        <div class="interior"><label>Page ID</label><input name="page_id" id="pageId"></div>
-        <div class="interior"><label>Title</label><input name="title"></div>
-        <div class="interior full"><label>Learning objective / page purpose</label><textarea name="objective"></textarea></div>
-        <div class="interior full"><label>Child instruction / page instruction</label><textarea name="instruction"></textarea></div>
-        <div class="interior full"><label>Teacher prompt</label><textarea name="teacher_prompt"></textarea></div>
-        <div class="interior full"><label>Parent prompt</label><textarea name="parent_prompt"></textarea></div>
         <div><label>Reviewer</label><input name="reviewer" placeholder="Required only when approving"></div>
         <div><label><input type="checkbox" id="approve" style="width:auto"> Approve for production</label></div>
       </div>
-      <div class="actions"><button type="submit">Generate Page</button><button type="button" class="secondary" id="reset">Reset</button><span id="status" class="status"></span></div>
+      <section class="metadata" id="metadata">
+        <h2>Auto-filled page details</h2>
+        <div class="metadata-grid">
+          <div class="meta"><span>Page ID</span><strong id="metaId">&mdash;</strong></div>
+          <div class="meta"><span>Page type</span><strong id="metaType">&mdash;</strong></div>
+          <div class="meta"><span>Printed page</span><strong id="metaPrinted">&mdash;</strong></div>
+          <div class="meta wide"><span>Title</span><strong id="metaTitle">&mdash;</strong></div>
+          <div class="meta wide"><span>Learning objective / purpose</span><strong id="metaObjective">&mdash;</strong></div>
+          <div class="meta wide"><span>Child / page instruction</span><strong id="metaInstruction">&mdash;</strong></div>
+          <div class="meta wide"><span>Teacher guidance</span><strong id="metaTeacher">&mdash;</strong></div>
+          <div class="meta wide"><span>Parent partnership</span><strong id="metaParent">&mdash;</strong></div>
+          <div class="meta wide"><span>Authoritative source</span><strong id="metaSource">&mdash;</strong></div>
+        </div>
+      </section>
+      <div class="actions"><button type="submit" id="submit">Generate Page</button><button type="button" class="secondary" id="reset">Reset</button><span id="status" class="status"></span></div>
     </form>
     <h2>Engine output</h2><pre id="output">Ready.</pre>
   </div>
 </div>
 <script>
-let registry={};
-const level=document.getElementById('level'), book=document.getElementById('book'), pageType=document.getElementById('pageType');
-const pageId=document.getElementById('pageId'), physicalPage=document.getElementById('physicalPage');
-async function loadBooks(){registry=await (await fetch('/api/books')).json();level.innerHTML=Object.entries(registry).map(([k,v])=>`<option value="${k}">${v.label} (${v.age})</option>`).join('');syncBooks();}
-function syncBooks(){const books=registry[level.value].books;book.innerHTML=Object.entries(books).map(([k,v])=>`<option value="${k}">${v.title}</option>`).join('');syncId();}
-function syncId(){if(!registry[level.value])return;const data=registry[level.value], b=data.books[book.value];if(!b)return;pageId.value=`${b.prefix}-${data.id_level}-V4-P${String(physicalPage.value||1).padStart(3,'0')}`;}
-function syncPage(){document.querySelectorAll('.interior').forEach(e=>e.classList.toggle('hidden',pageType.value==='cover'));}
-level.addEventListener('change',syncBooks);book.addEventListener('change',syncId);physicalPage.addEventListener('input',syncId);pageType.addEventListener('change',syncPage);
-document.getElementById('reset').onclick=()=>{document.getElementById('builder').reset();syncBooks();syncPage();document.getElementById('output').textContent='Ready.';};
-document.getElementById('builder').addEventListener('submit',async e=>{e.preventDefault();const status=document.getElementById('status'),out=document.getElementById('output');status.textContent='Running…';status.className='status';const fd=new FormData(e.target);fd.set('approve',document.getElementById('approve').checked?'true':'false');try{const res=await fetch('/api/publish',{method:'POST',body:fd});const data=await res.json();out.textContent=JSON.stringify(data,null,2);status.textContent=data.ok?'Completed':'Failed';status.className='status '+(data.ok?'ok':'bad');}catch(err){status.textContent='Failed';status.className='status bad';out.textContent=String(err);}});
-loadBooks().then(syncPage);
+let registry={}, pages=[];
+const level=document.getElementById('level'), book=document.getElementById('book'), physicalPage=document.getElementById('physicalPage');
+const status=document.getElementById('status'), output=document.getElementById('output'), submit=document.getElementById('submit');
+const meta={id:'metaId',type:'metaType',printed:'metaPrinted',title:'metaTitle',objective:'metaObjective',instruction:'metaInstruction',teacher:'metaTeacher',parent:'metaParent',source:'metaSource'};
+function text(id,value){document.getElementById(id).textContent=value||'—';}
+function showPage(){const page=pages.find(item=>String(item.physical_page)===physicalPage.value);text(meta.id,page?.page_id);text(meta.type,page?.page_type_label);text(meta.printed,page?.printed_page_label);text(meta.title,page?.title);text(meta.objective,page?.objective);text(meta.instruction,page?.instruction);text(meta.teacher,page?.teacher_prompt);text(meta.parent,page?.parent_prompt);text(meta.source,page?.source);submit.disabled=!page;}
+async function loadPages(){submit.disabled=true;status.textContent='Loading page records…';status.className='status';try{const res=await fetch(`/api/pages?level=${encodeURIComponent(level.value)}&book=${encodeURIComponent(book.value)}`);const data=await res.json();if(!res.ok)throw new Error(data.error||'Could not load page records');pages=data.pages;physicalPage.innerHTML=pages.map(page=>`<option value="${page.physical_page}">P${String(page.physical_page).padStart(3,'0')} — ${page.title}</option>`).join('');status.textContent=`${pages.length} finalized pages loaded`;status.className='status ok';showPage();}catch(err){pages=[];physicalPage.innerHTML='';showPage();status.textContent='Page data unavailable';status.className='status bad';output.textContent=String(err);}}
+async function loadBooks(){registry=await (await fetch('/api/books')).json();level.innerHTML=Object.entries(registry).map(([key,value])=>`<option value="${key}">${value.label} (${value.age})</option>`).join('');syncBooks();}
+function syncBooks(){const books=registry[level.value].books;book.innerHTML=Object.entries(books).map(([key,value])=>`<option value="${key}">${value.title}</option>`).join('');loadPages();}
+level.addEventListener('change',syncBooks);book.addEventListener('change',loadPages);physicalPage.addEventListener('change',showPage);
+document.getElementById('reset').onclick=()=>{document.getElementById('builder').reset();syncBooks();output.textContent='Ready.';};
+document.getElementById('builder').addEventListener('submit',async event=>{event.preventDefault();status.textContent='Running…';status.className='status';submit.disabled=true;const fd=new FormData(event.target);fd.set('approve',document.getElementById('approve').checked?'true':'false');try{const res=await fetch('/api/publish',{method:'POST',body:fd});const data=await res.json();output.textContent=JSON.stringify(data,null,2);status.textContent=data.ok?'Completed':'Failed';status.className='status '+(data.ok?'ok':'bad');}catch(err){status.textContent='Failed';status.className='status bad';output.textContent=String(err);}finally{submit.disabled=false;}});
+loadBooks();
 </script>
 </body>
 </html>

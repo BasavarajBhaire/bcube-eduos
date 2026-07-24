@@ -183,8 +183,9 @@ def compose(data_path: Path, output: Path, evidence_output: Path) -> None:
                                      max_size=34, min_size=24, fill=colours["line"], max_lines=9)
 
     star_render = paste_contain(canvas, resolve(data["official_star_path"]), bounds["star"], remove_near_white=True)
-    draw_fitted_text(draw, str(data["page_number"]), bounds["page_number"], max_size=44, min_size=34,
-                     fill=colours["muted"], bold=True, align="center", max_lines=1)
+    if data["page_number"] > 0:
+        draw_fitted_text(draw, str(data["page_number"]), bounds["page_number"], max_size=44, min_size=34,
+                         fill=colours["muted"], bold=True, align="center", max_lines=1)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(output, "PNG", dpi=(canvas_spec["dpi"], canvas_spec["dpi"]))
