@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Read authoritative page metadata from finalized V4 prompt packages."""
+"""Read authoritative page metadata and resolved Learning Page Contract V2 previews."""
 from __future__ import annotations
 
+import importlib.util
 import json
 import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
+from types import ModuleType
 from typing import Any
-
 
 SUPPORTED_ACTIVITY_TYPES = {
     "observe", "match", "trace", "colour", "draw", "speak", "listen",
-    "count", "connect", "complete", "maze", "explore", "think", "reflect",
-    "sequence", "sort", "circle", "assessment",
+    "count", "compare", "connect", "complete", "maze", "explore", "think",
+    "reflect", "sequence", "sort", "circle", "assessment",
 }
 DEFAULT_TEACHER_PROMPT = (
     "Model once, invite one response, pause for processing, scaffold through gesture or choice, "
@@ -40,6 +41,7 @@ class PageRecord:
     teacher_prompt: str
     parent_prompt: str
     source: str
+    learning_contract: dict[str, Any] | None = None
 
     def public_dict(self) -> dict[str, Any]:
         result = asdict(self)
@@ -47,6 +49,26 @@ class PageRecord:
         result["requires_illustration"] = self.page_type not in {
             "copyright", "contents", "meet-star",
         }
+        if self.learning_contract:
+            result["learning_pipeline"] = "learning-page-contract-v2"
+            result["layout_variant"] = self.learning_contract.get("layout_variant")
+            result["expected_response"] = self.learning_contract.get("expected_response")
+            result["deterministic_component_types"] = self.learning_contract.get(
+                "deterministic_component_types", []
+            )
+            result["illustration_scene"] = self.learning_contract.get("illustration_scene")
+            result["illustration_focal_point"] = self.learning_contract.get(
+                "illustration_focal_point"
+            )
+            result["illustration_required_objects"] = self.learning_contract.get(
+                "required_objects", []
+            )
+            result["illustration_forbidden_objects"] = self.learning_contract.get(
+                "forbidden_objects", []
+            )
+            result["star_policy"] = self.learning_contract.get("star_policy")
+            result["content_status"] = self.learning_contract.get("status")
+            result["content_issues"] = self.learning_contract.get("issues", [])
         return result
 
 
@@ -56,6 +78,9 @@ class PageDataRegistry:
     def __init__(self, root: Path, book_registry_path: Path):
         self.root = root.resolve()
         self.book_registry_path = book_registry_path.resolve()
+        self._learning_normalizer: ModuleType | None = None
+        self._learning_refiner: ModuleType | None = None
+        self._learning_overrides: dict[str, Any] | None = None
 
     @staticmethod
     def _load_object(path: Path) -> dict[str, Any]:
@@ -66,6 +91,41 @@ class PageDataRegistry:
         if not isinstance(value, dict):
             raise ValueError(f"Page-data source must contain a JSON object: {path}")
         return value
+
+    @staticmethod
+    def _load_module(name: str, path: Path) -> ModuleType:
+        specification = importlib.util.spec_from_file_location(name, path)
+        if specification is None or specification.loader is None:
+            raise ValueError(f"Cannot load learning-page module: {path}")
+        module = importlib.util.module_from_spec(specification)
+        specification.loader.exec_module(module)
+        return module
+
+    def _learning_modules(self) -> tuple[ModuleType, ModuleType, dict[str, Any]]:
+        if self._learning_normalizer is None:
+            self._learning_normalizer = self._load_module(
+                "bcube_console_learning_normalizer_v2",
+                self.root / "bcube-publishing-sdk/normalizers/build_learning_contract_v2.py",
+            )
+        if self._learning_refiner is None:
+            self._learning_refiner = self._load_module(
+                "bcube_console_learning_refiner_v2",
+                self.root / "bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py",
+            )
+        if self._learning_overrides is None:
+            self._learning_overrides = self._load_object(
+                self.root / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
+            )
+        return self._learning_normalizer, self._learning_refiner, self._learning_overrides
+
+    @staticmethod
+    def _deep_merge(target: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
+        for key, value in update.items():
+            if isinstance(value, dict) and isinstance(target.get(key), dict):
+                PageDataRegistry._deep_merge(target[key], value)
+            else:
+                target[key] = value
+        return target
 
     def _book(self, level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any]]:
         registry = self._load_object(self.book_registry_path)
@@ -132,6 +192,7 @@ class PageDataRegistry:
             ("sort", ("sort", "classify", "group")),
             ("sequence", ("sequence", "order", "first next", "before and after")),
             ("count", ("count", "number", "add", "subtract", "more or fewer")),
+            ("compare", ("compare", "same and different", "greater", "smaller")),
             ("circle", ("circle",)),
             ("connect", ("connect", "join", "link")),
             ("complete", ("complete", "finish", "fill in")),
@@ -192,6 +253,94 @@ class PageDataRegistry:
             words.append(word)
         return " ".join(words).rstrip(" ,;:") + "…"
 
+    def _learning_preview(
+        self,
+        *,
+        source_path: Path,
+        level_data: dict[str, Any],
+        book: dict[str, Any],
+    ) -> dict[str, Any]:
+        normalizer, refiner, override_registry = self._learning_modules()
+        try:
+            contract = normalizer.build_contract(
+                root=self.root,
+                v4_path=source_path,
+                illustration_path="PENDING_ILLUSTRATION",
+                official_logo_path="PENDING_OFFICIAL_LOGO",
+                book_title_lines=list(book["title_lines"]),
+                level_name=str(level_data["display_level"]),
+                age=str(level_data["age"]),
+            )
+            pages = override_registry.get("pages")
+            override = pages.get(contract["identity"]["page_id"]) if isinstance(pages, dict) else None
+            override_applied = isinstance(override, dict)
+            if override_applied:
+                self._deep_merge(contract, override)
+                contract["qa_requirements"]["component_count"] = len(
+                    contract["deterministic_components"]
+                )
+            refiner.refine_contract(
+                contract,
+                curated_override_applied=override_applied,
+            )
+            text = " ".join(
+                str(value or "")
+                for value in (
+                    contract["illustration"].get("scene"),
+                    contract["illustration"].get("focal_point"),
+                    contract["learning"].get("student_instruction"),
+                    contract["learning"].get("model_text"),
+                )
+            ).casefold()
+            if not override_applied:
+                contract["illustration"]["star_policy"] = (
+                    "official-asset-separate" if "star" in text else "prohibited"
+                )
+            return {
+                "status": "READY_FOR_ILLUSTRATION_REVIEW",
+                "issues": [],
+                "contract_version": contract["contract_version"],
+                "primary_activity": contract["activity"]["primary"],
+                "secondary_activities": contract["activity"]["secondary"],
+                "response_modes": contract["activity"]["response_modes"],
+                "layout_variant": contract["activity"]["layout_variant"],
+                "instruction": contract["learning"]["student_instruction"],
+                "expected_response": contract["learning"]["expected_response"],
+                "teacher_model": contract["guidance"]["teacher"]["model"],
+                "teacher_question": contract["guidance"]["teacher"]["question"],
+                "parent_extension": contract["guidance"]["parent_extension"],
+                "deterministic_component_types": [
+                    item["type"] for item in contract["deterministic_components"]
+                ],
+                "deterministic_components": contract["deterministic_components"],
+                "illustration_scene": contract["illustration"]["scene"],
+                "illustration_focal_point": contract["illustration"]["focal_point"],
+                "required_objects": contract["illustration"]["required_objects"],
+                "forbidden_objects": contract["illustration"]["forbidden_objects"],
+                "protected_response_zones": contract["illustration"][
+                    "protected_response_zones"
+                ],
+                "star_policy": contract["illustration"]["star_policy"],
+                "curated_override_applied": override_applied,
+                "content_refinement_changes": contract["source_lineage"].get(
+                    "content_refinement_changes", []
+                ),
+            }
+        except (ValueError, FileNotFoundError, json.JSONDecodeError) as exc:
+            return {
+                "status": "BLOCKED_NEEDS_EDITORIAL_REFINEMENT",
+                "issues": [str(exc)],
+                "contract_version": "learning-page-contract-v2.0",
+                "primary_activity": None,
+                "secondary_activities": [],
+                "response_modes": [],
+                "layout_variant": None,
+                "deterministic_component_types": [],
+                "required_objects": [],
+                "forbidden_objects": [],
+                "star_policy": "prohibited",
+            }
+
     def list_pages(self, level: str, slug: str) -> list[PageRecord]:
         level_data, book = self._book(level, slug)
         manifest_path = self._manifest_path(level, slug)
@@ -247,6 +396,20 @@ class PageDataRegistry:
             instruction = self._visible_instruction(source_instruction)
             teacher_prompt = self._teacher_prompt(curriculum)
             parent_prompt = self._parent_prompt(curriculum)
+            learning_contract = None
+            if 8 <= physical <= 43:
+                learning_contract = self._learning_preview(
+                    source_path=source_path,
+                    level_data=level_data,
+                    book=book,
+                )
+                if learning_contract["status"] == "READY_FOR_ILLUSTRATION_REVIEW":
+                    instruction = str(learning_contract["instruction"])
+                    teacher_prompt = (
+                        f"{learning_contract['teacher_model']} "
+                        f"Ask: {learning_contract['teacher_question']}"
+                    )
+                    parent_prompt = str(learning_contract["parent_extension"])
             required = {
                 "title": title,
                 "objective": objective,
@@ -263,7 +426,11 @@ class PageDataRegistry:
             if isinstance(preserved, dict):
                 module = str(preserved.get("unit_id") or "").strip()
             kind, kind_label = self._page_kind(physical, page_type, title)
-            activity_type = None if physical == 1 else self._activity_type(page_type, title, instruction, objective)
+            activity_type = None if physical == 1 else self._activity_type(
+                page_type, title, instruction, objective
+            )
+            if learning_contract and learning_contract["status"] == "READY_FOR_ILLUSTRATION_REVIEW":
+                activity_type = str(learning_contract["primary_activity"])
             if activity_type is not None and activity_type not in SUPPORTED_ACTIVITY_TYPES:
                 raise ValueError(f"Unsupported resolved activity type {activity_type!r} for {page_id}")
             printed = page.get("printed")
@@ -285,6 +452,7 @@ class PageDataRegistry:
                 teacher_prompt=teacher_prompt,
                 parent_prompt=parent_prompt,
                 source=source_path.relative_to(self.root).as_posix(),
+                learning_contract=learning_contract,
             ))
         declared_pages = manifest.get("physical_pages")
         if declared_pages != len(records) or seen != set(range(1, len(records) + 1)):
