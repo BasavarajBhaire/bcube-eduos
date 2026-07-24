@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BCube Publishing Console</title>
+  <style>
+    :root{font-family:Inter,system-ui,sans-serif;color:#172033;background:#f4f7fb}
+    *{box-sizing:border-box}body{margin:0}.shell{max-width:1180px;margin:auto;padding:28px}
+    .hero{background:white;border-radius:22px;padding:26px 30px;box-shadow:0 12px 35px #20304a14;margin-bottom:22px}
+    h1{margin:0 0 8px;font-size:30px}.muted{color:#64748b}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+    .card{background:white;border-radius:20px;padding:24px;box-shadow:0 12px 35px #20304a12}
+    .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.full{grid-column:1/-1}
+    label{display:block;font-size:13px;font-weight:700;margin-bottom:7px;color:#334155}
+    input,select,textarea,button{font:inherit}input,select,textarea{width:100%;border:1px solid #d8e0ea;border-radius:11px;padding:11px 12px;background:#fff}
+    textarea{min-height:88px;resize:vertical}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    button{border:0;border-radius:12px;padding:12px 18px;font-weight:800;cursor:pointer}.primary{background:#172033;color:white}.secondary{background:#eaf0f8;color:#172033}
+    .status{padding:13px;border-radius:12px;margin-top:16px;display:none}.ok{display:block;background:#e9f9ef;color:#166534}.bad{display:block;background:#fff0f0;color:#991b1b}
+    pre{white-space:pre-wrap;word-break:break-word;background:#101828;color:#d1e2ff;border-radius:14px;padding:16px;min-height:410px;max-height:650px;overflow:auto}
+    .hide{display:none}.check{display:flex;align-items:center;gap:8px}.check input{width:auto}
+    @media(max-width:850px){.grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.full{grid-column:auto}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <section class="hero">
+    <h1>BCube Publishing Engine — Page Builder</h1>
+    <div class="muted">Create review pages through the existing Python publishing pipeline without typing long commands.</div>
+  </section>
+  <div class="grid">
+    <section class="card">
+      <form id="publishForm">
+        <div class="fields">
+          <div><label>Level</label><select name="level" id="level"></select></div>
+          <div><label>Book</label><select name="book" id="book"></select></div>
+          <div><label>Page type</label>
+            <select name="page_kind" id="pageKind">
+              <option value="cover">Cover</option><option value="about-book">About the Book</option>
+              <option value="copyright">Copyright</option><option value="contents">Contents</option>
+              <option value="welcome">Welcome</option><option value="meet-star">Meet Star</option>
+              <option value="module-intro">Module Intro</option><option value="learning">Learning Page</option>
+              <option value="assessment">Assessment / Review</option><option value="certificate">Certificate</option>
+              <option value="back-cover">Back Cover</option>
+            </select>
+          </div>
+          <div><label>Provider</label><select name="provider"><option value="manual">Manual illustration</option></select></div>
+          <div class="full"><label>Illustration file</label><input type="file" name="illustration" accept="image/png,image/jpeg,image/webp" required></div>
+        </div>
+        <div id="activityFields" class="fields hide" style="margin-top:16px">
+          <div><label>Physical page</label><input type="number" min="1" name="physical_page" id="physicalPage" value="2"></div>
+          <div><label>Printed page number</label><input type="number" min="0" name="page_number" value="0"></div>
+          <div><label>Page ID</label><input name="page_id" id="pageId" placeholder="Auto-generated when left blank"></div>
+          <div><label>Activity type</label><input name="activity_type" id="activityType"></div>
+          <div class="full"><label>Page title</label><input name="title"></div>
+          <div class="full"><label>Learning objective</label><textarea name="objective"></textarea></div>
+          <div class="full"><label>Child instruction</label><textarea name="instruction"></textarea></div>
+          <div class="full"><label>Teacher prompt</label><textarea name="teacher_prompt"></textarea></div>
+          <div class="full"><label>Parent prompt</label><textarea name="parent_prompt"></textarea></div>
+        </div>
+        <div class="fields" style="margin-top:16px">
+          <div class="check"><input type="checkbox" id="approve"><label for="approve" style="margin:0">Approve for production</label></div>
+          <div><label>Reviewer</label><input name="reviewer" id="reviewer" placeholder="Required for approval"></div>
+        </div>
+        <div class="actions"><button class="primary" type="submit">Generate Review Page</button><button class="secondary" type="button" id="reset">Reset</button></div>
+        <div id="status" class="status"></div>
+      </form>
+    </section>
+    <section class="card"><label>Publishing output</label><pre id="output">Ready.</pre></section>
+  </div>
+</div>
+<script>
+let registry={};
+const form=document.getElementById('publishForm'), level=document.getElementById('level'), book=document.getElementById('book');
+const pageKind=document.getElementById('pageKind'), activityFields=document.getElementById('activityFields'), activityType=document.getElementById('activityType');
+const status=document.getElementById('status'), output=document.getElementById('output'), approve=document.getElementById('approve');
+async function init(){registry=await (await fetch('/api/books')).json();level.innerHTML=Object.entries(registry).map(([k,v])=>`<option value="${k}">${v.display_level} (${v.age})</option>`).join('');refreshBooks();togglePage();}
+function refreshBooks(){const books=registry[level.value]?.books||[];book.innerHTML=books.map(b=>`<option value="${b.slug}">${b.title}</option>`).join('');}
+function togglePage(){const isCover=pageKind.value==='cover';activityFields.classList.toggle('hide',isCover);activityType.value=isCover?'':pageKind.value;}
+level.addEventListener('change',refreshBooks);pageKind.addEventListener('change',togglePage);
+document.getElementById('reset').onclick=()=>{form.reset();refreshBooks();togglePage();output.textContent='Ready.';status.className='status';status.textContent='';};
+form.addEventListener('submit',async e=>{e.preventDefault();status.className='status';output.textContent='Running publishing pipeline…';const data=new FormData(form);data.set('approve',approve.checked?'true':'false');try{const res=await fetch('/api/publish',{method:'POST',body:data});const body=await res.json();output.textContent=(body.command?'$ '+body.command.join(' ')+'\n\n':'')+(body.output||body.error||JSON.stringify(body,null,2));status.textContent=body.ok?'Page generated successfully.':'Publishing failed. Review the output.';status.className='status '+(body.ok?'ok':'bad');}catch(err){status.textContent='Request failed: '+err;status.className='status bad';output.textContent=String(err);}});
+init();
+</script>
+</body>
+</html>
