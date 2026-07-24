@@ -176,6 +176,33 @@ class SpecialPageTests(unittest.TestCase):
                     checked += 1
         self.assertEqual(60, checked)
 
+    def test_long_welcome_entry_uses_the_locked_fit_range(self) -> None:
+        composer = load_special_composer()
+        template = json.loads(
+            (ROOT / "bcube-publishing-sdk/templates/special-page-v1.json").read_text(encoding="utf-8")
+        )
+        entries = [
+            {
+                "physical": physical,
+                "title": "Welcome to My World & General Awareness" if physical == 6 else f"Page {page}",
+                "page": page,
+                "module": "FRONT_MATTER" if physical < 8 else "MODULE_ONE",
+            }
+            for physical, page in zip(range(6, 25), range(5, 24))
+        ]
+        result = composer.draw_contents(
+            ImageDraw.Draw(Image.new("RGB", (2480, 3508), "white")),
+            {"book_title": "My World & General Awareness", "entries": entries},
+            template,
+        )
+        welcome = next(
+            item for item in result["items"]
+            if item.get("component") == "contents_entry"
+            and item.get("title") == "Welcome to My World & General Awareness"
+        )
+        self.assertGreaterEqual(welcome["font_size"], template["contents"]["entry_min_px"])
+        self.assertLessEqual(welcome["font_size"], template["contents"]["entry_max_px"])
+
     def test_welcome_uses_hero_illustration_without_star_or_lesson_panels(self) -> None:
         with tempfile.TemporaryDirectory() as folder:
             temporary = Path(folder)

@@ -193,7 +193,6 @@ def draw_contents(draw: ImageDraw.ImageDraw, data: dict[str, Any], template: dic
                 })
                 y += 82
                 previous_module = module
-            active = font(44)
             page_font = font(44, True)
             page_text = str(item["page"])
             page_width = draw.textlength(page_text, font=page_font)
@@ -201,9 +200,15 @@ def draw_contents(draw: ImageDraw.ImageDraw, data: dict[str, Any], template: dic
             if item.get("physical") == 6 and not title.casefold().startswith("welcome to"):
                 title = f"Welcome to {data['book_title']}"
             available = x1 - x0 - page_width - 95
-            if draw.textlength(title, font=active) > available:
-                active = font(42)
-            if draw.textlength(title, font=active) > available:
+            active = None
+            active_size = 0
+            for size in range(spec["entry_max_px"], spec["entry_min_px"] - 1, -2):
+                candidate = font(size)
+                if draw.textlength(title, font=candidate) <= available:
+                    active = candidate
+                    active_size = size
+                    break
+            if active is None:
                 raise ValueError(f"Contents entry is too long for locked typography: {title!r}")
             draw.text((x0 + 8, y + 18), title, font=active, fill=template["colours"]["text"])
             start = x0 + 20 + draw.textlength(title, font=active)
@@ -213,7 +218,8 @@ def draw_contents(draw: ImageDraw.ImageDraw, data: dict[str, Any], template: dic
             draw.text((x1 - page_width - 8, y + 18), page_text, font=page_font,
                       fill=template["colours"]["blue"])
             rendered.append({"component": "contents_entry", "title": title, "page": item["page"],
-                             "module": module, "column": column_index, "y": y})
+                             "module": module, "column": column_index, "y": y,
+                             "font_size": active_size})
             y += spec["row_advance_min_px"]
         if y > y1:
             raise ValueError("Contents entries exceed the locked column bounds")
