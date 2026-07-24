@@ -68,6 +68,10 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertEqual("YS-UKG-V4-P002", payload["pages"][1]["page_id"])
         self.assertEqual("Hidden", payload["pages"][1]["printed_page_label"])
         self.assertFalse(payload["pages"][2]["requires_illustration"])
+        self.assertFalse(payload["pages"][3]["requires_illustration"])
+        self.assertFalse(payload["pages"][4]["requires_illustration"])
+        self.assertTrue(payload["pages"][5]["requires_illustration"])
+        self.assertFalse(payload["pages"][6]["requires_illustration"])
 
     @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
     @patch.object(console_app.subprocess, "run")
@@ -128,6 +132,68 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertEqual("AC-NURSERY-V4-P003", command[command.index("--page-id") + 1])
         self.assertNotIn("--illustration", command)
         self.assertNotIn("--activity-type", command)
+        self.assertNotIn("--teacher-prompt", command)
+        self.assertNotIn("--parent-prompt", command)
+
+    @patch.object(console_app, "save_upload")
+    @patch.object(console_app.subprocess, "run")
+    def test_contents_page_uses_dedicated_contract_without_upload_or_lesson_panels(
+        self, run_mock, upload_mock
+    ) -> None:
+        run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
+        response = self.client.post("/api/publish", data={
+            "level": "lkg",
+            "book": "art-colour-fun",
+            "physical_page": "4",
+            "approve": "false",
+        })
+        self.assertEqual(200, response.status_code)
+        command = run_mock.call_args.args[0]
+        upload_mock.assert_not_called()
+        self.assertEqual("contents", command[command.index("--page") + 1])
+        self.assertEqual("4", command[command.index("--physical-page") + 1])
+        self.assertNotIn("--illustration", command)
+        self.assertNotIn("--teacher-prompt", command)
+        self.assertNotIn("--parent-prompt", command)
+
+    @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/welcome.png"))
+    @patch.object(console_app.subprocess, "run")
+    def test_welcome_page_uses_dedicated_contract_and_printed_page_five(
+        self, run_mock, upload_mock
+    ) -> None:
+        run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
+        response = self.client.post("/api/publish", data={
+            "level": "lkg",
+            "book": "art-colour-fun",
+            "physical_page": "6",
+            "approve": "false",
+        })
+        self.assertEqual(200, response.status_code)
+        command = run_mock.call_args.args[0]
+        upload_mock.assert_called_once()
+        self.assertEqual("welcome", command[command.index("--page") + 1])
+        self.assertEqual("5", command[command.index("--page-number") + 1])
+        self.assertNotIn("--teacher-prompt", command)
+        self.assertNotIn("--parent-prompt", command)
+
+    @patch.object(console_app, "save_upload")
+    @patch.object(console_app.subprocess, "run")
+    def test_meet_star_uses_exact_asset_contract_without_uploaded_illustration(
+        self, run_mock, upload_mock
+    ) -> None:
+        run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
+        response = self.client.post("/api/publish", data={
+            "level": "nursery",
+            "book": "art-colour-fun",
+            "physical_page": "7",
+            "approve": "false",
+        })
+        self.assertEqual(200, response.status_code)
+        command = run_mock.call_args.args[0]
+        upload_mock.assert_not_called()
+        self.assertEqual("meet-star", command[command.index("--page") + 1])
+        self.assertEqual("6", command[command.index("--page-number") + 1])
+        self.assertNotIn("--illustration", command)
         self.assertNotIn("--teacher-prompt", command)
         self.assertNotIn("--parent-prompt", command)
 

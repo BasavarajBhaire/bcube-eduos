@@ -39,9 +39,9 @@ def image_info(path: Path, label: str, minimum_side: int) -> dict[str, Any]:
 def validate(data_path: Path) -> dict[str, Any]:
     data = load(data_path)
     template = load(TEMPLATE)
-    required = ["page_id", "book_title", "level", "age", "page_number", "activity_type", "title",
+    required = ["page_id", "book_title", "book_title_lines", "level", "age", "page_number", "activity_type", "title",
                 "learning_objective", "student_instruction", "teacher_prompt", "parent_prompt",
-                "illustration_path", "official_logo_path", "official_star_path"]
+                "illustration_path", "official_logo_path"]
     missing = [key for key in required if key not in data]
     if missing:
         raise ValueError(f"Missing activity page data: {missing}")
@@ -49,6 +49,8 @@ def validate(data_path: Path) -> dict[str, Any]:
         raise ValueError(f"Unsupported activity_type {data['activity_type']!r}")
     if not isinstance(data["page_number"], int) or data["page_number"] < 0:
         raise ValueError("page_number must be a non-negative integer; use 0 for a hidden number")
+    if not isinstance(data["book_title_lines"], list) or not data["book_title_lines"]:
+        raise ValueError("book_title_lines must be a non-empty list")
     rules = template["rules"]
     limits = {
         "title": rules["max_title_chars"],
@@ -67,7 +69,8 @@ def validate(data_path: Path) -> dict[str, Any]:
         "activity_type": data["activity_type"],
         "illustration": image_info(resolve(data["illustration_path"]), "illustration", 600),
         "official_logo": image_info(resolve(data["official_logo_path"]), "official logo", 128),
-        "official_star": image_info(resolve(data["official_star_path"]), "official Star", 256),
+        "default_star": False,
+        "panel_overlap": False,
     }
 
 

@@ -44,7 +44,9 @@ class PageRecord:
     def public_dict(self) -> dict[str, Any]:
         result = asdict(self)
         result["printed_page_label"] = str(self.printed_page) if self.printed_visible else "Hidden"
-        result["requires_illustration"] = self.page_type != "copyright"
+        result["requires_illustration"] = self.page_type not in {
+            "copyright", "contents", "meet-star",
+        }
         return result
 
 
@@ -98,7 +100,7 @@ class PageDataRegistry:
             return "contents", "Contents"
         if lowered == "welcome" or lowered.startswith("welcome "):
             return "welcome", "Welcome"
-        if "meet star" in lowered:
+        if re.search(r"\bmeet\b.*\bstar\b", lowered):
             return "meet-star", "Meet Star"
         if page_type == "cover":
             return "learning", "Learning Page"

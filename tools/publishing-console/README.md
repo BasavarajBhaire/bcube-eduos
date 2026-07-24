@@ -27,6 +27,9 @@ The console:
 - delegates rendering and QA to the existing publishing CLI;
 - routes About This Book to its locked `BOOK_HEADER` composer instead of the lesson/activity composer;
 - routes Publisher/Copyright to its illustration-free `MINIMAL_HEADER` composer;
+- routes both Contents pages to a locked two-column module index with all printed pages listed once;
+- routes Welcome to its illustration-led `BOOK_HEADER` layout and Meet Star to the exact registered mascot asset;
+- routes learning pages to the `LESSON_HEADER` layout with page-specific teacher and parent panels and no default overlapping Star;
 - shows stdout and errors in the browser;
 - can approve a page when a reviewer name is supplied.
 
@@ -39,7 +42,7 @@ The user selects only:
 1. Level
 2. Book
 3. Physical page
-4. Illustration, except for Publisher/Copyright where artwork is prohibited
+4. Illustration, except for Publisher/Copyright, Contents and Meet Star where artwork is prohibited or repository-controlled
 5. Optional approval and reviewer
 
 The browser shows the resolved metadata for verification, but does not submit editable copies of it. On publish, the server resolves the same physical page again from the finalized release manifest. Client-supplied titles, prompts, page IDs, or page types are not accepted as authoritative data.
@@ -54,6 +57,20 @@ The deterministic page contains the official logo, book identity, publisher
 contact details, BCube Publication Code, Document ID, pre-print maturity label,
 rights notice and print country. It never displays an ISBN unless one is
 officially assigned.
+
+Contents pages require no uploaded illustration. They display the official logo,
+one-line colour-coded book title, page title, book tagline, module headings, dotted
+leaders and the exact printed-page sequence. Contents Part 1 lists pages 5–23 and
+Part 2 lists pages 24–42. They never display a dominant illustration, Star, age
+badge, teacher panel, parent panel, sticky note or visible page number.
+
+Welcome uses a unique book-specific illustration and displays the first visible
+printed number, page 5. Meet Star displays the exact registered Star once and page
+6; it does not accept an uploaded substitute. Learning pages show a compact book
+identity, their individual lesson title and instruction, and page-specific teacher
+and parent panels. Star is not added to the generic lesson template, so it cannot
+cover either panel; a page-owned prompt may use Star only through an explicit
+page-specific contract.
 
 Older finalized packages sometimes store a technical production paragraph in the instruction field or omit dedicated teacher/parent keys. The page-data adapter removes the technical wrapper for the visible instruction and applies the approved facilitation fallback when a dedicated key is absent. The exact original instruction remains available in the API response as `source_instruction`, alongside the repository source path.
 

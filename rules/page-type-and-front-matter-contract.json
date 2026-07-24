@@ -31,7 +31,7 @@
       "star": "prohibited"
     },
     "BOOK_HEADER": {
-      "allowed_page_types": ["about", "contents", "character_introduction", "how_to_use", "certificate"],
+      "allowed_page_types": ["about", "contents", "welcome", "character_introduction", "how_to_use", "certificate"],
       "required": ["{Official Logo}", "{Book Name}", "{Page Title}"],
       "series_banner": false
     },
@@ -75,10 +75,23 @@
       "teacher_panel": "prohibited",
       "parent_panel": "prohibited"
     },
+    "welcome": {
+      "header_contract": "BOOK_HEADER",
+      "visible_page_number": true,
+      "printed_page": 5,
+      "physical_page": 6,
+      "illustration": "page-specific",
+      "star": "prohibited",
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
+    },
     "character_introduction": {
       "header_contract": "BOOK_HEADER",
-      "visible_page_number": false,
-      "illustration": "page-specific"
+      "visible_page_number": "manifest-controlled",
+      "official_star": "required-exactly-once",
+      "generated_mascot": "prohibited",
+      "teacher_panel": "prohibited",
+      "parent_panel": "prohibited"
     },
     "how_to_use": {
       "header_contract": "BOOK_HEADER",
@@ -88,7 +101,10 @@
     "lesson": {
       "header_contract": "LESSON_HEADER",
       "visible_page_number": true,
-      "numbering": "count-hidden-front-matter"
+      "numbering": "count-hidden-front-matter",
+      "default_star": "prohibited",
+      "teacher_panel": "required",
+      "parent_panel": "required"
     },
     "assessment": {
       "header_contract": "LESSON_HEADER",

@@ -13,11 +13,12 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "bcube-publishing-sdk/books/cover-books.json"
-LEGACY_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_front_matter.py"
 ABOUT_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_about_page.py"
 ABOUT_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_about_inputs.py"
 PUBLISHER_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_publisher_page.py"
 PUBLISHER_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_publisher_inputs.py"
+SPECIAL_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_special_page.py"
+SPECIAL_VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_special_inputs.py"
 
 
 def load(path: Path) -> dict[str, Any]:
@@ -44,6 +45,14 @@ def resolve_logo(registry: dict[str, Any]) -> str:
         if valid_image(ROOT / candidate):
             return candidate
     raise FileNotFoundError("No valid official BCube logo found in shared registry candidates")
+
+
+def resolve_star(registry: dict[str, Any]) -> str:
+    candidates = registry.get("shared", {}).get("official_star_candidates", [])
+    for candidate in candidates:
+        if valid_image(ROOT / candidate):
+            return candidate
+    raise FileNotFoundError("No valid official BCube Star found in shared registry candidates")
 
 
 def resolve(level: str, slug: str) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
@@ -79,15 +88,38 @@ def publication_number(level: str, slug: str) -> int:
     raise ValueError(f"{slug!r} is not in the official {level.upper()} portfolio sequence")
 
 
-def contents_entries(level: str, slug: str) -> list[dict[str, Any]]:
-    manifest = load(prompt_manifest(level, slug))
+def contents_entries(level: str, slug: str, contents_physical: int) -> list[dict[str, Any]]:
+    manifest_path = prompt_manifest(level, slug)
+    manifest = load(manifest_path)
+    first, last = (6, 24) if contents_physical == 4 else (25, 43)
     entries = []
     for page in manifest.get("pages", []):
         printed = page.get("printed")
         physical = page.get("physical")
-        if printed is None or not isinstance(physical, int) or physical < 6:
+        if printed is None or not isinstance(physical, int) or not first <= physical <= last:
             continue
-        entries.append({"title": page["title"], "page": printed, "module": page.get("module", "")})
+        source = load(manifest_path.parent / page["json"])
+        preserved = source.get("preserved_source", {}).get("page_data", {})
+        module = str(preserved.get("unit_id") or "").strip() if isinstance(preserved, dict) else ""
+        if not module:
+            source_relative = source.get("source_lineage", {}).get("relative_file")
+            if isinstance(source_relative, str) and source_relative.strip():
+                canonical_source = load(ROOT / source_relative)
+                canonical_page_data = canonical_source.get("page_data", {})
+                if isinstance(canonical_page_data, dict):
+                    module = str(canonical_page_data.get("unit_id") or "").strip()
+        if not module and physical in {6, 7}:
+            module = "FRONT_MATTER"
+        if not module:
+            raise ValueError(f"Contents entry {page.get('prompt_id')} has no canonical module")
+        entries.append({
+            "physical": physical,
+            "title": page["title"],
+            "page": printed,
+            "module": module,
+        })
+    if len(entries) != 19:
+        raise ValueError(f"Contents physical page {contents_physical} resolved {len(entries)} entries; expected 19")
     return entries
 
 
@@ -109,7 +141,8 @@ def stage_illustration(source: Path, page_id: str) -> Path:
 def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]:
     level, slug, page_type = args.level, args.book, args.page
     registry, level_data, book = resolve(level, slug)
-    physical = {"about": 2, "publisher": 3, "contents": 4}[page_type]
+    defaults = {"about": 2, "publisher": 3, "contents": 4, "welcome": 6, "meet-star": 7}
+    physical = args.physical_page or defaults[page_type]
     page_id = args.page_id or f"{book['prefix']}-{level_data['id_level']}-V4-P{physical:03d}"
     title = " ".join(book["title_lines"])
 
@@ -158,22 +191,76 @@ def build_data(args: argparse.Namespace) -> tuple[Path, Path, Path, Path | None]
             "copyright_notice": f"© {year} {publisher['name']}. All rights reserved.",
             "official_logo_path": resolve_logo(registry),
         }
-    else:
+    elif page_type == "contents":
+        if physical not in {4, 5}:
+            raise ValueError("Contents must use physical page 4 or 5")
         data = {
             "page_id": page_id,
-            "page_type": page_type,
+            "page_type": "contents",
+            "physical_page": physical,
             "book_title": title,
+            "book_title_lines": list(book["title_lines"]),
+            "page_title": args.title or f"Contents — Part {physical - 3}",
             "level": level_data["display_level"],
-            "age": level_data["age"],
-            "series": registry["series"],
-            "logo_path": resolve_logo(registry),
-            "entries": contents_entries(level, slug),
+            "tagline": book["tagline"],
+            "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
+            "footer_keywords": book["footer_keywords"],
+            "official_logo_path": resolve_logo(registry),
+            "entries": contents_entries(level, slug, physical),
+        }
+    elif page_type == "welcome":
+        if physical != 6 or args.page_number != 5:
+            raise ValueError("Welcome must be physical page 6 and visibly numbered 5")
+        if args.illustration is None:
+            raise ValueError("Welcome pages require --illustration")
+        illustration = stage_illustration(args.illustration, page_id)
+        data = {
+            "page_id": page_id,
+            "page_type": "welcome",
+            "physical_page": physical,
+            "page_number": args.page_number,
+            "book_title": title,
+            "book_title_lines": list(book["title_lines"]),
+            "page_title": args.title or f"Welcome to {title}",
+            "level": level_data["display_level"],
+            "tagline": book["tagline"],
+            "message": args.instruction or f"Welcome to the {title} learning journey.",
+            "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
+            "footer_keywords": book["footer_keywords"],
+            "illustration_path": repo_relative(illustration),
+            "official_logo_path": resolve_logo(registry),
+        }
+    else:
+        if physical != 7 or args.page_number != 6:
+            raise ValueError("Meet Star must be physical page 7 and visibly numbered 6")
+        data = {
+            "page_id": page_id,
+            "page_type": "meet_star",
+            "physical_page": physical,
+            "page_number": args.page_number,
+            "book_title": title,
+            "book_title_lines": list(book["title_lines"]),
+            "page_title": args.title or "Meet Star",
+            "level": level_data["display_level"],
+            "tagline": book["tagline"],
+            "message": args.instruction or "Meet Star, your friendly guide for this learning journey.",
+            "purpose": args.objective or f"Star encourages children as they explore {title}.",
+            "core_pillars": [pillar["name"] for pillar in registry["shared"]["pillars"]],
+            "footer_keywords": book["footer_keywords"],
+            "official_logo_path": resolve_logo(registry),
+            "official_star_path": resolve_star(registry),
         }
 
     data_path = ROOT / "production-renders/page-data" / f"{page_id}.json"
     output = ROOT / "production-renders/pages" / f"{page_id}.png"
     evidence = ROOT / "production-renders/qa-manifests" / f"{page_id}.json"
-    report_suffix = {"about": "about-input", "publisher": "publisher-input"}.get(page_type)
+    report_suffix = {
+        "about": "about-input",
+        "publisher": "publisher-input",
+        "contents": "contents-input",
+        "welcome": "welcome-input",
+        "meet-star": "meet-star-input",
+    }.get(page_type)
     report = ROOT / "validation/rendered-pages" / f"{page_id}.{report_suffix}.json" if report_suffix else None
     data_path.parent.mkdir(parents=True, exist_ok=True)
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -184,8 +271,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--level", choices=["nursery", "lkg", "ukg"], required=True)
     parser.add_argument("--book", required=True)
-    parser.add_argument("--page", choices=["about", "publisher", "contents"], required=True)
+    parser.add_argument("--page", choices=["about", "publisher", "contents", "welcome", "meet-star"], required=True)
     parser.add_argument("--illustration", type=Path)
+    parser.add_argument("--physical-page", type=int)
+    parser.add_argument("--page-number", type=int)
     parser.add_argument("--page-id")
     parser.add_argument("--title")
     parser.add_argument("--objective")
@@ -195,11 +284,16 @@ def main() -> int:
     composer = {
         "about": ABOUT_COMPOSER,
         "publisher": PUBLISHER_COMPOSER,
-        "contents": LEGACY_COMPOSER,
+        "contents": SPECIAL_COMPOSER,
+        "welcome": SPECIAL_COMPOSER,
+        "meet-star": SPECIAL_COMPOSER,
     }[args.page]
     validator = {
         "about": ABOUT_VALIDATOR,
         "publisher": PUBLISHER_VALIDATOR,
+        "contents": SPECIAL_VALIDATOR,
+        "welcome": SPECIAL_VALIDATOR,
+        "meet-star": SPECIAL_VALIDATOR,
     }.get(args.page)
     if validator is not None:
         if report is None:
