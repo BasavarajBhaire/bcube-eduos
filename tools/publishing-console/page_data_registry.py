@@ -80,6 +80,7 @@ class PageDataRegistry:
         self.book_registry_path = book_registry_path.resolve()
         self._learning_normalizer: ModuleType | None = None
         self._learning_refiner: ModuleType | None = None
+        self._learning_finaliser: ModuleType | None = None
         self._learning_overrides: dict[str, Any] | None = None
 
     @staticmethod
@@ -101,7 +102,7 @@ class PageDataRegistry:
         specification.loader.exec_module(module)
         return module
 
-    def _learning_modules(self) -> tuple[ModuleType, ModuleType, dict[str, Any]]:
+    def _learning_modules(self) -> tuple[ModuleType, ModuleType, ModuleType, dict[str, Any]]:
         if self._learning_normalizer is None:
             self._learning_normalizer = self._load_module(
                 "bcube_console_learning_normalizer_v2",
@@ -112,11 +113,21 @@ class PageDataRegistry:
                 "bcube_console_learning_refiner_v2",
                 self.root / "bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py",
             )
+        if self._learning_finaliser is None:
+            self._learning_finaliser = self._load_module(
+                "bcube_console_learning_finaliser_v2",
+                self.root / "bcube-publishing-sdk/normalizers/finalise_learning_contract_v2.py",
+            )
         if self._learning_overrides is None:
             self._learning_overrides = self._load_object(
                 self.root / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
             )
-        return self._learning_normalizer, self._learning_refiner, self._learning_overrides
+        return (
+            self._learning_normalizer,
+            self._learning_refiner,
+            self._learning_finaliser,
+            self._learning_overrides,
+        )
 
     @staticmethod
     def _deep_merge(target: dict[str, Any], update: dict[str, Any]) -> dict[str, Any]:
@@ -260,7 +271,7 @@ class PageDataRegistry:
         level_data: dict[str, Any],
         book: dict[str, Any],
     ) -> dict[str, Any]:
-        normalizer, refiner, override_registry = self._learning_modules()
+        normalizer, refiner, finaliser, override_registry = self._learning_modules()
         try:
             contract = normalizer.build_contract(
                 root=self.root,
@@ -280,6 +291,10 @@ class PageDataRegistry:
                     contract["deterministic_components"]
                 )
             refiner.refine_contract(
+                contract,
+                curated_override_applied=override_applied,
+            )
+            finaliser.finalise_contract(
                 contract,
                 curated_override_applied=override_applied,
             )
@@ -304,6 +319,7 @@ class PageDataRegistry:
                 "secondary_activities": contract["activity"]["secondary"],
                 "response_modes": contract["activity"]["response_modes"],
                 "layout_variant": contract["activity"]["layout_variant"],
+                "objective": contract["learning"]["objective"],
                 "instruction": contract["learning"]["student_instruction"],
                 "expected_response": contract["learning"]["expected_response"],
                 "teacher_model": contract["guidance"]["teacher"]["model"],
@@ -324,6 +340,9 @@ class PageDataRegistry:
                 "curated_override_applied": override_applied,
                 "content_refinement_changes": contract["source_lineage"].get(
                     "content_refinement_changes", []
+                ),
+                "contract_finalisation_changes": contract["source_lineage"].get(
+                    "contract_finalisation_changes", []
                 ),
             }
         except (ValueError, FileNotFoundError, json.JSONDecodeError) as exc:
@@ -404,6 +423,7 @@ class PageDataRegistry:
                     book=book,
                 )
                 if learning_contract["status"] == "READY_FOR_ILLUSTRATION_REVIEW":
+                    objective = str(learning_contract["objective"])
                     instruction = str(learning_contract["instruction"])
                     teacher_prompt = (
                         f"{learning_contract['teacher_model']} "
