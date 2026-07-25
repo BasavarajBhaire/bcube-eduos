@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[3]
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_about_inputs.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_about_page.py"
 BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
+ABOUT_TEMPLATE = ROOT / "bcube-publishing-sdk/templates/about-page-v1.json"
 
 
 def load_composer_module():
@@ -104,6 +105,7 @@ class AboutPageTests(unittest.TestCase):
 
             report = json.loads(report_path.read_text(encoding="utf-8"))
             evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+            template = json.loads(ABOUT_TEMPLATE.read_text(encoding="utf-8"))
             self.assertEqual("PASS", report["status"])
             self.assertEqual("BOOK_HEADER", report["header_type"])
             self.assertFalse(report["visible_page_number"])
@@ -133,7 +135,7 @@ class AboutPageTests(unittest.TestCase):
             )
             frame_bounds = evidence["components"]["illustration_frame"]["bounds"]
             self.assertEqual([150, 860, 2330, 2330], frame_bounds)
-            safe_inset = evidence["components"]["illustration_frame"]["safe_inset"]
+            safe_inset = template["rules"]["illustration_safe_inset"]
             self.assertEqual(84, safe_inset)
             rendered_bounds = illustration_render["rendered_bounds"]
             self.assertGreaterEqual(rendered_bounds[0], frame_bounds[0] + safe_inset)
@@ -152,9 +154,7 @@ class AboutPageTests(unittest.TestCase):
 
     def test_every_registered_book_title_fits_one_about_header_line(self) -> None:
         module = load_composer_module()
-        template = json.loads(
-            (ROOT / "bcube-publishing-sdk/templates/about-page-v1.json").read_text(encoding="utf-8")
-        )
+        template = json.loads(ABOUT_TEMPLATE.read_text(encoding="utf-8"))
         registry = json.loads(BOOKS.read_text(encoding="utf-8"))
         canvas = Image.new("RGB", (2480, 350), "white")
         draw = ImageDraw.Draw(canvas)
