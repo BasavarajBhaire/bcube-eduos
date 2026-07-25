@@ -1,6 +1,6 @@
 {
-  "contract_version": "learning-page-contract-v2.0",
-  "description": "Structured source of truth for BCube learning-page content, illustration rules, deterministic worksheet mechanics, and measured QA. Phase 2 pilot extends choice layouts for speaking and observation.",
+  "contract_version": "learning-page-contract-v2.1",
+  "description": "Structured source of truth for BCube learning-page content, illustration rules, deterministic worksheet mechanics, and measured QA. Phase 2 supports task-specific speaking, observation and numbered sort/classify responses.",
   "required_sections": ["identity","learning","activity","guidance","illustration","deterministic_components","prohibitions","source_lineage"],
   "supported_primary_activities": ["observe","speak","listen","trace","match","connect","colour","draw","count","compare","sort","sequence","circle","complete","maze","explore","think","reflect","assessment"],
   "layout_variants": {
@@ -9,7 +9,7 @@
     "match-connect": {"activities":["match","connect"],"required_component_types":["matching_anchors"],"allowed_component_types":["matching_anchors","choice_targets","response_box"]},
     "colour-draw": {"activities":["colour","draw"],"required_component_types":["creative_response_area"],"allowed_component_types":["model_example","creative_response_area","choice_targets"]},
     "count-compare": {"activities":["count","compare"],"required_component_types":["number_response_boxes"],"allowed_component_types":["number_response_boxes","choice_targets","comparison_symbols"]},
-    "sort-classify": {"activities":["sort"],"required_component_types":["sort_bins"],"allowed_component_types":["sort_bins","choice_targets"]},
+    "sort-classify": {"activities":["sort"],"required_component_types":["sort_bins"],"allowed_component_types":["sort_bins","choice_targets","number_response_boxes"]},
     "sequence-story": {"activities":["sequence"],"required_component_types":["sequence_slots"],"allowed_component_types":["sequence_slots","speech_response"]},
     "choice-circle": {"activities":["circle","complete","think","speak","observe"],"required_component_types":["choice_targets"],"allowed_component_types":["choice_targets","response_box","model_example","model_phrase"]},
     "maze-path": {"activities":["maze"],"required_component_types":["maze_path"],"allowed_component_types":["maze_path"]},
