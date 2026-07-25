@@ -127,6 +127,8 @@ def main() -> None:
         if forbidden not in about.get("prohibited", []):
             raise SystemExit(f"About page must prohibit {forbidden}")
     about_render = load(SDK / "templates/about-page-v1.json")
+    if about_render.get("template_version") != "about-page-v1.4":
+        raise SystemExit("Rendered About template must use the no-crop v1.4 contract")
     if about_render.get("header_type") != "BOOK_HEADER":
         raise SystemExit("Rendered About template must use BOOK_HEADER")
     render_rules = about_render.get("rules", {})
@@ -140,10 +142,12 @@ def main() -> None:
         raise SystemExit("About illustrations must preserve their source aspect ratio")
     if render_rules.get("illustration_frame_geometry_locked") is not True:
         raise SystemExit("About illustration frame geometry must remain locked")
-    if render_rules.get("illustration_safe_inset") != 60:
-        raise SystemExit("About illustrations must keep the locked 60px frame inset")
-    if render_rules.get("illustration_fit_mode") != "cover":
-        raise SystemExit("About illustrations must proportionally cover the locked frame")
+    if render_rules.get("illustration_safe_inset") != 84:
+        raise SystemExit("About illustrations must keep the locked 84px protected frame inset")
+    if render_rules.get("illustration_fit_mode") != "contain":
+        raise SystemExit("About illustrations must use contain fit so no subject is cropped")
+    if render_rules.get("illustration_clipping_allowed") is not False:
+        raise SystemExit("About illustrations must explicitly prohibit clipping")
     if render_rules.get("illustration_focus") != [0.5, 0.5]:
         raise SystemExit("About illustrations must use the locked centred focal point")
     for forbidden in ("series_banner", "age_badge", "visible_page_number", "teacher_panel",

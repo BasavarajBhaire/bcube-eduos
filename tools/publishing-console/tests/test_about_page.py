@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[3]
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_about_inputs.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_about_page.py"
 BOOKS = ROOT / "bcube-publishing-sdk/books/cover-books.json"
+ABOUT_TEMPLATE = ROOT / "bcube-publishing-sdk/templates/about-page-v1.json"
 
 
 def load_composer_module():
@@ -104,6 +105,7 @@ class AboutPageTests(unittest.TestCase):
 
             report = json.loads(report_path.read_text(encoding="utf-8"))
             evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+            template = json.loads(ABOUT_TEMPLATE.read_text(encoding="utf-8"))
             self.assertEqual("PASS", report["status"])
             self.assertEqual("BOOK_HEADER", report["header_type"])
             self.assertFalse(report["visible_page_number"])
@@ -124,17 +126,22 @@ class AboutPageTests(unittest.TestCase):
                 illustration_render["trimmed_source_size"][0],
                 illustration_render["source_size"][0],
             )
-            self.assertEqual("cover", illustration_render["fit_mode"])
-            self.assertTrue(illustration_render["clip_applied"])
+            self.assertEqual("contain", illustration_render["fit_mode"])
+            self.assertFalse(illustration_render["clip_applied"])
             self.assertEqual([0.5, 0.5], illustration_render["focal_point"])
             self.assertEqual(
-                [210, 920, 2270, 2270],
+                [952, 944, 1528, 2246],
                 illustration_render["rendered_bounds"],
             )
-            self.assertEqual(
-                [150, 860, 2330, 2330],
-                evidence["components"]["illustration_frame"]["bounds"],
-            )
+            frame_bounds = evidence["components"]["illustration_frame"]["bounds"]
+            self.assertEqual([150, 860, 2330, 2330], frame_bounds)
+            safe_inset = template["rules"]["illustration_safe_inset"]
+            self.assertEqual(84, safe_inset)
+            rendered_bounds = illustration_render["rendered_bounds"]
+            self.assertGreaterEqual(rendered_bounds[0], frame_bounds[0] + safe_inset)
+            self.assertGreaterEqual(rendered_bounds[1], frame_bounds[1] + safe_inset)
+            self.assertLessEqual(rendered_bounds[2], frame_bounds[2] - safe_inset)
+            self.assertLessEqual(rendered_bounds[3], frame_bounds[3] - safe_inset)
             self.assertIn("page_title", evidence["components"])
             self.assertIn("learning_outcomes", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
@@ -147,9 +154,7 @@ class AboutPageTests(unittest.TestCase):
 
     def test_every_registered_book_title_fits_one_about_header_line(self) -> None:
         module = load_composer_module()
-        template = json.loads(
-            (ROOT / "bcube-publishing-sdk/templates/about-page-v1.json").read_text(encoding="utf-8")
-        )
+        template = json.loads(ABOUT_TEMPLATE.read_text(encoding="utf-8"))
         registry = json.loads(BOOKS.read_text(encoding="utf-8"))
         canvas = Image.new("RGB", (2480, 350), "white")
         draw = ImageDraw.Draw(canvas)
