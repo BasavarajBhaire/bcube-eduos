@@ -1,6 +1,6 @@
 {
-  "version": "learning-page-overrides-v1.1",
-  "description": "Curated page-owned refinements that override generic or degraded source fields without changing the frozen curriculum objective.",
+  "version": "learning-page-overrides-v1.2-phase2-pilot",
+  "description": "Curated page-owned refinements. Phase 2 pilot pages use task-specific interactive layouts, compact teacher cues, and no parent/homework panel.",
   "pages": {
     "CC-NURSERY-V4-P008": {
       "learning": {
@@ -76,6 +76,229 @@
         {"type": "model_example", "label": "Use red • yellow • blue"},
         {"type": "creative_response_area", "label": "My primary-colour picture"}
       ]
+    },
+    "EL-LKG-V4-P023": {
+      "learning": {
+        "objective": "Read simple words and match each word to its picture.",
+        "student_instruction": "Read each word. Draw a line to the correct picture.",
+        "expected_response": "Child reads or sounds out seven familiar words and draws each line to the matching picture.",
+        "model_text": "cat • sun • bus • cup"
+      },
+      "activity": {
+        "primary": "match",
+        "secondary": ["read"],
+        "response_modes": ["read", "draw-line"],
+        "layout_variant": "match-connect",
+        "resolution_source": "phase2-pilot-override"
+      },
+      "guidance": {
+        "teacher": {
+          "model": "Ask the child to sound out each word before drawing the line.",
+          "question": "Which picture matches this word?"
+        },
+        "parent_extension": ""
+      },
+      "illustration": {
+        "scene": "Exactly seven unique isolated assets: cat, sun, bus, cup, pen, dog and hen. Each appears once on pure white.",
+        "focal_point": "Seven clean picture assets that the Phase 2 composer places beside exact printed words.",
+        "required_objects": ["cat", "sun", "bus", "cup", "pen", "dog", "hen"],
+        "forbidden_objects": ["duplicates", "words inside artwork", "matching lines", "worksheet frame", "teacher", "classroom", "Star mascot"],
+        "protected_response_zones": ["line-drawing space between word and picture columns"],
+        "star_policy": "prohibited",
+        "artwork_only": true,
+        "no_visible_text": true,
+        "no_logo": true,
+        "no_page_layout": true
+      },
+      "deterministic_components": [
+        {"type": "matching_anchors", "count": 4, "label": "Main read and match"},
+        {"type": "matching_anchors", "count": 3, "label": "Read and match again"}
+      ],
+      "phase2": {
+        "archetype": "A05 Read/Look & Match",
+        "parent_panel": false,
+        "main_words": ["cat", "sun", "bus", "cup"],
+        "main_picture_order": ["cat", "cup", "sun", "bus"],
+        "small_words": ["pen", "dog", "hen"],
+        "small_picture_order": ["hen", "dog", "pen"]
+      }
+    },
+    "CC-NURSERY-V4-P022": {
+      "learning": {
+        "objective": "Build confidence in speaking one clear sentence to a listener.",
+        "student_instruction": "Choose one picture. Say one sentence to your friend.",
+        "expected_response": "Child selects one familiar picture, speaks one supported sentence, and listens to a partner.",
+        "model_text": "I see a ________."
+      },
+      "activity": {
+        "primary": "communicate",
+        "secondary": ["choose", "listen"],
+        "response_modes": ["choose", "oral", "partner-response"],
+        "layout_variant": "choice-circle",
+        "resolution_source": "phase2-pilot-override"
+      },
+      "guidance": {
+        "teacher": {
+          "model": "Model one calm sentence, then let each child choose and speak.",
+          "question": "What did your friend choose?"
+        },
+        "parent_extension": ""
+      },
+      "illustration": {
+        "scene": "One natural two-child speaking-and-listening model plus exactly three familiar picture choices: ball, toy car and teddy bear.",
+        "focal_point": "One speaker, one attentive listener, and three equal visual choices.",
+        "required_objects": ["two children", "ball", "toy car", "teddy bear"],
+        "forbidden_objects": ["teacher", "group", "speech bubble", "text", "generic empty response frame", "Star mascot"],
+        "protected_response_zones": ["three deterministic choice positions and sentence starter"],
+        "star_policy": "prohibited",
+        "artwork_only": true,
+        "no_visible_text": true,
+        "no_logo": true,
+        "no_page_layout": true
+      },
+      "deterministic_components": [
+        {"type": "choice_targets", "count": 3},
+        {"type": "model_phrase", "text": "I see a ________."}
+      ],
+      "phase2": {
+        "archetype": "A10 Speak, Listen & Respond",
+        "parent_panel": false,
+        "choices": ["ball", "toy car", "teddy bear"],
+        "sentences": ["I have a red ball.", "I like my blue car.", "My teddy is soft."],
+        "partner_cue": "Point to the picture your friend spoke about."
+      }
+    },
+    "CE-NURSERY-V4-P010": {
+      "learning": {
+        "objective": "Find and name four familiar objects in one simple scene.",
+        "student_instruction": "Look carefully. Find and point to each object.",
+        "expected_response": "Child finds, points to and names four familiar targets.",
+        "model_text": "Find: kite • bench • tree • flower"
+      },
+      "activity": {
+        "primary": "observe",
+        "secondary": ["find", "speak"],
+        "response_modes": ["point", "circle", "oral"],
+        "layout_variant": "choice-circle",
+        "resolution_source": "phase2-pilot-override"
+      },
+      "guidance": {
+        "teacher": {
+          "model": "Name the first target, then let the child find the rest.",
+          "question": "Where did you find it?"
+        },
+        "parent_extension": ""
+      },
+      "illustration": {
+        "scene": "One simple park scene containing exactly one kite, one bench, one tree and one flower as clear find-it targets.",
+        "focal_point": "A controlled observation scene with four unmistakable targets.",
+        "required_objects": ["kite", "bench", "tree", "flower"],
+        "forbidden_objects": ["target duplicates", "unrelated clutter", "teacher", "group", "text", "Star mascot"],
+        "protected_response_zones": ["target strip and circle cues"],
+        "star_policy": "prohibited",
+        "artwork_only": true,
+        "no_visible_text": true,
+        "no_logo": true,
+        "no_page_layout": true
+      },
+      "deterministic_components": [
+        {"type": "choice_targets", "count": 4}
+      ],
+      "phase2": {
+        "archetype": "A12 Observe, Find & Name",
+        "parent_panel": false,
+        "targets": ["kite", "bench", "tree", "flower"],
+        "response": "Point, circle and name."
+      }
+    },
+    "YS-UKG-V4-P010": {
+      "learning": {
+        "objective": "Sort familiar examples into living and non-living groups.",
+        "student_instruction": "Look at each picture. Sort it into the correct group.",
+        "expected_response": "Child sorts six familiar examples using the living/non-living rule and explains one choice.",
+        "model_text": "Living • Non-living"
+      },
+      "activity": {
+        "primary": "sort",
+        "secondary": ["compare", "speak"],
+        "response_modes": ["sort", "oral"],
+        "layout_variant": "sort-classify",
+        "resolution_source": "phase2-pilot-override"
+      },
+      "guidance": {
+        "teacher": {
+          "model": "Ask whether each item grows, breathes or needs food, then let the child sort.",
+          "question": "Why does this belong in that group?"
+        },
+        "parent_extension": ""
+      },
+      "illustration": {
+        "scene": "Exactly six unique isolated assets: child, tree, dog, chair, ball and car.",
+        "focal_point": "Six clear unsorted examples for two deterministic categories.",
+        "required_objects": ["child", "tree", "dog", "chair", "ball", "car"],
+        "forbidden_objects": ["completed sorting", "category labels inside artwork", "laboratory scene", "teacher", "Star mascot"],
+        "protected_response_zones": ["two labelled sort areas"],
+        "star_policy": "prohibited",
+        "artwork_only": true,
+        "no_visible_text": true,
+        "no_logo": true,
+        "no_page_layout": true
+      },
+      "deterministic_components": [
+        {"type": "sort_bins", "labels": ["Living", "Non-living"]}
+      ],
+      "phase2": {
+        "archetype": "A06 Sort & Classify",
+        "parent_panel": false,
+        "items": ["child", "tree", "dog", "chair", "ball", "car"],
+        "categories": ["Living", "Non-living"]
+      }
+    },
+    "CM-UKG-V4-P032": {
+      "learning": {
+        "objective": "Create and say one imaginative sentence, then listen and respond to a partner.",
+        "student_instruction": "Choose a character and situation. Say one clear sentence. Listen to your partner’s reply.",
+        "expected_response": "Child combines one character with one situation, speaks a clear imaginative sentence and listens to a reply.",
+        "model_text": "My character says, ‘________.’"
+      },
+      "activity": {
+        "primary": "communicate",
+        "secondary": ["choose", "imagine", "listen"],
+        "response_modes": ["choose", "oral", "partner-response", "self-check"],
+        "layout_variant": "choice-circle",
+        "resolution_source": "phase2-pilot-override"
+      },
+      "guidance": {
+        "teacher": {
+          "model": "Let partners choose, speak and reply once, then switch turns.",
+          "question": "What did your partner’s character say?"
+        },
+        "parent_extension": ""
+      },
+      "illustration": {
+        "scene": "One natural two-child puppet-speaking model plus three character assets and three situation assets.",
+        "focal_point": "Choose a character, choose a situation, speak, listen and reply.",
+        "required_objects": ["two children", "dinosaur puppet", "rabbit puppet", "robot puppet", "new friend situation", "join a game situation", "share an idea situation"],
+        "forbidden_objects": ["generic Say or tell box", "teacher", "classroom group", "generated text", "Star mascot"],
+        "protected_response_zones": ["character choices", "situation choices", "sentence starter", "partner cue"],
+        "star_policy": "prohibited",
+        "artwork_only": true,
+        "no_visible_text": true,
+        "no_logo": true,
+        "no_page_layout": true
+      },
+      "deterministic_components": [
+        {"type": "choice_targets", "count": 3},
+        {"type": "choice_targets", "count": 3},
+        {"type": "model_phrase", "text": "My character says, ‘________.’"}
+      ],
+      "phase2": {
+        "archetype": "A10 Speak, Listen & Respond",
+        "parent_panel": false,
+        "characters": ["dinosaur", "rabbit", "robot"],
+        "situations": ["meet a new friend", "ask to join a game", "share an exciting idea"],
+        "self_check": ["I spoke clearly", "I looked at my partner", "I listened"]
+      }
     }
   }
 }
