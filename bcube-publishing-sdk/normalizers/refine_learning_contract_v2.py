@@ -96,16 +96,18 @@ def is_non_actionable_instruction(value: Any) -> bool:
     return len(text.split()) <= 5 or not text.endswith((".", "?", "!"))
 
 
-def normalise_equivalent_activities(contract: dict[str, Any]) -> None:
+def normalise_equivalent_activities(contract: dict[str, Any]) -> bool:
     """Collapse equivalent mechanics before portfolio content curation."""
     activity = contract.setdefault("activity", {})
     primary = clean(activity.get("primary")).casefold()
-    if primary == "connect":
-        secondary = [clean(value).casefold() for value in activity.get("secondary", [])]
-        activity["primary"] = "match"
-        activity["secondary"] = ["connect", *[value for value in secondary if value != "connect"]][:3]
-        activity["layout_variant"] = "match-connect"
-        activity["resolution_source"] = "portfolio-equivalent-activity-normalisation"
+    if primary != "connect":
+        return False
+    secondary = [clean(value).casefold() for value in activity.get("secondary", [])]
+    activity["primary"] = "match"
+    activity["secondary"] = ["connect", *[value for value in secondary if value != "connect"]][:3]
+    activity["layout_variant"] = "match-connect"
+    activity["resolution_source"] = "portfolio-equivalent-activity-normalisation"
+    return True
 
 
 def refine_contract(
@@ -114,23 +116,26 @@ def refine_contract(
     curated_override_applied: bool,
 ) -> dict[str, Any]:
     curator = load_curator()
-    normalise_equivalent_activities(contract)
+    equivalent_activity_normalised = normalise_equivalent_activities(contract)
     curator.apply_locked_content(contract)
     contract.setdefault("source_lineage", {})
+    changes = [
+        "learning.objective",
+        "learning.student_instruction",
+        "learning.expected_response",
+        "learning.model_text",
+        "activity",
+        "guidance.teacher",
+        "guidance.parent_extension",
+        "deterministic_components",
+        "qa_requirements.content_status",
+    ]
+    if equivalent_activity_normalised:
+        changes.append("activity.equivalent-connect-to-match")
     contract["source_lineage"].update(
         {
             "portfolio_content_refiner": curator.VERSION,
-            "content_refinement_changes": [
-                "learning.objective",
-                "learning.student_instruction",
-                "learning.expected_response",
-                "learning.model_text",
-                "activity",
-                "guidance.teacher",
-                "guidance.parent_extension",
-                "deterministic_components",
-                "qa_requirements.content_status",
-            ],
+            "content_refinement_changes": changes,
             "content_refinement_applied": True,
             "curated_override_preserved": bool(curated_override_applied),
         }
