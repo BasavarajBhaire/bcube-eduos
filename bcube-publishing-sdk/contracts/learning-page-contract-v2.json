@@ -1,6 +1,6 @@
 {
-  "contract_version": "learning-page-contract-v2.1",
-  "description": "Structured source of truth for BCube learning-page content, illustration rules, deterministic worksheet mechanics, and measured QA. Phase 2 supports task-specific speaking, observation and numbered sort/classify responses.",
+  "contract_version": "learning-page-contract-v2.0",
+  "description": "Structured source of truth for BCube learning-page content, illustration rules, deterministic worksheet mechanics, and measured QA. Phase 2 supports task-specific speaking, observation and numbered sort/classify responses without changing the contract wire version.",
   "required_sections": ["identity","learning","activity","guidance","illustration","deterministic_components","prohibitions","source_lineage"],
   "supported_primary_activities": ["observe","speak","listen","trace","match","connect","colour","draw","count","compare","sort","sequence","circle","complete","maze","explore","think","reflect","assessment"],
   "layout_variants": {
