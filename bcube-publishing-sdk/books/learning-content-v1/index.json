@@ -1,5 +1,5 @@
 {
-  "version": "portfolio-learning-content-v1.0",
+  "version": "portfolio-learning-content-v1.0.1",
   "description": "Authoritative deterministic content policy for every BCube learning page rendered through Learning Page Contract V2.",
   "curator": "bcube-publishing-sdk/normalizers/curate_learning_content_v1.py",
   "expected_pages_per_level": 360,
@@ -18,6 +18,12 @@
     "guidance.parent_extension",
     "deterministic_components",
     "qa_requirements.content_status"
+  ],
+  "source_activity_repairs": [
+    "CC-NURSERY-V4-P019",
+    "CC-NURSERY-V4-P031",
+    "YS-UKG-V4-P034",
+    "YS-UKG-V4-P036"
   ],
   "status": "LOCKED"
 }
