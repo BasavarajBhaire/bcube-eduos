@@ -22,10 +22,13 @@ PILOTS = {
 
 
 class Phase2PilotTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.registry = json.loads(OVERRIDES.read_text(encoding="utf-8"))
+
     def test_five_page_overrides_are_interactive_and_classroom_only(self) -> None:
-        registry = json.loads(OVERRIDES.read_text(encoding="utf-8"))
-        self.assertEqual(PILOTS, set(registry["pages"]))
-        for page_id, page in registry["pages"].items():
+        self.assertEqual(PILOTS, set(self.registry["pages"]))
+        for page_id, page in self.registry["pages"].items():
             self.assertIn("phase2", page, page_id)
             self.assertFalse(page["phase2"]["parent_panel"], page_id)
             self.assertTrue(page["guidance"]["teacher"]["model"].strip(), page_id)
@@ -33,13 +36,30 @@ class Phase2PilotTests(unittest.TestCase):
             self.assertTrue(page["deterministic_components"], page_id)
             self.assertNotIn("generic", page["learning"]["student_instruction"].casefold())
 
-    def test_read_match_has_exact_word_picture_contract(self) -> None:
-        page = json.loads(OVERRIDES.read_text(encoding="utf-8"))["pages"]["EL-LKG-V4-P023"]
+    def test_read_match_uses_fully_displaced_picture_orders(self) -> None:
+        page = self.registry["pages"]["EL-LKG-V4-P023"]
         phase2 = page["phase2"]
         self.assertEqual(["cat", "sun", "bus", "cup"], phase2["main_words"])
         self.assertEqual(["pen", "dog", "hen"], phase2["small_words"])
+        self.assertTrue(phase2["require_full_derangement"])
+        self.assertTrue(all(word != picture for word, picture in zip(phase2["main_words"], phase2["main_picture_order"])))
+        self.assertTrue(all(word != picture for word, picture in zip(phase2["small_words"], phase2["small_picture_order"])))
         self.assertEqual({"cat", "sun", "bus", "cup", "pen", "dog", "hen"}, set(phase2["asset_crops"]))
         self.assertEqual(7, len(page["illustration"]["required_objects"]))
+
+    def test_other_four_pilots_have_balanced_task_specific_content(self) -> None:
+        speak = self.registry["pages"]["CC-NURSERY-V4-P022"]["phase2"]
+        observe = self.registry["pages"]["CE-NURSERY-V4-P010"]["phase2"]
+        sort = self.registry["pages"]["YS-UKG-V4-P010"]["phase2"]
+        creative = self.registry["pages"]["CM-UKG-V4-P032"]["phase2"]
+        self.assertEqual(3, speak["minimum_choice_count"])
+        self.assertTrue(speak["equal_visual_weight"])
+        self.assertEqual(4, observe["target_count"])
+        self.assertTrue(observe["equal_visual_weight"])
+        self.assertEqual(6, sort["item_count"])
+        self.assertTrue(sort["completed_sort_prohibited"])
+        self.assertTrue(creative["partner_turn_required"])
+        self.assertTrue(creative["equal_visual_weight"])
 
     def test_choice_layout_supports_phase2_speaking_and_observation(self) -> None:
         spec = json.loads(CONTRACT.read_text(encoding="utf-8"))
@@ -56,6 +76,8 @@ class Phase2PilotTests(unittest.TestCase):
         for page_id in PILOTS:
             self.assertIn(page_id, composer)
         self.assertIn('"parent_panel":None', composer)
+        self.assertIn('"print_readable_typography":True', composer)
+        self.assertIn('largest_component', composer)
 
     def test_console_marks_phase2_and_hides_parent_panel(self) -> None:
         html = CONSOLE.read_text(encoding="utf-8")
