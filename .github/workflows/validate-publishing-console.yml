@@ -87,4 +87,15 @@ jobs:
             bcube-publishing-sdk/validators/validate_publisher_inputs.py \
             bcube-publishing-sdk/validators/validate_activity_inputs.py
       - name: Validate all page records and console API
-        run: python -m unittest discover -s tools/publishing-console/tests -v
+        shell: bash
+        run: |
+          set +e
+          PYTHONPATH=tools/publishing-console python -m unittest discover -s tools/publishing-console/tests -v > /tmp/publishing-console-tests.log 2>&1
+          status=$?
+          if [ "$status" -ne 0 ]; then
+            echo 'Publishing console test failure details:'
+            tail -n 180 /tmp/publishing-console-tests.log
+          else
+            cat /tmp/publishing-console-tests.log
+          fi
+          exit "$status"
