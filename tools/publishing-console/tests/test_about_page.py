@@ -124,17 +124,22 @@ class AboutPageTests(unittest.TestCase):
                 illustration_render["trimmed_source_size"][0],
                 illustration_render["source_size"][0],
             )
-            self.assertEqual("cover", illustration_render["fit_mode"])
-            self.assertTrue(illustration_render["clip_applied"])
+            self.assertEqual("contain", illustration_render["fit_mode"])
+            self.assertFalse(illustration_render["clip_applied"])
             self.assertEqual([0.5, 0.5], illustration_render["focal_point"])
             self.assertEqual(
-                [210, 920, 2270, 2270],
+                [952, 944, 1528, 2246],
                 illustration_render["rendered_bounds"],
             )
-            self.assertEqual(
-                [150, 860, 2330, 2330],
-                evidence["components"]["illustration_frame"]["bounds"],
-            )
+            frame_bounds = evidence["components"]["illustration_frame"]["bounds"]
+            self.assertEqual([150, 860, 2330, 2330], frame_bounds)
+            safe_inset = evidence["components"]["illustration_frame"]["safe_inset"]
+            self.assertEqual(84, safe_inset)
+            rendered_bounds = illustration_render["rendered_bounds"]
+            self.assertGreaterEqual(rendered_bounds[0], frame_bounds[0] + safe_inset)
+            self.assertGreaterEqual(rendered_bounds[1], frame_bounds[1] + safe_inset)
+            self.assertLessEqual(rendered_bounds[2], frame_bounds[2] - safe_inset)
+            self.assertLessEqual(rendered_bounds[3], frame_bounds[3] - safe_inset)
             self.assertIn("page_title", evidence["components"])
             self.assertIn("learning_outcomes", evidence["components"])
             self.assertNotIn("teacher_panel", evidence["components"])
