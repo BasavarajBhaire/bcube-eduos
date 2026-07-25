@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 OVERRIDES = ROOT / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
 CONTRACT = ROOT / "bcube-publishing-sdk/contracts/learning-page-contract-v2.json"
+BUILDER = ROOT / "bcube-publishing-sdk/normalizers/build_learning_contract_v2.py"
 PIPELINE = ROOT / "scripts/run_bcube_learning_pipeline.py"
 COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_phase2.py"
 CONSOLE = ROOT / "tools/publishing-console/templates/index.html"
@@ -93,6 +94,12 @@ class Phase2PilotTests(unittest.TestCase):
         self.assertIn("number_response_boxes", sort_layout["allowed_component_types"])
         components = self.registry["pages"]["ST-LKG-V4-P010"]["deterministic_components"]
         self.assertEqual(["sort_bins", "number_response_boxes"], [item["type"] for item in components])
+
+    def test_contract_spec_version_matches_generated_contract_version(self) -> None:
+        spec = json.loads(CONTRACT.read_text(encoding="utf-8"))
+        builder = BUILDER.read_text(encoding="utf-8")
+        self.assertEqual("learning-page-contract-v2.0", spec["contract_version"])
+        self.assertIn('"contract_version": "learning-page-contract-v2.0"', builder)
 
     def test_pipeline_routes_to_crop_only_phase2_composer(self) -> None:
         self.assertIn("compose_learning_page_phase2.py", PIPELINE.read_text(encoding="utf-8"))
