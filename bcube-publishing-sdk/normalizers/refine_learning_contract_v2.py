@@ -96,12 +96,25 @@ def is_non_actionable_instruction(value: Any) -> bool:
     return len(text.split()) <= 5 or not text.endswith((".", "?", "!"))
 
 
+def normalise_equivalent_activities(contract: dict[str, Any]) -> None:
+    """Collapse equivalent mechanics before portfolio content curation."""
+    activity = contract.setdefault("activity", {})
+    primary = clean(activity.get("primary")).casefold()
+    if primary == "connect":
+        secondary = [clean(value).casefold() for value in activity.get("secondary", [])]
+        activity["primary"] = "match"
+        activity["secondary"] = ["connect", *[value for value in secondary if value != "connect"]][:3]
+        activity["layout_variant"] = "match-connect"
+        activity["resolution_source"] = "portfolio-equivalent-activity-normalisation"
+
+
 def refine_contract(
     contract: dict[str, Any],
     *,
     curated_override_applied: bool,
 ) -> dict[str, Any]:
     curator = load_curator()
+    normalise_equivalent_activities(contract)
     curator.apply_locked_content(contract)
     contract.setdefault("source_lineage", {})
     contract["source_lineage"].update(
