@@ -86,6 +86,14 @@ class Phase2PilotTests(unittest.TestCase):
         self.assertIn("observe", choice["activities"])
         self.assertIn("model_phrase", choice["allowed_component_types"])
 
+    def test_sort_classify_allows_numbered_response_boxes(self) -> None:
+        spec = json.loads(CONTRACT.read_text(encoding="utf-8"))
+        sort_layout = spec["layout_variants"]["sort-classify"]
+        self.assertIn("sort_bins", sort_layout["required_component_types"])
+        self.assertIn("number_response_boxes", sort_layout["allowed_component_types"])
+        components = self.registry["pages"]["ST-LKG-V4-P010"]["deterministic_components"]
+        self.assertEqual(["sort_bins", "number_response_boxes"], [item["type"] for item in components])
+
     def test_pipeline_routes_to_crop_only_phase2_composer(self) -> None:
         self.assertIn("compose_learning_page_phase2.py", PIPELINE.read_text(encoding="utf-8"))
         composer = COMPOSER.read_text(encoding="utf-8")
