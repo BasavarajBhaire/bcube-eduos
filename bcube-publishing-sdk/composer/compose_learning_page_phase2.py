@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Task-specific Phase 2 composer for five BCube pilot learning pages.
 
-The pilot renderer removes the parent/homework panel, uses a compact teacher
-cue, and renders page-owned interaction mechanics. Other pages fall back to
-the existing character-aware Learning Page V2 composer.
+Every visual choice is extracted from the uploaded illustration artwork through
+page-owned named crop manifests. Generic replacement icons are prohibited.
 """
 from __future__ import annotations
 
@@ -22,8 +21,11 @@ BASE_PATH = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_v2.py"
 FALLBACK_PATH = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_character_v2.py"
 TEMPLATE_PATH = ROOT / "bcube-publishing-sdk/templates/learning-page-v2.json"
 PILOT_IDS = {
-    "EL-LKG-V4-P023", "CC-NURSERY-V4-P022", "CE-NURSERY-V4-P010",
-    "YS-UKG-V4-P010", "CM-UKG-V4-P032",
+    "EL-LKG-V4-P023",
+    "CC-NURSERY-V4-P022",
+    "CE-NURSERY-V4-P010",
+    "ST-LKG-V4-P010",
+    "CM-UKG-V4-P032",
 }
 
 
@@ -52,7 +54,7 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def panel(draw: ImageDraw.ImageDraw, bounds: list[int], fill="#FFFFFF", outline="#8E5AC7", width=4, radius=28):
+def panel(draw: ImageDraw.ImageDraw, bounds: list[int], fill="#FFFFFF", outline="#8E5AC7", width=4, radius=28) -> None:
     draw.rounded_rectangle(bounds, radius=radius, fill=fill, outline=outline, width=width)
 
 
@@ -64,7 +66,7 @@ def anchor(draw: ImageDraw.ImageDraw, centre: tuple[int, int], diameter: int, ou
     return bounds
 
 
-def paste_contain(canvas: Image.Image, image: Image.Image, bounds: list[int], inset=10) -> list[int]:
+def paste_contain(canvas: Image.Image, image: Image.Image, bounds: list[int], inset=8) -> list[int]:
     rgba = image.convert("RGBA")
     x0, y0, x1, y1 = bounds
     x0 += inset; y0 += inset; x1 -= inset; y1 -= inset
@@ -87,14 +89,13 @@ def remove_near_white(image: Image.Image) -> Image.Image:
     return rgba.crop(bbox)
 
 
-def largest_component(image: Image.Image, min_fraction: float = 0.015) -> Image.Image:
-    """Keep the principal connected foreground component and discard crop debris."""
+def largest_component(image: Image.Image, min_fraction: float = 0.012) -> Image.Image:
     rgba = image.convert("RGBA")
     alpha = rgba.getchannel("A")
     width, height = rgba.size
-    scale = min(1.0, 520 / max(width, height))
+    scale = min(1.0, 520/max(width, height))
     sw, sh = max(1, round(width*scale)), max(1, round(height*scale))
-    mask = alpha.resize((sw, sh), Image.Resampling.NEAREST).point(lambda p: 255 if p > 18 else 0)
+    mask = alpha.resize((sw, sh), Image.Resampling.NEAREST).point(lambda p: 255 if p>18 else 0)
     pixels = mask.load()
     seen = bytearray(sw*sh)
     components: list[tuple[int, tuple[int,int,int,int]]] = []
@@ -108,7 +109,7 @@ def largest_component(image: Image.Image, min_fraction: float = 0.015) -> Image.
             count = 0
             minx=maxx=sx; miny=maxy=sy
             while queue:
-                x,y=queue.popleft(); count+=1
+                x,y = queue.popleft(); count += 1
                 minx=min(minx,x); maxx=max(maxx,x); miny=min(miny,y); maxy=max(maxy,y)
                 for nx,ny in ((x-1,y),(x+1,y),(x,y-1),(x,y+1)):
                     if 0<=nx<sw and 0<=ny<sh:
@@ -119,66 +120,29 @@ def largest_component(image: Image.Image, min_fraction: float = 0.015) -> Image.
     if not components:
         raise ValueError("Asset crop contains no visible artwork")
     components.sort(reverse=True, key=lambda item:item[0])
-    best_count, best = components[0]
-    if best_count < sw*sh*min_fraction:
+    count, box = components[0]
+    if count < sw*sh*min_fraction:
         raise ValueError("Asset crop principal object is too small")
     inverse = 1/scale
-    x0=max(0, round(best[0]*inverse)-4); y0=max(0, round(best[1]*inverse)-4)
-    x1=min(width, round(best[2]*inverse)+4); y1=min(height, round(best[3]*inverse)+4)
+    x0=max(0,round(box[0]*inverse)-5); y0=max(0,round(box[1]*inverse)-5)
+    x1=min(width,round(box[2]*inverse)+5); y1=min(height,round(box[3]*inverse)+5)
     return rgba.crop((x0,y0,x1,y1))
 
 
-def crop_sprite(source: Image.Image, crop: list[float]) -> Image.Image:
+def crop_sprite(source: Image.Image, crop: list[float], keep_all=False) -> Image.Image:
     width,height = source.size
     x0,y0,x1,y1 = crop
     piece = source.crop((round(x0*width),round(y0*height),round(x1*width),round(y1*height)))
-    return largest_component(remove_near_white(piece))
+    cleaned = remove_near_white(piece)
+    return cleaned if keep_all else largest_component(cleaned)
 
 
-def icon(draw: ImageDraw.ImageDraw, kind: str, bounds: list[int], colours: dict[str,str]):
-    x0,y0,x1,y1=bounds; cx=(x0+x1)//2; cy=(y0+y1)//2; w=x1-x0; h=y1-y0; navy=colours["navy"]
-    if kind in {"ball","I spoke clearly"}:
-        draw.ellipse([cx-w*.2,cy-h*.28,cx+w*.2,cy+h*.28],fill="#E63B32",outline=navy,width=4)
-    elif kind in {"toy car","car","ask to join a game"}:
-        draw.rounded_rectangle([cx-w*.28,cy-h*.14,cx+w*.28,cy+h*.16],radius=14,fill="#2787D8",outline=navy,width=4)
-        draw.ellipse([cx-w*.22,cy+h*.08,cx-w*.1,cy+h*.22],fill="#333333")
-        draw.ellipse([cx+w*.1,cy+h*.08,cx+w*.22,cy+h*.22],fill="#333333")
-    elif kind in {"teddy bear","rabbit","dog"}:
-        draw.ellipse([cx-w*.2,cy-h*.22,cx+w*.2,cy+h*.2],fill="#C98B52",outline=navy,width=4)
-        draw.ellipse([cx-w*.28,cy-h*.32,cx-w*.08,cy-h*.12],fill="#C98B52",outline=navy,width=3)
-        draw.ellipse([cx+w*.08,cy-h*.32,cx+w*.28,cy-h*.12],fill="#C98B52",outline=navy,width=3)
-    elif kind in {"kite","dinosaur"}:
-        draw.polygon([(cx,cy-h*.3),(cx+w*.22,cy),(cx,cy+h*.3),(cx-w*.22,cy)],fill="#E85D9E",outline=navy)
-    elif kind=="bench":
-        draw.rectangle([cx-w*.3,cy-h*.12,cx+w*.3,cy],fill="#B9773A",outline=navy,width=4)
-        draw.rectangle([cx-w*.3,cy+h*.04,cx+w*.3,cy+h*.12],fill="#B9773A",outline=navy,width=4)
-    elif kind in {"tree","Living"}:
-        draw.rectangle([cx-w*.06,cy,cx+w*.06,cy+h*.3],fill="#9B5E2F",outline=navy,width=3)
-        draw.ellipse([cx-w*.26,cy-h*.3,cx+w*.26,cy+h*.1],fill="#55B94C",outline=navy,width=4)
-    elif kind=="flower":
-        for dx,dy in [(-.12,0),(.12,0),(0,-.16),(0,.16)]:
-            draw.ellipse([cx+dx*w-18,cy+dy*h-18,cx+dx*w+18,cy+dy*h+18],fill="#F38BB6",outline=navy,width=2)
-        draw.ellipse([cx-18,cy-18,cx+18,cy+18],fill="#FFD24A",outline=navy,width=2)
-    elif kind=="child":
-        draw.ellipse([cx-w*.12,cy-h*.3,cx+w*.12,cy-h*.05],fill="#F2B887",outline=navy,width=3)
-        draw.rounded_rectangle([cx-w*.18,cy-h*.02,cx+w*.18,cy+h*.3],radius=16,fill="#F5C542",outline=navy,width=3)
-    elif kind=="chair":
-        draw.rectangle([cx-w*.2,cy-h*.2,cx+w*.2,cy+h*.05],fill="#B9773A",outline=navy,width=4)
-        draw.rectangle([cx-w*.24,cy+h*.05,cx+w*.24,cy+h*.13],fill="#B9773A",outline=navy,width=4)
-    elif kind=="robot":
-        draw.rounded_rectangle([cx-w*.22,cy-h*.24,cx+w*.22,cy+h*.2],radius=12,fill="#B8C4D4",outline=navy,width=4)
-    else:
-        draw.ellipse([cx-w*.18,cy-h*.18,cx+w*.18,cy+h*.18],fill="#FFD24A",outline=navy,width=4)
-
-
-def card(draw, base, bounds, title, colours, icon_name=None, fill="#FFFFFF"):
-    panel(draw,bounds,fill=fill,outline=colours["soft_purple"],width=3,radius=22)
-    if icon_name:
-        icon(draw,icon_name,[bounds[0]+18,bounds[1]+16,bounds[0]+150,bounds[3]-16],colours)
-        text_bounds=[bounds[0]+165,bounds[1]+14,bounds[2]-18,bounds[3]-14]
-    else:
-        text_bounds=[bounds[0]+20,bounds[1]+12,bounds[2]-20,bounds[3]-12]
-    return base.fitted_text(draw,title,text_bounds,max_size=42,min_size=26,colour=colours["navy"],bold=True,max_lines=2)
+def crop_assets(source: Image.Image, phase2: dict[str, Any], keep_all: set[str] | None = None) -> dict[str, Image.Image]:
+    crops = phase2.get("asset_crops")
+    if not isinstance(crops, dict) or not crops:
+        raise ValueError("Phase 2 page requires a named asset_crops manifest")
+    keep_all = keep_all or set()
+    return {name: crop_sprite(source, box, name in keep_all) for name, box in crops.items()}
 
 
 def draw_header(canvas, draw, contract, template, base):
@@ -200,174 +164,153 @@ def draw_header(canvas, draw, contract, template, base):
 
 def draw_teacher_strip(draw, contract, template, base):
     colours=template["colours"]
-    body=contract["guidance"]["teacher"]["model"]
     bounds=[150,3060,2300,3265]
     panel(draw,bounds,fill="#F0FAED",outline="#5F9D50",width=3,radius=22)
     heading=base.fitted_text(draw,"TEACHER CUE",[180,3082,560,3240],max_size=34,min_size=28,colour=colours["navy"],bold=True,max_lines=1)
-    rendered=base.fitted_text(draw,body,[590,3078,2260,3248],max_size=38,min_size=28,colour=colours["line"],align="left",max_lines=3)
-    return {"bounds":bounds,"heading":heading,"body":rendered}
+    body=base.fitted_text(draw,contract["guidance"]["teacher"]["model"],[590,3078,2260,3248],max_size=38,min_size=28,colour=colours["line"],align="left",max_lines=3)
+    return {"bounds":bounds,"heading":heading,"body":body}
+
+
+def draw_asset_card(canvas, draw, base, colours, bounds, asset, label, *, anchor_visible=True, number=None):
+    panel(draw,bounds,outline=colours["soft_purple"],width=3,radius=22)
+    picture_bounds=[bounds[0]+40,bounds[1]+35,bounds[2]-40,bounds[3]-105]
+    rendered=paste_contain(canvas,asset,picture_bounds,4)
+    text=base.fitted_text(draw,label,[bounds[0]+25,bounds[3]-100,bounds[2]-25,bounds[3]-20],max_size=40,min_size=28,colour=colours["navy"],bold=True,max_lines=2)
+    marker=None
+    if anchor_visible:
+        marker=anchor(draw,(bounds[2]-38,bounds[1]+38),36,colours["purple"])
+    if number is not None:
+        draw.ellipse([bounds[0]+18,bounds[1]+18,bounds[0]+78,bounds[1]+78],fill="#FFFFFF",outline=colours["purple"],width=4)
+        base.fitted_text(draw,str(number),[bounds[0]+20,bounds[1]+20,bounds[0]+76,bounds[1]+76],max_size=34,min_size=28,colour=colours["navy"],bold=True,max_lines=1)
+    return {"bounds":bounds,"picture":rendered,"label":text,"anchor":marker,"number":number}
 
 
 def render_read_match(canvas, draw, contract, template, base, source):
-    colours=template["colours"]
-    phase2=contract["phase2"]
-    sprites={name:crop_sprite(source,box) for name,box in phase2["asset_crops"].items()}
-    main=[180,650,2300,2200]
-    small=[240,2240,2240,3010]
+    colours=template["colours"]; phase2=contract["phase2"]
+    sprites=crop_assets(source,phase2)
+    main=[180,650,2300,2200]; small=[240,2240,2240,3010]
     panel(draw,main,outline=colours["soft_purple"],width=4,radius=30)
-    row_height=(main[3]-main[1]-70)//4
-    main_items=[]
-    for index,(word,picture) in enumerate(zip(phase2["main_words"],phase2["main_picture_order"])):
-        centre_y=main[1]+35+row_height*index+row_height//2
-        base.fitted_text(draw,word,[245,centre_y-row_height//3,690,centre_y+row_height//3],max_size=84,min_size=64,colour="#111111",bold=True,align="left",max_lines=1)
-        left=anchor(draw,(735,centre_y),46,colours["purple"])
-        right=anchor(draw,(1510,centre_y),46,colours["purple"])
-        picture_bounds=[1570,centre_y-row_height//2+6,2180,centre_y+row_height//2-6]
-        rendered_picture=paste_contain(canvas,sprites[picture],picture_bounds,2)
-        main_items.append({"word":word,"picture":picture,"left_anchor":left,"right_anchor":right,"picture_bounds":rendered_picture})
+    row_h=(main[3]-main[1]-70)//4; main_items=[]
+    for i,(word,picture) in enumerate(zip(phase2["main_words"],phase2["main_picture_order"])):
+        cy=main[1]+35+row_h*i+row_h//2
+        base.fitted_text(draw,word,[245,cy-row_h//3,690,cy+row_h//3],max_size=84,min_size=64,colour="#111111",bold=True,align="left",max_lines=1)
+        left=anchor(draw,(735,cy),46,colours["purple"]); right=anchor(draw,(1510,cy),46,colours["purple"])
+        picture_bounds=paste_contain(canvas,sprites[picture],[1570,cy-row_h//2+6,2180,cy+row_h//2-6],2)
+        main_items.append({"word":word,"picture":picture,"left_anchor":left,"right_anchor":right,"picture_bounds":picture_bounds})
     panel(draw,small,outline="#5F9D50",width=4,radius=28)
     base.fitted_text(draw,"Read and match again.",[330,2250,2150,2340],max_size=46,min_size=36,colour=colours["navy"],bold=True,max_lines=1)
-    row_height=(small[3]-small[1]-115)//3
-    small_items=[]
-    for index,(word,picture) in enumerate(zip(phase2["small_words"],phase2["small_picture_order"])):
-        centre_y=small[1]+95+row_height*index+row_height//2
-        base.fitted_text(draw,word,[330,centre_y-row_height//3,730,centre_y+row_height//3],max_size=70,min_size=52,colour="#111111",bold=True,align="left",max_lines=1)
-        left=anchor(draw,(770,centre_y),40,"#3E8F35")
-        right=anchor(draw,(1470,centre_y),40,"#3E8F35")
-        picture_bounds=[1530,centre_y-row_height//2+2,2160,centre_y+row_height//2-2]
-        rendered_picture=paste_contain(canvas,sprites[picture],picture_bounds,0)
-        small_items.append({"word":word,"picture":picture,"left_anchor":left,"right_anchor":right,"picture_bounds":rendered_picture})
+    row_h=(small[3]-small[1]-115)//3; small_items=[]
+    for i,(word,picture) in enumerate(zip(phase2["small_words"],phase2["small_picture_order"])):
+        cy=small[1]+95+row_h*i+row_h//2
+        base.fitted_text(draw,word,[330,cy-row_h//3,730,cy+row_h//3],max_size=70,min_size=52,colour="#111111",bold=True,align="left",max_lines=1)
+        left=anchor(draw,(770,cy),40,"#3E8F35"); right=anchor(draw,(1470,cy),40,"#3E8F35")
+        picture_bounds=paste_contain(canvas,sprites[picture],[1530,cy-row_h//2+2,2160,cy+row_h//2-2],0)
+        small_items.append({"word":word,"picture":picture,"left_anchor":left,"right_anchor":right,"picture_bounds":picture_bounds})
     return {"type":"phase2-read-match","main":main_items,"small":small_items}
 
 
-def render_i_can_speak(canvas,draw,contract,template,base,source):
-    colours=template["colours"]
-    hero=[210,650,2270,1640]
-    panel(draw,hero,outline=colours["soft_purple"],width=3)
-    hero_render=paste_contain(canvas,remove_near_white(source),hero,24)
-    phase2=contract["phase2"]
+def render_i_can_speak(canvas, draw, contract, template, base, source):
+    colours=template["colours"]; phase2=contract["phase2"]
+    assets=crop_assets(source,phase2,keep_all={"model_scene"})
+    hero=[210,650,2270,1600]; panel(draw,hero,outline=colours["soft_purple"],width=3)
+    hero_render=paste_contain(canvas,assets["model_scene"],hero,20)
     cards=[]
-    for x,choice,sentence in zip([220,920,1620],phase2["choices"],phase2["sentences"]):
-        bounds=[x,1690,x+640,2310]
-        panel(draw,bounds,outline=colours["soft_purple"],width=3)
-        icon(draw,choice,[x+90,1730,x+550,2020],colours)
-        base.fitted_text(draw,sentence,[x+35,2040,x+605,2280],max_size=42,min_size=30,colour=colours["navy"],bold=True,max_lines=3)
-        anchor(draw,(x+600,1735),40,colours["purple"])
-        cards.append({"choice":choice,"bounds":bounds})
-    panel(draw,[330,2360,2150,2650],fill=colours["gold"],outline="#E1B12C",width=3)
-    base.fitted_text(draw,contract["learning"]["model_text"],[380,2380,2100,2625],max_size=54,min_size=36,colour=colours["line"],bold=True,max_lines=2)
-    panel(draw,[330,2700,2150,2980],fill="#F0FAED",outline="#5F9D50",width=3)
-    base.fitted_text(draw,phase2["partner_cue"],[380,2720,2100,2955],max_size=42,min_size=30,colour=colours["navy"],bold=True,max_lines=2)
-    return {"type":"phase2-speak-listen","hero":hero_render,"cards":cards}
+    for index,(choice,sentence) in enumerate(zip(phase2["choices"],phase2["sentences"])):
+        x=220+index*700; bounds=[x,1660,x+640,2310]
+        cards.append(draw_asset_card(canvas,draw,base,colours,bounds,assets[choice],sentence))
+    panel(draw,[330,2360,2150,2640],fill=colours["gold"],outline="#E1B12C",width=3)
+    phrase=base.fitted_text(draw,contract["learning"]["model_text"],[380,2385,2100,2615],max_size=54,min_size=36,colour=colours["line"],bold=True,max_lines=2)
+    panel(draw,[330,2690,2150,2975],fill="#F0FAED",outline="#5F9D50",width=3)
+    partner=base.fitted_text(draw,phase2["partner_cue"],[380,2715,2100,2950],max_size=42,min_size=30,colour=colours["navy"],bold=True,max_lines=2)
+    return {"type":"phase2-speak-listen","hero":hero_render,"cards":cards,"phrase":phrase,"partner":partner}
 
 
-def render_observe(canvas,draw,contract,template,base,source):
-    colours=template["colours"]
-    scene=[180,650,2300,2390]
-    panel(draw,scene,outline=colours["soft_purple"],width=3)
-    scene_render=paste_contain(canvas,remove_near_white(source),scene,20)
-    strip=[240,2440,2240,3000]
-    panel(draw,strip,outline="#5F9D50",width=3)
-    targets=contract["phase2"]["targets"]
-    width=(strip[2]-strip[0]-100)//4
-    items=[]
-    for index,target in enumerate(targets):
-        left=strip[0]+30+index*width
-        bounds=[left,2480,left+width-25,2950]
-        icon(draw,target,[left+30,2500,left+width-55,2810],colours)
-        base.fitted_text(draw,target,[left+25,2820,left+width-50,2930],max_size=42,min_size=30,colour=colours["navy"],bold=True,max_lines=1)
-        anchor(draw,(left+width-55,2520),38,"#3E8F35")
-        items.append({"target":target,"bounds":bounds})
-    return {"type":"phase2-observe-find","scene":scene_render,"targets":items}
+def render_observe(canvas, draw, contract, template, base, source):
+    colours=template["colours"]; phase2=contract["phase2"]
+    assets=crop_assets(source,phase2,keep_all={"scene"})
+    scene=[180,650,2300,2360]; panel(draw,scene,outline=colours["soft_purple"],width=3)
+    scene_render=paste_contain(canvas,assets["scene"],scene,18)
+    strip=[220,2410,2260,3000]; panel(draw,strip,outline="#5F9D50",width=3)
+    cards=[]
+    for index,target in enumerate(phase2["targets"]):
+        left=250+index*500; bounds=[left,2460,left+450,2945]
+        cards.append(draw_asset_card(canvas,draw,base,colours,bounds,assets[target],target))
+    return {"type":"phase2-observe-find","scene":scene_render,"targets":cards}
 
 
-def render_sort(canvas,draw,contract,template,base,source):
-    colours=template["colours"]
-    phase2=contract["phase2"]
-    cue=[180,650,2300,1240]
-    panel(draw,cue,outline=colours["soft_purple"],width=3)
-    cue_render=paste_contain(canvas,remove_near_white(source),cue,20)
-    area=[180,1290,2300,2070]
-    panel(draw,area,outline=colours["soft_purple"],width=3)
-    items=[]
-    cell_width=(area[2]-area[0]-100)//3
-    cell_height=(area[3]-area[1]-80)//2
+def render_sort(canvas, draw, contract, template, base, source):
+    colours=template["colours"]; phase2=contract["phase2"]
+    assets=crop_assets(source,phase2)
+    item_area=[180,650,2300,1900]; panel(draw,item_area,outline=colours["soft_purple"],width=3)
+    cards=[]
     for index,name in enumerate(phase2["items"]):
         row,column=divmod(index,3)
-        left=area[0]+35+column*cell_width
-        top=area[1]+30+row*cell_height
-        bounds=[left,top,left+cell_width-25,top+cell_height-25]
-        card(draw,base,bounds,name,colours,icon_name=name)
-        anchor(draw,(bounds[2]-35,bounds[1]+35),34,colours["purple"])
-        items.append({"name":name,"bounds":bounds})
-    bins=[]
+        left=220+column*700; top=700+row*575; bounds=[left,top,left+640,top+520]
+        cards.append(draw_asset_card(canvas,draw,base,colours,bounds,assets[name],name,anchor_visible=False,number=index+1))
+    groups=[]
     for index,label in enumerate(phase2["categories"]):
-        left=250+index*1040
-        bounds=[left,2120,left+940,3000]
+        left=250+index*1040; bounds=[left,1960,left+940,2990]
         panel(draw,bounds,fill="#F8F5FF",outline=colours["purple"],width=4)
-        icon(draw,label,[left+260,2180,left+680,2530],colours)
-        base.fitted_text(draw,label,[left+80,2550,left+860,2730],max_size=60,min_size=42,colour=colours["navy"],bold=True,max_lines=1)
-        base.fitted_text(draw,"Place or draw the matching items here.",[left+70,2750,left+870,2960],max_size=36,min_size=27,colour=colours["line"],max_lines=2)
-        bins.append({"label":label,"bounds":bounds})
-    return {"type":"phase2-sort","cue":cue_render,"items":items,"bins":bins}
+        title=base.fitted_text(draw,label,[left+60,1990,left+880,2120],max_size=58,min_size=42,colour=colours["navy"],bold=True,max_lines=1)
+        cue=base.fitted_text(draw,"Write the picture numbers.",[left+80,2140,left+860,2240],max_size=34,min_size=26,colour=colours["line"],max_lines=1)
+        lines=[]
+        for line_index in range(3):
+            y=2340+line_index*190
+            draw.line((left+150,y,left+790,y),fill="#7C8799",width=3)
+            lines.append([left+150,y,left+790,y])
+        groups.append({"label":label,"bounds":bounds,"title":title,"cue":cue,"lines":lines})
+    return {"type":"phase2-sort-number-record","items":cards,"groups":groups}
 
 
-def render_creative(canvas,draw,contract,template,base,source):
-    colours=template["colours"]
-    phase2=contract["phase2"]
-    hero=[200,650,2280,1560]
-    panel(draw,hero,outline=colours["soft_purple"],width=3)
-    hero_render=paste_contain(canvas,remove_near_white(source),hero,18)
-    base.fitted_text(draw,"1. Choose a character",[250,1580,2230,1660],max_size=44,min_size=32,colour=colours["navy"],bold=True,max_lines=1)
-    characters=[]
+def render_creative(canvas, draw, contract, template, base, source):
+    colours=template["colours"]; phase2=contract["phase2"]
+    assets=crop_assets(source,phase2,keep_all={"model_scene","meet a new friend","ask to join a game","share an exciting idea"})
+    hero=[200,650,2280,1470]; panel(draw,hero,outline=colours["soft_purple"],width=3)
+    hero_render=paste_contain(canvas,assets["model_scene"],hero,18)
+    base.fitted_text(draw,"1. Choose a character",[250,1490,2230,1575],max_size=44,min_size=32,colour=colours["navy"],bold=True,max_lines=1)
+    character_cards=[]
     for index,name in enumerate(phase2["characters"]):
-        bounds=[250+index*690,1680,850+index*690,2070]
-        card(draw,base,bounds,name,colours,icon_name=name)
-        anchor(draw,(bounds[2]-40,bounds[1]+40),36,colours["purple"])
-        characters.append({"name":name,"bounds":bounds})
-    base.fitted_text(draw,"2. Choose a situation",[250,2090,2230,2170],max_size=44,min_size=32,colour=colours["navy"],bold=True,max_lines=1)
-    situations=[]
+        bounds=[240+index*700,1590,870+index*700,2070]
+        character_cards.append(draw_asset_card(canvas,draw,base,colours,bounds,assets[name],name))
+    base.fitted_text(draw,"2. Choose a situation",[250,2090,2230,2175],max_size=44,min_size=32,colour=colours["navy"],bold=True,max_lines=1)
+    situation_cards=[]
     for index,name in enumerate(phase2["situations"]):
-        bounds=[250+index*690,2190,850+index*690,2580]
-        card(draw,base,bounds,name,colours,icon_name=name)
-        anchor(draw,(bounds[2]-40,bounds[1]+40),36,colours["purple"])
-        situations.append({"name":name,"bounds":bounds})
-    panel(draw,[300,2620,2180,2805],fill=colours["gold"],outline="#E1B12C",width=3)
-    base.fitted_text(draw,contract["learning"]["model_text"],[350,2640,2130,2785],max_size=48,min_size=34,colour=colours["line"],bold=True,max_lines=2)
+        bounds=[240+index*700,2190,870+index*700,2620]
+        situation_cards.append(draw_asset_card(canvas,draw,base,colours,bounds,assets[name],name))
+    panel(draw,[300,2650,2180,2825],fill=colours["gold"],outline="#E1B12C",width=3)
+    phrase=base.fitted_text(draw,contract["learning"]["model_text"],[350,2670,2130,2805],max_size=48,min_size=34,colour=colours["line"],bold=True,max_lines=2)
     checks=[]
     for index,label in enumerate(phase2["self_check"]):
-        bounds=[300+index*620,2840,850+index*620,3020]
-        card(draw,base,bounds,label,colours,icon_name=label,fill="#F0FAED")
-        checks.append({"label":label,"bounds":bounds})
-    return {"type":"phase2-creative-speaking","hero":hero_render,"characters":characters,"situations":situations,"self_check":checks}
+        bounds=[300+index*620,2850,850+index*620,3025]
+        panel(draw,bounds,fill="#F0FAED",outline=colours["soft_purple"],width=3,radius=20)
+        marker=anchor(draw,(bounds[0]+55,(bounds[1]+bounds[3])//2),38,"#3E8F35")
+        text=base.fitted_text(draw,label,[bounds[0]+95,bounds[1]+18,bounds[2]-20,bounds[3]-18],max_size=34,min_size=25,colour=colours["navy"],bold=True,max_lines=2)
+        checks.append({"label":label,"bounds":bounds,"marker":marker,"text":text})
+    return {"type":"phase2-creative-speaking","hero":hero_render,"characters":character_cards,"situations":situation_cards,"phrase":phrase,"self_check":checks}
 
 
-def compose_phase2(contract_path: Path, output: Path, evidence_output: Path):
+def compose_phase2(contract_path: Path, output: Path, evidence_output: Path) -> None:
     base=load_module("bcube_phase2_base",BASE_PATH)
-    contract=load(contract_path)
-    template=load(TEMPLATE_PATH)
+    contract=load(contract_path); template=load(TEMPLATE_PATH)
     page_id=contract["identity"]["page_id"]
-    canvas_spec=template["canvas"]
-    colours=template["colours"]
+    canvas_spec=template["canvas"]; colours=template["colours"]
     canvas=Image.new("RGB",(canvas_spec["width"],canvas_spec["height"]),colours["background"])
     draw=ImageDraw.Draw(canvas)
     header=draw_header(canvas,draw,contract,template,base)
     source=Image.open(resolve(contract["assets"]["illustration_path"])).convert("RGBA")
-    if page_id=="EL-LKG-V4-P023":
-        activity=render_read_match(canvas,draw,contract,template,base,source)
-    elif page_id=="CC-NURSERY-V4-P022":
-        activity=render_i_can_speak(canvas,draw,contract,template,base,source)
-    elif page_id=="CE-NURSERY-V4-P010":
-        activity=render_observe(canvas,draw,contract,template,base,source)
-    elif page_id=="YS-UKG-V4-P010":
-        activity=render_sort(canvas,draw,contract,template,base,source)
-    elif page_id=="CM-UKG-V4-P032":
-        activity=render_creative(canvas,draw,contract,template,base,source)
-    else:
+    renderers={
+        "EL-LKG-V4-P023":render_read_match,
+        "CC-NURSERY-V4-P022":render_i_can_speak,
+        "CE-NURSERY-V4-P010":render_observe,
+        "ST-LKG-V4-P010":render_sort,
+        "CM-UKG-V4-P032":render_creative,
+    }
+    if page_id not in renderers:
         raise ValueError(f"Unsupported Phase 2 pilot page: {page_id}")
+    activity=renderers[page_id](canvas,draw,contract,template,base,source)
     teacher=draw_teacher_strip(draw,contract,template,base)
-    page_number=None
     identity=contract["identity"]
+    page_number=None
     if identity["page_number_visible"] and identity["page_number"]>0:
         page_number=base.fitted_text(draw,str(identity["page_number"]),[2200,3270,2370,3390],max_size=46,min_size=36,colour=colours["muted"],bold=True,max_lines=1)
     output.parent.mkdir(parents=True,exist_ok=True)
@@ -381,14 +324,14 @@ def compose_phase2(contract_path: Path, output: Path, evidence_output: Path):
         "artifact_sha256":sha256(output),
         "inputs":{"contract_sha256":sha256(contract_path),"illustration_sha256":sha256(resolve(contract["assets"]["illustration_path"]))},
         "components":{"header":header,"activity":activity,"teacher_cue":teacher,"parent_panel":None,"page_number":page_number},
-        "qa":{"parent_panel_removed":True,"generic_activity_box_removed":True,"task_specific_layout":True,"sprite_component_cleanup":page_id=="EL-LKG-V4-P023","print_readable_typography":True,"status":"REVIEW_CANDIDATE"}
+        "qa":{"parent_panel_removed":True,"generic_activity_box_removed":True,"generic_replacement_icons_removed":True,"named_asset_crop_manifest_used":True,"task_specific_layout":True,"print_readable_typography":True,"status":"REVIEW_CANDIDATE"}
     }
     evidence_output.parent.mkdir(parents=True,exist_ok=True)
     evidence_output.write_text(json.dumps(evidence,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     print(json.dumps({"status":"COMPOSED_PHASE2_PILOT","artifact":str(output),"evidence":str(evidence_output)},indent=2))
 
 
-def compose(contract_path: Path, output: Path, evidence_output: Path):
+def compose(contract_path: Path, output: Path, evidence_output: Path) -> None:
     contract=load(contract_path)
     page_id=contract.get("identity",{}).get("page_id")
     if page_id in PILOT_IDS and isinstance(contract.get("phase2"),dict):
