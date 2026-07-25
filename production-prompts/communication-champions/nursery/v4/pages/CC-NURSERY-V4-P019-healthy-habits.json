@@ -21,6 +21,7 @@
     "objective": "Understand and discuss basic healthy habits.",
     "instruction": "Tick the four healthy-habit pictures and cross the two unsafe or unhelpful choices.",
     "evidence": "Child distinguishes four healthy actions and explains one choice with support.",
+    "activity_type": "circle",
     "scene": "Six clear action cards: wash hands, brush teeth, drink water, sleep, eat unwashed food, stay awake too late.",
     "contents_entries": []
   },

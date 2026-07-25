@@ -21,6 +21,7 @@
     "objective": "Use a clear phrase to request help from a trusted adult or friend.",
     "instruction": "Choose the trusted helper for each of three situations and practise: Please help me with ____.",
     "evidence": "Child identifies a safe helper and uses the request phrase.",
+    "activity_type": "circle",
     "scene": "Three scenarios: stuck zipper with teacher, spilled crayons with friend, feeling unwell with caregiver; helper choices are beside each scene.",
     "contents_entries": []
   },

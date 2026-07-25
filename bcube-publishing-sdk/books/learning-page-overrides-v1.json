@@ -1,6 +1,6 @@
 {
-  "version": "learning-page-overrides-v1.1",
-  "description": "Curated page-owned refinements that override generic or degraded source fields without changing the frozen curriculum objective.",
+  "version": "learning-page-overrides-v1.2",
+  "description": "Curated page-owned visual refinements layered on top of the locked portfolio learning-content policy.",
   "pages": {
     "CC-NURSERY-V4-P008": {
       "learning": {
@@ -23,12 +23,12 @@
         "parent_extension": "Say family names together and clap the syllables."
       },
       "illustration": {
-        "scene": "One happy Nursery child pointing to self while looking into a simple standing mirror. Keep the lower writing area completely clear.",
-        "focal_point": "The child and mirror support self-recognition; all name-writing guides are built separately by the page composer.",
-        "required_objects": ["one child", "standing mirror"],
-        "forbidden_objects": ["Star mascot", "name cards", "ID cards", "multiple blank labels", "unrelated picture objects", "completed child name", "alphabet drill", "text inside artwork"],
+        "scene": "One happy Nursery child pointing to self while looking into a simple standing mirror. Reserve a clear side position beside the mirror for the official Star asset using an encouraging open-hand gesture. Keep the lower writing area completely clear.",
+        "focal_point": "The child and accurate mirror reflection remain dominant; official Star supports the speaking moment at a readable scale without covering the child or mirror.",
+        "required_objects": ["one child", "standing mirror", "clear side position for official Star asset"],
+        "forbidden_objects": ["generated Star", "tiny decorative mascot", "name cards", "ID cards", "multiple blank labels", "unrelated picture objects", "completed child name", "alphabet drill", "text inside artwork"],
         "protected_response_zones": ["entire deterministic trace-and-copy area below the illustration"],
-        "star_policy": "prohibited",
+        "star_policy": "official-asset-separate",
         "artwork_only": true,
         "no_visible_text": true,
         "no_logo": true,
@@ -61,12 +61,12 @@
         "parent_extension": "Find one red, one yellow, and one blue object at home."
       },
       "illustration": {
-        "scene": "Three large open paint pots—red, yellow, and blue—beside one simple child-like model picture made only with those colours.",
-        "focal_point": "The three primary colours are unmistakable and the sample remains simple, while the large child artwork area stays empty and unobstructed.",
-        "required_objects": ["red paint pot", "yellow paint pot", "blue paint pot", "simple child-like model picture"],
-        "forbidden_objects": ["matching activity", "secondary colours", "colour mixing", "generated text", "generated Star", "full worksheet layout", "decorative empty frames", "highly polished professional artwork"],
+        "scene": "Three large open paint pots—red, yellow, and blue—beside a small wooden art table and one simple child-like model picture made only with those colours. Reserve a clear side position for the official Star art-guide asset.",
+        "focal_point": "The three primary colours remain unmistakable; official Star supports the art activity without dominating the colour materials or child response area.",
+        "required_objects": ["red paint pot", "yellow paint pot", "blue paint pot", "small wooden art table", "simple child-like model picture", "clear side position for official Star asset"],
+        "forbidden_objects": ["matching activity", "secondary colours", "green", "orange", "purple", "pink", "rainbow", "colour mixing", "generated Star", "tiny decorative mascot", "full worksheet layout", "decorative empty frames", "highly polished professional artwork"],
         "protected_response_zones": ["large deterministic creative-response area below the illustration"],
-        "star_policy": "prohibited",
+        "star_policy": "official-asset-separate",
         "artwork_only": true,
         "no_visible_text": true,
         "no_logo": true,
