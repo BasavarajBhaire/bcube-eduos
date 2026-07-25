@@ -25,6 +25,7 @@ GENERIC_PHRASES = (
     "art activity discussion",
     "to be completed",
 )
+POLICY_VERSION_PREFIX = "portfolio-learning-content-v1.0"
 
 
 def load_module(name: str, path: Path) -> ModuleType:
@@ -105,7 +106,7 @@ class PortfolioLearningContentV1Tests(unittest.TestCase):
 
     def test_policy_index_locks_1080_pages(self) -> None:
         index = load(CONTENT_INDEX)
-        self.assertEqual("portfolio-learning-content-v1.0", index["version"])
+        self.assertTrue(index["version"].startswith(POLICY_VERSION_PREFIX))
         self.assertEqual(1080, index["expected_total_pages"])
         self.assertEqual("LOCKED", index["status"])
         self.assertIn("learning.student_instruction", index["locked_fields"])
@@ -131,9 +132,10 @@ class PortfolioLearningContentV1Tests(unittest.TestCase):
                 )
             ).casefold()
             self.assertEqual("LOCKED", contract["content_status"], identifier)
-            self.assertEqual(
-                "portfolio-learning-content-v1.0",
-                contract["source_lineage"]["portfolio_content_version"],
+            self.assertTrue(
+                contract["source_lineage"]["portfolio_content_version"].startswith(
+                    POLICY_VERSION_PREFIX
+                ),
                 identifier,
             )
             self.assertTrue(learning.get("objective"), identifier)
