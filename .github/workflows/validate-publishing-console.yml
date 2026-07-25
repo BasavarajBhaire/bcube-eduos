@@ -97,6 +97,7 @@ jobs:
         id: portfolio-audit
         shell: bash
         run: |
+          # Keep the complete portfolio diagnostic available even when the enforcement step fails.
           set +e
           python -m unittest tools/publishing-console/tests/test_portfolio_learning_content_v1.py -v > /tmp/learning-content-audit.txt 2>&1
           status=$?
