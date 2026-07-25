@@ -87,6 +87,7 @@ jobs:
             bcube-publishing-sdk/validators/validate_publisher_inputs.py \
             bcube-publishing-sdk/validators/validate_activity_inputs.py
       - name: Validate all page records and console API
+        id: console-tests
         shell: bash
         run: |
           set +e
@@ -99,3 +100,13 @@ jobs:
             cat /tmp/publishing-console-tests.log
           fi
           exit "$status"
+      - name: Archive console diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publishing-console-diagnostics
+          path: |
+            /tmp/publishing-console-tests.log
+            tools/publishing-console/tests
+          if-no-files-found: error
+          retention-days: 3
