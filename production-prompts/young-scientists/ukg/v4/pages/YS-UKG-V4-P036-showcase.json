@@ -21,6 +21,7 @@
     "objective": "Develop scientific curiosity through observation and investigation.",
     "instruction": "Showcase Yes",
     "evidence": "Children observe, predict, test ideas and discuss results respectfully.",
+    "activity_type": "speak",
     "teacher_facilitation": "Encourage observation, questioning and prediction before testing.",
     "teacher_questions": [
       "What can you show or tell about showcase?"
