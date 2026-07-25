@@ -54,7 +54,7 @@
       </section>
       <section class="metadata phase2 hidden" id="phase2Notice">
         <h2>Phase 2 Interactive Page</h2>
-        <p><strong>Task-specific composer enabled.</strong> The final page removes the parent/homework panel, removes the generic response box, and builds the interactive mechanics automatically from the page-owned contract.</p>
+        <p><strong>Task-specific composer enabled.</strong> Named crops from the uploaded artwork are used for every activity card. Generic replacement icons, parent/homework panels and generic response boxes are disabled.</p>
       </section>
       <div class="actions"><button type="submit" id="submit">Generate Page</button><button type="button" class="secondary" id="reset">Reset</button><span id="status" class="status"></span></div>
     </form>
@@ -63,7 +63,7 @@
 </div>
 <script>
 let registry={}, pages=[];
-const phase2Pages=new Set(['EL-LKG-V4-P023','CC-NURSERY-V4-P022','CE-NURSERY-V4-P010','YS-UKG-V4-P010','CM-UKG-V4-P032']);
+const phase2Pages=new Set(['EL-LKG-V4-P023','CC-NURSERY-V4-P022','CE-NURSERY-V4-P010','ST-LKG-V4-P010','CM-UKG-V4-P032']);
 const level=document.getElementById('level'), book=document.getElementById('book'), physicalPage=document.getElementById('physicalPage');
 const status=document.getElementById('status'), output=document.getElementById('output'), submit=document.getElementById('submit');
 const illustrationField=document.getElementById('illustrationField'), illustrationInput=document.getElementById('illustrationInput'), learningContract=document.getElementById('learningContract');
