@@ -53,11 +53,13 @@ def main() -> int:
 
     contract = load_json(OUTPUT)
     blueprint = load_json(BLUEPRINT)
+    deterministic_pages = {"EM-LKG-V4-P013", "EM-LKG-V4-P016", "EM-LKG-V4-P017", "EM-LKG-V4-P019"}
+
     for page_id, source in blueprint["pages"].items():
         if page_id not in contract["pages"]:
             raise KeyError(page_id)
         page = contract["pages"][page_id]
-        assets = list(source.get("illustration_assets", {}))
+        assets = [] if page_id in deterministic_pages else list(source.get("illustration_assets", {}))
         page["identity"]["title"] = source["title"]
         page["learning"] = {
             "objective": source["objective"],
@@ -73,13 +75,13 @@ def main() -> int:
             "mechanics": source["renderer_controls"],
         }
         page["illustration"] = {
-            "source_asset": f"{page_id}.png" if assets else None,
+            "source_asset": f"{page_id}.png" if assets else "__deterministic__.png",
             "assets": assets,
             "asset_crops": crop_grid(assets),
-            "asset_meanings": source.get("illustration_assets", {}),
+            "asset_meanings": {name: source.get("illustration_assets", {}).get(name, "") for name in assets},
             "requires_generated_art": bool(assets),
             "crop_safe": True,
-            "must_match_prompt": True,
+            "must_match_prompt": bool(assets),
         }
         page["layout"] = {
             "template": source["archetype"],
