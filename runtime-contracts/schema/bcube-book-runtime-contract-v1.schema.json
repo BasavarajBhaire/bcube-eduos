@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcubefutureacademy.in/schemas/bcube-book-runtime-contract-v1.schema.json",
+  "title": "BCube Book Runtime Contract V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "book", "level", "allow_fallback", "pages"],
+  "properties": {
+    "contract_version": {"const": "bcube-book-runtime-contract-v1"},
+    "book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "slug", "prefix"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "prefix": {"type": "string", "minLength": 2}
+      }
+    },
+    "level": {"enum": ["Nursery", "LKG", "UKG"]},
+    "age": {"type": "string"},
+    "allow_fallback": {"const": false},
+    "pages": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"$ref": "#/$defs/page"}
+    }
+  },
+  "$defs": {
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "learning", "activity", "illustration", "mechanics", "guidance", "layout", "validation"],
+      "properties": {
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["page_id", "physical_page", "printed_page", "title", "page_type"],
+          "properties": {
+            "page_id": {"type": "string", "pattern": "^[A-Z]{2}-[A-Z]+-V[0-9]+-P[0-9]{3}$"},
+            "physical_page": {"type": "integer", "minimum": 1},
+            "printed_page": {"type": ["integer", "null"]},
+            "title": {"type": "string", "minLength": 1},
+            "page_type": {"type": "string", "minLength": 1}
+          }
+        },
+        "learning": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["objective", "instruction", "expected_response"],
+          "properties": {
+            "objective": {"type": "string", "minLength": 1},
+            "instruction": {"type": "string", "minLength": 1},
+            "expected_response": {"type": "string", "minLength": 1},
+            "model_text": {"type": ["string", "null"]}
+          }
+        },
+        "activity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["archetype", "mechanic", "response_mode"],
+          "properties": {
+            "archetype": {"type": "string", "minLength": 1},
+            "mechanic": {"type": "string", "minLength": 1},
+            "response_mode": {"type": "string", "minLength": 1},
+            "activity_count": {"type": "integer", "minimum": 1}
+          }
+        },
+        "illustration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source_asset", "artwork_only", "assets", "asset_crops"],
+          "properties": {
+            "source_asset": {"type": "string", "minLength": 1},
+            "artwork_only": {"const": true},
+            "assets": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+            "asset_crops": {
+              "type": "object",
+              "minProperties": 1,
+              "additionalProperties": {
+                "type": "array",
+                "prefixItems": [
+                  {"type": "number", "minimum": 0, "maximum": 1},
+                  {"type": "number", "minimum": 0, "maximum": 1},
+                  {"type": "number", "minimum": 0, "maximum": 1},
+                  {"type": "number", "minimum": 0, "maximum": 1}
+                ],
+                "items": false,
+                "minItems": 4,
+                "maxItems": 4
+              }
+            }
+          }
+        },
+        "mechanics": {"type": "object"},
+        "guidance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["teacher_cue"],
+          "properties": {"teacher_cue": {"type": "string", "minLength": 1}}
+        },
+        "layout": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["template", "parent_panel", "home_connection", "generic_response_panel"],
+          "properties": {
+            "template": {"type": "string", "minLength": 1},
+            "parent_panel": {"const": false},
+            "home_connection": {"const": false},
+            "generic_response_panel": {"const": false}
+          }
+        },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allow_fallback", "status"],
+          "properties": {
+            "allow_fallback": {"const": false},
+            "status": {"enum": ["READY", "BLOCKED"]},
+            "required_asset_count": {"type": "integer", "minimum": 1},
+            "required_response_count": {"type": "integer", "minimum": 1},
+            "blocking_reasons": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "source_lineage": {"type": "object"}
+      }
+    }
+  }
+}
