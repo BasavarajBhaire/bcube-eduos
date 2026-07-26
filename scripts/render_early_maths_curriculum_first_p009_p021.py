@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Render only the approved Early Maths curriculum-first batch P009-P021.
 
-This command intentionally does not render the rest of the book. It builds the
-curriculum-first runtime contract, validates required illustration files, renders
-artless pages deterministically, and writes a page-by-page evidence summary.
+Supports a focused four-page proof set so users do not need to repeat commands.
 """
 from __future__ import annotations
 
@@ -18,6 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE_IDS = [f"EM-LKG-V4-P{n:03d}" for n in range(9, 22)]
+PROOF_SET = ["EM-LKG-V4-P009", "EM-LKG-V4-P013", "EM-LKG-V4-P018", "EM-LKG-V4-P021"]
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp")
 
 
@@ -46,16 +45,43 @@ def find_illustration(directory: Path, page_id: str) -> Path | None:
     return matches[0] if matches else None
 
 
+def parse_pages(value: str | None, proof_set: bool) -> list[str]:
+    if proof_set:
+        return PROOF_SET
+    if not value:
+        return PAGE_IDS
+    selected: list[str] = []
+    for raw in value.split(","):
+        token = raw.strip().upper()
+        if not token:
+            continue
+        if token.startswith("P") and token[1:].isdigit():
+            page_id = f"EM-LKG-V4-P{int(token[1:]):03d}"
+        else:
+            page_id = token
+        if page_id not in PAGE_IDS:
+            raise ValueError(f"Unsupported page: {raw}")
+        if page_id not in selected:
+            selected.append(page_id)
+    if not selected:
+        raise ValueError("No pages selected")
+    return selected
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Render Early Maths curriculum-first P009-P021 test batch")
     parser.add_argument("--illustrations-dir", type=Path, required=True)
     parser.add_argument("--logo", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--evidence-dir", type=Path, required=True)
-    parser.add_argument("--page-id", choices=PAGE_IDS)
+    parser.add_argument("--page-id", help="One page ID, retained for compatibility")
+    parser.add_argument("--pages", help="Comma-separated pages, e.g. P009,P013,P018,P021")
+    parser.add_argument("--proof-set", action="store_true", help="Render P009, P013, P018 and P021")
     parser.add_argument("--fail-fast", action="store_true")
     args = parser.parse_args()
 
+    if args.page_id and args.pages:
+        raise SystemExit("Use either --page-id or --pages, not both")
     illustrations_dir = args.illustrations_dir.expanduser().resolve()
     logo = args.logo.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
@@ -67,7 +93,7 @@ def main() -> int:
 
     subprocess.run([sys.executable, str(ROOT / "scripts/build_early_maths_curriculum_first_runtime.py")], cwd=ROOT, check=True)
     contract = load_json(ROOT / "runtime-contracts/lkg/early-maths-adventures.json")
-    selected = [args.page_id] if args.page_id else PAGE_IDS
+    selected = parse_pages(args.page_id or args.pages, args.proof_set)
     output_dir.mkdir(parents=True, exist_ok=True)
     evidence_dir.mkdir(parents=True, exist_ok=True)
     results: list[Result] = []
