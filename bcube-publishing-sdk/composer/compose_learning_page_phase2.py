@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 """Archetype-driven Phase 2 learning-page composer.
 
-Routes A05/A06/A10/A12 by contract metadata. Supported pages never use the
-legacy Home Connection or generic Say-or-Tell shell.
+Supported A05/A06/A10/A12 contracts use named asset crops. Every other
+learning page uses the modern classroom-only rollout shell. The legacy
+Home Connection / generic Say-or-Tell page is never used here.
 """
 from __future__ import annotations
 import argparse, hashlib, importlib.util, json
 from pathlib import Path
-from typing import Any
 from PIL import Image, ImageDraw
 
 ROOT=Path(__file__).resolve().parents[2]
 BASE=ROOT/'bcube-publishing-sdk/composer/compose_learning_page_v2.py'
-FALLBACK=ROOT/'bcube-publishing-sdk/composer/compose_learning_page_character_v2.py'
 TEMPLATE=ROOT/'bcube-publishing-sdk/templates/learning-page-v2.json'
 SUPPORTED={'A05 Read/Look & Match','A05 Read / Look & Match','A06 Sort & Classify','A10 Speak, Listen & Respond','A12 Observe, Find & Name'}
 
@@ -97,7 +96,9 @@ def render_a06(canvas,d,c,t,b,source):
  panel(d,[180,650,2300,1880],outline=col['soft_purple'],width=3)
  for i,n in enumerate(items): r,x=divmod(i,3); card(canvas,d,b,col,[220+x*700,700+r*570,860+x*700,1210+r*570],a[n],number=i+1)
  cats=p2.get('categories') or ['Group 1','Group 2']; w=1980//max(2,min(3,len(cats)))
- for i,label in enumerate(cats[:3]): left=250+i*w; box=[left,1950,left+w-80,2990]; panel(d,box,fill='#F8F5FF',outline=col['purple']); b.fitted_text(d,str(label),[left+40,1980,box[2]-40,2100],max_size=46,min_size=32,colour=col['navy'],bold=True,max_lines=2); [d.line((left+100,2360+j*180,box[2]-100,2360+j*180),fill='#7C8799',width=3) for j in range(3)]
+ for i,label in enumerate(cats[:3]):
+  left=250+i*w; box=[left,1950,left+w-80,2990]; panel(d,box,fill='#F8F5FF',outline=col['purple']); b.fitted_text(d,str(label),[left+40,1980,box[2]-40,2100],max_size=46,min_size=32,colour=col['navy'],bold=True,max_lines=2)
+  for j in range(3): d.line((left+100,2360+j*180,box[2]-100,2360+j*180),fill='#7C8799',width=3)
  return {'type':'A06','items':items,'categories':cats}
 
 def render_a10(canvas,d,c,t,b,source):
@@ -118,27 +119,68 @@ def render_a05(canvas,d,c,t,b,source):
  col=t['colours']; p2=c['phase2']; a=crops(source,p2)
  if p2.get('main_words'):
   words=list(p2['main_words'])+list(p2.get('small_words',[])); pics=list(p2['main_picture_order'])+list(p2.get('small_picture_order',[])); panel(d,[180,650,2300,2990],outline=col['soft_purple']); h=2260//max(1,len(words))
-  for i,(w,n) in enumerate(zip(words,pics)): cy=700+i*h+h//2; b.fitted_text(d,w,[245,cy-h//3,700,cy+h//3],max_size=70,min_size=44,colour='#111',bold=True,align='left',max_lines=1); d.ellipse([730,cy-20,770,cy+20],fill='#FFF',outline=col['purple'],width=4); d.ellipse([1480,cy-20,1520,cy+20],fill='#FFF',outline=col['purple'],width=4); paste(canvas,a[n],[1560,cy-h//2+8,2180,cy+h//2-8],3)
+  for i,(w,n) in enumerate(zip(words,pics)):
+   cy=700+i*h+h//2; b.fitted_text(d,w,[245,cy-h//3,700,cy+h//3],max_size=70,min_size=44,colour='#111',bold=True,align='left',max_lines=1); d.ellipse([730,cy-20,770,cy+20],fill='#FFF',outline=col['purple'],width=4); d.ellipse([1480,cy-20,1520,cy+20],fill='#FFF',outline=col['purple'],width=4); paste(canvas,a[n],[1560,cy-h//2+8,2180,cy+h//2-8],3)
  else:
   items=names(p2,'items','choices','targets')[:8]; panel(d,[180,650,2300,2990],outline=col['soft_purple'])
   for i,n in enumerate(items): r,x=divmod(i,4); card(canvas,d,b,col,[220+x*520,710+r*1040,700+x*520,1660+r*1040],a[n],n,mark=True)
  return {'type':'A05'}
 
+def render_modern_rollout(canvas,d,c,t,b,source):
+ """Classroom-only modern shell for pages without a named Phase 2 manifest."""
+ col=t['colours']; activity=str(c.get('activity',{}).get('primary') or 'observe').casefold()
+ panel(d,[180,650,2300,2190],outline=col['soft_purple'],width=3); paste(canvas,source,[195,665,2285,2175],12)
+ response=[220,2260,2260,2990]; panel(d,response,fill='#FBFAFF',outline=col['purple'],width=3)
+ model=str(c.get('learning',{}).get('model_text') or '').strip()
+ if activity=='count':
+  b.fitted_text(d,'Count each group. Circle the correct number.',[290,2310,2190,2400],max_size=42,min_size=31,colour=col['navy'],bold=True,max_lines=2)
+  for i in range(1,7):
+   x=360+(i-1)*310; d.ellipse([x,2490,x+150,2640],fill='#FFF',outline=col['purple'],width=4); b.fitted_text(d,str(i),[x+15,2505,x+135,2625],max_size=52,min_size=38,colour=col['navy'],bold=True,max_lines=1)
+ elif activity in {'circle','compare','think','complete'}:
+  cue={'circle':'Circle the correct choice.','compare':'Show more, fewer, or the same.','think':'Choose the best answer.','complete':'Complete the missing part.'}[activity]
+  b.fitted_text(d,cue,[300,2320,2180,2415],max_size=44,min_size=32,colour=col['navy'],bold=True,max_lines=2)
+  for i in range(4): d.ellipse([430+i*440,2520,540+i*440,2630],fill='#FFF',outline=col['purple'],width=4)
+ elif activity in {'speak','listen','reflect'}:
+  cue=model or 'I can say: ______________________________'
+  b.fitted_text(d,cue,[320,2370,2160,2550],max_size=48,min_size=32,colour=col['navy'],bold=True,max_lines=2)
+  d.line((420,2740,2060,2740),fill='#64748B',width=4)
+ elif activity in {'draw','colour'}:
+  b.fitted_text(d,'My work',[360,2300,2120,2390],max_size=40,min_size=30,colour=col['navy'],bold=True,max_lines=1)
+  panel(d,[330,2420,2150,2910],fill='#FFF',outline='#9AA6B2',width=2)
+ elif activity=='trace':
+  b.fitted_text(d,'Trace, then try once.',[330,2310,2150,2400],max_size=42,min_size=31,colour=col['navy'],bold=True,max_lines=1)
+  for j in range(3): d.line((380,2520+j*150,2100,2520+j*150),fill='#94A3B8',width=3)
+ elif activity=='sequence':
+  b.fitted_text(d,'Put the pictures in order.',[330,2310,2150,2400],max_size=42,min_size=31,colour=col['navy'],bold=True,max_lines=1)
+  for i in range(4): panel(d,[300+i*470,2470,700+i*470,2870],outline=col['soft_purple'],width=3); b.fitted_text(d,str(i+1),[315+i*470,2485,385+i*470,2555],max_size=32,min_size=25,colour=col['navy'],bold=True,max_lines=1)
+ else:
+  cue=model or 'Point, choose, or tell your answer.'
+  b.fitted_text(d,cue,[320,2350,2160,2480],max_size=44,min_size=31,colour=col['navy'],bold=True,max_lines=2)
+  for i in range(4): d.ellipse([430+i*440,2580,540+i*440,2690],fill='#FFF',outline=col['purple'],width=4)
+ return {'type':'modern-rollout','activity':activity,'legacy_fallback_used':False}
+
+def save_page(c,t,b,canvas,activity,output,evidence_output,engine):
+ col=t['colours']; teacher_box=teacher(ImageDraw.Draw(canvas),c,t,b); ident=c['identity']; page=None
+ if ident['page_number_visible'] and ident['page_number']>0: page=b.fitted_text(ImageDraw.Draw(canvas),str(ident['page_number']),[2200,3270,2370,3390],max_size=46,min_size=36,colour=col['muted'],bold=True,max_lines=1)
+ output=Path(output); output.parent.mkdir(parents=True,exist_ok=True); canvas.save(output,'PNG',dpi=(t['canvas']['dpi'],t['canvas']['dpi']))
+ evidence={'engine':engine,'page_id':ident['page_id'],'artifact':str(output),'artifact_sha256':sha(output),'components':{'activity':activity,'teacher_cue':teacher_box,'parent_panel':None,'home_connection':None,'generic_say_or_tell':None,'page_number':page},'qa':{'parent_panel_removed':True,'home_connection_removed':True,'generic_say_or_tell_removed':True,'legacy_fallback_used':False,'task_specific_layout':True,'status':'REVIEW_CANDIDATE'}}
+ evidence_output=Path(evidence_output); evidence_output.parent.mkdir(parents=True,exist_ok=True); evidence_output.write_text(json.dumps(evidence,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
 def compose_phase2(contract_path,output,evidence_output):
  b=module('phase2_base',BASE); c=load(contract_path); t=load(TEMPLATE); p2=c['phase2']; arch=str(p2.get('archetype') or '')
  if arch not in SUPPORTED: raise ValueError(f'Unsupported Phase 2 archetype: {arch}')
  p2['parent_panel']=False; c.setdefault('guidance',{})['parent_extension']=''; spec=t['canvas']; col=t['colours']; canvas=Image.new('RGB',(spec['width'],spec['height']),col['background']); d=ImageDraw.Draw(canvas); header(canvas,d,c,t,b); source=Image.open(resolve(c['assets']['illustration_path'])).convert('RGBA')
- renderer=render_a05 if arch.startswith('A05') else render_a06 if arch.startswith('A06') else render_a10 if arch.startswith('A10') else render_a12; activity=renderer(canvas,d,c,t,b,source); teacher_box=teacher(d,c,t,b)
- ident=c['identity']; page=None
- if ident['page_number_visible'] and ident['page_number']>0: page=b.fitted_text(d,str(ident['page_number']),[2200,3270,2370,3390],max_size=46,min_size=36,colour=col['muted'],bold=True,max_lines=1)
- output=Path(output); output.parent.mkdir(parents=True,exist_ok=True); canvas.save(output,'PNG',dpi=(spec['dpi'],spec['dpi']))
- evidence={'engine':'BCube Publishing Engine Phase 2 Archetype Renderer','page_id':ident['page_id'],'archetype':arch,'artifact':str(output),'artifact_sha256':sha(output),'components':{'activity':activity,'teacher_cue':teacher_box,'parent_panel':None,'home_connection':None,'generic_say_or_tell':None,'page_number':page},'qa':{'parent_panel_removed':True,'home_connection_removed':True,'generic_say_or_tell_removed':True,'named_asset_crop_manifest_used':True,'task_specific_layout':True,'status':'REVIEW_CANDIDATE'}}
- evidence_output=Path(evidence_output); evidence_output.parent.mkdir(parents=True,exist_ok=True); evidence_output.write_text(json.dumps(evidence,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ renderer=render_a05 if arch.startswith('A05') else render_a06 if arch.startswith('A06') else render_a10 if arch.startswith('A10') else render_a12; activity=renderer(canvas,d,c,t,b,source)
+ save_page(c,t,b,canvas,activity,output,evidence_output,'BCube Publishing Engine Phase 2 Archetype Renderer')
+
+def compose_modern(contract_path,output,evidence_output):
+ b=module('phase2_base',BASE); c=load(contract_path); t=load(TEMPLATE); c.setdefault('guidance',{})['parent_extension']=''; spec=t['canvas']; col=t['colours']; canvas=Image.new('RGB',(spec['width'],spec['height']),col['background']); d=ImageDraw.Draw(canvas); header(canvas,d,c,t,b); source=Image.open(resolve(c['assets']['illustration_path'])).convert('RGBA'); activity=render_modern_rollout(canvas,d,c,t,b,source)
+ save_page(c,t,b,canvas,activity,output,evidence_output,'BCube Publishing Engine Modern Classroom Rollout')
 
 def compose(contract_path,output,evidence_output):
  c=load(contract_path); p2=c.get('phase2'); arch=str(p2.get('archetype') or '') if isinstance(p2,dict) else ''
  if arch in SUPPORTED: compose_phase2(contract_path,output,evidence_output)
- else: module('phase2_fallback',FALLBACK).compose(contract_path,output,evidence_output)
+ else: compose_modern(contract_path,output,evidence_output)
 
 def main():
  p=argparse.ArgumentParser(); p.add_argument('--contract',type=Path,required=True); p.add_argument('--output',type=Path,required=True); p.add_argument('--evidence-output',type=Path,required=True); a=p.parse_args(); compose(a.contract,a.output,a.evidence_output); return 0
