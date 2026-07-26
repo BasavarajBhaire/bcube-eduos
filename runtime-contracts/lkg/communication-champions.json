@@ -1,0 +1,94 @@
+{
+  "contract_version": "bcube-book-runtime-contract-v1",
+  "book": {
+    "title": "Communication Champions",
+    "slug": "communication-champions",
+    "prefix": "CC"
+  },
+  "level": "LKG",
+  "age": "4+",
+  "allow_fallback": false,
+  "pages": {
+    "CC-LKG-V4-P031": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P031",
+        "physical_page": 31,
+        "printed_page": 30,
+        "title": "Answer in a Sentence",
+        "page_type": "activity_page"
+      },
+      "learning": {
+        "objective": "Respond to questions using a complete short sentence.",
+        "instruction": "Look at each picture. Listen to the question. Answer in one complete sentence.",
+        "expected_response": "The child answers each question using one exact 3–8 word sentence.",
+        "model_text": "What do you see? I see a bus."
+      },
+      "activity": {
+        "archetype": "A10 Speak, Listen & Respond",
+        "mechanic": "question-answer-sentence-pairs",
+        "response_mode": "oral-complete-sentence",
+        "activity_count": 3
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P031.png",
+        "artwork_only": true,
+        "assets": [
+          "bus_scene",
+          "girl_drawing_scene",
+          "book_on_table_scene"
+        ],
+        "asset_crops": {
+          "bus_scene": [0.00, 0.00, 0.50, 0.50],
+          "girl_drawing_scene": [0.50, 0.00, 1.00, 0.50],
+          "book_on_table_scene": [0.00, 0.50, 0.50, 1.00]
+        }
+      },
+      "mechanics": {
+        "pairs": [
+          {
+            "asset": "bus_scene",
+            "question": "What do you see?",
+            "model_answer": "I see a bus.",
+            "response_type": "model-and-repeat"
+          },
+          {
+            "asset": "girl_drawing_scene",
+            "question": "What is she doing?",
+            "model_answer": "She is drawing.",
+            "response_type": "model-and-repeat"
+          },
+          {
+            "asset": "book_on_table_scene",
+            "question": "Where is the book?",
+            "sentence_starter": "It is ________.",
+            "accepted_answer": "It is on the table.",
+            "response_type": "picture-supported-sentence"
+          }
+        ],
+        "maximum_writing_lines": 0,
+        "oral_response_only": true
+      },
+      "guidance": {
+        "teacher_cue": "Model the first complete answer slowly. Ask the next question, pause, and invite the child to answer in one short sentence."
+      },
+      "layout": {
+        "template": "three-question-answer-pairs-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "validation": {
+        "allow_fallback": false,
+        "status": "READY",
+        "required_asset_count": 3,
+        "required_response_count": 3,
+        "blocking_reasons": []
+      },
+      "source_lineage": {
+        "source_prompt_id": "CC-LKG-V4-P031",
+        "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P031-answer-in-a-sentence.json",
+        "approved_page_direction": "Three question-answer pairs: bus, girl drawing, book on table. One compact sentence strip only."
+      }
+    }
+  }
+}
