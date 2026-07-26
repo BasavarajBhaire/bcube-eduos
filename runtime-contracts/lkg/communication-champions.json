@@ -20,48 +20,37 @@
       "learning": {
         "objective": "Respond to questions using a complete short sentence.",
         "instruction": "Look at each picture. Listen to the question. Answer in one complete sentence.",
-        "expected_response": "The child answers each question using one exact 3–8 word sentence.",
-        "model_text": "What do you see? I see a bus."
+        "expected_response": "The child answers both questions using complete short sentences.",
+        "model_text": "The boy is petting the dog."
       },
       "activity": {
         "archetype": "A10 Speak, Listen & Respond",
         "mechanic": "question-answer-sentence-pairs",
         "response_mode": "oral-complete-sentence",
-        "activity_count": 3
+        "activity_count": 2
       },
       "illustration": {
         "source_asset": "CC-LKG-V4-P031.png",
         "artwork_only": true,
-        "assets": [
-          "bus_scene",
-          "girl_drawing_scene",
-          "book_on_table_scene"
-        ],
+        "assets": ["boy_with_dog", "girl_with_cat"],
         "asset_crops": {
-          "bus_scene": [0.00, 0.00, 0.50, 0.50],
-          "girl_drawing_scene": [0.50, 0.00, 1.00, 0.50],
-          "book_on_table_scene": [0.00, 0.50, 0.50, 1.00]
+          "boy_with_dog": [0.00, 0.05, 0.50, 0.95],
+          "girl_with_cat": [0.50, 0.05, 1.00, 0.95]
         }
       },
       "mechanics": {
         "pairs": [
           {
-            "asset": "bus_scene",
-            "question": "What do you see?",
-            "model_answer": "I see a bus.",
+            "asset": "boy_with_dog",
+            "question": "What is the boy doing?",
+            "model_answer": "The boy is petting the dog.",
             "response_type": "model-and-repeat"
           },
           {
-            "asset": "girl_drawing_scene",
-            "question": "What is she doing?",
-            "model_answer": "She is drawing.",
-            "response_type": "model-and-repeat"
-          },
-          {
-            "asset": "book_on_table_scene",
-            "question": "Where is the book?",
-            "sentence_starter": "It is ________.",
-            "accepted_answer": "It is on the table.",
+            "asset": "girl_with_cat",
+            "question": "What is the girl doing?",
+            "sentence_starter": "The girl is ________ the cat.",
+            "accepted_answer": "The girl is feeding the cat.",
             "response_type": "picture-supported-sentence"
           }
         ],
@@ -69,10 +58,10 @@
         "oral_response_only": true
       },
       "guidance": {
-        "teacher_cue": "Model the first complete answer slowly. Ask the next question, pause, and invite the child to answer in one short sentence."
+        "teacher_cue": "Model the first sentence slowly. Ask the second question, pause, and invite the child to complete the sentence aloud."
       },
       "layout": {
-        "template": "three-question-answer-pairs-v1",
+        "template": "two-question-answer-pairs-v1",
         "parent_panel": false,
         "home_connection": false,
         "generic_response_panel": false
@@ -80,14 +69,14 @@
       "validation": {
         "allow_fallback": false,
         "status": "READY",
-        "required_asset_count": 3,
-        "required_response_count": 3,
+        "required_asset_count": 2,
+        "required_response_count": 2,
         "blocking_reasons": []
       },
       "source_lineage": {
         "source_prompt_id": "CC-LKG-V4-P031",
         "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P031-answer-in-a-sentence.json",
-        "approved_page_direction": "Three question-answer pairs: bus, girl drawing, book on table. One compact sentence strip only."
+        "approved_page_direction": "Two picture-supported oral sentence prompts matching the supplied illustration. No generic response box."
       }
     }
   }
