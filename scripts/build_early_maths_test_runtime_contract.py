@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC_FILE = ROOT / "scripts" / "rebuild_early_maths_lkg_illustration_contracts.py"
 REFINEMENT_FILES = [
     ROOT / "runtime-contracts" / "refinements" / "early-maths-lkg-wave1-p009-p019.json",
+    ROOT / "runtime-contracts" / "refinements" / "early-maths-lkg-wave2-p020-p028.json",
+    ROOT / "runtime-contracts" / "refinements" / "early-maths-lkg-wave3-p029-p044.json",
 ]
 OUTPUT = ROOT / "runtime-contracts" / "lkg" / "early-maths-adventures.json"
 
@@ -153,6 +155,7 @@ def deep_merge(target: dict[str, Any], overlay: dict[str, Any]) -> dict[str, Any
 
 
 def apply_refinements(pages: dict[str, dict[str, Any]]) -> None:
+    seen: set[str] = set()
     for path in REFINEMENT_FILES:
         if not path.is_file():
             raise FileNotFoundError(path)
@@ -160,6 +163,9 @@ def apply_refinements(pages: dict[str, dict[str, Any]]) -> None:
         for page_id, override in document.get("pages", {}).items():
             if page_id not in pages:
                 raise KeyError(f"Refinement references unknown page: {page_id}")
+            if page_id in seen:
+                raise KeyError(f"Duplicate refinement for page: {page_id}")
+            seen.add(page_id)
             page = pages[page_id]
             translated = {
                 "learning": {"instruction": override.get("instruction", page["learning"]["instruction"])},
