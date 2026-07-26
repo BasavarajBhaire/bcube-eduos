@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Build a complete test-ready Early Maths Adventures LKG runtime contract.
 
-This script uses the already committed page specification map in
-`rebuild_early_maths_lkg_illustration_contracts.py`. It is deterministic and
-requires no workbook at render time. The resulting contract is suitable for
-bulk visual testing of pages P008-P044.
+This script uses the committed page specification map and then applies committed
+page-specific refinement overlays. It is deterministic and requires no workbook
+at render time. The resulting contract is suitable for bulk visual testing of
+pages P008-P044.
 """
 from __future__ import annotations
 
+import copy
 import importlib.util
 import json
 from pathlib import Path
@@ -15,6 +16,9 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC_FILE = ROOT / "scripts" / "rebuild_early_maths_lkg_illustration_contracts.py"
+REFINEMENT_FILES = [
+    ROOT / "runtime-contracts" / "refinements" / "early-maths-lkg-wave1-p009-p019.json",
+]
 OUTPUT = ROOT / "runtime-contracts" / "lkg" / "early-maths-adventures.json"
 
 
@@ -82,7 +86,7 @@ def mechanics_payload(spec: dict[str, Any]) -> dict[str, Any]:
         payload["right"] = names[half:]
     elif "pair" in spec["layout"] or mechanic.startswith("compare-") or mechanic == "identify-equal-groups":
         payload["pairs"] = [names[i:i + 2] for i in range(0, len(names), 2)] if len(names) % 2 == 0 else [[n] for n in names]
-    elif mechanic in {"picture-addition-join-groups"}:
+    elif mechanic == "picture-addition-join-groups":
         payload["problems"] = [names[i:i + 2] for i in range(0, len(names), 2)]
     else:
         payload["rows"] = names
@@ -138,9 +142,41 @@ def build_page(number: int, spec: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def deep_merge(target: dict[str, Any], overlay: dict[str, Any]) -> dict[str, Any]:
+    result = copy.deepcopy(target)
+    for key, value in overlay.items():
+        if isinstance(value, dict) and isinstance(result.get(key), dict):
+            result[key] = deep_merge(result[key], value)
+        else:
+            result[key] = copy.deepcopy(value)
+    return result
+
+
+def apply_refinements(pages: dict[str, dict[str, Any]]) -> None:
+    for path in REFINEMENT_FILES:
+        if not path.is_file():
+            raise FileNotFoundError(path)
+        document = json.loads(path.read_text(encoding="utf-8"))
+        for page_id, override in document.get("pages", {}).items():
+            if page_id not in pages:
+                raise KeyError(f"Refinement references unknown page: {page_id}")
+            page = pages[page_id]
+            translated = {
+                "learning": {"instruction": override.get("instruction", page["learning"]["instruction"])},
+                "activity": {
+                    "render_kind": override["render_kind"],
+                    "mechanics": override["mechanics"],
+                },
+                "layout": {"template": override["layout"]},
+                "guidance": {"teacher_cue": override["teacher_cue"]},
+            }
+            pages[page_id] = deep_merge(page, translated)
+
+
 def main() -> int:
     specs = load_specs()
     pages = {f"EM-LKG-V4-P{n:03d}": build_page(n, specs[n]) for n in sorted(specs)}
+    apply_refinements(pages)
     contract = {
         "contract_version": "bcube-book-runtime-contract-v2-test",
         "book": {"title": "Early Maths Adventures", "slug": "early-maths-adventures", "prefix": "EM"},
