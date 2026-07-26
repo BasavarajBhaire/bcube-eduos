@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Render Early Maths P009-P021 from approved individual illustration assets.
+"""Render Early Maths P009-P021 from the approved committed asset archive.
 
-The source of truth is one PNG per named asset under:
-assets/illustrations/early-maths-adventures/lkg/curriculum-first/<PAGE_ID>/
+The source of truth is:
+assets/illustrations/early-maths-adventures/lkg/early-maths-approved-assets-p009-p021.zip
 
-The script validates exact filenames, assembles temporary crop-compatible sheets
-from the runtime contract, renders every page in the curriculum-first scope, and
-writes one evidence summary. Pages without illustration assets render directly.
+The archive contains one JPG per named asset under <PAGE_ID>/<ASSET_NAME>.jpg.
+The script validates exact filenames, assembles temporary crop-compatible sheets,
+renders the complete curriculum-first scope, and writes one evidence summary.
+Pages without illustration assets render deterministically.
 """
 from __future__ import annotations
 
@@ -15,14 +16,16 @@ import json
 import subprocess
 import sys
 import tempfile
+import zipfile
 from dataclasses import asdict, dataclass
+from io import BytesIO
 from pathlib import Path
 from typing import Any
 
-from PIL import Image
+from PIL import Image, ImageChops
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_ASSETS = ROOT / "assets" / "illustrations" / "early-maths-adventures" / "lkg" / "curriculum-first"
+DEFAULT_ARCHIVE = ROOT / "assets" / "illustrations" / "early-maths-adventures" / "lkg" / "early-maths-approved-assets-p009-p021.zip"
 CONTRACT = ROOT / "runtime-contracts" / "lkg" / "early-maths-adventures.json"
 BUILDER = ROOT / "scripts" / "build_early_maths_curriculum_first_runtime.py"
 COMPOSER = ROOT / "bcube-publishing-sdk" / "composer" / "compose_early_maths_curriculum_first.py"
@@ -67,35 +70,54 @@ def crop_box(spec: dict[str, Any], width: int, height: int) -> tuple[int, int, i
     return round(x * width), round(y * height), round((x + w) * width), round((y + h) * height)
 
 
-def trim(asset: Image.Image) -> Image.Image:
+def trim_white(asset: Image.Image) -> Image.Image:
     rgba = asset.convert("RGBA")
-    alpha = rgba.getchannel("A")
-    bbox = alpha.getbbox()
+    rgb = rgba.convert("RGB")
+    background = Image.new("RGB", rgb.size, (255, 255, 255))
+    diff = ImageChops.difference(rgb, background).convert("L")
+    diff = diff.point(lambda value: 255 if value > 12 else 0)
+    bbox = diff.getbbox()
     return rgba.crop(bbox) if bbox else rgba
 
 
-def assemble_sheet(page: dict[str, Any], page_dir: Path, output: Path) -> int:
+def archive_asset_names(archive: zipfile.ZipFile, page_id: str) -> set[str]:
+    prefix = f"{page_id}/"
+    return {Path(name).name for name in archive.namelist() if name.startswith(prefix) and not name.endswith("/")}
+
+
+def read_asset(archive: zipfile.ZipFile, page_id: str, asset_name: str) -> Image.Image:
+    for extension in (".jpg", ".jpeg", ".png", ".webp"):
+        member = f"{page_id}/{asset_name}{extension}"
+        try:
+            return trim_white(Image.open(BytesIO(archive.read(member))))
+        except KeyError:
+            continue
+    raise FileNotFoundError(f"Missing approved asset: {page_id}/{asset_name}")
+
+
+def assemble_sheet(page: dict[str, Any], archive: zipfile.ZipFile, page_id: str, output: Path) -> int:
     assets = list(page["illustration"].get("assets", []))
     crops = page["illustration"].get("asset_crops", {})
     if set(assets) != set(crops):
         raise ValueError("Runtime asset names and crop names differ")
 
-    expected = {f"{name}.png" for name in assets}
-    present = {p.name for p in page_dir.glob("*.png")}
-    missing = sorted(expected - present)
-    extras = sorted(present - expected)
+    expected_stems = set(assets)
+    present_names = archive_asset_names(archive, page_id)
+    present_stems = {Path(name).stem for name in present_names}
+    missing = sorted(expected_stems - present_stems)
+    extras = sorted(present_stems - expected_stems)
     if missing:
-        raise FileNotFoundError(f"Missing approved assets: {missing}")
+        raise FileNotFoundError(f"Missing approved assets for {page_id}: {missing}")
     if extras:
-        raise ValueError(f"Unexpected PNG assets in {page_dir}: {extras}")
+        raise ValueError(f"Unexpected approved assets for {page_id}: {extras}")
 
     size = 2400
     sheet = Image.new("RGBA", (size, size), (255, 255, 255, 255))
     for name in assets:
-        source = trim(Image.open(page_dir / f"{name}.png"))
+        source = read_asset(archive, page_id, name)
         left, top, right, bottom = crop_box(crops[name], size, size)
         cell_w = right - left; cell_h = bottom - top
-        inset = max(20, round(min(cell_w, cell_h) * 0.06))
+        inset = max(16, round(min(cell_w, cell_h) * 0.035))
         fit_w = max(1, cell_w - 2 * inset); fit_h = max(1, cell_h - 2 * inset)
         scale = min(fit_w / source.width, fit_h / source.height)
         resized = source.resize((max(1, round(source.width * scale)), max(1, round(source.height * scale))), Image.Resampling.LANCZOS)
@@ -108,9 +130,9 @@ def assemble_sheet(page: dict[str, Any], page_dir: Path, output: Path) -> int:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Render Early Maths curriculum-first pages from approved individual assets")
+    parser = argparse.ArgumentParser(description="Render Early Maths from the approved individual-asset archive")
     parser.add_argument("--logo", type=Path, required=True)
-    parser.add_argument("--assets-dir", type=Path, default=DEFAULT_ASSETS)
+    parser.add_argument("--asset-archive", type=Path, default=DEFAULT_ARCHIVE)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--evidence-dir", type=Path, required=True)
     parser.add_argument("--pages", default="all", help="all or comma-separated P009,P010,...")
@@ -118,13 +140,13 @@ def main() -> int:
     args = parser.parse_args()
 
     logo = args.logo.expanduser().resolve()
-    assets_dir = args.assets_dir.expanduser().resolve()
+    archive_path = args.asset_archive.expanduser().resolve()
     output_dir = args.output_dir.expanduser().resolve()
     evidence_dir = args.evidence_dir.expanduser().resolve()
     if not logo.is_file():
         raise SystemExit(f"Logo not found: {logo}")
-    if not assets_dir.is_dir():
-        raise SystemExit(f"Approved assets directory not found: {assets_dir}")
+    if not archive_path.is_file():
+        raise SystemExit(f"Approved asset archive not found: {archive_path}")
 
     selected = parse_pages(args.pages)
     subprocess.run([sys.executable, str(BUILDER)], cwd=ROOT, check=True)
@@ -133,7 +155,7 @@ def main() -> int:
     evidence_dir.mkdir(parents=True, exist_ok=True)
     results: list[Result] = []
 
-    with tempfile.TemporaryDirectory(prefix="bcube-approved-assets-") as temp_name:
+    with tempfile.TemporaryDirectory(prefix="bcube-approved-assets-") as temp_name, zipfile.ZipFile(archive_path) as archive:
         temp = Path(temp_name)
         blank = temp / "blank.png"
         Image.new("RGB", (1200, 1200), "white").save(blank)
@@ -143,11 +165,8 @@ def main() -> int:
                 page = contract["pages"][page_id]
                 asset_names = list(page.get("illustration", {}).get("assets", []))
                 if asset_names:
-                    page_dir = assets_dir / page_id
-                    if not page_dir.is_dir():
-                        raise FileNotFoundError(f"Approved page asset directory not found: {page_dir}")
                     source = temp / f"{page_id}.png"
-                    asset_count = assemble_sheet(page, page_dir, source)
+                    asset_count = assemble_sheet(page, archive, page_id, source)
                 else:
                     source = blank
                     asset_count = 0
@@ -174,12 +193,12 @@ def main() -> int:
                     break
 
     summary = {
-        "engine": "BCube approved individual asset renderer",
+        "engine": "BCube approved individual asset archive renderer",
         "scope": selected,
         "generated": sum(r.status == "GENERATED" for r in results),
         "failed": sum(r.status == "FAILED" for r in results),
-        "assets_root": str(assets_dir),
-        "policy": "Exact committed individual assets; no AI generation; no generic fallback.",
+        "asset_archive": str(archive_path),
+        "policy": "Exact committed approved assets; no image API; no generic fallback.",
         "results": [asdict(r) for r in results],
     }
     summary_path = evidence_dir / "approved-assets-render-summary.json"
