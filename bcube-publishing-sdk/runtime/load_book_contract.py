@@ -69,16 +69,23 @@ def validate_page_contract(page_id: str, page: dict[str, Any]) -> None:
     _require(bool(activity.get("render_kind") or page.get("mechanics")), f"{page_id}: render kind or V1 mechanics required")
 
     illustration = page["illustration"]
-    _require(bool(illustration.get("source_asset")), f"{page_id}: source asset required")
-    if "artwork_only" in illustration:
-        _require(illustration.get("artwork_only") is True, f"{page_id}: artwork_only must be true")
+    requires_art = bool(illustration.get("requires_generated_art", True))
     assets = illustration.get("assets")
     crops = illustration.get("asset_crops")
-    _require(isinstance(assets, list) and assets, f"{page_id}: named assets required")
-    _require(isinstance(crops, dict) and crops, f"{page_id}: named crop manifest required")
-    _require(set(assets) == set(crops), f"{page_id}: assets and crop names must match exactly")
-    for name, crop in crops.items():
-        _require(_valid_crop(crop), f"{page_id}: crop {name!r} is invalid")
+
+    if requires_art:
+        _require(bool(illustration.get("source_asset")), f"{page_id}: source asset required")
+        if "artwork_only" in illustration:
+            _require(illustration.get("artwork_only") is True, f"{page_id}: artwork_only must be true")
+        _require(isinstance(assets, list) and assets, f"{page_id}: named assets required")
+        _require(isinstance(crops, dict) and crops, f"{page_id}: named crop manifest required")
+        _require(set(assets) == set(crops), f"{page_id}: assets and crop names must match exactly")
+        for name, crop in crops.items():
+            _require(_valid_crop(crop), f"{page_id}: crop {name!r} is invalid")
+    else:
+        _require(illustration.get("source_asset") in (None, "DETERMINISTIC_NO_ART"), f"{page_id}: deterministic page must not require external artwork")
+        _require(isinstance(assets, list) and not assets, f"{page_id}: deterministic page assets must be empty")
+        _require(isinstance(crops, dict) and not crops, f"{page_id}: deterministic page crop manifest must be empty")
 
     if "mechanics" in activity:
         _require(isinstance(activity["mechanics"], dict) and activity["mechanics"], f"{page_id}: activity.mechanics required")
