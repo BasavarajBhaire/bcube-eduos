@@ -56,12 +56,24 @@ class Phase2RolloutTests(unittest.TestCase):
         self.assertNotIn("PILOT_IDS", self.composer)
         self.assertNotIn("page_id not in renderers", self.composer)
 
+    def test_every_other_learning_page_uses_modern_rollout_not_legacy(self):
+        self.assertIn("def compose_modern", self.composer)
+        self.assertIn("render_modern_rollout", self.composer)
+        self.assertIn("else: compose_modern", self.composer)
+        self.assertNotIn("phase2_fallback", self.composer)
+        self.assertNotIn("compose_learning_page_character_v2.py", self.composer)
+        self.assertIn("'legacy_fallback_used':False", self.composer)
+
     def test_legacy_panels_are_explicitly_removed(self):
         self.assertIn("'parent_panel':None", self.composer)
         self.assertIn("'home_connection':None", self.composer)
         self.assertIn("'generic_say_or_tell':None", self.composer)
         self.assertIn("'home_connection_removed':True", self.composer)
         self.assertIn("'generic_say_or_tell_removed':True", self.composer)
+
+    def test_modern_rollout_has_count_response(self):
+        self.assertIn("if activity=='count'", self.composer)
+        self.assertIn("Count each group. Circle the correct number.", self.composer)
 
     def test_pipeline_uses_phase2_composer(self):
         self.assertIn("compose_learning_page_phase2.py", PIPELINE.read_text(encoding="utf-8"))
