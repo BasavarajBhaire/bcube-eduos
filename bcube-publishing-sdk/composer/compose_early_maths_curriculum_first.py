@@ -13,7 +13,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[2]
 COMMON_PATH = ROOT / "bcube-publishing-sdk/composer/compose_runtime_learning_page.py"
@@ -43,10 +43,22 @@ def text(base, draw, template, value, box, *, size=38, bold=True, align="center"
 
 
 def tight_asset(asset: Image.Image) -> Image.Image:
-    """Remove transparent whitespace before fitting an individual deterministic asset."""
+    """Trim transparent or opaque near-white sheet padding before placement."""
     rgba = asset.convert("RGBA")
-    bbox = rgba.getchannel("A").getbbox()
-    return rgba.crop(bbox) if bbox else rgba
+    alpha = rgba.getchannel("A")
+    rgb = rgba.convert("RGB")
+    white = Image.new("RGB", rgb.size, (255, 255, 255))
+    difference = ImageChops.difference(rgb, white).convert("L")
+    ink = difference.point(lambda value: 255 if value > 8 else 0)
+    visible = ImageChops.multiply(alpha, ink)
+    bbox = visible.getbbox() or alpha.getbbox()
+    if not bbox:
+        return rgba
+    left, top, right, bottom = bbox
+    margin = max(4, round(max(right - left, bottom - top) * 0.035))
+    left = max(0, left - margin); top = max(0, top - margin)
+    right = min(rgba.width, right + margin); bottom = min(rgba.height, bottom + margin)
+    return rgba.crop((left, top, right, bottom))
 
 
 def paste_asset(common, canvas, asset: Image.Image, box, *, inset=0):
@@ -69,12 +81,9 @@ def row_box(common, draw, y0, y1):
 
 
 def visual_model(common, canvas, draw, base, template, page, render_kind, assets):
-    """Render a child-facing visual example instead of raw runtime JSON."""
     common.panel(draw, [180, 630, 2300, 780], fill="#F4EEFF", outline="#7E57C2", width=3)
     text(base, draw, template, "MODEL", [210, 655, 450, 750], size=30, lines=1)
-
     if render_kind == "curriculum-count-match":
-        # External example: three stars matched to numeral 3.
         for x in (660, 770, 880):
             draw.regular_polygon((x, 705, 36), 5, rotation=-90, fill="#F5C84C", outline="#35405A")
         draw.ellipse([1040, 680, 1090, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
@@ -93,20 +102,15 @@ def visual_model(common, canvas, draw, base, template, page, render_kind, assets
         draw.arc([x0, y - 95, x0 + step, y + 5], 180, 360, fill="#E25454", width=5)
         text(base, draw, template, "Land on 1", [1830, 665, 2220, 750], size=30, lines=1)
     elif render_kind == "curriculum-shape-match":
-        # External model so none of the four independent tasks is pre-solved.
         draw.ellipse([670, 665, 790, 745], fill="#F5A35C", outline="#35405A", width=5)
         draw.ellipse([940, 680, 990, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
         draw.line([990, 705, 1460, 705], fill="#7E57C2", width=5)
         draw.ellipse([1460, 680, 1510, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
-        # Egg-shaped familiar object.
         draw.ellipse([1660, 645, 1790, 765], fill="#FFF7D6", outline="#35405A", width=5)
         text(base, draw, template, "oval", [1840, 665, 2180, 745], size=28, bold=False, lines=1)
     else:
         model = page.get("learning", {}).get("model_text")
-        if isinstance(model, dict):
-            short = model.get("story") or model.get("prompt") or "Look at the completed example."
-        else:
-            short = "Look at the completed example."
+        short = model.get("story") or model.get("prompt") or "Look at the completed example." if isinstance(model, dict) else "Look at the completed example."
         text(base, draw, template, short, [520, 655, 2220, 750], size=28, bold=False, align="left", lines=2)
 
 
@@ -117,7 +121,7 @@ def render_count_match(canvas, draw, page, assets, base, template, common):
     for i, (asset_name, _) in enumerate(pairs):
         top = y0 + i * (row_h + gap); bottom = top + row_h
         common.panel(draw, [190, top, 1120, bottom], outline="#7E57C2", width=3)
-        paste_asset(common, canvas, assets[asset_name], [245, top + 35, 980, bottom - 35])
+        paste_asset(common, canvas, assets[asset_name], [220, top + 20, 1000, bottom - 20])
         common.circle(draw, base, template, 1055, (top + bottom) // 2)
         common.panel(draw, [1510, top + 35, 2270, bottom - 35], outline="#1768B3", width=3)
         common.circle(draw, base, template, 1560, (top + bottom) // 2)
@@ -212,34 +216,33 @@ def render_number_order(canvas, draw, page, base, template, common):
             cx = 500 + i * gap
             draw.ellipse([cx - 75, y + 90, cx + 75, y + 240], fill="#F4EEFF", outline="#7E57C2", width=4)
             text(base, draw, template, value, [cx - 60, y + 105, cx + 60, y + 225], size=46, lines=1)
-        gap2 = 1500 // len(row["answer"])
-        for i in range(len(row["answer"])):
+        slots = row["answer"]; gap2 = 1500 // len(slots)
+        for i in range(len(slots)):
             x0 = 390 + i * gap2
             common.panel(draw, [x0, y + 350, x0 + 250, y + 560], fill="#FFF9DE", outline="#D9A91B", width=4, radius=20)
         y += 720
 
 
 def render_number_line(canvas, draw, page, assets, base, template, common):
-    y = 815
+    y = 820
     for row in page["activity"]["mechanics"]["rows"]:
-        row_box(common, draw, y, y + 640)
-        # Deliberate three-zone layout: character, line, choices.
-        paste_asset(common, canvas, assets[row["asset"]], [220, y + 125, 570, y + 490])
+        row_box(common, draw, y, y + 650)
+        paste_asset(common, canvas, assets[row["asset"]], [220, y + 145, 560, y + 500])
         start_n, end_n = row["range"]; count = end_n - start_n
-        x0, x1, line_y = 650, 1770, y + 330
-        draw.line([x0, line_y, x1, line_y], fill="#5B3F9A", width=8)
+        x0, x1, line_y = 650, 1740, y + 325
+        draw.line([x0, line_y, x1, line_y], fill="#5B3F9A", width=7)
         step = (x1 - x0) / count
         for n in range(start_n, end_n + 1):
             x = x0 + (n - start_n) * step
-            draw.line([x, line_y - 28, x, line_y + 28], fill="#5B3F9A", width=5)
-            text(base, draw, template, n, [x - 42, line_y + 38, x + 42, line_y + 105], size=30, lines=1)
-        draw.ellipse([x0 - 15, line_y - 15, x0 + 15, line_y + 15], fill="#E25454")
+            draw.line([x, line_y - 25, x, line_y + 25], fill="#5B3F9A", width=5)
+            text(base, draw, template, n, [x - 45, line_y + 38, x + 45, line_y + 110], size=30, lines=1)
+        draw.ellipse([x0 - 16, line_y - 16, x0 + 16, line_y + 16], fill="#E25454", outline="#FFFFFF", width=3)
         for j in range(row["jumps"]):
             a = x0 + j * step; b = x0 + (j + 1) * step
-            draw.arc([a, line_y - 155, b, line_y + 10], 180, 360, fill="#E25454", width=7)
-        common.panel(draw, [1840, y + 95, 2260, y + 550], fill="#FFFDF7", outline="#D9A91B", width=3, radius=22)
-        text(base, draw, template, "Where do you land?", [1870, y + 115, 2230, y + 205], size=25, lines=2)
-        answer_choices(draw, base, template, row["choices"], [1855, y + 245, 2245, y + 500], radius=48)
+            draw.arc([a, line_y - 150, b, line_y + 15], 180, 360, fill="#E25454", width=6)
+        common.panel(draw, [1840, y + 85, 2260, y + 570], fill="#FFFDF7", outline="#D9A91B", width=3, radius=22)
+        text(base, draw, template, "Where do you land?", [1870, y + 110, 2230, y + 205], size=27, lines=2)
+        answer_choices(draw, base, template, row["choices"], [1855, y + 260, 2245, y + 520], radius=48)
         y += 710
 
 
@@ -271,12 +274,12 @@ def render_shape_match(canvas, draw, page, assets, base, template, common):
     for i, name in enumerate(m["left"]):
         top = y0 + i * (row_h + gap); bottom = top + row_h
         common.panel(draw, [190, top, 1120, bottom], outline="#7E57C2", width=3)
-        paste_asset(common, canvas, assets[name], [300, top + 55, 930, bottom - 55])
+        paste_asset(common, canvas, assets[name], [280, top + 45, 940, bottom - 45])
         common.circle(draw, base, template, 1055, (top + bottom) // 2)
         right_name = m["right"][i]
         common.panel(draw, [1510, top + 35, 2270, bottom - 35], outline="#1768B3", width=3)
         common.circle(draw, base, template, 1560, (top + bottom) // 2)
-        paste_asset(common, canvas, assets[right_name], [1640, top + 60, 2180, bottom - 60])
+        paste_asset(common, canvas, assets[right_name], [1640, top + 50, 2160, bottom - 50])
 
 
 RENDERERS = {
@@ -329,8 +332,8 @@ def main() -> int:
             raise FileNotFoundError(f"Illustration required for {args.page_id}")
         source = Image.open(args.illustration).convert("RGBA")
         assets = common.crop_assets(source, page["illustration"]["asset_crops"])
-
     visual_model(common, canvas, draw, base, template, page, render_kind, assets)
+
     if render_kind in {"curriculum-before-after", "curriculum-number-order", "curriculum-numeral-comparison"}:
         renderer(canvas, draw, page, base, template, common)
     else:
@@ -347,13 +350,7 @@ def main() -> int:
         "render_kind": render_kind,
         "artifact": str(args.output),
         "artifact_sha256": hashlib.sha256(args.output.read_bytes()).hexdigest(),
-        "qa": {
-            "curriculum_first": True,
-            "fallback_used": False,
-            "raw_model_json_rendered": False,
-            "transparent_asset_whitespace_trimmed": True,
-            "status": "TEST_CANDIDATE",
-        },
+        "qa": {"curriculum_first": True, "fallback_used": False, "raw_model_json_rendered": False, "near_white_sheet_padding_trimmed": True, "status": "TEST_CANDIDATE"},
     }
     args.evidence_output.parent.mkdir(parents=True, exist_ok=True)
     args.evidence_output.write_text(json.dumps(evidence, indent=2) + "\n", encoding="utf-8")
