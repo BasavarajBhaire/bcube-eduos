@@ -1,0 +1,87 @@
+{
+  "contract_version": "bcube-book-runtime-contract-v1",
+  "book": {
+    "title": "Early Maths Adventures",
+    "slug": "early-maths-adventures",
+    "prefix": "EM"
+  },
+  "level": "LKG",
+  "age": "4+",
+  "allow_fallback": false,
+  "pages": {
+    "EM-LKG-V4-P011": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P011",
+        "physical_page": 11,
+        "printed_page": 10,
+        "title": "Count & Circle",
+        "page_type": "worksheet"
+      },
+      "learning": {
+        "objective": "Identify the correct quantity.",
+        "instruction": "Count each group. Circle the correct number.",
+        "expected_response": "The child counts each group and circles the matching numeral.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A03 Count & Select",
+        "mechanic": "count-and-circle-number",
+        "response_mode": "circle-number",
+        "activity_count": 6
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P011.png",
+        "artwork_only": true,
+        "assets": [
+          "apple_group",
+          "star_group",
+          "balloon_group",
+          "fish_group",
+          "flower_group",
+          "leaf_group"
+        ],
+        "asset_crops": {
+          "apple_group": [0.00, 0.00, 0.33, 0.50],
+          "star_group": [0.33, 0.00, 0.66, 0.50],
+          "balloon_group": [0.66, 0.00, 1.00, 0.50],
+          "fish_group": [0.00, 0.50, 0.33, 1.00],
+          "flower_group": [0.33, 0.50, 0.66, 1.00],
+          "leaf_group": [0.66, 0.50, 1.00, 1.00]
+        }
+      },
+      "mechanics": {
+        "groups": [
+          {"asset": "apple_group", "quantity": 1, "choices": [1, 2, 3]},
+          {"asset": "star_group", "quantity": 2, "choices": [1, 2, 3]},
+          {"asset": "balloon_group", "quantity": 3, "choices": [2, 3, 4]},
+          {"asset": "fish_group", "quantity": 4, "choices": [3, 4, 5]},
+          {"asset": "flower_group", "quantity": 5, "choices": [4, 5, 6]},
+          {"asset": "leaf_group", "quantity": 6, "choices": [5, 6, 7]}
+        ],
+        "show_correct_answer": false,
+        "circle_target": "numeral"
+      },
+      "guidance": {
+        "teacher_cue": "Touch each object once while counting aloud. Then ask the child to circle the matching numeral without giving the answer."
+      },
+      "layout": {
+        "template": "count-circle-six-groups-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "validation": {
+        "allow_fallback": false,
+        "status": "READY",
+        "required_asset_count": 6,
+        "required_response_count": 6,
+        "blocking_reasons": []
+      },
+      "source_lineage": {
+        "source_prompt_id": "EM-LKG-V4-P011",
+        "source_file": "production-prompts/early-maths-adventures/lkg/v4/pages/EM-LKG-V4-P011-count-and-circle.json",
+        "approved_page_direction": "Six count groups with one numeral-choice row per group. No generic response box or Home Connection."
+      }
+    }
+  }
+}
