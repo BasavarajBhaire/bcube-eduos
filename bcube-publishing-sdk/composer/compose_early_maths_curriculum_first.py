@@ -42,13 +42,24 @@ def text(base, draw, template, value, box, *, size=38, bold=True, align="center"
     base.fitted_text(draw, str(value), box, max_size=size, min_size=max(20, size - 14), colour=colour or template["colours"]["navy"], bold=bold, align=align, max_lines=lines)
 
 
-def answer_choices(draw, base, template, values, box):
+def tight_asset(asset: Image.Image) -> Image.Image:
+    """Remove transparent whitespace before fitting an individual deterministic asset."""
+    rgba = asset.convert("RGBA")
+    bbox = rgba.getchannel("A").getbbox()
+    return rgba.crop(bbox) if bbox else rgba
+
+
+def paste_asset(common, canvas, asset: Image.Image, box, *, inset=0):
+    common.paste_fit(canvas, tight_asset(asset), box, inset=inset)
+
+
+def answer_choices(draw, base, template, values, box, *, radius=52):
     x0, y0, x1, y1 = box
     gap = (x1 - x0) // (len(values) + 1)
     for i, value in enumerate(values, 1):
         cx = x0 + gap * i; cy = (y0 + y1) // 2
-        draw.ellipse([cx - 48, cy - 48, cx + 48, cy + 48], fill="#FFFFFF", outline=template["colours"]["purple"], width=4)
-        text(base, draw, template, value, [cx - 38, cy - 38, cx + 38, cy + 38], size=36, lines=1)
+        draw.ellipse([cx - radius, cy - radius, cx + radius, cy + radius], fill="#FFFFFF", outline=template["colours"]["purple"], width=5)
+        text(base, draw, template, value, [cx - radius + 8, cy - radius + 8, cx + radius - 8, cy + radius - 8], size=38, lines=1)
 
 
 def row_box(common, draw, y0, y1):
@@ -57,58 +68,91 @@ def row_box(common, draw, y0, y1):
     return box
 
 
-def model_strip(common, draw, base, template, page):
-    model = page.get("learning", {}).get("model_text")
-    if not model:
-        return
-    common.panel(draw, [180, 630, 2300, 760], fill="#F4EEFF", outline="#7E57C2", width=3)
-    text(base, draw, template, "MODEL", [210, 650, 470, 735], size=30, lines=1)
-    text(base, draw, template, json.dumps(model, ensure_ascii=False).replace('"', ''), [500, 642, 2260, 742], size=28, bold=False, align="left", lines=2)
+def visual_model(common, canvas, draw, base, template, page, render_kind, assets):
+    """Render a child-facing visual example instead of raw runtime JSON."""
+    common.panel(draw, [180, 630, 2300, 780], fill="#F4EEFF", outline="#7E57C2", width=3)
+    text(base, draw, template, "MODEL", [210, 655, 450, 750], size=30, lines=1)
+
+    if render_kind == "curriculum-count-match":
+        # External example: three stars matched to numeral 3.
+        for x in (660, 770, 880):
+            draw.regular_polygon((x, 705, 36), 5, rotation=-90, fill="#F5C84C", outline="#35405A")
+        draw.ellipse([1040, 680, 1090, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
+        draw.line([1090, 705, 1570, 705], fill="#7E57C2", width=5)
+        draw.ellipse([1570, 680, 1620, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
+        text(base, draw, template, "3", [1690, 655, 1880, 755], size=62, lines=1)
+    elif render_kind == "curriculum-number-line":
+        x0, x1, y = 650, 1740, 710
+        draw.line([x0, y, x1, y], fill="#5B3F9A", width=6)
+        step = (x1 - x0) / 5
+        for n in range(6):
+            x = x0 + n * step
+            draw.line([x, y - 18, x, y + 18], fill="#5B3F9A", width=4)
+            text(base, draw, template, n, [x - 35, y + 22, x + 35, y + 70], size=24, lines=1)
+        draw.ellipse([x0 - 13, y - 13, x0 + 13, y + 13], fill="#E25454")
+        draw.arc([x0, y - 95, x0 + step, y + 5], 180, 360, fill="#E25454", width=5)
+        text(base, draw, template, "Land on 1", [1830, 665, 2220, 750], size=30, lines=1)
+    elif render_kind == "curriculum-shape-match":
+        # External model so none of the four independent tasks is pre-solved.
+        draw.ellipse([670, 665, 790, 745], fill="#F5A35C", outline="#35405A", width=5)
+        draw.ellipse([940, 680, 990, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
+        draw.line([990, 705, 1460, 705], fill="#7E57C2", width=5)
+        draw.ellipse([1460, 680, 1510, 730], fill="#FFFFFF", outline="#7E57C2", width=4)
+        # Egg-shaped familiar object.
+        draw.ellipse([1660, 645, 1790, 765], fill="#FFF7D6", outline="#35405A", width=5)
+        text(base, draw, template, "oval", [1840, 665, 2180, 745], size=28, bold=False, lines=1)
+    else:
+        model = page.get("learning", {}).get("model_text")
+        if isinstance(model, dict):
+            short = model.get("story") or model.get("prompt") or "Look at the completed example."
+        else:
+            short = "Look at the completed example."
+        text(base, draw, template, short, [520, 655, 2220, 750], size=28, bold=False, align="left", lines=2)
 
 
 def render_count_match(canvas, draw, page, assets, base, template, common):
     m = page["activity"]["mechanics"]
     pairs = m["correct_pairs"]; numerals = m["numerals"]
-    y0, row_h, gap = 800, 500, 35
+    y0, row_h, gap = 815, 475, 30
     for i, (asset_name, _) in enumerate(pairs):
         top = y0 + i * (row_h + gap); bottom = top + row_h
-        common.panel(draw, [190, top, 1050, bottom], outline="#7E57C2", width=3)
-        common.paste_fit(canvas, assets[asset_name], [220, top + 20, 930, bottom - 20])
-        common.circle(draw, base, template, 995, (top + bottom) // 2)
-        common.panel(draw, [1470, top, 2270, bottom], outline="#1768B3", width=3)
-        common.circle(draw, base, template, 1520, (top + bottom) // 2)
-        text(base, draw, template, numerals[i], [1600, top + 70, 2180, bottom - 70], size=92, lines=1)
+        common.panel(draw, [190, top, 1120, bottom], outline="#7E57C2", width=3)
+        paste_asset(common, canvas, assets[asset_name], [245, top + 35, 980, bottom - 35])
+        common.circle(draw, base, template, 1055, (top + bottom) // 2)
+        common.panel(draw, [1510, top + 35, 2270, bottom - 35], outline="#1768B3", width=3)
+        common.circle(draw, base, template, 1560, (top + bottom) // 2)
+        text(base, draw, template, numerals[i], [1660, top + 80, 2180, bottom - 80], size=96, lines=1)
 
 
 def render_count_circle(canvas, draw, page, assets, base, template, common):
     cards = page["activity"]["mechanics"]["cards"]
-    boxes = common.grid_boxes(len(cards), top=800, bottom=2990)
+    boxes = common.grid_boxes(len(cards), top=815, bottom=2990)
     for card, box in zip(cards, boxes):
         common.panel(draw, box, outline="#7E57C2", width=3)
-        common.paste_fit(canvas, assets[card["asset"]], [box[0] + 20, box[1] + 20, box[2] - 20, box[3] - 150])
+        paste_asset(common, canvas, assets[card["asset"]], [box[0] + 35, box[1] + 30, box[2] - 35, box[3] - 155])
         answer_choices(draw, base, template, card["choices"], [box[0] + 35, box[3] - 145, box[2] - 35, box[3] - 15])
 
 
 def render_quantity_comparison(canvas, draw, page, assets, base, template, common):
     rows = page["activity"]["mechanics"]["rows"]
-    y = 800
+    y = 815
     for row in rows:
-        box = row_box(common, draw, y, y + 660)
+        row_box(common, draw, y, y + 650)
         text(base, draw, template, row["prompt"], [250, y + 20, 2230, y + 100], size=32, lines=1)
-        common.paste_fit(canvas, assets[row["left"]], [230, y + 110, 1040, y + 590])
-        common.paste_fit(canvas, assets[row["right"]], [1440, y + 110, 2250, y + 590])
-        y += 720
+        paste_asset(common, canvas, assets[row["left"]], [230, y + 110, 1040, y + 600])
+        paste_asset(common, canvas, assets[row["right"]], [1440, y + 110, 2250, y + 600])
+        y += 710
 
 
 def render_equal_groups(canvas, draw, page, assets, base, template, common):
     rows = page["activity"]["mechanics"]["rows"]
-    y = 800
+    y = 815
     for row in rows:
-        row_box(common, draw, y, y + 650)
-        common.paste_fit(canvas, assets[row["left"]], [220, y + 30, 980, y + 480])
-        common.paste_fit(canvas, assets[row["right"]], [1040, y + 30, 1800, y + 480])
-        answer_choices(draw, base, template, ["YES", "NO"], [1790, y + 120, 2280, y + 530])
-        y += 720
+        row_box(common, draw, y, y + 640)
+        paste_asset(common, canvas, assets[row["left"]], [220, y + 30, 980, y + 500])
+        paste_asset(common, canvas, assets[row["right"]], [1040, y + 30, 1800, y + 500])
+        answer_choices(draw, base, template, ["YES", "NO"], [1790, y + 120, 2280, y + 530], radius=56)
+        y += 710
 
 
 def render_missing_number(canvas, draw, page, assets, base, template, common):
@@ -116,8 +160,6 @@ def render_missing_number(canvas, draw, page, assets, base, template, common):
     y = 850
     for row in rows:
         row_box(common, draw, y, y + 590)
-        if row.get("asset") in assets:
-            common.paste_fit(canvas, assets[row["asset"]], [220, y + 25, 2260, y + 565])
         seq = row["sequence"]; step = 1740 // len(seq)
         for i, value in enumerate(seq):
             x0 = 360 + i * step
@@ -129,25 +171,25 @@ def render_missing_number(canvas, draw, page, assets, base, template, common):
 
 
 def render_addition(canvas, draw, page, assets, base, template, common):
-    y = 800
+    y = 815
     for p in page["activity"]["mechanics"]["problems"]:
-        row_box(common, draw, y, y + 650)
-        common.paste_fit(canvas, assets[p["left"]], [220, y + 40, 820, y + 450])
+        row_box(common, draw, y, y + 640)
+        paste_asset(common, canvas, assets[p["left"]], [220, y + 40, 820, y + 480])
         text(base, draw, template, "+", [830, y + 150, 980, y + 350], size=78, lines=1)
-        common.paste_fit(canvas, assets[p["right"]], [990, y + 40, 1590, y + 450])
+        paste_asset(common, canvas, assets[p["right"]], [990, y + 40, 1590, y + 480])
         text(base, draw, template, "=", [1600, y + 150, 1750, y + 350], size=72, lines=1)
         answer_choices(draw, base, template, p["choices"], [1720, y + 80, 2270, y + 560])
-        y += 720
+        y += 710
 
 
 def render_subtraction(canvas, draw, page, assets, base, template, common):
-    y = 800
+    y = 815
     for p in page["activity"]["mechanics"]["problems"]:
-        row_box(common, draw, y, y + 650)
-        common.paste_fit(canvas, assets[p["asset"]], [220, y + 30, 1580, y + 540])
+        row_box(common, draw, y, y + 640)
+        paste_asset(common, canvas, assets[p["asset"]], [220, y + 30, 1580, y + 540])
         text(base, draw, template, f"Cross out {p['take_away']}", [1600, y + 55, 2250, y + 170], size=32, lines=1)
         answer_choices(draw, base, template, p["choices"], [1580, y + 230, 2270, y + 590])
-        y += 720
+        y += 710
 
 
 def render_before_after(canvas, draw, page, base, template, common):
@@ -170,31 +212,35 @@ def render_number_order(canvas, draw, page, base, template, common):
             cx = 500 + i * gap
             draw.ellipse([cx - 75, y + 90, cx + 75, y + 240], fill="#F4EEFF", outline="#7E57C2", width=4)
             text(base, draw, template, value, [cx - 60, y + 105, cx + 60, y + 225], size=46, lines=1)
-        slots = row["answer"]; gap2 = 1500 // len(slots)
-        for i in range(len(slots)):
+        gap2 = 1500 // len(row["answer"])
+        for i in range(len(row["answer"])):
             x0 = 390 + i * gap2
             common.panel(draw, [x0, y + 350, x0 + 250, y + 560], fill="#FFF9DE", outline="#D9A91B", width=4, radius=20)
         y += 720
 
 
 def render_number_line(canvas, draw, page, assets, base, template, common):
-    y = 820
+    y = 815
     for row in page["activity"]["mechanics"]["rows"]:
-        row_box(common, draw, y, y + 650)
-        common.paste_fit(canvas, assets[row["asset"]], [210, y + 100, 520, y + 430])
+        row_box(common, draw, y, y + 640)
+        # Deliberate three-zone layout: character, line, choices.
+        paste_asset(common, canvas, assets[row["asset"]], [220, y + 125, 570, y + 490])
         start_n, end_n = row["range"]; count = end_n - start_n
-        x0, x1, line_y = 620, 1940, y + 320
-        draw.line([x0, line_y, x1, line_y], fill="#5B3F9A", width=7)
+        x0, x1, line_y = 650, 1770, y + 330
+        draw.line([x0, line_y, x1, line_y], fill="#5B3F9A", width=8)
         step = (x1 - x0) / count
         for n in range(start_n, end_n + 1):
             x = x0 + (n - start_n) * step
-            draw.line([x, line_y - 25, x, line_y + 25], fill="#5B3F9A", width=5)
-            text(base, draw, template, n, [x - 45, line_y + 35, x + 45, line_y + 105], size=30, lines=1)
+            draw.line([x, line_y - 28, x, line_y + 28], fill="#5B3F9A", width=5)
+            text(base, draw, template, n, [x - 42, line_y + 38, x + 42, line_y + 105], size=30, lines=1)
+        draw.ellipse([x0 - 15, line_y - 15, x0 + 15, line_y + 15], fill="#E25454")
         for j in range(row["jumps"]):
             a = x0 + j * step; b = x0 + (j + 1) * step
-            draw.arc([a, line_y - 150, b, line_y + 15], 180, 360, fill="#E25454", width=6)
-        answer_choices(draw, base, template, row["choices"], [1850, y + 100, 2280, y + 570])
-        y += 720
+            draw.arc([a, line_y - 155, b, line_y + 10], 180, 360, fill="#E25454", width=7)
+        common.panel(draw, [1840, y + 95, 2260, y + 550], fill="#FFFDF7", outline="#D9A91B", width=3, radius=22)
+        text(base, draw, template, "Where do you land?", [1870, y + 115, 2230, y + 205], size=25, lines=2)
+        answer_choices(draw, base, template, row["choices"], [1855, y + 245, 2245, y + 500], radius=48)
+        y += 710
 
 
 def render_numeral_comparison(canvas, draw, page, base, template, common):
@@ -210,27 +256,27 @@ def render_numeral_comparison(canvas, draw, page, base, template, common):
 
 
 def render_math_stories(canvas, draw, page, assets, base, template, common):
-    y = 800
+    y = 815
     for story in page["activity"]["mechanics"]["stories"]:
-        row_box(common, draw, y, y + 650)
-        common.paste_fit(canvas, assets[story["asset"]], [220, y + 25, 1570, y + 620])
+        row_box(common, draw, y, y + 640)
+        paste_asset(common, canvas, assets[story["asset"]], [220, y + 25, 1570, y + 620])
         text(base, draw, template, story["question"], [1600, y + 60, 2260, y + 190], size=32, lines=2)
         answer_choices(draw, base, template, story["choices"], [1580, y + 230, 2270, y + 590])
-        y += 720
+        y += 710
 
 
 def render_shape_match(canvas, draw, page, assets, base, template, common):
     m = page["activity"]["mechanics"]
-    y0, row_h, gap = 800, 500, 35
+    y0, row_h, gap = 815, 475, 30
     for i, name in enumerate(m["left"]):
         top = y0 + i * (row_h + gap); bottom = top + row_h
-        common.panel(draw, [190, top, 1050, bottom], outline="#7E57C2", width=3)
-        common.paste_fit(canvas, assets[name], [250, top + 50, 900, bottom - 50])
-        common.circle(draw, base, template, 995, (top + bottom) // 2)
+        common.panel(draw, [190, top, 1120, bottom], outline="#7E57C2", width=3)
+        paste_asset(common, canvas, assets[name], [300, top + 55, 930, bottom - 55])
+        common.circle(draw, base, template, 1055, (top + bottom) // 2)
         right_name = m["right"][i]
-        common.panel(draw, [1470, top, 2270, bottom], outline="#1768B3", width=3)
-        common.circle(draw, base, template, 1520, (top + bottom) // 2)
-        common.paste_fit(canvas, assets[right_name], [1600, top + 35, 2180, bottom - 35])
+        common.panel(draw, [1510, top + 35, 2270, bottom - 35], outline="#1768B3", width=3)
+        common.circle(draw, base, template, 1560, (top + bottom) // 2)
+        paste_asset(common, canvas, assets[right_name], [1640, top + 60, 2180, bottom - 60])
 
 
 RENDERERS = {
@@ -283,8 +329,8 @@ def main() -> int:
             raise FileNotFoundError(f"Illustration required for {args.page_id}")
         source = Image.open(args.illustration).convert("RGBA")
         assets = common.crop_assets(source, page["illustration"]["asset_crops"])
-    model_strip(common, draw, base, template, page)
 
+    visual_model(common, canvas, draw, base, template, page, render_kind, assets)
     if render_kind in {"curriculum-before-after", "curriculum-number-order", "curriculum-numeral-comparison"}:
         renderer(canvas, draw, page, base, template, common)
     else:
@@ -296,12 +342,18 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(args.output, "PNG", dpi=(spec["dpi"], spec["dpi"]))
     evidence = {
-        "engine": "BCube Early Maths Curriculum-First Renderer V1",
+        "engine": "BCube Early Maths Curriculum-First Renderer V1.1",
         "page_id": args.page_id,
         "render_kind": render_kind,
         "artifact": str(args.output),
         "artifact_sha256": hashlib.sha256(args.output.read_bytes()).hexdigest(),
-        "qa": {"curriculum_first": True, "fallback_used": False, "status": "TEST_CANDIDATE"},
+        "qa": {
+            "curriculum_first": True,
+            "fallback_used": False,
+            "raw_model_json_rendered": False,
+            "transparent_asset_whitespace_trimmed": True,
+            "status": "TEST_CANDIDATE",
+        },
     }
     args.evidence_output.parent.mkdir(parents=True, exist_ok=True)
     args.evidence_output.write_text(json.dumps(evidence, indent=2) + "\n", encoding="utf-8")
