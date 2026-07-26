@@ -9,16 +9,15 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import shutil
 import subprocess
 import sys
-import tempfile
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
 PAGE_ID_SEARCH = re.compile(r"(?P<page_id>[A-Z]{2}-[A-Z]+-V\d+-P\d{3})", re.IGNORECASE)
 IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".webp"}
+EARLY_MATHS_DEDICATED_PAGES = {9, 15, 16, 19, 21, 35, 37, 38, 43}
 
 
 class ContractError(RuntimeError):
@@ -105,10 +104,19 @@ def validate_page(page_id: str, page: dict[str, Any]) -> None:
             raise ContractError(f"{page_id}: layout.{key} must be false")
 
 
+def page_number(page_id: str) -> int:
+    match = re.search(r"-P(\d{3})$", page_id)
+    if not match:
+        raise ContractError(f"Invalid page ID: {page_id}")
+    return int(match.group(1))
+
+
 def renderer_command(repo_root: Path, page_id: str, level: str, book: str, illustration: Path, logo: Path, output: Path, evidence: Path) -> list[str]:
+    dedicated = level.lower() == "lkg" and book == "early-maths-adventures" and page_number(page_id) in EARLY_MATHS_DEDICATED_PAGES
+    composer = "compose_early_maths_refined_pages.py" if dedicated else "compose_runtime_learning_page.py"
     return [
         sys.executable,
-        str(repo_root / "bcube-publishing-sdk" / "composer" / "compose_runtime_learning_page.py"),
+        str(repo_root / "bcube-publishing-sdk" / "composer" / composer),
         "--level", level,
         "--book", book,
         "--page-id", page_id,
