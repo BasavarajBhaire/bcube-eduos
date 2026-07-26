@@ -17,7 +17,7 @@ from typing import Any
 
 PAGE_ID_SEARCH = re.compile(r"(?P<page_id>[A-Z]{2}-[A-Z]+-V\d+-P\d{3})", re.IGNORECASE)
 IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".webp"}
-EARLY_MATHS_DEDICATED_PAGES = {9, 15, 16, 19, 21, 35, 37, 38, 43}
+EARLY_MATHS_DEDICATED_PAGES = set(range(8, 45))
 
 
 class ContractError(RuntimeError):
@@ -153,7 +153,6 @@ def main() -> int:
         raise SystemExit(f"Illustrations directory not found: {illustrations_dir}")
     if not logo.is_file():
         raise SystemExit(f"Logo not found: {logo}")
-
     if not args.skip_contract_build:
         build_test_contract_if_supported(repo_root, args.level, args.book)
 
