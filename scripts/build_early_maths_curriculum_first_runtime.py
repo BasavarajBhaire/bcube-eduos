@@ -59,7 +59,8 @@ def main() -> int:
         if page_id not in contract["pages"]:
             raise KeyError(page_id)
         page = contract["pages"][page_id]
-        assets = [] if page_id in deterministic_pages else list(source.get("illustration_assets", {}))
+        is_deterministic = page_id in deterministic_pages
+        assets = [] if is_deterministic else list(source.get("illustration_assets", {}))
         page["identity"]["title"] = source["title"]
         page["learning"] = {
             "objective": source["objective"],
@@ -75,13 +76,13 @@ def main() -> int:
             "mechanics": source["renderer_controls"],
         }
         page["illustration"] = {
-            "source_asset": f"{page_id}.png" if assets else "__deterministic__.png",
+            "source_asset": "DETERMINISTIC_NO_ART" if is_deterministic else f"{page_id}.png",
             "assets": assets,
             "asset_crops": crop_grid(assets),
             "asset_meanings": {name: source.get("illustration_assets", {}).get(name, "") for name in assets},
-            "requires_generated_art": bool(assets),
+            "requires_generated_art": not is_deterministic,
             "crop_safe": True,
-            "must_match_prompt": bool(assets),
+            "must_match_prompt": not is_deterministic,
         }
         page["layout"] = {
             "template": source["archetype"],
