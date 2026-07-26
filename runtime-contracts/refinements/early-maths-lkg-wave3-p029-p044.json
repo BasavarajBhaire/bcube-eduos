@@ -1,0 +1,263 @@
+{
+  "version": "early-maths-lkg-wave3-v1",
+  "pages": {
+    "EM-LKG-V4-P029": {
+      "render_kind": "comparison-pairs",
+      "layout": "size-comparison-four-pairs-v2",
+      "instruction": "Look at each pair. Follow the row prompt and circle the big or small object.",
+      "teacher_cue": "Compare matching objects only. Ask the child to show the size difference with both hands.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "prompt": "Circle the big elephant.", "answer": "big"},
+          {"asset": "pair_2", "prompt": "Circle the small ball.", "answer": "small"},
+          {"asset": "pair_3", "prompt": "Circle the big leaf.", "answer": "big"},
+          {"asset": "pair_4", "prompt": "Circle the small cup.", "answer": "small"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P030": {
+      "render_kind": "comparison-pairs",
+      "layout": "height-comparison-four-pairs-v2",
+      "instruction": "Look at each pair. Follow the row prompt and circle the taller or shorter item.",
+      "teacher_cue": "Check that the bases are aligned before comparing height.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "prompt": "Circle the taller tree.", "answer": "tall"},
+          {"asset": "pair_2", "prompt": "Circle the shorter bottle.", "answer": "short"},
+          {"asset": "pair_3", "prompt": "Circle the taller child.", "answer": "tall"},
+          {"asset": "pair_4", "prompt": "Circle the shorter tower.", "answer": "short"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P031": {
+      "render_kind": "comparison-pairs",
+      "layout": "weight-comparison-four-pairs-v2",
+      "instruction": "Look at each pair. Follow the row prompt and circle the heavier or lighter object.",
+      "teacher_cue": "Invite the child to pretend to lift both objects before choosing.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "prompt": "Circle the heavier object.", "answer": "rock"},
+          {"asset": "pair_2", "prompt": "Circle the lighter object.", "answer": "grape"},
+          {"asset": "pair_3", "prompt": "Circle the heavier object.", "answer": "schoolbag"},
+          {"asset": "pair_4", "prompt": "Circle the lighter object.", "answer": "paper plate"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P032": {
+      "render_kind": "comparison-pairs",
+      "layout": "length-comparison-four-pairs-v2",
+      "instruction": "Look at each pair. Follow the row prompt and circle the longer or shorter item.",
+      "teacher_cue": "Check that both objects begin at the same point before comparing length.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "prompt": "Circle the longer ribbon.", "answer": "long"},
+          {"asset": "pair_2", "prompt": "Circle the shorter pencil.", "answer": "short"},
+          {"asset": "pair_3", "prompt": "Circle the longer snake.", "answer": "long"},
+          {"asset": "pair_4", "prompt": "Circle the shorter rope.", "answer": "short"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P033": {
+      "render_kind": "comparison-pairs",
+      "layout": "full-empty-four-pairs-v2",
+      "instruction": "Look at each pair. Follow the row prompt and circle the full or empty container.",
+      "teacher_cue": "Ask what is inside each container and whether anything is left inside.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "prompt": "Circle the full glass.", "answer": "full"},
+          {"asset": "pair_2", "prompt": "Circle the empty basket.", "answer": "empty"},
+          {"asset": "pair_3", "prompt": "Circle the full bucket.", "answer": "full"},
+          {"asset": "pair_4", "prompt": "Circle the empty lunchbox.", "answer": "empty"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P034": {
+      "render_kind": "comparison-pairs",
+      "layout": "capacity-four-pairs-v2",
+      "instruction": "Look at each pair. Follow the row prompt and circle the container that holds more or less.",
+      "teacher_cue": "Use holds more and holds less. Remind the child that height alone does not decide capacity.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "prompt": "Circle the container that holds more.", "answer": "jug"},
+          {"asset": "pair_2", "prompt": "Circle the container that holds less.", "answer": "bowl"},
+          {"asset": "pair_3", "prompt": "Circle the container that holds more.", "answer": "bucket"},
+          {"asset": "pair_4", "prompt": "Circle the container that holds less.", "answer": "small box"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P035": {
+      "render_kind": "sequence-completion",
+      "layout": "daily-routine-four-events-v2",
+      "instruction": "Look at the four routine pictures. Number them from 1 to 4 in time order.",
+      "teacher_cue": "Use first, next, then and last while the child orders the daily routine.",
+      "mechanics": {
+        "asset_order": ["morning", "afternoon", "evening", "night"],
+        "rows": [
+          {"asset": "morning", "label": "morning", "order": 1},
+          {"asset": "afternoon", "label": "afternoon", "order": 2},
+          {"asset": "evening", "label": "evening", "order": 3},
+          {"asset": "night", "label": "night", "order": 4}
+        ],
+        "response_slots": 4
+      }
+    },
+    "EM-LKG-V4-P036": {
+      "render_kind": "classification",
+      "layout": "classification-grid-v3",
+      "instruction": "Look at the colour rule. Put each object in the red or blue group.",
+      "teacher_cue": "Name the sorting rule once, then let the child classify every object.",
+      "mechanics": {
+        "asset_order": ["category_red", "category_blue", "item_1", "item_2", "item_3", "item_4", "item_5", "item_6"],
+        "categories": [
+          {"id": "red", "label": "RED", "exemplar": "category_red"},
+          {"id": "blue", "label": "BLUE", "exemplar": "category_blue"}
+        ],
+        "items": [
+          {"asset": "item_1", "category": "red"},
+          {"asset": "item_2", "category": "blue"},
+          {"asset": "item_3", "category": "red"},
+          {"asset": "item_4", "category": "blue"},
+          {"asset": "item_5", "category": "red"},
+          {"asset": "item_6", "category": "blue"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P037": {
+      "render_kind": "classification",
+      "layout": "classification-matrix-v2",
+      "instruction": "Place each token in the box that matches both its colour and its shape.",
+      "teacher_cue": "Ask the child to name both attributes before placing each token.",
+      "mechanics": {
+        "asset_order": ["red_circle", "red_square", "blue_circle", "blue_square", "yellow_circle", "yellow_square"],
+        "matrix": {
+          "rows": ["red", "blue", "yellow"],
+          "columns": ["circle", "square"]
+        },
+        "items": [
+          {"asset": "red_circle", "row": "red", "column": "circle"},
+          {"asset": "red_square", "row": "red", "column": "square"},
+          {"asset": "blue_circle", "row": "blue", "column": "circle"},
+          {"asset": "blue_square", "row": "blue", "column": "square"},
+          {"asset": "yellow_circle", "row": "yellow", "column": "circle"},
+          {"asset": "yellow_square", "row": "yellow", "column": "square"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P038": {
+      "render_kind": "picture-graph",
+      "layout": "picture-graph-four-categories-v2",
+      "instruction": "Count each picture row. Write the total, then answer the comparison prompts.",
+      "teacher_cue": "Count one category at a time and compare the completed totals.",
+      "mechanics": {
+        "asset_order": ["apples", "bananas", "grapes", "oranges"],
+        "categories": [
+          {"asset": "apples", "label": "Apples", "count": 5},
+          {"asset": "bananas", "label": "Bananas", "count": 3},
+          {"asset": "grapes", "label": "Grapes", "count": 4},
+          {"asset": "oranges", "label": "Oranges", "count": 2}
+        ],
+        "questions": [
+          {"prompt": "Which has the most?", "answer": "Apples"},
+          {"prompt": "Which has the least?", "answer": "Oranges"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P039": {
+      "render_kind": "mixed-review",
+      "layout": "problem-solving-three-cards-v2",
+      "instruction": "Solve each visual problem. Circle the answer and tell how you know.",
+      "teacher_cue": "Ask what information matters before the child chooses an answer.",
+      "mechanics": {
+        "asset_order": ["problem_1", "problem_2", "problem_3"],
+        "problems": [
+          {"asset": "problem_1", "skill": "subtraction", "choices": [2, 3, 4], "answer": 3},
+          {"asset": "problem_2", "skill": "comparison", "choices": ["more red", "equal", "more blue"], "answer": "equal"},
+          {"asset": "problem_3", "skill": "pattern", "choices": ["red", "blue", "green"], "answer": "blue"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P040": {
+      "render_kind": "observe-reflect",
+      "layout": "hero-scene-target-strip-v3",
+      "instruction": "Look around the market scene. Find a number, shape, size comparison and pattern.",
+      "teacher_cue": "Give one target at a time and let the child scan, point and name it.",
+      "mechanics": {
+        "asset_order": ["main_scene", "target_number", "target_shape", "target_size", "target_pattern"],
+        "hero": "main_scene",
+        "targets": [
+          {"asset": "target_number", "label": "number"},
+          {"asset": "target_shape", "label": "shape"},
+          {"asset": "target_size", "label": "size"},
+          {"asset": "target_pattern", "label": "pattern"}
+        ],
+        "response_mode": "point-and-name"
+      }
+    },
+    "EM-LKG-V4-P041": {
+      "render_kind": "mixed-review",
+      "layout": "maths-review-four-quadrants-v2",
+      "instruction": "Complete one short task for number, shape, pattern and comparison.",
+      "teacher_cue": "Complete one quadrant at a time and praise the child's strategy rather than speed.",
+      "mechanics": {
+        "asset_order": ["number_task", "shape_task", "pattern_task", "comparison_task"],
+        "tasks": [
+          {"asset": "number_task", "prompt": "Count and circle 6.", "choices": [5, 6, 7], "answer": 6},
+          {"asset": "shape_task", "prompt": "Circle the triangle.", "answer": "triangle"},
+          {"asset": "pattern_task", "prompt": "Choose what comes next.", "choices": ["red", "blue"], "answer": "red"},
+          {"asset": "comparison_task", "prompt": "Circle the bigger ball.", "answer": "big"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P042": {
+      "render_kind": "certificate",
+      "layout": "certificate-celebration-v2",
+      "instruction": "Celebrate the child's effort and completion.",
+      "teacher_cue": "Read the completed certificate aloud and celebrate effort.",
+      "mechanics": {
+        "asset_order": ["celebration_cluster", "badge", "star_border"],
+        "certificate_fields": ["child_name", "date", "teacher"],
+        "response_mode": "adult-completed"
+      }
+    },
+    "EM-LKG-V4-P043": {
+      "render_kind": "observe-reflect",
+      "layout": "hero-plus-choice-assets-v3",
+      "instruction": "Choose the maths skill you enjoyed most. Say one thing you can do now.",
+      "teacher_cue": "Invite the child to choose one skill and complete the sentence: I can ___.",
+      "mechanics": {
+        "asset_order": ["hero_scene", "choice_numbers", "choice_shapes", "choice_patterns"],
+        "hero": "hero_scene",
+        "choices": [
+          {"asset": "choice_numbers", "label": "Numbers"},
+          {"asset": "choice_shapes", "label": "Shapes"},
+          {"asset": "choice_patterns", "label": "Patterns"}
+        ],
+        "sentence_starter": "I can ________.",
+        "response_mode": "choose-and-speak"
+      }
+    },
+    "EM-LKG-V4-P044": {
+      "render_kind": "back-cover",
+      "layout": "back-cover-single-scene-v2",
+      "instruction": "No child activity on this publishing page.",
+      "teacher_cue": "No teacher cue is printed on the back cover.",
+      "mechanics": {
+        "asset_order": ["back_cover_scene"],
+        "hero": "back_cover_scene",
+        "response_mode": "none"
+      }
+    }
+  }
+}
