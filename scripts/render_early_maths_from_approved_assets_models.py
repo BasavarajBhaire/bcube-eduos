@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render approved Early Maths assets using the completed-model composer."""
+"""Render approved Early Maths assets using the completed QA composer."""
 from __future__ import annotations
 
 import importlib.util
@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "scripts/render_early_maths_from_approved_assets.py"
-MODEL_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_early_maths_curriculum_first_v2.py"
+MODEL_COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_early_maths_curriculum_first_v3.py"
 
 MODULE_NAME = "approved_assets_base"
 spec = importlib.util.spec_from_file_location(MODULE_NAME, BASE)
