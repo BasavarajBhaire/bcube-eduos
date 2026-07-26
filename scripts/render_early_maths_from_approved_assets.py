@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """Render Early Maths P009-P021 from the approved committed asset archive.
 
-The source of truth is:
-assets/illustrations/early-maths-adventures/lkg/early-maths-approved-assets-p009-p021.zip
-
-The archive contains one JPG per named asset under <PAGE_ID>/<ASSET_NAME>.jpg.
-The script validates exact filenames, assembles temporary crop-compatible sheets,
-renders the complete curriculum-first scope, and writes one evidence summary.
-Pages without illustration assets render deterministically.
+The archive may contain page folders at its root or below one outer folder,
+for example ``Early Maths Adventures/EM-LKG-V4-P009/...``. The renderer locates
+page folders by page ID, validates exact asset filenames, assembles temporary
+crop-compatible sheets, renders the complete curriculum-first scope, and writes
+one evidence summary. Pages without illustration assets render deterministically.
 """
 from __future__ import annotations
 
@@ -19,7 +17,7 @@ import tempfile
 import zipfile
 from dataclasses import asdict, dataclass
 from io import BytesIO
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any
 
 from PIL import Image, ImageChops
@@ -80,18 +78,32 @@ def trim_white(asset: Image.Image) -> Image.Image:
     return rgba.crop(bbox) if bbox else rgba
 
 
-def archive_asset_names(archive: zipfile.ZipFile, page_id: str) -> set[str]:
-    prefix = f"{page_id}/"
-    return {Path(name).name for name in archive.namelist() if name.startswith(prefix) and not name.endswith("/")}
-
-
-def read_asset(archive: zipfile.ZipFile, page_id: str, asset_name: str) -> Image.Image:
-    for extension in (".jpg", ".jpeg", ".png", ".webp"):
-        member = f"{page_id}/{asset_name}{extension}"
-        try:
-            return trim_white(Image.open(BytesIO(archive.read(member))))
-        except KeyError:
+def page_members(archive: zipfile.ZipFile, page_id: str) -> dict[str, str]:
+    """Return basename -> full member path for one page, regardless of outer folders."""
+    matches: dict[str, str] = {}
+    for raw_name in archive.namelist():
+        if raw_name.endswith("/"):
             continue
+        path = PurePosixPath(raw_name)
+        parts = path.parts
+        if page_id not in parts:
+            continue
+        page_index = parts.index(page_id)
+        if page_index != len(parts) - 2:
+            continue
+        basename = path.name
+        if basename in matches:
+            raise ValueError(f"Duplicate archive asset name for {page_id}: {basename}")
+        matches[basename] = raw_name
+    return matches
+
+
+def read_asset(archive: zipfile.ZipFile, members: dict[str, str], page_id: str, asset_name: str) -> Image.Image:
+    for extension in (".jpg", ".jpeg", ".png", ".webp"):
+        basename = f"{asset_name}{extension}"
+        member = members.get(basename)
+        if member:
+            return trim_white(Image.open(BytesIO(archive.read(member))))
     raise FileNotFoundError(f"Missing approved asset: {page_id}/{asset_name}")
 
 
@@ -101,9 +113,9 @@ def assemble_sheet(page: dict[str, Any], archive: zipfile.ZipFile, page_id: str,
     if set(assets) != set(crops):
         raise ValueError("Runtime asset names and crop names differ")
 
+    members = page_members(archive, page_id)
     expected_stems = set(assets)
-    present_names = archive_asset_names(archive, page_id)
-    present_stems = {Path(name).stem for name in present_names}
+    present_stems = {Path(name).stem for name in members}
     missing = sorted(expected_stems - present_stems)
     extras = sorted(present_stems - expected_stems)
     if missing:
@@ -114,7 +126,7 @@ def assemble_sheet(page: dict[str, Any], archive: zipfile.ZipFile, page_id: str,
     size = 2400
     sheet = Image.new("RGBA", (size, size), (255, 255, 255, 255))
     for name in assets:
-        source = read_asset(archive, page_id, name)
+        source = read_asset(archive, members, page_id, name)
         left, top, right, bottom = crop_box(crops[name], size, size)
         cell_w = right - left; cell_h = bottom - top
         inset = max(16, round(min(cell_w, cell_h) * 0.035))
@@ -198,13 +210,17 @@ def main() -> int:
         "generated": sum(r.status == "GENERATED" for r in results),
         "failed": sum(r.status == "FAILED" for r in results),
         "asset_archive": str(archive_path),
-        "policy": "Exact committed approved assets; no image API; no generic fallback.",
+        "policy": "Exact approved assets; nested archive folders supported; no image API; no generic fallback.",
         "results": [asdict(r) for r in results],
     }
     summary_path = evidence_dir / "approved-assets-render-summary.json"
     summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({k: summary[k] for k in ("scope", "generated", "failed", "policy")}, indent=2))
     print(f"Summary: {summary_path}")
+    if summary["failed"]:
+        for result in results:
+            if result.status == "FAILED":
+                print(f"FAILED {result.page_id}: {result.reason}", file=sys.stderr)
     return 0 if summary["failed"] == 0 else 2
 
 
