@@ -7,16 +7,15 @@
     "lkg": {
       "books": {
         "communication-champions": "lkg/communication-champions.json",
-        "early-maths-adventures": "lkg/early-maths-adventures.json",
-        "logical-thinking-adventures": "lkg/logical-thinking-adventures.json"
+        "early-maths-adventures": "lkg/early-maths-adventures.json"
       }
     },
     "ukg": {"books": {}}
   },
   "rollout": {
     "status": "IN_PROGRESS",
-    "compiled_books": 3,
-    "compiled_pages": 38,
+    "compiled_books": 2,
+    "compiled_pages": 2,
     "blocked_pages": 0,
     "policy": "Every learning page must be fully defined inside its book contract. Missing or invalid pages fail closed."
   }
