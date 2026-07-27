@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "version": "logical-thinking-lkg-curriculum-first-p008-p043-v1",
+  "status": "TEST_CANDIDATE",
+  "book": "Logical Thinking Adventures",
+  "level": "LKG (4+)",
+  "page_range": {
+    "first": "LT-LKG-V4-P008",
+    "last": "LT-LKG-V4-P043",
+    "count": 36
+  },
+  "sources": {
+    "release_manifest": "production-prompts/logical-thinking-adventures/lkg/v4/release-manifest.json",
+    "page_prompts": "production-prompts/logical-thinking-adventures/lkg/v4/pages",
+    "phase2_illustrations": "production-prompts/logical-thinking-adventures/lkg/v4/phase2-illustration-prompts.json"
+  },
+  "policy": {
+    "curriculum_first": true,
+    "content_aligned_artwork_only": true,
+    "renderer_owns_text_and_mechanics": true,
+    "generic_fallback_allowed": false,
+    "missing_assets": "fail_closed",
+    "completed_answers_in_artwork": "reject"
+  },
+  "pages": [
+    "LT-LKG-V4-P008",
+    "LT-LKG-V4-P009",
+    "LT-LKG-V4-P010",
+    "LT-LKG-V4-P011",
+    "LT-LKG-V4-P012",
+    "LT-LKG-V4-P013",
+    "LT-LKG-V4-P014",
+    "LT-LKG-V4-P015",
+    "LT-LKG-V4-P016",
+    "LT-LKG-V4-P017",
+    "LT-LKG-V4-P018",
+    "LT-LKG-V4-P019",
+    "LT-LKG-V4-P020",
+    "LT-LKG-V4-P021",
+    "LT-LKG-V4-P022",
+    "LT-LKG-V4-P023",
+    "LT-LKG-V4-P024",
+    "LT-LKG-V4-P025",
+    "LT-LKG-V4-P026",
+    "LT-LKG-V4-P027",
+    "LT-LKG-V4-P028",
+    "LT-LKG-V4-P029",
+    "LT-LKG-V4-P030",
+    "LT-LKG-V4-P031",
+    "LT-LKG-V4-P032",
+    "LT-LKG-V4-P033",
+    "LT-LKG-V4-P034",
+    "LT-LKG-V4-P035",
+    "LT-LKG-V4-P036",
+    "LT-LKG-V4-P037",
+    "LT-LKG-V4-P038",
+    "LT-LKG-V4-P039",
+    "LT-LKG-V4-P040",
+    "LT-LKG-V4-P041",
+    "LT-LKG-V4-P042",
+    "LT-LKG-V4-P043"
+  ]
+}
