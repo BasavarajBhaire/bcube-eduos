@@ -1,0 +1,2129 @@
+{
+  "version": "logical-thinking-phase2-illustration-prompts-v1",
+  "book": "Logical Thinking Adventures",
+  "level": "LKG (4+)",
+  "source_blueprint": "curriculum/logical-thinking-adventures/lkg/curriculum-first-p008-p043-v1.json",
+  "policy": "Content-aligned artwork only; deterministic text and mechanics; no generic fallback.",
+  "pages": {
+    "LT-LKG-V4-P008": {
+      "title": "Find the Difference",
+      "output_filename": "LT-LKG-V4-P008.png",
+      "asset_names": [
+        "playground_a",
+        "playground_b"
+      ],
+      "asset_crops": {
+        "playground_a": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.93,
+          "padding": 0.008
+        },
+        "playground_b": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.93,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P008\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Find the Difference\nLearning objective: Find visual differences between two similar scenes.\nExact child action: Look carefully. Circle the five differences in Picture B.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 2 named visual asset(s), each appearing once:\n1. playground_a: playground scene with slide, ball, kite, bench and tree.\n2. playground_b: same playground with exactly five clear changes.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 1-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P009": {
+      "title": "Spot the Same",
+      "output_filename": "LT-LKG-V4-P009.png",
+      "asset_names": [
+        "fish_set",
+        "kite_set",
+        "cup_set",
+        "car_set",
+        "butterfly_set",
+        "shoe_set"
+      ],
+      "asset_crops": {
+        "fish_set": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "kite_set": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "cup_set": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "car_set": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "butterfly_set": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "shoe_set": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P009\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Spot the Same\nLearning objective: Identify an identical picture among similar choices.\nExact child action: Look at the picture on the left. Circle the picture that is exactly the same.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. fish_set: one target fish and three similar fish choices.\n2. kite_set: one target kite and three similar kite choices.\n3. cup_set: one target cup and three similar cup choices.\n4. car_set: one target car and three similar car choices.\n5. butterfly_set: one target butterfly and three similar butterfly choices.\n6. shoe_set: one target shoe and three similar shoe choices.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P010": {
+      "title": "Odd One Out",
+      "output_filename": "LT-LKG-V4-P010.png",
+      "asset_names": [
+        "fruit_row",
+        "animal_row",
+        "clothes_row",
+        "transport_row",
+        "shape_row",
+        "weather_row"
+      ],
+      "asset_crops": {
+        "fruit_row": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "animal_row": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "clothes_row": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "transport_row": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "shape_row": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "weather_row": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P010\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Odd One Out\nLearning objective: Classify pictures and identify the item that does not belong.\nExact child action: Name the pictures. Circle the one that does not belong in each row.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. fruit_row: three fruits and one vehicle.\n2. animal_row: three animals and one fruit.\n3. clothes_row: three clothes and one cup.\n4. transport_row: three vehicles and one flower.\n5. shape_row: three flat shapes and one ball.\n6. weather_row: three weather symbols and one shoe.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P011": {
+      "title": "Picture Match",
+      "output_filename": "LT-LKG-V4-P011.png",
+      "asset_names": [
+        "shoe",
+        "key",
+        "pencil",
+        "cup",
+        "soap",
+        "bed",
+        "sock",
+        "lock",
+        "sharpener",
+        "jug",
+        "towel",
+        "pillow"
+      ],
+      "asset_crops": {
+        "shoe": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "key": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "pencil": {
+          "x": 0.055,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "cup": {
+          "x": 0.5275,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "soap": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "bed": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "sock": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "lock": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "sharpener": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "jug": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "towel": {
+          "x": 0.055,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "pillow": {
+          "x": 0.5275,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P011\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Picture Match\nLearning objective: Match familiar objects that are meaningfully related.\nExact child action: Name each picture. Draw a line between the pictures that belong together.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 12 named visual asset(s), each appearing once:\n1. shoe: one shoe.\n2. key: one key.\n3. pencil: one pencil.\n4. cup: one cup.\n5. soap: one bar of soap.\n6. bed: one bed.\n7. sock: one sock.\n8. lock: one padlock.\n9. sharpener: one pencil sharpener.\n10. jug: one water jug.\n11. towel: one towel.\n12. pillow: one pillow.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 6-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P012": {
+      "title": "Hidden Objects",
+      "output_filename": "LT-LKG-V4-P012.png",
+      "asset_names": [
+        "classroom_scene",
+        "ball",
+        "key",
+        "spoon",
+        "sock",
+        "pencil",
+        "teddy"
+      ],
+      "asset_crops": {
+        "classroom_scene": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "key": {
+          "x": 0.055,
+          "y": 0.27625,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "spoon": {
+          "x": 0.5275,
+          "y": 0.27625,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "sock": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "pencil": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "teddy": {
+          "x": 0.055,
+          "y": 0.75875,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P012\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Hidden Objects\nLearning objective: Find familiar objects hidden within a controlled scene.\nExact child action: Find each object shown below. Circle it in the classroom picture.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 7 named visual asset(s), each appearing once:\n1. classroom_scene: clean classroom scene hiding exactly six familiar objects.\n2. ball: red ball target.\n3. key: small key target.\n4. spoon: silver spoon target.\n5. sock: striped sock target.\n6. pencil: yellow pencil target.\n7. teddy: brown teddy target.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 4-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P013": {
+      "title": "What Comes Next",
+      "output_filename": "LT-LKG-V4-P013.png",
+      "asset_names": [
+        "star_pattern",
+        "fruit_pattern",
+        "shape_pattern",
+        "vehicle_pattern",
+        "animal_pattern"
+      ],
+      "asset_crops": {
+        "star_pattern": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "fruit_pattern": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "shape_pattern": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "vehicle_pattern": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "animal_pattern": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P013\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: What Comes Next\nLearning objective: Complete repeating visual sequences.\nExact child action: Look for the repeating part. Circle the picture that comes next.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. star_pattern: AB star pattern with three choices.\n2. fruit_pattern: AAB fruit pattern with three choices.\n3. shape_pattern: ABC shape pattern with three choices.\n4. vehicle_pattern: AB vehicle pattern with three choices.\n5. animal_pattern: AAB animal pattern with three choices.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P014": {
+      "title": "Story Sequence",
+      "output_filename": "LT-LKG-V4-P014.png",
+      "asset_names": [
+        "wet_hands",
+        "apply_soap",
+        "scrub_hands",
+        "dry_hands"
+      ],
+      "asset_crops": {
+        "wet_hands": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        },
+        "apply_soap": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        },
+        "scrub_hands": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        },
+        "dry_hands": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P014\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Story Sequence\nLearning objective: Arrange four events in a logical order.\nExact child action: Look at the four pictures. Write 1, 2, 3 and 4 to show the story order.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. wet_hands: child wetting hands.\n2. apply_soap: child applying soap.\n3. scrub_hands: child scrubbing hands.\n4. dry_hands: child drying clean hands.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P015": {
+      "title": "Pattern Logic",
+      "output_filename": "LT-LKG-V4-P015.png",
+      "asset_names": [
+        "fruit_pattern",
+        "shape_pattern",
+        "toy_pattern",
+        "flower_pattern",
+        "animal_pattern"
+      ],
+      "asset_crops": {
+        "fruit_pattern": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "shape_pattern": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "toy_pattern": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "flower_pattern": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "animal_pattern": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P015\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Pattern Logic\nLearning objective: Recognise and complete AB, AAB and ABC patterns.\nExact child action: Say each pattern. Draw the next picture in the empty box.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. fruit_pattern: AB apple-banana pattern.\n2. shape_pattern: AAB circle-triangle-triangle pattern.\n3. toy_pattern: ABC ball-car-teddy pattern.\n4. flower_pattern: AB red-blue flower pattern.\n5. animal_pattern: AAB cat-dog-dog pattern.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P016": {
+      "title": "Complete the Series",
+      "output_filename": "LT-LKG-V4-P016.png",
+      "asset_names": [
+        "size_series",
+        "count_series",
+        "direction_series",
+        "position_series",
+        "colour_series"
+      ],
+      "asset_crops": {
+        "size_series": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "count_series": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "direction_series": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "position_series": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "colour_series": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P016\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Complete the Series\nLearning objective: Predict the next item in changing visual series.\nExact child action: Look at how each series changes. Circle the picture that comes next.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. size_series: objects growing in size with three choices.\n2. count_series: groups increasing by one with three choices.\n3. direction_series: arrow turning clockwise with three choices.\n4. position_series: ball moving through three boxes with choices.\n5. colour_series: colour cycle with three choices.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P017": {
+      "title": "Sort by Colour",
+      "output_filename": "LT-LKG-V4-P017.png",
+      "asset_names": [
+        "red_button",
+        "blue_cube",
+        "blue_ball",
+        "red_car",
+        "blue_button",
+        "red_cube",
+        "red_ball",
+        "blue_car"
+      ],
+      "asset_crops": {
+        "red_button": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "blue_cube": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "blue_ball": {
+          "x": 0.055,
+          "y": 0.27625,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "red_car": {
+          "x": 0.5275,
+          "y": 0.27625,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "blue_button": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "red_cube": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "red_ball": {
+          "x": 0.055,
+          "y": 0.75875,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        },
+        "blue_car": {
+          "x": 0.5275,
+          "y": 0.75875,
+          "w": 0.4175,
+          "h": 0.20625,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P017\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Sort by Colour\nLearning objective: Classify objects by colour.\nExact child action: Look at the numbered pictures. Write each number in the matching colour box.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 8 named visual asset(s), each appearing once:\n1. red_button: red button.\n2. blue_cube: blue cube.\n3. blue_ball: blue ball.\n4. red_car: red toy car.\n5. blue_button: blue button.\n6. red_cube: red cube.\n7. red_ball: red ball.\n8. blue_car: blue toy car.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 4-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P018": {
+      "title": "Sort by Shape",
+      "output_filename": "LT-LKG-V4-P018.png",
+      "asset_names": [
+        "clock",
+        "window",
+        "flag",
+        "plate",
+        "tile",
+        "sandwich",
+        "coin",
+        "gift_box",
+        "road_sign"
+      ],
+      "asset_crops": {
+        "clock": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "window": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "flag": {
+          "x": 0.055,
+          "y": 0.228,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "plate": {
+          "x": 0.5275,
+          "y": 0.228,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "tile": {
+          "x": 0.055,
+          "y": 0.421,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "sandwich": {
+          "x": 0.5275,
+          "y": 0.421,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "coin": {
+          "x": 0.055,
+          "y": 0.614,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "gift_box": {
+          "x": 0.5275,
+          "y": 0.614,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "road_sign": {
+          "x": 0.055,
+          "y": 0.807,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P018\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Sort by Shape\nLearning objective: Classify objects by their visible shape.\nExact child action: Look at the numbered pictures. Write each number in the correct shape box.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 9 named visual asset(s), each appearing once:\n1. clock: round wall clock.\n2. window: square window.\n3. flag: triangular flag.\n4. plate: round plate.\n5. tile: square tile.\n6. sandwich: triangular sandwich.\n7. coin: round coin.\n8. gift_box: square gift box.\n9. road_sign: triangular road sign.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 5-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P019": {
+      "title": "Sort by Size",
+      "output_filename": "LT-LKG-V4-P019.png",
+      "asset_names": [
+        "bears",
+        "trees",
+        "cups",
+        "fish",
+        "cars"
+      ],
+      "asset_crops": {
+        "bears": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "trees": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "cups": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "fish": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "cars": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P019\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Sort by Size\nLearning objective: Arrange familiar objects from smallest to largest.\nExact child action: Write 1, 2 and 3 to order each set from smallest to largest.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. bears: three matching teddy bears in small, medium and large sizes.\n2. trees: three matching trees in small, medium and large sizes.\n3. cups: three matching cups in small, medium and large sizes.\n4. fish: three matching fish in small, medium and large sizes.\n5. cars: three matching cars in small, medium and large sizes.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P020": {
+      "title": "Belongs Together",
+      "output_filename": "LT-LKG-V4-P020.png",
+      "asset_names": [
+        "pencil",
+        "shoe",
+        "soap",
+        "bed",
+        "car",
+        "spoon",
+        "sharpener",
+        "sock",
+        "towel",
+        "pillow",
+        "garage",
+        "bowl"
+      ],
+      "asset_crops": {
+        "pencil": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shoe": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "soap": {
+          "x": 0.055,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "bed": {
+          "x": 0.5275,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "car": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "spoon": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "sharpener": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "sock": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "towel": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "pillow": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "garage": {
+          "x": 0.055,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "bowl": {
+          "x": 0.5275,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P020\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Belongs Together\nLearning objective: Identify familiar objects from the same functional group.\nExact child action: Name each picture. Draw a line to the picture that belongs with it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 12 named visual asset(s), each appearing once:\n1. pencil: pencil.\n2. shoe: shoe.\n3. soap: bar of soap.\n4. bed: bed.\n5. car: car.\n6. spoon: spoon.\n7. sharpener: pencil sharpener.\n8. sock: sock.\n9. towel: towel.\n10. pillow: pillow.\n11. garage: garage.\n12. bowl: bowl.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 6-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P021": {
+      "title": "Big Problem Small Problem",
+      "output_filename": "LT-LKG-V4-P021.png",
+      "asset_names": [
+        "broken_crayon",
+        "spilled_water",
+        "missing_toy",
+        "smoke",
+        "hurt_knee",
+        "lost_outside"
+      ],
+      "asset_crops": {
+        "broken_crayon": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "spilled_water": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "missing_toy": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "smoke": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "hurt_knee": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "lost_outside": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P021\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Big Problem Small Problem\nLearning objective: Distinguish small everyday problems from problems needing adult help.\nExact child action: Look at each numbered situation. Write its number under SMALL or BIG.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. broken_crayon: child with a broken crayon.\n2. spilled_water: small cup of water spilled on a table.\n3. missing_toy: child looking for a toy.\n4. smoke: smoke coming from a kitchen.\n5. hurt_knee: child with a badly hurt knee.\n6. lost_outside: child lost outside.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P022": {
+      "title": "Cause and Effect",
+      "output_filename": "LT-LKG-V4-P022.png",
+      "asset_names": [
+        "drop_ice",
+        "push_ball",
+        "rain_cloud",
+        "turn_switch",
+        "open_umbrella",
+        "puddle",
+        "rolling_ball",
+        "wet_ground",
+        "lit_lamp",
+        "dry_child"
+      ],
+      "asset_crops": {
+        "drop_ice": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "push_ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "rain_cloud": {
+          "x": 0.055,
+          "y": 0.228,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "turn_switch": {
+          "x": 0.5275,
+          "y": 0.228,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "open_umbrella": {
+          "x": 0.055,
+          "y": 0.421,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "puddle": {
+          "x": 0.5275,
+          "y": 0.421,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "rolling_ball": {
+          "x": 0.055,
+          "y": 0.614,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "wet_ground": {
+          "x": 0.5275,
+          "y": 0.614,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "lit_lamp": {
+          "x": 0.055,
+          "y": 0.807,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "dry_child": {
+          "x": 0.5275,
+          "y": 0.807,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P022\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Cause and Effect\nLearning objective: Match familiar actions with likely outcomes.\nExact child action: Look at each action. Draw a line to what is most likely to happen next.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 10 named visual asset(s), each appearing once:\n1. drop_ice: ice cube left in sunlight.\n2. push_ball: child gently pushing a ball.\n3. rain_cloud: dark cloud releasing rain.\n4. turn_switch: finger turning on a lamp switch.\n5. open_umbrella: child opening an umbrella in rain.\n6. puddle: melted water puddle.\n7. rolling_ball: ball rolling away.\n8. wet_ground: wet ground with raindrops.\n9. lit_lamp: lamp glowing.\n10. dry_child: child staying dry under umbrella.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 5-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P023": {
+      "title": "Left and Right",
+      "output_filename": "LT-LKG-V4-P023.png",
+      "asset_names": [
+        "scene_1",
+        "scene_2",
+        "scene_3",
+        "scene_4",
+        "scene_5",
+        "scene_6"
+      ],
+      "asset_crops": {
+        "scene_1": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "scene_2": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "scene_3": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "scene_4": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "scene_5": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "scene_6": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P023\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Left and Right\nLearning objective: Identify left and right positions.\nExact child action: Listen to each direction. Circle the object on the correct side.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. scene_1: child with apple on left and ball on right.\n2. scene_2: tree with bird on left and kite on right.\n3. scene_3: box with car on left and teddy on right.\n4. scene_4: bench with flower on left and dog on right.\n5. scene_5: table with cup on left and plate on right.\n6. scene_6: gate with bus on left and bicycle on right.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P024": {
+      "title": "Above and Below",
+      "output_filename": "LT-LKG-V4-P024.png",
+      "asset_names": [
+        "bird_tree",
+        "shoe_chair",
+        "sun_cloud",
+        "cat_table",
+        "ball_shelf",
+        "fish_boat"
+      ],
+      "asset_crops": {
+        "bird_tree": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "shoe_chair": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sun_cloud": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "cat_table": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "ball_shelf": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "fish_boat": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P024\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Above and Below\nLearning objective: Recognise objects above and below a reference point.\nExact child action: Look at each picture. Circle the correct position word.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. bird_tree: bird above a tree.\n2. shoe_chair: shoe below a chair.\n3. sun_cloud: sun above a cloud.\n4. cat_table: cat below a table.\n5. ball_shelf: ball above a shelf.\n6. fish_boat: fish below a boat.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P025": {
+      "title": "Inside and Outside",
+      "output_filename": "LT-LKG-V4-P025.png",
+      "asset_names": [
+        "ball_box",
+        "dog_kennel",
+        "fish_bowl",
+        "bird_cage",
+        "toy_basket",
+        "child_house"
+      ],
+      "asset_crops": {
+        "ball_box": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "dog_kennel": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "fish_bowl": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "bird_cage": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "toy_basket": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "child_house": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P025\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Inside and Outside\nLearning objective: Identify objects inside and outside containers or boundaries.\nExact child action: Look at each picture. Circle the correct position word.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. ball_box: ball inside an open box.\n2. dog_kennel: dog outside a kennel.\n3. fish_bowl: fish inside a bowl.\n4. bird_cage: bird outside an open cage.\n5. toy_basket: toy inside a basket.\n6. child_house: child outside a playhouse.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P026": {
+      "title": "Maze Challenge",
+      "output_filename": "LT-LKG-V4-P026.png",
+      "asset_names": [
+        "rabbit",
+        "carrot"
+      ],
+      "asset_crops": {
+        "rabbit": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.93,
+          "padding": 0.008
+        },
+        "carrot": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.93,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P026\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Maze Challenge\nLearning objective: Plan and trace a route through a simple maze.\nExact child action: Trace a path from the rabbit to the carrot. Do not cross a wall.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 2 named visual asset(s), each appearing once:\n1. rabbit: friendly rabbit start icon.\n2. carrot: large carrot finish icon.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 1-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P027": {
+      "title": "Remember the Pictures",
+      "output_filename": "LT-LKG-V4-P027.png",
+      "asset_names": [
+        "apple",
+        "ball",
+        "cup",
+        "car",
+        "teddy",
+        "kite",
+        "recall_apple",
+        "recall_bus",
+        "recall_cup",
+        "recall_dog",
+        "recall_teddy",
+        "recall_flower"
+      ],
+      "asset_crops": {
+        "apple": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "cup": {
+          "x": 0.055,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "car": {
+          "x": 0.5275,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "teddy": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "kite": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "recall_apple": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "recall_bus": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "recall_cup": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "recall_dog": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "recall_teddy": {
+          "x": 0.055,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "recall_flower": {
+          "x": 0.5275,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P027\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Remember the Pictures\nLearning objective: Build visual memory by recalling missing items.\nExact child action: Look at the six pictures. Cover them. Then circle the two pictures that were missing.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 12 named visual asset(s), each appearing once:\n1. apple: red apple.\n2. ball: striped ball.\n3. cup: blue cup.\n4. car: red toy car.\n5. teddy: brown teddy.\n6. kite: colourful kite.\n7. recall_apple: matching red apple.\n8. recall_bus: yellow bus distractor.\n9. recall_cup: matching blue cup.\n10. recall_dog: dog distractor.\n11. recall_teddy: matching brown teddy.\n12. recall_flower: flower distractor.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 6-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P028": {
+      "title": "Picture Recall",
+      "output_filename": "LT-LKG-V4-P028.png",
+      "asset_names": [
+        "park_scene"
+      ],
+      "asset_crops": {
+        "park_scene": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.89,
+          "h": 0.93,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P028\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Picture Recall\nLearning objective: Recall specific details from a previously viewed scene.\nExact child action: Look at the scene for ten seconds. Cover it. Circle the answer to each question.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. park_scene: simple park scene with a red kite, two birds, blue ball, one dog, yellow bench and girl beside tree.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P029": {
+      "title": "Choose the Best Answer",
+      "output_filename": "LT-LKG-V4-P029.png",
+      "asset_names": [
+        "spill_problem",
+        "friend_problem",
+        "crossing_problem",
+        "cold_problem",
+        "lost_item_problem"
+      ],
+      "asset_crops": {
+        "spill_problem": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "friend_problem": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "crossing_problem": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "cold_problem": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "lost_item_problem": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P029\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Choose the Best Answer\nLearning objective: Evaluate visual choices and select a sensible solution.\nExact child action: Look at each problem. Circle the picture that shows the best choice.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. spill_problem: small water spill with three response options.\n2. friend_problem: sad friend with three response options.\n3. crossing_problem: road crossing with three response options.\n4. cold_problem: cold weather with three clothing options.\n5. lost_item_problem: lost classroom pencil with three response options.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P030": {
+      "title": "Finish the Picture",
+      "output_filename": "LT-LKG-V4-P030.png",
+      "asset_names": [
+        "apple_half",
+        "fish_half",
+        "flower_half",
+        "house_half",
+        "balloon_half"
+      ],
+      "asset_crops": {
+        "apple_half": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "fish_half": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "flower_half": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "house_half": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "balloon_half": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P030\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Finish the Picture\nLearning objective: Use symmetry and visual clues to complete partial pictures.\nExact child action: Look at each half-picture. Draw the missing half.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. apple_half: left half of a simple apple outline.\n2. fish_half: left half of a simple fish outline.\n3. flower_half: left half of a simple flower outline.\n4. house_half: left half of a simple house outline.\n5. balloon_half: left half of a balloon outline.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P031": {
+      "title": "Visual Puzzle",
+      "output_filename": "LT-LKG-V4-P031.png",
+      "asset_names": [
+        "cat_top",
+        "bus_left",
+        "ball_top",
+        "flower_left",
+        "fish_top",
+        "fish_bottom",
+        "flower_right",
+        "cat_bottom",
+        "ball_bottom",
+        "bus_right"
+      ],
+      "asset_crops": {
+        "cat_top": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "bus_left": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "ball_top": {
+          "x": 0.055,
+          "y": 0.228,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "flower_left": {
+          "x": 0.5275,
+          "y": 0.228,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "fish_top": {
+          "x": 0.055,
+          "y": 0.421,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "fish_bottom": {
+          "x": 0.5275,
+          "y": 0.421,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "flower_right": {
+          "x": 0.055,
+          "y": 0.614,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "cat_bottom": {
+          "x": 0.5275,
+          "y": 0.614,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "ball_bottom": {
+          "x": 0.055,
+          "y": 0.807,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        },
+        "bus_right": {
+          "x": 0.5275,
+          "y": 0.807,
+          "w": 0.4175,
+          "h": 0.158,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P031\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Visual Puzzle\nLearning objective: Assemble matching picture pieces mentally.\nExact child action: Look at each picture piece. Draw a line to the piece that completes it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 10 named visual asset(s), each appearing once:\n1. cat_top: top half of cat picture.\n2. bus_left: left half of bus picture.\n3. ball_top: top half of ball picture.\n4. flower_left: left half of flower picture.\n5. fish_top: top half of fish picture.\n6. fish_bottom: matching bottom half of fish.\n7. flower_right: matching right half of flower.\n8. cat_bottom: matching bottom half of cat.\n9. ball_bottom: matching bottom half of ball.\n10. bus_right: matching right half of bus.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 5-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P032": {
+      "title": "Shadow Match",
+      "output_filename": "LT-LKG-V4-P032.png",
+      "asset_names": [
+        "umbrella",
+        "boot",
+        "teapot",
+        "guitar",
+        "duck",
+        "bicycle",
+        "shadow_duck",
+        "shadow_bicycle",
+        "shadow_boot",
+        "shadow_umbrella",
+        "shadow_guitar",
+        "shadow_teapot"
+      ],
+      "asset_crops": {
+        "umbrella": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "boot": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "teapot": {
+          "x": 0.055,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "guitar": {
+          "x": 0.5275,
+          "y": 0.195833,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "duck": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "bicycle": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shadow_duck": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shadow_bicycle": {
+          "x": 0.5275,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shadow_boot": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shadow_umbrella": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shadow_guitar": {
+          "x": 0.055,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        },
+        "shadow_teapot": {
+          "x": 0.5275,
+          "y": 0.839167,
+          "w": 0.4175,
+          "h": 0.125833,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P032\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Shadow Match\nLearning objective: Match familiar objects to their silhouettes.\nExact child action: Name each object. Draw a line to its shadow.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 12 named visual asset(s), each appearing once:\n1. umbrella: colourful umbrella.\n2. boot: rain boot.\n3. teapot: teapot.\n4. guitar: small guitar.\n5. duck: duck.\n6. bicycle: bicycle.\n7. shadow_duck: duck silhouette.\n8. shadow_bicycle: bicycle silhouette.\n9. shadow_boot: boot silhouette.\n10. shadow_umbrella: umbrella silhouette.\n11. shadow_guitar: guitar silhouette.\n12. shadow_teapot: teapot silhouette.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 6-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P033": {
+      "title": "Complete the Puzzle",
+      "output_filename": "LT-LKG-V4-P033.png",
+      "asset_names": [
+        "train_puzzle",
+        "fish_puzzle",
+        "flower_puzzle",
+        "kite_puzzle",
+        "teddy_puzzle"
+      ],
+      "asset_crops": {
+        "train_puzzle": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "fish_puzzle": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "flower_puzzle": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "kite_puzzle": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "teddy_puzzle": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P033\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Complete the Puzzle\nLearning objective: Use shape and picture clues to select missing pieces.\nExact child action: Look at each picture with a missing piece. Circle the piece that fits.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. train_puzzle: train picture with one missing piece and three choices.\n2. fish_puzzle: fish picture with one missing piece and three choices.\n3. flower_puzzle: flower picture with one missing piece and three choices.\n4. kite_puzzle: kite picture with one missing piece and three choices.\n5. teddy_puzzle: teddy picture with one missing piece and three choices.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P034": {
+      "title": "Picture Logic",
+      "output_filename": "LT-LKG-V4-P034.png",
+      "asset_names": [
+        "growth_set",
+        "weather_set",
+        "meal_set",
+        "home_set",
+        "tool_set"
+      ],
+      "asset_crops": {
+        "growth_set": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "weather_set": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "meal_set": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "home_set": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "tool_set": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P034\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Picture Logic\nLearning objective: Choose the picture that logically completes a set.\nExact child action: Look at each picture set. Circle the picture that completes the rule.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. growth_set: seed-to-plant logic set with three choices.\n2. weather_set: weather-clothing logic set with choices.\n3. meal_set: plate-spoon-food relationship set.\n4. home_set: animal-home relationship set.\n5. tool_set: object-tool relationship set.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P035": {
+      "title": "Simple Coding",
+      "output_filename": "LT-LKG-V4-P035.png",
+      "asset_names": [
+        "mouse",
+        "cheese",
+        "bee",
+        "flower",
+        "car",
+        "garage"
+      ],
+      "asset_crops": {
+        "mouse": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "cheese": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "bee": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "flower": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "car": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "garage": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P035\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Simple Coding\nLearning objective: Follow directional symbols to reach a goal.\nExact child action: Follow the arrow code. Trace the path from START to the goal.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. mouse: mouse start icon.\n2. cheese: cheese goal icon.\n3. bee: bee start icon.\n4. flower: flower goal icon.\n5. car: car start icon.\n6. garage: garage goal icon.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P036": {
+      "title": "Thinking Challenge",
+      "output_filename": "LT-LKG-V4-P036.png",
+      "asset_names": [
+        "odd_one_out",
+        "same_picture",
+        "pattern",
+        "size_order",
+        "shadow"
+      ],
+      "asset_crops": {
+        "odd_one_out": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "same_picture": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "pattern": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "size_order": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "shadow": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P036\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Thinking Challenge\nLearning objective: Apply observation, classification and sequencing skills.\nExact child action: Complete each thinking challenge.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. odd_one_out: four-item odd-one-out set.\n2. same_picture: target and three same-picture choices.\n3. pattern: visual pattern with three answer choices.\n4. size_order: three bears in shuffled sizes.\n5. shadow: object with three shadow choices.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P037": {
+      "title": "Mixed Logic Review",
+      "output_filename": "LT-LKG-V4-P037.png",
+      "asset_names": [
+        "difference_task",
+        "match_task",
+        "sort_task",
+        "sequence_task",
+        "position_task",
+        "pattern_task"
+      ],
+      "asset_crops": {
+        "difference_task": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "match_task": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sort_task": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sequence_task": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "position_task": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "pattern_task": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P037\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Mixed Logic Review\nLearning objective: Review core observation, matching, sorting and pattern skills.\nExact child action: Complete each review activity.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. difference_task: small two-picture one-difference task.\n2. match_task: two related object pairs.\n3. sort_task: six numbered red-blue objects.\n4. sequence_task: four event pictures to number.\n5. position_task: two position scenes with word choices.\n6. pattern_task: two next-pattern rows.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P038": {
+      "title": "Brain Challenge",
+      "output_filename": "LT-LKG-V4-P038.png",
+      "asset_names": [
+        "missing_piece",
+        "path_count",
+        "balance_logic",
+        "grid_oddity",
+        "sequence_logic"
+      ],
+      "asset_crops": {
+        "missing_piece": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "path_count": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "balance_logic": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "grid_oddity": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sequence_logic": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P038\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Brain Challenge\nLearning objective: Solve age-appropriate visual brain teasers.\nExact child action: Think carefully. Solve each picture puzzle.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. missing_piece: one missing-piece puzzle with three choices.\n2. path_count: three simple paths with one reaching the goal.\n3. balance_logic: two visual balance clues and one question.\n4. grid_oddity: small grid with one different picture.\n5. sequence_logic: changing sequence with three choices.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P039": {
+      "title": "Thinking Assessment",
+      "output_filename": "LT-LKG-V4-P039.png",
+      "asset_names": [
+        "observation_task",
+        "classification_task",
+        "matching_task",
+        "sequence_task",
+        "position_task",
+        "coding_task"
+      ],
+      "asset_crops": {
+        "observation_task": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "classification_task": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "matching_task": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sequence_task": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "position_task": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "coding_task": {
+          "x": 0.5275,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P039\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Thinking Assessment\nLearning objective: Demonstrate independent learning across core logic skills.\nExact child action: Complete each task by yourself. Your teacher will observe.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. observation_task: one-difference picture pair.\n2. classification_task: four-item odd-one-out set.\n3. matching_task: three object-shadow matches.\n4. sequence_task: three events to number.\n5. position_task: two spatial word questions.\n6. coding_task: one small unsolved arrow grid.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P040": {
+      "title": "My Thinking Journal",
+      "output_filename": "LT-LKG-V4-P040.png",
+      "asset_names": [
+        "observe_icon",
+        "match_icon",
+        "sequence_icon"
+      ],
+      "asset_crops": {
+        "observe_icon": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        },
+        "match_icon": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        },
+        "sequence_icon": {
+          "x": 0.055,
+          "y": 0.5175,
+          "w": 0.4175,
+          "h": 0.4475,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P040\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: My Thinking Journal\nLearning objective: Reflect on a problem solved and the strategy used.\nExact child action: Choose one thinking skill. Draw a problem you solved. Tell how you solved it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. observe_icon: magnifying glass for observing.\n2. match_icon: two fitting puzzle pieces.\n3. sequence_icon: three ordered picture cards.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P041": {
+      "title": "Logic Celebration",
+      "output_filename": "LT-LKG-V4-P041.png",
+      "asset_names": [
+        "observe_badge",
+        "match_badge",
+        "sort_badge",
+        "sequence_badge",
+        "solve_badge"
+      ],
+      "asset_crops": {
+        "observe_badge": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "match_badge": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sort_badge": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "sequence_badge": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "solve_badge": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P041\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Logic Celebration\nLearning objective: Celebrate specific reasoning skills learned in the book.\nExact child action: Colour one badge for each thinking skill you used.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. observe_badge: outline badge with magnifying-glass icon.\n2. match_badge: outline badge with matching-pair icon.\n3. sort_badge: outline badge with sorting icon.\n4. sequence_badge: outline badge with ordered-cards icon.\n5. solve_badge: outline badge with puzzle-piece icon.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P042": {
+      "title": "Certificate",
+      "output_filename": "LT-LKG-V4-P042.png",
+      "asset_names": [
+        "logic_badge",
+        "corner_shapes"
+      ],
+      "asset_crops": {
+        "logic_badge": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.93,
+          "padding": 0.008
+        },
+        "corner_shapes": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.93,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P042\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: Certificate\nLearning objective: Celebrate completion of Logical Thinking Adventures.\nExact child action: Write the child’s name, date and teacher’s signature.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 2 named visual asset(s), each appearing once:\n1. logic_badge: premium logic explorer badge without words.\n2. corner_shapes: small crop-safe logic-shape decoration.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 1-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "LT-LKG-V4-P043": {
+      "title": "I Am a Logic Explorer",
+      "output_filename": "LT-LKG-V4-P043.png",
+      "asset_names": [
+        "hero_child",
+        "explorer_badge",
+        "observe_icon",
+        "match_icon",
+        "solve_icon"
+      ],
+      "asset_crops": {
+        "hero_child": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "explorer_badge": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "observe_icon": {
+          "x": 0.055,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "match_icon": {
+          "x": 0.5275,
+          "y": 0.356667,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        },
+        "solve_icon": {
+          "x": 0.055,
+          "y": 0.678333,
+          "w": 0.4175,
+          "h": 0.286667,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — LT-LKG-V4-P043\n\nBOOK AND LEVEL\nBook: Logical Thinking Adventures\nLevel: LKG (4+)\nExact page title: I Am a Logic Explorer\nLearning objective: Celebrate confidence and success in logical thinking.\nExact child action: Colour the explorer badge. Tick the thinking skill you enjoyed most.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this page contract. Do not create the workbook page. The publishing engine will add all names, directions, labels, model examples, response circles, number boxes, matching anchors, lines, grids, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. hero_child: one confident LKG child holding a magnifying glass beside large puzzle pieces.\n2. explorer_badge: large black-outline Logic Explorer colouring badge with no words.\n3. observe_icon: magnifying glass icon.\n4. match_icon: matching-pair icon.\n5. solve_icon: puzzle-piece icon.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Keep wide pure-white gaps; no asset may touch, overlap or cross a cell boundary.\nKeep every important part fully visible inside its cell. Use a pure white background so the renderer can crop every named asset cleanly.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; friendly natural expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; classroom filler; empty decorative frames; completed child answers; worksheet UI; dark backgrounds; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    }
+  }
+}
