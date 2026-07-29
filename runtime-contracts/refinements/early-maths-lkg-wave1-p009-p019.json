@@ -1,0 +1,142 @@
+{
+  "version": "early-maths-lkg-wave1-v1",
+  "scope": ["EM-LKG-V4-P009", "EM-LKG-V4-P010", "EM-LKG-V4-P011", "EM-LKG-V4-P012", "EM-LKG-V4-P013", "EM-LKG-V4-P014", "EM-LKG-V4-P015", "EM-LKG-V4-P016", "EM-LKG-V4-P017", "EM-LKG-V4-P018", "EM-LKG-V4-P019"],
+  "policy": {
+    "allow_fallback": false,
+    "generic_response_panel": false,
+    "parent_panel": false,
+    "home_connection": false,
+    "crop_mode": "named-manifest-contain",
+    "response_controls_from_contract_only": true
+  },
+  "pages": {
+    "EM-LKG-V4-P009": {
+      "render_kind": "count-choice-grid",
+      "layout": "count-11-20-five-cards-wide-v2",
+      "instruction": "Count each organised set. Circle the matching numeral.",
+      "teacher_cue": "Count each row to ten first, then continue from eleven.",
+      "mechanics": {"cards": [
+        {"asset":"set_11","quantity":11,"choices":[10,11,12]},
+        {"asset":"set_13","quantity":13,"choices":[12,13,14]},
+        {"asset":"set_15","quantity":15,"choices":[14,15,16]},
+        {"asset":"set_18","quantity":18,"choices":[17,18,19]},
+        {"asset":"set_20","quantity":20,"choices":[19,20,21]}
+      ], "columns": 2, "last_card_full_width": true}
+    },
+    "EM-LKG-V4-P010": {
+      "render_kind": "quantity-numeral-match",
+      "layout": "quantity-numeral-match-four-rows-v2",
+      "instruction": "Count each object group. Draw a line to the matching numeral.",
+      "teacher_cue": "Count one group aloud, then match without crossing existing lines.",
+      "mechanics": {
+        "left":["left_1","left_2","left_3","left_4"],
+        "right":["right_1","right_2","right_3","right_4"],
+        "pairs":[["left_1","right_2"],["left_2","right_4"],["left_3","right_1"],["left_4","right_3"]],
+        "require_derangement": true
+      }
+    },
+    "EM-LKG-V4-P011": {
+      "render_kind": "count-choice-grid",
+      "layout": "count-circle-six-groups-v2",
+      "instruction": "Count each group. Circle the correct numeral below it.",
+      "teacher_cue": "Touch each object once while counting, then circle one numeral.",
+      "mechanics": {"cards": [
+        {"asset":"apple_group","quantity":1,"choices":[1,2,3]},
+        {"asset":"star_group","quantity":2,"choices":[1,2,3]},
+        {"asset":"balloon_group","quantity":3,"choices":[2,3,4]},
+        {"asset":"fish_group","quantity":4,"choices":[3,4,5]},
+        {"asset":"flower_group","quantity":5,"choices":[4,5,6]},
+        {"asset":"leaf_group","quantity":6,"choices":[5,6,7]}
+      ], "columns": 3}
+    },
+    "EM-LKG-V4-P012": {
+      "render_kind": "comparison-pairs",
+      "layout": "comparison-three-pairs-v2",
+      "instruction": "For each row, follow the prompt and circle the correct group.",
+      "teacher_cue": "Compare first, then count both groups to check.",
+      "mechanics": {"pairs": [
+        {"left":"pair_1_left","right":"pair_1_right","prompt":"Circle more.","answer":"right"},
+        {"left":"pair_2_left","right":"pair_2_right","prompt":"Circle less.","answer":"right"},
+        {"left":"pair_3_left","right":"pair_3_right","prompt":"Circle more.","answer":"right"}
+      ]}
+    },
+    "EM-LKG-V4-P013": {
+      "render_kind": "comparison-pairs",
+      "layout": "equal-groups-three-pairs-v2",
+      "instruction": "Count both groups. Circle YES when they are equal and NO when they are not.",
+      "teacher_cue": "Count the first group, then check whether the partner has the same number.",
+      "mechanics": {"pairs": [
+        {"left":"pair_1_left","right":"pair_1_right","choices":["YES","NO"],"answer":"YES"},
+        {"left":"pair_2_left","right":"pair_2_right","choices":["YES","NO"],"answer":"NO"},
+        {"left":"pair_3_left","right":"pair_3_right","choices":["YES","NO"],"answer":"YES"}
+      ]}
+    },
+    "EM-LKG-V4-P014": {
+      "render_kind": "sequence-completion",
+      "layout": "missing-number-three-strips-v2",
+      "instruction": "Read each sequence. Write the one missing number in the blank.",
+      "teacher_cue": "Read forward and pause at the blank without saying the answer.",
+      "mechanics": {"rows": [
+        {"asset":"sequence_1","sequence":[1,2,null,4,5],"blank_count":1,"answer":3},
+        {"asset":"sequence_2","sequence":[6,null,8,9,10],"blank_count":1,"answer":7},
+        {"asset":"sequence_3","sequence":[11,12,13,null,15],"blank_count":1,"answer":14}
+      ], "response":"single-write-slot"}
+    },
+    "EM-LKG-V4-P015": {
+      "render_kind": "group-addition",
+      "layout": "addition-three-equations-v2",
+      "instruction": "Count both groups. Add them and circle the total.",
+      "teacher_cue": "Sweep both groups together with a finger before counting the total.",
+      "mechanics": {"problems": [
+        {"left":"story_1_left","right":"story_1_right","left_quantity":2,"right_quantity":1,"choices":[2,3,4],"answer":3},
+        {"left":"story_2_left","right":"story_2_right","left_quantity":3,"right_quantity":2,"choices":[4,5,6],"answer":5},
+        {"left":"story_3_left","right":"story_3_right","left_quantity":4,"right_quantity":2,"choices":[5,6,7],"answer":6}
+      ], "show_plus":true, "show_equals":true}
+    },
+    "EM-LKG-V4-P016": {
+      "render_kind": "take-away",
+      "layout": "subtraction-three-stories-v2",
+      "instruction": "Count the set. Cross out the objects taken away. Circle how many remain.",
+      "teacher_cue": "Count the starting set, cross out only the separated objects, then recount.",
+      "mechanics": {"problems": [
+        {"asset":"story_1","start":5,"take_away":2,"remain":3,"choices":[2,3,4]},
+        {"asset":"story_2","start":6,"take_away":1,"remain":5,"choices":[4,5,6]},
+        {"asset":"story_3","start":7,"take_away":3,"remain":4,"choices":[3,4,5]}
+      ], "cross_out_by_child":true}
+    },
+    "EM-LKG-V4-P017": {
+      "render_kind": "before-after",
+      "layout": "before-after-four-rows-v2",
+      "instruction": "Write the number before and the number after each centre number.",
+      "teacher_cue": "Say three numbers around the centre number, leaving the two answers for the child.",
+      "mechanics": {"rows": [
+        {"asset":"row_1","centre":4,"before":3,"after":5},
+        {"asset":"row_2","centre":7,"before":6,"after":8},
+        {"asset":"row_3","centre":12,"before":11,"after":13},
+        {"asset":"row_4","centre":18,"before":17,"after":19}
+      ], "response_slots":2}
+    },
+    "EM-LKG-V4-P018": {
+      "render_kind": "number-order",
+      "layout": "number-order-three-rows-v2",
+      "instruction": "Write each set in order from smallest to greatest.",
+      "teacher_cue": "Find the smallest token first, then count forward.",
+      "mechanics": {"rows": [
+        {"asset":"row_1","tokens":[3,1,2],"answer":[1,2,3],"slot_count":3},
+        {"asset":"row_2","tokens":[8,6,7,5],"answer":[5,6,7,8],"slot_count":4},
+        {"asset":"row_3","tokens":[14,11,13,12],"answer":[11,12,13,14],"slot_count":4}
+      ]}
+    },
+    "EM-LKG-V4-P019": {
+      "render_kind": "number-line-jumps",
+      "layout": "number-line-three-strips-v2",
+      "instruction": "Start at the marked number. Follow the jumps and circle where you land.",
+      "teacher_cue": "Say one number for each jump and stop at the landing number.",
+      "mechanics": {"rows": [
+        {"asset":"line_1","range":[0,5],"start":0,"jumps":2,"landing":2,"choices":[1,2,3]},
+        {"asset":"line_2","range":[5,10],"start":5,"jumps":3,"landing":8,"choices":[7,8,9]},
+        {"asset":"line_3","range":[10,15],"start":10,"jumps":4,"landing":14,"choices":[13,14,15]}
+      ], "draw_jump_arcs":true}
+    }
+  }
+}

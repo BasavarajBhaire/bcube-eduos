@@ -1,0 +1,219 @@
+{
+  "version": "1.0.0",
+  "book": "Early Maths Adventures",
+  "level": "LKG (4+)",
+  "purpose": "Regenerate only illustration source sheets that are unsuitable or risky for deterministic cropping.",
+  "global_crop_safe_lock": [
+    "Create one illustration-only source sheet containing exactly the named assets for this page.",
+    "Use a pure white background and keep every named asset fully isolated inside its assigned zone.",
+    "Leave at least 10% canvas-width white gutter between neighbouring zones and at least 8% clear padding around every asset inside its zone.",
+    "No asset may touch, overlap, cast a merged shadow into, or visually contaminate another zone.",
+    "Do not optimise the source sheet as a decorative composition; optimise it for deterministic cropping reliability.",
+    "Do not include worksheet frames, cards, panels, dotted boxes, response circles, answer boxes, sequence slots, matching lines, arrows, route lines, comparison symbols, crossed-out objects, labels, titles, instructions, branding, page numbers or teacher cues.",
+    "Do not include generated words or numerals unless the numeral is explicitly named as an asset.",
+    "Keep grouped quantities compact, countable and entirely inside one zone; do not scatter loose objects near zone edges.",
+    "Premium preschool-publishing quality, large recognisable forms, thick clean rounded outlines, refined flat colour, minimal detail, no photorealism, no watermark, no mockup."
+  ],
+  "pages": {
+    "EM-LKG-V4-P009": {
+      "title": "Numbers 11–20",
+      "layout": "five-zone spacious 2-2-1 grid",
+      "named_assets": {
+        "set_11": "exactly eleven beads arranged compactly in two clear rows",
+        "set_13": "exactly thirteen shells arranged compactly in two clear rows",
+        "set_15": "exactly fifteen counters arranged compactly in three clear rows",
+        "set_18": "exactly eighteen stars arranged compactly in three clear rows",
+        "set_20": "exactly twenty blocks arranged compactly in four clear rows"
+      },
+      "page_specific_lock": "Each quantity set is one self-contained crop. No numerals, number cards, row labels or answer controls. Make every object large enough to count while keeping the whole set comfortably inside its zone."
+    },
+    "EM-LKG-V4-P010": {
+      "title": "Count & Match",
+      "layout": "eight-zone spacious 2-column matching asset sheet",
+      "named_assets": {
+        "left_1": "group of exactly two kites",
+        "left_2": "group of exactly four ducks",
+        "left_3": "group of exactly six cupcakes",
+        "left_4": "group of exactly eight balls",
+        "right_1": "isolated large numeral 6, plain rounded print style",
+        "right_2": "isolated large numeral 2, plain rounded print style",
+        "right_3": "isolated large numeral 8, plain rounded print style",
+        "right_4": "isolated large numeral 4, plain rounded print style"
+      },
+      "page_specific_lock": "Object groups occupy the left half and numeral assets occupy the right half, with very wide central and row gutters. No matching lines, dots, boxes or cards."
+    },
+    "EM-LKG-V4-P014": {
+      "title": "Missing Numbers",
+      "layout": "three wide horizontal zones",
+      "named_assets": {
+        "sequence_1": "five plain stepping stones with visual positions only and no numerals",
+        "sequence_2": "five plain train carriages with visual positions only and no numerals",
+        "sequence_3": "five plain balloons in one row with visual positions only and no numerals"
+      },
+      "page_specific_lock": "Provide raw sequence carriers only. Do not place numerals, missing-number gaps, dotted boxes or completed sequence mechanics inside the artwork; the publishing engine adds all numerals and slots."
+    },
+    "EM-LKG-V4-P017": {
+      "title": "Before & After",
+      "layout": "four isolated numeral-token zones in a 2-by-2 grid",
+      "named_assets": {
+        "row_1": "isolated plain central numeral 4 token",
+        "row_2": "isolated plain central numeral 7 token",
+        "row_3": "isolated plain central numeral 12 token",
+        "row_4": "isolated plain central numeral 18 token"
+      },
+      "page_specific_lock": "Only the four centre numeral tokens are illustration assets. No left or right blank boxes, arrows, before/after labels, row frames or answer options."
+    },
+    "EM-LKG-V4-P018": {
+      "title": "Number Order",
+      "layout": "three wide horizontal token-group zones",
+      "named_assets": {
+        "row_1": "three separate plain numeral tokens showing 3, 1 and 2 in that scrambled order",
+        "row_2": "four separate plain numeral tokens showing 8, 6, 7 and 5 in that scrambled order",
+        "row_3": "four separate plain numeral tokens showing 14, 11, 13 and 12 in that scrambled order"
+      },
+      "page_specific_lock": "Within each row asset, keep numeral tokens separated by generous white space. No row panel, ordering arrows, answer slots or decorative buttons."
+    },
+    "EM-LKG-V4-P019": {
+      "title": "Number Line",
+      "layout": "three isolated character zones",
+      "named_assets": {
+        "line_1": "friendly frog facing right in a small ready-to-jump pose",
+        "line_2": "friendly rabbit facing right in a small ready-to-jump pose",
+        "line_3": "friendly bee facing right in a small flying pose"
+      },
+      "page_specific_lock": "Provide only the three character assets. Do not draw number lines, numerals, tick marks, hops, arcs, arrows, landing points or route strips; the publishing engine draws all number-line mechanics."
+    },
+    "EM-LKG-V4-P021": {
+      "title": "Math Stories",
+      "layout": "three large complete mini-scene zones stacked vertically",
+      "named_assets": {
+        "story_1": "complete mini-scene with three ducks already in water and two ducks approaching, all five ducks fully visible",
+        "story_2": "complete mini-scene with six biscuits together and two visibly being moved away by position only, with no strike marks",
+        "story_3": "complete mini-scene with four children and four balls arranged so one ball can be shared with each child"
+      },
+      "page_specific_lock": "Each story is one complete, readable crop-safe scene. No answer numerals, operation symbols, speech bubbles, arrows, crossed-out items or response controls."
+    },
+    "EM-LKG-V4-P026": {
+      "title": "Complete the Pattern",
+      "layout": "four wide horizontal pattern-strip zones",
+      "named_assets": {
+        "row_1": "apple banana apple banana apple, ending naturally with open white space",
+        "row_2": "circle triangle triangle circle triangle triangle, ending naturally with open white space",
+        "row_3": "red block blue block green block red block blue block, ending naturally with open white space",
+        "row_4": "small star big star small star big star, ending naturally with open white space"
+      },
+      "page_specific_lock": "End each pattern by omission only. Do not draw a dotted missing box, blank slot, question mark, answer choices or row frame."
+    },
+    "EM-LKG-V4-P027": {
+      "title": "Position Words",
+      "layout": "six spacious scene zones in a 2-by-3 grid",
+      "named_assets": {
+        "scene_in": "ball clearly inside an open box",
+        "scene_on": "cat clearly sitting on a mat",
+        "scene_under": "shoe clearly under a chair",
+        "scene_above": "kite clearly above a tree with visible separation",
+        "scene_beside": "dog clearly beside a child",
+        "scene_between": "ball clearly between two cones"
+      },
+      "page_specific_lock": "Each positional relationship must be unmistakable inside one compact scene crop. No position words, choice labels, circles or card borders."
+    },
+    "EM-LKG-V4-P028": {
+      "title": "Directions",
+      "layout": "three wide horizontal start-and-destination zones",
+      "named_assets": {
+        "path_1": "mouse at the far left and cheese at the far right with a large empty white route area between them",
+        "path_2": "bee at the far left and flower at the far right with a large empty white route area between them",
+        "path_3": "car at the far left and garage at the far right with a large empty white route area between them"
+      },
+      "page_specific_lock": "Do not draw the route, arrows, maze walls, directional symbols or trace line. Keep the middle of each asset intentionally open so the publishing engine can add the exact path."
+    },
+    "EM-LKG-V4-P030": {
+      "title": "Tall & Short",
+      "layout": "four spacious pair zones in a 2-by-2 grid",
+      "named_assets": {
+        "pair_1": "one tall tree and one short tree aligned on the same baseline",
+        "pair_2": "one tall bottle and one short bottle aligned on the same baseline",
+        "pair_3": "one tall child silhouette and one short child silhouette aligned on the same baseline",
+        "pair_4": "one tall block tower and one short block tower aligned on the same baseline"
+      },
+      "page_specific_lock": "Each pair is raw artwork only, with a clear gap between pair members and a shared baseline. No dotted cards, measurement lines, labels or response circles."
+    },
+    "EM-LKG-V4-P031": {
+      "title": "Heavy & Light",
+      "layout": "four spacious pair zones in a 2-by-2 grid",
+      "named_assets": {
+        "pair_1": "rock and feather separated clearly",
+        "pair_2": "watermelon and grape separated clearly",
+        "pair_3": "full schoolbag and pencil separated clearly",
+        "pair_4": "metal pan and paper plate separated clearly"
+      },
+      "page_specific_lock": "Every pair member must be fully visible and must not overlap. No scales, hands, motion marks, card borders, labels or answer controls."
+    },
+    "EM-LKG-V4-P032": {
+      "title": "Long & Short",
+      "layout": "four wide pair zones stacked with generous vertical gutters",
+      "named_assets": {
+        "pair_1": "long ribbon and short ribbon aligned at the same left starting point",
+        "pair_2": "long pencil and short pencil aligned at the same left starting point",
+        "pair_3": "long snake and short snake aligned at the same left starting point",
+        "pair_4": "long rope and short rope aligned at the same left starting point"
+      },
+      "page_specific_lock": "Keep both objects in each pair horizontal, parallel and aligned at one end. No dotted cards, rulers, arrows, labels or response mechanics."
+    },
+    "EM-LKG-V4-P033": {
+      "title": "Full & Empty",
+      "layout": "four spacious pair zones in a 2-by-2 grid",
+      "named_assets": {
+        "pair_1": "one full glass and one empty glass, both fully visible",
+        "pair_2": "one full basket and one empty basket, both fully visible",
+        "pair_3": "one full bucket and one empty bucket, both fully visible",
+        "pair_4": "one full lunchbox and one empty lunchbox, both fully visible"
+      },
+      "page_specific_lock": "Show only the two container states per asset with a clear gap. No cards, labels, ticks, answer circles or decorative frames."
+    },
+    "EM-LKG-V4-P034": {
+      "title": "Capacity",
+      "layout": "four spacious pair zones in a 2-by-2 grid",
+      "named_assets": {
+        "pair_1": "small cup and large jug separated clearly",
+        "pair_2": "small bowl and large pot separated clearly",
+        "pair_3": "short bottle and large bucket separated clearly",
+        "pair_4": "small box and large storage tub separated clearly"
+      },
+      "page_specific_lock": "Show raw container pairs only. Keep both containers fully visible and clearly different in capacity. No dotted cards, liquid-level marks, labels or response controls."
+    },
+    "EM-LKG-V4-P039": {
+      "title": "Problem Solving",
+      "layout": "three large complete problem-scene zones stacked vertically",
+      "named_assets": {
+        "problem_1": "complete mini-scene with five birds, two positioned as flying away but without strike marks",
+        "problem_2": "three red blocks and three blue blocks arranged as two clearly separated countable groups",
+        "problem_3": "simple red-blue-red-blue repeating pattern ending naturally with open white space"
+      },
+      "page_specific_lock": "Each problem must be one self-contained crop. No answer boxes, dotted gaps, operation symbols, comparison signs, labels or response choices."
+    },
+    "EM-LKG-V4-P040": {
+      "title": "Maths Around Me",
+      "layout": "one large hero zone plus four widely separated target-cue zones",
+      "named_assets": {
+        "main_scene": "simple market scene containing a few clearly readable price numerals, round fruit, rectangular boxes, one big and one small basket, and one striped pattern",
+        "target_number": "one isolated plain numeral cue",
+        "target_shape": "one isolated plain circle cue",
+        "target_size": "one isolated big-and-small object pair cue",
+        "target_pattern": "one isolated short striped pattern cue"
+      },
+      "page_specific_lock": "The main scene is one complete hero crop. Keep each target cue in a separate distant zone. Numerals are allowed only inside the market scene because finding numbers is part of the objective; no worksheet UI."
+    },
+    "EM-LKG-V4-P043": {
+      "title": "I Am a Maths Explorer",
+      "layout": "one large hero zone on the left and three evenly spaced choice zones on the right",
+      "named_assets": {
+        "hero_scene": "one proud child holding a completed maths workbook, full body or three-quarter view, no text on the workbook",
+        "choice_numbers": "one compact countable number-activity sample with a small object group and no numeral or answer control",
+        "choice_shapes": "one compact shape-activity sample containing a circle, square and triangle only",
+        "choice_patterns": "one compact repeating-pattern sample with four to six simple coloured objects"
+      },
+      "page_specific_lock": "The four assets must be visually independent and easy to crop. No labels, speech balloons, worksheet fragments, response boxes or overlapping choice samples."
+    }
+  }
+}

@@ -17,7 +17,7 @@ NORMALIZER = ROOT / "bcube-publishing-sdk/normalizers/build_learning_contract_v2
 REFINER = ROOT / "bcube-publishing-sdk/normalizers/refine_learning_contract_v2.py"
 FINALISER = ROOT / "bcube-publishing-sdk/normalizers/finalise_learning_contract_v2.py"
 VALIDATOR = ROOT / "bcube-publishing-sdk/validators/validate_learning_contract_v2.py"
-COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_character_v2.py"
+COMPOSER = ROOT / "bcube-publishing-sdk/composer/compose_learning_page_phase2.py"
 OVERRIDES = ROOT / "bcube-publishing-sdk/books/learning-page-overrides-v1.json"
 
 

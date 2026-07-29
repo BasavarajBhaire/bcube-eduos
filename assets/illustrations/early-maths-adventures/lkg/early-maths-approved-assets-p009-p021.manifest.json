@@ -1,0 +1,34 @@
+{
+  "archive": "early-maths-approved-assets-p009-p021.zip",
+  "archive_sha256": "2af1de91416ff3277f409265817ecaac356458688b3ed2f9085ac20bcf4a8e8c",
+  "asset_count": 45,
+  "pages": [
+    "EM-LKG-V4-P009",
+    "EM-LKG-V4-P010",
+    "EM-LKG-V4-P011",
+    "EM-LKG-V4-P012",
+    "EM-LKG-V4-P014",
+    "EM-LKG-V4-P015",
+    "EM-LKG-V4-P018",
+    "EM-LKG-V4-P020",
+    "EM-LKG-V4-P021"
+  ],
+  "policy": {
+    "source": "User-approved Work Mode generation",
+    "one_asset_per_file": true,
+    "no_image_api_regeneration": true,
+    "curriculum_first_scope": "P009-P021",
+    "deterministic_pages_without_art": ["EM-LKG-V4-P013", "EM-LKG-V4-P016", "EM-LKG-V4-P017", "EM-LKG-V4-P019"]
+  },
+  "expected_assets": {
+    "EM-LKG-V4-P009": ["group_2_kites", "group_4_ducks", "group_6_cupcakes", "group_8_balls"],
+    "EM-LKG-V4-P010": ["group_1_apple", "group_2_stars", "group_3_balloons", "group_4_fish", "group_5_flowers", "group_6_leaves"],
+    "EM-LKG-V4-P011": ["less_apples_2", "more_apples_5", "more_fish_6", "less_fish_3", "less_stars_4", "more_stars_7"],
+    "EM-LKG-V4-P012": ["equal_oranges_left_4", "equal_oranges_right_4", "unequal_butterflies_left_3", "unequal_butterflies_right_5", "equal_blocks_left_6", "equal_blocks_right_6"],
+    "EM-LKG-V4-P014": ["join_birds_group_a_2", "join_birds_group_b_1", "join_cars_group_a_3", "join_cars_group_b_2", "join_flowers_group_a_4", "join_flowers_group_b_2"],
+    "EM-LKG-V4-P015": ["takeaway_apples_scene", "takeaway_fish_scene", "takeaway_balloons_scene"],
+    "EM-LKG-V4-P018": ["frog", "rabbit", "bee"],
+    "EM-LKG-V4-P020": ["story_ducks", "story_balls", "story_biscuits"],
+    "EM-LKG-V4-P021": ["shape_circle", "shape_square", "shape_triangle", "shape_rectangle", "object_flag", "object_clock", "object_door", "object_window"]
+  }
+}

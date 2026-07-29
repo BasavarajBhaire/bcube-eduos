@@ -1,0 +1,519 @@
+{
+  "version": "stem-explorers-phase2-illustration-prompts-v1",
+  "book": "STEM Explorers",
+  "level": "LKG (4+)",
+  "source_blueprint": "curriculum/stem-explorers/lkg/curriculum-first-p008-p043-v1.json",
+  "policy": "Content-aligned artwork only; deterministic text and mechanics; no generic fallback.",
+  "pages": {
+    "ST-LKG-V4-P008": {
+      "title": "Observe Like a Scientist",
+      "output_filename": "ST-LKG-V4-P008.png",
+      "asset_names": [
+        "nature_a",
+        "nature_b"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P008\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Observe Like a Scientist\nLearning objective: Develop observation.\nExact child action: Compare Picture A and Picture B. Circle five differences in Picture B. Tell one difference.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 2 visual asset(s), each appearing once:\n1. nature_a: park scene with tree, flowers, bird, butterfly, pond and frog.\n2. nature_b: the same park scene with exactly five clear changes.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 1-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P009": {
+      "title": "Five Senses",
+      "output_filename": "ST-LKG-V4-P009.png",
+      "asset_names": [
+        "eye",
+        "ear",
+        "nose",
+        "tongue",
+        "hand",
+        "rainbow",
+        "bell",
+        "flower",
+        "lemon",
+        "feather"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P009\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Five Senses\nLearning objective: Use the senses safely.\nExact child action: Name each sense organ. Draw a line to what it helps you notice.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 10 visual asset(s), each appearing once:\n1. eye: one eye.\n2. ear: one ear.\n3. nose: one nose.\n4. tongue: one tongue.\n5. hand: one hand.\n6. rainbow: colourful rainbow.\n7. bell: ringing handbell.\n8. flower: fragrant flower.\n9. lemon: lemon slice.\n10. feather: soft feather.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 4-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P010": {
+      "title": "Living & Non-living",
+      "output_filename": "ST-LKG-V4-P010.png",
+      "asset_names": [
+        "dog",
+        "tree",
+        "butterfly",
+        "rock",
+        "car",
+        "book"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P010\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Living & Non-living\nLearning objective: Identify and classify familiar living and non-living things.\nExact child action: Look at each numbered picture. Write its number under LIVING or NON-LIVING.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 6 visual asset(s), each appearing once:\n1. dog: friendly dog.\n2. tree: green tree.\n3. butterfly: butterfly.\n4. rock: rock.\n5. car: toy car.\n6. book: closed book.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P011": {
+      "title": "Plants Around Us",
+      "output_filename": "ST-LKG-V4-P011.png",
+      "asset_names": [
+        "plant"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P011\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Plants Around Us\nLearning objective: Recognise plant parts.\nExact child action: Look at the plant. Draw a line from each word to the correct plant part.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 visual asset(s), each appearing once:\n1. plant: large complete flowering plant showing roots, stem, leaves and flower.\n\nLAYOUT LOCK\nCreate one large coherent visual centred on the canvas with generous pure-white safe margins.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P012": {
+      "title": "Animals Around Us",
+      "output_filename": "ST-LKG-V4-P012.png",
+      "asset_names": [
+        "fish",
+        "bird",
+        "rabbit",
+        "bee",
+        "dog",
+        "pond",
+        "nest",
+        "burrow",
+        "hive",
+        "kennel"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P012\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Animals Around Us\nLearning objective: Recognise habitats.\nExact child action: Name each animal and habitat. Draw a line between each animal and its home.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 10 visual asset(s), each appearing once:\n1. fish: fish.\n2. bird: bird.\n3. rabbit: rabbit.\n4. bee: bee.\n5. dog: dog.\n6. pond: pond.\n7. nest: bird nest.\n8. burrow: rabbit burrow.\n9. hive: beehive.\n10. kennel: dog kennel.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 4-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P013": {
+      "title": "Weather Watch",
+      "output_filename": "ST-LKG-V4-P013.png",
+      "asset_names": [
+        "sunny",
+        "rainy",
+        "windy",
+        "cloudy",
+        "hat",
+        "umbrella",
+        "kite",
+        "light_jacket"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P013\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Weather Watch\nLearning objective: Observe weather patterns.\nExact child action: Look at each weather picture. Match the item that is useful for that weather.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. sunny: sunny day.\n2. rainy: rainy day.\n3. windy: windy day.\n4. cloudy: cloudy day.\n5. hat: sun hat.\n6. umbrella: umbrella.\n7. kite: kite.\n8. light_jacket: light jacket.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P014": {
+      "title": "Day & Night",
+      "output_filename": "ST-LKG-V4-P014.png",
+      "asset_names": [
+        "breakfast",
+        "school",
+        "play",
+        "sun",
+        "sleep",
+        "stars",
+        "pyjamas",
+        "bedtime_story"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P014\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Day & Night\nLearning objective: Understand daily cycles.\nExact child action: Look at each numbered activity. Write its number under DAY or NIGHT.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. breakfast: child eating breakfast.\n2. school: child walking to school.\n3. play: child playing outdoors.\n4. sun: bright sun.\n5. sleep: child sleeping.\n6. stars: moon and stars.\n7. pyjamas: child putting on pyjamas.\n8. bedtime_story: adult reading a bedtime story.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P015": {
+      "title": "Water Explorers",
+      "output_filename": "ST-LKG-V4-P015.png",
+      "asset_names": [
+        "drink",
+        "wash_hands",
+        "water_plant",
+        "cook",
+        "turn_off_tap",
+        "running_tap",
+        "hose_waste",
+        "overflow"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P015\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Water Explorers\nLearning objective: Explore water uses.\nExact child action: Circle the pictures that show safe, careful uses of water. Cross the pictures that waste water.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. drink: child drinking water.\n2. wash_hands: child washing hands.\n3. water_plant: child watering one plant with a can.\n4. cook: adult using water for cooking.\n5. turn_off_tap: child turning off a tap.\n6. running_tap: tap left running.\n7. hose_waste: water hose spraying unused water.\n8. overflow: overflowing bucket.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P016": {
+      "title": "Floating & Sinking",
+      "output_filename": "ST-LKG-V4-P016.png",
+      "asset_names": [
+        "leaf",
+        "coin",
+        "cork",
+        "spoon",
+        "plastic_cap",
+        "stone"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P016\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Floating & Sinking\nLearning objective: Predict and test.\nExact child action: Predict first: circle FLOAT or SINK for each object. Test the objects, then circle the result.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 6 visual asset(s), each appearing once:\n1. leaf: leaf.\n2. coin: coin.\n3. cork: cork.\n4. spoon: metal spoon.\n5. plastic_cap: plastic bottle cap.\n6. stone: small stone.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P017": {
+      "title": "Magnets",
+      "output_filename": "ST-LKG-V4-P017.png",
+      "asset_names": [
+        "paper_clip",
+        "wood_block",
+        "key",
+        "eraser",
+        "nail",
+        "plastic_spoon",
+        "steel_lid",
+        "crayon"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P017\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Magnets\nLearning objective: Discover magnetic objects.\nExact child action: Look at each numbered object. Write its number under MAGNETIC or NOT MAGNETIC.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. paper_clip: paper clip.\n2. wood_block: wooden block.\n3. key: metal key.\n4. eraser: rubber eraser.\n5. nail: iron nail.\n6. plastic_spoon: plastic spoon.\n7. steel_lid: steel jar lid.\n8. crayon: wax crayon.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P018": {
+      "title": "Light & Shadow",
+      "output_filename": "ST-LKG-V4-P018.png",
+      "asset_names": [
+        "tree",
+        "kite",
+        "cup",
+        "rabbit",
+        "umbrella",
+        "bicycle",
+        "tree_shadow",
+        "kite_shadow",
+        "cup_shadow",
+        "rabbit_shadow",
+        "umbrella_shadow",
+        "bicycle_shadow"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P018\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Light & Shadow\nLearning objective: Observe shadows.\nExact child action: Name each object. Draw a line to its matching shadow.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 12 visual asset(s), each appearing once:\n1. tree: tree.\n2. kite: kite.\n3. cup: cup.\n4. rabbit: rabbit.\n5. umbrella: umbrella.\n6. bicycle: bicycle.\n7. tree_shadow: tree silhouette.\n8. kite_shadow: kite silhouette.\n9. cup_shadow: cup silhouette.\n10. rabbit_shadow: rabbit silhouette.\n11. umbrella_shadow: umbrella silhouette.\n12. bicycle_shadow: bicycle silhouette.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 4-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P019": {
+      "title": "Building Bridges",
+      "output_filename": "ST-LKG-V4-P019.png",
+      "asset_names": [
+        "flat_bridge",
+        "folded_bridge",
+        "rail_bridge"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P019\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Building Bridges\nLearning objective: Engineering basics.\nExact child action: Look at the three paper bridges. Circle the bridge that can hold the most toy animals. Draw one way to make a bridge stronger.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 visual asset(s), each appearing once:\n1. flat_bridge: flat paper bridge over two blocks with one toy animal.\n2. folded_bridge: accordion-fold paper bridge over two blocks holding several toy animals.\n3. rail_bridge: paper bridge with folded side rails holding several toy animals.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P020": {
+      "title": "Simple Machines",
+      "output_filename": "ST-LKG-V4-P020.png",
+      "asset_names": [
+        "ramp",
+        "wheel",
+        "lever",
+        "slide",
+        "wheelbarrow",
+        "seesaw",
+        "road_ramp",
+        "bicycle",
+        "bottle_opener"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P020\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Simple Machines\nLearning objective: Recognise everyday tools.\nExact child action: Match each simple machine to the everyday object that uses it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 9 visual asset(s), each appearing once:\n1. ramp: simple ramp.\n2. wheel: wheel and axle.\n3. lever: lever on a fulcrum.\n4. slide: playground slide.\n5. wheelbarrow: wheelbarrow.\n6. seesaw: seesaw.\n7. road_ramp: loading ramp.\n8. bicycle: bicycle.\n9. bottle_opener: bottle opener.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P021": {
+      "title": "Patterns in Nature",
+      "output_filename": "ST-LKG-V4-P021.png",
+      "asset_names": [
+        "zebra",
+        "ladybird",
+        "snail",
+        "leaf",
+        "tiger",
+        "butterfly",
+        "sunflower",
+        "fern"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P021\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Patterns in Nature\nLearning objective: Find natural patterns.\nExact child action: Look at each natural object. Circle the word that names its pattern.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. zebra: zebra stripes.\n2. ladybird: spotted ladybird.\n3. snail: spiral snail shell.\n4. leaf: leaf veins.\n5. tiger: tiger stripes.\n6. butterfly: spotted butterfly wings.\n7. sunflower: sunflower spiral seeds.\n8. fern: fern leaf pattern.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P022": {
+      "title": "Healthy Earth",
+      "output_filename": "ST-LKG-V4-P022.png",
+      "asset_names": [
+        "recycle",
+        "litter",
+        "plant_tree",
+        "waste_water",
+        "reuse_bag",
+        "pick_flowers",
+        "turn_off_light",
+        "smoke"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P022\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Healthy Earth\nLearning objective: Care for the environment.\nExact child action: Look at each numbered action. Write its number under HELPS EARTH or HURTS EARTH.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. recycle: child recycling paper.\n2. litter: person dropping litter.\n3. plant_tree: child planting a tree.\n4. waste_water: tap left running.\n5. reuse_bag: family using reusable bag.\n6. pick_flowers: child pulling many wild flowers.\n7. turn_off_light: child turning off unused light.\n8. smoke: vehicle releasing heavy smoke.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P023": {
+      "title": "Technology Around Me",
+      "output_filename": "ST-LKG-V4-P023.png",
+      "asset_names": [
+        "torch",
+        "tablet",
+        "fan",
+        "telephone",
+        "camera",
+        "washing_machine",
+        "book",
+        "spoon",
+        "ball",
+        "chair"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P023\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Technology Around Me\nLearning objective: Recognise everyday technology.\nExact child action: Name the objects. Circle the things that use technology. Choose one and tell what it helps us do.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 10 visual asset(s), each appearing once:\n1. torch: torch.\n2. tablet: tablet.\n3. fan: electric fan.\n4. telephone: telephone.\n5. camera: camera.\n6. washing_machine: washing machine.\n7. book: book.\n8. spoon: spoon.\n9. ball: ball.\n10. chair: chair.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 4-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P024": {
+      "title": "Safe Technology",
+      "output_filename": "ST-LKG-V4-P024.png",
+      "asset_names": [
+        "ask_adult",
+        "sit_well",
+        "short_time",
+        "clean_hands",
+        "bed_screen",
+        "food_device",
+        "too_close",
+        "unknown_click"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P024\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Safe Technology\nLearning objective: Use technology safely.\nExact child action: Circle every picture that shows safe technology use. Cross the unsafe pictures.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. ask_adult: child asking adult before using a device.\n2. sit_well: child sitting well at a table with device.\n3. short_time: child stopping device use to stretch.\n4. clean_hands: child using device with clean dry hands.\n5. bed_screen: child using bright screen in bed.\n6. food_device: child spilling a drink beside a device.\n7. too_close: child holding screen too close.\n8. unknown_click: child about to click an unknown pop-up.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P025": {
+      "title": "Coding Patterns",
+      "output_filename": "ST-LKG-V4-P025.png",
+      "asset_names": [
+        "arrow_up",
+        "arrow_down",
+        "arrow_left",
+        "arrow_right",
+        "red_circle",
+        "blue_square",
+        "green_triangle",
+        "yellow_star"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P025\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Coding Patterns\nLearning objective: Understand sequencing.\nExact child action: Follow each colour-and-arrow code. Draw the next two symbols in the empty boxes.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. arrow_up: up arrow symbol.\n2. arrow_down: down arrow symbol.\n3. arrow_left: left arrow symbol.\n4. arrow_right: right arrow symbol.\n5. red_circle: red circle.\n6. blue_square: blue square.\n7. green_triangle: green triangle.\n8. yellow_star: yellow star.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P026": {
+      "title": "Robot Thinking",
+      "output_filename": "ST-LKG-V4-P026.png",
+      "asset_names": [
+        "robot",
+        "battery",
+        "rock",
+        "water",
+        "box"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P026\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Robot Thinking\nLearning objective: Give step-by-step instructions.\nExact child action: Guide the robot to the battery. Draw the route on the grid, then write the arrow steps in the boxes.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 visual asset(s), each appearing once:\n1. robot: friendly small robot.\n2. battery: large battery icon.\n3. rock: rock obstacle.\n4. water: puddle obstacle.\n5. box: wooden box obstacle.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P027": {
+      "title": "Engineering Challenge",
+      "output_filename": "ST-LKG-V4-P027.png",
+      "asset_names": [
+        "bridge_no_support",
+        "bridge_one_post",
+        "bridge_triangle",
+        "bridge_arch"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P027\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Engineering Challenge\nLearning objective: Solve a building problem.\nExact child action: Look at the four bridge designs. Circle the design that is strongest. Draw one support that could improve a weaker bridge.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 visual asset(s), each appearing once:\n1. bridge_no_support: flat bridge without support.\n2. bridge_one_post: bridge with one centre post.\n3. bridge_triangle: bridge with triangular braces.\n4. bridge_arch: bridge with an arch support.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P028": {
+      "title": "Build a Tower",
+      "output_filename": "ST-LKG-V4-P028.png",
+      "asset_names": [
+        "tower_narrow",
+        "tower_leaning",
+        "tower_wide",
+        "tower_uneven"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P028\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Build a Tower\nLearning objective: Explore stability.\nExact child action: Circle the tower with the widest, most stable base. Then plan your own tall tower in the grid.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 visual asset(s), each appearing once:\n1. tower_narrow: tall block tower with narrow base.\n2. tower_leaning: leaning block tower.\n3. tower_wide: stable block tower with wide base.\n4. tower_uneven: uneven block tower.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P029": {
+      "title": "Strong & Weak",
+      "output_filename": "ST-LKG-V4-P029.png",
+      "asset_names": [
+        "bridge_pair",
+        "tower_pair",
+        "chair_pair",
+        "shelf_pair",
+        "tent_pair"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P029\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Strong & Weak\nLearning objective: Compare structures.\nExact child action: Look at each pair. Circle the stronger structure. Tell what makes it strong.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 visual asset(s), each appearing once:\n1. bridge_pair: weak flat paper bridge and braced paper bridge.\n2. tower_pair: narrow leaning tower and wide stable tower.\n3. chair_pair: loose chair and braced chair.\n4. shelf_pair: unsupported shelf and shelf with brackets.\n5. tent_pair: tent without pegs and tent secured with pegs.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P030": {
+      "title": "Measure & Compare",
+      "output_filename": "ST-LKG-V4-P030.png",
+      "asset_names": [
+        "pencil",
+        "crayon",
+        "book",
+        "eraser",
+        "plant",
+        "bottle"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P030\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Measure & Compare\nLearning objective: Estimate and compare.\nExact child action: Count the cubes used to measure each object. Write the number. Circle the longer or taller object in each pair.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 6 visual asset(s), each appearing once:\n1. pencil: pencil.\n2. crayon: crayon.\n3. book: book.\n4. eraser: eraser.\n5. plant: small potted plant.\n6. bottle: water bottle.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P031": {
+      "title": "Sort & Investigate",
+      "output_filename": "ST-LKG-V4-P031.png",
+      "asset_names": [
+        "wood_spoon",
+        "metal_key",
+        "plastic_cup",
+        "wood_block",
+        "metal_can",
+        "plastic_bottle",
+        "wood_pencil",
+        "metal_clip",
+        "plastic_comb"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P031\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Sort & Investigate\nLearning objective: Collect and sort data.\nExact child action: Look at each numbered object. Write its number under WOOD, METAL or PLASTIC.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 9 visual asset(s), each appearing once:\n1. wood_spoon: wooden spoon.\n2. metal_key: metal key.\n3. plastic_cup: plastic cup.\n4. wood_block: wooden block.\n5. metal_can: metal can.\n6. plastic_bottle: plastic bottle.\n7. wood_pencil: wooden pencil.\n8. metal_clip: metal paper clip.\n9. plastic_comb: plastic comb.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P032": {
+      "title": "Predict & Test",
+      "output_filename": "ST-LKG-V4-P032.png",
+      "asset_names": [
+        "low_ramp",
+        "medium_ramp",
+        "high_ramp"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P032\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Predict & Test\nLearning objective: Make predictions.\nExact child action: Predict which ramp will make the ball travel farthest. Circle your prediction. Test, then tick the result.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 visual asset(s), each appearing once:\n1. low_ramp: low toy-car ramp.\n2. medium_ramp: medium-height toy-car ramp.\n3. high_ramp: high toy-car ramp.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P033": {
+      "title": "Ask a Question",
+      "output_filename": "ST-LKG-V4-P033.png",
+      "asset_names": [
+        "melting_ice",
+        "growing_plant",
+        "floating_boat",
+        "magnet_clips"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P033\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Ask a Question\nLearning objective: Develop inquiry skills.\nExact child action: Look at each science picture. Use the starter to ask one complete question.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 visual asset(s), each appearing once:\n1. melting_ice: ice cube melting in sunlight.\n2. growing_plant: seedling growing toward light.\n3. floating_boat: paper boat floating in water.\n4. magnet_clips: magnet attracting paper clips.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P034": {
+      "title": "Record My Discovery",
+      "output_filename": "ST-LKG-V4-P034.png",
+      "asset_names": [
+        "cork",
+        "coin",
+        "leaf",
+        "stone"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P034\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Record My Discovery\nLearning objective: Record observations.\nExact child action: After testing the objects in water, tick FLOAT or SINK. Draw one thing you noticed.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 visual asset(s), each appearing once:\n1. cork: cork floating in a clear bowl.\n2. coin: coin at bottom of clear bowl.\n3. leaf: leaf floating in a clear bowl.\n4. stone: stone at bottom of clear bowl.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P035": {
+      "title": "Science Vocabulary",
+      "output_filename": "ST-LKG-V4-P035.png",
+      "asset_names": [
+        "observe",
+        "predict",
+        "test",
+        "measure",
+        "sort",
+        "build",
+        "record",
+        "improve"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P035\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Science Vocabulary\nLearning objective: Build STEM vocabulary.\nExact child action: Read each STEM word. Draw a line to the picture that shows its meaning.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 8 visual asset(s), each appearing once:\n1. observe: child observing a leaf with magnifying glass.\n2. predict: child thinking about which object will float.\n3. test: child placing object in water.\n4. measure: child measuring pencil with cubes.\n5. sort: child sorting red and blue buttons.\n6. build: child building block bridge.\n7. record: child drawing result on paper.\n8. improve: child adding support to block tower.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P036": {
+      "title": "STEM Review",
+      "output_filename": "ST-LKG-V4-P036.png",
+      "asset_names": [
+        "observation_task",
+        "sense_task",
+        "sort_task",
+        "prediction_task",
+        "measure_task",
+        "building_task"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P036\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: STEM Review\nLearning objective: Review science and engineering concepts.\nExact child action: Complete each STEM review task. Circle, match, sort and draw as directed.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 6 visual asset(s), each appearing once:\n1. observation_task: two similar leaves for detail comparison.\n2. sense_task: bell, flower and feather with sense icons.\n3. sort_task: two living and two non-living objects.\n4. prediction_task: leaf and coin beside water bowl.\n5. measure_task: pencil beside cube units.\n6. building_task: two small bridge designs.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P037": {
+      "title": "Mini Investigation",
+      "output_filename": "ST-LKG-V4-P037.png",
+      "asset_names": [
+        "tissue",
+        "foil",
+        "plastic",
+        "dropper"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P037\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Mini Investigation\nLearning objective: Carry out a guided investigation.\nExact child action: Predict which material will absorb the most water. Test each one, then tick the result and draw what you noticed.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 visual asset(s), each appearing once:\n1. tissue: square of tissue.\n2. foil: square of aluminium foil.\n3. plastic: square of plastic sheet.\n4. dropper: child-safe water dropper.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P038": {
+      "title": "Think Like an Engineer",
+      "output_filename": "ST-LKG-V4-P038.png",
+      "asset_names": [
+        "tower_pair",
+        "bridge_pair",
+        "chair_pair"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P038\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Think Like an Engineer\nLearning objective: Improve a design.\nExact child action: Compare Design A and Design B. Circle the stronger design. Add one support to improve the weaker design.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 visual asset(s), each appearing once:\n1. tower_pair: narrow tower and wide-base tower.\n2. bridge_pair: flat bridge and triangular-braced bridge.\n3. chair_pair: chair without cross brace and chair with cross brace.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P039": {
+      "title": "Young Scientist Challenge",
+      "output_filename": "ST-LKG-V4-P039.png",
+      "asset_names": [
+        "observe_challenge",
+        "predict_challenge",
+        "sort_challenge",
+        "measure_challenge",
+        "build_challenge"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P039\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Young Scientist Challenge\nLearning objective: Apply STEM skills.\nExact child action: Solve each picture challenge. Use observation, prediction, sorting, measuring and building ideas.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 visual asset(s), each appearing once:\n1. observe_challenge: target leaf and three similar leaf choices.\n2. predict_challenge: ball beside three ramp heights.\n3. sort_challenge: six numbered objects of wood and metal.\n4. measure_challenge: two pencils beside cube units.\n5. build_challenge: three bridge support designs.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P040": {
+      "title": "My STEM Journal",
+      "output_filename": "ST-LKG-V4-P040.png",
+      "asset_names": [
+        "float_icon",
+        "magnet_icon",
+        "plant_icon",
+        "bridge_icon"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P040\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: My STEM Journal\nLearning objective: Reflect on learning.\nExact child action: Choose one investigation. Draw what you did and what happened. Finish: I discovered that ___.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 visual asset(s), each appearing once:\n1. float_icon: small bowl with floating leaf.\n2. magnet_icon: magnet attracting clips.\n3. plant_icon: growing plant.\n4. bridge_icon: paper bridge.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P041": {
+      "title": "Certificate",
+      "output_filename": "ST-LKG-V4-P041.png",
+      "asset_names": [
+        "badge",
+        "trophy",
+        "confetti"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P041\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: Certificate\nLearning objective: Celebrate achievement.\nExact child action: Celebrate completion of STEM Explorers.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 visual asset(s), each appearing once:\n1. badge: premium STEM explorer achievement badge.\n2. trophy: small STEM trophy with shapes and gears.\n3. confetti: compact celebratory stars and confetti.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P042": {
+      "title": "I Am a STEM Explorer",
+      "output_filename": "ST-LKG-V4-P042.png",
+      "asset_names": [
+        "hero",
+        "badge_observe",
+        "badge_predict",
+        "badge_test",
+        "badge_measure",
+        "badge_build",
+        "badge_record"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P042\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: I Am a STEM Explorer\nLearning objective: Celebrate success.\nExact child action: Colour one badge for each STEM skill you practised. Choose your favourite skill and tell why.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 7 visual asset(s), each appearing once:\n1. hero: happy LKG child holding a magnifying glass beside simple STEM tools.\n2. badge_observe: outline magnifying-glass badge.\n3. badge_predict: outline thought-bubble badge.\n4. badge_test: outline water-bowl badge.\n5. badge_measure: outline cube-ruler badge.\n6. badge_build: outline bridge badge.\n7. badge_record: outline pencil-and-paper badge.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "ST-LKG-V4-P043": {
+      "title": "My STEM Celebration",
+      "output_filename": "ST-LKG-V4-P043.png",
+      "asset_names": [
+        "observe_choice",
+        "experiment_choice",
+        "build_choice",
+        "code_choice",
+        "celebration"
+      ],
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — ST-LKG-V4-P043\n\nBOOK AND LEVEL\nBook: STEM Explorers\nLevel: LKG (4+)\nExact page title: My STEM Celebration\nLearning objective: Reflect on and celebrate STEM learning.\nExact child action: Choose one STEM success. Draw or show it, then tell: I am proud that I ___.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw visual artwork required by this exact activity. Do not create the workbook page. The publishing engine will add the title, learning goal, instruction, object names, labels, completed example, number boxes, answer controls, matching anchors, routes, grids, writing and drawing spaces, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 visual asset(s), each appearing once:\n1. observe_choice: magnifying glass and leaf.\n2. experiment_choice: water bowl and floating cork.\n3. build_choice: paper bridge with toy animal.\n4. code_choice: friendly robot following arrows.\n5. celebration: two children proudly sharing STEM work.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below. Use wide pure-white gutters. No asset may touch, overlap or cross a cell boundary.\nEvery person, animal and object must be fully visible and comfortably inside its cell. Use a pure white background so every named asset can be extracted cleanly.\n\nSTYLE\nPremium commercial preschool-publishing illustration; large recognisable forms; thick clean rounded outlines; friendly natural expressions; correct anatomy and object structure; bright controlled colours; subtle dimensional shading; strong separation; generous crop-safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, ticks, crosses, matching lines, arrows, writing boxes, grids, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped, contaminated or misordered assets; extra filler; unrelated classroom props; decorative empty frames; completed answers; worksheet UI; dark backgrounds; tiny learning targets; or art that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    }
+  }
+}

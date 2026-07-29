@@ -1,0 +1,1715 @@
+{
+  "version": "early-literacy-phase2-illustration-prompts-v1",
+  "book": "Early Literacy Adventures",
+  "level": "LKG (4+)",
+  "source_blueprint": "curriculum/early-literacy-adventures/lkg/curriculum-first-p008-p043-v1.json",
+  "policy": "Content-aligned artwork only; exact named assets; deterministic text and worksheet mechanics; no fallback.",
+  "pages": {
+    "EL-LKG-V4-P008": {
+      "title": "Alphabet Review",
+      "output_filename": "DETERMINISTIC_NO_ART",
+      "asset_names": [],
+      "asset_crops": {},
+      "prompt": "DETERMINISTIC_NO_ART",
+      "status": "DETERMINISTIC_NO_ART"
+    },
+    "EL-LKG-V4-P009": {
+      "title": "Uppercase & Lowercase",
+      "output_filename": "DETERMINISTIC_NO_ART",
+      "asset_names": [],
+      "asset_crops": {},
+      "prompt": "DETERMINISTIC_NO_ART",
+      "status": "DETERMINISTIC_NO_ART"
+    },
+    "EL-LKG-V4-P010": {
+      "title": "Letter Sounds",
+      "output_filename": "EL-LKG-V4-P010.png",
+      "asset_names": [
+        "moon",
+        "sun",
+        "tiger",
+        "pen"
+      ],
+      "asset_crops": {
+        "moon": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "sun": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "tiger": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "pen": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P010\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Letter Sounds\nLearning objective: Connect familiar consonants with pictures that begin with their sounds.\nExact child action: Say each sound. Draw a line to the picture that begins with it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. moon: one moon.\n2. sun: one sun.\n3. tiger: one friendly tiger.\n4. pen: one pen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P011": {
+      "title": "Beginning Sounds",
+      "output_filename": "EL-LKG-V4-P011.png",
+      "asset_names": [
+        "cat",
+        "fish",
+        "sun",
+        "pen"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "fish": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "sun": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "pen": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P011\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Beginning Sounds\nLearning objective: Identify the beginning sound of familiar picture words.\nExact child action: Name each picture. Circle its beginning letter.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. fish: one fish.\n3. sun: one sun.\n4. pen: one pen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P012": {
+      "title": "Ending Sounds",
+      "output_filename": "EL-LKG-V4-P012.png",
+      "asset_names": [
+        "cat",
+        "dog",
+        "sun",
+        "bus",
+        "cap",
+        "hen"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.03,
+          "y": 0.01,
+          "w": 0.43,
+          "h": 0.34,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.54,
+          "y": 0.01,
+          "w": 0.43,
+          "h": 0.34,
+          "padding": 0.0
+        },
+        "sun": {
+          "x": 0.02,
+          "y": 0.36,
+          "w": 0.43,
+          "h": 0.28,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.45,
+          "y": 0.36,
+          "w": 0.53,
+          "h": 0.28,
+          "padding": 0.0
+        },
+        "cap": {
+          "x": 0.02,
+          "y": 0.67,
+          "w": 0.44,
+          "h": 0.32,
+          "padding": 0.0
+        },
+        "hen": {
+          "x": 0.54,
+          "y": 0.67,
+          "w": 0.43,
+          "h": 0.32,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P012\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Ending Sounds\nLearning objective: Identify the ending sound of familiar CVC words.\nExact child action: Name each picture. Circle its ending letter.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. dog: one dog.\n3. sun: one sun.\n4. bus: one bus.\n5. cap: one cap.\n6. hen: one hen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P013": {
+      "title": "Rhyming Words",
+      "output_filename": "EL-LKG-V4-P013.png",
+      "asset_names": [
+        "dog",
+        "sun",
+        "cake",
+        "star",
+        "log",
+        "run",
+        "snake",
+        "car"
+      ],
+      "asset_crops": {
+        "dog": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "sun": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "cake": {
+          "x": 0.06,
+          "y": 0.28375,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "star": {
+          "x": 0.53,
+          "y": 0.28375,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "log": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "run": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "snake": {
+          "x": 0.06,
+          "y": 0.76125,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "car": {
+          "x": 0.53,
+          "y": 0.76125,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P013\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Rhyming Words\nLearning objective: Match familiar words that rhyme.\nExact child action: Name each picture. Draw a line to the picture that rhymes.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 8 named visual asset(s), each appearing once:\n1. dog: one dog.\n2. sun: one sun.\n3. cake: one cake.\n4. star: one star.\n5. log: one log.\n6. run: one child running.\n7. snake: one friendly snake.\n8. car: one car.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 4-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P014": {
+      "title": "Same Sound",
+      "output_filename": "EL-LKG-V4-P014.png",
+      "asset_names": [
+        "moon",
+        "milk",
+        "cake",
+        "rabbit",
+        "ring",
+        "fish",
+        "leaf",
+        "lamp",
+        "shoe",
+        "goat",
+        "gift",
+        "nest",
+        "van",
+        "vase",
+        "kite"
+      ],
+      "asset_crops": {
+        "moon": {
+          "x": 0.01,
+          "y": 0.0,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "milk": {
+          "x": 0.34,
+          "y": 0.0,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "cake": {
+          "x": 0.65,
+          "y": 0.0,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "rabbit": {
+          "x": 0.01,
+          "y": 0.2,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "ring": {
+          "x": 0.34,
+          "y": 0.2,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "fish": {
+          "x": 0.65,
+          "y": 0.2,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "leaf": {
+          "x": 0.01,
+          "y": 0.4,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "lamp": {
+          "x": 0.34,
+          "y": 0.4,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "shoe": {
+          "x": 0.65,
+          "y": 0.4,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "goat": {
+          "x": 0.01,
+          "y": 0.6,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "gift": {
+          "x": 0.34,
+          "y": 0.6,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "nest": {
+          "x": 0.65,
+          "y": 0.6,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "van": {
+          "x": 0.01,
+          "y": 0.8,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "vase": {
+          "x": 0.34,
+          "y": 0.8,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "kite": {
+          "x": 0.65,
+          "y": 0.8,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P014\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Same Sound\nLearning objective: Find pictures with the same beginning sound as a model picture.\nExact child action: Name the first picture. Circle the picture with the same beginning sound.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 15 named visual asset(s), each appearing once:\n1. moon: one moon.\n2. milk: one glass of milk.\n3. cake: one cake.\n4. rabbit: one rabbit.\n5. ring: one ring.\n6. fish: one fish.\n7. leaf: one leaf.\n8. lamp: one lamp.\n9. shoe: one shoe.\n10. goat: one goat.\n11. gift: one gift.\n12. nest: one nest.\n13. van: one van.\n14. vase: one flower vase.\n15. kite: one kite.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 5-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P015": {
+      "title": "Odd Sound Out",
+      "output_filename": "EL-LKG-V4-P015.png",
+      "asset_names": [
+        "apple",
+        "ant",
+        "bus",
+        "ball",
+        "book",
+        "cat",
+        "duck",
+        "drum",
+        "sun",
+        "flower",
+        "frog",
+        "chair",
+        "pen",
+        "pig",
+        "hat"
+      ],
+      "asset_crops": {
+        "apple": {
+          "x": 0.01,
+          "y": 0.0,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "ant": {
+          "x": 0.34,
+          "y": 0.0,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.65,
+          "y": 0.0,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "ball": {
+          "x": 0.01,
+          "y": 0.2,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "book": {
+          "x": 0.34,
+          "y": 0.2,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "cat": {
+          "x": 0.65,
+          "y": 0.2,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "duck": {
+          "x": 0.01,
+          "y": 0.4,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "drum": {
+          "x": 0.34,
+          "y": 0.4,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "sun": {
+          "x": 0.65,
+          "y": 0.4,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "flower": {
+          "x": 0.01,
+          "y": 0.6,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "frog": {
+          "x": 0.34,
+          "y": 0.6,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "chair": {
+          "x": 0.65,
+          "y": 0.6,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "pen": {
+          "x": 0.01,
+          "y": 0.8,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "pig": {
+          "x": 0.34,
+          "y": 0.8,
+          "w": 0.31,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "hat": {
+          "x": 0.65,
+          "y": 0.8,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P015\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Odd Sound Out\nLearning objective: Identify the picture whose beginning sound differs from the others.\nExact child action: Name the three pictures. Circle the one with a different beginning sound.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 15 named visual asset(s), each appearing once:\n1. apple: one apple.\n2. ant: one ant.\n3. bus: one bus.\n4. ball: one ball.\n5. book: one book.\n6. cat: one cat.\n7. duck: one duck.\n8. drum: one drum.\n9. sun: one sun.\n10. flower: one flower.\n11. frog: one frog.\n12. chair: one chair.\n13. pen: one pen.\n14. pig: one pig.\n15. hat: one hat.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 5-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P016": {
+      "title": "CVC Words",
+      "output_filename": "EL-LKG-V4-P016.png",
+      "asset_names": [
+        "cat",
+        "dog",
+        "sun",
+        "pen"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "dog": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "sun": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "pen": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P016\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: CVC Words\nLearning objective: Read familiar consonant-vowel-consonant words and match them to pictures.\nExact child action: Read each word. Draw a line to the correct picture.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. dog: one dog.\n3. sun: one sun.\n4. pen: one pen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P017": {
+      "title": "Build the Word",
+      "output_filename": "EL-LKG-V4-P017.png",
+      "asset_names": [
+        "cat",
+        "sun",
+        "dog",
+        "pen"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "sun": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "dog": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "pen": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P017\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Build the Word\nLearning objective: Arrange three letter sounds to build familiar CVC words.\nExact child action: Name the picture. Read the letter cards. Write the word in the boxes.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. sun: one sun.\n3. dog: one dog.\n4. pen: one pen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P018": {
+      "title": "Picture Vocabulary",
+      "output_filename": "EL-LKG-V4-P018.png",
+      "asset_names": [
+        "house",
+        "tree",
+        "book",
+        "chair",
+        "flower"
+      ],
+      "asset_crops": {
+        "house": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.273333,
+          "padding": 0.008
+        },
+        "tree": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.273333,
+          "padding": 0.008
+        },
+        "book": {
+          "x": 0.06,
+          "y": 0.363333,
+          "w": 0.41,
+          "h": 0.273333,
+          "padding": 0.008
+        },
+        "chair": {
+          "x": 0.53,
+          "y": 0.363333,
+          "w": 0.41,
+          "h": 0.273333,
+          "padding": 0.008
+        },
+        "flower": {
+          "x": 0.06,
+          "y": 0.681667,
+          "w": 0.41,
+          "h": 0.273333,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P018\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Picture Vocabulary\nLearning objective: Read and recognise words for familiar objects.\nExact child action: Read each word. Draw a line to the correct picture.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. house: one house.\n2. tree: one tree.\n3. book: one book.\n4. chair: one chair.\n5. flower: one flower.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P019": {
+      "title": "Action Words",
+      "output_filename": "EL-LKG-V4-P019.png",
+      "asset_names": [
+        "run",
+        "jump",
+        "eat",
+        "sleep"
+      ],
+      "asset_crops": {
+        "run": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "jump": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "eat": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "sleep": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P019\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Action Words\nLearning objective: Recognise familiar action words in pictures.\nExact child action: Look at each picture. Circle the action word that matches.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. run: one child running.\n2. jump: one child jumping.\n3. eat: one child eating.\n4. sleep: one child sleeping.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P020": {
+      "title": "Opposites",
+      "output_filename": "EL-LKG-V4-P020.png",
+      "asset_names": [
+        "big_elephant",
+        "small_elephant",
+        "full_glass",
+        "empty_glass",
+        "hot_sun",
+        "cold_ice",
+        "open_box",
+        "closed_box",
+        "clean_shirt",
+        "dirty_shirt",
+        "happy_child",
+        "sad_child"
+      ],
+      "asset_crops": {
+        "big_elephant": {
+          "x": 0.02,
+          "y": 0.0,
+          "w": 0.45,
+          "h": 0.22,
+          "padding": 0.0
+        },
+        "small_elephant": {
+          "x": 0.55,
+          "y": 0.03,
+          "w": 0.4,
+          "h": 0.18,
+          "padding": 0.0
+        },
+        "full_glass": {
+          "x": 0.1,
+          "y": 0.215,
+          "w": 0.33,
+          "h": 0.15,
+          "padding": 0.0
+        },
+        "empty_glass": {
+          "x": 0.59,
+          "y": 0.215,
+          "w": 0.32,
+          "h": 0.15,
+          "padding": 0.0
+        },
+        "hot_sun": {
+          "x": 0.08,
+          "y": 0.385,
+          "w": 0.36,
+          "h": 0.15,
+          "padding": 0.0
+        },
+        "cold_ice": {
+          "x": 0.58,
+          "y": 0.385,
+          "w": 0.34,
+          "h": 0.15,
+          "padding": 0.0
+        },
+        "open_box": {
+          "x": 0.06,
+          "y": 0.545,
+          "w": 0.4,
+          "h": 0.14,
+          "padding": 0.0
+        },
+        "closed_box": {
+          "x": 0.57,
+          "y": 0.545,
+          "w": 0.36,
+          "h": 0.14,
+          "padding": 0.0
+        },
+        "clean_shirt": {
+          "x": 0.06,
+          "y": 0.69,
+          "w": 0.4,
+          "h": 0.13,
+          "padding": 0.0
+        },
+        "dirty_shirt": {
+          "x": 0.57,
+          "y": 0.69,
+          "w": 0.36,
+          "h": 0.13,
+          "padding": 0.0
+        },
+        "happy_child": {
+          "x": 0.09,
+          "y": 0.82,
+          "w": 0.35,
+          "h": 0.18,
+          "padding": 0.0
+        },
+        "sad_child": {
+          "x": 0.59,
+          "y": 0.82,
+          "w": 0.33,
+          "h": 0.18,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P020\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Opposites\nLearning objective: Match familiar words and pictures with opposite meanings.\nExact child action: Look at each picture. Draw a line to its opposite.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 12 named visual asset(s), each appearing once:\n1. big_elephant: one large elephant.\n2. small_elephant: one small matching elephant.\n3. full_glass: one full glass.\n4. empty_glass: one matching empty glass.\n5. hot_sun: one hot sun.\n6. cold_ice: one ice cube.\n7. open_box: one open box.\n8. closed_box: one matching closed box.\n9. clean_shirt: one clean shirt.\n10. dirty_shirt: one matching dirty shirt.\n11. happy_child: one happy child face.\n12. sad_child: one sad child face.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 4-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P021": {
+      "title": "Describing Words",
+      "output_filename": "EL-LKG-V4-P021.png",
+      "asset_names": [
+        "soft_teddy",
+        "tall_tree",
+        "red_apple",
+        "happy_child"
+      ],
+      "asset_crops": {
+        "soft_teddy": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "tall_tree": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "red_apple": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "happy_child": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P021\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Describing Words\nLearning objective: Choose a familiar describing word for each picture.\nExact child action: Look at each picture. Circle the word that describes it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. soft_teddy: one soft teddy bear.\n2. tall_tree: one tall tree.\n3. red_apple: one red apple.\n4. happy_child: one happy child.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P022": {
+      "title": "Categories",
+      "output_filename": "EL-LKG-V4-P022.png",
+      "asset_names": [
+        "apple",
+        "dog",
+        "bus",
+        "banana",
+        "rabbit",
+        "car",
+        "orange",
+        "cat",
+        "bicycle"
+      ],
+      "asset_crops": {
+        "apple": {
+          "x": 0.03,
+          "y": 0.02,
+          "w": 0.29,
+          "h": 0.31,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.35,
+          "y": 0.02,
+          "w": 0.27,
+          "h": 0.32,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.63,
+          "y": 0.06,
+          "w": 0.35,
+          "h": 0.26,
+          "padding": 0.0
+        },
+        "banana": {
+          "x": 0.02,
+          "y": 0.34,
+          "w": 0.31,
+          "h": 0.29,
+          "padding": 0.0
+        },
+        "rabbit": {
+          "x": 0.36,
+          "y": 0.32,
+          "w": 0.22,
+          "h": 0.31,
+          "padding": 0.0
+        },
+        "car": {
+          "x": 0.62,
+          "y": 0.37,
+          "w": 0.36,
+          "h": 0.25,
+          "padding": 0.0
+        },
+        "orange": {
+          "x": 0.03,
+          "y": 0.65,
+          "w": 0.3,
+          "h": 0.3,
+          "padding": 0.0
+        },
+        "cat": {
+          "x": 0.35,
+          "y": 0.63,
+          "w": 0.24,
+          "h": 0.31,
+          "padding": 0.0
+        },
+        "bicycle": {
+          "x": 0.61,
+          "y": 0.65,
+          "w": 0.37,
+          "h": 0.3,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P022\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Categories\nLearning objective: Classify familiar pictures as fruits, animals or vehicles.\nExact child action: Look at each numbered picture. Write its number in the correct group.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 9 named visual asset(s), each appearing once:\n1. apple: one apple.\n2. dog: one dog.\n3. bus: one bus.\n4. banana: one banana.\n5. rabbit: one rabbit.\n6. car: one car.\n7. orange: one orange.\n8. cat: one cat.\n9. bicycle: one bicycle.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P023": {
+      "title": "Read & Match",
+      "output_filename": "EL-LKG-V4-P023.png",
+      "asset_names": [
+        "cat",
+        "sun",
+        "bus",
+        "cup",
+        "pen",
+        "dog",
+        "hen"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "sun": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "bus": {
+          "x": 0.06,
+          "y": 0.28375,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "cup": {
+          "x": 0.53,
+          "y": 0.28375,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "pen": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "dog": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        },
+        "hen": {
+          "x": 0.06,
+          "y": 0.76125,
+          "w": 0.41,
+          "h": 0.19375,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P023\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Read & Match\nLearning objective: Read simple words and match each word to its picture.\nExact child action: Read each word. Draw a line to the correct picture.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 7 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. sun: one sun.\n3. bus: one bus.\n4. cup: one cup.\n5. pen: one pen.\n6. dog: one dog.\n7. hen: one hen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 4-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P024": {
+      "title": "Read & Colour",
+      "output_filename": "EL-LKG-V4-P024.png",
+      "asset_names": [
+        "apple_outline",
+        "ball_outline",
+        "sun_outline",
+        "leaf_outline"
+      ],
+      "asset_crops": {
+        "apple_outline": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "ball_outline": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "sun_outline": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "leaf_outline": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P024\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Read & Colour\nLearning objective: Read short colour instructions and apply them to familiar outline pictures.\nExact child action: Read each sentence. Colour the picture as it says.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. apple_outline: one uncoloured apple outline.\n2. ball_outline: one uncoloured ball outline.\n3. sun_outline: one uncoloured sun outline.\n4. leaf_outline: one uncoloured leaf outline.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P025": {
+      "title": "Read & Circle",
+      "output_filename": "EL-LKG-V4-P025.png",
+      "asset_names": [
+        "cat",
+        "cup",
+        "bus",
+        "hen"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.02,
+          "y": 0.01,
+          "w": 0.46,
+          "h": 0.47,
+          "padding": 0.0
+        },
+        "cup": {
+          "x": 0.56,
+          "y": 0.03,
+          "w": 0.4,
+          "h": 0.44,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.0,
+          "y": 0.54,
+          "w": 0.5,
+          "h": 0.44,
+          "padding": 0.0
+        },
+        "hen": {
+          "x": 0.56,
+          "y": 0.49,
+          "w": 0.42,
+          "h": 0.49,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P025\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Read & Circle\nLearning objective: Read two familiar words and select the word that names a picture.\nExact child action: Look at each picture. Read the words. Circle the correct word.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. cup: one cup.\n3. bus: one bus.\n4. hen: one hen.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P026": {
+      "title": "Sentence Builder",
+      "output_filename": "EL-LKG-V4-P026.png",
+      "asset_names": [
+        "dog_runs",
+        "child_reads",
+        "bus_scene"
+      ],
+      "asset_crops": {
+        "dog_runs": {
+          "x": 0.02,
+          "y": 0.04,
+          "w": 0.47,
+          "h": 0.4,
+          "padding": 0.0
+        },
+        "child_reads": {
+          "x": 0.54,
+          "y": 0.01,
+          "w": 0.43,
+          "h": 0.45,
+          "padding": 0.0
+        },
+        "bus_scene": {
+          "x": 0.01,
+          "y": 0.57,
+          "w": 0.51,
+          "h": 0.36,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P026\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Sentence Builder\nLearning objective: Arrange familiar words to build a short sentence and copy it.\nExact child action: Look at the picture. Number the word cards in order. Copy the sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. dog_runs: one dog running.\n2. child_reads: one child reading a book.\n3. bus_scene: one bus.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P027": {
+      "title": "Complete the Sentence",
+      "output_filename": "EL-LKG-V4-P027.png",
+      "asset_names": [
+        "cat",
+        "hot_sun",
+        "boy_runs",
+        "book"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.06,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "hot_sun": {
+          "x": 0.53,
+          "y": 0.045,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "boy_runs": {
+          "x": 0.06,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        },
+        "book": {
+          "x": 0.53,
+          "y": 0.5225,
+          "w": 0.41,
+          "h": 0.4325,
+          "padding": 0.008
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P027\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Complete the Sentence\nLearning objective: Choose and write a familiar word that completes a short sentence.\nExact child action: Look at each picture. Circle the correct word and write it in the blank.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. hot_sun: one hot sun.\n3. boy_runs: one boy running.\n4. book: one book.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P028": {
+      "title": "Picture Reading",
+      "output_filename": "EL-LKG-V4-P028.png",
+      "asset_names": [
+        "park_scene"
+      ],
+      "asset_crops": {
+        "park_scene": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P028\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Picture Reading\nLearning objective: Read a controlled picture scene and answer simple questions from visual evidence.\nExact child action: Look carefully at the picture. Circle the correct answer to each question.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. park_scene: one uncluttered park scene with a girl holding a red ball, a boy beside a bench, a dog under a tree and a blue kite above the tree.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous white safe margins.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P029": {
+      "title": "Listening",
+      "output_filename": "EL-LKG-V4-P029.png",
+      "asset_names": [
+        "cat",
+        "car",
+        "cap",
+        "pen",
+        "hen",
+        "pin",
+        "dog",
+        "log",
+        "frog",
+        "hat",
+        "bat",
+        "mat"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.04,
+          "y": 0.02,
+          "w": 0.27,
+          "h": 0.25,
+          "padding": 0.0
+        },
+        "car": {
+          "x": 0.33,
+          "y": 0.04,
+          "w": 0.31,
+          "h": 0.23,
+          "padding": 0.0
+        },
+        "cap": {
+          "x": 0.65,
+          "y": 0.04,
+          "w": 0.32,
+          "h": 0.22,
+          "padding": 0.0
+        },
+        "pen": {
+          "x": 0.04,
+          "y": 0.27,
+          "w": 0.27,
+          "h": 0.24,
+          "padding": 0.0
+        },
+        "hen": {
+          "x": 0.37,
+          "y": 0.26,
+          "w": 0.25,
+          "h": 0.26,
+          "padding": 0.0
+        },
+        "pin": {
+          "x": 0.65,
+          "y": 0.28,
+          "w": 0.31,
+          "h": 0.22,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.04,
+          "y": 0.5,
+          "w": 0.26,
+          "h": 0.25,
+          "padding": 0.0
+        },
+        "log": {
+          "x": 0.33,
+          "y": 0.52,
+          "w": 0.34,
+          "h": 0.2,
+          "padding": 0.0
+        },
+        "frog": {
+          "x": 0.69,
+          "y": 0.5,
+          "w": 0.27,
+          "h": 0.24,
+          "padding": 0.0
+        },
+        "hat": {
+          "x": 0.02,
+          "y": 0.76,
+          "w": 0.3,
+          "h": 0.21,
+          "padding": 0.0
+        },
+        "bat": {
+          "x": 0.36,
+          "y": 0.72,
+          "w": 0.28,
+          "h": 0.26,
+          "padding": 0.0
+        },
+        "mat": {
+          "x": 0.63,
+          "y": 0.78,
+          "w": 0.35,
+          "h": 0.18,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P029\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Listening\nLearning objective: Listen to a familiar word and select its picture.\nExact child action: Listen to the teacher. Circle the picture that matches the word.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 12 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. car: one car.\n3. cap: one cap.\n4. pen: one pen.\n5. hen: one hen.\n6. pin: one pin.\n7. dog: one dog.\n8. log: one log.\n9. frog: one frog.\n10. hat: one hat.\n11. bat: one bat.\n12. mat: one mat.\n\nLAYOUT LOCK\nArrange the assets in a strict 3-column by 4-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P030": {
+      "title": "Question & Answer",
+      "output_filename": "EL-LKG-V4-P030.png",
+      "asset_names": [
+        "reading_scene"
+      ],
+      "asset_crops": {
+        "reading_scene": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P030\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Question & Answer\nLearning objective: Answer who, what and where questions about a simple picture.\nExact child action: Look at the picture. Read each question. Circle the correct answer.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. reading_scene: one girl reading a red book on a blue mat beside a small dog, under a tree.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous white safe margins.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P031": {
+      "title": "Sight Words",
+      "output_filename": "EL-LKG-V4-P031.png",
+      "asset_names": [
+        "cat",
+        "sun",
+        "bus",
+        "dog"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "sun": {
+          "x": 0.5,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.0,
+          "y": 0.5,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P031\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Sight Words\nLearning objective: Recognise common sight words in short sentences.\nExact child action: Read each sentence. Circle the word shown in the star.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. cat: one small cat.\n2. sun: one small sun.\n3. bus: one small bus.\n4. dog: one small dog.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P032": {
+      "title": "Reading Review",
+      "output_filename": "EL-LKG-V4-P032.png",
+      "asset_names": [
+        "sun",
+        "run",
+        "dog",
+        "bus",
+        "red_ball"
+      ],
+      "asset_crops": {
+        "sun": {
+          "x": 0.04,
+          "y": 0.01,
+          "w": 0.43,
+          "h": 0.37,
+          "padding": 0.0
+        },
+        "run": {
+          "x": 0.57,
+          "y": 0.01,
+          "w": 0.35,
+          "h": 0.36,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.06,
+          "y": 0.37,
+          "w": 0.4,
+          "h": 0.33,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.49,
+          "y": 0.38,
+          "w": 0.48,
+          "h": 0.32,
+          "padding": 0.0
+        },
+        "red_ball": {
+          "x": 0.07,
+          "y": 0.72,
+          "w": 0.36,
+          "h": 0.27,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P032\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Reading Review\nLearning objective: Review word reading, rhyme, sentence meaning and sight-word recognition.\nExact child action: Complete each reading challenge.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. sun: one sun.\n2. run: one child running.\n3. dog: one dog.\n4. bus: one bus.\n5. red_ball: one red ball.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P033": {
+      "title": "Story Sequence",
+      "output_filename": "EL-LKG-V4-P033.png",
+      "asset_names": [
+        "brush_get",
+        "brush_paste",
+        "brush_teeth",
+        "brush_rinse"
+      ],
+      "asset_crops": {
+        "brush_get": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "brush_paste": {
+          "x": 0.5,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "brush_teeth": {
+          "x": 0.0,
+          "y": 0.5,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "brush_rinse": {
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P033\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Story Sequence\nLearning objective: Order four pictures to show a familiar event sequence.\nExact child action: Look at the pictures. Write 1, 2, 3 and 4 to show the correct order.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. brush_get: child picks up toothbrush.\n2. brush_paste: child puts toothpaste on toothbrush.\n3. brush_teeth: child brushes teeth.\n4. brush_rinse: child rinses mouth.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P034": {
+      "title": "Story Retelling",
+      "output_filename": "EL-LKG-V4-P034.png",
+      "asset_names": [
+        "plant_seed",
+        "water_seed",
+        "sprout_grows",
+        "flower_blooms"
+      ],
+      "asset_crops": {
+        "plant_seed": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "water_seed": {
+          "x": 0.5,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "sprout_grows": {
+          "x": 0.0,
+          "y": 0.5,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        },
+        "flower_blooms": {
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.5,
+          "h": 0.5,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P034\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Story Retelling\nLearning objective: Retell a four-step story using picture cues and sequence words.\nExact child action: Point to each picture. Tell the story using first, next, then and last.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. plant_seed: child plants a seed in soil.\n2. water_seed: child waters the planted seed.\n3. sprout_grows: small green sprout emerges.\n4. flower_blooms: flower blooms and child smiles.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P035": {
+      "title": "Picture Conversation",
+      "output_filename": "EL-LKG-V4-P035.png",
+      "asset_names": [
+        "playground_conversation"
+      ],
+      "asset_crops": {
+        "playground_conversation": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P035\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Picture Conversation\nLearning objective: Speak in complete short sentences about a social picture.\nExact child action: Look at the picture. Take turns asking and answering the questions.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. playground_conversation: two children sharing a ball near a slide while a third child waits to join.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous white safe margins.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P036": {
+      "title": "Who What Where",
+      "output_filename": "EL-LKG-V4-P036.png",
+      "asset_names": [
+        "girl_reading_tree"
+      ],
+      "asset_crops": {
+        "girl_reading_tree": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P036\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Who What Where\nLearning objective: Answer who, what and where questions from one picture.\nExact child action: Look at the picture. Circle the answer to each question.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. girl_reading_tree: one girl reading a book under a tree with a dog nearby.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous white safe margins.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P037": {
+      "title": "My Favourite Story",
+      "output_filename": "DETERMINISTIC_NO_ART",
+      "asset_names": [],
+      "asset_crops": {},
+      "prompt": "DETERMINISTIC_NO_ART",
+      "status": "DETERMINISTIC_NO_ART"
+    },
+    "EL-LKG-V4-P038": {
+      "title": "Mini Assessment",
+      "output_filename": "EL-LKG-V4-P038.png",
+      "asset_names": [
+        "fish",
+        "dog",
+        "sun",
+        "run",
+        "cat",
+        "bus"
+      ],
+      "asset_crops": {
+        "fish": {
+          "x": 0.03,
+          "y": 0.0,
+          "w": 0.44,
+          "h": 0.32,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.54,
+          "y": 0.0,
+          "w": 0.44,
+          "h": 0.32,
+          "padding": 0.0
+        },
+        "sun": {
+          "x": 0.04,
+          "y": 0.34,
+          "w": 0.42,
+          "h": 0.3,
+          "padding": 0.0
+        },
+        "run": {
+          "x": 0.54,
+          "y": 0.34,
+          "w": 0.43,
+          "h": 0.31,
+          "padding": 0.0
+        },
+        "cat": {
+          "x": 0.03,
+          "y": 0.66,
+          "w": 0.43,
+          "h": 0.34,
+          "padding": 0.0
+        },
+        "bus": {
+          "x": 0.53,
+          "y": 0.66,
+          "w": 0.46,
+          "h": 0.34,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P038\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Mini Assessment\nLearning objective: Demonstrate beginning and ending sounds, rhyme and CVC word reading.\nExact child action: Complete each activity by yourself.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. fish: one fish.\n2. dog: one dog.\n3. sun: one sun.\n4. run: one child running.\n5. cat: one cat.\n6. bus: one bus.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P039": {
+      "title": "Mini Assessment 2",
+      "output_filename": "EL-LKG-V4-P039.png",
+      "asset_names": [
+        "red_ball",
+        "wash_hands",
+        "dry_hands",
+        "turn_tap",
+        "girl_reads"
+      ],
+      "asset_crops": {
+        "red_ball": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.333333,
+          "padding": 0.01
+        },
+        "wash_hands": {
+          "x": 0.5,
+          "y": 0.0,
+          "w": 0.5,
+          "h": 0.333333,
+          "padding": 0.01
+        },
+        "dry_hands": {
+          "x": 0.0,
+          "y": 0.333333,
+          "w": 0.5,
+          "h": 0.333334,
+          "padding": 0.01
+        },
+        "turn_tap": {
+          "x": 0.5,
+          "y": 0.333333,
+          "w": 0.5,
+          "h": 0.333334,
+          "padding": 0.01
+        },
+        "girl_reads": {
+          "x": 0.0,
+          "y": 0.666667,
+          "w": 0.5,
+          "h": 0.333333,
+          "padding": 0.01
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P039\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Mini Assessment 2\nLearning objective: Demonstrate sight-word recognition, sentence meaning, sequencing and picture comprehension.\nExact child action: Complete each activity by yourself.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. red_ball: one red ball.\n2. wash_hands: child washing hands.\n3. dry_hands: child drying hands.\n4. turn_tap: child turning on a tap.\n5. girl_reads: one girl reading under a tree.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P040": {
+      "title": "Literacy Review",
+      "output_filename": "EL-LKG-V4-P040.png",
+      "asset_names": [
+        "cat",
+        "sun",
+        "run",
+        "dog",
+        "red_ball"
+      ],
+      "asset_crops": {
+        "cat": {
+          "x": 0.02,
+          "y": 0.0,
+          "w": 0.45,
+          "h": 0.34,
+          "padding": 0.0
+        },
+        "sun": {
+          "x": 0.53,
+          "y": 0.0,
+          "w": 0.46,
+          "h": 0.35,
+          "padding": 0.0
+        },
+        "run": {
+          "x": 0.02,
+          "y": 0.35,
+          "w": 0.45,
+          "h": 0.33,
+          "padding": 0.0
+        },
+        "dog": {
+          "x": 0.53,
+          "y": 0.35,
+          "w": 0.46,
+          "h": 0.34,
+          "padding": 0.0
+        },
+        "red_ball": {
+          "x": 0.02,
+          "y": 0.69,
+          "w": 0.47,
+          "h": 0.3,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P040\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Literacy Review\nLearning objective: Review the main letter, sound, word, sentence and story skills in the book.\nExact child action: Complete the six literacy challenges.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. cat: one cat.\n2. sun: one sun.\n3. run: one child running.\n4. dog: one dog.\n5. red_ball: one red ball.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P041": {
+      "title": "Certificate",
+      "output_filename": "EL-LKG-V4-P041.png",
+      "asset_names": [
+        "badge",
+        "book_cluster"
+      ],
+      "asset_crops": {
+        "badge": {
+          "x": 0.0,
+          "y": 0.15,
+          "w": 0.485,
+          "h": 0.68,
+          "padding": 0.0
+        },
+        "book_cluster": {
+          "x": 0.495,
+          "y": 0.15,
+          "w": 0.505,
+          "h": 0.68,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P041\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: Certificate\nLearning objective: Celebrate completion of Early Literacy Adventures.\nExact child action: This certifies that the learner has completed Early Literacy Adventures.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 2 named visual asset(s), each appearing once:\n1. badge: one celebratory reading badge with a book and star, without words.\n2. book_cluster: small celebratory cluster of books, letters and stars.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 1-row extraction grid, following the numbered order below from left to right and top to bottom. Use wide pure-white gaps; no object may touch, overlap or cross a cell boundary.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P042": {
+      "title": "I Am A Reader",
+      "output_filename": "EL-LKG-V4-P042.png",
+      "asset_names": [
+        "reader_hero"
+      ],
+      "asset_crops": {
+        "reader_hero": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P042\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: I Am A Reader\nLearning objective: Reflect on confidence with letters, words and short sentences.\nExact child action: Look at each statement. Tick what you can do and tell your teacher one example.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. reader_hero: one confident LKG child reading a picture book with a small stack of books and letter blocks.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous white safe margins.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "EL-LKG-V4-P043": {
+      "title": "My Literacy Celebration",
+      "output_filename": "EL-LKG-V4-P043.png",
+      "asset_names": [
+        "celebration_hero"
+      ],
+      "asset_crops": {
+        "celebration_hero": {
+          "x": 0.0,
+          "y": 0.0,
+          "w": 1.0,
+          "h": 1.0,
+          "padding": 0.0
+        }
+      },
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — EL-LKG-V4-P043\n\nBOOK AND LEVEL\nBook: Early Literacy Adventures\nLevel: LKG (4+)\nExact page title: My Literacy Celebration\nLearning objective: Celebrate favourite literacy learning from the book.\nExact child action: Choose your favourite literacy activity. Draw or write one example.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by this exact page contract. Do not create the workbook page. The publishing engine will add all letters, words, sentences, labels, instructions, model example, response mechanics, teacher cue, branding and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. celebration_hero: three diverse LKG children celebrating with books, alphabet blocks and picture cards, no text.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous white safe margins.\nThe renderer will crop the named assets using the committed crop manifest. Keep every important part fully visible inside its cell.\n\nSTYLE\nPremium commercial preschool-publishing quality; clean rounded forms; natural friendly expressions where people appear; correct anatomy; bright controlled colours; subtle dimensional shading; pure white background; strong separation; generous safe margins.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, writing boxes, page title, logo, publisher mark, page number, watermark, QR code or official BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, combined, cropped or misordered assets; extra objects; generic classroom or teacher scenes; decorative filler; completed child answers; worksheet frames; dark backgrounds; or artwork that does not directly support the exact child action.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    }
+  }
+}

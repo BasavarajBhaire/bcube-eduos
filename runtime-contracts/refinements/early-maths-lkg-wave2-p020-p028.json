@@ -1,0 +1,149 @@
+{
+  "version": "early-maths-lkg-wave2-v1",
+  "pages": {
+    "EM-LKG-V4-P020": {
+      "render_kind": "comparison-pairs",
+      "layout": "compare-number-four-pairs-v2",
+      "instruction": "Look at each numeral pair. Follow the row prompt and circle the correct numeral.",
+      "teacher_cue": "Read the row prompt first. Ask which numeral comes later or earlier in the counting sequence.",
+      "mechanics": {
+        "asset_order": ["pair_1", "pair_2", "pair_3", "pair_4"],
+        "pairs": [["pair_1"], ["pair_2"], ["pair_3"], ["pair_4"]],
+        "rows": [
+          {"asset": "pair_1", "values": [4, 7], "prompt": "Circle the greater number.", "answer": 7},
+          {"asset": "pair_2", "values": [9, 6], "prompt": "Circle the smaller number.", "answer": 6},
+          {"asset": "pair_3", "values": [12, 15], "prompt": "Circle the greater number.", "answer": 15},
+          {"asset": "pair_4", "values": [18, 13], "prompt": "Circle the smaller number.", "answer": 13}
+        ]
+      }
+    },
+    "EM-LKG-V4-P021": {
+      "render_kind": "picture-story-problems",
+      "layout": "math-story-three-scenes-v2",
+      "instruction": "Look at each complete picture story. Decide what changed, then circle the answer.",
+      "teacher_cue": "Ask: What happened first? What changed? What should we count now?",
+      "mechanics": {
+        "asset_order": ["story_1", "story_2", "story_3"],
+        "stories": [
+          {"asset": "story_1", "operation": "add", "start": 3, "change": 2, "choices": [4, 5, 6], "answer": 5},
+          {"asset": "story_2", "operation": "subtract", "start": 6, "change": 2, "choices": [3, 4, 5], "answer": 4},
+          {"asset": "story_3", "operation": "share", "objects": 4, "children": 4, "choices": [1, 2, 3], "answer": 1}
+        ]
+      }
+    },
+    "EM-LKG-V4-P022": {
+      "render_kind": "quantity-numeral-match",
+      "layout": "shape-match-four-pairs-v2",
+      "instruction": "Name each 2D shape. Draw a line to the familiar object with the same shape.",
+      "teacher_cue": "Trace each shape outline in the air before the child draws the matching line.",
+      "mechanics": {
+        "asset_order": ["shape_circle", "shape_square", "shape_triangle", "shape_rectangle", "object_clock", "object_window", "object_flag", "object_door"],
+        "left": ["shape_circle", "shape_square", "shape_triangle", "shape_rectangle"],
+        "right": ["object_window", "object_flag", "object_door", "object_clock"],
+        "pairs": [
+          {"left": "shape_circle", "right": "object_clock"},
+          {"left": "shape_square", "right": "object_window"},
+          {"left": "shape_triangle", "right": "object_flag"},
+          {"left": "shape_rectangle", "right": "object_door"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P023": {
+      "render_kind": "quantity-numeral-match",
+      "layout": "solid-match-four-pairs-v2",
+      "instruction": "Name each solid. Draw a line to the familiar object with the same form.",
+      "teacher_cue": "Ask whether each solid rolls, stacks or has a point before matching.",
+      "mechanics": {
+        "asset_order": ["solid_sphere", "solid_cube", "solid_cylinder", "solid_cone", "object_ball", "object_dice", "object_can", "object_party_hat"],
+        "left": ["solid_sphere", "solid_cube", "solid_cylinder", "solid_cone"],
+        "right": ["object_dice", "object_party_hat", "object_ball", "object_can"],
+        "pairs": [
+          {"left": "solid_sphere", "right": "object_ball"},
+          {"left": "solid_cube", "right": "object_dice"},
+          {"left": "solid_cylinder", "right": "object_can"},
+          {"left": "solid_cone", "right": "object_party_hat"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P024": {
+      "render_kind": "shape-hunt",
+      "layout": "hero-scene-target-strip-v3",
+      "instruction": "Scan the playground scene. Find one circle, square, triangle and rectangle.",
+      "teacher_cue": "Name one target shape at a time and let the child point to that form in the scene.",
+      "mechanics": {
+        "asset_order": ["main_scene", "target_circle", "target_square", "target_triangle", "target_rectangle"],
+        "hero": "main_scene",
+        "targets": [
+          {"asset": "target_circle", "label": "circle"},
+          {"asset": "target_square", "label": "square"},
+          {"asset": "target_triangle", "label": "triangle"},
+          {"asset": "target_rectangle", "label": "rectangle"}
+        ],
+        "response_mode": "point-and-name"
+      }
+    },
+    "EM-LKG-V4-P025": {
+      "render_kind": "pattern-observation",
+      "layout": "pattern-three-strips-oral-v2",
+      "instruction": "Study each pattern. Say the repeating unit aloud.",
+      "teacher_cue": "Cover the last part of each row and ask what unit keeps repeating.",
+      "mechanics": {
+        "asset_order": ["pattern_1", "pattern_2", "pattern_3"],
+        "rows": [
+          {"asset": "pattern_1", "unit": ["red", "blue"]},
+          {"asset": "pattern_2", "unit": ["circle", "square"]},
+          {"asset": "pattern_3", "unit": ["leaf", "flower", "flower"]}
+        ],
+        "response_mode": "oral",
+        "show_answer_controls": false
+      }
+    },
+    "EM-LKG-V4-P026": {
+      "render_kind": "pattern-completion",
+      "layout": "complete-pattern-four-rows-v2",
+      "instruction": "Look at each pattern. Circle the picture that comes next.",
+      "teacher_cue": "Say the repeating unit together, then let the child choose the next picture.",
+      "mechanics": {
+        "asset_order": ["row_1", "row_2", "row_3", "row_4"],
+        "rows": [
+          {"asset": "row_1", "choices": ["apple", "banana", "orange"], "answer": "banana"},
+          {"asset": "row_2", "choices": ["circle", "triangle", "square"], "answer": "circle"},
+          {"asset": "row_3", "choices": ["red block", "blue block", "green block"], "answer": "green block"},
+          {"asset": "row_4", "choices": ["small star", "big star", "circle"], "answer": "small star"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P027": {
+      "render_kind": "comparison-pairs",
+      "layout": "position-six-scenes-choice-v2",
+      "instruction": "Look at each picture. Circle the word that tells the object's position.",
+      "teacher_cue": "Ask the child to point to the reference object before naming the position.",
+      "mechanics": {
+        "asset_order": ["scene_in", "scene_on", "scene_under", "scene_above", "scene_beside", "scene_between"],
+        "pairs": [["scene_in"], ["scene_on"], ["scene_under"], ["scene_above"], ["scene_beside"], ["scene_between"]],
+        "cards": [
+          {"asset": "scene_in", "choices": ["in", "on", "under"], "answer": "in"},
+          {"asset": "scene_on", "choices": ["under", "on", "beside"], "answer": "on"},
+          {"asset": "scene_under", "choices": ["above", "under", "between"], "answer": "under"},
+          {"asset": "scene_above", "choices": ["above", "in", "beside"], "answer": "above"},
+          {"asset": "scene_beside", "choices": ["between", "beside", "on"], "answer": "beside"},
+          {"asset": "scene_between", "choices": ["under", "between", "above"], "answer": "between"}
+        ]
+      }
+    },
+    "EM-LKG-V4-P028": {
+      "render_kind": "direction-paths",
+      "layout": "directions-three-paths-v2",
+      "instruction": "Trace each arrow path from the starting object to its destination.",
+      "teacher_cue": "Use the words right, left, up and down while the child traces each route.",
+      "mechanics": {
+        "asset_order": ["path_1", "path_2", "path_3"],
+        "paths": [
+          {"asset": "path_1", "start": "mouse", "end": "cheese", "moves": ["right", "up", "right"]},
+          {"asset": "path_2", "start": "bee", "end": "flower", "moves": ["right", "down", "right"]},
+          {"asset": "path_3", "start": "car", "end": "garage", "moves": ["right", "up", "right"]}
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P016
+
+BOOK AND LEVEL
+Book: Communication Champions
+Level: LKG (4+)
+Exact page title: Action Words
+Learning objective: Recognise and use common action words.
+Exact child response path: match each action picture to its word and say the action sentence.
+
+ILLUSTRATION ROLE — LOCKED
+Create only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.
+
+EXACT OUTPUT
+Create exactly 6 named visual asset(s), each appearing once:
+1. jump: child jumping.
+2. run: child running.
+3. clap: child clapping.
+4. read: child reading.
+5. write: child writing.
+6. eat: child eating.
+
+LAYOUT LOCK
+Arrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below.
+Keep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.
+
+COMMUNICATION EVIDENCE
+Expressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.
+
+STYLE
+Premium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.
+
+TEXT AND WORKSHEET LOCK
+No visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.
+
+FAIL CONDITIONS
+Reject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.

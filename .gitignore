@@ -17,3 +17,19 @@ BCube_Gold_Production_v4/output/**/*.pdf
 
 # Approved PNGs are intentionally NOT ignored. They live only under:
 # BCube_Gold_Production_v4/approved-assets/<level>/<book>/pages/
+
+# Local curriculum render/review outputs. These are reproducible evidence,
+# not authoritative source files.
+work-*/
+output/
+production-renders/
+*-verified-PNGs*/
+*-review-PNGs*/
+*-textbook-PNGs*/
+*-friendly-PNGs*/
+*-evidence*/
+*-contact*.png
+*-contact-sheet.png
+
+# Temporary prompt-pack transfer archives. The JSON prompt pack is canonical.
+production-prompts/**/pages.zip

@@ -1,0 +1,5398 @@
+{
+  "contract_version": "bcube-book-runtime-contract-v2-curriculum-first",
+  "book": {
+    "title": "Logical Thinking Adventures",
+    "slug": "logical-thinking-adventures",
+    "prefix": "LT"
+  },
+  "level": "LKG",
+  "age": "4+",
+  "allow_fallback": false,
+  "curriculum_first_scope": [
+    "LT-LKG-V4-P008",
+    "LT-LKG-V4-P009",
+    "LT-LKG-V4-P010",
+    "LT-LKG-V4-P011",
+    "LT-LKG-V4-P012",
+    "LT-LKG-V4-P013",
+    "LT-LKG-V4-P014",
+    "LT-LKG-V4-P015",
+    "LT-LKG-V4-P016",
+    "LT-LKG-V4-P017",
+    "LT-LKG-V4-P018",
+    "LT-LKG-V4-P019",
+    "LT-LKG-V4-P020",
+    "LT-LKG-V4-P021",
+    "LT-LKG-V4-P022",
+    "LT-LKG-V4-P023",
+    "LT-LKG-V4-P024",
+    "LT-LKG-V4-P025",
+    "LT-LKG-V4-P026",
+    "LT-LKG-V4-P027",
+    "LT-LKG-V4-P028",
+    "LT-LKG-V4-P029",
+    "LT-LKG-V4-P030",
+    "LT-LKG-V4-P031",
+    "LT-LKG-V4-P032",
+    "LT-LKG-V4-P033",
+    "LT-LKG-V4-P034",
+    "LT-LKG-V4-P035",
+    "LT-LKG-V4-P036",
+    "LT-LKG-V4-P037",
+    "LT-LKG-V4-P038",
+    "LT-LKG-V4-P039",
+    "LT-LKG-V4-P040",
+    "LT-LKG-V4-P041",
+    "LT-LKG-V4-P042",
+    "LT-LKG-V4-P043"
+  ],
+  "pages": {
+    "LT-LKG-V4-P008": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P008",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 8,
+        "printed_page": 7,
+        "title": "Find the Difference",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Find visual differences between two similar scenes.",
+        "instruction": "Look carefully. Circle the five differences in Picture B.",
+        "expected_response": "Five differences circled in the second playground scene.",
+        "model_text": {
+          "pair": "two toy boats",
+          "difference": "one flag is missing",
+          "show_circle": true
+        },
+        "child_thinking": "I compare one part at a time and circle only what changed."
+      },
+      "activity": {
+        "archetype": "paired-scene-difference",
+        "mechanic": "circle-five-differences",
+        "render_kind": "logic-find-difference",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "difference_count": 5,
+          "circle_on": "picture_b",
+          "labels": [
+            "Picture A",
+            "Picture B"
+          ],
+          "differences": [
+            "missing kite tail",
+            "different ball colour",
+            "absent flower",
+            "shorter slide ladder",
+            "bird facing other way"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P008.png",
+        "assets": [
+          "playground_a",
+          "playground_b"
+        ],
+        "asset_crops": {
+          "playground_a": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.93,
+            "padding": 0.008
+          },
+          "playground_b": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.93,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "playground_a": "playground scene with slide, ball, kite, bench and tree",
+          "playground_b": "same playground with exactly five clear changes"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "paired-scene-difference",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Guide the child to compare the scenes from left to right without naming a difference."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "the two scenes have exactly five differences",
+          "key objects are not cropped"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P009": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P009",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 9,
+        "printed_page": 8,
+        "title": "Spot the Same",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Identify an identical picture among similar choices.",
+        "instruction": "Look at the picture on the left. Circle the picture that is exactly the same.",
+        "expected_response": "One identical picture circled in each of six rows.",
+        "model_text": {
+          "target": "striped sock",
+          "options": [
+            "same sock",
+            "different stripe",
+            "reversed sock"
+          ],
+          "answer": 1
+        },
+        "child_thinking": "I check shape, colour and direction before I choose."
+      },
+      "activity": {
+        "archetype": "six-identical-picture-rows",
+        "mechanic": "circle-identical-picture",
+        "render_kind": "logic-spot-same",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            "fish",
+            "kite",
+            "cup",
+            "car",
+            "butterfly",
+            "shoe"
+          ],
+          "choices_per_row": 3,
+          "answer_positions": [
+            2,
+            3,
+            1,
+            3,
+            2,
+            1
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P009.png",
+        "assets": [
+          "fish_set",
+          "kite_set",
+          "cup_set",
+          "car_set",
+          "butterfly_set",
+          "shoe_set"
+        ],
+        "asset_crops": {
+          "fish_set": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "kite_set": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "cup_set": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "car_set": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "butterfly_set": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "shoe_set": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "fish_set": "one target fish and three similar fish choices",
+          "kite_set": "one target kite and three similar kite choices",
+          "cup_set": "one target cup and three similar cup choices",
+          "car_set": "one target car and three similar car choices",
+          "butterfly_set": "one target butterfly and three similar butterfly choices",
+          "shoe_set": "one target shoe and three similar shoe choices"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-identical-picture-rows",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to name one detail that proves the pictures are the same."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "six substantial rows are present",
+          "answer positions vary"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P010": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P010",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 10,
+        "printed_page": 9,
+        "title": "Odd One Out",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Classify pictures and identify the item that does not belong.",
+        "instruction": "Name the pictures. Circle the one that does not belong in each row.",
+        "expected_response": "One odd picture circled in each of six rows.",
+        "model_text": {
+          "items": [
+            "apple",
+            "banana",
+            "orange",
+            "bus"
+          ],
+          "answer": "bus",
+          "show_circle": true
+        },
+        "child_thinking": "I find what three pictures have in common, then choose the different one."
+      },
+      "activity": {
+        "archetype": "six-odd-one-out-rows",
+        "mechanic": "circle-category-outsider",
+        "render_kind": "logic-odd-one-out",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            "fruit",
+            "animals",
+            "clothes",
+            "transport",
+            "shapes",
+            "weather"
+          ],
+          "items_per_row": 4,
+          "answer_positions": [
+            4,
+            2,
+            3,
+            1,
+            4,
+            2
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P010.png",
+        "assets": [
+          "fruit_row",
+          "animal_row",
+          "clothes_row",
+          "transport_row",
+          "shape_row",
+          "weather_row"
+        ],
+        "asset_crops": {
+          "fruit_row": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "animal_row": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "clothes_row": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "transport_row": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "shape_row": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "weather_row": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "fruit_row": "three fruits and one vehicle",
+          "animal_row": "three animals and one fruit",
+          "clothes_row": "three clothes and one cup",
+          "transport_row": "three vehicles and one flower",
+          "shape_row": "three flat shapes and one ball",
+          "weather_row": "three weather symbols and one shoe"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-odd-one-out-rows",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Let the child name the group first, then ask which picture breaks the rule."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "object names appear below every picture",
+          "six rows use different category rules"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P011": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P011",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 11,
+        "printed_page": 10,
+        "title": "Picture Match",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Match familiar objects that are meaningfully related.",
+        "instruction": "Name each picture. Draw a line between the pictures that belong together.",
+        "expected_response": "Six lines connecting related object pairs.",
+        "model_text": {
+          "left": "toothbrush",
+          "right": "toothpaste",
+          "show_completed_line": true
+        },
+        "child_thinking": "I think about how the two objects are used together."
+      },
+      "activity": {
+        "archetype": "two-column-related-picture-match",
+        "mechanic": "match-related-objects",
+        "render_kind": "logic-picture-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "left": [
+            "shoe",
+            "key",
+            "pencil",
+            "cup",
+            "soap",
+            "bed"
+          ],
+          "right": [
+            "towel",
+            "pillow",
+            "sock",
+            "sharpener",
+            "lock",
+            "jug"
+          ],
+          "correct_pairs": [
+            [
+              "shoe",
+              "sock"
+            ],
+            [
+              "key",
+              "lock"
+            ],
+            [
+              "pencil",
+              "sharpener"
+            ],
+            [
+              "cup",
+              "jug"
+            ],
+            [
+              "soap",
+              "towel"
+            ],
+            [
+              "bed",
+              "pillow"
+            ]
+          ],
+          "require_derangement": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P011.png",
+        "assets": [
+          "shoe",
+          "key",
+          "pencil",
+          "cup",
+          "soap",
+          "bed",
+          "sock",
+          "lock",
+          "sharpener",
+          "jug",
+          "towel",
+          "pillow"
+        ],
+        "asset_crops": {
+          "shoe": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "key": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "pencil": {
+            "x": 0.055,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "cup": {
+            "x": 0.5275,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "soap": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "bed": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "sock": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "lock": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "sharpener": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "jug": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "towel": {
+            "x": 0.055,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "pillow": {
+            "x": 0.5275,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "shoe": "one shoe",
+          "key": "one key",
+          "pencil": "one pencil",
+          "cup": "one cup",
+          "soap": "one bar of soap",
+          "bed": "one bed",
+          "sock": "one sock",
+          "lock": "one padlock",
+          "sharpener": "one pencil sharpener",
+          "jug": "one water jug",
+          "towel": "one towel",
+          "pillow": "one pillow"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "two-column-related-picture-match",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask how one matched pair is used together after the child draws the line."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "six matching pairs are included",
+          "connector anchors are large and visible",
+          "object names are printed"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P012": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P012",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 12,
+        "printed_page": 11,
+        "title": "Hidden Objects",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Find familiar objects hidden within a controlled scene.",
+        "instruction": "Find each object shown below. Circle it in the classroom picture.",
+        "expected_response": "Six named target objects circled in the classroom scene.",
+        "model_text": {
+          "mini_scene": "toy shelf",
+          "target": "red ball",
+          "show_circle": true
+        },
+        "child_thinking": "I scan one small part of the picture at a time."
+      },
+      "activity": {
+        "archetype": "hidden-object-scene-with-target-strip",
+        "mechanic": "find-and-circle-targets",
+        "render_kind": "logic-hidden-objects",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "targets": [
+            "ball",
+            "key",
+            "spoon",
+            "sock",
+            "pencil",
+            "teddy"
+          ],
+          "target_names_visible": true,
+          "circle_in_scene": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P012.png",
+        "assets": [
+          "classroom_scene",
+          "ball",
+          "key",
+          "spoon",
+          "sock",
+          "pencil",
+          "teddy"
+        ],
+        "asset_crops": {
+          "classroom_scene": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "key": {
+            "x": 0.055,
+            "y": 0.27625,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "spoon": {
+            "x": 0.5275,
+            "y": 0.27625,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "sock": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "pencil": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "teddy": {
+            "x": 0.055,
+            "y": 0.75875,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "classroom_scene": "clean classroom scene hiding exactly six familiar objects",
+          "ball": "red ball target",
+          "key": "small key target",
+          "spoon": "silver spoon target",
+          "sock": "striped sock target",
+          "pencil": "yellow pencil target",
+          "teddy": "brown teddy target"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "hidden-object-scene-with-target-strip",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Name one target at a time and allow the child time to scan the whole scene."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "scene contains exactly one of each target",
+          "targets remain recognisable but not immediately obvious"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P013": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P013",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 13,
+        "printed_page": 12,
+        "title": "What Comes Next",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Complete repeating visual sequences.",
+        "instruction": "Look for the repeating part. Circle the picture that comes next.",
+        "expected_response": "One next-picture choice circled in each of five sequences.",
+        "model_text": {
+          "sequence": [
+            "red apple",
+            "green apple",
+            "red apple",
+            "green apple"
+          ],
+          "answer": "red apple",
+          "show_circle": true
+        },
+        "child_thinking": "I say the pattern aloud and use it to predict the next picture."
+      },
+      "activity": {
+        "archetype": "five-sequence-choice-rows",
+        "mechanic": "choose-next-picture",
+        "render_kind": "logic-what-comes-next",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            "stars",
+            "fruit",
+            "shapes",
+            "vehicles",
+            "animals"
+          ],
+          "pattern_types": [
+            "AB",
+            "AAB",
+            "ABC",
+            "AB",
+            "AAB"
+          ],
+          "choices_per_row": 3
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P013.png",
+        "assets": [
+          "star_pattern",
+          "fruit_pattern",
+          "shape_pattern",
+          "vehicle_pattern",
+          "animal_pattern"
+        ],
+        "asset_crops": {
+          "star_pattern": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "fruit_pattern": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "shape_pattern": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "vehicle_pattern": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "animal_pattern": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "star_pattern": "AB star pattern with three choices",
+          "fruit_pattern": "AAB fruit pattern with three choices",
+          "shape_pattern": "ABC shape pattern with three choices",
+          "vehicle_pattern": "AB vehicle pattern with three choices",
+          "animal_pattern": "AAB animal pattern with three choices"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-sequence-choice-rows",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Point to each picture in order and pause before the blank."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five rows are present",
+          "each row includes one answer space and three choices"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P014": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P014",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 14,
+        "printed_page": 13,
+        "title": "Story Sequence",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Arrange four events in a logical order.",
+        "instruction": "Look at the four pictures. Write 1, 2, 3 and 4 to show the story order.",
+        "expected_response": "Numbers 1–4 written once beside the four shuffled handwashing pictures.",
+        "model_text": {
+          "story": [
+            "seed",
+            "sprout",
+            "small plant"
+          ],
+          "numbers": [
+            1,
+            2,
+            3
+          ],
+          "show_answers": true
+        },
+        "child_thinking": "I find what happens first, next, then and last."
+      },
+      "activity": {
+        "archetype": "four-card-story-sequence",
+        "mechanic": "number-events-in-order",
+        "render_kind": "logic-story-sequence",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "display_order": [
+            "dry_hands",
+            "wet_hands",
+            "scrub_hands",
+            "apply_soap"
+          ],
+          "correct_order": [
+            "wet_hands",
+            "apply_soap",
+            "scrub_hands",
+            "dry_hands"
+          ],
+          "writing_boxes": 4,
+          "box_size_mm": 14
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P014.png",
+        "assets": [
+          "wet_hands",
+          "apply_soap",
+          "scrub_hands",
+          "dry_hands"
+        ],
+        "asset_crops": {
+          "wet_hands": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          },
+          "apply_soap": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          },
+          "scrub_hands": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          },
+          "dry_hands": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "wet_hands": "child wetting hands",
+          "apply_soap": "child applying soap",
+          "scrub_hands": "child scrubbing hands",
+          "dry_hands": "child drying clean hands"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-card-story-sequence",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask which picture must happen first and why; do not supply the number."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "all four writing boxes are empty",
+          "each event is visibly distinct"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P015": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P015",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 15,
+        "printed_page": 14,
+        "title": "Pattern Logic",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise repeating picture patterns and draw what comes next.",
+        "instruction": "Say each pattern. Draw the next picture in the empty box.",
+        "expected_response": "One next item drawn in each of five pattern boxes.",
+        "model_text": {
+          "sequence": [
+            "circle",
+            "square",
+            "circle",
+            "square"
+          ],
+          "answer": "circle",
+          "show_answer": true
+        },
+        "child_thinking": "I find the part that repeats and draw what should follow."
+      },
+      "activity": {
+        "archetype": "five-draw-next-pattern-rows",
+        "mechanic": "draw-next-pattern-item",
+        "render_kind": "logic-pattern-logic",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            "fruit",
+            "shapes",
+            "toys",
+            "flowers",
+            "animals"
+          ],
+          "pattern_types": [
+            "AB",
+            "AAB",
+            "ABC",
+            "AB",
+            "AAB"
+          ],
+          "draw_boxes": 5,
+          "draw_box_min_mm": 22
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P015.png",
+        "assets": [
+          "fruit_pattern",
+          "shape_pattern",
+          "toy_pattern",
+          "flower_pattern",
+          "animal_pattern"
+        ],
+        "asset_crops": {
+          "fruit_pattern": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "shape_pattern": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "toy_pattern": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "flower_pattern": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "animal_pattern": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "fruit_pattern": "AB apple-banana pattern",
+          "shape_pattern": "AAB circle-triangle-triangle pattern",
+          "toy_pattern": "ABC ball-car-teddy pattern",
+          "flower_pattern": "AB red-blue flower pattern",
+          "animal_pattern": "AAB cat-dog-dog pattern"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-draw-next-pattern-rows",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Have the child point to the repeating unit before drawing."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five purposeful drawing boxes are provided",
+          "no next item is prefilled"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P016": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P016",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 16,
+        "printed_page": 15,
+        "title": "Complete the Series",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Predict the next item in changing visual series.",
+        "instruction": "Look at how each series changes. Circle the picture that comes next.",
+        "expected_response": "One correct picture circled in each of five series.",
+        "model_text": {
+          "series": [
+            "small star",
+            "medium star",
+            "large star"
+          ],
+          "answer": "extra-large star",
+          "show_circle": true
+        },
+        "child_thinking": "I notice what changes in size, number, direction or position."
+      },
+      "activity": {
+        "archetype": "five-changing-series-rows",
+        "mechanic": "choose-series-completion",
+        "render_kind": "logic-complete-series",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            "size",
+            "count",
+            "direction",
+            "position",
+            "colour"
+          ],
+          "choices_per_row": 3,
+          "response": "circle"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P016.png",
+        "assets": [
+          "size_series",
+          "count_series",
+          "direction_series",
+          "position_series",
+          "colour_series"
+        ],
+        "asset_crops": {
+          "size_series": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "count_series": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "direction_series": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "position_series": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "colour_series": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "size_series": "objects growing in size with three choices",
+          "count_series": "groups increasing by one with three choices",
+          "direction_series": "arrow turning clockwise with three choices",
+          "position_series": "ball moving through three boxes with choices",
+          "colour_series": "colour cycle with three choices"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-changing-series-rows",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask what changed from one picture to the next before the child chooses."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five distinct change rules are used",
+          "choice circles remain unmarked"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P017": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P017",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 17,
+        "printed_page": 16,
+        "title": "Sort by Colour",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Classify objects by colour.",
+        "instruction": "Find each picture's colour. Write red picture numbers in RED and blue picture numbers in BLUE.",
+        "expected_response": "Four picture numbers written in RED and four in BLUE.",
+        "model_text": {
+          "picture": "red button",
+          "number": 1,
+          "category": "RED",
+          "show_number_in_box": true
+        },
+        "child_thinking": "I ignore the object type and sort only by its colour."
+      },
+      "activity": {
+        "archetype": "numbered-items-to-colour-groups",
+        "mechanic": "write-picture-numbers-by-colour",
+        "render_kind": "logic-sort-colour",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "items": [
+            "red_button",
+            "blue_cube",
+            "blue_ball",
+            "red_car",
+            "blue_button",
+            "red_cube",
+            "red_ball",
+            "blue_car"
+          ],
+          "categories": [
+            "RED",
+            "BLUE"
+          ],
+          "number_writing_boxes_per_category": 4,
+          "correct_groups": {
+            "RED": [
+              1,
+              4,
+              6,
+              7
+            ],
+            "BLUE": [
+              2,
+              3,
+              5,
+              8
+            ]
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P017.png",
+        "assets": [
+          "red_button",
+          "blue_cube",
+          "blue_ball",
+          "red_car",
+          "blue_button",
+          "red_cube",
+          "red_ball",
+          "blue_car"
+        ],
+        "asset_crops": {
+          "red_button": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "blue_cube": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "blue_ball": {
+            "x": 0.055,
+            "y": 0.27625,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "red_car": {
+            "x": 0.5275,
+            "y": 0.27625,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "blue_button": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "red_cube": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "red_ball": {
+            "x": 0.055,
+            "y": 0.75875,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          },
+          "blue_car": {
+            "x": 0.5275,
+            "y": 0.75875,
+            "w": 0.4175,
+            "h": 0.20625,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "red_button": "red button",
+          "blue_cube": "blue cube",
+          "blue_ball": "blue ball",
+          "red_car": "red toy car",
+          "blue_button": "blue button",
+          "red_cube": "red cube",
+          "red_ball": "red ball",
+          "blue_car": "blue toy car"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "numbered-items-to-colour-groups",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Point to one number, name the object's colour, then let the child write that number in the matching group."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "each category has four separate number boxes",
+          "all eight pictures have visible numbers and names"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P018": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P018",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 18,
+        "printed_page": 17,
+        "title": "Sort by Shape",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Classify objects by their visible shape.",
+        "instruction": "Look at the numbered pictures. Write each number in the correct shape box.",
+        "expected_response": "Three picture numbers written in each of the CIRCLE, SQUARE and TRIANGLE groups.",
+        "model_text": {
+          "picture": "round clock",
+          "number": 1,
+          "category": "CIRCLE",
+          "show_number_in_box": true
+        },
+        "child_thinking": "I look at the outside shape, not the colour."
+      },
+      "activity": {
+        "archetype": "numbered-items-to-shape-groups",
+        "mechanic": "write-picture-numbers-by-shape",
+        "render_kind": "logic-sort-shape",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "items": [
+            "clock",
+            "window",
+            "flag",
+            "plate",
+            "tile",
+            "sandwich",
+            "coin",
+            "gift_box",
+            "road_sign"
+          ],
+          "categories": [
+            "CIRCLE",
+            "SQUARE",
+            "TRIANGLE"
+          ],
+          "number_writing_boxes_per_category": 3,
+          "correct_groups": {
+            "CIRCLE": [
+              1,
+              4,
+              7
+            ],
+            "SQUARE": [
+              2,
+              5,
+              8
+            ],
+            "TRIANGLE": [
+              3,
+              6,
+              9
+            ]
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P018.png",
+        "assets": [
+          "clock",
+          "window",
+          "flag",
+          "plate",
+          "tile",
+          "sandwich",
+          "coin",
+          "gift_box",
+          "road_sign"
+        ],
+        "asset_crops": {
+          "clock": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "window": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "flag": {
+            "x": 0.055,
+            "y": 0.228,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "plate": {
+            "x": 0.5275,
+            "y": 0.228,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "tile": {
+            "x": 0.055,
+            "y": 0.421,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "sandwich": {
+            "x": 0.5275,
+            "y": 0.421,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "coin": {
+            "x": 0.055,
+            "y": 0.614,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "gift_box": {
+            "x": 0.5275,
+            "y": 0.614,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "road_sign": {
+            "x": 0.055,
+            "y": 0.807,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "clock": "round wall clock",
+          "window": "square window",
+          "flag": "triangular flag",
+          "plate": "round plate",
+          "tile": "square tile",
+          "sandwich": "triangular sandwich",
+          "coin": "round coin",
+          "gift_box": "square gift box",
+          "road_sign": "triangular road sign"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "numbered-items-to-shape-groups",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to trace each object’s outside edge in the air before sorting."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "three number boxes appear in every category",
+          "nine pictures have visible numbers and names"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P019": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P019",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 19,
+        "printed_page": 18,
+        "title": "Sort by Size",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Arrange familiar objects from smallest to largest.",
+        "instruction": "Write 1, 2 and 3 to order each set from smallest to largest.",
+        "expected_response": "Numbers 1–3 written under every object in five shuffled size sets.",
+        "model_text": {
+          "objects": [
+            "small ball",
+            "medium ball",
+            "large ball"
+          ],
+          "numbers": [
+            1,
+            2,
+            3
+          ],
+          "show_answers": true
+        },
+        "child_thinking": "I compare the same kind of object and start with the smallest."
+      },
+      "activity": {
+        "archetype": "five-three-size-order-sets",
+        "mechanic": "number-smallest-to-largest",
+        "render_kind": "logic-sort-size",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "sets": [
+            "bears",
+            "trees",
+            "cups",
+            "fish",
+            "cars"
+          ],
+          "items_per_set": 3,
+          "display_orders": [
+            [
+              2,
+              3,
+              1
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              1,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              3
+            ],
+            [
+              3,
+              2,
+              1
+            ]
+          ],
+          "writing_boxes_per_set": 3
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P019.png",
+        "assets": [
+          "bears",
+          "trees",
+          "cups",
+          "fish",
+          "cars"
+        ],
+        "asset_crops": {
+          "bears": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "trees": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "cups": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "fish": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "cars": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "bears": "three matching teddy bears in small, medium and large sizes",
+          "trees": "three matching trees in small, medium and large sizes",
+          "cups": "three matching cups in small, medium and large sizes",
+          "fish": "three matching fish in small, medium and large sizes",
+          "cars": "three matching cars in small, medium and large sizes"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-three-size-order-sets",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to point to the smallest, then the largest, before writing numbers."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five size sets fill the page",
+          "writing boxes are at least 12 mm"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P020": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P020",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 20,
+        "printed_page": 19,
+        "title": "Belongs Together",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Identify familiar objects from the same functional group.",
+        "instruction": "Name each picture. Draw a line to the picture that belongs with it.",
+        "expected_response": "Six lines connecting objects that belong together.",
+        "model_text": {
+          "left": "cup",
+          "right": "plate",
+          "reason": "things used for eating",
+          "show_completed_line": true
+        },
+        "child_thinking": "I think about where objects are used and what they do."
+      },
+      "activity": {
+        "archetype": "two-column-category-pair-match",
+        "mechanic": "match-belonging-objects",
+        "render_kind": "logic-belongs-together",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "left": [
+            "pencil",
+            "shoe",
+            "soap",
+            "bed",
+            "car",
+            "spoon"
+          ],
+          "right": [
+            "towel",
+            "garage",
+            "sharpener",
+            "bowl",
+            "pillow",
+            "sock"
+          ],
+          "correct_pairs": [
+            [
+              "pencil",
+              "sharpener"
+            ],
+            [
+              "shoe",
+              "sock"
+            ],
+            [
+              "soap",
+              "towel"
+            ],
+            [
+              "bed",
+              "pillow"
+            ],
+            [
+              "car",
+              "garage"
+            ],
+            [
+              "spoon",
+              "bowl"
+            ]
+          ],
+          "require_derangement": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P020.png",
+        "assets": [
+          "pencil",
+          "shoe",
+          "soap",
+          "bed",
+          "car",
+          "spoon",
+          "sharpener",
+          "sock",
+          "towel",
+          "pillow",
+          "garage",
+          "bowl"
+        ],
+        "asset_crops": {
+          "pencil": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shoe": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "soap": {
+            "x": 0.055,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "bed": {
+            "x": 0.5275,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "car": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "spoon": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "sharpener": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "sock": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "towel": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "pillow": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "garage": {
+            "x": 0.055,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "bowl": {
+            "x": 0.5275,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "pencil": "pencil",
+          "shoe": "shoe",
+          "soap": "bar of soap",
+          "bed": "bed",
+          "car": "car",
+          "spoon": "spoon",
+          "sharpener": "pencil sharpener",
+          "sock": "sock",
+          "towel": "towel",
+          "pillow": "pillow",
+          "garage": "garage",
+          "bowl": "bowl"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "two-column-category-pair-match",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Invite the child to explain one pair after matching it."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "six pairs are included",
+          "object names and anchors are visible"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P021": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P021",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 21,
+        "printed_page": 20,
+        "title": "Big Problem Small Problem",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Distinguish small everyday problems from problems needing adult help.",
+        "instruction": "Look at each numbered situation. Write its number under SMALL or BIG.",
+        "expected_response": "Three picture numbers written under SMALL and three under BIG.",
+        "model_text": {
+          "situation": "dropped pencil",
+          "category": "SMALL",
+          "reason": "pick it up safely",
+          "show_number_in_box": true
+        },
+        "child_thinking": "I decide whether I can solve it safely or need an adult’s help."
+      },
+      "activity": {
+        "archetype": "numbered-situations-two-groups",
+        "mechanic": "classify-problem-size",
+        "render_kind": "logic-problem-size",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "items": [
+            "broken_crayon",
+            "spilled_water",
+            "missing_toy",
+            "smoke",
+            "hurt_knee",
+            "lost_outside"
+          ],
+          "categories": [
+            "SMALL",
+            "BIG — TELL AN ADULT"
+          ],
+          "number_writing_boxes_per_category": 3,
+          "correct_groups": {
+            "SMALL": [
+              1,
+              2,
+              3
+            ],
+            "BIG — TELL AN ADULT": [
+              4,
+              5,
+              6
+            ]
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P021.png",
+        "assets": [
+          "broken_crayon",
+          "spilled_water",
+          "missing_toy",
+          "smoke",
+          "hurt_knee",
+          "lost_outside"
+        ],
+        "asset_crops": {
+          "broken_crayon": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "spilled_water": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "missing_toy": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "smoke": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "hurt_knee": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "lost_outside": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "broken_crayon": "child with a broken crayon",
+          "spilled_water": "small cup of water spilled on a table",
+          "missing_toy": "child looking for a toy",
+          "smoke": "smoke coming from a kitchen",
+          "hurt_knee": "child with a badly hurt knee",
+          "lost_outside": "child lost outside"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "numbered-situations-two-groups",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Discuss safety: a big problem means stop and tell a trusted adult."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "safety situations are calm and non-frightening",
+          "six response boxes are available"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P022": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P022",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 22,
+        "printed_page": 21,
+        "title": "Cause and Effect",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Match familiar actions with likely outcomes.",
+        "instruction": "Look at each action. Draw a line to what is most likely to happen next.",
+        "expected_response": "Five lines connecting each cause to its effect.",
+        "model_text": {
+          "cause": "plant is watered",
+          "effect": "plant grows",
+          "show_completed_line": true
+        },
+        "child_thinking": "I ask, ‘What would happen because of this?’"
+      },
+      "activity": {
+        "archetype": "cause-effect-two-column-match",
+        "mechanic": "match-action-outcome",
+        "render_kind": "logic-cause-effect",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "left": [
+            "drop_ice",
+            "push_ball",
+            "rain_cloud",
+            "turn_switch",
+            "open_umbrella"
+          ],
+          "right": [
+            "lit_lamp",
+            "puddle",
+            "dry_child",
+            "wet_ground",
+            "rolling_ball"
+          ],
+          "correct_pairs": [
+            [
+              "drop_ice",
+              "puddle"
+            ],
+            [
+              "push_ball",
+              "rolling_ball"
+            ],
+            [
+              "rain_cloud",
+              "wet_ground"
+            ],
+            [
+              "turn_switch",
+              "lit_lamp"
+            ],
+            [
+              "open_umbrella",
+              "dry_child"
+            ]
+          ],
+          "require_derangement": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P022.png",
+        "assets": [
+          "drop_ice",
+          "push_ball",
+          "rain_cloud",
+          "turn_switch",
+          "open_umbrella",
+          "puddle",
+          "rolling_ball",
+          "wet_ground",
+          "lit_lamp",
+          "dry_child"
+        ],
+        "asset_crops": {
+          "drop_ice": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "push_ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "rain_cloud": {
+            "x": 0.055,
+            "y": 0.228,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "turn_switch": {
+            "x": 0.5275,
+            "y": 0.228,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "open_umbrella": {
+            "x": 0.055,
+            "y": 0.421,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "puddle": {
+            "x": 0.5275,
+            "y": 0.421,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "rolling_ball": {
+            "x": 0.055,
+            "y": 0.614,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "wet_ground": {
+            "x": 0.5275,
+            "y": 0.614,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "lit_lamp": {
+            "x": 0.055,
+            "y": 0.807,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "dry_child": {
+            "x": 0.5275,
+            "y": 0.807,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "drop_ice": "ice cube left in sunlight",
+          "push_ball": "child gently pushing a ball",
+          "rain_cloud": "dark cloud releasing rain",
+          "turn_switch": "finger turning on a lamp switch",
+          "open_umbrella": "child opening an umbrella in rain",
+          "puddle": "melted water puddle",
+          "rolling_ball": "ball rolling away",
+          "wet_ground": "wet ground with raindrops",
+          "lit_lamp": "lamp glowing",
+          "dry_child": "child staying dry under umbrella"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "cause-effect-two-column-match",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to say ‘because’ when explaining one match."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five cause-effect pairs are included",
+          "events are safe and visually explicit"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P023": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P023",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 23,
+        "printed_page": 22,
+        "title": "Left and Right",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Identify left and right positions.",
+        "instruction": "Look at each pair. Circle LEFT or RIGHT to tell where the first named object is.",
+        "expected_response": "One correct object circled in each of six position scenes.",
+        "model_text": {
+          "scene": "child between apple and ball",
+          "direction": "Circle the ball on the right",
+          "show_circle": true
+        },
+        "child_thinking": "I use my own hands to remember left and right."
+      },
+      "activity": {
+        "archetype": "six-left-right-choice-scenes",
+        "mechanic": "circle-left-or-right-object",
+        "render_kind": "logic-left-right",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "scenes": [
+            "scene_1",
+            "scene_2",
+            "scene_3",
+            "scene_4",
+            "scene_5",
+            "scene_6"
+          ],
+          "directions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left"
+          ],
+          "response": "circle"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P023.png",
+        "assets": [
+          "scene_1",
+          "scene_2",
+          "scene_3",
+          "scene_4",
+          "scene_5",
+          "scene_6"
+        ],
+        "asset_crops": {
+          "scene_1": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "scene_2": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "scene_3": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "scene_4": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "scene_5": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "scene_6": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "scene_1": "child with apple on left and ball on right",
+          "scene_2": "tree with bird on left and kite on right",
+          "scene_3": "box with car on left and teddy on right",
+          "scene_4": "bench with flower on left and dog on right",
+          "scene_5": "table with cup on left and plate on right",
+          "scene_6": "gate with bus on left and bicycle on right"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-left-right-choice-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Stand beside the child and use the same viewing direction when naming left and right."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "six scenes are present",
+          "the instruction for each scene is deterministic text"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P024": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P024",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 24,
+        "printed_page": 23,
+        "title": "Above and Below",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise objects above and below a reference point.",
+        "instruction": "Look at each picture. Circle the correct position word.",
+        "expected_response": "One position word circled in each of six scenes.",
+        "model_text": {
+          "scene": "kite above a tree",
+          "choices": [
+            "above",
+            "below"
+          ],
+          "answer": "above",
+          "show_circle": true
+        },
+        "child_thinking": "I compare the object with the other object in the picture."
+      },
+      "activity": {
+        "archetype": "six-above-below-scenes",
+        "mechanic": "circle-position-word",
+        "render_kind": "logic-above-below",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "scenes": [
+            "bird_tree",
+            "shoe_chair",
+            "sun_cloud",
+            "cat_table",
+            "ball_shelf",
+            "fish_boat"
+          ],
+          "choices": [
+            "above",
+            "below"
+          ],
+          "answers": [
+            "above",
+            "below",
+            "above",
+            "below",
+            "above",
+            "below"
+          ],
+          "minimum_choice_circle_mm": 18
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P024.png",
+        "assets": [
+          "bird_tree",
+          "shoe_chair",
+          "sun_cloud",
+          "cat_table",
+          "ball_shelf",
+          "fish_boat"
+        ],
+        "asset_crops": {
+          "bird_tree": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "shoe_chair": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sun_cloud": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "cat_table": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "ball_shelf": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "fish_boat": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "bird_tree": "bird above a tree",
+          "shoe_chair": "shoe below a chair",
+          "sun_cloud": "sun above a cloud",
+          "cat_table": "cat below a table",
+          "ball_shelf": "ball above a shelf",
+          "fish_boat": "fish below a boat"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-above-below-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask ‘Where is it compared with the other object?’ before the child circles a word."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "position words fit comfortably inside large response targets",
+          "six scenes are present"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P025": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P025",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 25,
+        "printed_page": 24,
+        "title": "Inside and Outside",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Identify objects inside and outside containers or boundaries.",
+        "instruction": "Look at each picture. Circle the correct position word.",
+        "expected_response": "One position word circled in each of six scenes.",
+        "model_text": {
+          "scene": "ball inside a box",
+          "choices": [
+            "inside",
+            "outside"
+          ],
+          "answer": "inside",
+          "show_circle": true
+        },
+        "child_thinking": "I check whether the object is within the boundary or beyond it."
+      },
+      "activity": {
+        "archetype": "six-inside-outside-scenes",
+        "mechanic": "circle-location-word",
+        "render_kind": "logic-inside-outside",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "scenes": [
+            "ball_box",
+            "dog_kennel",
+            "fish_bowl",
+            "bird_cage",
+            "toy_basket",
+            "child_house"
+          ],
+          "choices": [
+            "inside",
+            "outside"
+          ],
+          "answers": [
+            "inside",
+            "outside",
+            "inside",
+            "outside",
+            "inside",
+            "outside"
+          ],
+          "minimum_choice_circle_mm": 22
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P025.png",
+        "assets": [
+          "ball_box",
+          "dog_kennel",
+          "fish_bowl",
+          "bird_cage",
+          "toy_basket",
+          "child_house"
+        ],
+        "asset_crops": {
+          "ball_box": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "dog_kennel": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "fish_bowl": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "bird_cage": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "toy_basket": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "child_house": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "ball_box": "ball inside an open box",
+          "dog_kennel": "dog outside a kennel",
+          "fish_bowl": "fish inside a bowl",
+          "bird_cage": "bird outside an open cage",
+          "toy_basket": "toy inside a basket",
+          "child_house": "child outside a playhouse"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-inside-outside-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Trace the boundary with a finger before asking inside or outside."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "full words fit inside response targets",
+          "six clear boundary scenes are present"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P026": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P026",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 26,
+        "printed_page": 25,
+        "title": "Maze Challenge",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Plan and trace a route through a simple maze.",
+        "instruction": "Trace a path from the rabbit to the carrot. Do not cross a wall.",
+        "expected_response": "One continuous pencil path from START to FINISH.",
+        "model_text": {
+          "maze": "tiny two-turn path from bee to flower",
+          "show_completed_path": true
+        },
+        "child_thinking": "I look ahead before I choose a path."
+      },
+      "activity": {
+        "archetype": "single-large-trace-maze",
+        "mechanic": "trace-unsolved-maze",
+        "render_kind": "logic-maze",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "grid": [
+            8,
+            10
+          ],
+          "start": [
+            0,
+            8
+          ],
+          "finish": [
+            7,
+            1
+          ],
+          "path_width_mm": 12,
+          "show_solution": false,
+          "dead_ends": 5,
+          "start_label": "START",
+          "finish_label": "FINISH"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P026.png",
+        "assets": [
+          "rabbit",
+          "carrot"
+        ],
+        "asset_crops": {
+          "rabbit": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.93,
+            "padding": 0.008
+          },
+          "carrot": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.93,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "rabbit": "friendly rabbit start icon",
+          "carrot": "large carrot finish icon"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "single-large-trace-maze",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to trace the route first with a finger, then with a pencil."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "maze is not pre-traced",
+          "start and finish are obvious",
+          "paths are wide enough for LKG pencil control"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P027": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P027",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 27,
+        "printed_page": 26,
+        "title": "Remember the Pictures",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Build visual memory by recalling previously seen items.",
+        "instruction": "Look at the six pictures. Cover them. Then circle the three pictures you remember.",
+        "expected_response": "Three remembered pictures circled from six recall choices after the study strip is covered.",
+        "model_text": {
+          "study_items": [
+            "apple",
+            "ball",
+            "cup"
+          ],
+          "recall_choices": [
+            "apple",
+            "car",
+            "cup"
+          ],
+          "answer": [
+            "apple",
+            "cup"
+          ],
+          "show_circles": true
+        },
+        "child_thinking": "I name the pictures, cover them and remember what I saw."
+      },
+      "activity": {
+        "archetype": "study-cover-recall",
+        "mechanic": "remember-and-circle",
+        "render_kind": "logic-memory-pictures",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "study_items": [
+            "apple",
+            "ball",
+            "cup",
+            "car",
+            "teddy",
+            "kite"
+          ],
+          "recall_choices": [
+            "recall_bus",
+            "recall_teddy",
+            "recall_dog",
+            "recall_apple",
+            "recall_flower",
+            "recall_cup"
+          ],
+          "correct_recall": [
+            "recall_teddy",
+            "recall_apple",
+            "recall_cup"
+          ],
+          "cover_instruction": true,
+          "response": "circle"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P027.png",
+        "assets": [
+          "apple",
+          "ball",
+          "cup",
+          "car",
+          "teddy",
+          "kite",
+          "recall_apple",
+          "recall_bus",
+          "recall_cup",
+          "recall_dog",
+          "recall_teddy",
+          "recall_flower"
+        ],
+        "asset_crops": {
+          "apple": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "cup": {
+            "x": 0.055,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "car": {
+            "x": 0.5275,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "teddy": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "kite": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "recall_apple": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "recall_bus": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "recall_cup": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "recall_dog": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "recall_teddy": {
+            "x": 0.055,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "recall_flower": {
+            "x": 0.5275,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "apple": "red apple",
+          "ball": "striped ball",
+          "cup": "blue cup",
+          "car": "red toy car",
+          "teddy": "brown teddy",
+          "kite": "colourful kite",
+          "recall_apple": "matching red apple",
+          "recall_bus": "yellow bus distractor",
+          "recall_cup": "matching blue cup",
+          "recall_dog": "dog distractor",
+          "recall_teddy": "matching brown teddy",
+          "recall_flower": "flower distractor"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "study-cover-recall",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Allow ten seconds to study, then cover the study strip with a sheet of paper."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "study and recall areas are visually separate",
+          "memory answers are not highlighted"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P028": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P028",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 28,
+        "printed_page": 27,
+        "title": "Picture Recall",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recall specific details from a previously viewed scene.",
+        "instruction": "Look at the scene for ten seconds. Cover it. Circle the answer to each question.",
+        "expected_response": "One answer circled for each of five recall questions.",
+        "model_text": {
+          "scene": "girl with red umbrella and one dog",
+          "question": "What colour was the umbrella?",
+          "choices": [
+            "red",
+            "blue"
+          ],
+          "answer": "red",
+          "show_circle": true
+        },
+        "child_thinking": "I remember colours, numbers and positions from the scene."
+      },
+      "activity": {
+        "archetype": "scene-study-and-five-recall-questions",
+        "mechanic": "observe-cover-recall",
+        "render_kind": "logic-picture-recall",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "study_seconds": 10,
+          "cover_instruction": true,
+          "questions": [
+            {
+              "prompt": "What colour was the kite?",
+              "choices": [
+                "red",
+                "green"
+              ],
+              "answer": "red"
+            },
+            {
+              "prompt": "How many birds were there?",
+              "choices": [
+                1,
+                2,
+                3
+              ],
+              "answer": 2
+            },
+            {
+              "prompt": "What was beside the tree?",
+              "choices": [
+                "girl",
+                "bus"
+              ],
+              "answer": "girl"
+            },
+            {
+              "prompt": "What colour was the ball?",
+              "choices": [
+                "blue",
+                "yellow"
+              ],
+              "answer": "blue"
+            },
+            {
+              "prompt": "Which animal was there?",
+              "choices": [
+                "dog",
+                "cat"
+              ],
+              "answer": "dog"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P028.png",
+        "assets": [
+          "park_scene"
+        ],
+        "asset_crops": {
+          "park_scene": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.89,
+            "h": 0.93,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "park_scene": "simple park scene with a red kite, two birds, blue ball, one dog, yellow bench and girl beside tree"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "scene-study-and-five-recall-questions",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Cover the scene before reading the five questions; uncover it only after the child answers."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five questions test distinct visual details",
+          "answer targets are at least 15 mm"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P029": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P029",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 29,
+        "printed_page": 28,
+        "title": "Choose the Best Answer",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Evaluate visual choices and select a sensible solution.",
+        "instruction": "Look at each problem. Circle the picture that shows the best choice.",
+        "expected_response": "One best-answer picture circled in each of five situations.",
+        "model_text": {
+          "problem": "rain begins",
+          "options": [
+            "open umbrella",
+            "wear sunglasses",
+            "drop bag"
+          ],
+          "answer": "open umbrella",
+          "show_circle": true
+        },
+        "child_thinking": "I think about which choice is safe, kind and useful."
+      },
+      "activity": {
+        "archetype": "five-situation-best-choice",
+        "mechanic": "circle-best-visual-solution",
+        "render_kind": "logic-best-answer",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "situations": [
+            "spill",
+            "sad_friend",
+            "road",
+            "cold",
+            "lost_pencil"
+          ],
+          "choices_per_situation": 3,
+          "answers": [
+            "wipe spill",
+            "comfort friend",
+            "use zebra crossing with adult",
+            "wear coat",
+            "ask and look calmly"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P029.png",
+        "assets": [
+          "spill_problem",
+          "friend_problem",
+          "crossing_problem",
+          "cold_problem",
+          "lost_item_problem"
+        ],
+        "asset_crops": {
+          "spill_problem": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "friend_problem": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "crossing_problem": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "cold_problem": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "lost_item_problem": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "spill_problem": "small water spill with three response options",
+          "friend_problem": "sad friend with three response options",
+          "crossing_problem": "road crossing with three response options",
+          "cold_problem": "cold weather with three clothing options",
+          "lost_item_problem": "lost classroom pencil with three response options"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-situation-best-choice",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to explain why one choice is safer or kinder."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five independent situations are included",
+          "unsafe distractors are non-frightening"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P030": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P030",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 30,
+        "printed_page": 29,
+        "title": "Finish the Picture",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use symmetry and visual clues to complete partial pictures.",
+        "instruction": "Look at each half-picture. Draw the missing half.",
+        "expected_response": "The missing half drawn in each of five purposeful drawing spaces.",
+        "model_text": {
+          "picture": "half butterfly",
+          "completed_outline": "whole butterfly",
+          "show_answer": true
+        },
+        "child_thinking": "I follow the lines and shapes already shown."
+      },
+      "activity": {
+        "archetype": "five-half-picture-drawing-tasks",
+        "mechanic": "draw-missing-half",
+        "render_kind": "logic-finish-picture",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "tasks": [
+            "apple",
+            "fish",
+            "flower",
+            "house",
+            "balloon"
+          ],
+          "centre_guides": true,
+          "drawing_area_min_mm": [
+            45,
+            35
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P030.png",
+        "assets": [
+          "apple_half",
+          "fish_half",
+          "flower_half",
+          "house_half",
+          "balloon_half"
+        ],
+        "asset_crops": {
+          "apple_half": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "fish_half": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "flower_half": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "house_half": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "balloon_half": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "apple_half": "left half of a simple apple outline",
+          "fish_half": "left half of a simple fish outline",
+          "flower_half": "left half of a simple flower outline",
+          "house_half": "left half of a simple house outline",
+          "balloon_half": "left half of a balloon outline"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-half-picture-drawing-tasks",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Point out where each line meets the centre guide; let the child complete it independently."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five drawing tasks fill the page",
+          "no completed half appears in an independent task"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P031": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P031",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 31,
+        "printed_page": 30,
+        "title": "Visual Puzzle",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Assemble matching picture pieces mentally.",
+        "instruction": "Look at each picture piece. Draw a line to the piece that completes it.",
+        "expected_response": "Five lines connecting the matching halves.",
+        "model_text": {
+          "left": "top half of apple",
+          "right": "bottom half of apple",
+          "show_completed_line": true
+        },
+        "child_thinking": "I match colour, outline and picture detail at the cut edge."
+      },
+      "activity": {
+        "archetype": "picture-half-two-column-match",
+        "mechanic": "match-picture-halves",
+        "render_kind": "logic-visual-puzzle",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "left": [
+            "cat_top",
+            "bus_left",
+            "ball_top",
+            "flower_left",
+            "fish_top"
+          ],
+          "right": [
+            "fish_bottom",
+            "flower_right",
+            "cat_bottom",
+            "ball_bottom",
+            "bus_right"
+          ],
+          "correct_pairs": [
+            [
+              "cat_top",
+              "cat_bottom"
+            ],
+            [
+              "bus_left",
+              "bus_right"
+            ],
+            [
+              "ball_top",
+              "ball_bottom"
+            ],
+            [
+              "flower_left",
+              "flower_right"
+            ],
+            [
+              "fish_top",
+              "fish_bottom"
+            ]
+          ],
+          "require_derangement": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P031.png",
+        "assets": [
+          "cat_top",
+          "bus_left",
+          "ball_top",
+          "flower_left",
+          "fish_top",
+          "fish_bottom",
+          "flower_right",
+          "cat_bottom",
+          "ball_bottom",
+          "bus_right"
+        ],
+        "asset_crops": {
+          "cat_top": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "bus_left": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "ball_top": {
+            "x": 0.055,
+            "y": 0.228,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "flower_left": {
+            "x": 0.5275,
+            "y": 0.228,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "fish_top": {
+            "x": 0.055,
+            "y": 0.421,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "fish_bottom": {
+            "x": 0.5275,
+            "y": 0.421,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "flower_right": {
+            "x": 0.055,
+            "y": 0.614,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "cat_bottom": {
+            "x": 0.5275,
+            "y": 0.614,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "ball_bottom": {
+            "x": 0.055,
+            "y": 0.807,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          },
+          "bus_right": {
+            "x": 0.5275,
+            "y": 0.807,
+            "w": 0.4175,
+            "h": 0.158,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "cat_top": "top half of cat picture",
+          "bus_left": "left half of bus picture",
+          "ball_top": "top half of ball picture",
+          "flower_left": "left half of flower picture",
+          "fish_top": "top half of fish picture",
+          "fish_bottom": "matching bottom half of fish",
+          "flower_right": "matching right half of flower",
+          "cat_bottom": "matching bottom half of cat",
+          "ball_bottom": "matching bottom half of ball",
+          "bus_right": "matching right half of bus"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "picture-half-two-column-match",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to compare the cut edges before drawing each line."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five matching pairs are included",
+          "no object is cropped by the page frame"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P032": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P032",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 32,
+        "printed_page": 31,
+        "title": "Shadow Match",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Match familiar objects to their silhouettes.",
+        "instruction": "Name each object. Draw a line to its shadow.",
+        "expected_response": "Six lines connecting objects to their correct shadows.",
+        "model_text": {
+          "object": "spoon",
+          "shadow": "spoon silhouette",
+          "show_completed_line": true
+        },
+        "child_thinking": "I compare the outside shape and direction."
+      },
+      "activity": {
+        "archetype": "object-to-shadow-two-column-match",
+        "mechanic": "match-object-shadow",
+        "render_kind": "logic-shadow-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "left": [
+            "umbrella",
+            "boot",
+            "teapot",
+            "guitar",
+            "duck",
+            "bicycle"
+          ],
+          "right": [
+            "shadow_duck",
+            "shadow_bicycle",
+            "shadow_boot",
+            "shadow_umbrella",
+            "shadow_guitar",
+            "shadow_teapot"
+          ],
+          "correct_pairs": [
+            [
+              "umbrella",
+              "shadow_umbrella"
+            ],
+            [
+              "boot",
+              "shadow_boot"
+            ],
+            [
+              "teapot",
+              "shadow_teapot"
+            ],
+            [
+              "guitar",
+              "shadow_guitar"
+            ],
+            [
+              "duck",
+              "shadow_duck"
+            ],
+            [
+              "bicycle",
+              "shadow_bicycle"
+            ]
+          ],
+          "require_derangement": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P032.png",
+        "assets": [
+          "umbrella",
+          "boot",
+          "teapot",
+          "guitar",
+          "duck",
+          "bicycle",
+          "shadow_duck",
+          "shadow_bicycle",
+          "shadow_boot",
+          "shadow_umbrella",
+          "shadow_guitar",
+          "shadow_teapot"
+        ],
+        "asset_crops": {
+          "umbrella": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "boot": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "teapot": {
+            "x": 0.055,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "guitar": {
+            "x": 0.5275,
+            "y": 0.195833,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "duck": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "bicycle": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shadow_duck": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shadow_bicycle": {
+            "x": 0.5275,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shadow_boot": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shadow_umbrella": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shadow_guitar": {
+            "x": 0.055,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          },
+          "shadow_teapot": {
+            "x": 0.5275,
+            "y": 0.839167,
+            "w": 0.4175,
+            "h": 0.125833,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "umbrella": "colourful umbrella",
+          "boot": "rain boot",
+          "teapot": "teapot",
+          "guitar": "small guitar",
+          "duck": "duck",
+          "bicycle": "bicycle",
+          "shadow_duck": "duck silhouette",
+          "shadow_bicycle": "bicycle silhouette",
+          "shadow_boot": "boot silhouette",
+          "shadow_umbrella": "umbrella silhouette",
+          "shadow_guitar": "guitar silhouette",
+          "shadow_teapot": "teapot silhouette"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "object-to-shadow-two-column-match",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Encourage the child to trace an object’s outline in the air before matching."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "six pairs are present",
+          "names appear below colour objects"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P033": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P033",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 33,
+        "printed_page": 32,
+        "title": "Complete the Puzzle",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use shape and picture clues to select missing pieces.",
+        "instruction": "Look at each picture with a missing piece. Circle the piece that fits.",
+        "expected_response": "One correct missing piece circled in each of five puzzles.",
+        "model_text": {
+          "picture": "house with roof-piece gap",
+          "choices": [
+            "matching roof",
+            "wheel",
+            "leaf"
+          ],
+          "answer": "matching roof",
+          "show_circle": true
+        },
+        "child_thinking": "I match both the shape of the gap and the picture lines."
+      },
+      "activity": {
+        "archetype": "five-missing-piece-puzzles",
+        "mechanic": "choose-fitting-puzzle-piece",
+        "render_kind": "logic-complete-puzzle",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "puzzles": [
+            "train",
+            "fish",
+            "flower",
+            "kite",
+            "teddy"
+          ],
+          "choices_per_puzzle": 3,
+          "response": "circle"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P033.png",
+        "assets": [
+          "train_puzzle",
+          "fish_puzzle",
+          "flower_puzzle",
+          "kite_puzzle",
+          "teddy_puzzle"
+        ],
+        "asset_crops": {
+          "train_puzzle": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "fish_puzzle": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "flower_puzzle": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "kite_puzzle": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "teddy_puzzle": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "train_puzzle": "train picture with one missing piece and three choices",
+          "fish_puzzle": "fish picture with one missing piece and three choices",
+          "flower_puzzle": "flower picture with one missing piece and three choices",
+          "kite_puzzle": "kite picture with one missing piece and three choices",
+          "teddy_puzzle": "teddy picture with one missing piece and three choices"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-missing-piece-puzzles",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to check the gap shape before looking at picture details."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five puzzles are included",
+          "no correct piece is pre-inserted"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P034": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P034",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 34,
+        "printed_page": 33,
+        "title": "Picture Logic",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Choose the picture that logically completes a set.",
+        "instruction": "Look at each picture set. Circle the picture that completes the rule.",
+        "expected_response": "One logical completion circled in each of five sets.",
+        "model_text": {
+          "set": [
+            "empty cup",
+            "half-full cup",
+            "full cup"
+          ],
+          "answer": "overflowing cup",
+          "show_circle": true
+        },
+        "child_thinking": "I compare what changes across the pictures."
+      },
+      "activity": {
+        "archetype": "five-picture-logic-sets",
+        "mechanic": "choose-logical-completion",
+        "render_kind": "logic-picture-logic",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "sets": [
+            "growth",
+            "weather",
+            "meal",
+            "animal_home",
+            "tool_use"
+          ],
+          "choices_per_set": 3,
+          "response": "circle"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P034.png",
+        "assets": [
+          "growth_set",
+          "weather_set",
+          "meal_set",
+          "home_set",
+          "tool_set"
+        ],
+        "asset_crops": {
+          "growth_set": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "weather_set": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "meal_set": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "home_set": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "tool_set": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "growth_set": "seed-to-plant logic set with three choices",
+          "weather_set": "weather-clothing logic set with choices",
+          "meal_set": "plate-spoon-food relationship set",
+          "home_set": "animal-home relationship set",
+          "tool_set": "object-tool relationship set"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-picture-logic-sets",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask what rule connects the shown pictures before presenting the choices."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five different logic relationships are used",
+          "each set has three large answer choices"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P035": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P035",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 35,
+        "printed_page": 34,
+        "title": "Simple Coding",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Follow directional symbols to reach a goal.",
+        "instruction": "Draw one arrow in each box to make a path from START to the goal.",
+        "expected_response": "Three unsolved paths traced correctly from their starts to their goals.",
+        "model_text": {
+          "grid": [
+            3,
+            3
+          ],
+          "start": [
+            0,
+            0
+          ],
+          "code": [
+            "right",
+            "down"
+          ],
+          "goal": [
+            1,
+            1
+          ],
+          "show_path": true
+        },
+        "child_thinking": "I move one square for each arrow and check my direction."
+      },
+      "activity": {
+        "archetype": "three-grid-coding-paths",
+        "mechanic": "trace-arrow-code",
+        "render_kind": "logic-simple-coding",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "tasks": [
+            {
+              "grid": [
+                4,
+                4
+              ],
+              "start": [
+                0,
+                3
+              ],
+              "goal": [
+                3,
+                1
+              ],
+              "code": [
+                "right",
+                "right",
+                "right",
+                "up",
+                "up"
+              ]
+            },
+            {
+              "grid": [
+                4,
+                4
+              ],
+              "start": [
+                3,
+                3
+              ],
+              "goal": [
+                1,
+                0
+              ],
+              "code": [
+                "up",
+                "up",
+                "up",
+                "left",
+                "left"
+              ]
+            },
+            {
+              "grid": [
+                5,
+                4
+              ],
+              "start": [
+                0,
+                0
+              ],
+              "goal": [
+                4,
+                2
+              ],
+              "code": [
+                "right",
+                "right",
+                "down",
+                "right",
+                "right",
+                "down"
+              ]
+            }
+          ],
+          "paths_dotted_not_solid": true,
+          "show_solution": false
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P035.png",
+        "assets": [
+          "mouse",
+          "cheese",
+          "bee",
+          "flower",
+          "car",
+          "garage"
+        ],
+        "asset_crops": {
+          "mouse": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "cheese": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "bee": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "flower": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "car": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "garage": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "mouse": "mouse start icon",
+          "cheese": "cheese goal icon",
+          "bee": "bee start icon",
+          "flower": "flower goal icon",
+          "car": "car start icon",
+          "garage": "garage goal icon"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-grid-coding-paths",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Point to each arrow and move one grid square at a time; do not trace the path for the child."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "independent paths are dotted and unsolved",
+          "arrow directions match the configured goals"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P036": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P036",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 36,
+        "printed_page": 35,
+        "title": "Thinking Challenge",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Apply observation, classification and sequencing skills.",
+        "instruction": "Complete each thinking challenge.",
+        "expected_response": "Five independent responses: circle, match, order, find and choose.",
+        "model_text": {
+          "task": "circle the odd fruit among three fruits and a bus",
+          "answer": "bus",
+          "show_circle": true
+        },
+        "child_thinking": "I read the small instruction for each challenge and use the right thinking skill."
+      },
+      "activity": {
+        "archetype": "five-mixed-logic-challenges",
+        "mechanic": "mixed-guided-logic",
+        "render_kind": "logic-thinking-challenge",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "tasks": [
+            {
+              "type": "circle_odd",
+              "asset": "odd_one_out"
+            },
+            {
+              "type": "circle_same",
+              "asset": "same_picture"
+            },
+            {
+              "type": "complete_pattern",
+              "asset": "pattern"
+            },
+            {
+              "type": "number_order",
+              "asset": "size_order"
+            },
+            {
+              "type": "circle_shadow",
+              "asset": "shadow"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P036.png",
+        "assets": [
+          "odd_one_out",
+          "same_picture",
+          "pattern",
+          "size_order",
+          "shadow"
+        ],
+        "asset_crops": {
+          "odd_one_out": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "same_picture": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "pattern": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "size_order": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "shadow": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "odd_one_out": "four-item odd-one-out set",
+          "same_picture": "target and three same-picture choices",
+          "pattern": "visual pattern with three answer choices",
+          "size_order": "three bears in shuffled sizes",
+          "shadow": "object with three shadow choices"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-mixed-logic-challenges",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Read one short task instruction at a time and allow independent thinking."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five varied tasks fill the page",
+          "no task is pre-solved"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P037": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P037",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 37,
+        "printed_page": 36,
+        "title": "Mixed Logic Review",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Review core observation, matching, sorting and pattern skills.",
+        "instruction": "Complete each review activity.",
+        "expected_response": "Six independent responses across six review activities.",
+        "model_text": {
+          "task": "match a key to a lock",
+          "show_completed_line": true
+        },
+        "child_thinking": "I choose the thinking skill that fits each activity."
+      },
+      "activity": {
+        "archetype": "six-section-logic-review",
+        "mechanic": "mixed-logic-review",
+        "render_kind": "logic-mixed-review",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "tasks": [
+            "find_difference",
+            "match_pairs",
+            "sort_colour",
+            "story_sequence",
+            "position_words",
+            "complete_patterns"
+          ],
+          "response_modes": [
+            "circle",
+            "line",
+            "write numbers",
+            "write order",
+            "circle word",
+            "draw next"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P037.png",
+        "assets": [
+          "difference_task",
+          "match_task",
+          "sort_task",
+          "sequence_task",
+          "position_task",
+          "pattern_task"
+        ],
+        "asset_crops": {
+          "difference_task": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "match_task": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sort_task": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sequence_task": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "position_task": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "pattern_task": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "difference_task": "small two-picture one-difference task",
+          "match_task": "two related object pairs",
+          "sort_task": "six numbered red-blue objects",
+          "sequence_task": "four event pictures to number",
+          "position_task": "two position scenes with word choices",
+          "pattern_task": "two next-pattern rows"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-section-logic-review",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Give help only with reading the short instructions, not with the answers."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "six activities are present",
+          "each section has its own response mechanic"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P038": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P038",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 38,
+        "printed_page": 37,
+        "title": "Brain Challenge",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Solve age-appropriate visual brain teasers.",
+        "instruction": "Think carefully. Solve each picture puzzle.",
+        "expected_response": "Five independent visual-puzzle responses.",
+        "model_text": {
+          "assessment_safe": true,
+          "label": "Try these by yourself"
+        },
+        "child_thinking": "I try a strategy, check my answer and change it if needed."
+      },
+      "activity": {
+        "archetype": "five-brain-teaser-cards",
+        "mechanic": "independent-brain-challenges",
+        "render_kind": "logic-brain-challenge",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "tasks": [
+            "animal_pattern",
+            "path_count",
+            "balance_logic",
+            "grid_oddity",
+            "sequence_logic"
+          ],
+          "model_answers_visible": false
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P038.png",
+        "assets": [
+          "animal_pattern",
+          "path_count",
+          "balance_logic",
+          "grid_oddity",
+          "sequence_logic"
+        ],
+        "asset_crops": {
+          "animal_pattern": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "path_count": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "balance_logic": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "grid_oddity": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sequence_logic": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "animal_pattern": "upright dog-cat-dog-cat pattern with one blank and three clearly separated choices",
+          "path_count": "three simple paths with one reaching the goal",
+          "balance_logic": "two visual balance clues and one question",
+          "grid_oddity": "small grid with one different picture",
+          "sequence_logic": "changing sequence with three choices"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-brain-teaser-cards",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": false,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Observe which strategy the child tries; do not demonstrate an assessment answer."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "assessment-like tasks have no solved model",
+          "five response areas are clearly defined"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P039": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P039",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 39,
+        "printed_page": 38,
+        "title": "Thinking Assessment",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Demonstrate independent learning across core logic skills.",
+        "instruction": "Complete each task by yourself. Your teacher will observe.",
+        "expected_response": "Six independent answers covering observation, classification, matching, sequence, position and coding.",
+        "model_text": {
+          "assessment_safe": true,
+          "label": "Independent assessment — no completed example"
+        },
+        "child_thinking": "I work carefully and check each answer."
+      },
+      "activity": {
+        "archetype": "six-section-thinking-assessment",
+        "mechanic": "independent-mixed-assessment",
+        "render_kind": "logic-thinking-assessment",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "tasks": [
+            "observation",
+            "classification",
+            "matching",
+            "sequence",
+            "position",
+            "coding"
+          ],
+          "completed_example": false,
+          "teacher_scoring": [
+            0,
+            1
+          ],
+          "maximum_score": 6
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P039.png",
+        "assets": [
+          "observation_task",
+          "classification_task",
+          "matching_task",
+          "sequence_task",
+          "position_task",
+          "coding_task"
+        ],
+        "asset_crops": {
+          "observation_task": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "classification_task": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "matching_task": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sequence_task": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "position_task": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "coding_task": {
+            "x": 0.5275,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "observation_task": "one-difference picture pair",
+          "classification_task": "four-item odd-one-out set",
+          "matching_task": "three object-shadow matches",
+          "sequence_task": "three events to number",
+          "position_task": "two spatial word questions",
+          "coding_task": "one small unsolved arrow grid"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-section-thinking-assessment",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": false,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Read directions only; record whether each task is completed independently."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "no model answer appears",
+          "all six tasks remain unmarked",
+          "teacher scoring is outside the child activity"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P040": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P040",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 40,
+        "printed_page": 39,
+        "title": "My Thinking Journal",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Reflect on a problem solved and the strategy used.",
+        "instruction": "Choose one thinking skill. Draw a problem you solved. Tell how you solved it.",
+        "expected_response": "One selected skill, one purposeful drawing and one short dictated explanation.",
+        "model_text": {
+          "skill": "matching",
+          "mini_example": "key connected to lock",
+          "not_a_child_answer": true
+        },
+        "child_thinking": "I remember a challenge and explain the thinking that helped me."
+      },
+      "activity": {
+        "archetype": "choice-draw-dictate-journal",
+        "mechanic": "reflect-on-thinking",
+        "render_kind": "logic-thinking-journal",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "skill_choices": [
+            "I observed",
+            "I matched",
+            "I put in order"
+          ],
+          "choice_response": "tick one",
+          "drawing_frame_count": 1,
+          "drawing_frame_purpose": "Draw the problem I solved",
+          "dictation_lines": 2,
+          "dictation_starter": "I solved it by…"
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P040.png",
+        "assets": [
+          "observe_icon",
+          "match_icon",
+          "sequence_icon"
+        ],
+        "asset_crops": {
+          "observe_icon": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          },
+          "match_icon": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          },
+          "sequence_icon": {
+            "x": 0.055,
+            "y": 0.5175,
+            "w": 0.4175,
+            "h": 0.4475,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "observe_icon": "magnifying glass for observing",
+          "match_icon": "two fitting puzzle pieces",
+          "sequence_icon": "three ordered picture cards"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "choice-draw-dictate-journal",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to describe the drawing; write their words only if support is needed."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "exactly one drawing frame is used",
+          "the two lines have a dictated-response purpose"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P041": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P041",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 41,
+        "printed_page": 40,
+        "title": "Logic Celebration",
+        "page_type": "celebration"
+      },
+      "learning": {
+        "objective": "Celebrate specific reasoning skills learned in the book.",
+        "instruction": "Colour one badge for each thinking skill you used.",
+        "expected_response": "Five skill badges coloured by the child.",
+        "model_text": {
+          "badge": "Observation Star",
+          "one_section_coloured": true
+        },
+        "child_thinking": "I recognise the thinking skills I practised."
+      },
+      "activity": {
+        "archetype": "five-colouring-skill-badges",
+        "mechanic": "colour-achievement-badges",
+        "render_kind": "logic-celebration",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "badges": [
+            "I can observe",
+            "I can match",
+            "I can sort",
+            "I can put in order",
+            "I can solve"
+          ],
+          "colouring_only": true,
+          "badges_precoloured": false
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P041.png",
+        "assets": [
+          "observe_badge",
+          "match_badge",
+          "sort_badge",
+          "sequence_badge",
+          "solve_badge"
+        ],
+        "asset_crops": {
+          "observe_badge": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "match_badge": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sort_badge": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "sequence_badge": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "solve_badge": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "observe_badge": "outline badge with magnifying-glass icon",
+          "match_badge": "outline badge with matching-pair icon",
+          "sort_badge": "outline badge with sorting icon",
+          "sequence_badge": "outline badge with ordered-cards icon",
+          "solve_badge": "outline badge with puzzle-piece icon"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-colouring-skill-badges",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Name each skill and invite the child to recall one page where it was used."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "five badges are purposeful and uncoloured",
+          "no parent panel appears"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P042": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P042",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 42,
+        "printed_page": 41,
+        "title": "Certificate",
+        "page_type": "certificate"
+      },
+      "learning": {
+        "objective": "Celebrate completion of Logical Thinking Adventures.",
+        "instruction": "Write the child’s name, date and teacher’s signature.",
+        "expected_response": "Name, date and teacher signature entered in deterministic certificate fields.",
+        "model_text": {
+          "not_required": true,
+          "certificate": true
+        },
+        "child_thinking": "This certificate records completion of the book."
+      },
+      "activity": {
+        "archetype": "deterministic-certificate",
+        "mechanic": "complete-certificate-fields",
+        "render_kind": "logic-certificate",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "fields": [
+            "Child’s name",
+            "Date",
+            "Teacher’s signature"
+          ],
+          "field_lines": 3,
+          "publisher_text_deterministic": true,
+          "official_logo_deterministic": true,
+          "official_star_deterministic": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P042.png",
+        "assets": [
+          "logic_badge",
+          "corner_shapes"
+        ],
+        "asset_crops": {
+          "logic_badge": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.93,
+            "padding": 0.008
+          },
+          "corner_shapes": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.93,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "logic_badge": "premium logic explorer badge without words",
+          "corner_shapes": "small crop-safe logic-shape decoration"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "deterministic-certificate",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": false,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Complete the certificate after the child finishes the book."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "certificate text is deterministic",
+          "no generated logo or mascot"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "LT-LKG-V4-P043": {
+      "identity": {
+        "page_id": "LT-LKG-V4-P043",
+        "book_slug": "logical-thinking-adventures",
+        "level": "lkg",
+        "physical_page": 43,
+        "printed_page": 42,
+        "title": "I Am a Logic Explorer",
+        "page_type": "celebration"
+      },
+      "learning": {
+        "objective": "Celebrate confidence and success in logical thinking.",
+        "instruction": "Colour the explorer badge. Tick the thinking skill you enjoyed most.",
+        "expected_response": "One badge coloured and one favourite skill ticked.",
+        "model_text": {
+          "badge": "small sample badge with one coloured star",
+          "show_answer": true
+        },
+        "child_thinking": "I celebrate what I can do and choose a favourite thinking skill."
+      },
+      "activity": {
+        "archetype": "hero-badge-and-skill-choice",
+        "mechanic": "colour-and-self-select",
+        "render_kind": "logic-explorer",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "badge_colouring_area": true,
+          "skill_choices": [
+            "Observe",
+            "Match",
+            "Solve"
+          ],
+          "choice_response": "tick one",
+          "official_star_deterministic": true
+        }
+      },
+      "illustration": {
+        "source_asset": "LT-LKG-V4-P043.png",
+        "assets": [
+          "hero_child",
+          "explorer_badge",
+          "observe_icon",
+          "match_icon",
+          "solve_icon"
+        ],
+        "asset_crops": {
+          "hero_child": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "explorer_badge": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "observe_icon": {
+            "x": 0.055,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "match_icon": {
+            "x": 0.5275,
+            "y": 0.356667,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          },
+          "solve_icon": {
+            "x": 0.055,
+            "y": 0.678333,
+            "w": 0.4175,
+            "h": 0.286667,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "hero_child": "one confident LKG child holding a magnifying glass beside large puzzle pieces",
+          "explorer_badge": "large black-outline Logic Explorer colouring badge with no words",
+          "observe_icon": "magnifying glass icon",
+          "match_icon": "matching-pair icon",
+          "solve_icon": "puzzle-piece icon"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "hero-badge-and-skill-choice",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Invite the child to name one challenge they are proud of solving."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "completed example is visually separate from the independent activity",
+          "independent answers are unmarked",
+          "every box, line, circle and blank area has a named child action",
+          "badge is large enough to colour",
+          "three skill choices are child-readable"
+        ],
+        "blocked_reasons": []
+      }
+    }
+  }
+}
