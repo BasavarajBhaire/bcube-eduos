@@ -1,0 +1,1674 @@
+{
+  "version": "communication-champions-phase2-illustration-prompts-v1",
+  "book": "Communication Champions",
+  "level": "LKG (4+)",
+  "source_audit": "curriculum/communication-champions/lkg/phase2-page-audit-v1.json",
+  "policy": "Content-aligned artwork only; deterministic text and mechanics; no generic fallback.",
+  "pages": {
+    "CC-LKG-V4-P008": {
+      "title": "Good Listening",
+      "output_filename": "CC-LKG-V4-P008.png",
+      "asset_names": [
+        "eyes_looking",
+        "ears_listening",
+        "body_still",
+        "waiting_turn",
+        "interrupting_distractor"
+      ],
+      "asset_descriptions": {
+        "eyes_looking": "child's eyes looking towards a speaker",
+        "ears_listening": "child cupping one ear while listening",
+        "body_still": "child sitting with calm still hands",
+        "waiting_turn": "child waiting with one hand lowered",
+        "interrupting_distractor": "mild incorrect example of a child interrupting"
+      },
+      "asset_crops": {
+        "eyes_looking": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "ears_listening": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "body_still": {
+          "x": 0.055,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "waiting_turn": {
+          "x": 0.5275,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "interrupting_distractor": {
+          "x": 0.055,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P008.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P008\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Good Listening\nLearning objective: Recognise and practise good listening behaviours.\nExact child response path: choose one good-listening behaviour and say the model phrase.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. eyes_looking: child's eyes looking towards a speaker.\n2. ears_listening: child cupping one ear while listening.\n3. body_still: child sitting with calm still hands.\n4. waiting_turn: child waiting with one hand lowered.\n5. interrupting_distractor: mild incorrect example of a child interrupting.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P009": {
+      "title": "Follow One Instruction",
+      "output_filename": "CC-LKG-V4-P009.png",
+      "asset_names": [
+        "clap",
+        "stand",
+        "sit",
+        "point",
+        "touch_head",
+        "show_pencil"
+      ],
+      "asset_descriptions": {
+        "clap": "child clapping",
+        "stand": "child standing",
+        "sit": "child sitting",
+        "point": "child pointing",
+        "touch_head": "child touching own head",
+        "show_pencil": "child holding up one pencil"
+      },
+      "asset_crops": {
+        "clap": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "stand": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "sit": {
+          "x": 0.055,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "point": {
+          "x": 0.5275,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "touch_head": {
+          "x": 0.055,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "show_pencil": {
+          "x": 0.5275,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P009.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P009\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Follow One Instruction\nLearning objective: Listen and follow a one-step classroom instruction.\nExact child response path: listen, identify the named action, then perform it.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. clap: child clapping.\n2. stand: child standing.\n3. sit: child sitting.\n4. point: child pointing.\n5. touch_head: child touching own head.\n6. show_pencil: child holding up one pencil.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P010": {
+      "title": "Follow Two Instructions",
+      "output_filename": "CC-LKG-V4-P010.png",
+      "asset_names": [
+        "clap_then_sit",
+        "pick_pencil_then_point_book",
+        "stand_then_touch_head"
+      ],
+      "asset_descriptions": {
+        "clap_then_sit": "two clearly separated moments: clap, then sit",
+        "pick_pencil_then_point_book": "two clearly separated moments: pick up a pencil, then point to a book",
+        "stand_then_touch_head": "two clearly separated moments: stand, then touch head"
+      },
+      "asset_crops": {
+        "clap_then_sit": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "pick_pencil_then_point_book": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "stand_then_touch_head": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P010.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P010\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Follow Two Instructions\nLearning objective: Follow a simple two-step instruction.\nExact child response path: follow both actions in the spoken order.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. clap_then_sit: two clearly separated moments: clap, then sit.\n2. pick_pencil_then_point_book: two clearly separated moments: pick up a pencil, then point to a book.\n3. stand_then_touch_head: two clearly separated moments: stand, then touch head.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P011": {
+      "title": "Speak in a Full Sentence",
+      "output_filename": "CC-LKG-V4-P011.png",
+      "asset_names": [
+        "dog",
+        "red_ball",
+        "girl_running",
+        "boy_reading"
+      ],
+      "asset_descriptions": {
+        "dog": "one friendly dog",
+        "red_ball": "one red ball",
+        "girl_running": "girl running",
+        "boy_reading": "boy reading an open book"
+      },
+      "asset_crops": {
+        "dog": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "red_ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "girl_running": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "boy_reading": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P011.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P011\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Speak in a Full Sentence\nLearning objective: Expand one-word answers into short sentences.\nExact child response path: name each picture using a complete short sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. dog: one friendly dog.\n2. red_ball: one red ball.\n3. girl_running: girl running.\n4. boy_reading: boy reading an open book.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P012": {
+      "title": "My Name and Age",
+      "output_filename": "CC-LKG-V4-P012.png",
+      "asset_names": [
+        "introduction_child"
+      ],
+      "asset_descriptions": {
+        "introduction_child": "one confident LKG child facing forward and introducing themself with a friendly gesture"
+      },
+      "asset_crops": {
+        "introduction_child": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P012.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P012\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: My Name and Age\nLearning objective: Introduce oneself using name and age.\nExact child response path: say and record own name and age with adult support.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. introduction_child: one confident LKG child facing forward and introducing themself with a friendly gesture.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P013": {
+      "title": "About Me",
+      "output_filename": "CC-LKG-V4-P013.png",
+      "asset_names": [
+        "colour_choices",
+        "food_choices",
+        "toy_choices",
+        "activity_choices"
+      ],
+      "asset_descriptions": {
+        "colour_choices": "four large colour swatches without words",
+        "food_choices": "four familiar foods",
+        "toy_choices": "four familiar toys",
+        "activity_choices": "four familiar child activities"
+      },
+      "asset_crops": {
+        "colour_choices": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "food_choices": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "toy_choices": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "activity_choices": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P013.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P013\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: About Me\nLearning objective: Say two facts about oneself.\nExact child response path: choose personal favourites and complete the sentence frames.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. colour_choices: four large colour swatches without words.\n2. food_choices: four familiar foods.\n3. toy_choices: four familiar toys.\n4. activity_choices: four familiar child activities.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P014": {
+      "title": "People at School",
+      "output_filename": "CC-LKG-V4-P014.png",
+      "asset_names": [
+        "teacher",
+        "principal",
+        "helper",
+        "driver",
+        "friend",
+        "teaching_action",
+        "leading_school_action",
+        "helping_action",
+        "driving_action",
+        "playing_action"
+      ],
+      "asset_descriptions": {
+        "teacher": "school teacher",
+        "principal": "school principal",
+        "helper": "school helper",
+        "driver": "school bus driver",
+        "friend": "class friend",
+        "teaching_action": "adult teaching children",
+        "leading_school_action": "principal welcoming children",
+        "helping_action": "helper arranging materials",
+        "driving_action": "driver beside a school bus",
+        "playing_action": "two friends sharing a game"
+      },
+      "asset_crops": {
+        "teacher": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "principal": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "helper": {
+          "x": 0.055,
+          "y": 0.229,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "driver": {
+          "x": 0.5275,
+          "y": 0.229,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "friend": {
+          "x": 0.055,
+          "y": 0.423,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "teaching_action": {
+          "x": 0.5275,
+          "y": 0.423,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "leading_school_action": {
+          "x": 0.055,
+          "y": 0.617,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "helping_action": {
+          "x": 0.5275,
+          "y": 0.617,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "driving_action": {
+          "x": 0.055,
+          "y": 0.811,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "playing_action": {
+          "x": 0.5275,
+          "y": 0.811,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P014.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P014\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: People at School\nLearning objective: Name school people and say what they do.\nExact child response path: match each school person to their work and say one sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 10 named visual asset(s), each appearing once:\n1. teacher: school teacher.\n2. principal: school principal.\n3. helper: school helper.\n4. driver: school bus driver.\n5. friend: class friend.\n6. teaching_action: adult teaching children.\n7. leading_school_action: principal welcoming children.\n8. helping_action: helper arranging materials.\n9. driving_action: driver beside a school bus.\n10. playing_action: two friends sharing a game.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 5-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P015": {
+      "title": "Things in My Classroom",
+      "output_filename": "CC-LKG-V4-P015.png",
+      "asset_names": [
+        "book",
+        "pencil",
+        "eraser",
+        "school_bag",
+        "chair",
+        "board",
+        "crayons"
+      ],
+      "asset_descriptions": {
+        "book": "one book",
+        "pencil": "one pencil",
+        "eraser": "one eraser",
+        "school_bag": "one school bag",
+        "chair": "one chair",
+        "board": "one classroom board",
+        "crayons": "small box of crayons"
+      },
+      "asset_crops": {
+        "book": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        },
+        "pencil": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        },
+        "eraser": {
+          "x": 0.055,
+          "y": 0.2775,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        },
+        "school_bag": {
+          "x": 0.5275,
+          "y": 0.2775,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        },
+        "chair": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        },
+        "board": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        },
+        "crayons": {
+          "x": 0.055,
+          "y": 0.7625,
+          "w": 0.4175,
+          "h": 0.2025,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P015.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P015\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Things in My Classroom\nLearning objective: Use classroom vocabulary in short sentences.\nExact child response path: name classroom objects and use one in a sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 7 named visual asset(s), each appearing once:\n1. book: one book.\n2. pencil: one pencil.\n3. eraser: one eraser.\n4. school_bag: one school bag.\n5. chair: one chair.\n6. board: one classroom board.\n7. crayons: small box of crayons.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 4-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P016": {
+      "title": "Action Words",
+      "output_filename": "CC-LKG-V4-P016.png",
+      "asset_names": [
+        "jump",
+        "run",
+        "clap",
+        "read",
+        "write",
+        "eat"
+      ],
+      "asset_descriptions": {
+        "jump": "child jumping",
+        "run": "child running",
+        "clap": "child clapping",
+        "read": "child reading",
+        "write": "child writing",
+        "eat": "child eating"
+      },
+      "asset_crops": {
+        "jump": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "run": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "clap": {
+          "x": 0.055,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "read": {
+          "x": 0.5275,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "write": {
+          "x": 0.055,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "eat": {
+          "x": 0.5275,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P016.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P016\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Action Words\nLearning objective: Recognise and use common action words.\nExact child response path: match each action picture to its word and say the action sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 6 named visual asset(s), each appearing once:\n1. jump: child jumping.\n2. run: child running.\n3. clap: child clapping.\n4. read: child reading.\n5. write: child writing.\n6. eat: child eating.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P017": {
+      "title": "Describing Words",
+      "output_filename": "CC-LKG-V4-P017.png",
+      "asset_names": [
+        "big_small",
+        "tall_short",
+        "hot_cold",
+        "happy_sad"
+      ],
+      "asset_descriptions": {
+        "big_small": "one big ball and one small matching ball",
+        "tall_short": "one tall tree and one short matching tree",
+        "hot_cold": "steaming warm drink and cold drink with ice",
+        "happy_sad": "same child shown happy and sad"
+      },
+      "asset_crops": {
+        "big_small": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "tall_short": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "hot_cold": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "happy_sad": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P017.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P017\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Describing Words\nLearning objective: Use simple describing words.\nExact child response path: choose a describing word for each clear visual pair.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. big_small: one big ball and one small matching ball.\n2. tall_short: one tall tree and one short matching tree.\n3. hot_cold: steaming warm drink and cold drink with ice.\n4. happy_sad: same child shown happy and sad.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P018": {
+      "title": "Opposite Words",
+      "output_filename": "CC-LKG-V4-P018.png",
+      "asset_names": [
+        "open_box",
+        "closed_box",
+        "full_basket",
+        "empty_basket",
+        "up_arrow_object",
+        "down_arrow_object",
+        "fast_rabbit",
+        "slow_tortoise",
+        "clean_shoe",
+        "dirty_shoe"
+      ],
+      "asset_descriptions": {
+        "open_box": "one open box",
+        "closed_box": "one matching closed box",
+        "full_basket": "one basket filled with apples",
+        "empty_basket": "one matching empty basket",
+        "up_arrow_object": "one toy rocket pointing up",
+        "down_arrow_object": "one matching toy rocket pointing down",
+        "fast_rabbit": "one rabbit running fast",
+        "slow_tortoise": "one tortoise walking slowly",
+        "clean_shoe": "one clean shoe",
+        "dirty_shoe": "one matching muddy shoe"
+      },
+      "asset_crops": {
+        "open_box": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "closed_box": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "full_basket": {
+          "x": 0.055,
+          "y": 0.229,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "empty_basket": {
+          "x": 0.5275,
+          "y": 0.229,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "up_arrow_object": {
+          "x": 0.055,
+          "y": 0.423,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "down_arrow_object": {
+          "x": 0.5275,
+          "y": 0.423,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "fast_rabbit": {
+          "x": 0.055,
+          "y": 0.617,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "slow_tortoise": {
+          "x": 0.5275,
+          "y": 0.617,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "clean_shoe": {
+          "x": 0.055,
+          "y": 0.811,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        },
+        "dirty_shoe": {
+          "x": 0.5275,
+          "y": 0.811,
+          "w": 0.4175,
+          "h": 0.154,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P018.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P018\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Opposite Words\nLearning objective: Match simple opposites.\nExact child response path: draw lines between opposite picture-word pairs.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 10 named visual asset(s), each appearing once:\n1. open_box: one open box.\n2. closed_box: one matching closed box.\n3. full_basket: one basket filled with apples.\n4. empty_basket: one matching empty basket.\n5. up_arrow_object: one toy rocket pointing up.\n6. down_arrow_object: one matching toy rocket pointing down.\n7. fast_rabbit: one rabbit running fast.\n8. slow_tortoise: one tortoise walking slowly.\n9. clean_shoe: one clean shoe.\n10. dirty_shoe: one matching muddy shoe.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 5-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P019": {
+      "title": "Position Words",
+      "output_filename": "CC-LKG-V4-P019.png",
+      "asset_names": [
+        "bear_in_box",
+        "bear_on_box",
+        "bear_under_box",
+        "bear_beside_box",
+        "bear_behind_box"
+      ],
+      "asset_descriptions": {
+        "bear_in_box": "toy bear inside a box",
+        "bear_on_box": "toy bear on top of a box",
+        "bear_under_box": "toy bear under a raised box",
+        "bear_beside_box": "toy bear beside a box",
+        "bear_behind_box": "toy bear partly behind a box but still recognisable"
+      },
+      "asset_crops": {
+        "bear_in_box": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "bear_on_box": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "bear_under_box": {
+          "x": 0.055,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "bear_beside_box": {
+          "x": 0.5275,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "bear_behind_box": {
+          "x": 0.055,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P019.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P019\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Position Words\nLearning objective: Use in, on, under, beside, and behind.\nExact child response path: choose the correct position word and say the full sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. bear_in_box: toy bear inside a box.\n2. bear_on_box: toy bear on top of a box.\n3. bear_under_box: toy bear under a raised box.\n4. bear_beside_box: toy bear beside a box.\n5. bear_behind_box: toy bear partly behind a box but still recognisable.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P020": {
+      "title": "Make a Sentence",
+      "output_filename": "CC-LKG-V4-P020.png",
+      "asset_names": [
+        "cat_sleeping",
+        "boy_has_ball",
+        "girl_reads_book"
+      ],
+      "asset_descriptions": {
+        "cat_sleeping": "cat sleeping",
+        "boy_has_ball": "boy holding a ball",
+        "girl_reads_book": "girl reading a book"
+      },
+      "asset_crops": {
+        "cat_sleeping": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "boy_has_ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "girl_reads_book": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P020.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P020\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Make a Sentence\nLearning objective: Arrange picture and word cards into a simple sentence.\nExact child response path: arrange each word set into a meaningful sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. cat_sleeping: cat sleeping.\n2. boy_has_ball: boy holding a ball.\n3. girl_reads_book: girl reading a book.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P021": {
+      "title": "Greetings",
+      "output_filename": "CC-LKG-V4-P021.png",
+      "asset_names": [
+        "morning_greeting",
+        "friend_greeting",
+        "how_are_you",
+        "goodbye"
+      ],
+      "asset_descriptions": {
+        "morning_greeting": "child greeting an adult in the morning",
+        "friend_greeting": "two friends meeting",
+        "how_are_you": "one child kindly checking how a friend feels",
+        "goodbye": "two children waving goodbye"
+      },
+      "asset_crops": {
+        "morning_greeting": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "friend_greeting": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "how_are_you": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "goodbye": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P021.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P021\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Greetings\nLearning objective: Use greetings for different times and situations.\nExact child response path: match and say the greeting appropriate to each situation.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. morning_greeting: child greeting an adult in the morning.\n2. friend_greeting: two friends meeting.\n3. how_are_you: one child kindly checking how a friend feels.\n4. goodbye: two children waving goodbye.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P022": {
+      "title": "Please and Thank You",
+      "output_filename": "CC-LKG-V4-P022.png",
+      "asset_names": [
+        "ask_crayon",
+        "receive_help",
+        "give_item"
+      ],
+      "asset_descriptions": {
+        "ask_crayon": "child politely asking another child for a crayon",
+        "receive_help": "child receiving help",
+        "give_item": "child giving an item to a friend"
+      },
+      "asset_crops": {
+        "ask_crayon": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "receive_help": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "give_item": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P022.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P022\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Please and Thank You\nLearning objective: Use polite words appropriately.\nExact child response path: choose and say please or thank you in context.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. ask_crayon: child politely asking another child for a crayon.\n2. receive_help: child receiving help.\n3. give_item: child giving an item to a friend.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P023": {
+      "title": "Taking Turns",
+      "output_filename": "CC-LKG-V4-P023.png",
+      "asset_names": [
+        "ask_for_turn",
+        "wait_for_turn",
+        "take_turn"
+      ],
+      "asset_descriptions": {
+        "ask_for_turn": "child asking to join a block game",
+        "wait_for_turn": "child waiting calmly while friend plays",
+        "take_turn": "child taking a turn with the blocks"
+      },
+      "asset_crops": {
+        "ask_for_turn": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "wait_for_turn": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "take_turn": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P023.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P023\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Taking Turns\nLearning objective: Ask, wait, and respond during a shared activity.\nExact child response path: order and practise ask, wait and take a turn.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. ask_for_turn: child asking to join a block game.\n2. wait_for_turn: child waiting calmly while friend plays.\n3. take_turn: child taking a turn with the blocks.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P024": {
+      "title": "Asking for Help",
+      "output_filename": "CC-LKG-V4-P024.png",
+      "asset_names": [
+        "open_bag_help",
+        "reach_book_help",
+        "tie_shoelace_help"
+      ],
+      "asset_descriptions": {
+        "open_bag_help": "child needing help opening a school bag",
+        "reach_book_help": "child needing help reaching a book",
+        "tie_shoelace_help": "child needing help tying a shoelace"
+      },
+      "asset_crops": {
+        "open_bag_help": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "reach_book_help": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "tie_shoelace_help": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P024.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P024\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Asking for Help\nLearning objective: Ask a trusted adult or friend for help.\nExact child response path: choose a situation and ask for help using the sentence frame.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. open_bag_help: child needing help opening a school bag.\n2. reach_book_help: child needing help reaching a book.\n3. tie_shoelace_help: child needing help tying a shoelace.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P025": {
+      "title": "Joining a Group",
+      "output_filename": "CC-LKG-V4-P025.png",
+      "asset_names": [
+        "join_building",
+        "join_drawing",
+        "join_ball_game"
+      ],
+      "asset_descriptions": {
+        "join_building": "two children building and one child asking to join",
+        "join_drawing": "two children drawing and one child asking to join",
+        "join_ball_game": "two children playing ball and one child asking to join"
+      },
+      "asset_crops": {
+        "join_building": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "join_drawing": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "join_ball_game": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P025.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P025\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Joining a Group\nLearning objective: Use a friendly phrase to join play.\nExact child response path: choose a group, ask to join and listen to the reply.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. join_building: two children building and one child asking to join.\n2. join_drawing: two children drawing and one child asking to join.\n3. join_ball_game: two children playing ball and one child asking to join.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P026": {
+      "title": "Sharing an Idea",
+      "output_filename": "CC-LKG-V4-P026.png",
+      "asset_names": [
+        "tower_planning_pair"
+      ],
+      "asset_descriptions": {
+        "tower_planning_pair": "two children looking at blocks and respectfully sharing ideas for a tower"
+      },
+      "asset_crops": {
+        "tower_planning_pair": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P026.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P026\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Sharing an Idea\nLearning objective: Express an idea and listen to another idea.\nExact child response path: share one idea and respond kindly to a partner's idea.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. tower_planning_pair: two children looking at blocks and respectfully sharing ideas for a tower.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P027": {
+      "title": "Solve a Small Problem",
+      "output_filename": "CC-LKG-V4-P027.png",
+      "asset_names": [
+        "same_toy_problem",
+        "take_turns_solution",
+        "timer_solution",
+        "other_toy_solution"
+      ],
+      "asset_descriptions": {
+        "same_toy_problem": "two children both reaching for the same toy without aggression",
+        "take_turns_solution": "children taking turns with the toy",
+        "timer_solution": "children using a simple sand timer",
+        "other_toy_solution": "one child choosing another appealing toy"
+      },
+      "asset_crops": {
+        "same_toy_problem": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "take_turns_solution": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "timer_solution": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "other_toy_solution": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P027.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P027\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Solve a Small Problem\nLearning objective: Use words to solve a simple social problem.\nExact child response path: choose a fair solution and say it to a partner.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. same_toy_problem: two children both reaching for the same toy without aggression.\n2. take_turns_solution: children taking turns with the toy.\n3. timer_solution: children using a simple sand timer.\n4. other_toy_solution: one child choosing another appealing toy.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P028": {
+      "title": "Who, What and Where",
+      "output_filename": "CC-LKG-V4-P028.png",
+      "asset_names": [
+        "playground_scene"
+      ],
+      "asset_descriptions": {
+        "playground_scene": "controlled playground scene with a girl on a swing, boy holding a kite and a ball under a bench"
+      },
+      "asset_crops": {
+        "playground_scene": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P028.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P028\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Who, What and Where\nLearning objective: Answer simple who, what, and where questions.\nExact child response path: answer who, what and where from one controlled scene.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. playground_scene: controlled playground scene with a girl on a swing, boy holding a kite and a ball under a bench.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P029": {
+      "title": "Ask a Question",
+      "output_filename": "CC-LKG-V4-P029.png",
+      "asset_names": [
+        "who_scene",
+        "what_scene",
+        "where_scene",
+        "why_scene"
+      ],
+      "asset_descriptions": {
+        "who_scene": "adult helping a child",
+        "what_scene": "child making a paper boat",
+        "where_scene": "teddy hidden beside a bed",
+        "why_scene": "child holding an umbrella in rain"
+      },
+      "asset_crops": {
+        "who_scene": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "what_scene": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "where_scene": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "why_scene": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P029.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P029\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Ask a Question\nLearning objective: Form a simple question from a picture.\nExact child response path: use each picture and starter to ask a complete question.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. who_scene: adult helping a child.\n2. what_scene: child making a paper boat.\n3. where_scene: teddy hidden beside a bed.\n4. why_scene: child holding an umbrella in rain.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P030": {
+      "title": "Yes or No?",
+      "output_filename": "CC-LKG-V4-P030.png",
+      "asset_names": [
+        "sleeping_cat",
+        "red_ball",
+        "flying_fish",
+        "reading_girl"
+      ],
+      "asset_descriptions": {
+        "sleeping_cat": "cat clearly sleeping",
+        "red_ball": "one red ball",
+        "flying_fish": "fish in water, clearly not flying",
+        "reading_girl": "girl reading a book"
+      },
+      "asset_crops": {
+        "sleeping_cat": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "red_ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "flying_fish": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "reading_girl": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P030.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P030\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Yes or No?\nLearning objective: Answer and extend a yes/no question.\nExact child response path: answer yes or no and repeat the complete response.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. sleeping_cat: cat clearly sleeping.\n2. red_ball: one red ball.\n3. flying_fish: fish in water, clearly not flying.\n4. reading_girl: girl reading a book.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P031": {
+      "title": "Answer in a Sentence",
+      "output_filename": "CC-LKG-V4-P031.png",
+      "asset_names": [
+        "see_bus",
+        "girl_drawing",
+        "book_on_table"
+      ],
+      "asset_descriptions": {
+        "see_bus": "one bus in a simple setting",
+        "girl_drawing": "girl drawing",
+        "book_on_table": "book clearly on top of a table"
+      },
+      "asset_crops": {
+        "see_bus": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "girl_drawing": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "book_on_table": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P031.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P031\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Answer in a Sentence\nLearning objective: Respond to questions using a complete short sentence.\nExact child response path: answer each picture question using a complete short sentence.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. see_bus: one bus in a simple setting.\n2. girl_drawing: girl drawing.\n3. book_on_table: book clearly on top of a table.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P032": {
+      "title": "Picture Talk",
+      "output_filename": "CC-LKG-V4-P032.png",
+      "asset_names": [
+        "park_scene"
+      ],
+      "asset_descriptions": {
+        "park_scene": "rich but controlled park scene with eight to ten clear people, actions and familiar objects"
+      },
+      "asset_crops": {
+        "park_scene": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P032.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P032\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Picture Talk\nLearning objective: Observe and discuss a detailed picture.\nExact child response path: observe, name details and predict what might happen next.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. park_scene: rich but controlled park scene with eight to ten clear people, actions and familiar objects.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P033": {
+      "title": "Story Sequence",
+      "output_filename": "CC-LKG-V4-P033.png",
+      "asset_names": [
+        "seed",
+        "water",
+        "sprout",
+        "flower"
+      ],
+      "asset_descriptions": {
+        "seed": "child placing a seed in soil",
+        "water": "child watering the planted seed",
+        "sprout": "small green sprout emerging",
+        "flower": "grown flowering plant"
+      },
+      "asset_crops": {
+        "seed": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "water": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "sprout": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "flower": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P033.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P033\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Story Sequence\nLearning objective: Order four story pictures.\nExact child response path: number four events and retell them in order.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. seed: child placing a seed in soil.\n2. water: child watering the planted seed.\n3. sprout: small green sprout emerging.\n4. flower: grown flowering plant.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P034": {
+      "title": "Retell a Short Story",
+      "output_filename": "CC-LKG-V4-P034.png",
+      "asset_names": [
+        "play_with_toy",
+        "toy_missing",
+        "search_for_toy",
+        "toy_found"
+      ],
+      "asset_descriptions": {
+        "play_with_toy": "child playing with a favourite toy",
+        "toy_missing": "child noticing the toy is missing",
+        "search_for_toy": "child looking under a chair for the toy",
+        "toy_found": "child happily finding the toy under the chair"
+      },
+      "asset_crops": {
+        "play_with_toy": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "toy_missing": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "search_for_toy": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "toy_found": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P034.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P034\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Retell a Short Story\nLearning objective: Retell a familiar four-picture story.\nExact child response path: retell who, where, what happened and how it ended.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. play_with_toy: child playing with a favourite toy.\n2. toy_missing: child noticing the toy is missing.\n3. search_for_toy: child looking under a chair for the toy.\n4. toy_found: child happily finding the toy under the chair.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P035": {
+      "title": "Make a Story Ending",
+      "output_filename": "CC-LKG-V4-P035.png",
+      "asset_names": [
+        "starter_one",
+        "starter_two",
+        "ending_owner",
+        "ending_safe_help"
+      ],
+      "asset_descriptions": {
+        "starter_one": "child sees a small lost puppy near a park gate",
+        "starter_two": "child approaches the puppy carefully with an adult nearby",
+        "ending_owner": "puppy reunited with its owner",
+        "ending_safe_help": "child and adult take the puppy to a safe help desk"
+      },
+      "asset_crops": {
+        "starter_one": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "starter_two": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "ending_owner": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "ending_safe_help": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P035.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P035\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Make a Story Ending\nLearning objective: Choose or draw a logical ending.\nExact child response path: choose a logical ending or draw another one.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. starter_one: child sees a small lost puppy near a park gate.\n2. starter_two: child approaches the puppy carefully with an adult nearby.\n3. ending_owner: puppy reunited with its owner.\n4. ending_safe_help: child and adult take the puppy to a safe help desk.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P036": {
+      "title": "Describe a Character",
+      "output_filename": "CC-LKG-V4-P036.png",
+      "asset_names": [
+        "story_character"
+      ],
+      "asset_descriptions": {
+        "story_character": "one friendly child story character with clear clothing, action and facial expression"
+      },
+      "asset_crops": {
+        "story_character": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P036.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P036\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Describe a Character\nLearning objective: Describe how a character looks and feels.\nExact child response path: choose visual details and describe the character.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. story_character: one friendly child story character with clear clothing, action and facial expression.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P037": {
+      "title": "Show and Tell",
+      "output_filename": "CC-LKG-V4-P037.png",
+      "asset_names": [
+        "show_tell_child",
+        "ball",
+        "toy_car",
+        "book",
+        "teddy"
+      ],
+      "asset_descriptions": {
+        "show_tell_child": "child confidently holding one familiar object for show and tell",
+        "ball": "one ball",
+        "toy_car": "one toy car",
+        "book": "one picture book",
+        "teddy": "one teddy bear"
+      },
+      "asset_crops": {
+        "show_tell_child": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "ball": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "toy_car": {
+          "x": 0.055,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "book": {
+          "x": 0.5275,
+          "y": 0.358333,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        },
+        "teddy": {
+          "x": 0.055,
+          "y": 0.681667,
+          "w": 0.4175,
+          "h": 0.283333,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P037.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P037\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Show and Tell\nLearning objective: Speak about one familiar object.\nExact child response path: choose one familiar object and answer four speaking prompts.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 5 named visual asset(s), each appearing once:\n1. show_tell_child: child confidently holding one familiar object for show and tell.\n2. ball: one ball.\n3. toy_car: one toy car.\n4. book: one picture book.\n5. teddy: one teddy bear.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 3-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P038": {
+      "title": "My News",
+      "output_filename": "CC-LKG-V4-P038.png",
+      "asset_names": [
+        "who_icon",
+        "event_icon",
+        "feeling_icon"
+      ],
+      "asset_descriptions": {
+        "who_icon": "simple icon of two familiar people",
+        "event_icon": "simple icon of an event or action",
+        "feeling_icon": "simple happy-neutral-sad feeling faces"
+      },
+      "asset_crops": {
+        "who_icon": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "event_icon": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "feeling_icon": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P038.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P038\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: My News\nLearning objective: Share one event from home or school.\nExact child response path: draw one event and tell who, what and feeling.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. who_icon: simple icon of two familiar people.\n2. event_icon: simple icon of an event or action.\n3. feeling_icon: simple happy-neutral-sad feeling faces.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P039": {
+      "title": "Speak to the Group",
+      "output_filename": "CC-LKG-V4-P039.png",
+      "asset_names": [
+        "small_group_speaker"
+      ],
+      "asset_descriptions": {
+        "small_group_speaker": "one child speaking to three attentive classmates with natural eye contact and respectful posture"
+      },
+      "asset_crops": {
+        "small_group_speaker": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P039.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P039\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Speak to the Group\nLearning objective: Practise speaking clearly to a small group.\nExact child response path: speak to a small group and use the four speaking behaviours.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. small_group_speaker: one child speaking to three attentive classmates with natural eye contact and respectful posture.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P040": {
+      "title": "Listen and Respond",
+      "output_filename": "CC-LKG-V4-P040.png",
+      "asset_names": [
+        "peer_sharing_pair"
+      ],
+      "asset_descriptions": {
+        "peer_sharing_pair": "one child sharing an idea while another child listens attentively and prepares to respond"
+      },
+      "asset_crops": {
+        "peer_sharing_pair": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P040.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P040\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Listen and Respond\nLearning objective: Listen to a peer and respond kindly.\nExact child response path: listen to a peer and choose a kind relevant reply.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. peer_sharing_pair: one child sharing an idea while another child listens attentively and prepares to respond.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P041": {
+      "title": "My Communication Journal",
+      "output_filename": "CC-LKG-V4-P041.png",
+      "asset_names": [
+        "listened_icon",
+        "asked_icon",
+        "shared_icon",
+        "story_icon"
+      ],
+      "asset_descriptions": {
+        "listened_icon": "child listening",
+        "asked_icon": "child asking a question",
+        "shared_icon": "child sharing an idea",
+        "story_icon": "child telling a short story"
+      },
+      "asset_crops": {
+        "listened_icon": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "asked_icon": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "shared_icon": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "story_icon": {
+          "x": 0.5275,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P041.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P041\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: My Communication Journal\nLearning objective: Reflect on listening and speaking progress.\nExact child response path: mark practised skills and complete one reflection.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 4 named visual asset(s), each appearing once:\n1. listened_icon: child listening.\n2. asked_icon: child asking a question.\n3. shared_icon: child sharing an idea.\n4. story_icon: child telling a short story.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P042": {
+      "title": "Certificate of Completion",
+      "output_filename": "CC-LKG-V4-P042.png",
+      "asset_names": [
+        "achievement_badge",
+        "trophy",
+        "confetti"
+      ],
+      "asset_descriptions": {
+        "achievement_badge": "premium communication achievement badge without words",
+        "trophy": "friendly gold trophy",
+        "confetti": "compact crop-safe celebratory confetti cluster"
+      },
+      "asset_crops": {
+        "achievement_badge": {
+          "x": 0.055,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "trophy": {
+          "x": 0.5275,
+          "y": 0.035,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        },
+        "confetti": {
+          "x": 0.055,
+          "y": 0.52,
+          "w": 0.4175,
+          "h": 0.445,
+          "padding": 0.008
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P042.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P042\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: Certificate of Completion\nLearning objective: Celebrate completion of Communication Champions – LKG.\nExact child response path: record completion; no child learning task.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 3 named visual asset(s), each appearing once:\n1. achievement_badge: premium communication achievement badge without words.\n2. trophy: friendly gold trophy.\n3. confetti: compact crop-safe celebratory confetti cluster.\n\nLAYOUT LOCK\nArrange the assets in a strict 2-column by 2-row extraction grid in the numbered order below.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    },
+    "CC-LKG-V4-P043": {
+      "title": "I Am a Communication Champion!",
+      "output_filename": "CC-LKG-V4-P043.png",
+      "asset_names": [
+        "champion_child"
+      ],
+      "asset_descriptions": {
+        "champion_child": "confident LKG child celebrating communication skills with small listening, speaking and storytelling symbols"
+      },
+      "asset_crops": {
+        "champion_child": {
+          "x": 0.06,
+          "y": 0.05,
+          "w": 0.88,
+          "h": 0.9,
+          "padding": 0.012
+        }
+      },
+      "prompt_file": "production-prompts/communication-champions/lkg/v4/phase2-illustration-prompts/pages/CC-LKG-V4-P043.txt",
+      "prompt": "BCube Content-Aligned Illustration Asset Prompt — CC-LKG-V4-P043\n\nBOOK AND LEVEL\nBook: Communication Champions\nLevel: LKG (4+)\nExact page title: I Am a Communication Champion!\nLearning objective: Celebrate communication achievements.\nExact child response path: review and celebrate six communication achievements.\n\nILLUSTRATION ROLE — LOCKED\nCreate only the raw illustration artwork required by the exact communication activity. Do not create the workbook page. The publishing engine will add every word, object name, question, sentence starter, model example, separator, response control, writing line, teacher cue, logo and page number.\n\nEXACT OUTPUT\nCreate exactly 1 named visual asset(s), each appearing once:\n1. champion_child: confident LKG child celebrating communication skills with small listening, speaking and storytelling symbols.\n\nLAYOUT LOCK\nCreate one large coherent illustration centred on the canvas with generous pure-white safe margins.\nKeep wide pure-white gaps. No asset may touch, overlap or cross a cell boundary. Keep every person, hand, face, object and relationship fully visible with generous safe padding.\n\nCOMMUNICATION EVIDENCE\nExpressions, gaze, gesture, posture and turn-taking must make the speaking or listening action obvious. Use only the people, objects and relationships required for this page. Children must look LKG age, approximately 4–5 years.\n\nSTYLE\nPremium commercial preschool-publishing quality; large recognisable forms; thick clean rounded outlines; natural expressive faces; correct anatomy and hands; bright controlled colours; subtle dimensional shading; pure white background.\n\nTEXT AND WORKSHEET LOCK\nNo visible words, letters, numerals, handwriting, labels, captions, speech bubbles, instructions, answer marks, circles, ticks, matching lines, arrows, cards with writing space, page title, logo, publisher mark, page number, watermark, QR code or BCube Star mascot.\n\nFAIL CONDITIONS\nReject missing, duplicated, cropped, combined or misordered assets; generic classroom groups; teacher-led scenes unless explicitly required; decorative filler; completed answers; worksheet UI; dark backgrounds; or artwork that supports only the title but not the exact child response path.\n",
+      "status": "READY_FOR_ILLUSTRATION"
+    }
+  }
+}

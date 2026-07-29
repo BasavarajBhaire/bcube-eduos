@@ -7,6 +7,7 @@
     "lkg": {
       "books": {
         "communication-champions": "lkg/communication-champions.json",
+        "early-literacy-adventures": "lkg/early-literacy-adventures.json",
         "early-maths-adventures": "lkg/early-maths-adventures.json",
         "logical-thinking-adventures": "lkg/logical-thinking-adventures.json"
       }
@@ -15,9 +16,9 @@
   },
   "rollout": {
     "status": "IN_PROGRESS",
-    "compiled_books": 3,
-    "compiled_pages": 38,
+    "compiled_books": 4,
+    "compiled_pages": 145,
     "blocked_pages": 0,
-    "policy": "Every learning page must be fully defined inside its book contract. Missing or invalid pages fail closed. Logical Thinking LKG is generated only from individual V4 page JSON plus its matching Phase 2 illustration contract and remains TEST_CANDIDATE until visual review."
+    "policy": "Every learning page must be fully defined inside its book contract. Missing or invalid pages fail closed. Curriculum JSON, runtime contracts, page composers, prompt packs and approved illustration inputs are authoritative; review PNGs, PDFs, contact sheets and evidence folders are reproducible outputs and are not source files."
   }
 }

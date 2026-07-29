@@ -53,8 +53,10 @@ def render_equal_groups(canvas, draw, page, assets, base, template, common):
     y = 835
     for row in page["activity"]["mechanics"]["rows"]:
         original.row_box(common, draw, y, y + 625)
-        original.paste_asset(common, canvas, assets[row["left"]], [230, y + 25, 1080, y + 410])
-        original.paste_asset(common, canvas, assets[row["right"]], [1150, y + 25, 2000, y + 410])
+        labels = ["oranges", "butterflies", "blocks"]
+        label = labels[page["activity"]["mechanics"]["rows"].index(row)]
+        original.paste_named_asset(common, canvas, draw, base, template, row["left"], assets[row["left"]], [230, y + 25, 1080, y + 410], label=label)
+        original.paste_named_asset(common, canvas, draw, base, template, row["right"], assets[row["right"]], [1150, y + 25, 2000, y + 410], label=label)
         original.text(base, draw, template, "Are they equal?", [250, y + 430, 1120, y + 580], size=31, lines=1)
         policy.draw_plain_choices(
             original.text,
@@ -73,7 +75,7 @@ def render_number_line(canvas, draw, page, assets, base, template, common):
     y = 835
     for row in page["activity"]["mechanics"]["rows"]:
         original.row_box(common, draw, y, y + 625)
-        original.paste_asset(common, canvas, assets[row["asset"]], [220, y + 125, 555, y + 515])
+        original.paste_named_asset(common, canvas, draw, base, template, row["asset"], assets[row["asset"]], [220, y + 125, 555, y + 515])
         start_n, end_n = row["range"]
         count = end_n - start_n
         x0, x1, line_y = 640, 1710, y + 315
@@ -120,7 +122,16 @@ def render_math_stories(canvas, draw, page, assets, base, template, common):
     y = 835
     for story in page["activity"]["mechanics"]["stories"]:
         original.row_box(common, draw, y, y + 625)
-        original.paste_asset(common, canvas, assets[story["asset"]], [220, y + 20, 1570, y + 455])
+        original.paste_named_asset(common, canvas, draw, base, template, story["asset"], assets[story["asset"]], [220, y + 20, 1570, y + 455])
+        if story["asset"] == "story_balls":
+            # The approved scene contains two balls; the story is 1 + 2, so add
+            # the third visible ball deterministically instead of changing the equation.
+            cx, cy, radius = 1320, y + 310, 58
+            ball_box = [cx - radius, cy - radius, cx + radius, cy + radius]
+            draw.pieslice(ball_box, 0, 120, fill="#F2C744")
+            draw.pieslice(ball_box, 120, 240, fill="#2E86DE")
+            draw.pieslice(ball_box, 240, 360, fill="#E95555")
+            draw.ellipse(ball_box, outline="#183E67", width=4)
         story_change_strip(draw, base, template, story, y)
         common.panel(draw, [1600, y + 55, 2270, y + 565], fill="#FFFDF7", outline="#D9A91B", width=4, radius=22)
         original.text(base, draw, template, story["question"], [1640, y + 85, 2230, y + 205], size=31, lines=2)
@@ -129,7 +140,15 @@ def render_math_stories(canvas, draw, page, assets, base, template, common):
 
 
 def visual_model(common, canvas, draw, base, template, page, render_kind, assets):
-    """Use V2 models, except P021 uses the approved circle and clock assets."""
+    """Use distinct worked examples that do not duplicate an independent task."""
+    if render_kind == "curriculum-numeral-comparison":
+        common.panel(draw, [180, 610, 2300, 790], fill="#F4EEFF", outline="#7E57C2", width=4)
+        original.text(base, draw, template, "COMPLETED EXAMPLE", [210, 635, 560, 765], size=27, lines=2)
+        original.text(base, draw, template, "2", [700, 645, 900, 765], size=62, lines=1)
+        original.text(base, draw, template, "<", [1040, 650, 1240, 760], size=58, colour="#E25454", lines=1)
+        original.text(base, draw, template, "5", [1380, 645, 1580, 765], size=62, lines=1)
+        original.text(base, draw, template, "2 is less than 5", [1660, 655, 2200, 755], size=25, bold=False, lines=1)
+        return
     if render_kind != "curriculum-shape-match":
         return module.visual_model(common, canvas, draw, base, template, page, render_kind, assets)
     common.panel(draw, [180, 610, 2300, 790], fill="#F4EEFF", outline="#7E57C2", width=4)
@@ -146,6 +165,29 @@ original.visual_model = visual_model
 original.RENDERERS["curriculum-equal-groups"] = render_equal_groups
 original.RENDERERS["curriculum-number-line"] = render_number_line
 original.RENDERERS["curriculum-math-stories"] = render_math_stories
+
+
+def render_numeral_comparison(canvas, draw, page, base, template, common):
+    """Use six purposeful comparison cards without sacrificing numeral size."""
+    rows = page["activity"]["mechanics"]["rows"]
+    if len(rows) != 6:
+        return original.render_numeral_comparison(canvas, draw, page, base, template, common)
+    gap_x, gap_y = 28, 26
+    left, top, right, bottom = 180, 835, 2300, 2990
+    card_width = (right - left - gap_x) // 2
+    card_height = (bottom - top - 2 * gap_y) // 3
+    for index, row in enumerate(rows):
+        r, c = divmod(index, 2)
+        x0 = left + c * (card_width + gap_x)
+        y0 = top + r * (card_height + gap_y)
+        x1, y1 = x0 + card_width, y0 + card_height
+        common.panel(draw, [x0, y0, x1, y1], outline="#7E57C2", width=3)
+        mid = (x0 + x1) // 2
+        original.text(base, draw, template, row["pair"][0], [x0 + 80, y0 + 100, mid - 45, y1 - 100], size=76, lines=1)
+        original.text(base, draw, template, row["pair"][1], [mid + 45, y0 + 100, x1 - 80, y1 - 100], size=76, lines=1)
+
+
+original.RENDERERS["curriculum-numeral-comparison"] = render_numeral_comparison
 
 if __name__ == "__main__":
     raise SystemExit(original.main())

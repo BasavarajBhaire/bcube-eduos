@@ -1,5 +1,5 @@
 {
-  "contract_version": "bcube-book-runtime-contract-v1",
+  "contract_version": "bcube-book-runtime-contract-v2-curriculum-first-test",
   "book": {
     "title": "Early Maths Adventures",
     "slug": "early-maths-adventures",
@@ -9,79 +9,4501 @@
   "age": "4+",
   "allow_fallback": false,
   "pages": {
-    "EM-LKG-V4-P011": {
+    "EM-LKG-V4-P008": {
       "identity": {
-        "page_id": "EM-LKG-V4-P011",
-        "physical_page": 11,
-        "printed_page": 10,
-        "title": "Count & Circle",
-        "page_type": "worksheet"
+        "page_id": "EM-LKG-V4-P008",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 8,
+        "printed_page": 7,
+        "title": "Numbers 1–10 Review",
+        "page_type": "learning_page"
       },
       "learning": {
-        "objective": "Identify the correct quantity.",
-        "instruction": "Count each group. Circle the correct number.",
-        "expected_response": "The child counts each group and circles the matching numeral.",
+        "objective": "Recognise and use numbers 1–10.",
+        "instruction": "Count each set and match or circle the correct numeral.",
+        "expected_response": "Use only the page-specific response controls defined below.",
         "model_text": null
       },
       "activity": {
-        "archetype": "A03 Count & Select",
-        "mechanic": "count-and-circle-number",
-        "response_mode": "circle-number",
-        "activity_count": 6
-      },
-      "illustration": {
-        "source_asset": "EM-LKG-V4-P011.png",
-        "artwork_only": true,
-        "assets": [
-          "apple_group",
-          "star_group",
-          "balloon_group",
-          "fish_group",
-          "flower_group",
-          "leaf_group"
-        ],
-        "asset_crops": {
-          "apple_group": [0.00, 0.00, 0.33, 0.50],
-          "star_group": [0.33, 0.00, 0.66, 0.50],
-          "balloon_group": [0.66, 0.00, 1.00, 0.50],
-          "fish_group": [0.00, 0.50, 0.33, 1.00],
-          "flower_group": [0.33, 0.50, 0.66, 1.00],
-          "leaf_group": [0.66, 0.50, 1.00, 1.00]
+        "archetype": "A07 Count & Record",
+        "mechanic": "count-match-review-1-10",
+        "render_kind": "count-choice-grid",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "set_1",
+            "set_2",
+            "set_3",
+            "set_4",
+            "set_5",
+            "set_6",
+            "set_7",
+            "set_8",
+            "set_9",
+            "set_10"
+          ],
+          "rows": [
+            "set_1",
+            "set_2",
+            "set_3",
+            "set_4",
+            "set_5",
+            "set_6",
+            "set_7",
+            "set_8",
+            "set_9",
+            "set_10"
+          ]
         }
       },
-      "mechanics": {
-        "groups": [
-          {"asset": "apple_group", "quantity": 1, "choices": [1, 2, 3]},
-          {"asset": "star_group", "quantity": 2, "choices": [1, 2, 3]},
-          {"asset": "balloon_group", "quantity": 3, "choices": [2, 3, 4]},
-          {"asset": "fish_group", "quantity": 4, "choices": [3, 4, 5]},
-          {"asset": "flower_group", "quantity": 5, "choices": [4, 5, 6]},
-          {"asset": "leaf_group", "quantity": 6, "choices": [5, 6, 7]}
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P008.png",
+        "assets": [
+          "set_1",
+          "set_2",
+          "set_3",
+          "set_4",
+          "set_5",
+          "set_6",
+          "set_7",
+          "set_8",
+          "set_9",
+          "set_10"
         ],
-        "show_correct_answer": false,
-        "circle_target": "numeral"
-      },
-      "guidance": {
-        "teacher_cue": "Touch each object once while counting aloud. Then ask the child to circle the matching numeral without giving the answer."
+        "asset_crops": {
+          "set_1": {
+            "x": 0.04,
+            "y": 0.05,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_2": {
+            "x": 0.232,
+            "y": 0.05,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_3": {
+            "x": 0.424,
+            "y": 0.05,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_4": {
+            "x": 0.616,
+            "y": 0.05,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_5": {
+            "x": 0.808,
+            "y": 0.05,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_6": {
+            "x": 0.04,
+            "y": 0.525,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_7": {
+            "x": 0.232,
+            "y": 0.525,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_8": {
+            "x": 0.424,
+            "y": 0.525,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_9": {
+            "x": 0.616,
+            "y": 0.525,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          },
+          "set_10": {
+            "x": 0.808,
+            "y": 0.525,
+            "w": 0.152,
+            "h": 0.425,
+            "padding": 0.012
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true
       },
       "layout": {
-        "template": "count-circle-six-groups-v1",
+        "template": "count-review-ten-cards-v1",
         "parent_panel": false,
         "home_connection": false,
         "generic_response_panel": false
       },
-      "validation": {
-        "allow_fallback": false,
-        "status": "READY",
-        "required_asset_count": 6,
-        "required_response_count": 6,
-        "blocking_reasons": []
+      "guidance": {
+        "teacher_cue": "Ask the child to touch each object once while counting, then choose the numeral."
       },
-      "source_lineage": {
-        "source_prompt_id": "EM-LKG-V4-P011",
-        "source_file": "production-prompts/early-maths-adventures/lkg/v4/pages/EM-LKG-V4-P011-count-and-circle.json",
-        "approved_page_direction": "Six count groups with one numeral-choice row per group. No generic response box or Home Connection."
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P009": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P009",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 9,
+        "printed_page": 8,
+        "title": "Count & Match",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Count object groups and match each group to its numeral.",
+        "instruction": "Count each group. Draw a line to the matching number.",
+        "expected_response": "Four lines connecting quantities 2, 4, 6 and 8 to the matching shuffled numerals.",
+        "model_text": {
+          "quantity": 3,
+          "object": "stars",
+          "numeral": 3,
+          "show_completed_line": true
+        }
+      },
+      "activity": {
+        "archetype": "two-column-count-to-numeral-match",
+        "mechanic": "count-and-match-shuffled-numerals",
+        "render_kind": "curriculum-count-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "numerals": [
+            6,
+            2,
+            8,
+            4
+          ],
+          "correct_pairs": [
+            [
+              "group_2_kites",
+              2
+            ],
+            [
+              "group_4_ducks",
+              4
+            ],
+            [
+              "group_6_cupcakes",
+              6
+            ],
+            [
+              "group_8_balls",
+              8
+            ]
+          ],
+          "minimum_line_spacing": 120
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P009.png",
+        "assets": [
+          "group_2_kites",
+          "group_4_ducks",
+          "group_6_cupcakes",
+          "group_8_balls"
+        ],
+        "asset_crops": {
+          "group_2_kites": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.395,
+            "padding": 0.008
+          },
+          "group_4_ducks": {
+            "x": 0.54,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.395,
+            "padding": 0.008
+          },
+          "group_6_cupcakes": {
+            "x": 0.08,
+            "y": 0.535,
+            "w": 0.38,
+            "h": 0.395,
+            "padding": 0.008
+          },
+          "group_8_balls": {
+            "x": 0.54,
+            "y": 0.535,
+            "w": 0.38,
+            "h": 0.395,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "group_2_kites": "exactly two large kites",
+          "group_4_ducks": "exactly four large ducks",
+          "group_6_cupcakes": "exactly six large cupcakes",
+          "group_8_balls": "exactly eight large balls"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "two-column-count-to-numeral-match",
+        "blueprint": {
+          "left_column": "four object groups",
+          "right_column": "four shuffled numerals",
+          "right_order": [
+            6,
+            2,
+            8,
+            4
+          ],
+          "connector_dots": true
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Model counting one group and matching it to a numeral placed on a different row."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "right numerals are deranged",
+          "only object groups appear on the left",
+          "only numerals appear on the right",
+          "objects are individually countable",
+          "no answer line is pre-drawn except the model"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P010": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P010",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 10,
+        "printed_page": 9,
+        "title": "Count & Circle",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Count a group and select the correct numeral.",
+        "instruction": "Count each group. Circle the correct number.",
+        "expected_response": "One circled numeral below each of six countable groups.",
+        "model_text": {
+          "asset": "group_1_apple",
+          "choices": [
+            1,
+            2,
+            3
+          ],
+          "answer": 1,
+          "show_completed_circle": true
+        }
+      },
+      "activity": {
+        "archetype": "six-card-count-and-choose",
+        "mechanic": "count-circle-one-of-three",
+        "render_kind": "curriculum-count-circle",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "cards": [
+            {
+              "asset": "group_1_apple",
+              "choices": [
+                1,
+                2,
+                3
+              ],
+              "answer": 1
+            },
+            {
+              "asset": "group_2_stars",
+              "choices": [
+                1,
+                2,
+                3
+              ],
+              "answer": 2
+            },
+            {
+              "asset": "group_3_balloons",
+              "choices": [
+                2,
+                3,
+                4
+              ],
+              "answer": 3
+            },
+            {
+              "asset": "group_4_fish",
+              "choices": [
+                3,
+                4,
+                5
+              ],
+              "answer": 4
+            },
+            {
+              "asset": "group_5_flowers",
+              "choices": [
+                4,
+                5,
+                6
+              ],
+              "answer": 5
+            },
+            {
+              "asset": "group_6_leaves",
+              "choices": [
+                5,
+                6,
+                7
+              ],
+              "answer": 6
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P010.png",
+        "assets": [
+          "group_1_apple",
+          "group_2_stars",
+          "group_3_balloons",
+          "group_4_fish",
+          "group_5_flowers",
+          "group_6_leaves"
+        ],
+        "asset_crops": {
+          "group_1_apple": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "group_2_stars": {
+            "x": 0.54,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "group_3_balloons": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "group_4_fish": {
+            "x": 0.54,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "group_5_flowers": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "group_6_leaves": {
+            "x": 0.54,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "group_1_apple": "exactly one apple",
+          "group_2_stars": "exactly two stars",
+          "group_3_balloons": "exactly three balloons",
+          "group_4_fish": "exactly four fish",
+          "group_5_flowers": "exactly five flowers",
+          "group_6_leaves": "exactly six leaves"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-card-count-and-choose",
+        "blueprint": {
+          "grid": "3 columns by 2 rows",
+          "choices_per_card": 3
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to touch each object once before looking at the choices."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "one group per card",
+          "three readable choices",
+          "one correct choice",
+          "no numeral inside illustration",
+          "no overlapping response circles"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P011": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P011",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 11,
+        "printed_page": 10,
+        "title": "More or Less",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Compare two quantities and identify more or less.",
+        "instruction": "Look at each pair. Circle the group asked for.",
+        "expected_response": "One selected group in each comparison row.",
+        "model_text": {
+          "left": 2,
+          "right": 4,
+          "prompt": "Circle more.",
+          "answer": "right"
+        }
+      },
+      "activity": {
+        "archetype": "three-quantity-comparison-rows",
+        "mechanic": "compare-quantity-more-less",
+        "render_kind": "curriculum-quantity-comparison",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "left": "row1_left",
+              "right": "row1_right",
+              "prompt": "Circle more.",
+              "answer": "right"
+            },
+            {
+              "left": "row2_left",
+              "right": "row2_right",
+              "prompt": "Circle less.",
+              "answer": "right"
+            },
+            {
+              "left": "row3_left",
+              "right": "row3_right",
+              "prompt": "Circle more.",
+              "answer": "right"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P011.png",
+        "assets": [
+          "row1_left",
+          "row1_right",
+          "row2_left",
+          "row2_right",
+          "row3_left",
+          "row3_right"
+        ],
+        "asset_crops": {
+          "row1_left": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row1_right": {
+            "x": 0.54,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row2_left": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row2_right": {
+            "x": 0.54,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row3_left": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row3_right": {
+            "x": 0.54,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "row1_left": "two apples",
+          "row1_right": "five apples",
+          "row2_left": "six fish",
+          "row2_right": "three fish",
+          "row3_left": "four stars",
+          "row3_right": "seven stars"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-quantity-comparison-rows",
+        "blueprint": {
+          "rows": 3,
+          "response": "circle group directly"
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask for an estimate first, then verify by counting."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "same object type within each pair",
+          "objects use consistent size",
+          "prompt appears inside each row",
+          "no separate meaningless response circle"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P012": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P012",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 12,
+        "printed_page": 11,
+        "title": "Equal Groups",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise pairs with the same quantity.",
+        "instruction": "Count both groups. Circle YES if they are equal. Circle NO if they are not.",
+        "expected_response": "YES, NO and YES for the three rows.",
+        "model_text": {
+          "left": 3,
+          "right": 3,
+          "choice": "YES"
+        }
+      },
+      "activity": {
+        "archetype": "three-equality-decision-rows",
+        "mechanic": "equal-groups-yes-no",
+        "render_kind": "curriculum-equal-groups",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "left": "row1_left",
+              "right": "row1_right",
+              "answer": "YES"
+            },
+            {
+              "left": "row2_left",
+              "right": "row2_right",
+              "answer": "NO"
+            },
+            {
+              "left": "row3_left",
+              "right": "row3_right",
+              "answer": "YES"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P012.png",
+        "assets": [
+          "row1_left",
+          "row1_right",
+          "row2_left",
+          "row2_right",
+          "row3_left",
+          "row3_right"
+        ],
+        "asset_crops": {
+          "row1_left": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row1_right": {
+            "x": 0.54,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row2_left": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row2_right": {
+            "x": 0.54,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row3_left": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "row3_right": {
+            "x": 0.54,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "row1_left": "four oranges",
+          "row1_right": "four oranges",
+          "row2_left": "three butterflies",
+          "row2_right": "five butterflies",
+          "row3_left": "six blocks",
+          "row3_right": "six blocks"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-equality-decision-rows",
+        "blueprint": {
+          "rows": 3,
+          "choices": [
+            "YES",
+            "NO"
+          ]
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Count the left group, then check whether the right group has the same total."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "one YES and one NO control per row",
+          "no answer shown",
+          "same object type within each row"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P013": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P013",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 13,
+        "printed_page": 12,
+        "title": "Missing Numbers",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Complete forward number sequences with one missing numeral.",
+        "instruction": "Read each number sequence. Write the missing number.",
+        "expected_response": "3, 7 and 14 written in the three blanks.",
+        "model_text": {
+          "sequence": [
+            1,
+            null,
+            3
+          ],
+          "answer": 2
+        }
+      },
+      "activity": {
+        "archetype": "three-missing-number-sequences",
+        "mechanic": "single-gap-forward-sequence",
+        "render_kind": "curriculum-missing-number",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "asset": "carrier_1",
+              "sequence": [
+                1,
+                2,
+                null,
+                4,
+                5
+              ],
+              "answer": 3
+            },
+            {
+              "asset": "carrier_2",
+              "sequence": [
+                6,
+                null,
+                8,
+                9,
+                10
+              ],
+              "answer": 7
+            },
+            {
+              "asset": "carrier_3",
+              "sequence": [
+                11,
+                12,
+                13,
+                null,
+                15
+              ],
+              "answer": 14
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "DETERMINISTIC_NO_ART",
+        "assets": [],
+        "asset_crops": {},
+        "asset_meanings": {},
+        "requires_generated_art": false,
+        "crop_safe": true,
+        "must_match_prompt": false
+      },
+      "layout": {
+        "template": "three-missing-number-sequences",
+        "blueprint": {
+          "rows": 3,
+          "one_blank_per_row": true,
+          "illustration_support": "optional sequence carrier only"
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Read forward and pause at the blank without supplying the answer."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "numerals are deterministic text",
+          "blank is inside sequence",
+          "one blank only",
+          "not an object-counting task"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P014": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P014",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 14,
+        "printed_page": 13,
+        "title": "Join Groups",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Understand addition by combining two groups.",
+        "instruction": "Count both groups. Add them and circle the total.",
+        "expected_response": "3, 5 and 6 selected for the three problems.",
+        "model_text": {
+          "left": 1,
+          "right": 1,
+          "total": 2
+        }
+      },
+      "activity": {
+        "archetype": "three-picture-addition-cards",
+        "mechanic": "picture-addition-one-of-three",
+        "render_kind": "curriculum-picture-addition",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "problems": [
+            {
+              "left": "p1_left",
+              "right": "p1_right",
+              "choices": [
+                2,
+                3,
+                4
+              ],
+              "answer": 3
+            },
+            {
+              "left": "p2_left",
+              "right": "p2_right",
+              "choices": [
+                4,
+                5,
+                6
+              ],
+              "answer": 5
+            },
+            {
+              "left": "p3_left",
+              "right": "p3_right",
+              "choices": [
+                5,
+                6,
+                7
+              ],
+              "answer": 6
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P014.png",
+        "assets": [
+          "p1_left",
+          "p1_right",
+          "p2_left",
+          "p2_right",
+          "p3_left",
+          "p3_right"
+        ],
+        "asset_crops": {
+          "p1_left": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "p1_right": {
+            "x": 0.54,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "p2_left": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "p2_right": {
+            "x": 0.54,
+            "y": 0.38,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "p3_left": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "p3_right": {
+            "x": 0.54,
+            "y": 0.69,
+            "w": 0.38,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "p1_left": "two birds",
+          "p1_right": "one bird",
+          "p2_left": "three cars",
+          "p2_right": "two cars",
+          "p3_left": "four flowers",
+          "p3_right": "two flowers"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-picture-addition-cards",
+        "blueprint": {
+          "rows": 3,
+          "show_plus": true,
+          "show_equals": true,
+          "choices_per_problem": 3
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Sweep both groups together with a finger before counting the total."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "same object type within each problem",
+          "plus and equals are deterministic",
+          "three choices fit without overlap"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P015": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P015",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 15,
+        "printed_page": 14,
+        "title": "Take Away",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Understand subtraction by removing objects from a set.",
+        "instruction": "Count the set. Cross out the objects taken away. Circle how many remain.",
+        "expected_response": "3, 3 and 3 selected after crossing out the specified objects.",
+        "model_text": {
+          "start": 3,
+          "take_away": 1,
+          "remain": 2
+        }
+      },
+      "activity": {
+        "archetype": "three-picture-subtraction-cards",
+        "mechanic": "picture-subtraction-cross-out-one-of-three",
+        "render_kind": "curriculum-picture-subtraction",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "problems": [
+            {
+              "asset": "set_5_apples",
+              "start": 5,
+              "take_away": 2,
+              "remain": 3,
+              "choices": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "asset": "set_4_fish",
+              "start": 4,
+              "take_away": 1,
+              "remain": 3,
+              "choices": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "asset": "set_6_balloons",
+              "start": 6,
+              "take_away": 3,
+              "remain": 3,
+              "choices": [
+                2,
+                3,
+                4
+              ]
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P015.png",
+        "assets": [
+          "set_5_apples",
+          "set_4_fish",
+          "set_6_balloons"
+        ],
+        "asset_crops": {
+          "set_5_apples": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "set_4_fish": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "set_6_balloons": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "set_5_apples": "five apples with the final two spaced apart",
+          "set_4_fish": "four fish with the final one spaced apart",
+          "set_6_balloons": "six balloons with the final three spaced apart"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-picture-subtraction-cards",
+        "blueprint": {
+          "rows": 3,
+          "cross_out_overlay": true,
+          "choices_per_problem": 3
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Cross out only the separated end objects, then recount the untouched objects."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "full starting set is visible",
+          "removed objects remain visible under strike marks",
+          "subtraction is not represented by cropping"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P016": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P016",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 16,
+        "printed_page": 15,
+        "title": "Before & After",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Identify the numeral immediately before and after a given numeral.",
+        "instruction": "Write the number before and the number after.",
+        "expected_response": "3 and 5; 6 and 8; 11 and 13; 17 and 19.",
+        "model_text": {
+          "centre": 5,
+          "before": 4,
+          "after": 6
+        }
+      },
+      "activity": {
+        "archetype": "four-before-after-rows",
+        "mechanic": "before-after-write-in",
+        "render_kind": "curriculum-before-after",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "centre": 4,
+              "before": 3,
+              "after": 5
+            },
+            {
+              "centre": 7,
+              "before": 6,
+              "after": 8
+            },
+            {
+              "centre": 12,
+              "before": 11,
+              "after": 13
+            },
+            {
+              "centre": 18,
+              "before": 17,
+              "after": 19
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "DETERMINISTIC_NO_ART",
+        "assets": [],
+        "asset_crops": {},
+        "asset_meanings": {},
+        "requires_generated_art": false,
+        "crop_safe": true,
+        "must_match_prompt": false
+      },
+      "layout": {
+        "template": "four-before-after-rows",
+        "blueprint": {
+          "rows": 4,
+          "structure": [
+            "blank",
+            "centre",
+            "blank"
+          ]
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Say three numbers around the centre number, leaving the two answers for the child."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "no generated illustration required",
+          "centre numeral is visually dominant",
+          "writing boxes are large enough"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P017": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P017",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 17,
+        "printed_page": 16,
+        "title": "Number Order",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Arrange numerals from smallest to greatest.",
+        "instruction": "Write each set in order from smallest to greatest.",
+        "expected_response": "1–2–3; 5–6–7–8; 11–12–13–14.",
+        "model_text": {
+          "tokens": [
+            2,
+            1,
+            3
+          ],
+          "answer": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "activity": {
+        "archetype": "three-number-order-rows",
+        "mechanic": "order-numerals-write-in",
+        "render_kind": "curriculum-number-order",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "tokens": [
+                3,
+                1,
+                2
+              ],
+              "answer": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "tokens": [
+                8,
+                6,
+                7,
+                5
+              ],
+              "answer": [
+                5,
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "tokens": [
+                14,
+                11,
+                13,
+                12
+              ],
+              "answer": [
+                11,
+                12,
+                13,
+                14
+              ]
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "DETERMINISTIC_NO_ART",
+        "assets": [],
+        "asset_crops": {},
+        "asset_meanings": {},
+        "requires_generated_art": false,
+        "crop_safe": true,
+        "must_match_prompt": false
+      },
+      "layout": {
+        "template": "three-number-order-rows",
+        "blueprint": {
+          "rows": 3,
+          "scrambled_tokens_above_answer_slots": true
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Find the smallest numeral first, then count forward."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "no illustration required",
+          "tokens and answer slots are separate",
+          "token order differs from answer order"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P018": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P018",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 18,
+        "printed_page": 17,
+        "title": "Number Line",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use forward jumps on a number line.",
+        "instruction": "Start at the marked number. Follow the jumps. Circle where you land.",
+        "expected_response": "2, 4 and 5 selected for the three number lines.",
+        "model_text": {
+          "range": [
+            0,
+            5
+          ],
+          "start": 0,
+          "jumps": 1,
+          "landing": 1
+        }
+      },
+      "activity": {
+        "archetype": "three-number-line-jump-rows",
+        "mechanic": "forward-number-line-jumps",
+        "render_kind": "curriculum-number-line",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "asset": "frog",
+              "range": [
+                0,
+                5
+              ],
+              "start": 0,
+              "jumps": 2,
+              "landing": 2,
+              "choices": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "asset": "rabbit",
+              "range": [
+                0,
+                5
+              ],
+              "start": 0,
+              "jumps": 4,
+              "landing": 4,
+              "choices": [
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "asset": "bee",
+              "range": [
+                0,
+                5
+              ],
+              "start": 0,
+              "jumps": 5,
+              "landing": 5,
+              "choices": [
+                3,
+                4,
+                5
+              ]
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P018.png",
+        "assets": [
+          "frog",
+          "rabbit",
+          "bee"
+        ],
+        "asset_crops": {
+          "frog": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "rabbit": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "bee": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "frog": "friendly frog facing right",
+          "rabbit": "friendly rabbit facing right",
+          "bee": "friendly bee facing right"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-number-line-jump-rows",
+        "blueprint": {
+          "rows": 3,
+          "number_lines_are_deterministic": true
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Point to the start and say one numeral for each arc."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "number line numerals are deterministic",
+          "start point is marked",
+          "arcs match jump count",
+          "landing equals start plus jumps"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P019": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P019",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 19,
+        "printed_page": 18,
+        "title": "Compare Numbers",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Compare the values of two numerals.",
+        "instruction": "Circle the greater number in each row.",
+        "expected_response": "7, 9, 15, 18, 11 and 20 circled.",
+        "model_text": {
+          "pair": [
+            2,
+            5
+          ],
+          "prompt": "Circle the greater number.",
+          "answer": 5
+        }
+      },
+      "activity": {
+        "archetype": "six-numeral-comparison-cards",
+        "mechanic": "compare-numerals-circle-greater",
+        "render_kind": "curriculum-numeral-comparison",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "rows": [
+            {
+              "pair": [
+                4,
+                7
+              ],
+              "answer": 7
+            },
+            {
+              "pair": [
+                9,
+                6
+              ],
+              "answer": 9
+            },
+            {
+              "pair": [
+                12,
+                15
+              ],
+              "answer": 15
+            },
+            {
+              "pair": [
+                18,
+                13
+              ],
+              "answer": 18
+            },
+            {
+              "pair": [
+                8,
+                11
+              ],
+              "answer": 11
+            },
+            {
+              "pair": [
+                20,
+                16
+              ],
+              "answer": 20
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "DETERMINISTIC_NO_ART",
+        "assets": [],
+        "asset_crops": {},
+        "asset_meanings": {},
+        "requires_generated_art": false,
+        "crop_safe": true,
+        "must_match_prompt": false
+      },
+      "layout": {
+        "template": "six-numeral-comparison-cards",
+        "blueprint": {
+          "rows": 3,
+          "columns": 2,
+          "two_large_numerals_per_card": true
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask which numeral comes later in the counting sequence."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "no quantity pictures",
+          "no tiny separate circle",
+          "child circles numeral directly",
+          "same prompt for all rows"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P020": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P020",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 20,
+        "printed_page": 19,
+        "title": "Math Stories",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Solve simple addition and subtraction picture stories.",
+        "instruction": "Look at each picture story. Count and circle the answer.",
+        "expected_response": "3, 3 and 2 selected for the three stories.",
+        "model_text": {
+          "story": "One bird is sitting. One more bird joins.",
+          "choices": [
+            1,
+            2,
+            3
+          ],
+          "answer": 2
+        }
+      },
+      "activity": {
+        "archetype": "three-picture-story-problem-rows",
+        "mechanic": "picture-story-one-of-three",
+        "render_kind": "curriculum-math-stories",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "stories": [
+            {
+              "asset": "story_ducks",
+              "question": "How many ducks now?",
+              "choices": [
+                2,
+                3,
+                4
+              ],
+              "answer": 3
+            },
+            {
+              "asset": "story_balls",
+              "question": "How many balls now?",
+              "choices": [
+                2,
+                3,
+                4
+              ],
+              "answer": 3
+            },
+            {
+              "asset": "story_biscuits",
+              "question": "How many biscuits are left?",
+              "choices": [
+                1,
+                2,
+                3
+              ],
+              "answer": 2
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P020.png",
+        "assets": [
+          "story_ducks",
+          "story_balls",
+          "story_biscuits"
+        ],
+        "asset_crops": {
+          "story_ducks": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "story_balls": {
+            "x": 0.08,
+            "y": 0.38,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          },
+          "story_biscuits": {
+            "x": 0.08,
+            "y": 0.69,
+            "w": 0.84,
+            "h": 0.24,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "story_ducks": "two ducks in a pond and one duck joining",
+          "story_balls": "one ball on the ground and two more balls arriving",
+          "story_biscuits": "three biscuits on a plate with one being taken away by position only"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-picture-story-problem-rows",
+        "blueprint": {
+          "rows": 3,
+          "scene_question_choices": true
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask what happened first, what changed, and what must be counted now."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "one complete scene per row",
+          "question is short and oral-friendly",
+          "choices are adjacent to the story",
+          "story change is visually evident"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P021": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P021",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 21,
+        "printed_page": 20,
+        "title": "2D Shapes",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Match basic 2D shapes to familiar objects with the same shape.",
+        "instruction": "Match each shape to the object with the same shape.",
+        "expected_response": "Circle–clock, square–window, triangle–flag and rectangle–door.",
+        "model_text": {
+          "shape": "circle",
+          "object": "clock",
+          "show_completed_line": true
+        }
+      },
+      "activity": {
+        "archetype": "two-column-shape-to-object-match",
+        "mechanic": "match-2d-shape-to-object-shuffled",
+        "render_kind": "curriculum-shape-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "left": [
+            "shape_circle",
+            "shape_square",
+            "shape_triangle",
+            "shape_rectangle"
+          ],
+          "right": [
+            "object_flag",
+            "object_clock",
+            "object_door",
+            "object_window"
+          ],
+          "correct_pairs": [
+            [
+              "shape_circle",
+              "object_clock"
+            ],
+            [
+              "shape_square",
+              "object_window"
+            ],
+            [
+              "shape_triangle",
+              "object_flag"
+            ],
+            [
+              "shape_rectangle",
+              "object_door"
+            ]
+          ],
+          "require_derangement": true
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P021.png",
+        "assets": [
+          "shape_circle",
+          "shape_square",
+          "shape_triangle",
+          "shape_rectangle",
+          "object_flag",
+          "object_clock",
+          "object_door",
+          "object_window"
+        ],
+        "asset_crops": {
+          "shape_circle": {
+            "x": 0.08,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "shape_square": {
+            "x": 0.54,
+            "y": 0.07,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "shape_triangle": {
+            "x": 0.08,
+            "y": 0.3025,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "shape_rectangle": {
+            "x": 0.54,
+            "y": 0.3025,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "object_flag": {
+            "x": 0.08,
+            "y": 0.535,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "object_clock": {
+            "x": 0.54,
+            "y": 0.535,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "object_door": {
+            "x": 0.08,
+            "y": 0.7675,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          },
+          "object_window": {
+            "x": 0.54,
+            "y": 0.7675,
+            "w": 0.38,
+            "h": 0.1625,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "shape_circle": "plain circle",
+          "shape_square": "plain square",
+          "shape_triangle": "plain triangle",
+          "shape_rectangle": "plain rectangle",
+          "object_flag": "complete triangular flag",
+          "object_clock": "complete round clock",
+          "object_door": "complete rectangular door",
+          "object_window": "complete square window"
+        },
+        "requires_generated_art": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "two-column-shape-to-object-match",
+        "blueprint": {
+          "left_column": [
+            "circle",
+            "square",
+            "triangle",
+            "rectangle"
+          ],
+          "right_column": [
+            "flag",
+            "clock",
+            "door",
+            "window"
+          ],
+          "connector_dots": true
+        },
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Trace the shape outline in the air before matching it to an object."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "complete objects only",
+          "right column is shuffled",
+          "no scene fragments",
+          "one clear match per shape"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P022": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P022",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 22,
+        "printed_page": 21,
+        "title": "3D Objects",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise common 3D objects.",
+        "instruction": "Match each solid to the object with the same shape.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A05 Read/Look & Match",
+        "mechanic": "match-3d-solid-to-object",
+        "render_kind": "quantity-numeral-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "sphere",
+            "cube",
+            "cylinder",
+            "cone",
+            "party_hat",
+            "beach_ball",
+            "tin_can",
+            "dice"
+          ],
+          "left": [
+            "sphere",
+            "cube",
+            "cylinder",
+            "cone"
+          ],
+          "right": [
+            "dice",
+            "party_hat",
+            "beach_ball",
+            "tin_can"
+          ],
+          "pairs": [
+            {
+              "left": "sphere",
+              "right": "beach_ball"
+            },
+            {
+              "left": "cube",
+              "right": "dice"
+            },
+            {
+              "left": "cylinder",
+              "right": "tin_can"
+            },
+            {
+              "left": "cone",
+              "right": "party_hat"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P022.png",
+        "assets": [
+          "sphere",
+          "cube",
+          "cylinder",
+          "cone",
+          "party_hat",
+          "beach_ball",
+          "tin_can",
+          "dice"
+        ],
+        "asset_crops": {
+          "sphere": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "cube": {
+            "x": 0.27625,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "cylinder": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "cone": {
+            "x": 0.74875,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "party_hat": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "beach_ball": {
+            "x": 0.27625,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "tin_can": {
+            "x": 0.5125,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "dice": {
+            "x": 0.74875,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "solid-match-four-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Name each solid, then ask the child to trace its outline in the air before matching."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P023": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P023",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 23,
+        "printed_page": 22,
+        "title": "Shape Hunt",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Find shapes in familiar objects.",
+        "instruction": "Find each target shape in the playground picture.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A05 Read/Look & Match",
+        "mechanic": "shape-hunt-scene",
+        "render_kind": "shape-hunt",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "main_playground_scene",
+            "option_house_window",
+            "option_tree",
+            "option_circle_rectangle",
+            "option_rectangle_triangle"
+          ],
+          "hero": "main_playground_scene",
+          "targets": [
+            "option_house_window",
+            "option_tree",
+            "option_circle_rectangle",
+            "option_rectangle_triangle"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P023.png",
+        "assets": [
+          "main_playground_scene",
+          "option_house_window",
+          "option_tree",
+          "option_circle_rectangle",
+          "option_rectangle_triangle"
+        ],
+        "asset_crops": {
+          "main_playground_scene": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "option_house_window": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "option_tree": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "option_circle_rectangle": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "option_rectangle_triangle": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "hero-scene-target-strip-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Name one target at a time. Let the child find and point to it in the playground scene."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P024": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P024",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 24,
+        "printed_page": 23,
+        "title": "Patterns",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise repeating patterns.",
+        "instruction": "Say each repeating pattern. Draw the next item in the box.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A12 Observe, Find & Name",
+        "mechanic": "identify-repeating-pattern",
+        "render_kind": "pattern-observation",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "pattern_stars",
+            "pattern_shapes",
+            "pattern_leaf_flower"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P024.png",
+        "assets": [
+          "pattern_stars",
+          "pattern_shapes",
+          "pattern_leaf_flower"
+        ],
+        "asset_crops": {
+          "pattern_stars": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "pattern_shapes": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "pattern_leaf_flower": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "pattern-three-strips-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Say the repeating unit together, then let the child draw the next item in each box."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P025": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P025",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 25,
+        "printed_page": 24,
+        "title": "Complete the Pattern",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Complete repeating patterns.",
+        "instruction": "Look at each pattern. Draw or say what comes next.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A04 Sequence & Retell",
+        "mechanic": "complete-repeating-pattern",
+        "render_kind": "pattern-completion",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "row_apples_bananas",
+            "row_circle_triangles",
+            "row_coloured_cubes",
+            "row_small_big_stars"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P025.png",
+        "assets": [
+          "row_apples_bananas",
+          "row_circle_triangles",
+          "row_coloured_cubes",
+          "row_small_big_stars"
+        ],
+        "asset_crops": {
+          "row_apples_bananas": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "row_circle_triangles": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "row_coloured_cubes": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "row_small_big_stars": {
+            "x": 0.5125,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "complete-pattern-four-rows-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Cover the final space. Ask what repeats, then let the child draw the next item."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P026": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P026",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 26,
+        "printed_page": 25,
+        "title": "Position Words",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Understand basic position words.",
+        "instruction": "Look at each picture. Circle the correct position word.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A04 Sequence & Retell",
+        "mechanic": "position-word-choice",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "ball_in_box",
+            "cat_on_mat",
+            "shoe_under_chair",
+            "kite_above_tree",
+            "dog_next_to_boy",
+            "ball_between_cones"
+          ],
+          "pairs": [
+            [
+              "ball_in_box"
+            ],
+            [
+              "cat_on_mat"
+            ],
+            [
+              "shoe_under_chair"
+            ],
+            [
+              "kite_above_tree"
+            ],
+            [
+              "dog_next_to_boy"
+            ],
+            [
+              "ball_between_cones"
+            ]
+          ],
+          "items": [
+            {
+              "asset": "ball_in_box",
+              "choices": [
+                "in",
+                "on",
+                "under"
+              ],
+              "answer": "in"
+            },
+            {
+              "asset": "cat_on_mat",
+              "choices": [
+                "on",
+                "under",
+                "beside"
+              ],
+              "answer": "on"
+            },
+            {
+              "asset": "shoe_under_chair",
+              "choices": [
+                "under",
+                "above",
+                "in"
+              ],
+              "answer": "under"
+            },
+            {
+              "asset": "kite_above_tree",
+              "choices": [
+                "above",
+                "in",
+                "beside"
+              ],
+              "answer": "above"
+            },
+            {
+              "asset": "dog_next_to_boy",
+              "choices": [
+                "beside",
+                "between",
+                "under"
+              ],
+              "answer": "beside"
+            },
+            {
+              "asset": "ball_between_cones",
+              "choices": [
+                "between",
+                "on",
+                "above"
+              ],
+              "answer": "between"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P026.png",
+        "assets": [
+          "ball_in_box",
+          "cat_on_mat",
+          "shoe_under_chair",
+          "kite_above_tree",
+          "dog_next_to_boy",
+          "ball_between_cones"
+        ],
+        "asset_crops": {
+          "ball_in_box": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "cat_on_mat": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "shoe_under_chair": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "kite_above_tree": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "dog_next_to_boy": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "ball_between_cones": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "position-six-scenes-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Read the three position words aloud and let the child circle the word that matches the picture."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P027": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P027",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 27,
+        "printed_page": 26,
+        "title": "Directions",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Follow simple directions.",
+        "instruction": "Trace each path from the start object to its destination.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "follow-direction-path",
+        "render_kind": "direction-paths",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "mouse_to_cheese",
+            "bee_to_flower",
+            "car_to_garage"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P027.png",
+        "assets": [
+          "mouse_to_cheese",
+          "bee_to_flower",
+          "car_to_garage"
+        ],
+        "asset_crops": {
+          "mouse_to_cheese": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "bee_to_flower": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "car_to_garage": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "directions-three-paths-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask the child to touch the start object, then trace the dotted route to the destination."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P028": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P028",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 28,
+        "printed_page": 27,
+        "title": "Directions",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise left, right, up and down.",
+        "instruction": "Listen to the direction. Circle the picture that shows it.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A11 Follow Path & Solve",
+        "mechanic": "direction-word-choice",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "child_facing_left",
+            "child_facing_right",
+            "bird_flying_up",
+            "bird_flying_down",
+            "car_moving_left",
+            "car_moving_right"
+          ],
+          "pairs": [
+            [
+              "child_facing_left",
+              "child_facing_right"
+            ],
+            [
+              "bird_flying_up",
+              "bird_flying_down"
+            ],
+            [
+              "car_moving_left",
+              "car_moving_right"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "child_facing_left",
+                "child_facing_right"
+              ],
+              "prompt": "Circle left.",
+              "answer": "child_facing_left"
+            },
+            {
+              "assets": [
+                "bird_flying_up",
+                "bird_flying_down"
+              ],
+              "prompt": "Circle up.",
+              "answer": "bird_flying_up"
+            },
+            {
+              "assets": [
+                "car_moving_left",
+                "car_moving_right"
+              ],
+              "prompt": "Circle right.",
+              "answer": "car_moving_right"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P028.png",
+        "assets": [
+          "child_facing_left",
+          "child_facing_right",
+          "bird_flying_up",
+          "bird_flying_down",
+          "car_moving_left",
+          "car_moving_right"
+        ],
+        "asset_crops": {
+          "child_facing_left": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "child_facing_right": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "bird_flying_up": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "bird_flying_down": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "car_moving_left": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "car_moving_right": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "direction-three-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Say left, up or right for one row at a time. Let the child circle the matching picture."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P029": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P029",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 29,
+        "printed_page": 28,
+        "title": "Big & Small",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Compare objects by size.",
+        "instruction": "Circle the object named in each row.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "big-small",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "big_elephant",
+            "small_elephant",
+            "big_ball",
+            "small_ball",
+            "big_teddy",
+            "small_teddy"
+          ],
+          "pairs": [
+            [
+              "big_elephant",
+              "small_elephant"
+            ],
+            [
+              "big_ball",
+              "small_ball"
+            ],
+            [
+              "big_teddy",
+              "small_teddy"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "big_elephant",
+                "small_elephant"
+              ],
+              "prompt": "Circle the big elephant.",
+              "answer": "big_elephant"
+            },
+            {
+              "assets": [
+                "big_ball",
+                "small_ball"
+              ],
+              "prompt": "Circle the small ball.",
+              "answer": "small_ball"
+            },
+            {
+              "assets": [
+                "big_teddy",
+                "small_teddy"
+              ],
+              "prompt": "Circle the big teddy.",
+              "answer": "big_teddy"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P029.png",
+        "assets": [
+          "big_elephant",
+          "small_elephant",
+          "big_ball",
+          "small_ball",
+          "big_teddy",
+          "small_teddy"
+        ],
+        "asset_crops": {
+          "big_elephant": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "small_elephant": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "big_ball": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "small_ball": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "big_teddy": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "small_teddy": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "comparison-3-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Compare one pair at a time and ask the child to show big or small with both hands."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P030": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P030",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 30,
+        "printed_page": 29,
+        "title": "Tall & Short",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Compare objects by height.",
+        "instruction": "Circle the object named in each row.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "tall-short",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "tall_giraffe",
+            "short_giraffe",
+            "tall_tree",
+            "short_tree",
+            "tall_building",
+            "short_building"
+          ],
+          "pairs": [
+            [
+              "tall_giraffe",
+              "short_giraffe"
+            ],
+            [
+              "tall_tree",
+              "short_tree"
+            ],
+            [
+              "tall_building",
+              "short_building"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "tall_giraffe",
+                "short_giraffe"
+              ],
+              "prompt": "Circle the tall giraffe.",
+              "answer": "tall_giraffe"
+            },
+            {
+              "assets": [
+                "tall_tree",
+                "short_tree"
+              ],
+              "prompt": "Circle the short tree.",
+              "answer": "short_tree"
+            },
+            {
+              "assets": [
+                "tall_building",
+                "short_building"
+              ],
+              "prompt": "Circle the tall building.",
+              "answer": "tall_building"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P030.png",
+        "assets": [
+          "tall_giraffe",
+          "short_giraffe",
+          "tall_tree",
+          "short_tree",
+          "tall_building",
+          "short_building"
+        ],
+        "asset_crops": {
+          "tall_giraffe": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "short_giraffe": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "tall_tree": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "short_tree": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "tall_building": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "short_building": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "comparison-3-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Check that both objects begin on the same baseline before the child compares their height."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P031": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P031",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 31,
+        "printed_page": 30,
+        "title": "Heavy & Light",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Identify objects that are usually heavy or light.",
+        "instruction": "Circle the object named in each row.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "heavy-light",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "heavy_rock",
+            "light_feather",
+            "heavy_watermelon",
+            "light_leaf",
+            "heavy_suitcase",
+            "light_balloon"
+          ],
+          "pairs": [
+            [
+              "heavy_rock",
+              "light_feather"
+            ],
+            [
+              "heavy_watermelon",
+              "light_leaf"
+            ],
+            [
+              "heavy_suitcase",
+              "light_balloon"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "heavy_rock",
+                "light_feather"
+              ],
+              "prompt": "Circle the heavy object.",
+              "answer": "heavy_rock"
+            },
+            {
+              "assets": [
+                "heavy_watermelon",
+                "light_leaf"
+              ],
+              "prompt": "Circle the light object.",
+              "answer": "light_leaf"
+            },
+            {
+              "assets": [
+                "heavy_suitcase",
+                "light_balloon"
+              ],
+              "prompt": "Circle the heavy object.",
+              "answer": "heavy_suitcase"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P031.png",
+        "assets": [
+          "heavy_rock",
+          "light_feather",
+          "heavy_watermelon",
+          "light_leaf",
+          "heavy_suitcase",
+          "light_balloon"
+        ],
+        "asset_crops": {
+          "heavy_rock": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "light_feather": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "heavy_watermelon": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "light_leaf": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "heavy_suitcase": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "light_balloon": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "comparison-3-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Let the child pretend to lift both objects, then circle the heavy or light one named."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P032": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P032",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 32,
+        "printed_page": 31,
+        "title": "Long & Short",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Compare objects by length.",
+        "instruction": "Circle the object named in each row.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "long-short",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "long_pencil",
+            "short_pencil",
+            "long_ribbon",
+            "short_ribbon",
+            "long_rope",
+            "short_rope"
+          ],
+          "pairs": [
+            [
+              "long_pencil",
+              "short_pencil"
+            ],
+            [
+              "long_ribbon",
+              "short_ribbon"
+            ],
+            [
+              "long_rope",
+              "short_rope"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "long_pencil",
+                "short_pencil"
+              ],
+              "prompt": "Circle the long pencil.",
+              "answer": "long_pencil"
+            },
+            {
+              "assets": [
+                "long_ribbon",
+                "short_ribbon"
+              ],
+              "prompt": "Circle the short ribbon.",
+              "answer": "short_ribbon"
+            },
+            {
+              "assets": [
+                "long_rope",
+                "short_rope"
+              ],
+              "prompt": "Circle the long rope.",
+              "answer": "long_rope"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P032.png",
+        "assets": [
+          "long_pencil",
+          "short_pencil",
+          "long_ribbon",
+          "short_ribbon",
+          "long_rope",
+          "short_rope"
+        ],
+        "asset_crops": {
+          "long_pencil": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "short_pencil": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "long_ribbon": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "short_ribbon": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "long_rope": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "short_rope": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "comparison-3-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Point to the common starting edge before comparing which object is long or short."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P033": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P033",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 33,
+        "printed_page": 32,
+        "title": "Full & Empty",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Distinguish full containers from empty containers.",
+        "instruction": "Circle the container named in each row.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "full-empty",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "full_glass",
+            "empty_glass",
+            "full_basket",
+            "empty_basket",
+            "full_bucket",
+            "empty_bucket"
+          ],
+          "pairs": [
+            [
+              "full_glass",
+              "empty_glass"
+            ],
+            [
+              "full_basket",
+              "empty_basket"
+            ],
+            [
+              "full_bucket",
+              "empty_bucket"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "full_glass",
+                "empty_glass"
+              ],
+              "prompt": "Circle the full glass.",
+              "answer": "full_glass"
+            },
+            {
+              "assets": [
+                "full_basket",
+                "empty_basket"
+              ],
+              "prompt": "Circle the empty basket.",
+              "answer": "empty_basket"
+            },
+            {
+              "assets": [
+                "full_bucket",
+                "empty_bucket"
+              ],
+              "prompt": "Circle the full bucket.",
+              "answer": "full_bucket"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P033.png",
+        "assets": [
+          "full_glass",
+          "empty_glass",
+          "full_basket",
+          "empty_basket",
+          "full_bucket",
+          "empty_bucket"
+        ],
+        "asset_crops": {
+          "full_glass": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "empty_glass": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "full_basket": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "empty_basket": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "full_bucket": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "empty_bucket": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "comparison-3-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask what is inside each container, then let the child circle full or empty as directed."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P034": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P034",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 34,
+        "printed_page": 33,
+        "title": "Capacity",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Compare which container can hold more or less.",
+        "instruction": "Compare each pair. Circle the container named in each row.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "capacity",
+        "render_kind": "comparison-pairs",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "large_jug",
+            "small_cup",
+            "large_bucket",
+            "small_mug",
+            "large_bottle",
+            "small_bottle"
+          ],
+          "pairs": [
+            [
+              "large_jug",
+              "small_cup"
+            ],
+            [
+              "large_bucket",
+              "small_mug"
+            ],
+            [
+              "large_bottle",
+              "small_bottle"
+            ]
+          ],
+          "items": [
+            {
+              "assets": [
+                "large_jug",
+                "small_cup"
+              ],
+              "prompt": "Circle the one that holds more.",
+              "answer": "large_jug"
+            },
+            {
+              "assets": [
+                "large_bucket",
+                "small_mug"
+              ],
+              "prompt": "Circle the one that holds less.",
+              "answer": "small_mug"
+            },
+            {
+              "assets": [
+                "large_bottle",
+                "small_bottle"
+              ],
+              "prompt": "Circle the one that holds more.",
+              "answer": "large_bottle"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P034.png",
+        "assets": [
+          "large_jug",
+          "small_cup",
+          "large_bucket",
+          "small_mug",
+          "large_bottle",
+          "small_bottle"
+        ],
+        "asset_crops": {
+          "large_jug": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "small_cup": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "large_bucket": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "small_mug": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "large_bottle": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "small_bottle": {
+            "x": 0.67,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "comparison-3-pairs-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Read more or less for one row at a time. Let the child compare and circle the named container."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P035": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P035",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 35,
+        "printed_page": 34,
+        "title": "Time Awareness",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Order familiar daily activities.",
+        "instruction": "Write 1, 2 and 3 to show the order of the day.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A04 Sequence & Retell",
+        "mechanic": "daily-routine-order",
+        "render_kind": "sequence-completion",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "afternoon_play",
+            "night_sleep",
+            "morning_wake_up"
+          ],
+          "events": [
+            "afternoon_play",
+            "night_sleep",
+            "morning_wake_up"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P035.png",
+        "assets": [
+          "morning_wake_up",
+          "afternoon_play",
+          "night_sleep"
+        ],
+        "asset_crops": {
+          "morning_wake_up": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "afternoon_play": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "night_sleep": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "daily-routine-three-events-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Say first, next and last as the child writes one order number beside each scene."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P036": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P036",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 36,
+        "printed_page": 35,
+        "title": "Sorting",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Sort objects by one visible attribute.",
+        "instruction": "Write each picture number under its colour.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A06 Sort & Classify",
+        "mechanic": "sort-by-one-attribute",
+        "render_kind": "classification",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "red_button_1",
+            "blue_block_1",
+            "blue_button_1",
+            "red_block_1",
+            "blue_button_2",
+            "red_block_2",
+            "red_button_2",
+            "blue_block_2"
+          ],
+          "categories": [
+            {
+              "id": "red",
+              "label": "RED"
+            },
+            {
+              "id": "blue",
+              "label": "BLUE"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P036.png",
+        "assets": [
+          "red_button_1",
+          "red_button_2",
+          "blue_button_1",
+          "blue_button_2",
+          "red_block_1",
+          "red_block_2",
+          "blue_block_1",
+          "blue_block_2"
+        ],
+        "asset_crops": {
+          "red_button_1": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "red_button_2": {
+            "x": 0.27625,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "blue_button_1": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "blue_button_2": {
+            "x": 0.74875,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "red_block_1": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "red_block_2": {
+            "x": 0.27625,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "blue_block_1": {
+            "x": 0.5125,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "blue_block_2": {
+            "x": 0.74875,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "sorting-eight-items-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Name the sorting rule once. The child writes each picture number under red or blue."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P037": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P037",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 37,
+        "printed_page": 36,
+        "title": "Classifying",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Group familiar items by category.",
+        "instruction": "Write each picture number in the correct group.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A06 Sort & Classify",
+        "mechanic": "classify-familiar-items",
+        "render_kind": "classification",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "apple",
+            "dog",
+            "bus",
+            "banana",
+            "rabbit",
+            "car",
+            "orange",
+            "cat",
+            "bicycle"
+          ],
+          "categories": [
+            {
+              "id": "fruit",
+              "label": "FRUITS"
+            },
+            {
+              "id": "animal",
+              "label": "ANIMALS"
+            },
+            {
+              "id": "vehicle",
+              "label": "VEHICLES"
+            }
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P037.png",
+        "assets": [
+          "apple",
+          "banana",
+          "orange",
+          "cat",
+          "dog",
+          "rabbit",
+          "car",
+          "bus",
+          "bicycle"
+        ],
+        "asset_crops": {
+          "apple": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "banana": {
+            "x": 0.229,
+            "y": 0.04,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "orange": {
+            "x": 0.418,
+            "y": 0.04,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "cat": {
+            "x": 0.607,
+            "y": 0.04,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "dog": {
+            "x": 0.796,
+            "y": 0.04,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "rabbit": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "car": {
+            "x": 0.229,
+            "y": 0.5125,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "bus": {
+            "x": 0.418,
+            "y": 0.5125,
+            "w": 0.164,
+            "h": 0.4475
+          },
+          "bicycle": {
+            "x": 0.607,
+            "y": 0.5125,
+            "w": 0.164,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "classification-three-categories-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Name the three groups, then let the child place each numbered picture by category."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P038": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P038",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 38,
+        "printed_page": 37,
+        "title": "Picture Graph",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Read and compare quantities in a simple picture graph.",
+        "instruction": "Look at the picture graph. Count the fruit. Circle each answer.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A08 Compare & Choose",
+        "mechanic": "read-picture-graph",
+        "render_kind": "picture-graph",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "graph_apple",
+            "graph_banana",
+            "graph_orange"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P038.png",
+        "assets": [
+          "graph_apple",
+          "graph_banana",
+          "graph_orange"
+        ],
+        "asset_crops": {
+          "graph_apple": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "graph_banana": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "graph_orange": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "picture-graph-three-categories-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Count one graph row at a time. Ask the questions only after all three rows are counted."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P039": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P039",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 39,
+        "printed_page": 38,
+        "title": "Problem Solving",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Solve simple visual maths situations.",
+        "instruction": "Look at each picture. Think, count and tell the answer.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A11 Follow Path & Solve",
+        "mechanic": "mixed-maths-problems",
+        "render_kind": "mixed-review",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "problem_missing_ball",
+            "problem_share_apples",
+            "problem_bus_seats"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P039.png",
+        "assets": [
+          "problem_missing_ball",
+          "problem_share_apples",
+          "problem_bus_seats"
+        ],
+        "asset_crops": {
+          "problem_missing_ball": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "problem_share_apples": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.4475,
+            "h": 0.4475
+          },
+          "problem_bus_seats": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.4475,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "problem-solving-three-scenes-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask what changes in each scene, then let the child count and record one answer."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P040": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P040",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 40,
+        "printed_page": 39,
+        "title": "Maths Around Me",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Notice maths in everyday surroundings.",
+        "instruction": "Find a number, a shape, a size pair and a pattern in the scene.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A12 Observe, Find & Name",
+        "mechanic": "maths-around-me-find",
+        "render_kind": "observe-reflect",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "maths_around_me_scene"
+          ],
+          "hero": "maths_around_me_scene"
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P040.png",
+        "assets": [
+          "maths_around_me_scene"
+        ],
+        "asset_crops": {
+          "maths_around_me_scene": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.92,
+            "h": 0.92
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "single-observation-scene-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Give one target at a time and let the child scan, point and circle it in the scene."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P041": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P041",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 41,
+        "printed_page": 40,
+        "title": "Maths Review",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Review counting, comparison, shapes and patterns.",
+        "instruction": "Complete each short maths review activity.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A14 Mixed Review",
+        "mechanic": "mixed-maths-review",
+        "render_kind": "mixed-review",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "review_five_stars",
+            "review_two_apples",
+            "review_four_apples",
+            "review_circle",
+            "review_triangle",
+            "review_square",
+            "review_pattern_red_blue",
+            "review_pattern_next_blue"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P041.png",
+        "assets": [
+          "review_five_stars",
+          "review_two_apples",
+          "review_four_apples",
+          "review_circle",
+          "review_triangle",
+          "review_square",
+          "review_pattern_red_blue",
+          "review_pattern_next_blue"
+        ],
+        "asset_crops": {
+          "review_five_stars": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_two_apples": {
+            "x": 0.27625,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_four_apples": {
+            "x": 0.5125,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_circle": {
+            "x": 0.74875,
+            "y": 0.04,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_triangle": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_square": {
+            "x": 0.27625,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_pattern_red_blue": {
+            "x": 0.5125,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          },
+          "review_pattern_next_blue": {
+            "x": 0.74875,
+            "y": 0.5125,
+            "w": 0.21125,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "maths-review-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Complete one review activity at a time and keep every independent answer unmarked."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P042": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P042",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 42,
+        "printed_page": 41,
+        "title": "Certificate",
+        "page_type": "certificate"
+      },
+      "learning": {
+        "objective": "Celebrate achievement.",
+        "instruction": "Celebrate completing Early Maths Adventures.",
+        "expected_response": "The publishing engine adds all certificate wording and name/date lines.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A15 Celebrate & Certify",
+        "mechanic": "certificate-celebration-assets",
+        "render_kind": "certificate",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "certificate_math_badge",
+            "certificate_trophy",
+            "certificate_shape_border",
+            "certificate_confetti_left",
+            "certificate_confetti_right"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P042.png",
+        "assets": [
+          "certificate_math_badge",
+          "certificate_trophy",
+          "certificate_shape_border",
+          "certificate_confetti_left",
+          "certificate_confetti_right"
+        ],
+        "asset_crops": {
+          "certificate_math_badge": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "certificate_trophy": {
+            "x": 0.355,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "certificate_shape_border": {
+            "x": 0.67,
+            "y": 0.04,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "certificate_confetti_left": {
+            "x": 0.04,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          },
+          "certificate_confetti_right": {
+            "x": 0.355,
+            "y": 0.5125,
+            "w": 0.29,
+            "h": 0.4475
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "certificate-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Read the certificate aloud and celebrate the child's effort."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P043": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P043",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 43,
+        "printed_page": 42,
+        "title": "I Am a Maths Explorer",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Celebrate confidence and interest in early maths.",
+        "instruction": "Look at the picture and talk about the maths you can do.",
+        "expected_response": "Use only the page-specific response controls defined below.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A10 Speak, Listen & Respond",
+        "mechanic": "maths-reflection-choice",
+        "render_kind": "observe-reflect",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "maths_explorer_celebration"
+          ],
+          "hero": "maths_explorer_celebration"
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P043.png",
+        "assets": [
+          "maths_explorer_celebration"
+        ],
+        "asset_crops": {
+          "maths_explorer_celebration": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.92,
+            "h": 0.92
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "maths-explorer-single-scene-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": "Invite the child to choose one achievement and complete the sentence: I can ____."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
+      }
+    },
+    "EM-LKG-V4-P044": {
+      "identity": {
+        "page_id": "EM-LKG-V4-P044",
+        "book_slug": "early-maths-adventures",
+        "level": "lkg",
+        "physical_page": 44,
+        "printed_page": 43,
+        "title": "Early Maths Adventures — Back Cover",
+        "page_type": "back_cover"
+      },
+      "learning": {
+        "objective": "Close the book with a clear learning identity.",
+        "instruction": "Back cover illustration.",
+        "expected_response": "No worksheet mechanics or response controls.",
+        "model_text": null
+      },
+      "activity": {
+        "archetype": "A00 Publishing Page",
+        "mechanic": "back-cover-illustration",
+        "render_kind": "back-cover",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "early_maths_back_cover_scene"
+          ],
+          "hero": "early_maths_back_cover_scene"
+        }
+      },
+      "illustration": {
+        "source_asset": "EM-LKG-V4-P044.png",
+        "assets": [
+          "early_maths_back_cover_scene"
+        ],
+        "asset_crops": {
+          "early_maths_back_cover_scene": {
+            "x": 0.04,
+            "y": 0.04,
+            "w": 0.92,
+            "h": 0.92
+          }
+        },
+        "crop_safe": true,
+        "must_match_prompt": true,
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "asset_layout": "approved-semantic-files-v1"
+      },
+      "layout": {
+        "template": "back-cover-approved-assets-v1",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false
+      },
+      "guidance": {
+        "teacher_cue": ""
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "blocked_reasons": []
       }
     }
-  }
+  },
+  "curriculum_first_scope": [
+    "EM-LKG-V4-P009",
+    "EM-LKG-V4-P010",
+    "EM-LKG-V4-P011",
+    "EM-LKG-V4-P012",
+    "EM-LKG-V4-P013",
+    "EM-LKG-V4-P014",
+    "EM-LKG-V4-P015",
+    "EM-LKG-V4-P016",
+    "EM-LKG-V4-P017",
+    "EM-LKG-V4-P018",
+    "EM-LKG-V4-P019",
+    "EM-LKG-V4-P020",
+    "EM-LKG-V4-P021"
+  ]
 }

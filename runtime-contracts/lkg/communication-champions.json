@@ -1,5 +1,5 @@
 {
-  "contract_version": "bcube-book-runtime-contract-v1",
+  "contract_version": "bcube-book-runtime-contract-v2-curriculum-first",
   "book": {
     "title": "Communication Champions",
     "slug": "communication-champions",
@@ -8,75 +8,4498 @@
   "level": "LKG",
   "age": "4+",
   "allow_fallback": false,
+  "curriculum_first_scope": [
+    "CC-LKG-V4-P008",
+    "CC-LKG-V4-P009",
+    "CC-LKG-V4-P010",
+    "CC-LKG-V4-P011",
+    "CC-LKG-V4-P012",
+    "CC-LKG-V4-P013",
+    "CC-LKG-V4-P014",
+    "CC-LKG-V4-P015",
+    "CC-LKG-V4-P016",
+    "CC-LKG-V4-P017",
+    "CC-LKG-V4-P018",
+    "CC-LKG-V4-P019",
+    "CC-LKG-V4-P020",
+    "CC-LKG-V4-P021",
+    "CC-LKG-V4-P022",
+    "CC-LKG-V4-P023",
+    "CC-LKG-V4-P024",
+    "CC-LKG-V4-P025",
+    "CC-LKG-V4-P026",
+    "CC-LKG-V4-P027",
+    "CC-LKG-V4-P028",
+    "CC-LKG-V4-P029",
+    "CC-LKG-V4-P030",
+    "CC-LKG-V4-P031",
+    "CC-LKG-V4-P032",
+    "CC-LKG-V4-P033",
+    "CC-LKG-V4-P034",
+    "CC-LKG-V4-P035",
+    "CC-LKG-V4-P036",
+    "CC-LKG-V4-P037",
+    "CC-LKG-V4-P038",
+    "CC-LKG-V4-P039",
+    "CC-LKG-V4-P040",
+    "CC-LKG-V4-P041",
+    "CC-LKG-V4-P042",
+    "CC-LKG-V4-P043"
+  ],
   "pages": {
+    "CC-LKG-V4-P008": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P008",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 8,
+        "printed_page": 7,
+        "title": "Good Listening",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise and practise good listening behaviours.",
+        "instruction": "Look at each picture. Circle every picture that shows good listening. Choose one and say: I am ready to listen.",
+        "expected_response": "choose one good-listening behaviour and say the model phrase",
+        "model_text": {
+          "picture": "body_still",
+          "answer": "I am ready to listen.",
+          "show_circle": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-behaviour-choice-cards",
+        "mechanic": "listening-behaviour-choice",
+        "render_kind": "communication-listening-behaviour-choice",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "eyes_looking",
+            "ears_listening",
+            "body_still",
+            "waiting_turn",
+            "interrupting_distractor"
+          ],
+          "activity_count": 5,
+          "choices": [
+            "eyes_looking",
+            "ears_listening",
+            "body_still",
+            "waiting_turn",
+            "interrupting_distractor"
+          ],
+          "good": [
+            "eyes_looking",
+            "ears_listening",
+            "body_still",
+            "waiting_turn"
+          ],
+          "distractor": "interrupting_distractor",
+          "response": "circle",
+          "display_labels": {
+            "eyes_looking": "Look at the speaker",
+            "ears_listening": "Listen carefully",
+            "body_still": "Keep your body still",
+            "waiting_turn": "Wait for your turn",
+            "interrupting_distractor": "Interrupting"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P008.png",
+        "assets": [
+          "eyes_looking",
+          "ears_listening",
+          "body_still",
+          "waiting_turn",
+          "interrupting_distractor"
+        ],
+        "asset_crops": {
+          "eyes_looking": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "ears_listening": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "body_still": {
+            "x": 0.055,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "waiting_turn": {
+            "x": 0.5275,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "interrupting_distractor": {
+            "x": 0.055,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "eyes_looking": "child's eyes looking towards a speaker",
+          "ears_listening": "child cupping one ear while listening",
+          "body_still": "child sitting with calm still hands",
+          "waiting_turn": "child waiting with one hand lowered",
+          "interrupting_distractor": "mild incorrect example of a child interrupting"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-behaviour-choice-cards",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Read one listening clue. Let the child compare the pictures before choosing."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P009": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P009",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 9,
+        "printed_page": 8,
+        "title": "Follow One Instruction",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Listen and follow a one-step classroom instruction.",
+        "instruction": "Listen to one instruction. Point to the matching picture, then do the action.",
+        "expected_response": "listen, identify the named action, then perform it",
+        "model_text": {
+          "instruction": "Clap.",
+          "picture": "clap",
+          "show_match": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "six-action-listening-grid",
+        "mechanic": "listen-and-perform-one-step",
+        "render_kind": "communication-listen-and-perform-one-step",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "clap",
+            "stand",
+            "sit",
+            "point",
+            "touch_head",
+            "show_pencil"
+          ],
+          "activity_count": 6,
+          "actions": [
+            "clap",
+            "stand",
+            "sit",
+            "point",
+            "touch_head",
+            "show_pencil"
+          ],
+          "response": "point-and-perform"
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P009.png",
+        "assets": [
+          "clap",
+          "stand",
+          "sit",
+          "point",
+          "touch_head",
+          "show_pencil"
+        ],
+        "asset_crops": {
+          "clap": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "stand": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "sit": {
+            "x": 0.055,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "point": {
+            "x": 0.5275,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "touch_head": {
+            "x": 0.055,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "show_pencil": {
+            "x": 0.5275,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "clap": "child clapping",
+          "stand": "child standing",
+          "sit": "child sitting",
+          "point": "child pointing",
+          "touch_head": "child touching own head",
+          "show_pencil": "child holding up one pencil"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "six-action-listening-grid",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Say one action only; wait for the child to point and perform it."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P010": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P010",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 10,
+        "printed_page": 9,
+        "title": "Follow Two Instructions",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Follow a simple two-step instruction.",
+        "instruction": "Listen carefully. Do both actions in the correct order.",
+        "expected_response": "follow both actions in the spoken order",
+        "model_text": {
+          "actions": [
+            "Clap",
+            "Sit"
+          ],
+          "show_order": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "three-two-step-action-strips",
+        "mechanic": "listen-and-perform-two-step",
+        "render_kind": "communication-listen-and-perform-two-step",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "clap_then_sit",
+            "pick_pencil_then_point_book",
+            "stand_then_touch_head"
+          ],
+          "activity_count": 3,
+          "strips": [
+            "clap_then_sit",
+            "pick_pencil_then_point_book",
+            "stand_then_touch_head"
+          ],
+          "response": "perform-two-actions"
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P010.png",
+        "assets": [
+          "clap_then_sit",
+          "pick_pencil_then_point_book",
+          "stand_then_touch_head"
+        ],
+        "asset_crops": {
+          "clap_then_sit": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "pick_pencil_then_point_book": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "stand_then_touch_head": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "clap_then_sit": "two clearly separated moments: clap, then sit",
+          "pick_pencil_then_point_book": "two clearly separated moments: pick up a pencil, then point to a book",
+          "stand_then_touch_head": "two clearly separated moments: stand, then touch head"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-two-step-action-strips",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Say both actions once, pause, and repeat only when needed."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P011": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P011",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 11,
+        "printed_page": 10,
+        "title": "Speak in a Full Sentence",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Expand one-word answers into short sentences.",
+        "instruction": "Look at each picture. Say one complete sentence about it.",
+        "expected_response": "name each picture using a complete short sentence",
+        "model_text": {
+          "picture": "dog",
+          "answer": "It is a dog."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-picture-sentence-prompts",
+        "mechanic": "picture-to-full-sentence",
+        "render_kind": "communication-picture-to-full-sentence",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "dog",
+            "red_ball",
+            "girl_running",
+            "boy_reading"
+          ],
+          "activity_count": 4,
+          "sentence_frames": [
+            "It is a ___ .",
+            "The ball is ___ .",
+            "The girl is ___ .",
+            "The boy is ___ ."
+          ],
+          "display_labels": {
+            "dog": "dog",
+            "red_ball": "ball",
+            "girl_running": "girl",
+            "boy_reading": "boy"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P011.png",
+        "assets": [
+          "dog",
+          "red_ball",
+          "girl_running",
+          "boy_reading"
+        ],
+        "asset_crops": {
+          "dog": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "red_ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "girl_running": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "boy_reading": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "dog": "one friendly dog",
+          "red_ball": "one red ball",
+          "girl_running": "girl running",
+          "boy_reading": "boy reading an open book"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-picture-sentence-prompts",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Accept a short complete sentence and recast gently when a word is missing."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P012": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P012",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 12,
+        "printed_page": 11,
+        "title": "My Name and Age",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Introduce oneself using name and age.",
+        "instruction": "Say your name and age. Ask an adult to help you write them.",
+        "expected_response": "say and record own name and age with adult support",
+        "model_text": {
+          "answer": "My name is Sam. I am four years old."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "name-age-speaking-card",
+        "mechanic": "personal-introduction",
+        "render_kind": "communication-personal-introduction",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "introduction_child"
+          ],
+          "activity_count": 1,
+          "fields": [
+            "My name is",
+            "I am",
+            "years old"
+          ],
+          "adult_supported": true
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P012.png",
+        "assets": [
+          "introduction_child"
+        ],
+        "asset_crops": {
+          "introduction_child": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "introduction_child": "one confident LKG child facing forward and introducing themself with a friendly gesture"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "name-age-speaking-card",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Model your own introduction, then support the child's personal response."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P013": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P013",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 13,
+        "printed_page": 12,
+        "title": "About Me",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Say two facts about oneself.",
+        "instruction": "Choose any two favourite groups. Point to your choices and say both sentences.",
+        "expected_response": "choose personal favourites and complete the sentence frames",
+        "model_text": {
+          "choice": "red",
+          "answer": "My favourite colour is red."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-preference-choice-groups",
+        "mechanic": "personal-preference-speaking",
+        "render_kind": "communication-personal-preference-speaking",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "colour_choices",
+            "food_choices",
+            "toy_choices",
+            "activity_choices"
+          ],
+          "activity_count": 4,
+          "sentence_frames": [
+            "My favourite colour is ___ .",
+            "My favourite food is ___ .",
+            "My favourite toy is ___ .",
+            "My favourite activity is ___ ."
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P013.png",
+        "assets": [
+          "colour_choices",
+          "food_choices",
+          "toy_choices",
+          "activity_choices"
+        ],
+        "asset_crops": {
+          "colour_choices": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "food_choices": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "toy_choices": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "activity_choices": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "colour_choices": "four large colour swatches without words",
+          "food_choices": "four familiar foods",
+          "toy_choices": "four familiar toys",
+          "activity_choices": "four familiar child activities"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-preference-choice-groups",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Let the child choose genuinely; do not suggest a favourite."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P014": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P014",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 14,
+        "printed_page": 13,
+        "title": "People at School",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Name school people and say what they do.",
+        "instruction": "Draw a line from each school person to what they do. Say one sentence.",
+        "expected_response": "match each school person to their work and say one sentence",
+        "model_text": {
+          "person": "teacher",
+          "action": "teaching_action",
+          "answer": "The teacher teaches us."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "people-role-matching-columns",
+        "mechanic": "people-and-role-match",
+        "render_kind": "communication-people-and-role-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "teacher",
+            "principal",
+            "helper",
+            "driver",
+            "friend",
+            "teaching_action",
+            "leading_school_action",
+            "helping_action",
+            "driving_action",
+            "playing_action"
+          ],
+          "activity_count": 10,
+          "left": [
+            "teacher",
+            "principal",
+            "helper",
+            "driver",
+            "friend"
+          ],
+          "right": [
+            "teaching_action",
+            "leading_school_action",
+            "helping_action",
+            "driving_action",
+            "playing_action"
+          ],
+          "right_display": [
+            "driving_action",
+            "playing_action",
+            "teaching_action",
+            "helping_action",
+            "leading_school_action"
+          ],
+          "response": "match-and-say"
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P014.png",
+        "assets": [
+          "teacher",
+          "principal",
+          "helper",
+          "driver",
+          "friend",
+          "teaching_action",
+          "leading_school_action",
+          "helping_action",
+          "driving_action",
+          "playing_action"
+        ],
+        "asset_crops": {
+          "teacher": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "principal": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "helper": {
+            "x": 0.055,
+            "y": 0.229,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "driver": {
+            "x": 0.5275,
+            "y": 0.229,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "friend": {
+            "x": 0.055,
+            "y": 0.423,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "teaching_action": {
+            "x": 0.5275,
+            "y": 0.423,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "leading_school_action": {
+            "x": 0.055,
+            "y": 0.617,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "helping_action": {
+            "x": 0.5275,
+            "y": 0.617,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "driving_action": {
+            "x": 0.055,
+            "y": 0.811,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "playing_action": {
+            "x": 0.5275,
+            "y": 0.811,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "teacher": "school teacher",
+          "principal": "school principal",
+          "helper": "school helper",
+          "driver": "school bus driver",
+          "friend": "class friend",
+          "teaching_action": "adult teaching children",
+          "leading_school_action": "principal welcoming children",
+          "helping_action": "helper arranging materials",
+          "driving_action": "driver beside a school bus",
+          "playing_action": "two friends sharing a game"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "people-role-matching-columns",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Ask what each person does before the child draws a matching line."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P015": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P015",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 15,
+        "printed_page": 14,
+        "title": "Things in My Classroom",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use classroom vocabulary in short sentences.",
+        "instruction": "Name each classroom object. Choose one and say: I can see a ___.",
+        "expected_response": "name classroom objects and use one in a sentence",
+        "model_text": {
+          "picture": "book",
+          "answer": "I can see a book."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "named-classroom-object-grid",
+        "mechanic": "classroom-vocabulary",
+        "render_kind": "communication-classroom-vocabulary",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "book",
+            "pencil",
+            "eraser",
+            "school_bag",
+            "chair",
+            "board",
+            "crayons"
+          ],
+          "activity_count": 7,
+          "objects": [
+            "book",
+            "pencil",
+            "eraser",
+            "school_bag",
+            "chair",
+            "board",
+            "crayons"
+          ],
+          "frame": "I can see a ___."
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P015.png",
+        "assets": [
+          "book",
+          "pencil",
+          "eraser",
+          "school_bag",
+          "chair",
+          "board",
+          "crayons"
+        ],
+        "asset_crops": {
+          "book": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          },
+          "pencil": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          },
+          "eraser": {
+            "x": 0.055,
+            "y": 0.2775,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          },
+          "school_bag": {
+            "x": 0.5275,
+            "y": 0.2775,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          },
+          "chair": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          },
+          "board": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          },
+          "crayons": {
+            "x": 0.055,
+            "y": 0.7625,
+            "w": 0.4175,
+            "h": 0.2025,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "book": "one book",
+          "pencil": "one pencil",
+          "eraser": "one eraser",
+          "school_bag": "one school bag",
+          "chair": "one chair",
+          "board": "one classroom board",
+          "crayons": "small box of crayons"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "named-classroom-object-grid",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Point to one object at a time and invite the child to name it before speaking."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P016": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P016",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 16,
+        "printed_page": 15,
+        "title": "Action Words",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Recognise and use common action words.",
+        "instruction": "Name each action. Draw a line to the matching action word. Say the sentence.",
+        "expected_response": "match each action picture to its word and say the action sentence",
+        "model_text": {
+          "picture": "jump",
+          "word": "jump",
+          "answer": "The child is jumping."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "action-picture-word-match",
+        "mechanic": "action-word-match",
+        "render_kind": "communication-action-word-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "jump",
+            "run",
+            "clap",
+            "read",
+            "write",
+            "eat"
+          ],
+          "activity_count": 6,
+          "pictures": [
+            "jump",
+            "run",
+            "clap",
+            "read",
+            "write",
+            "eat"
+          ],
+          "words": [
+            "read",
+            "eat",
+            "jump",
+            "write",
+            "run",
+            "clap"
+          ],
+          "response": "match-and-say"
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P016.png",
+        "assets": [
+          "jump",
+          "run",
+          "clap",
+          "read",
+          "write",
+          "eat"
+        ],
+        "asset_crops": {
+          "jump": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "run": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "clap": {
+            "x": 0.055,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "read": {
+            "x": 0.5275,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "write": {
+            "x": 0.055,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "eat": {
+            "x": 0.5275,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "jump": "child jumping",
+          "run": "child running",
+          "clap": "child clapping",
+          "read": "child reading",
+          "write": "child writing",
+          "eat": "child eating"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "action-picture-word-match",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Act out one word, then ask the child to find and say the matching action."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P017": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P017",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 17,
+        "printed_page": 16,
+        "title": "Describing Words",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use simple describing words.",
+        "instruction": "Look at each pair. Circle the describing word that matches the first picture.",
+        "expected_response": "choose a describing word for each clear visual pair",
+        "model_text": {
+          "pair": "big_small",
+          "answer": "The first ball is big.",
+          "show_circle": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-comparison-pairs",
+        "mechanic": "describing-word-choice",
+        "render_kind": "communication-describing-word-choice",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "big_small",
+            "tall_short",
+            "hot_cold",
+            "happy_sad"
+          ],
+          "activity_count": 4,
+          "pairs": [
+            "big_small",
+            "tall_short",
+            "hot_cold",
+            "happy_sad"
+          ],
+          "choices": [
+            [
+              "big",
+              "small"
+            ],
+            [
+              "tall",
+              "short"
+            ],
+            [
+              "hot",
+              "cold"
+            ],
+            [
+              "happy",
+              "sad"
+            ]
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P017.png",
+        "assets": [
+          "big_small",
+          "tall_short",
+          "hot_cold",
+          "happy_sad"
+        ],
+        "asset_crops": {
+          "big_small": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "tall_short": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "hot_cold": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "happy_sad": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "big_small": "one big ball and one small matching ball",
+          "tall_short": "one tall tree and one short matching tree",
+          "hot_cold": "steaming warm drink and cold drink with ice",
+          "happy_sad": "same child shown happy and sad"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-comparison-pairs",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Compare the two pictures aloud without naming the answer word."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P018": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P018",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 18,
+        "printed_page": 17,
+        "title": "Opposite Words",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Match simple opposites.",
+        "instruction": "Name each picture. Draw a line to its opposite.",
+        "expected_response": "draw lines between opposite picture-word pairs",
+        "model_text": {
+          "answer": "happy ↔ sad",
+          "show_line": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "five-opposite-pairs",
+        "mechanic": "opposite-word-match",
+        "render_kind": "communication-opposite-word-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "open_box",
+            "closed_box",
+            "full_basket",
+            "empty_basket",
+            "up_arrow_object",
+            "down_arrow_object",
+            "fast_rabbit",
+            "slow_tortoise",
+            "clean_shoe",
+            "dirty_shoe"
+          ],
+          "activity_count": 10,
+          "left": [
+            "open_box",
+            "full_basket",
+            "up_arrow_object",
+            "fast_rabbit",
+            "clean_shoe"
+          ],
+          "right": [
+            "dirty_shoe",
+            "slow_tortoise",
+            "closed_box",
+            "empty_basket",
+            "down_arrow_object"
+          ],
+          "correct_pairs": [
+            [
+              "open_box",
+              "closed_box"
+            ],
+            [
+              "full_basket",
+              "empty_basket"
+            ],
+            [
+              "up_arrow_object",
+              "down_arrow_object"
+            ],
+            [
+              "fast_rabbit",
+              "slow_tortoise"
+            ],
+            [
+              "clean_shoe",
+              "dirty_shoe"
+            ]
+          ],
+          "response": "match-and-say",
+          "display_labels": {
+            "open_box": "open",
+            "closed_box": "closed",
+            "full_basket": "full",
+            "empty_basket": "empty",
+            "up_arrow_object": "up",
+            "down_arrow_object": "down",
+            "fast_rabbit": "fast",
+            "slow_tortoise": "slow",
+            "clean_shoe": "clean",
+            "dirty_shoe": "dirty"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P018.png",
+        "assets": [
+          "open_box",
+          "closed_box",
+          "full_basket",
+          "empty_basket",
+          "up_arrow_object",
+          "down_arrow_object",
+          "fast_rabbit",
+          "slow_tortoise",
+          "clean_shoe",
+          "dirty_shoe"
+        ],
+        "asset_crops": {
+          "open_box": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "closed_box": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "full_basket": {
+            "x": 0.055,
+            "y": 0.229,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "empty_basket": {
+            "x": 0.5275,
+            "y": 0.229,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "up_arrow_object": {
+            "x": 0.055,
+            "y": 0.423,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "down_arrow_object": {
+            "x": 0.5275,
+            "y": 0.423,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "fast_rabbit": {
+            "x": 0.055,
+            "y": 0.617,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "slow_tortoise": {
+            "x": 0.5275,
+            "y": 0.617,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "clean_shoe": {
+            "x": 0.055,
+            "y": 0.811,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          },
+          "dirty_shoe": {
+            "x": 0.5275,
+            "y": 0.811,
+            "w": 0.4175,
+            "h": 0.154,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "open_box": "one open box",
+          "closed_box": "one matching closed box",
+          "full_basket": "one basket filled with apples",
+          "empty_basket": "one matching empty basket",
+          "up_arrow_object": "one toy rocket pointing up",
+          "down_arrow_object": "one matching toy rocket pointing down",
+          "fast_rabbit": "one rabbit running fast",
+          "slow_tortoise": "one tortoise walking slowly",
+          "clean_shoe": "one clean shoe",
+          "dirty_shoe": "one matching muddy shoe"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-opposite-pairs",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": true
+      },
+      "guidance": {
+        "teacher_cue": "Name one picture and ask the child to find the picture that means the opposite."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P019": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P019",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 19,
+        "printed_page": 18,
+        "title": "Position Words",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use in, on, under, beside, and behind.",
+        "instruction": "Look at the bear. Circle the correct position word. Say the full sentence.",
+        "expected_response": "choose the correct position word and say the full sentence",
+        "model_text": {
+          "picture": "bear_on_box",
+          "answer": "The bear is on the box.",
+          "show_circle": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "five-bear-position-scenes",
+        "mechanic": "position-word-choice",
+        "render_kind": "communication-position-word-choice",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "bear_in_box",
+            "bear_on_box",
+            "bear_under_box",
+            "bear_beside_box",
+            "bear_behind_box"
+          ],
+          "activity_count": 5,
+          "scenes": [
+            "bear_in_box",
+            "bear_on_box",
+            "bear_under_box",
+            "bear_beside_box",
+            "bear_behind_box"
+          ],
+          "choices": [
+            [
+              "in",
+              "on"
+            ],
+            [
+              "on",
+              "under"
+            ],
+            [
+              "under",
+              "behind"
+            ],
+            [
+              "beside",
+              "in"
+            ],
+            [
+              "behind",
+              "beside"
+            ]
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P019.png",
+        "assets": [
+          "bear_in_box",
+          "bear_on_box",
+          "bear_under_box",
+          "bear_beside_box",
+          "bear_behind_box"
+        ],
+        "asset_crops": {
+          "bear_in_box": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "bear_on_box": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "bear_under_box": {
+            "x": 0.055,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "bear_beside_box": {
+            "x": 0.5275,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "bear_behind_box": {
+            "x": 0.055,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "bear_in_box": "toy bear inside a box",
+          "bear_on_box": "toy bear on top of a box",
+          "bear_under_box": "toy bear under a raised box",
+          "bear_beside_box": "toy bear beside a box",
+          "bear_behind_box": "toy bear partly behind a box but still recognisable"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "five-bear-position-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask where the bear is and encourage the full sentence, not one word only."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P020": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P020",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 20,
+        "printed_page": 19,
+        "title": "Make a Sentence",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Arrange picture and word cards into a simple sentence.",
+        "instruction": "Put the word cards in order. Read each complete sentence.",
+        "expected_response": "arrange each word set into a meaningful sentence",
+        "model_text": {
+          "answer": "The dog is running.",
+          "show_order": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "three-colour-coded-sentence-strips",
+        "mechanic": "sentence-ordering",
+        "render_kind": "communication-sentence-ordering",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "cat_sleeping",
+            "boy_has_ball",
+            "girl_reads_book"
+          ],
+          "activity_count": 3,
+          "sentences": [
+            [
+              "sleeping.",
+              "The",
+              "cat",
+              "is"
+            ],
+            [
+              "ball.",
+              "The",
+              "boy",
+              "has",
+              "a"
+            ],
+            [
+              "reads",
+              "a",
+              "book.",
+              "The",
+              "girl"
+            ]
+          ],
+          "answers": [
+            "The cat is sleeping.",
+            "The boy has a ball.",
+            "The girl reads a book."
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P020.png",
+        "assets": [
+          "cat_sleeping",
+          "boy_has_ball",
+          "girl_reads_book"
+        ],
+        "asset_crops": {
+          "cat_sleeping": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "boy_has_ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "girl_reads_book": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "cat_sleeping": "cat sleeping",
+          "boy_has_ball": "boy holding a ball",
+          "girl_reads_book": "girl reading a book"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-colour-coded-sentence-strips",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Read the shuffled words slowly, then let the child decide the sentence order."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P021": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P021",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 21,
+        "printed_page": 20,
+        "title": "Greetings",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use greetings for different times and situations.",
+        "instruction": "Look at each situation. Circle and say the greeting that fits.",
+        "expected_response": "match and say the greeting appropriate to each situation",
+        "model_text": {
+          "situation": "morning",
+          "answer": "Good morning."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-greeting-situations",
+        "mechanic": "greeting-situation-match",
+        "render_kind": "communication-greeting-situation-match",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "morning_greeting",
+            "friend_greeting",
+            "how_are_you",
+            "goodbye"
+          ],
+          "activity_count": 4,
+          "scenes": [
+            "morning_greeting",
+            "friend_greeting",
+            "how_are_you",
+            "goodbye"
+          ],
+          "choices": [
+            "Good morning",
+            "Hello",
+            "How are you?",
+            "Goodbye"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P021.png",
+        "assets": [
+          "morning_greeting",
+          "friend_greeting",
+          "how_are_you",
+          "goodbye"
+        ],
+        "asset_crops": {
+          "morning_greeting": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "friend_greeting": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "how_are_you": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "goodbye": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "morning_greeting": "child greeting an adult in the morning",
+          "friend_greeting": "two friends meeting",
+          "how_are_you": "one child kindly checking how a friend feels",
+          "goodbye": "two children waving goodbye"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-greeting-situations",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Describe the situation first; let the child choose and say the greeting."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P022": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P022",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 22,
+        "printed_page": 21,
+        "title": "Please and Thank You",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use polite words appropriately.",
+        "instruction": "Look at each situation. Choose and say the polite words.",
+        "expected_response": "choose and say please or thank you in context",
+        "model_text": {
+          "situation": "asking for a crayon",
+          "answer": "Please may I have the crayon?"
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "three-polite-exchange-scenes",
+        "mechanic": "polite-phrase-role-play",
+        "render_kind": "communication-polite-phrase-role-play",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "ask_crayon",
+            "receive_help",
+            "give_item"
+          ],
+          "activity_count": 3,
+          "scenes": [
+            "ask_crayon",
+            "receive_help",
+            "give_item"
+          ],
+          "responses": [
+            "Please may I have the crayon?",
+            "Thank you.",
+            "Here you are."
+          ],
+          "display_labels": {
+            "ask_crayon": "Ask for a crayon",
+            "receive_help": "Receive help",
+            "give_item": "Give an item"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P022.png",
+        "assets": [
+          "ask_crayon",
+          "receive_help",
+          "give_item"
+        ],
+        "asset_crops": {
+          "ask_crayon": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "receive_help": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "give_item": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "ask_crayon": "child politely asking another child for a crayon",
+          "receive_help": "child receiving help",
+          "give_item": "child giving an item to a friend"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-polite-exchange-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Role-play each exchange with the child using a real classroom item."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P023": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P023",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 23,
+        "printed_page": 22,
+        "title": "Taking Turns",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Ask, wait, and respond during a shared activity.",
+        "instruction": "Write 1, 2 and 3 to show how to take turns. Practise the words with a partner.",
+        "expected_response": "order and practise ask, wait and take a turn",
+        "model_text": {
+          "steps": [
+            "Ask",
+            "Wait",
+            "Take a turn"
+          ],
+          "numbers": [
+            1,
+            2,
+            3
+          ]
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "three-turn-taking-moments",
+        "mechanic": "turn-taking-sequence",
+        "render_kind": "communication-turn-taking-sequence",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "ask_for_turn",
+            "wait_for_turn",
+            "take_turn"
+          ],
+          "activity_count": 3,
+          "display_order": [
+            "take_turn",
+            "ask_for_turn",
+            "wait_for_turn"
+          ],
+          "correct_order": [
+            "ask_for_turn",
+            "wait_for_turn",
+            "take_turn"
+          ],
+          "writing_boxes": 3
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P023.png",
+        "assets": [
+          "ask_for_turn",
+          "wait_for_turn",
+          "take_turn"
+        ],
+        "asset_crops": {
+          "ask_for_turn": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "wait_for_turn": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "take_turn": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "ask_for_turn": "child asking to join a block game",
+          "wait_for_turn": "child waiting calmly while friend plays",
+          "take_turn": "child taking a turn with the blocks"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-turn-taking-moments",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Practise ask, wait and take a turn with one shared object."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P024": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P024",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 24,
+        "printed_page": 23,
+        "title": "Asking for Help",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Ask a trusted adult or friend for help.",
+        "instruction": "Choose one picture. Ask for help using the sentence starter.",
+        "expected_response": "choose a situation and ask for help using the sentence frame",
+        "model_text": {
+          "situation": "open a bag",
+          "answer": "Please help me open my bag."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "three-help-situations",
+        "mechanic": "help-request-role-play",
+        "render_kind": "communication-help-request-role-play",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "open_bag_help",
+            "reach_book_help",
+            "tie_shoelace_help"
+          ],
+          "activity_count": 3,
+          "scenes": [
+            "open_bag_help",
+            "reach_book_help",
+            "tie_shoelace_help"
+          ],
+          "frame": "Please help me with ___.",
+          "display_labels": {
+            "open_bag_help": "Open a bag",
+            "reach_book_help": "Reach a book",
+            "tie_shoelace_help": "Tie a shoelace"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P024.png",
+        "assets": [
+          "open_bag_help",
+          "reach_book_help",
+          "tie_shoelace_help"
+        ],
+        "asset_crops": {
+          "open_bag_help": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "reach_book_help": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "tie_shoelace_help": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "open_bag_help": "child needing help opening a school bag",
+          "reach_book_help": "child needing help reaching a book",
+          "tie_shoelace_help": "child needing help tying a shoelace"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-help-situations",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Invite one clear help request; respond promptly and kindly."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P025": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P025",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 25,
+        "printed_page": 24,
+        "title": "Joining a Group",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use a friendly phrase to join play.",
+        "instruction": "Choose one group. Ask to join, then listen to the reply.",
+        "expected_response": "choose a group, ask to join and listen to the reply",
+        "model_text": {
+          "answer": "Can I play with you?",
+          "reply": "Yes, you can join us."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "three-play-group-scenes",
+        "mechanic": "join-play-role-play",
+        "render_kind": "communication-join-play-role-play",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "join_building",
+            "join_drawing",
+            "join_ball_game"
+          ],
+          "activity_count": 3,
+          "scenes": [
+            "join_building",
+            "join_drawing",
+            "join_ball_game"
+          ],
+          "ask": "Can I play with you?",
+          "reply": "Yes, you can join us.",
+          "display_labels": {
+            "join_building": "Build together",
+            "join_drawing": "Draw together",
+            "join_ball_game": "Play ball together"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P025.png",
+        "assets": [
+          "join_building",
+          "join_drawing",
+          "join_ball_game"
+        ],
+        "asset_crops": {
+          "join_building": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "join_drawing": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "join_ball_game": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "join_building": "two children building and one child asking to join",
+          "join_drawing": "two children drawing and one child asking to join",
+          "join_ball_game": "two children playing ball and one child asking to join"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "three-play-group-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Take the partner role and give the friendly reply after the child asks."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P026": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P026",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 26,
+        "printed_page": 25,
+        "title": "Sharing an Idea",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Express an idea and listen to another idea.",
+        "instruction": "Share one idea. Listen to your partner and give a kind reply.",
+        "expected_response": "share one idea and respond kindly to a partner's idea",
+        "model_text": {
+          "answer": "My idea is a tall tower.",
+          "reply": "I like your idea."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "paired-planning-scene",
+        "mechanic": "idea-share-and-reply",
+        "render_kind": "communication-idea-share-and-reply",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "tower_planning_pair"
+          ],
+          "activity_count": 1,
+          "frames": [
+            "My idea is ___.",
+            "I like your idea."
+          ],
+          "display_labels": {
+            "tower_planning_pair": "Share a tower idea"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P026.png",
+        "assets": [
+          "tower_planning_pair"
+        ],
+        "asset_crops": {
+          "tower_planning_pair": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "tower_planning_pair": "two children looking at blocks and respectfully sharing ideas for a tower"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "paired-planning-scene",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Give each child one turn to share an idea and one turn to respond."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P027": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P027",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 27,
+        "printed_page": 26,
+        "title": "Solve a Small Problem",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Use words to solve a simple social problem.",
+        "instruction": "Look at the problem. Circle one fair solution and say it.",
+        "expected_response": "choose a fair solution and say it to a partner",
+        "model_text": {
+          "answer": "Let us share the book.",
+          "show_circle": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "problem-scene-three-solutions",
+        "mechanic": "social-problem-choice",
+        "render_kind": "communication-social-problem-choice",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "same_toy_problem",
+            "take_turns_solution",
+            "timer_solution",
+            "other_toy_solution"
+          ],
+          "activity_count": 4,
+          "problem": "same_toy_problem",
+          "solutions": [
+            "take_turns_solution",
+            "timer_solution",
+            "other_toy_solution"
+          ],
+          "response": "circle-and-say",
+          "display_labels": {
+            "same_toy_problem": "Both children want the same toy",
+            "take_turns_solution": "Take turns",
+            "timer_solution": "Use a timer",
+            "other_toy_solution": "Choose another toy"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P027.png",
+        "assets": [
+          "same_toy_problem",
+          "take_turns_solution",
+          "timer_solution",
+          "other_toy_solution"
+        ],
+        "asset_crops": {
+          "same_toy_problem": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "take_turns_solution": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "timer_solution": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "other_toy_solution": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "same_toy_problem": "two children both reaching for the same toy without aggression",
+          "take_turns_solution": "children taking turns with the toy",
+          "timer_solution": "children using a simple sand timer",
+          "other_toy_solution": "one child choosing another appealing toy"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "problem-scene-three-solutions",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask which solution is fair and why; accept more than one fair choice."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P028": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P028",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 28,
+        "printed_page": 27,
+        "title": "Who, What and Where",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Answer simple who, what, and where questions.",
+        "instruction": "Look at the playground. Answer the who, what and where questions.",
+        "expected_response": "answer who, what and where from one controlled scene",
+        "model_text": {
+          "question": "Where is the kite?",
+          "answer": "The kite is in the sky."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "playground-scene-three-questions",
+        "mechanic": "who-what-where",
+        "render_kind": "communication-who-what-where",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "playground_scene"
+          ],
+          "activity_count": 1,
+          "scene": "playground_scene",
+          "questions": [
+            "Who is on the swing?",
+            "What is the boy holding?",
+            "Where is the ball?"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P028.png",
+        "assets": [
+          "playground_scene"
+        ],
+        "asset_crops": {
+          "playground_scene": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "playground_scene": "controlled playground scene with a girl on a swing, boy holding a kite and a ball under a bench"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "playground-scene-three-questions",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask the three questions in order and allow time to scan the scene."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P029": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P029",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 29,
+        "printed_page": 28,
+        "title": "Ask a Question",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Form a simple question from a picture.",
+        "instruction": "Look at each picture. Use the starter to ask a complete question.",
+        "expected_response": "use each picture and starter to ask a complete question",
+        "model_text": {
+          "starter": "What is",
+          "answer": "What is the child making?"
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-question-starter-scenes",
+        "mechanic": "form-a-question",
+        "render_kind": "communication-form-a-question",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "who_scene",
+            "what_scene",
+            "where_scene",
+            "why_scene"
+          ],
+          "activity_count": 4,
+          "scenes": [
+            "who_scene",
+            "what_scene",
+            "where_scene",
+            "why_scene"
+          ],
+          "starters": [
+            "Who is",
+            "What is",
+            "Where is",
+            "Why is"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P029.png",
+        "assets": [
+          "who_scene",
+          "what_scene",
+          "where_scene",
+          "why_scene"
+        ],
+        "asset_crops": {
+          "who_scene": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "what_scene": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "where_scene": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "why_scene": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "who_scene": "adult helping a child",
+          "what_scene": "child making a paper boat",
+          "where_scene": "teddy hidden beside a bed",
+          "why_scene": "child holding an umbrella in rain"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-question-starter-scenes",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Say the starter once and let the child form the rest of the question."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P030": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P030",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 30,
+        "printed_page": 29,
+        "title": "Yes or No?",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Answer and extend a yes/no question.",
+        "instruction": "Listen to each question. Circle Yes or No, then say the full answer.",
+        "expected_response": "answer yes or no and repeat the complete response",
+        "model_text": {
+          "question": "Is the sun yellow?",
+          "answer": "Yes, it is.",
+          "show_circle": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-picture-question-cards",
+        "mechanic": "yes-no-and-extend",
+        "render_kind": "communication-yes-no-and-extend",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "sleeping_cat",
+            "red_ball",
+            "flying_fish",
+            "reading_girl"
+          ],
+          "activity_count": 4,
+          "cards": [
+            "sleeping_cat",
+            "red_ball",
+            "flying_fish",
+            "reading_girl"
+          ],
+          "questions": [
+            "Is the cat sleeping?",
+            "Is the ball red?",
+            "Can the fish fly?",
+            "Is the girl reading?"
+          ],
+          "choices": [
+            "Yes",
+            "No"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P030.png",
+        "assets": [
+          "sleeping_cat",
+          "red_ball",
+          "flying_fish",
+          "reading_girl"
+        ],
+        "asset_crops": {
+          "sleeping_cat": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "red_ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "flying_fish": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "reading_girl": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "sleeping_cat": "cat clearly sleeping",
+          "red_ball": "one red ball",
+          "flying_fish": "fish in water, clearly not flying",
+          "reading_girl": "girl reading a book"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-picture-question-cards",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "After Yes or No, prompt the child to repeat the complete answer."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
     "CC-LKG-V4-P031": {
       "identity": {
         "page_id": "CC-LKG-V4-P031",
+        "book_slug": "communication-champions",
+        "level": "lkg",
         "physical_page": 31,
         "printed_page": 30,
         "title": "Answer in a Sentence",
-        "page_type": "activity_page"
+        "page_type": "learning_page"
       },
       "learning": {
         "objective": "Respond to questions using a complete short sentence.",
         "instruction": "Look at each picture. Listen to the question. Answer in one complete sentence.",
-        "expected_response": "The child answers both questions using complete short sentences.",
-        "model_text": "The boy is petting the dog."
+        "expected_response": "answer each picture question using a complete short sentence",
+        "model_text": {
+          "question": "What do you see?",
+          "answer": "I see a tree."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
       },
       "activity": {
-        "archetype": "A10 Speak, Listen & Respond",
-        "mechanic": "question-answer-sentence-pairs",
-        "response_mode": "oral-complete-sentence",
-        "activity_count": 2
+        "archetype": "three-picture-question-pairs",
+        "mechanic": "answer-in-a-sentence",
+        "render_kind": "communication-answer-in-a-sentence",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "see_bus",
+            "girl_drawing",
+            "book_on_table"
+          ],
+          "activity_count": 3,
+          "cards": [
+            "see_bus",
+            "girl_drawing",
+            "book_on_table"
+          ],
+          "questions": [
+            "What do you see?",
+            "What is she doing?",
+            "Where is the book?"
+          ],
+          "starters": [
+            "I see ___.",
+            "She is ___.",
+            "It is ___ the table."
+          ]
+        }
       },
       "illustration": {
         "source_asset": "CC-LKG-V4-P031.png",
-        "artwork_only": true,
-        "assets": ["boy_with_dog", "girl_with_cat"],
-        "asset_crops": {
-          "boy_with_dog": [0.00, 0.05, 0.50, 0.95],
-          "girl_with_cat": [0.50, 0.05, 1.00, 0.95]
-        }
-      },
-      "mechanics": {
-        "pairs": [
-          {
-            "asset": "boy_with_dog",
-            "question": "What is the boy doing?",
-            "model_answer": "The boy is petting the dog.",
-            "response_type": "model-and-repeat"
-          },
-          {
-            "asset": "girl_with_cat",
-            "question": "What is the girl doing?",
-            "sentence_starter": "The girl is ________ the cat.",
-            "accepted_answer": "The girl is feeding the cat.",
-            "response_type": "picture-supported-sentence"
-          }
+        "assets": [
+          "see_bus",
+          "girl_drawing",
+          "book_on_table"
         ],
-        "maximum_writing_lines": 0,
-        "oral_response_only": true
-      },
-      "guidance": {
-        "teacher_cue": "Model the first sentence slowly. Ask the second question, pause, and invite the child to complete the sentence aloud."
+        "asset_crops": {
+          "see_bus": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "girl_drawing": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "book_on_table": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "see_bus": "one bus in a simple setting",
+          "girl_drawing": "girl drawing",
+          "book_on_table": "book clearly on top of a table"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
       },
       "layout": {
-        "template": "two-question-answer-pairs-v1",
+        "template": "three-picture-question-pairs",
         "parent_panel": false,
         "home_connection": false,
-        "generic_response_panel": false
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Model the first answer, then ask the remaining questions without supplying words."
       },
       "validation": {
-        "allow_fallback": false,
         "status": "READY",
-        "required_asset_count": 2,
-        "required_response_count": 2,
-        "blocking_reasons": []
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P032": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P032",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 32,
+        "printed_page": 31,
+        "title": "Picture Talk",
+        "page_type": "learning_page"
       },
-      "source_lineage": {
-        "source_prompt_id": "CC-LKG-V4-P031",
-        "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P031-answer-in-a-sentence.json",
-        "approved_page_direction": "Two picture-supported oral sentence prompts matching the supplied illustration. No generic response box."
+      "learning": {
+        "objective": "Observe and discuss a detailed picture.",
+        "instruction": "Look carefully at the park. Name what you see, describe an action and predict what happens next.",
+        "expected_response": "observe, name details and predict what might happen next",
+        "model_text": {
+          "question": "What can you see?",
+          "answer": "I can see children playing."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "rich-park-scene-prompt-strip",
+        "mechanic": "guided-picture-talk",
+        "render_kind": "communication-guided-picture-talk",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "park_scene"
+          ],
+          "activity_count": 1,
+          "scene": "park_scene",
+          "questions": [
+            "What can you see?",
+            "What is happening?",
+            "What might happen next?"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P032.png",
+        "assets": [
+          "park_scene"
+        ],
+        "asset_crops": {
+          "park_scene": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "park_scene": "rich but controlled park scene with eight to ten clear people, actions and familiar objects"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "rich-park-scene-prompt-strip",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Follow the three prompts from naming to action to prediction."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P033": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P033",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 33,
+        "printed_page": 32,
+        "title": "Story Sequence",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Order four story pictures.",
+        "instruction": "Write 1, 2, 3 and 4 to order the pictures. Retell the story.",
+        "expected_response": "number four events and retell them in order",
+        "model_text": {
+          "events": [
+            "seed",
+            "water",
+            "sprout",
+            "flower"
+          ],
+          "numbers": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-shuffled-story-cards",
+        "mechanic": "story-sequence-and-retell",
+        "render_kind": "communication-story-sequence-and-retell",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "seed",
+            "water",
+            "sprout",
+            "flower"
+          ],
+          "activity_count": 4,
+          "display_order": [
+            "flower",
+            "seed",
+            "sprout",
+            "water"
+          ],
+          "correct_order": [
+            "seed",
+            "water",
+            "sprout",
+            "flower"
+          ],
+          "writing_boxes": 4,
+          "display_labels": {
+            "flower": "flower grows",
+            "seed": "plant seed",
+            "sprout": "sprout appears",
+            "water": "water seed"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P033.png",
+        "assets": [
+          "seed",
+          "water",
+          "sprout",
+          "flower"
+        ],
+        "asset_crops": {
+          "seed": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "water": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "sprout": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "flower": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "seed": "child placing a seed in soil",
+          "water": "child watering the planted seed",
+          "sprout": "small green sprout emerging",
+          "flower": "grown flowering plant"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-shuffled-story-cards",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask what happens first; do not number any independent picture for the child."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P034": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P034",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 34,
+        "printed_page": 33,
+        "title": "Retell a Short Story",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Retell a familiar four-picture story.",
+        "instruction": "Look at the four pictures. Retell who, where, what happened and how it ended.",
+        "expected_response": "retell who, where, what happened and how it ended",
+        "model_text": {
+          "answer": "Mia was at the park. Her hat blew away. She found it by a tree."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "four-event-story-strip",
+        "mechanic": "four-picture-retell",
+        "render_kind": "communication-four-picture-retell",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "play_with_toy",
+            "toy_missing",
+            "search_for_toy",
+            "toy_found"
+          ],
+          "activity_count": 4,
+          "events": [
+            "play_with_toy",
+            "toy_missing",
+            "search_for_toy",
+            "toy_found"
+          ],
+          "prompts": [
+            "Who?",
+            "Where?",
+            "What happened?",
+            "How did it end?"
+          ],
+          "display_labels": {
+            "play_with_toy": "playing with teddy",
+            "toy_missing": "teddy is missing",
+            "search_for_toy": "looking under the chair",
+            "toy_found": "teddy is found"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P034.png",
+        "assets": [
+          "play_with_toy",
+          "toy_missing",
+          "search_for_toy",
+          "toy_found"
+        ],
+        "asset_crops": {
+          "play_with_toy": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "toy_missing": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "search_for_toy": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "toy_found": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "play_with_toy": "child playing with a favourite toy",
+          "toy_missing": "child noticing the toy is missing",
+          "search_for_toy": "child looking under a chair for the toy",
+          "toy_found": "child happily finding the toy under the chair"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "four-event-story-strip",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Point to each picture in order and use only the four retelling prompts."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P035": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P035",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 35,
+        "printed_page": 34,
+        "title": "Make a Story Ending",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Choose or draw a logical ending.",
+        "instruction": "Look at the story beginning. Circle a sensible ending or draw another ending.",
+        "expected_response": "choose a logical ending or draw another one",
+        "model_text": {
+          "beginning": "A child finds a lost puppy.",
+          "ending": "The puppy finds its owner."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "story-starter-ending-choices-draw",
+        "mechanic": "choose-story-ending",
+        "render_kind": "communication-choose-story-ending",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "starter_one",
+            "starter_two",
+            "ending_owner",
+            "ending_safe_help"
+          ],
+          "activity_count": 4,
+          "starters": [
+            "starter_one",
+            "starter_two"
+          ],
+          "endings": [
+            "ending_owner",
+            "ending_safe_help"
+          ],
+          "drawing_box": true
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P035.png",
+        "assets": [
+          "starter_one",
+          "starter_two",
+          "ending_owner",
+          "ending_safe_help"
+        ],
+        "asset_crops": {
+          "starter_one": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "starter_two": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "ending_owner": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "ending_safe_help": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "starter_one": "child sees a small lost puppy near a park gate",
+          "starter_two": "child approaches the puppy carefully with an adult nearby",
+          "ending_owner": "puppy reunited with its owner",
+          "ending_safe_help": "child and adult take the puppy to a safe help desk"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "story-starter-ending-choices-draw",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask what could happen next and accept any ending that fits the beginning."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P036": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P036",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 36,
+        "printed_page": 35,
+        "title": "Describe a Character",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Describe how a character looks and feels.",
+        "instruction": "Look at the character. Choose words that describe how the character looks and feels.",
+        "expected_response": "choose visual details and describe the character",
+        "model_text": {
+          "answer": "The character is happy."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "character-with-attribute-choices",
+        "mechanic": "character-description",
+        "render_kind": "communication-character-description",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "story_character"
+          ],
+          "activity_count": 1,
+          "character": "story_character",
+          "choice_pairs": [
+            [
+              "brown hair",
+              "black hair"
+            ],
+            [
+              "pink dress",
+              "green dress"
+            ],
+            [
+              "pigtails",
+              "short hair"
+            ],
+            [
+              "waving",
+              "sleeping"
+            ],
+            [
+              "happy",
+              "worried"
+            ]
+          ],
+          "display_labels": {
+            "story_character": "Look closely at the character"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P036.png",
+        "assets": [
+          "story_character"
+        ],
+        "asset_crops": {
+          "story_character": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "story_character": "one friendly child story character with clear clothing, action and facial expression"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "character-with-attribute-choices",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask for one appearance word and one feeling word."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P037": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P037",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 37,
+        "printed_page": 36,
+        "title": "Show and Tell",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Speak about one familiar object.",
+        "instruction": "Choose one object. Show it and answer the four speaking questions.",
+        "expected_response": "choose one familiar object and answer four speaking prompts",
+        "model_text": {
+          "object": "ball",
+          "answer": "This is my ball. It is red."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "object-choice-speaking-card",
+        "mechanic": "show-and-tell",
+        "render_kind": "communication-show-and-tell",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "show_tell_child",
+            "ball",
+            "toy_car",
+            "book",
+            "teddy"
+          ],
+          "activity_count": 5,
+          "model": "show_tell_child",
+          "choices": [
+            "ball",
+            "toy_car",
+            "book",
+            "teddy"
+          ],
+          "questions": [
+            "What is it?",
+            "What colour is it?",
+            "What can it do?",
+            "Why do you like it?"
+          ],
+          "display_labels": {
+            "ball": "ball",
+            "toy_car": "toy car",
+            "book": "book",
+            "teddy": "teddy bear"
+          }
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P037.png",
+        "assets": [
+          "show_tell_child",
+          "ball",
+          "toy_car",
+          "book",
+          "teddy"
+        ],
+        "asset_crops": {
+          "show_tell_child": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "ball": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "toy_car": {
+            "x": 0.055,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "book": {
+            "x": 0.5275,
+            "y": 0.358333,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          },
+          "teddy": {
+            "x": 0.055,
+            "y": 0.681667,
+            "w": 0.4175,
+            "h": 0.283333,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "show_tell_child": "child confidently holding one familiar object for show and tell",
+          "ball": "one ball",
+          "toy_car": "one toy car",
+          "book": "one picture book",
+          "teddy": "one teddy bear"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "object-choice-speaking-card",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Let the child hold or point to one chosen object while speaking."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P038": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P038",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 38,
+        "printed_page": 37,
+        "title": "My News",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Share one event from home or school.",
+        "instruction": "Draw one piece of news. Tell who was there, what happened and how you felt.",
+        "expected_response": "draw one event and tell who, what and feeling",
+        "model_text": {
+          "answer": "I played with my friend. I felt happy."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "drawing-frame-three-oral-prompts",
+        "mechanic": "personal-news-journal",
+        "render_kind": "communication-personal-news-journal",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "who_icon",
+            "event_icon",
+            "feeling_icon"
+          ],
+          "activity_count": 3,
+          "icons": [
+            "who_icon",
+            "event_icon",
+            "feeling_icon"
+          ],
+          "questions": [
+            "Who was there?",
+            "What happened?",
+            "How did you feel?"
+          ],
+          "drawing_frame": true
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P038.png",
+        "assets": [
+          "who_icon",
+          "event_icon",
+          "feeling_icon"
+        ],
+        "asset_crops": {
+          "who_icon": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "event_icon": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "feeling_icon": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "who_icon": "simple icon of two familiar people",
+          "event_icon": "simple icon of an event or action",
+          "feeling_icon": "simple happy-neutral-sad feeling faces"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "drawing-frame-three-oral-prompts",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Listen first; write the child's words only when support is needed."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P039": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P039",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 39,
+        "printed_page": 38,
+        "title": "Speak to the Group",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Practise speaking clearly to a small group.",
+        "instruction": "Choose one topic. Speak clearly to the group and use the four speaking behaviours.",
+        "expected_response": "speak to a small group and use the four speaking behaviours",
+        "model_text": {
+          "answer": "My favourite toy is my red ball."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "speaker-audience-checklist",
+        "mechanic": "small-group-speaking",
+        "render_kind": "communication-small-group-speaking",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "small_group_speaker"
+          ],
+          "activity_count": 1,
+          "scene": "small_group_speaker",
+          "topics": [
+            "My favourite toy",
+            "A fun day",
+            "Something I made"
+          ],
+          "checklist": [
+            "Stand tall",
+            "Look up",
+            "Speak clearly",
+            "Listen to questions"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P039.png",
+        "assets": [
+          "small_group_speaker"
+        ],
+        "asset_crops": {
+          "small_group_speaker": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "small_group_speaker": "one child speaking to three attentive classmates with natural eye contact and respectful posture"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "speaker-audience-checklist",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Use a group of three listeners and keep the speaking turn brief and positive."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P040": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P040",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 40,
+        "printed_page": 39,
+        "title": "Listen and Respond",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Listen to a peer and respond kindly.",
+        "instruction": "Listen to your partner. Circle and say one kind reply that matches what you heard.",
+        "expected_response": "listen to a peer and choose a kind relevant reply",
+        "model_text": {
+          "reply": "Can you tell me more?"
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "peer-sharing-response-choices",
+        "mechanic": "listen-and-kindly-respond",
+        "render_kind": "communication-listen-and-kindly-respond",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "peer_sharing_pair"
+          ],
+          "activity_count": 1,
+          "scene": "peer_sharing_pair",
+          "responses": [
+            "That is interesting.",
+            "I like your idea.",
+            "Can you tell me more?"
+          ],
+          "response": "circle"
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P040.png",
+        "assets": [
+          "peer_sharing_pair"
+        ],
+        "asset_crops": {
+          "peer_sharing_pair": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "peer_sharing_pair": "one child sharing an idea while another child listens attentively and prepares to respond"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "peer-sharing-response-choices",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Ask the listener to repeat one detail before choosing a kind reply."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P041": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P041",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 41,
+        "printed_page": 40,
+        "title": "My Communication Journal",
+        "page_type": "learning_page"
+      },
+      "learning": {
+        "objective": "Reflect on listening and speaking progress.",
+        "instruction": "Draw one communication moment. Tick the skills you used and finish the reflection.",
+        "expected_response": "mark practised skills and complete one reflection",
+        "model_text": {
+          "skill": "I listened",
+          "reflection": "Today I was proud when I listened."
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "drawing-frame-four-skill-checks",
+        "mechanic": "communication-reflection",
+        "render_kind": "communication-communication-reflection",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "listened_icon",
+            "asked_icon",
+            "shared_icon",
+            "story_icon"
+          ],
+          "activity_count": 4,
+          "skills": [
+            "I listened",
+            "I asked",
+            "I shared",
+            "I told a story"
+          ],
+          "drawing_frame": true,
+          "reflection": "Today I was proud when ___."
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P041.png",
+        "assets": [
+          "listened_icon",
+          "asked_icon",
+          "shared_icon",
+          "story_icon"
+        ],
+        "asset_crops": {
+          "listened_icon": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "asked_icon": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "shared_icon": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "story_icon": {
+            "x": 0.5275,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "listened_icon": "child listening",
+          "asked_icon": "child asking a question",
+          "shared_icon": "child sharing an idea",
+          "story_icon": "child telling a short story"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "drawing-frame-four-skill-checks",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Discuss the drawing briefly, then let the child choose the skills used."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P042": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P042",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 42,
+        "printed_page": 41,
+        "title": "Certificate of Completion",
+        "page_type": "certificate"
+      },
+      "learning": {
+        "objective": "Celebrate completion of Communication Champions – LKG.",
+        "instruction": "Celebrate completing Communication Champions.",
+        "expected_response": "record completion; no child learning task",
+        "model_text": {
+          "not_required": true
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "deterministic-certificate",
+        "mechanic": "certificate",
+        "render_kind": "communication-certificate",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "achievement_badge",
+            "trophy",
+            "confetti"
+          ],
+          "activity_count": 3,
+          "certificate_statement": "for listening carefully, speaking clearly, asking questions, joining conversations and sharing stories"
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P042.png",
+        "assets": [
+          "achievement_badge",
+          "trophy",
+          "confetti"
+        ],
+        "asset_crops": {
+          "achievement_badge": {
+            "x": 0.055,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "trophy": {
+            "x": 0.5275,
+            "y": 0.035,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          },
+          "confetti": {
+            "x": 0.055,
+            "y": 0.52,
+            "w": 0.4175,
+            "h": 0.445,
+            "padding": 0.008
+          }
+        },
+        "asset_meanings": {
+          "achievement_badge": "premium communication achievement badge without words",
+          "trophy": "friendly gold trophy",
+          "confetti": "compact crop-safe celebratory confetti cluster"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "deterministic-certificate",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": false,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Complete the child's name and date, then celebrate specific communication growth."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
+      }
+    },
+    "CC-LKG-V4-P043": {
+      "identity": {
+        "page_id": "CC-LKG-V4-P043",
+        "book_slug": "communication-champions",
+        "level": "lkg",
+        "physical_page": 43,
+        "printed_page": 42,
+        "title": "I Am a Communication Champion!",
+        "page_type": "celebration"
+      },
+      "learning": {
+        "objective": "Celebrate communication achievements.",
+        "instruction": "Tick the communication skills you can use. Say the champion sentence.",
+        "expected_response": "review and celebrate six communication achievements",
+        "model_text": {
+          "answer": "I am a communication champion!"
+        },
+        "child_thinking": "I look, listen, think, speak and respond for this exact communication task."
+      },
+      "activity": {
+        "archetype": "achievement-badge-six-checks",
+        "mechanic": "achievement-celebration",
+        "render_kind": "communication-achievement-celebration",
+        "response_mode": "page-specific",
+        "mechanics": {
+          "asset_order": [
+            "champion_child"
+          ],
+          "activity_count": 1,
+          "checks": [
+            "I listen",
+            "I speak in sentences",
+            "I ask questions",
+            "I take turns",
+            "I share ideas",
+            "I tell stories"
+          ]
+        }
+      },
+      "illustration": {
+        "source_asset": "CC-LKG-V4-P043.png",
+        "assets": [
+          "champion_child"
+        ],
+        "asset_crops": {
+          "champion_child": {
+            "x": 0.06,
+            "y": 0.05,
+            "w": 0.88,
+            "h": 0.9,
+            "padding": 0.012
+          }
+        },
+        "asset_meanings": {
+          "champion_child": "confident LKG child celebrating communication skills with small listening, speaking and storytelling symbols"
+        },
+        "requires_generated_art": true,
+        "artwork_only": true,
+        "crop_safe": true,
+        "must_match_prompt": true
+      },
+      "layout": {
+        "template": "achievement-badge-six-checks",
+        "parent_panel": false,
+        "home_connection": false,
+        "generic_response_panel": false,
+        "completed_example": true,
+        "independent_answers_unmarked": true,
+        "object_names_visible": false
+      },
+      "guidance": {
+        "teacher_cue": "Review each achievement and celebrate effort without treating the checks as a test."
+      },
+      "validation": {
+        "status": "READY",
+        "allow_fallback": false,
+        "illustration_contract_aligned": true,
+        "curriculum_first": true,
+        "teaching_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ],
+        "blocked_reasons": []
       }
     }
   }

@@ -65,6 +65,48 @@ def paste_asset(common, canvas, asset: Image.Image, box, *, inset=0):
     common.paste_fit(canvas, tight_asset(asset), box, inset=inset)
 
 
+def readable_object_name(asset_name: str) -> str:
+    """Return the child-facing name for a semantic illustration asset."""
+    value = asset_name
+    for prefix in ("shape_", "object_", "story_"):
+        if value.startswith(prefix):
+            value = value[len(prefix):]
+    parts = value.split("_")
+    if len(parts) >= 3 and parts[0] in {"group", "set"} and parts[1].isdigit():
+        parts = parts[2:]
+    value = " ".join(parts)
+    return value.replace("tin can", "can").strip()
+
+
+def paste_named_asset(
+    common,
+    canvas,
+    draw,
+    base,
+    template,
+    asset_name: str,
+    asset: Image.Image,
+    box,
+    *,
+    label: str | None = None,
+    inset: int = 0,
+):
+    """Place one object or object group with a readable word label."""
+    x0, y0, x1, y1 = box
+    caption_height = min(54, max(38, round((y1 - y0) * 0.12)))
+    paste_asset(common, canvas, asset, [x0, y0, x1, y1 - caption_height], inset=inset)
+    text(
+        base,
+        draw,
+        template,
+        label or readable_object_name(asset_name),
+        [x0 + 8, y1 - caption_height, x1 - 8, y1],
+        size=27,
+        bold=True,
+        lines=1,
+    )
+
+
 def answer_choices(draw, base, template, values, box, *, radius=52):
     x0, y0, x1, y1 = box
     gap = (x1 - x0) // (len(values) + 1)
@@ -121,7 +163,7 @@ def render_count_match(canvas, draw, page, assets, base, template, common):
     for i, (asset_name, _) in enumerate(pairs):
         top = y0 + i * (row_h + gap); bottom = top + row_h
         common.panel(draw, [190, top, 1120, bottom], outline="#7E57C2", width=3)
-        paste_asset(common, canvas, assets[asset_name], [220, top + 20, 1000, bottom - 20])
+        paste_named_asset(common, canvas, draw, base, template, asset_name, assets[asset_name], [220, top + 20, 1000, bottom - 20])
         common.circle(draw, base, template, 1055, (top + bottom) // 2)
         common.panel(draw, [1510, top + 35, 2270, bottom - 35], outline="#1768B3", width=3)
         common.circle(draw, base, template, 1560, (top + bottom) // 2)
@@ -133,28 +175,30 @@ def render_count_circle(canvas, draw, page, assets, base, template, common):
     boxes = common.grid_boxes(len(cards), top=815, bottom=2990)
     for card, box in zip(cards, boxes):
         common.panel(draw, box, outline="#7E57C2", width=3)
-        paste_asset(common, canvas, assets[card["asset"]], [box[0] + 35, box[1] + 30, box[2] - 35, box[3] - 155])
+        paste_named_asset(common, canvas, draw, base, template, card["asset"], assets[card["asset"]], [box[0] + 35, box[1] + 30, box[2] - 35, box[3] - 155])
         answer_choices(draw, base, template, card["choices"], [box[0] + 35, box[3] - 145, box[2] - 35, box[3] - 15])
 
 
 def render_quantity_comparison(canvas, draw, page, assets, base, template, common):
     rows = page["activity"]["mechanics"]["rows"]
     y = 815
-    for row in rows:
+    labels = [("apples", "apples"), ("fish", "fish"), ("stars", "stars")]
+    for index, row in enumerate(rows):
         row_box(common, draw, y, y + 650)
         text(base, draw, template, row["prompt"], [250, y + 20, 2230, y + 100], size=32, lines=1)
-        paste_asset(common, canvas, assets[row["left"]], [230, y + 110, 1040, y + 600])
-        paste_asset(common, canvas, assets[row["right"]], [1440, y + 110, 2250, y + 600])
+        paste_named_asset(common, canvas, draw, base, template, row["left"], assets[row["left"]], [230, y + 110, 1040, y + 600], label=labels[index][0])
+        paste_named_asset(common, canvas, draw, base, template, row["right"], assets[row["right"]], [1440, y + 110, 2250, y + 600], label=labels[index][1])
         y += 710
 
 
 def render_equal_groups(canvas, draw, page, assets, base, template, common):
     rows = page["activity"]["mechanics"]["rows"]
     y = 815
-    for row in rows:
+    labels = [("oranges", "oranges"), ("butterflies", "butterflies"), ("blocks", "blocks")]
+    for index, row in enumerate(rows):
         row_box(common, draw, y, y + 640)
-        paste_asset(common, canvas, assets[row["left"]], [220, y + 30, 980, y + 500])
-        paste_asset(common, canvas, assets[row["right"]], [1040, y + 30, 1800, y + 500])
+        paste_named_asset(common, canvas, draw, base, template, row["left"], assets[row["left"]], [220, y + 30, 980, y + 500], label=labels[index][0])
+        paste_named_asset(common, canvas, draw, base, template, row["right"], assets[row["right"]], [1040, y + 30, 1800, y + 500], label=labels[index][1])
         answer_choices(draw, base, template, ["YES", "NO"], [1790, y + 120, 2280, y + 530], radius=56)
         y += 710
 
@@ -176,11 +220,12 @@ def render_missing_number(canvas, draw, page, assets, base, template, common):
 
 def render_addition(canvas, draw, page, assets, base, template, common):
     y = 815
-    for p in page["activity"]["mechanics"]["problems"]:
+    labels = [("birds", "bird"), ("cars", "cars"), ("flowers", "flowers")]
+    for index, p in enumerate(page["activity"]["mechanics"]["problems"]):
         row_box(common, draw, y, y + 640)
-        paste_asset(common, canvas, assets[p["left"]], [220, y + 40, 820, y + 480])
+        paste_named_asset(common, canvas, draw, base, template, p["left"], assets[p["left"]], [220, y + 40, 820, y + 480], label=labels[index][0])
         text(base, draw, template, "+", [830, y + 150, 980, y + 350], size=78, lines=1)
-        paste_asset(common, canvas, assets[p["right"]], [990, y + 40, 1590, y + 480])
+        paste_named_asset(common, canvas, draw, base, template, p["right"], assets[p["right"]], [990, y + 40, 1590, y + 480], label=labels[index][1])
         text(base, draw, template, "=", [1600, y + 150, 1750, y + 350], size=72, lines=1)
         answer_choices(draw, base, template, p["choices"], [1720, y + 80, 2270, y + 560])
         y += 710
@@ -190,7 +235,7 @@ def render_subtraction(canvas, draw, page, assets, base, template, common):
     y = 815
     for p in page["activity"]["mechanics"]["problems"]:
         row_box(common, draw, y, y + 640)
-        paste_asset(common, canvas, assets[p["asset"]], [220, y + 30, 1580, y + 540])
+        paste_named_asset(common, canvas, draw, base, template, p["asset"], assets[p["asset"]], [220, y + 30, 1580, y + 540])
         text(base, draw, template, f"Cross out {p['take_away']}", [1600, y + 55, 2250, y + 170], size=32, lines=1)
         answer_choices(draw, base, template, p["choices"], [1580, y + 230, 2270, y + 590])
         y += 710
@@ -227,7 +272,7 @@ def render_number_line(canvas, draw, page, assets, base, template, common):
     y = 820
     for row in page["activity"]["mechanics"]["rows"]:
         row_box(common, draw, y, y + 650)
-        paste_asset(common, canvas, assets[row["asset"]], [220, y + 145, 560, y + 500])
+        paste_named_asset(common, canvas, draw, base, template, row["asset"], assets[row["asset"]], [220, y + 145, 560, y + 500])
         start_n, end_n = row["range"]; count = end_n - start_n
         x0, x1, line_y = 650, 1740, y + 325
         draw.line([x0, line_y, x1, line_y], fill="#5B3F9A", width=7)
@@ -262,7 +307,7 @@ def render_math_stories(canvas, draw, page, assets, base, template, common):
     y = 815
     for story in page["activity"]["mechanics"]["stories"]:
         row_box(common, draw, y, y + 640)
-        paste_asset(common, canvas, assets[story["asset"]], [220, y + 25, 1570, y + 620])
+        paste_named_asset(common, canvas, draw, base, template, story["asset"], assets[story["asset"]], [220, y + 25, 1570, y + 620])
         text(base, draw, template, story["question"], [1600, y + 60, 2260, y + 190], size=32, lines=2)
         answer_choices(draw, base, template, story["choices"], [1580, y + 230, 2270, y + 590])
         y += 710
@@ -274,12 +319,12 @@ def render_shape_match(canvas, draw, page, assets, base, template, common):
     for i, name in enumerate(m["left"]):
         top = y0 + i * (row_h + gap); bottom = top + row_h
         common.panel(draw, [190, top, 1120, bottom], outline="#7E57C2", width=3)
-        paste_asset(common, canvas, assets[name], [280, top + 45, 940, bottom - 45])
+        paste_named_asset(common, canvas, draw, base, template, name, assets[name], [280, top + 45, 940, bottom - 45])
         common.circle(draw, base, template, 1055, (top + bottom) // 2)
         right_name = m["right"][i]
         common.panel(draw, [1510, top + 35, 2270, bottom - 35], outline="#1768B3", width=3)
         common.circle(draw, base, template, 1560, (top + bottom) // 2)
-        paste_asset(common, canvas, assets[right_name], [1640, top + 50, 2160, bottom - 50])
+        paste_named_asset(common, canvas, draw, base, template, right_name, assets[right_name], [1640, top + 50, 2160, bottom - 50])
 
 
 RENDERERS = {

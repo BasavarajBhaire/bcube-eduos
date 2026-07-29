@@ -1,0 +1,990 @@
+{
+  "version": "1.0.0",
+  "status": "APPROVED_FOR_IMPLEMENTATION",
+  "book": "Early Literacy Adventures",
+  "level": "LKG (4+)",
+  "scope": "EL-LKG-V4-P008 through EL-LKG-V4-P043",
+  "authoritative_sources": [
+    "production-prompts/early-literacy-adventures/lkg/v4/release-manifest.json",
+    "bcube-publishing-sdk/books/learning-page-overrides-v1.json#EL-LKG-V4-P023",
+    "agent/phase2-five-page-pilot response-safe publishing rules"
+  ],
+  "global_rules": {
+    "one_primary_child_action": true,
+    "visible_completed_example": true,
+    "independent_answers_unmarked": true,
+    "parent_panel": false,
+    "home_connection": false,
+    "generic_response_panel": false,
+    "every_response_area_has_a_named_action": true,
+    "isolated_object_names_visible": true,
+    "illustration_contains_no_generated_text": true,
+    "worksheet_mechanics_are_deterministic": true,
+    "allow_fallback": false,
+    "minimum_child_text_pt_at_a4": 18,
+    "minimum_response_target_mm": 10
+  },
+  "pages": {
+    "EL-LKG-V4-P008": {
+      "title": "Alphabet Review",
+      "objective": "Recall the alphabet sequence and write missing uppercase letters.",
+      "instruction": "Say each letter row. Write the missing letters.",
+      "child_thinking": "I say the alphabet in order and listen for the letter that is missing.",
+      "model_example": {"sequence": ["A", null, "C"], "answer": "B", "show_answer": true},
+      "expected_response": "B, G, L, Q, V and Y written in six alphabet sequences.",
+      "archetype": "six-missing-letter-sequences",
+      "mechanic": "alphabet-sequence-write-in",
+      "render_kind": "literacy-missing-letters",
+      "illustration_assets": {},
+      "renderer_controls": {
+        "rows": [
+          {"sequence": ["A", null, "C", "D"], "answer": "B"},
+          {"sequence": ["E", "F", null, "H"], "answer": "G"},
+          {"sequence": ["J", "K", null, "M"], "answer": "L"},
+          {"sequence": ["O", "P", null, "R"], "answer": "Q"},
+          {"sequence": ["T", "U", null, "W"], "answer": "V"},
+          {"sequence": ["W", "X", null, "Z"], "answer": "Y"}
+        ]
+      },
+      "teacher_cue": "Say each short sequence and pause at the blank without giving the missing letter.",
+      "validation_gates": ["letters are deterministic text", "one large writing box per row", "no alphabet answer is prefilled"]
+    },
+    "EL-LKG-V4-P009": {
+      "title": "Uppercase & Lowercase",
+      "objective": "Match uppercase letters to their lowercase forms.",
+      "instruction": "Draw a line from each uppercase letter to its lowercase letter.",
+      "child_thinking": "The two letters look different but have the same name.",
+      "model_example": {"uppercase": "A", "lowercase": "a", "show_completed_line": true},
+      "expected_response": "Six lines matching B-b, D-d, G-g, M-m, R-r and T-t.",
+      "archetype": "two-column-letter-match",
+      "mechanic": "uppercase-lowercase-match",
+      "render_kind": "literacy-letter-match",
+      "illustration_assets": {},
+      "renderer_controls": {
+        "left": ["B", "D", "G", "M", "R", "T"],
+        "right": ["m", "t", "b", "r", "d", "g"],
+        "correct_pairs": [["B", "b"], ["D", "d"], ["G", "g"], ["M", "m"], ["R", "r"], ["T", "t"]],
+        "require_derangement": true
+      },
+      "teacher_cue": "Name one uppercase letter and ask the child to find the lowercase letter with the same name.",
+      "validation_gates": ["right column is fully deranged", "connector anchors are visible", "no independent line is pre-drawn"]
+    },
+    "EL-LKG-V4-P010": {
+      "title": "Letter Sounds",
+      "objective": "Connect familiar consonants with pictures that begin with their sounds.",
+      "instruction": "Say each sound. Draw a line to the picture that begins with it.",
+      "child_thinking": "I say the sound, name each picture, and listen to its first sound.",
+      "model_example": {"letter": "b", "asset": "ball", "show_completed_line": true},
+      "expected_response": "m-moon, s-sun, t-tiger and p-pen.",
+      "archetype": "letter-to-picture-match",
+      "mechanic": "letter-sound-picture-match",
+      "render_kind": "literacy-letter-picture-match",
+      "illustration_assets": {"moon": "one moon", "sun": "one sun", "tiger": "one friendly tiger", "pen": "one pen"},
+      "renderer_controls": {
+        "left": ["m", "s", "t", "p"],
+        "right": ["pen", "tiger", "moon", "sun"],
+        "correct_pairs": [["m", "moon"], ["s", "sun"], ["t", "tiger"], ["p", "pen"]],
+        "require_derangement": true
+      },
+      "teacher_cue": "Stretch each beginning sound once, then let the child name and match the picture.",
+      "validation_gates": ["pictures have unambiguous names", "letters are deterministic text", "no word labels inside artwork"]
+    },
+    "EL-LKG-V4-P011": {
+      "title": "Beginning Sounds",
+      "objective": "Identify the beginning sound of familiar picture words.",
+      "instruction": "Name each picture. Circle its beginning letter.",
+      "child_thinking": "I say the word slowly and listen to the first sound.",
+      "model_example": {"asset": "ball", "choices": ["b", "m"], "answer": "b", "show_completed_circle": true},
+      "expected_response": "c for cat, f for fish, s for sun and p for pen.",
+      "archetype": "four-picture-two-letter-choice",
+      "mechanic": "beginning-sound-circle-letter",
+      "render_kind": "literacy-picture-letter-choice",
+      "illustration_assets": {"cat": "one cat", "fish": "one fish", "sun": "one sun", "pen": "one pen"},
+      "renderer_controls": {
+        "cards": [
+          {"asset": "cat", "choices": ["c", "s"], "answer": "c"},
+          {"asset": "fish", "choices": ["t", "f"], "answer": "f"},
+          {"asset": "sun", "choices": ["b", "s"], "answer": "s"},
+          {"asset": "pen", "choices": ["p", "d"], "answer": "p"}
+        ]
+      },
+      "teacher_cue": "Ask the child to say the picture name before looking at the two letters.",
+      "validation_gates": ["two large letter choices per card", "independent letters are not pre-circled", "picture names are culturally familiar"]
+    },
+    "EL-LKG-V4-P012": {
+      "title": "Ending Sounds",
+      "objective": "Identify the ending sound of familiar CVC words.",
+      "instruction": "Name each picture. Circle its ending letter.",
+      "child_thinking": "I stretch the word and listen to the last sound.",
+      "model_example": {"asset": "cup", "choices": ["p", "t"], "answer": "p", "show_completed_circle": true},
+      "expected_response": "t for cat, g for dog, n for sun, s for bus, p for cap and n for hen.",
+      "archetype": "six-picture-two-letter-choice",
+      "mechanic": "ending-sound-circle-letter",
+      "render_kind": "literacy-picture-letter-choice",
+      "illustration_assets": {"cat": "one cat", "dog": "one dog", "sun": "one sun", "bus": "one bus", "cap": "one cap", "hen": "one hen"},
+      "asset_crop_overrides": {
+        "cat": {"x": 0.03, "y": 0.01, "w": 0.43, "h": 0.34, "padding": 0.0},
+        "dog": {"x": 0.54, "y": 0.01, "w": 0.43, "h": 0.34, "padding": 0.0},
+        "sun": {"x": 0.02, "y": 0.36, "w": 0.43, "h": 0.28, "padding": 0.0},
+        "bus": {"x": 0.45, "y": 0.36, "w": 0.53, "h": 0.28, "padding": 0.0},
+        "cap": {"x": 0.02, "y": 0.67, "w": 0.44, "h": 0.32, "padding": 0.0},
+        "hen": {"x": 0.54, "y": 0.67, "w": 0.43, "h": 0.32, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "cards": [
+          {"asset": "cat", "choices": ["t", "p"], "answer": "t"},
+          {"asset": "dog", "choices": ["t", "g"], "answer": "g"},
+          {"asset": "sun", "choices": ["m", "n"], "answer": "n"},
+          {"asset": "bus", "choices": ["s", "t"], "answer": "s"},
+          {"asset": "cap", "choices": ["p", "t"], "answer": "p"},
+          {"asset": "hen", "choices": ["m", "n"], "answer": "n"}
+        ]
+      },
+      "teacher_cue": "Say the whole word, then repeat it slowly and emphasise only the last sound.",
+      "validation_gates": ["two large letter choices per card", "no answer circle in independent cards", "each word has a clear final consonant"]
+    },
+    "EL-LKG-V4-P013": {
+      "title": "Rhyming Words",
+      "objective": "Match familiar words that rhyme.",
+      "instruction": "Name each picture. Draw a line to the picture that rhymes.",
+      "child_thinking": "Rhyming words have the same ending sound.",
+      "model_example": {"left": "cat", "right": "hat", "show_completed_line": true},
+      "expected_response": "dog-log, sun-run, cake-snake and star-car.",
+      "archetype": "two-column-picture-rhyme-match",
+      "mechanic": "rhyming-picture-match",
+      "render_kind": "literacy-picture-match",
+      "illustration_assets": {
+        "dog": "one dog", "sun": "one sun", "cake": "one cake", "star": "one star",
+        "log": "one log", "run": "one child running", "snake": "one friendly snake", "car": "one car"
+      },
+      "renderer_controls": {
+        "left": ["dog", "sun", "cake", "star"],
+        "right": ["car", "snake", "run", "log"],
+        "correct_pairs": [["dog", "log"], ["sun", "run"], ["cake", "snake"], ["star", "car"]],
+        "require_derangement": true
+      },
+      "teacher_cue": "Name both pictures in a pair and repeat their ending sounds together.",
+      "validation_gates": ["each intended picture name is unambiguous", "right column is deranged", "no completed independent lines"]
+    },
+    "EL-LKG-V4-P014": {
+      "title": "Same Sound",
+      "objective": "Find pictures with the same beginning sound as a model picture.",
+      "instruction": "Name the first picture. Circle the picture with the same beginning sound.",
+      "child_thinking": "I compare the first sound in each picture name.",
+      "model_example": {"model": "ball", "choices": ["bat", "cat"], "answer": "bat", "show_completed_circle": true},
+      "expected_response": "milk, ring, lamp, gift and vase selected in five rows.",
+      "archetype": "five-model-picture-choice-rows",
+      "mechanic": "same-beginning-sound-choice",
+      "render_kind": "literacy-sound-choice-rows",
+      "illustration_assets": {
+        "moon": "one moon", "milk": "one glass of milk", "cake": "one cake",
+        "rabbit": "one rabbit", "ring": "one ring", "fish": "one fish",
+        "leaf": "one leaf", "lamp": "one lamp", "shoe": "one shoe",
+        "goat": "one goat", "gift": "one gift", "nest": "one nest",
+        "van": "one van", "vase": "one flower vase", "kite": "one kite"
+      },
+      "asset_crop_overrides": {
+        "moon": {"x": 0.01, "y": 0.0, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "milk": {"x": 0.34, "y": 0.0, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "cake": {"x": 0.65, "y": 0.0, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "rabbit": {"x": 0.01, "y": 0.2, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "ring": {"x": 0.34, "y": 0.2, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "fish": {"x": 0.65, "y": 0.2, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "leaf": {"x": 0.01, "y": 0.4, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "lamp": {"x": 0.34, "y": 0.4, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "shoe": {"x": 0.65, "y": 0.4, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "goat": {"x": 0.01, "y": 0.6, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "gift": {"x": 0.34, "y": 0.6, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "nest": {"x": 0.65, "y": 0.6, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "van": {"x": 0.01, "y": 0.8, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "vase": {"x": 0.34, "y": 0.8, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "kite": {"x": 0.65, "y": 0.8, "w": 0.34, "h": 0.2, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "rows": [
+          {"model": "moon", "choices": ["milk", "cake"], "answer": "milk"},
+          {"model": "rabbit", "choices": ["ring", "fish"], "answer": "ring"},
+          {"model": "leaf", "choices": ["lamp", "shoe"], "answer": "lamp"},
+          {"model": "goat", "choices": ["gift", "nest"], "answer": "gift"},
+          {"model": "van", "choices": ["vase", "kite"], "answer": "vase"}
+        ]
+      },
+      "teacher_cue": "Say the model picture and both choices slowly, listening only to the first sound.",
+      "validation_gates": ["one correct choice per row", "choices are not preselected", "all picture names are unambiguous"]
+    },
+    "EL-LKG-V4-P015": {
+      "title": "Odd Sound Out",
+      "objective": "Identify the picture whose beginning sound differs from the others.",
+      "instruction": "Name the three pictures. Circle the one with a different beginning sound.",
+      "child_thinking": "Two words begin alike; one begins differently.",
+      "model_example": {"choices": ["ball", "bat", "cat"], "answer": "cat", "show_completed_circle": true},
+      "expected_response": "bus, cat, sun, chair and hat selected in five rows.",
+      "archetype": "five-three-picture-odd-sound-rows",
+      "mechanic": "odd-beginning-sound-out",
+      "render_kind": "literacy-odd-picture-rows",
+      "illustration_assets": {
+        "apple": "one apple", "ant": "one ant", "bus": "one bus",
+        "ball": "one ball", "book": "one book", "cat": "one cat",
+        "duck": "one duck", "drum": "one drum", "sun": "one sun",
+        "flower": "one flower", "frog": "one frog", "chair": "one chair",
+        "pen": "one pen", "pig": "one pig", "hat": "one hat"
+      },
+      "asset_crop_overrides": {
+        "apple": {"x": 0.01, "y": 0.0, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "ant": {"x": 0.34, "y": 0.0, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "bus": {"x": 0.65, "y": 0.0, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "ball": {"x": 0.01, "y": 0.2, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "book": {"x": 0.34, "y": 0.2, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "cat": {"x": 0.65, "y": 0.2, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "duck": {"x": 0.01, "y": 0.4, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "drum": {"x": 0.34, "y": 0.4, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "sun": {"x": 0.65, "y": 0.4, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "flower": {"x": 0.01, "y": 0.6, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "frog": {"x": 0.34, "y": 0.6, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "chair": {"x": 0.65, "y": 0.6, "w": 0.34, "h": 0.2, "padding": 0.0},
+        "pen": {"x": 0.01, "y": 0.8, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "pig": {"x": 0.34, "y": 0.8, "w": 0.31, "h": 0.2, "padding": 0.0},
+        "hat": {"x": 0.65, "y": 0.8, "w": 0.34, "h": 0.2, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "rows": [
+          {"choices": ["apple", "ant", "bus"], "answer": "bus"},
+          {"choices": ["ball", "book", "cat"], "answer": "cat"},
+          {"choices": ["duck", "drum", "sun"], "answer": "sun"},
+          {"choices": ["flower", "frog", "chair"], "answer": "chair"},
+          {"choices": ["pen", "pig", "hat"], "answer": "hat"}
+        ]
+      },
+      "teacher_cue": "Ask which two words begin alike before asking which picture is different.",
+      "validation_gates": ["exactly three pictures per row", "exactly one different sound", "no independent answer is marked"]
+    },
+    "EL-LKG-V4-P016": {
+      "title": "CVC Words",
+      "objective": "Read familiar consonant-vowel-consonant words and match them to pictures.",
+      "instruction": "Read each word. Draw a line to the correct picture.",
+      "child_thinking": "I blend the three sounds and find the picture that names the word.",
+      "model_example": {"word": "hat", "asset": "hat", "show_completed_line": true},
+      "expected_response": "cat, dog, sun and pen matched to their pictures.",
+      "archetype": "two-column-word-picture-match",
+      "mechanic": "cvc-word-picture-match",
+      "render_kind": "literacy-word-picture-match",
+      "illustration_assets": {"cat": "one cat", "dog": "one dog", "sun": "one sun", "pen": "one pen"},
+      "renderer_controls": {
+        "left": ["cat", "dog", "sun", "pen"],
+        "right": ["pen", "cat", "dog", "sun"],
+        "correct_pairs": [["cat", "cat"], ["dog", "dog"], ["sun", "sun"], ["pen", "pen"]],
+        "require_derangement": true
+      },
+      "teacher_cue": "Point under each letter while the child blends the three sounds into one word.",
+      "validation_gates": ["words use large deterministic type", "picture order is deranged", "model word is not reused in the task"]
+    },
+    "EL-LKG-V4-P017": {
+      "title": "Build the Word",
+      "objective": "Arrange three letter sounds to build familiar CVC words.",
+      "instruction": "Name the picture. Read the letter cards. Write the word in the boxes.",
+      "child_thinking": "I listen for the first, middle and last sound in the word.",
+      "model_example": {"asset": "hat", "tiles": ["t", "h", "a"], "answer": ["h", "a", "t"], "show_completed_boxes": true},
+      "expected_response": "cat, sun, dog and pen written in four three-box rows.",
+      "archetype": "four-picture-letter-tile-build-rows",
+      "mechanic": "build-cvc-word-write-in",
+      "render_kind": "literacy-build-word",
+      "illustration_assets": {"cat": "one cat", "sun": "one sun", "dog": "one dog", "pen": "one pen"},
+      "renderer_controls": {
+        "rows": [
+          {"asset": "cat", "tiles": ["t", "c", "a"], "answer": ["c", "a", "t"]},
+          {"asset": "sun", "tiles": ["n", "s", "u"], "answer": ["s", "u", "n"]},
+          {"asset": "dog", "tiles": ["g", "d", "o"], "answer": ["d", "o", "g"]},
+          {"asset": "pen", "tiles": ["n", "p", "e"], "answer": ["p", "e", "n"]}
+        ]
+      },
+      "teacher_cue": "Say the picture name slowly and ask for the first, middle and last sound in order.",
+      "validation_gates": ["three writing boxes per word", "letter tiles are scrambled", "no task word is prefilled"]
+    },
+    "EL-LKG-V4-P018": {
+      "title": "Picture Vocabulary",
+      "objective": "Read and recognise words for familiar objects.",
+      "instruction": "Read each word. Draw a line to the correct picture.",
+      "child_thinking": "I read the word and find the picture with that name.",
+      "model_example": {"word": "ball", "asset": "ball", "show_completed_line": true},
+      "expected_response": "house, tree, book, chair and flower matched to their pictures.",
+      "archetype": "two-column-word-picture-match",
+      "mechanic": "vocabulary-word-picture-match",
+      "render_kind": "literacy-word-picture-match",
+      "illustration_assets": {"house": "one house", "tree": "one tree", "book": "one book", "chair": "one chair", "flower": "one flower"},
+      "renderer_controls": {
+        "left": ["house", "tree", "book", "chair", "flower"],
+        "right": ["book", "flower", "house", "tree", "chair"],
+        "correct_pairs": [["house", "house"], ["tree", "tree"], ["book", "book"], ["chair", "chair"], ["flower", "flower"]],
+        "require_derangement": true
+      },
+      "teacher_cue": "Let the child attempt each word before naming any picture.",
+      "validation_gates": ["picture order is deranged", "words are deterministic text", "no generated labels"]
+    },
+    "EL-LKG-V4-P019": {
+      "title": "Action Words",
+      "objective": "Recognise familiar action words in pictures.",
+      "instruction": "Look at each picture. Circle the action word that matches.",
+      "child_thinking": "I notice what the person is doing and choose the word that names the action.",
+      "model_example": {"asset": "clap", "choices": ["clap", "sleep"], "answer": "clap", "show_completed_circle": true},
+      "expected_response": "run, jump, eat and sleep selected.",
+      "archetype": "four-action-picture-word-choice-cards",
+      "mechanic": "action-picture-word-choice",
+      "render_kind": "literacy-picture-word-choice",
+      "illustration_assets": {"run": "one child running", "jump": "one child jumping", "eat": "one child eating", "sleep": "one child sleeping"},
+      "renderer_controls": {
+        "cards": [
+          {"asset": "run", "choices": ["run", "sit"], "answer": "run"},
+          {"asset": "jump", "choices": ["walk", "jump"], "answer": "jump"},
+          {"asset": "eat", "choices": ["eat", "read"], "answer": "eat"},
+          {"asset": "sleep", "choices": ["sing", "sleep"], "answer": "sleep"}
+        ]
+      },
+      "teacher_cue": "Ask what the child in each picture is doing before reading the choices.",
+      "validation_gates": ["one clear action per picture", "two large word choices", "no independent word is circled"]
+    },
+    "EL-LKG-V4-P020": {
+      "title": "Opposites",
+      "objective": "Match familiar words and pictures with opposite meanings.",
+      "instruction": "Look at each picture. Draw a line to its opposite.",
+      "child_thinking": "I name the first idea and find the picture that means the reverse.",
+      "model_example": {"left": "day", "right": "night", "show_completed_line": true},
+      "expected_response": "big-small, full-empty, hot-cold, open-closed, clean-dirty and happy-sad.",
+      "archetype": "two-column-opposite-picture-match",
+      "mechanic": "opposite-picture-match",
+      "render_kind": "literacy-picture-match",
+      "illustration_assets": {
+        "big_elephant": "one large elephant", "small_elephant": "one small matching elephant",
+        "full_glass": "one full glass", "empty_glass": "one matching empty glass",
+        "hot_sun": "one hot sun", "cold_ice": "one ice cube",
+        "open_box": "one open box", "closed_box": "one matching closed box",
+        "clean_shirt": "one clean shirt", "dirty_shirt": "one matching dirty shirt",
+        "happy_child": "one happy child face", "sad_child": "one sad child face"
+      },
+      "asset_crop_overrides": {
+        "big_elephant": {"x": 0.02, "y": 0.0, "w": 0.45, "h": 0.22, "padding": 0.0},
+        "small_elephant": {"x": 0.55, "y": 0.03, "w": 0.40, "h": 0.18, "padding": 0.0},
+        "full_glass": {"x": 0.10, "y": 0.215, "w": 0.33, "h": 0.15, "padding": 0.0},
+        "empty_glass": {"x": 0.59, "y": 0.215, "w": 0.32, "h": 0.15, "padding": 0.0},
+        "hot_sun": {"x": 0.08, "y": 0.385, "w": 0.36, "h": 0.15, "padding": 0.0},
+        "cold_ice": {"x": 0.58, "y": 0.385, "w": 0.34, "h": 0.15, "padding": 0.0},
+        "open_box": {"x": 0.06, "y": 0.545, "w": 0.40, "h": 0.14, "padding": 0.0},
+        "closed_box": {"x": 0.57, "y": 0.545, "w": 0.36, "h": 0.14, "padding": 0.0},
+        "clean_shirt": {"x": 0.06, "y": 0.69, "w": 0.40, "h": 0.13, "padding": 0.0},
+        "dirty_shirt": {"x": 0.57, "y": 0.69, "w": 0.36, "h": 0.13, "padding": 0.0},
+        "happy_child": {"x": 0.09, "y": 0.82, "w": 0.35, "h": 0.18, "padding": 0.0},
+        "sad_child": {"x": 0.59, "y": 0.82, "w": 0.33, "h": 0.18, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "left": ["big_elephant", "full_glass", "hot_sun", "open_box", "clean_shirt", "happy_child"],
+        "right": ["cold_ice", "small_elephant", "dirty_shirt", "empty_glass", "sad_child", "closed_box"],
+        "correct_pairs": [["big_elephant", "small_elephant"], ["full_glass", "empty_glass"], ["hot_sun", "cold_ice"], ["open_box", "closed_box"], ["clean_shirt", "dirty_shirt"], ["happy_child", "sad_child"]],
+        "require_derangement": true
+      },
+      "teacher_cue": "Name the idea shown on the left, then ask which picture shows the opposite idea.",
+      "validation_gates": ["paired pictures differ in only the intended concept", "right side is deranged", "no independent line is drawn"]
+    },
+    "EL-LKG-V4-P021": {
+      "title": "Describing Words",
+      "objective": "Choose a familiar describing word for each picture.",
+      "instruction": "Look at each picture. Circle the word that describes it.",
+      "child_thinking": "I notice colour, size, feeling or texture and choose the word that fits.",
+      "model_example": {"asset": "yellow_duck", "choices": ["yellow", "blue"], "answer": "yellow", "show_completed_circle": true},
+      "expected_response": "soft, tall, red and happy selected.",
+      "archetype": "four-picture-adjective-choice-cards",
+      "mechanic": "describing-word-choice",
+      "render_kind": "literacy-picture-word-choice",
+      "illustration_assets": {"soft_teddy": "one soft teddy bear", "tall_tree": "one tall tree", "red_apple": "one red apple", "happy_child": "one happy child"},
+      "renderer_controls": {
+        "cards": [
+          {"asset": "soft_teddy", "choices": ["hard", "soft"], "answer": "soft"},
+          {"asset": "tall_tree", "choices": ["short", "tall"], "answer": "tall"},
+          {"asset": "red_apple", "choices": ["red", "blue"], "answer": "red"},
+          {"asset": "happy_child", "choices": ["sad", "happy"], "answer": "happy"}
+        ]
+      },
+      "teacher_cue": "Ask the child to describe the picture aloud before reading the two choices.",
+      "validation_gates": ["each picture supports one unambiguous adjective", "choices are large", "answers are not preselected"]
+    },
+    "EL-LKG-V4-P022": {
+      "title": "Categories",
+      "objective": "Classify familiar pictures as fruits, animals or vehicles.",
+      "instruction": "Look at each numbered picture. Write its number in the correct group.",
+      "child_thinking": "I name the picture, decide its group, and record its number.",
+      "model_example": {"asset": "orange", "category": "FRUITS", "show_completed_arrow": true},
+      "expected_response": "Fruits: 1,4,7; Animals: 2,5,8; Vehicles: 3,6,9.",
+      "archetype": "three-category-number-sort",
+      "mechanic": "classify-numbered-pictures",
+      "render_kind": "literacy-category-sort",
+      "illustration_assets": {
+        "apple": "one apple", "dog": "one dog", "bus": "one bus", "banana": "one banana", "rabbit": "one rabbit",
+        "car": "one car", "orange": "one orange", "cat": "one cat", "bicycle": "one bicycle"
+      },
+      "asset_crop_overrides": {
+        "apple": {"x": 0.03, "y": 0.02, "w": 0.29, "h": 0.31, "padding": 0.0},
+        "dog": {"x": 0.35, "y": 0.02, "w": 0.27, "h": 0.32, "padding": 0.0},
+        "bus": {"x": 0.63, "y": 0.06, "w": 0.35, "h": 0.26, "padding": 0.0},
+        "banana": {"x": 0.02, "y": 0.34, "w": 0.31, "h": 0.29, "padding": 0.0},
+        "rabbit": {"x": 0.36, "y": 0.32, "w": 0.22, "h": 0.31, "padding": 0.0},
+        "car": {"x": 0.62, "y": 0.37, "w": 0.36, "h": 0.25, "padding": 0.0},
+        "orange": {"x": 0.03, "y": 0.65, "w": 0.30, "h": 0.30, "padding": 0.0},
+        "cat": {"x": 0.35, "y": 0.63, "w": 0.24, "h": 0.31, "padding": 0.0},
+        "bicycle": {"x": 0.61, "y": 0.65, "w": 0.37, "h": 0.30, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "categories": ["FRUITS", "ANIMALS", "VEHICLES"],
+        "items": [
+          {"number": 1, "asset": "apple", "category": "FRUITS"}, {"number": 2, "asset": "dog", "category": "ANIMALS"},
+          {"number": 3, "asset": "bus", "category": "VEHICLES"}, {"number": 4, "asset": "banana", "category": "FRUITS"},
+          {"number": 5, "asset": "rabbit", "category": "ANIMALS"}, {"number": 6, "asset": "car", "category": "VEHICLES"},
+          {"number": 7, "asset": "orange", "category": "FRUITS"}, {"number": 8, "asset": "cat", "category": "ANIMALS"},
+          {"number": 9, "asset": "bicycle", "category": "VEHICLES"}
+        ],
+        "number_writing_boxes_per_category": 3
+      },
+      "teacher_cue": "Name the three groups, then let the child classify each numbered picture.",
+      "validation_gates": ["three visible number-writing areas", "all nine pictures are numbered", "no item is pre-sorted"]
+    },
+    "EL-LKG-V4-P023": {
+      "title": "Read & Match",
+      "objective": "Read simple words and match each word to its picture.",
+      "instruction": "Read each word. Draw a line to the correct picture.",
+      "child_thinking": "I sound out the word and find the picture with that name.",
+      "model_example": {"word": "map", "asset": "map", "show_completed_line": true},
+      "expected_response": "Seven lines matching cat, sun, bus, cup, pen, dog and hen.",
+      "archetype": "two-tier-word-picture-match",
+      "mechanic": "read-match-main-and-reinforcement",
+      "render_kind": "literacy-read-match",
+      "illustration_assets": {"cat": "one cat", "sun": "one sun", "bus": "one bus", "cup": "one cup", "pen": "one pen", "dog": "one dog", "hen": "one hen"},
+      "renderer_controls": {
+        "main_words": ["cat", "sun", "bus", "cup"],
+        "main_picture_order": ["cup", "bus", "cat", "sun"],
+        "small_words": ["pen", "dog", "hen"],
+        "small_picture_order": ["hen", "pen", "dog"],
+        "require_full_derangement": true
+      },
+      "teacher_cue": "Ask the child to sound out each word before drawing the matching line.",
+      "validation_gates": ["main and reinforcement activities both present", "all picture orders are deranged", "no line is pre-drawn"]
+    },
+    "EL-LKG-V4-P024": {
+      "title": "Read & Colour",
+      "objective": "Read short colour instructions and apply them to familiar outline pictures.",
+      "instruction": "Read each sentence. Colour the picture as it says.",
+      "child_thinking": "I read the colour word and use that colour on the named picture.",
+      "model_example": {"sentence": "Colour the circle orange.", "shape": "circle", "colour": "orange", "show_completed_colour": true},
+      "expected_response": "Red apple, blue ball, yellow sun and green leaf.",
+      "archetype": "four-read-and-colour-cards",
+      "mechanic": "read-colour-instruction",
+      "render_kind": "literacy-read-colour",
+      "illustration_assets": {"apple_outline": "one uncoloured apple outline", "ball_outline": "one uncoloured ball outline", "sun_outline": "one uncoloured sun outline", "leaf_outline": "one uncoloured leaf outline"},
+      "renderer_controls": {
+        "cards": [
+          {"asset": "apple_outline", "sentence": "Colour the apple red.", "colour": "red"},
+          {"asset": "ball_outline", "sentence": "Colour the ball blue.", "colour": "blue"},
+          {"asset": "sun_outline", "sentence": "Colour the sun yellow.", "colour": "yellow"},
+          {"asset": "leaf_outline", "sentence": "Colour the leaf green.", "colour": "green"}
+        ]
+      },
+      "teacher_cue": "Ask the child to point to the colour word before choosing a crayon.",
+      "validation_gates": ["independent pictures are uncoloured", "sentences are deterministic text", "large open colouring areas"]
+    },
+    "EL-LKG-V4-P025": {
+      "title": "Read & Circle",
+      "objective": "Read two familiar words and select the word that names a picture.",
+      "instruction": "Look at each picture. Read the words. Circle the correct word.",
+      "child_thinking": "I name the picture, read both words, and choose the matching word.",
+      "model_example": {"asset": "map", "choices": ["map", "mat"], "answer": "map", "show_completed_circle": true},
+      "expected_response": "cat, cup, bus and hen selected.",
+      "archetype": "four-picture-word-choice-cards",
+      "mechanic": "read-circle-picture-word",
+      "render_kind": "literacy-picture-word-choice",
+      "illustration_assets": {"cat": "one cat", "cup": "one cup", "bus": "one bus", "hen": "one hen"},
+      "asset_crop_overrides": {
+        "cat": {"x": 0.02, "y": 0.01, "w": 0.46, "h": 0.47, "padding": 0.0},
+        "cup": {"x": 0.56, "y": 0.03, "w": 0.40, "h": 0.44, "padding": 0.0},
+        "bus": {"x": 0.0, "y": 0.54, "w": 0.50, "h": 0.44, "padding": 0.0},
+        "hen": {"x": 0.56, "y": 0.49, "w": 0.42, "h": 0.49, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "cards": [
+          {"asset": "cat", "choices": ["cat", "dog"], "answer": "cat"},
+          {"asset": "cup", "choices": ["pen", "cup"], "answer": "cup"},
+          {"asset": "bus", "choices": ["bus", "car"], "answer": "bus"},
+          {"asset": "hen", "choices": ["sun", "hen"], "answer": "hen"}
+        ]
+      },
+      "teacher_cue": "Let the child read both words before deciding which one matches the picture.",
+      "validation_gates": ["two large words per card", "correct choice position varies", "no task word is pre-circled"]
+    },
+    "EL-LKG-V4-P026": {
+      "title": "Sentence Builder",
+      "objective": "Arrange familiar words to build a short sentence and copy it.",
+      "instruction": "Look at the picture. Number the word cards in order. Copy the sentence.",
+      "child_thinking": "I decide who or what comes first, then what happens.",
+      "model_example": {"asset": "cat_sits", "tiles": ["sits.", "cat", "The"], "answer": ["The", "cat", "sits."], "show_numbered_tiles": true},
+      "expected_response": "Three correctly ordered and copied sentences.",
+      "archetype": "three-picture-sentence-build-rows",
+      "mechanic": "order-word-cards-and-copy",
+      "render_kind": "literacy-sentence-builder",
+      "illustration_assets": {"dog_runs": "one dog running", "child_reads": "one child reading a book", "bus_scene": "one bus"},
+      "asset_crop_overrides": {
+        "dog_runs": {"x": 0.02, "y": 0.04, "w": 0.47, "h": 0.40, "padding": 0.0},
+        "child_reads": {"x": 0.54, "y": 0.01, "w": 0.43, "h": 0.45, "padding": 0.0},
+        "bus_scene": {"x": 0.01, "y": 0.57, "w": 0.51, "h": 0.36, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "rows": [
+          {"asset": "dog_runs", "tiles": ["runs.", "dog", "The"], "answer": ["The", "dog", "runs."]},
+          {"asset": "child_reads", "tiles": ["a", "I", "book.", "read"], "answer": ["I", "read", "a", "book."]},
+          {"asset": "bus_scene", "tiles": ["bus.", "see", "a", "I"], "answer": ["I", "see", "a", "bus."]}
+        ],
+        "copy_lines": 1
+      },
+      "teacher_cue": "Read the shuffled cards aloud, then ask which word begins the sentence.",
+      "validation_gates": ["word cards are genuinely shuffled", "one purposeful copy line per row", "no completed sentence in independent rows"]
+    },
+    "EL-LKG-V4-P027": {
+      "title": "Complete the Sentence",
+      "objective": "Choose and write a familiar word that completes a short sentence.",
+      "instruction": "Look at each picture. Circle the correct word and write it in the blank.",
+      "child_thinking": "I read the sentence and choose the word that makes sense with the picture.",
+      "model_example": {"asset": "red_ball", "sentence": "The ball is ____.", "choices": ["red", "blue"], "answer": "red", "show_completed_blank": true},
+      "expected_response": "cat, hot, run and book written in four sentence blanks.",
+      "archetype": "four-picture-sentence-completion-cards",
+      "mechanic": "choose-and-write-missing-word",
+      "render_kind": "literacy-sentence-completion",
+      "illustration_assets": {"cat": "one cat", "hot_sun": "one hot sun", "boy_runs": "one boy running", "book": "one book"},
+      "renderer_controls": {
+        "cards": [
+          {"asset": "cat", "sentence": "I see a ____.", "choices": ["cat", "bus"], "answer": "cat"},
+          {"asset": "hot_sun", "sentence": "The sun is ____.", "choices": ["cold", "hot"], "answer": "hot"},
+          {"asset": "boy_runs", "sentence": "The boy can ____.", "choices": ["run", "sleep"], "answer": "run"},
+          {"asset": "book", "sentence": "This is a ____.", "choices": ["cup", "book"], "answer": "book"}
+        ]
+      },
+      "teacher_cue": "Read the sentence up to the blank, then let the child test both choices aloud.",
+      "validation_gates": ["one writing blank per card", "choices fit comfortably", "no independent blank is filled"]
+    },
+    "EL-LKG-V4-P028": {
+      "title": "Picture Reading",
+      "objective": "Read a controlled picture scene and answer simple questions from visual evidence.",
+      "instruction": "Look carefully at the picture. Circle the correct answer to each question.",
+      "child_thinking": "I look for the person, object or place named in the question.",
+      "model_example": {"question": "What colour is the ball?", "choices": ["red", "blue"], "answer": "red", "show_completed_circle": true},
+      "expected_response": "Four answers selected from one park scene.",
+      "archetype": "scene-with-four-question-cards",
+      "mechanic": "picture-reading-question-choice",
+      "render_kind": "literacy-scene-questions",
+      "illustration_assets": {"park_scene": "one uncluttered park scene with a girl holding a red ball, a boy beside a bench, a dog under a tree and a blue kite above the tree"},
+      "asset_crop_overrides": {"park_scene": {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "padding": 0.0}},
+      "renderer_controls": {
+        "scene": "park_scene",
+        "questions": [
+          {"question": "Who has the ball?", "choices": ["girl", "boy"], "answer": "girl"},
+          {"question": "Where is the dog?", "choices": ["under the tree", "on the bench"], "answer": "under the tree"},
+          {"question": "What is above the tree?", "choices": ["kite", "ball"], "answer": "kite"},
+          {"question": "What is beside the boy?", "choices": ["bench", "dog"], "answer": "bench"}
+        ]
+      },
+      "teacher_cue": "Ask the child to point to the visual evidence before choosing an answer.",
+      "validation_gates": ["all answers are visible in the scene", "questions use large readable text", "no answer is marked"]
+    },
+    "EL-LKG-V4-P029": {
+      "title": "Listening",
+      "objective": "Listen to a familiar word and select its picture.",
+      "instruction": "Listen to the teacher. Circle the picture that matches the word.",
+      "child_thinking": "I listen to the whole word, then find the picture with that name.",
+      "model_example": {"teacher_word": "sun", "choices": ["sun", "bus", "cup"], "answer": "sun", "show_completed_circle": true},
+      "expected_response": "Four pictures selected after the teacher says cat, pen, dog and hat.",
+      "archetype": "four-listen-and-choose-rows",
+      "mechanic": "oral-word-picture-choice",
+      "render_kind": "literacy-listening-choice",
+      "illustration_assets": {
+        "cat": "one cat", "car": "one car", "cap": "one cap", "pen": "one pen", "hen": "one hen", "pin": "one pin",
+        "dog": "one dog", "log": "one log", "frog": "one frog", "hat": "one hat", "bat": "one bat", "mat": "one mat"
+      },
+      "asset_crop_overrides": {
+        "cat": {"x": 0.04, "y": 0.02, "w": 0.27, "h": 0.25, "padding": 0.0},
+        "car": {"x": 0.33, "y": 0.04, "w": 0.31, "h": 0.23, "padding": 0.0},
+        "cap": {"x": 0.65, "y": 0.04, "w": 0.32, "h": 0.22, "padding": 0.0},
+        "pen": {"x": 0.04, "y": 0.27, "w": 0.27, "h": 0.24, "padding": 0.0},
+        "hen": {"x": 0.37, "y": 0.26, "w": 0.25, "h": 0.26, "padding": 0.0},
+        "pin": {"x": 0.65, "y": 0.28, "w": 0.31, "h": 0.22, "padding": 0.0},
+        "dog": {"x": 0.04, "y": 0.50, "w": 0.26, "h": 0.25, "padding": 0.0},
+        "log": {"x": 0.33, "y": 0.52, "w": 0.34, "h": 0.20, "padding": 0.0},
+        "frog": {"x": 0.69, "y": 0.50, "w": 0.27, "h": 0.24, "padding": 0.0},
+        "hat": {"x": 0.02, "y": 0.76, "w": 0.30, "h": 0.21, "padding": 0.0},
+        "bat": {"x": 0.36, "y": 0.72, "w": 0.28, "h": 0.26, "padding": 0.0},
+        "mat": {"x": 0.63, "y": 0.78, "w": 0.35, "h": 0.18, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "rows": [
+          {"teacher_word": "cat", "choices": ["car", "cat", "cap"], "answer": "cat"},
+          {"teacher_word": "pen", "choices": ["hen", "pin", "pen"], "answer": "pen"},
+          {"teacher_word": "dog", "choices": ["dog", "log", "frog"], "answer": "dog"},
+          {"teacher_word": "hat", "choices": ["bat", "mat", "hat"], "answer": "hat"}
+        ]
+      },
+      "teacher_cue": "Say each target word once naturally and once slowly; do not point or repeat the answer.",
+      "validation_gates": ["teacher script is exact", "three large pictures per row", "correct positions vary", "no labels inside artwork"]
+    },
+    "EL-LKG-V4-P030": {
+      "title": "Question & Answer",
+      "objective": "Answer who, what and where questions about a simple picture.",
+      "instruction": "Look at the picture. Read each question. Circle the correct answer.",
+      "child_thinking": "I find the clue in the picture and choose the answer that makes sense.",
+      "model_example": {"question": "Who is reading?", "choices": ["girl", "dog"], "answer": "girl", "show_completed_circle": true},
+      "expected_response": "Four correct answers selected from one reading scene.",
+      "archetype": "scene-with-four-short-answer-choices",
+      "mechanic": "picture-question-answer-choice",
+      "render_kind": "literacy-scene-questions",
+      "illustration_assets": {"reading_scene": "one girl reading a red book on a blue mat beside a small dog, under a tree"},
+      "asset_crop_overrides": {"reading_scene": {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "padding": 0.0}},
+      "renderer_controls": {
+        "scene": "reading_scene",
+        "questions": [
+          {"question": "What is the girl doing?", "choices": ["reading", "running"], "answer": "reading"},
+          {"question": "What colour is the book?", "choices": ["red", "green"], "answer": "red"},
+          {"question": "Who is beside the girl?", "choices": ["dog", "cat"], "answer": "dog"},
+          {"question": "Where is the girl sitting?", "choices": ["on a mat", "on a chair"], "answer": "on a mat"}
+        ]
+      },
+      "teacher_cue": "Have the child point to the clue in the picture before reading both answer choices.",
+      "validation_gates": ["one coherent scene", "questions are answerable from the scene", "answers remain unselected"]
+    },
+    "EL-LKG-V4-P031": {
+      "title": "Sight Words",
+      "objective": "Recognise common sight words in short sentences.",
+      "instruction": "Read each sentence. Circle the word shown in the star.",
+      "child_thinking": "I remember the sight word and find the same word in the sentence.",
+      "model_example": {"target": "I", "sentence": "I can run.", "show_completed_circle": true},
+      "expected_response": "see, the, a and is circled once in four sentences.",
+      "archetype": "four-sight-word-search-rows",
+      "mechanic": "find-sight-word-in-sentence",
+      "render_kind": "literacy-sight-word-search",
+      "illustration_assets": {"cat": "one small cat", "sun": "one small sun", "bus": "one small bus", "dog": "one small dog"},
+      "asset_crop_overrides": {
+        "cat": {"x": 0.0, "y": 0.0, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "sun": {"x": 0.5, "y": 0.0, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "bus": {"x": 0.0, "y": 0.5, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "dog": {"x": 0.5, "y": 0.5, "w": 0.5, "h": 0.5, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "rows": [
+          {"target": "see", "sentence": "I see a cat.", "asset": "cat"},
+          {"target": "the", "sentence": "I see the sun.", "asset": "sun"},
+          {"target": "a", "sentence": "I see a bus.", "asset": "bus"},
+          {"target": "is", "sentence": "The dog is big.", "asset": "dog"}
+        ]
+      },
+      "teacher_cue": "Read the target word first, then track the sentence from left to right.",
+      "validation_gates": ["target appears exactly once per sentence", "sentences use deterministic text", "no sight word is pre-circled"]
+    },
+    "EL-LKG-V4-P032": {
+      "title": "Reading Review",
+      "objective": "Review word reading, rhyme, sentence meaning and sight-word recognition.",
+      "instruction": "Complete each reading challenge.",
+      "child_thinking": "I use sounds, words and picture clues to solve each task.",
+      "model_example": {"word": "cat", "asset": "cat", "show_completed_line": true},
+      "expected_response": "One response in each of six review panels.",
+      "archetype": "six-literacy-review-panels",
+      "mechanic": "mixed-reading-review",
+      "render_kind": "literacy-mixed-review",
+      "illustration_assets": {"sun": "one sun", "run": "one child running", "dog": "one dog", "bus": "one bus", "red_ball": "one red ball"},
+      "asset_crop_overrides": {
+        "sun": {"x": 0.04, "y": 0.01, "w": 0.43, "h": 0.37, "padding": 0.0},
+        "run": {"x": 0.57, "y": 0.01, "w": 0.35, "h": 0.36, "padding": 0.0},
+        "dog": {"x": 0.06, "y": 0.37, "w": 0.40, "h": 0.33, "padding": 0.0},
+        "bus": {"x": 0.49, "y": 0.38, "w": 0.48, "h": 0.32, "padding": 0.0},
+        "red_ball": {"x": 0.07, "y": 0.72, "w": 0.36, "h": 0.27, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "tasks": [
+          {"type": "word-picture", "word": "dog", "choices": ["dog", "bus"], "answer": "dog"},
+          {"type": "rhyme", "model": "sun", "choices": ["run", "bus"], "answer": "run"},
+          {"type": "sentence-picture", "sentence": "The ball is red.", "asset": "red_ball", "response": "tick"},
+          {"type": "sight-word", "target": "the", "sentence": "I see the bus.", "answer": "the"},
+          {"type": "beginning-sound", "asset": "dog", "choices": ["d", "b"], "answer": "d"},
+          {"type": "read-word", "word": "bus", "asset": "bus", "response": "tick"}
+        ]
+      },
+      "teacher_cue": "Give one direction at a time and allow the child to complete each panel independently.",
+      "validation_gates": ["six different but related review tasks", "one response per panel", "all circles and ticks remain open", "no answer is shown"]
+    },
+    "EL-LKG-V4-P033": {
+      "title": "Story Sequence",
+      "objective": "Order four pictures to show a familiar event sequence.",
+      "instruction": "Look at the pictures. Write 1, 2, 3 and 4 to show the correct order.",
+      "child_thinking": "I decide what happens first, next and last.",
+      "model_example": {"stages": ["empty cup", "pour water", "full cup"], "numbers": [1, 2, 3], "show_completed_order": true},
+      "expected_response": "Numbers 1-4 written under four shuffled tooth-brushing scenes.",
+      "archetype": "four-scene-sequence-numbering",
+      "mechanic": "story-sequence-write-numbers",
+      "render_kind": "literacy-story-sequence",
+      "illustration_assets": {
+        "brush_get": "child picks up toothbrush", "brush_paste": "child puts toothpaste on toothbrush",
+        "brush_teeth": "child brushes teeth", "brush_rinse": "child rinses mouth"
+      },
+      "asset_crop_overrides": {
+        "brush_get": {"x": 0.0, "y": 0.0, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "brush_paste": {"x": 0.5, "y": 0.0, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "brush_teeth": {"x": 0.0, "y": 0.5, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "brush_rinse": {"x": 0.5, "y": 0.5, "w": 0.5, "h": 0.5, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "display_order": ["brush_teeth", "brush_get", "brush_rinse", "brush_paste"],
+        "correct_order": ["brush_get", "brush_paste", "brush_teeth", "brush_rinse"],
+        "number_boxes": 4
+      },
+      "teacher_cue": "Ask what must happen first before discussing the middle and final scenes.",
+      "validation_gates": ["four distinct scenes", "one number box per scene", "display order is shuffled", "no number is prefilled"]
+    },
+    "EL-LKG-V4-P034": {
+      "title": "Story Retelling",
+      "objective": "Retell a four-step story using picture cues and sequence words.",
+      "instruction": "Point to each picture. Tell the story using first, next, then and last.",
+      "child_thinking": "I follow the pictures in order and say what happens at each step.",
+      "model_example": {"scene": "child opens book", "starter": "First, the child opens the book.", "show_spoken_model": true},
+      "expected_response": "An oral retelling of a seed-growing story in four steps.",
+      "archetype": "ordered-four-scene-retell",
+      "mechanic": "story-retell-with-starters",
+      "render_kind": "literacy-story-retell",
+      "illustration_assets": {
+        "plant_seed": "child plants a seed in soil", "water_seed": "child waters the planted seed",
+        "sprout_grows": "small green sprout emerges", "flower_blooms": "flower blooms and child smiles"
+      },
+      "asset_crop_overrides": {
+        "plant_seed": {"x": 0.0, "y": 0.0, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "water_seed": {"x": 0.5, "y": 0.0, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "sprout_grows": {"x": 0.0, "y": 0.5, "w": 0.5, "h": 0.5, "padding": 0.0},
+        "flower_blooms": {"x": 0.5, "y": 0.5, "w": 0.5, "h": 0.5, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "ordered_scenes": ["plant_seed", "water_seed", "sprout_grows", "flower_blooms"],
+        "starters": ["First,", "Next,", "Then,", "Last,"]
+      },
+      "teacher_cue": "Point to one scene at a time and prompt only with the printed sequence word.",
+      "validation_gates": ["scenes are already in correct order", "one sequence starter per scene", "no writing frame", "oral action is clear"]
+    },
+    "EL-LKG-V4-P035": {
+      "title": "Picture Conversation",
+      "objective": "Speak in complete short sentences about a social picture.",
+      "instruction": "Look at the picture. Take turns asking and answering the questions.",
+      "child_thinking": "I notice what the children are doing, listen to my partner and answer clearly.",
+      "model_example": {"question": "What are the children doing?", "answer_starter": "They are ____.", "show_completed_answer": "They are sharing a ball."},
+      "expected_response": "Three oral answers and one partner question about a playground scene.",
+      "archetype": "hero-scene-conversation-prompts",
+      "mechanic": "picture-conversation-partner-turns",
+      "render_kind": "literacy-picture-conversation",
+      "illustration_assets": {"playground_conversation": "two children sharing a ball near a slide while a third child waits to join"},
+      "asset_crop_overrides": {"playground_conversation": {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "padding": 0.0}},
+      "renderer_controls": {
+        "scene": "playground_conversation",
+        "prompts": [
+          {"question": "What are the children sharing?", "starter": "They are sharing _____."},
+          {"question": "How does the waiting child feel?", "starter": "The child feels _____."},
+          {"question": "What could the child say?", "starter": "May I _____?"}
+        ],
+        "partner_turn_cue": "Ask one question. Listen to your partner's answer."
+      },
+      "teacher_cue": "Let partners ask and answer one prompt at a time, then switch roles.",
+      "validation_gates": ["one coherent social scene", "three specific prompts", "no generic empty speech box", "partner turn is visible"]
+    },
+    "EL-LKG-V4-P036": {
+      "title": "Who What Where",
+      "objective": "Answer who, what and where questions from one picture.",
+      "instruction": "Look at the picture. Circle the answer to each question.",
+      "child_thinking": "Who asks about a person, what asks about an action or object, and where asks about a place.",
+      "model_example": {"question_type": "WHO", "question": "Who is reading?", "choices": ["girl", "dog"], "answer": "girl", "show_completed_circle": true},
+      "expected_response": "Girl, reading and under the tree selected.",
+      "archetype": "one-scene-who-what-where",
+      "mechanic": "who-what-where-choice",
+      "render_kind": "literacy-who-what-where",
+      "illustration_assets": {"girl_reading_tree": "one girl reading a book under a tree with a dog nearby"},
+      "asset_crop_overrides": {"girl_reading_tree": {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "padding": 0.0}},
+      "renderer_controls": {
+        "scene": "girl_reading_tree",
+        "questions": [
+          {"label": "WHO", "question": "Who has the book?", "choices": ["girl", "dog"], "answer": "girl"},
+          {"label": "WHAT", "question": "What is she doing?", "choices": ["reading", "running"], "answer": "reading"},
+          {"label": "WHERE", "question": "Where is she sitting?", "choices": ["under the tree", "in a bus"], "answer": "under the tree"}
+        ]
+      },
+      "teacher_cue": "Say who, what or where first, then read the corresponding question.",
+      "validation_gates": ["labels are colour-coded deterministic text", "answers come from the scene", "no independent choice is circled"]
+    },
+    "EL-LKG-V4-P037": {
+      "title": "My Favourite Story",
+      "objective": "Draw and describe a favourite story character.",
+      "instruction": "Draw your favourite story character. Complete the sentence below.",
+      "child_thinking": "I remember a character, draw important details and say why I like the character.",
+      "model_example": {"character": "rabbit", "sentence": "My favourite character is the rabbit.", "show_small_model_only": true},
+      "expected_response": "One purposeful drawing and an adult-supported character name.",
+      "archetype": "drawing-frame-with-supported-sentence",
+      "mechanic": "draw-and-name-character",
+      "render_kind": "literacy-favourite-story",
+      "illustration_assets": {},
+      "renderer_controls": {
+        "drawing_frame_ratio": 0.62,
+        "sentence_starter": "My favourite character is __________.",
+        "oral_prompt": "I like this character because __________."
+      },
+      "teacher_cue": "Ask the child to name one detail in the drawing and record the child's words if needed.",
+      "validation_gates": ["one large purposeful drawing frame", "one short supported writing line", "no second empty frame"]
+    },
+    "EL-LKG-V4-P038": {
+      "title": "Mini Assessment",
+      "objective": "Demonstrate beginning and ending sounds, rhyme and CVC word reading.",
+      "instruction": "Complete each activity by yourself.",
+      "child_thinking": "I use the sound and word strategies I have practised.",
+      "model_example": {"note": "No worked answer; teacher reads the four directions only.", "assessment_safe": true},
+      "expected_response": "One answer in each of four independent assessment panels.",
+      "archetype": "four-independent-assessment-panels",
+      "mechanic": "sounds-and-cvc-assessment",
+      "render_kind": "literacy-mini-assessment",
+      "illustration_assets": {"fish": "one fish", "dog": "one dog", "sun": "one sun", "run": "one child running", "cat": "one cat", "bus": "one bus"},
+      "asset_crop_overrides": {
+        "fish": {"x": 0.03, "y": 0.0, "w": 0.44, "h": 0.32, "padding": 0.0},
+        "dog": {"x": 0.54, "y": 0.0, "w": 0.44, "h": 0.32, "padding": 0.0},
+        "sun": {"x": 0.04, "y": 0.34, "w": 0.42, "h": 0.30, "padding": 0.0},
+        "run": {"x": 0.54, "y": 0.34, "w": 0.43, "h": 0.31, "padding": 0.0},
+        "cat": {"x": 0.03, "y": 0.66, "w": 0.43, "h": 0.34, "padding": 0.0},
+        "bus": {"x": 0.53, "y": 0.66, "w": 0.46, "h": 0.34, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "tasks": [
+          {"type": "beginning-sound", "asset": "fish", "choices": ["f", "s"], "answer": "f"},
+          {"type": "ending-sound", "asset": "dog", "choices": ["g", "t"], "answer": "g"},
+          {"type": "rhyme", "model": "sun", "choices": ["run", "bus"], "answer": "run"},
+          {"type": "read-match", "word": "cat", "choices": ["cat", "bus"], "answer": "cat"}
+        ]
+      },
+      "teacher_cue": "Read each direction once and record support separately without indicating an answer.",
+      "validation_gates": ["no completed model answer", "four independent responses", "answers are not highlighted", "assessment tasks fit comfortably"]
+    },
+    "EL-LKG-V4-P039": {
+      "title": "Mini Assessment 2",
+      "objective": "Demonstrate sight-word recognition, sentence meaning, sequencing and picture comprehension.",
+      "instruction": "Complete each activity by yourself.",
+      "child_thinking": "I read carefully, look for clues and record one answer for each task.",
+      "model_example": {"note": "No worked answer; teacher reads the four directions only.", "assessment_safe": true},
+      "expected_response": "One answer in each of four independent assessment panels.",
+      "archetype": "four-independent-assessment-panels",
+      "mechanic": "reading-and-comprehension-assessment",
+      "render_kind": "literacy-mini-assessment",
+      "illustration_assets": {
+        "red_ball": "one red ball", "wash_hands": "child washing hands", "dry_hands": "child drying hands",
+        "turn_tap": "child turning on a tap", "girl_reads": "one girl reading under a tree"
+      },
+      "asset_crop_overrides": {
+        "red_ball": {"x": 0.0, "y": 0.0, "w": 0.5, "h": 0.333333, "padding": 0.01},
+        "wash_hands": {"x": 0.5, "y": 0.0, "w": 0.5, "h": 0.333333, "padding": 0.01},
+        "dry_hands": {"x": 0.0, "y": 0.333333, "w": 0.5, "h": 0.333334, "padding": 0.01},
+        "turn_tap": {"x": 0.5, "y": 0.333333, "w": 0.5, "h": 0.333334, "padding": 0.01},
+        "girl_reads": {"x": 0.0, "y": 0.666667, "w": 0.5, "h": 0.333333, "padding": 0.01}
+      },
+      "renderer_controls": {
+        "tasks": [
+          {"type": "sight-word", "target": "the", "sentence": "I see the ball.", "answer": "the"},
+          {"type": "sentence-picture", "sentence": "The ball is red.", "asset": "red_ball", "response": "tick"},
+          {"type": "sequence", "display_order": ["wash_hands", "turn_tap", "dry_hands"], "correct_order": ["turn_tap", "wash_hands", "dry_hands"]},
+          {"type": "picture-question", "asset": "girl_reads", "question": "What is the girl doing?", "choices": ["reading", "running"], "answer": "reading"}
+        ]
+      },
+      "teacher_cue": "Give only the printed directions and allow quiet independent response time.",
+      "validation_gates": ["no completed model answer", "sequence has three number boxes", "one answer per panel", "no preselected choice"]
+    },
+    "EL-LKG-V4-P040": {
+      "title": "Literacy Review",
+      "objective": "Review the main letter, sound, word, sentence and story skills in the book.",
+      "instruction": "Complete the six literacy challenges.",
+      "child_thinking": "I choose the strategy that fits each challenge.",
+      "model_example": {"skill": "letter match", "left": "A", "right": "a", "show_completed_line": true},
+      "expected_response": "Six short responses covering the book's core skills.",
+      "archetype": "six-compact-literacy-review-cards",
+      "mechanic": "full-book-literacy-review",
+      "render_kind": "literacy-full-review",
+      "illustration_assets": {"cat": "one cat", "sun": "one sun", "run": "one child running", "dog": "one dog", "red_ball": "one red ball"},
+      "asset_crop_overrides": {
+        "cat": {"x": 0.02, "y": 0.0, "w": 0.45, "h": 0.34, "padding": 0.0},
+        "sun": {"x": 0.53, "y": 0.0, "w": 0.46, "h": 0.35, "padding": 0.0},
+        "run": {"x": 0.02, "y": 0.35, "w": 0.45, "h": 0.33, "padding": 0.0},
+        "dog": {"x": 0.53, "y": 0.35, "w": 0.46, "h": 0.34, "padding": 0.0},
+        "red_ball": {"x": 0.02, "y": 0.69, "w": 0.47, "h": 0.30, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "tasks": [
+          {"type": "letter-match", "left": "B", "choices": ["d", "b"], "answer": "b"},
+          {"type": "beginning-sound", "asset": "cat", "choices": ["c", "s"], "answer": "c"},
+          {"type": "rhyme", "model": "sun", "choices": ["dog", "run"], "answer": "run"},
+          {"type": "read-word", "word": "dog", "asset": "dog", "response": "tick"},
+          {"type": "sentence", "sentence": "The ball is red.", "asset": "red_ball", "response": "tick"},
+          {"type": "sight-word", "target": "I", "sentence": "I see a cat.", "answer": "I"}
+        ]
+      },
+      "teacher_cue": "Invite the child to complete one challenge at a time and explain one chosen answer.",
+      "validation_gates": ["six distinct skills", "one compact response per card", "model skill is not repeated as an independent answer", "no answer is shown"]
+    },
+    "EL-LKG-V4-P041": {
+      "title": "Certificate",
+      "objective": "Celebrate completion of Early Literacy Adventures.",
+      "instruction": "This certifies that the learner has completed Early Literacy Adventures.",
+      "child_thinking": "I can celebrate the literacy skills I practised.",
+      "model_example": {"not_required": true},
+      "expected_response": "Adult writes the learner's name, date and signature in deterministic fields.",
+      "archetype": "literacy-certificate",
+      "mechanic": "certificate-fields",
+      "render_kind": "literacy-certificate",
+      "illustration_assets": {"badge": "one celebratory reading badge with a book and star, without words", "book_cluster": "small celebratory cluster of books, letters and stars"},
+      "asset_crop_overrides": {
+        "badge": {"x": 0.0, "y": 0.15, "w": 0.485, "h": 0.68, "padding": 0.0},
+        "book_cluster": {"x": 0.495, "y": 0.15, "w": 0.505, "h": 0.68, "padding": 0.0}
+      },
+      "renderer_controls": {
+        "fields": ["Learner name", "Date", "Teacher signature"],
+        "achievement_line": "for completing Early Literacy Adventures"
+      },
+      "teacher_cue": "Present the certificate after the learner completes the review pages.",
+      "validation_gates": ["name field is large", "logo and certificate text are deterministic", "no parent panel", "no generated readable text in artwork"]
+    },
+    "EL-LKG-V4-P042": {
+      "title": "I Am A Reader",
+      "objective": "Reflect on confidence with letters, words and short sentences.",
+      "instruction": "Look at each statement. Tick what you can do and tell your teacher one example.",
+      "child_thinking": "I notice what I can do now and share one example.",
+      "model_example": {"statement": "I can read cat.", "show_completed_tick": true},
+      "expected_response": "Three self-reflection ticks and one oral example.",
+      "archetype": "reader-hero-with-three-self-checks",
+      "mechanic": "literacy-self-reflection",
+      "render_kind": "literacy-reader-reflection",
+      "illustration_assets": {"reader_hero": "one confident LKG child reading a picture book with a small stack of books and letter blocks"},
+      "asset_crop_overrides": {"reader_hero": {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "padding": 0.0}},
+      "renderer_controls": {
+        "statements": ["I can say letter sounds.", "I can read some words.", "I can talk about a story."],
+        "oral_prompt": "Show or tell one thing you can read."
+      },
+      "teacher_cue": "Ask for one example after the child chooses a statement; accept oral reading or supported response.",
+      "validation_gates": ["three large unticked boxes", "one hero illustration", "no generic empty reflection frame"]
+    },
+    "EL-LKG-V4-P043": {
+      "title": "My Literacy Celebration",
+      "objective": "Celebrate favourite literacy learning from the book.",
+      "instruction": "Choose your favourite literacy activity. Draw or write one example.",
+      "child_thinking": "I remember what I enjoyed and show one thing I learned.",
+      "model_example": {"choice": "WORDS", "example": "cat", "show_small_model": true},
+      "expected_response": "One selected activity and one purposeful drawing or short written example.",
+      "archetype": "celebration-choice-with-purposeful-work-frame",
+      "mechanic": "choose-reflect-create",
+      "render_kind": "literacy-celebration",
+      "illustration_assets": {"celebration_hero": "three diverse LKG children celebrating with books, alphabet blocks and picture cards, no text"},
+      "asset_crop_overrides": {"celebration_hero": {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "padding": 0.0}},
+      "renderer_controls": {
+        "choices": ["LETTERS", "WORDS", "STORIES"],
+        "work_frame_prompt": "Draw or write your example here.",
+        "work_frame_ratio": 0.42
+      },
+      "teacher_cue": "Let the child choose one area and describe the drawing or written example.",
+      "validation_gates": ["one purposeful work frame", "three clear unticked choices", "no second empty box", "celebration art does not dominate the response area"]
+    }
+  },
+  "remaining_scope": {}
+}

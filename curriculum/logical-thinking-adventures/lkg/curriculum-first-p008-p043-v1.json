@@ -1,63 +1,2105 @@
 {
-  "schema_version": "1.0.0",
-  "version": "logical-thinking-lkg-curriculum-first-p008-p043-v1",
-  "status": "TEST_CANDIDATE",
+  "version": "1.0.0",
+  "status": "READY_FOR_ILLUSTRATION_PRODUCTION",
   "book": "Logical Thinking Adventures",
   "level": "LKG (4+)",
-  "page_range": {
-    "first": "LT-LKG-V4-P008",
-    "last": "LT-LKG-V4-P043",
-    "count": 36
+  "scope": "LT-LKG-V4-P008 through LT-LKG-V4-P043",
+  "authoritative_sources": [
+    "production-prompts/logical-thinking-adventures/lkg/v4/release-manifest.json",
+    "production-prompts/logical-thinking-adventures/lkg/v4/pages",
+    "agent/phase2-five-page-pilot curriculum-first and response-safe rules"
+  ],
+  "global_rules": {
+    "one_primary_child_action": true,
+    "visible_completed_example": true,
+    "independent_answers_unmarked": true,
+    "parent_panel": false,
+    "home_connection": false,
+    "generic_response_panel": false,
+    "every_response_area_has_a_named_action": true,
+    "isolated_object_names_visible": true,
+    "illustration_contains_no_generated_text": true,
+    "worksheet_mechanics_are_deterministic": true,
+    "allow_fallback": false,
+    "minimum_child_text_pt_at_a4": 18,
+    "minimum_response_target_mm": 12,
+    "minimum_tasks_on_full_activity_page": 5
   },
-  "sources": {
-    "release_manifest": "production-prompts/logical-thinking-adventures/lkg/v4/release-manifest.json",
-    "page_prompts": "production-prompts/logical-thinking-adventures/lkg/v4/pages",
-    "phase2_illustrations": "production-prompts/logical-thinking-adventures/lkg/v4/phase2-illustration-prompts.json"
-  },
-  "policy": {
-    "curriculum_first": true,
-    "content_aligned_artwork_only": true,
-    "renderer_owns_text_and_mechanics": true,
-    "generic_fallback_allowed": false,
-    "missing_assets": "fail_closed",
-    "completed_answers_in_artwork": "reject"
-  },
-  "pages": [
-    "LT-LKG-V4-P008",
-    "LT-LKG-V4-P009",
-    "LT-LKG-V4-P010",
-    "LT-LKG-V4-P011",
-    "LT-LKG-V4-P012",
-    "LT-LKG-V4-P013",
-    "LT-LKG-V4-P014",
-    "LT-LKG-V4-P015",
-    "LT-LKG-V4-P016",
-    "LT-LKG-V4-P017",
-    "LT-LKG-V4-P018",
-    "LT-LKG-V4-P019",
-    "LT-LKG-V4-P020",
-    "LT-LKG-V4-P021",
-    "LT-LKG-V4-P022",
-    "LT-LKG-V4-P023",
-    "LT-LKG-V4-P024",
-    "LT-LKG-V4-P025",
-    "LT-LKG-V4-P026",
-    "LT-LKG-V4-P027",
-    "LT-LKG-V4-P028",
-    "LT-LKG-V4-P029",
-    "LT-LKG-V4-P030",
-    "LT-LKG-V4-P031",
-    "LT-LKG-V4-P032",
-    "LT-LKG-V4-P033",
-    "LT-LKG-V4-P034",
-    "LT-LKG-V4-P035",
-    "LT-LKG-V4-P036",
-    "LT-LKG-V4-P037",
-    "LT-LKG-V4-P038",
-    "LT-LKG-V4-P039",
-    "LT-LKG-V4-P040",
-    "LT-LKG-V4-P041",
-    "LT-LKG-V4-P042",
-    "LT-LKG-V4-P043"
-  ]
+  "pages": {
+    "LT-LKG-V4-P008": {
+      "title": "Find the Difference",
+      "objective": "Find visual differences between two similar scenes.",
+      "instruction": "Look carefully. Circle the five differences in Picture B.",
+      "child_thinking": "I compare one part at a time and circle only what changed.",
+      "model_example": {
+        "pair": "two toy boats",
+        "difference": "one flag is missing",
+        "show_circle": true
+      },
+      "expected_response": "Five differences circled in the second playground scene.",
+      "archetype": "paired-scene-difference",
+      "mechanic": "circle-five-differences",
+      "render_kind": "logic-find-difference",
+      "illustration_assets": {
+        "playground_a": "playground scene with slide, ball, kite, bench and tree",
+        "playground_b": "same playground with exactly five clear changes"
+      },
+      "renderer_controls": {
+        "difference_count": 5,
+        "circle_on": "picture_b",
+        "labels": [
+          "Picture A",
+          "Picture B"
+        ],
+        "differences": [
+          "missing kite tail",
+          "different ball colour",
+          "absent flower",
+          "shorter slide ladder",
+          "bird facing other way"
+        ]
+      },
+      "teacher_cue": "Guide the child to compare the scenes from left to right without naming a difference.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "the two scenes have exactly five differences",
+        "key objects are not cropped"
+      ]
+    },
+    "LT-LKG-V4-P009": {
+      "title": "Spot the Same",
+      "objective": "Identify an identical picture among similar choices.",
+      "instruction": "Look at the picture on the left. Circle the picture that is exactly the same.",
+      "child_thinking": "I check shape, colour and direction before I choose.",
+      "model_example": {
+        "target": "striped sock",
+        "options": [
+          "same sock",
+          "different stripe",
+          "reversed sock"
+        ],
+        "answer": 1
+      },
+      "expected_response": "One identical picture circled in each of six rows.",
+      "archetype": "six-identical-picture-rows",
+      "mechanic": "circle-identical-picture",
+      "render_kind": "logic-spot-same",
+      "illustration_assets": {
+        "fish_set": "one target fish and three similar fish choices",
+        "kite_set": "one target kite and three similar kite choices",
+        "cup_set": "one target cup and three similar cup choices",
+        "car_set": "one target car and three similar car choices",
+        "butterfly_set": "one target butterfly and three similar butterfly choices",
+        "shoe_set": "one target shoe and three similar shoe choices"
+      },
+      "renderer_controls": {
+        "rows": [
+          "fish",
+          "kite",
+          "cup",
+          "car",
+          "butterfly",
+          "shoe"
+        ],
+        "choices_per_row": 3,
+        "answer_positions": [
+          2,
+          3,
+          1,
+          3,
+          2,
+          1
+        ]
+      },
+      "teacher_cue": "Ask the child to name one detail that proves the pictures are the same.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "six substantial rows are present",
+        "answer positions vary"
+      ]
+    },
+    "LT-LKG-V4-P010": {
+      "title": "Odd One Out",
+      "objective": "Classify pictures and identify the item that does not belong.",
+      "instruction": "Name the pictures. Circle the one that does not belong in each row.",
+      "child_thinking": "I find what three pictures have in common, then choose the different one.",
+      "model_example": {
+        "items": [
+          "apple",
+          "banana",
+          "orange",
+          "bus"
+        ],
+        "answer": "bus",
+        "show_circle": true
+      },
+      "expected_response": "One odd picture circled in each of six rows.",
+      "archetype": "six-odd-one-out-rows",
+      "mechanic": "circle-category-outsider",
+      "render_kind": "logic-odd-one-out",
+      "illustration_assets": {
+        "fruit_row": "three fruits and one vehicle",
+        "animal_row": "three animals and one fruit",
+        "clothes_row": "three clothes and one cup",
+        "transport_row": "three vehicles and one flower",
+        "shape_row": "three flat shapes and one ball",
+        "weather_row": "three weather symbols and one shoe"
+      },
+      "renderer_controls": {
+        "rows": [
+          "fruit",
+          "animals",
+          "clothes",
+          "transport",
+          "shapes",
+          "weather"
+        ],
+        "items_per_row": 4,
+        "answer_positions": [
+          4,
+          2,
+          3,
+          1,
+          4,
+          2
+        ]
+      },
+      "teacher_cue": "Let the child name the group first, then ask which picture breaks the rule.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "object names appear below every picture",
+        "six rows use different category rules"
+      ]
+    },
+    "LT-LKG-V4-P011": {
+      "title": "Picture Match",
+      "objective": "Match familiar objects that are meaningfully related.",
+      "instruction": "Name each picture. Draw a line between the pictures that belong together.",
+      "child_thinking": "I think about how the two objects are used together.",
+      "model_example": {
+        "left": "toothbrush",
+        "right": "toothpaste",
+        "show_completed_line": true
+      },
+      "expected_response": "Six lines connecting related object pairs.",
+      "archetype": "two-column-related-picture-match",
+      "mechanic": "match-related-objects",
+      "render_kind": "logic-picture-match",
+      "illustration_assets": {
+        "shoe": "one shoe",
+        "key": "one key",
+        "pencil": "one pencil",
+        "cup": "one cup",
+        "soap": "one bar of soap",
+        "bed": "one bed",
+        "sock": "one sock",
+        "lock": "one padlock",
+        "sharpener": "one pencil sharpener",
+        "jug": "one water jug",
+        "towel": "one towel",
+        "pillow": "one pillow"
+      },
+      "renderer_controls": {
+        "left": [
+          "shoe",
+          "key",
+          "pencil",
+          "cup",
+          "soap",
+          "bed"
+        ],
+        "right": [
+          "towel",
+          "pillow",
+          "sock",
+          "sharpener",
+          "lock",
+          "jug"
+        ],
+        "correct_pairs": [
+          [
+            "shoe",
+            "sock"
+          ],
+          [
+            "key",
+            "lock"
+          ],
+          [
+            "pencil",
+            "sharpener"
+          ],
+          [
+            "cup",
+            "jug"
+          ],
+          [
+            "soap",
+            "towel"
+          ],
+          [
+            "bed",
+            "pillow"
+          ]
+        ],
+        "require_derangement": true
+      },
+      "teacher_cue": "Ask how one matched pair is used together after the child draws the line.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "six matching pairs are included",
+        "connector anchors are large and visible",
+        "object names are printed"
+      ]
+    },
+    "LT-LKG-V4-P012": {
+      "title": "Hidden Objects",
+      "objective": "Find familiar objects hidden within a controlled scene.",
+      "instruction": "Find each object shown below. Circle it in the classroom picture.",
+      "child_thinking": "I scan one small part of the picture at a time.",
+      "model_example": {
+        "mini_scene": "toy shelf",
+        "target": "red ball",
+        "show_circle": true
+      },
+      "expected_response": "Six named target objects circled in the classroom scene.",
+      "archetype": "hidden-object-scene-with-target-strip",
+      "mechanic": "find-and-circle-targets",
+      "render_kind": "logic-hidden-objects",
+      "illustration_assets": {
+        "classroom_scene": "clean classroom scene hiding exactly six familiar objects",
+        "ball": "red ball target",
+        "key": "small key target",
+        "spoon": "silver spoon target",
+        "sock": "striped sock target",
+        "pencil": "yellow pencil target",
+        "teddy": "brown teddy target"
+      },
+      "renderer_controls": {
+        "targets": [
+          "ball",
+          "key",
+          "spoon",
+          "sock",
+          "pencil",
+          "teddy"
+        ],
+        "target_names_visible": true,
+        "circle_in_scene": true
+      },
+      "teacher_cue": "Name one target at a time and allow the child time to scan the whole scene.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "scene contains exactly one of each target",
+        "targets remain recognisable but not immediately obvious"
+      ]
+    },
+    "LT-LKG-V4-P013": {
+      "title": "What Comes Next",
+      "objective": "Complete repeating visual sequences.",
+      "instruction": "Look for the repeating part. Circle the picture that comes next.",
+      "child_thinking": "I say the pattern aloud and use it to predict the next picture.",
+      "model_example": {
+        "sequence": [
+          "red apple",
+          "green apple",
+          "red apple",
+          "green apple"
+        ],
+        "answer": "red apple",
+        "show_circle": true
+      },
+      "expected_response": "One next-picture choice circled in each of five sequences.",
+      "archetype": "five-sequence-choice-rows",
+      "mechanic": "choose-next-picture",
+      "render_kind": "logic-what-comes-next",
+      "illustration_assets": {
+        "star_pattern": "AB star pattern with three choices",
+        "fruit_pattern": "AAB fruit pattern with three choices",
+        "shape_pattern": "ABC shape pattern with three choices",
+        "vehicle_pattern": "AB vehicle pattern with three choices",
+        "animal_pattern": "AAB animal pattern with three choices"
+      },
+      "renderer_controls": {
+        "rows": [
+          "stars",
+          "fruit",
+          "shapes",
+          "vehicles",
+          "animals"
+        ],
+        "pattern_types": [
+          "AB",
+          "AAB",
+          "ABC",
+          "AB",
+          "AAB"
+        ],
+        "choices_per_row": 3
+      },
+      "teacher_cue": "Point to each picture in order and pause before the blank.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five rows are present",
+        "each row includes one answer space and three choices"
+      ]
+    },
+    "LT-LKG-V4-P014": {
+      "title": "Story Sequence",
+      "objective": "Arrange four events in a logical order.",
+      "instruction": "Look at the four pictures. Write 1, 2, 3 and 4 to show the story order.",
+      "child_thinking": "I find what happens first, next, then and last.",
+      "model_example": {
+        "story": [
+          "seed",
+          "sprout",
+          "small plant"
+        ],
+        "numbers": [
+          1,
+          2,
+          3
+        ],
+        "show_answers": true
+      },
+      "expected_response": "Numbers 1–4 written once beside the four shuffled handwashing pictures.",
+      "archetype": "four-card-story-sequence",
+      "mechanic": "number-events-in-order",
+      "render_kind": "logic-story-sequence",
+      "illustration_assets": {
+        "wet_hands": "child wetting hands",
+        "apply_soap": "child applying soap",
+        "scrub_hands": "child scrubbing hands",
+        "dry_hands": "child drying clean hands"
+      },
+      "renderer_controls": {
+        "display_order": [
+          "dry_hands",
+          "wet_hands",
+          "scrub_hands",
+          "apply_soap"
+        ],
+        "correct_order": [
+          "wet_hands",
+          "apply_soap",
+          "scrub_hands",
+          "dry_hands"
+        ],
+        "writing_boxes": 4,
+        "box_size_mm": 14
+      },
+      "teacher_cue": "Ask which picture must happen first and why; do not supply the number.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "all four writing boxes are empty",
+        "each event is visibly distinct"
+      ]
+    },
+    "LT-LKG-V4-P015": {
+      "title": "Pattern Logic",
+      "objective": "Recognise repeating picture patterns and draw what comes next.",
+      "instruction": "Say each pattern. Draw the next picture in the empty box.",
+      "child_thinking": "I find the part that repeats and draw what should follow.",
+      "model_example": {
+        "sequence": [
+          "circle",
+          "square",
+          "circle",
+          "square"
+        ],
+        "answer": "circle",
+        "show_answer": true
+      },
+      "expected_response": "One next item drawn in each of five pattern boxes.",
+      "archetype": "five-draw-next-pattern-rows",
+      "mechanic": "draw-next-pattern-item",
+      "render_kind": "logic-pattern-logic",
+      "illustration_assets": {
+        "fruit_pattern": "AB apple-banana pattern",
+        "shape_pattern": "AAB circle-triangle-triangle pattern",
+        "toy_pattern": "ABC ball-car-teddy pattern",
+        "flower_pattern": "AB red-blue flower pattern",
+        "animal_pattern": "AAB cat-dog-dog pattern"
+      },
+      "renderer_controls": {
+        "rows": [
+          "fruit",
+          "shapes",
+          "toys",
+          "flowers",
+          "animals"
+        ],
+        "pattern_types": [
+          "AB",
+          "AAB",
+          "ABC",
+          "AB",
+          "AAB"
+        ],
+        "draw_boxes": 5,
+        "draw_box_min_mm": 22
+      },
+      "teacher_cue": "Have the child point to the repeating unit before drawing.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five purposeful drawing boxes are provided",
+        "no next item is prefilled"
+      ]
+    },
+    "LT-LKG-V4-P016": {
+      "title": "Complete the Series",
+      "objective": "Predict the next item in changing visual series.",
+      "instruction": "Look at how each series changes. Circle the picture that comes next.",
+      "child_thinking": "I notice what changes in size, number, direction or position.",
+      "model_example": {
+        "series": [
+          "small star",
+          "medium star",
+          "large star"
+        ],
+        "answer": "extra-large star",
+        "show_circle": true
+      },
+      "expected_response": "One correct picture circled in each of five series.",
+      "archetype": "five-changing-series-rows",
+      "mechanic": "choose-series-completion",
+      "render_kind": "logic-complete-series",
+      "illustration_assets": {
+        "size_series": "objects growing in size with three choices",
+        "count_series": "groups increasing by one with three choices",
+        "direction_series": "arrow turning clockwise with three choices",
+        "position_series": "ball moving through three boxes with choices",
+        "colour_series": "colour cycle with three choices"
+      },
+      "renderer_controls": {
+        "rows": [
+          "size",
+          "count",
+          "direction",
+          "position",
+          "colour"
+        ],
+        "choices_per_row": 3,
+        "response": "circle"
+      },
+      "teacher_cue": "Ask what changed from one picture to the next before the child chooses.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five distinct change rules are used",
+        "choice circles remain unmarked"
+      ]
+    },
+    "LT-LKG-V4-P017": {
+      "title": "Sort by Colour",
+      "objective": "Classify objects by colour.",
+      "instruction": "Find each picture's colour. Write red picture numbers in RED and blue picture numbers in BLUE.",
+      "child_thinking": "I ignore the object type and sort only by its colour.",
+      "model_example": {
+        "picture": "red button",
+        "number": 1,
+        "category": "RED",
+        "show_number_in_box": true
+      },
+      "expected_response": "Four picture numbers written in RED and four in BLUE.",
+      "archetype": "numbered-items-to-colour-groups",
+      "mechanic": "write-picture-numbers-by-colour",
+      "render_kind": "logic-sort-colour",
+      "illustration_assets": {
+        "red_button": "red button",
+        "blue_cube": "blue cube",
+        "blue_ball": "blue ball",
+        "red_car": "red toy car",
+        "blue_button": "blue button",
+        "red_cube": "red cube",
+        "red_ball": "red ball",
+        "blue_car": "blue toy car"
+      },
+      "renderer_controls": {
+        "items": [
+          "red_button",
+          "blue_cube",
+          "blue_ball",
+          "red_car",
+          "blue_button",
+          "red_cube",
+          "red_ball",
+          "blue_car"
+        ],
+        "categories": [
+          "RED",
+          "BLUE"
+        ],
+        "number_writing_boxes_per_category": 4,
+        "correct_groups": {
+          "RED": [
+            1,
+            4,
+            6,
+            7
+          ],
+          "BLUE": [
+            2,
+            3,
+            5,
+            8
+          ]
+        }
+      },
+      "teacher_cue": "Point to one number, name the object's colour, then let the child write that number in the matching group.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "each category has four separate number boxes",
+        "all eight pictures have visible numbers and names"
+      ]
+    },
+    "LT-LKG-V4-P018": {
+      "title": "Sort by Shape",
+      "objective": "Classify objects by their visible shape.",
+      "instruction": "Look at the numbered pictures. Write each number in the correct shape box.",
+      "child_thinking": "I look at the outside shape, not the colour.",
+      "model_example": {
+        "picture": "round clock",
+        "number": 1,
+        "category": "CIRCLE",
+        "show_number_in_box": true
+      },
+      "expected_response": "Three picture numbers written in each of the CIRCLE, SQUARE and TRIANGLE groups.",
+      "archetype": "numbered-items-to-shape-groups",
+      "mechanic": "write-picture-numbers-by-shape",
+      "render_kind": "logic-sort-shape",
+      "illustration_assets": {
+        "clock": "round wall clock",
+        "window": "square window",
+        "flag": "triangular flag",
+        "plate": "round plate",
+        "tile": "square tile",
+        "sandwich": "triangular sandwich",
+        "coin": "round coin",
+        "gift_box": "square gift box",
+        "road_sign": "triangular road sign"
+      },
+      "renderer_controls": {
+        "items": [
+          "clock",
+          "window",
+          "flag",
+          "plate",
+          "tile",
+          "sandwich",
+          "coin",
+          "gift_box",
+          "road_sign"
+        ],
+        "categories": [
+          "CIRCLE",
+          "SQUARE",
+          "TRIANGLE"
+        ],
+        "number_writing_boxes_per_category": 3,
+        "correct_groups": {
+          "CIRCLE": [
+            1,
+            4,
+            7
+          ],
+          "SQUARE": [
+            2,
+            5,
+            8
+          ],
+          "TRIANGLE": [
+            3,
+            6,
+            9
+          ]
+        }
+      },
+      "teacher_cue": "Ask the child to trace each object’s outside edge in the air before sorting.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "three number boxes appear in every category",
+        "nine pictures have visible numbers and names"
+      ]
+    },
+    "LT-LKG-V4-P019": {
+      "title": "Sort by Size",
+      "objective": "Arrange familiar objects from smallest to largest.",
+      "instruction": "Write 1, 2 and 3 to order each set from smallest to largest.",
+      "child_thinking": "I compare the same kind of object and start with the smallest.",
+      "model_example": {
+        "objects": [
+          "small ball",
+          "medium ball",
+          "large ball"
+        ],
+        "numbers": [
+          1,
+          2,
+          3
+        ],
+        "show_answers": true
+      },
+      "expected_response": "Numbers 1–3 written under every object in five shuffled size sets.",
+      "archetype": "five-three-size-order-sets",
+      "mechanic": "number-smallest-to-largest",
+      "render_kind": "logic-sort-size",
+      "illustration_assets": {
+        "bears": "three matching teddy bears in small, medium and large sizes",
+        "trees": "three matching trees in small, medium and large sizes",
+        "cups": "three matching cups in small, medium and large sizes",
+        "fish": "three matching fish in small, medium and large sizes",
+        "cars": "three matching cars in small, medium and large sizes"
+      },
+      "renderer_controls": {
+        "sets": [
+          "bears",
+          "trees",
+          "cups",
+          "fish",
+          "cars"
+        ],
+        "items_per_set": 3,
+        "display_orders": [
+          [
+            2,
+            3,
+            1
+          ],
+          [
+            3,
+            1,
+            2
+          ],
+          [
+            1,
+            3,
+            2
+          ],
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "writing_boxes_per_set": 3
+      },
+      "teacher_cue": "Ask the child to point to the smallest, then the largest, before writing numbers.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five size sets fill the page",
+        "writing boxes are at least 12 mm"
+      ]
+    },
+    "LT-LKG-V4-P020": {
+      "title": "Belongs Together",
+      "objective": "Identify familiar objects from the same functional group.",
+      "instruction": "Name each picture. Draw a line to the picture that belongs with it.",
+      "child_thinking": "I think about where objects are used and what they do.",
+      "model_example": {
+        "left": "cup",
+        "right": "plate",
+        "reason": "things used for eating",
+        "show_completed_line": true
+      },
+      "expected_response": "Six lines connecting objects that belong together.",
+      "archetype": "two-column-category-pair-match",
+      "mechanic": "match-belonging-objects",
+      "render_kind": "logic-belongs-together",
+      "illustration_assets": {
+        "pencil": "pencil",
+        "shoe": "shoe",
+        "soap": "bar of soap",
+        "bed": "bed",
+        "car": "car",
+        "spoon": "spoon",
+        "sharpener": "pencil sharpener",
+        "sock": "sock",
+        "towel": "towel",
+        "pillow": "pillow",
+        "garage": "garage",
+        "bowl": "bowl"
+      },
+      "renderer_controls": {
+        "left": [
+          "pencil",
+          "shoe",
+          "soap",
+          "bed",
+          "car",
+          "spoon"
+        ],
+        "right": [
+          "towel",
+          "garage",
+          "sharpener",
+          "bowl",
+          "pillow",
+          "sock"
+        ],
+        "correct_pairs": [
+          [
+            "pencil",
+            "sharpener"
+          ],
+          [
+            "shoe",
+            "sock"
+          ],
+          [
+            "soap",
+            "towel"
+          ],
+          [
+            "bed",
+            "pillow"
+          ],
+          [
+            "car",
+            "garage"
+          ],
+          [
+            "spoon",
+            "bowl"
+          ]
+        ],
+        "require_derangement": true
+      },
+      "teacher_cue": "Invite the child to explain one pair after matching it.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "six pairs are included",
+        "object names and anchors are visible"
+      ]
+    },
+    "LT-LKG-V4-P021": {
+      "title": "Big Problem Small Problem",
+      "objective": "Distinguish small everyday problems from problems needing adult help.",
+      "instruction": "Look at each numbered situation. Write its number under SMALL or BIG.",
+      "child_thinking": "I decide whether I can solve it safely or need an adult’s help.",
+      "model_example": {
+        "situation": "dropped pencil",
+        "category": "SMALL",
+        "reason": "pick it up safely",
+        "show_number_in_box": true
+      },
+      "expected_response": "Three picture numbers written under SMALL and three under BIG.",
+      "archetype": "numbered-situations-two-groups",
+      "mechanic": "classify-problem-size",
+      "render_kind": "logic-problem-size",
+      "illustration_assets": {
+        "broken_crayon": "child with a broken crayon",
+        "spilled_water": "small cup of water spilled on a table",
+        "missing_toy": "child looking for a toy",
+        "smoke": "smoke coming from a kitchen",
+        "hurt_knee": "child with a badly hurt knee",
+        "lost_outside": "child lost outside"
+      },
+      "renderer_controls": {
+        "items": [
+          "broken_crayon",
+          "spilled_water",
+          "missing_toy",
+          "smoke",
+          "hurt_knee",
+          "lost_outside"
+        ],
+        "categories": [
+          "SMALL",
+          "BIG — TELL AN ADULT"
+        ],
+        "number_writing_boxes_per_category": 3,
+        "correct_groups": {
+          "SMALL": [
+            1,
+            2,
+            3
+          ],
+          "BIG — TELL AN ADULT": [
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "teacher_cue": "Discuss safety: a big problem means stop and tell a trusted adult.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "safety situations are calm and non-frightening",
+        "six response boxes are available"
+      ]
+    },
+    "LT-LKG-V4-P022": {
+      "title": "Cause and Effect",
+      "objective": "Match familiar actions with likely outcomes.",
+      "instruction": "Look at each action. Draw a line to what is most likely to happen next.",
+      "child_thinking": "I ask, ‘What would happen because of this?’",
+      "model_example": {
+        "cause": "plant is watered",
+        "effect": "plant grows",
+        "show_completed_line": true
+      },
+      "expected_response": "Five lines connecting each cause to its effect.",
+      "archetype": "cause-effect-two-column-match",
+      "mechanic": "match-action-outcome",
+      "render_kind": "logic-cause-effect",
+      "illustration_assets": {
+        "drop_ice": "ice cube left in sunlight",
+        "push_ball": "child gently pushing a ball",
+        "rain_cloud": "dark cloud releasing rain",
+        "turn_switch": "finger turning on a lamp switch",
+        "open_umbrella": "child opening an umbrella in rain",
+        "puddle": "melted water puddle",
+        "rolling_ball": "ball rolling away",
+        "wet_ground": "wet ground with raindrops",
+        "lit_lamp": "lamp glowing",
+        "dry_child": "child staying dry under umbrella"
+      },
+      "renderer_controls": {
+        "left": [
+          "drop_ice",
+          "push_ball",
+          "rain_cloud",
+          "turn_switch",
+          "open_umbrella"
+        ],
+        "right": [
+          "lit_lamp",
+          "puddle",
+          "dry_child",
+          "wet_ground",
+          "rolling_ball"
+        ],
+        "correct_pairs": [
+          [
+            "drop_ice",
+            "puddle"
+          ],
+          [
+            "push_ball",
+            "rolling_ball"
+          ],
+          [
+            "rain_cloud",
+            "wet_ground"
+          ],
+          [
+            "turn_switch",
+            "lit_lamp"
+          ],
+          [
+            "open_umbrella",
+            "dry_child"
+          ]
+        ],
+        "require_derangement": true
+      },
+      "teacher_cue": "Ask the child to say ‘because’ when explaining one match.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five cause-effect pairs are included",
+        "events are safe and visually explicit"
+      ]
+    },
+    "LT-LKG-V4-P023": {
+      "title": "Left and Right",
+      "objective": "Identify left and right positions.",
+      "instruction": "Look at each pair. Circle LEFT or RIGHT to tell where the first named object is.",
+      "child_thinking": "I use my own hands to remember left and right.",
+      "model_example": {
+        "scene": "child between apple and ball",
+        "direction": "Circle the ball on the right",
+        "show_circle": true
+      },
+      "expected_response": "One correct object circled in each of six position scenes.",
+      "archetype": "six-left-right-choice-scenes",
+      "mechanic": "circle-left-or-right-object",
+      "render_kind": "logic-left-right",
+      "illustration_assets": {
+        "scene_1": "child with apple on left and ball on right",
+        "scene_2": "tree with bird on left and kite on right",
+        "scene_3": "box with car on left and teddy on right",
+        "scene_4": "bench with flower on left and dog on right",
+        "scene_5": "table with cup on left and plate on right",
+        "scene_6": "gate with bus on left and bicycle on right"
+      },
+      "renderer_controls": {
+        "scenes": [
+          "scene_1",
+          "scene_2",
+          "scene_3",
+          "scene_4",
+          "scene_5",
+          "scene_6"
+        ],
+        "directions": [
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "left"
+        ],
+        "response": "circle"
+      },
+      "teacher_cue": "Stand beside the child and use the same viewing direction when naming left and right.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "six scenes are present",
+        "the instruction for each scene is deterministic text"
+      ]
+    },
+    "LT-LKG-V4-P024": {
+      "title": "Above and Below",
+      "objective": "Recognise objects above and below a reference point.",
+      "instruction": "Look at each picture. Circle the correct position word.",
+      "child_thinking": "I compare the object with the other object in the picture.",
+      "model_example": {
+        "scene": "kite above a tree",
+        "choices": [
+          "above",
+          "below"
+        ],
+        "answer": "above",
+        "show_circle": true
+      },
+      "expected_response": "One position word circled in each of six scenes.",
+      "archetype": "six-above-below-scenes",
+      "mechanic": "circle-position-word",
+      "render_kind": "logic-above-below",
+      "illustration_assets": {
+        "bird_tree": "bird above a tree",
+        "shoe_chair": "shoe below a chair",
+        "sun_cloud": "sun above a cloud",
+        "cat_table": "cat below a table",
+        "ball_shelf": "ball above a shelf",
+        "fish_boat": "fish below a boat"
+      },
+      "renderer_controls": {
+        "scenes": [
+          "bird_tree",
+          "shoe_chair",
+          "sun_cloud",
+          "cat_table",
+          "ball_shelf",
+          "fish_boat"
+        ],
+        "choices": [
+          "above",
+          "below"
+        ],
+        "answers": [
+          "above",
+          "below",
+          "above",
+          "below",
+          "above",
+          "below"
+        ],
+        "minimum_choice_circle_mm": 18
+      },
+      "teacher_cue": "Ask ‘Where is it compared with the other object?’ before the child circles a word.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "position words fit comfortably inside large response targets",
+        "six scenes are present"
+      ]
+    },
+    "LT-LKG-V4-P025": {
+      "title": "Inside and Outside",
+      "objective": "Identify objects inside and outside containers or boundaries.",
+      "instruction": "Look at each picture. Circle the correct position word.",
+      "child_thinking": "I check whether the object is within the boundary or beyond it.",
+      "model_example": {
+        "scene": "ball inside a box",
+        "choices": [
+          "inside",
+          "outside"
+        ],
+        "answer": "inside",
+        "show_circle": true
+      },
+      "expected_response": "One position word circled in each of six scenes.",
+      "archetype": "six-inside-outside-scenes",
+      "mechanic": "circle-location-word",
+      "render_kind": "logic-inside-outside",
+      "illustration_assets": {
+        "ball_box": "ball inside an open box",
+        "dog_kennel": "dog outside a kennel",
+        "fish_bowl": "fish inside a bowl",
+        "bird_cage": "bird outside an open cage",
+        "toy_basket": "toy inside a basket",
+        "child_house": "child outside a playhouse"
+      },
+      "renderer_controls": {
+        "scenes": [
+          "ball_box",
+          "dog_kennel",
+          "fish_bowl",
+          "bird_cage",
+          "toy_basket",
+          "child_house"
+        ],
+        "choices": [
+          "inside",
+          "outside"
+        ],
+        "answers": [
+          "inside",
+          "outside",
+          "inside",
+          "outside",
+          "inside",
+          "outside"
+        ],
+        "minimum_choice_circle_mm": 22
+      },
+      "teacher_cue": "Trace the boundary with a finger before asking inside or outside.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "full words fit inside response targets",
+        "six clear boundary scenes are present"
+      ]
+    },
+    "LT-LKG-V4-P026": {
+      "title": "Maze Challenge",
+      "objective": "Plan and trace a route through a simple maze.",
+      "instruction": "Trace a path from the rabbit to the carrot. Do not cross a wall.",
+      "child_thinking": "I look ahead before I choose a path.",
+      "model_example": {
+        "maze": "tiny two-turn path from bee to flower",
+        "show_completed_path": true
+      },
+      "expected_response": "One continuous pencil path from START to FINISH.",
+      "archetype": "single-large-trace-maze",
+      "mechanic": "trace-unsolved-maze",
+      "render_kind": "logic-maze",
+      "illustration_assets": {
+        "rabbit": "friendly rabbit start icon",
+        "carrot": "large carrot finish icon"
+      },
+      "renderer_controls": {
+        "grid": [
+          8,
+          10
+        ],
+        "start": [
+          0,
+          8
+        ],
+        "finish": [
+          7,
+          1
+        ],
+        "path_width_mm": 12,
+        "show_solution": false,
+        "dead_ends": 5,
+        "start_label": "START",
+        "finish_label": "FINISH"
+      },
+      "teacher_cue": "Ask the child to trace the route first with a finger, then with a pencil.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "maze is not pre-traced",
+        "start and finish are obvious",
+        "paths are wide enough for LKG pencil control"
+      ]
+    },
+    "LT-LKG-V4-P027": {
+      "title": "Remember the Pictures",
+      "objective": "Build visual memory by recalling previously seen items.",
+      "instruction": "Look at the six pictures. Cover them. Then circle the three pictures you remember.",
+      "child_thinking": "I name the pictures, cover them and remember what I saw.",
+      "model_example": {
+        "study_items": [
+          "apple",
+          "ball",
+          "cup"
+        ],
+        "recall_choices": [
+          "apple",
+          "car",
+          "cup"
+        ],
+        "answer": [
+          "apple",
+          "cup"
+        ],
+        "show_circles": true
+      },
+      "expected_response": "Three remembered pictures circled from six recall choices after the study strip is covered.",
+      "archetype": "study-cover-recall",
+      "mechanic": "remember-and-circle",
+      "render_kind": "logic-memory-pictures",
+      "illustration_assets": {
+        "apple": "red apple",
+        "ball": "striped ball",
+        "cup": "blue cup",
+        "car": "red toy car",
+        "teddy": "brown teddy",
+        "kite": "colourful kite",
+        "recall_apple": "matching red apple",
+        "recall_bus": "yellow bus distractor",
+        "recall_cup": "matching blue cup",
+        "recall_dog": "dog distractor",
+        "recall_teddy": "matching brown teddy",
+        "recall_flower": "flower distractor"
+      },
+      "renderer_controls": {
+        "study_items": [
+          "apple",
+          "ball",
+          "cup",
+          "car",
+          "teddy",
+          "kite"
+        ],
+        "recall_choices": [
+          "recall_bus",
+          "recall_teddy",
+          "recall_dog",
+          "recall_apple",
+          "recall_flower",
+          "recall_cup"
+        ],
+        "correct_recall": [
+          "recall_teddy",
+          "recall_apple",
+          "recall_cup"
+        ],
+        "cover_instruction": true,
+        "response": "circle"
+      },
+      "teacher_cue": "Allow ten seconds to study, then cover the study strip with a sheet of paper.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "study and recall areas are visually separate",
+        "memory answers are not highlighted"
+      ]
+    },
+    "LT-LKG-V4-P028": {
+      "title": "Picture Recall",
+      "objective": "Recall specific details from a previously viewed scene.",
+      "instruction": "Look at the scene for ten seconds. Cover it. Circle the answer to each question.",
+      "child_thinking": "I remember colours, numbers and positions from the scene.",
+      "model_example": {
+        "scene": "girl with red umbrella and one dog",
+        "question": "What colour was the umbrella?",
+        "choices": [
+          "red",
+          "blue"
+        ],
+        "answer": "red",
+        "show_circle": true
+      },
+      "expected_response": "One answer circled for each of five recall questions.",
+      "archetype": "scene-study-and-five-recall-questions",
+      "mechanic": "observe-cover-recall",
+      "render_kind": "logic-picture-recall",
+      "illustration_assets": {
+        "park_scene": "simple park scene with a red kite, two birds, blue ball, one dog, yellow bench and girl beside tree"
+      },
+      "renderer_controls": {
+        "study_seconds": 10,
+        "cover_instruction": true,
+        "questions": [
+          {
+            "prompt": "What colour was the kite?",
+            "choices": [
+              "red",
+              "green"
+            ],
+            "answer": "red"
+          },
+          {
+            "prompt": "How many birds were there?",
+            "choices": [
+              1,
+              2,
+              3
+            ],
+            "answer": 2
+          },
+          {
+            "prompt": "What was beside the tree?",
+            "choices": [
+              "girl",
+              "bus"
+            ],
+            "answer": "girl"
+          },
+          {
+            "prompt": "What colour was the ball?",
+            "choices": [
+              "blue",
+              "yellow"
+            ],
+            "answer": "blue"
+          },
+          {
+            "prompt": "Which animal was there?",
+            "choices": [
+              "dog",
+              "cat"
+            ],
+            "answer": "dog"
+          }
+        ]
+      },
+      "teacher_cue": "Cover the scene before reading the five questions; uncover it only after the child answers.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five questions test distinct visual details",
+        "answer targets are at least 15 mm"
+      ]
+    },
+    "LT-LKG-V4-P029": {
+      "title": "Choose the Best Answer",
+      "objective": "Evaluate visual choices and select a sensible solution.",
+      "instruction": "Look at each problem. Circle the picture that shows the best choice.",
+      "child_thinking": "I think about which choice is safe, kind and useful.",
+      "model_example": {
+        "problem": "rain begins",
+        "options": [
+          "open umbrella",
+          "wear sunglasses",
+          "drop bag"
+        ],
+        "answer": "open umbrella",
+        "show_circle": true
+      },
+      "expected_response": "One best-answer picture circled in each of five situations.",
+      "archetype": "five-situation-best-choice",
+      "mechanic": "circle-best-visual-solution",
+      "render_kind": "logic-best-answer",
+      "illustration_assets": {
+        "spill_problem": "small water spill with three response options",
+        "friend_problem": "sad friend with three response options",
+        "crossing_problem": "road crossing with three response options",
+        "cold_problem": "cold weather with three clothing options",
+        "lost_item_problem": "lost classroom pencil with three response options"
+      },
+      "renderer_controls": {
+        "situations": [
+          "spill",
+          "sad_friend",
+          "road",
+          "cold",
+          "lost_pencil"
+        ],
+        "choices_per_situation": 3,
+        "answers": [
+          "wipe spill",
+          "comfort friend",
+          "use zebra crossing with adult",
+          "wear coat",
+          "ask and look calmly"
+        ]
+      },
+      "teacher_cue": "Ask the child to explain why one choice is safer or kinder.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five independent situations are included",
+        "unsafe distractors are non-frightening"
+      ]
+    },
+    "LT-LKG-V4-P030": {
+      "title": "Finish the Picture",
+      "objective": "Use symmetry and visual clues to complete partial pictures.",
+      "instruction": "Look at each half-picture. Draw the missing half.",
+      "child_thinking": "I follow the lines and shapes already shown.",
+      "model_example": {
+        "picture": "half butterfly",
+        "completed_outline": "whole butterfly",
+        "show_answer": true
+      },
+      "expected_response": "The missing half drawn in each of five purposeful drawing spaces.",
+      "archetype": "five-half-picture-drawing-tasks",
+      "mechanic": "draw-missing-half",
+      "render_kind": "logic-finish-picture",
+      "illustration_assets": {
+        "apple_half": "left half of a simple apple outline",
+        "fish_half": "left half of a simple fish outline",
+        "flower_half": "left half of a simple flower outline",
+        "house_half": "left half of a simple house outline",
+        "balloon_half": "left half of a balloon outline"
+      },
+      "renderer_controls": {
+        "tasks": [
+          "apple",
+          "fish",
+          "flower",
+          "house",
+          "balloon"
+        ],
+        "centre_guides": true,
+        "drawing_area_min_mm": [
+          45,
+          35
+        ]
+      },
+      "teacher_cue": "Point out where each line meets the centre guide; let the child complete it independently.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five drawing tasks fill the page",
+        "no completed half appears in an independent task"
+      ]
+    },
+    "LT-LKG-V4-P031": {
+      "title": "Visual Puzzle",
+      "objective": "Assemble matching picture pieces mentally.",
+      "instruction": "Look at each picture piece. Draw a line to the piece that completes it.",
+      "child_thinking": "I match colour, outline and picture detail at the cut edge.",
+      "model_example": {
+        "left": "top half of apple",
+        "right": "bottom half of apple",
+        "show_completed_line": true
+      },
+      "expected_response": "Five lines connecting the matching halves.",
+      "archetype": "picture-half-two-column-match",
+      "mechanic": "match-picture-halves",
+      "render_kind": "logic-visual-puzzle",
+      "illustration_assets": {
+        "cat_top": "top half of cat picture",
+        "bus_left": "left half of bus picture",
+        "ball_top": "top half of ball picture",
+        "flower_left": "left half of flower picture",
+        "fish_top": "top half of fish picture",
+        "fish_bottom": "matching bottom half of fish",
+        "flower_right": "matching right half of flower",
+        "cat_bottom": "matching bottom half of cat",
+        "ball_bottom": "matching bottom half of ball",
+        "bus_right": "matching right half of bus"
+      },
+      "renderer_controls": {
+        "left": [
+          "cat_top",
+          "bus_left",
+          "ball_top",
+          "flower_left",
+          "fish_top"
+        ],
+        "right": [
+          "fish_bottom",
+          "flower_right",
+          "cat_bottom",
+          "ball_bottom",
+          "bus_right"
+        ],
+        "correct_pairs": [
+          [
+            "cat_top",
+            "cat_bottom"
+          ],
+          [
+            "bus_left",
+            "bus_right"
+          ],
+          [
+            "ball_top",
+            "ball_bottom"
+          ],
+          [
+            "flower_left",
+            "flower_right"
+          ],
+          [
+            "fish_top",
+            "fish_bottom"
+          ]
+        ],
+        "require_derangement": true
+      },
+      "teacher_cue": "Ask the child to compare the cut edges before drawing each line.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five matching pairs are included",
+        "no object is cropped by the page frame"
+      ]
+    },
+    "LT-LKG-V4-P032": {
+      "title": "Shadow Match",
+      "objective": "Match familiar objects to their silhouettes.",
+      "instruction": "Name each object. Draw a line to its shadow.",
+      "child_thinking": "I compare the outside shape and direction.",
+      "model_example": {
+        "object": "spoon",
+        "shadow": "spoon silhouette",
+        "show_completed_line": true
+      },
+      "expected_response": "Six lines connecting objects to their correct shadows.",
+      "archetype": "object-to-shadow-two-column-match",
+      "mechanic": "match-object-shadow",
+      "render_kind": "logic-shadow-match",
+      "illustration_assets": {
+        "umbrella": "colourful umbrella",
+        "boot": "rain boot",
+        "teapot": "teapot",
+        "guitar": "small guitar",
+        "duck": "duck",
+        "bicycle": "bicycle",
+        "shadow_duck": "duck silhouette",
+        "shadow_bicycle": "bicycle silhouette",
+        "shadow_boot": "boot silhouette",
+        "shadow_umbrella": "umbrella silhouette",
+        "shadow_guitar": "guitar silhouette",
+        "shadow_teapot": "teapot silhouette"
+      },
+      "renderer_controls": {
+        "left": [
+          "umbrella",
+          "boot",
+          "teapot",
+          "guitar",
+          "duck",
+          "bicycle"
+        ],
+        "right": [
+          "shadow_duck",
+          "shadow_bicycle",
+          "shadow_boot",
+          "shadow_umbrella",
+          "shadow_guitar",
+          "shadow_teapot"
+        ],
+        "correct_pairs": [
+          [
+            "umbrella",
+            "shadow_umbrella"
+          ],
+          [
+            "boot",
+            "shadow_boot"
+          ],
+          [
+            "teapot",
+            "shadow_teapot"
+          ],
+          [
+            "guitar",
+            "shadow_guitar"
+          ],
+          [
+            "duck",
+            "shadow_duck"
+          ],
+          [
+            "bicycle",
+            "shadow_bicycle"
+          ]
+        ],
+        "require_derangement": true
+      },
+      "teacher_cue": "Encourage the child to trace an object’s outline in the air before matching.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "six pairs are present",
+        "names appear below colour objects"
+      ]
+    },
+    "LT-LKG-V4-P033": {
+      "title": "Complete the Puzzle",
+      "objective": "Use shape and picture clues to select missing pieces.",
+      "instruction": "Look at each picture with a missing piece. Circle the piece that fits.",
+      "child_thinking": "I match both the shape of the gap and the picture lines.",
+      "model_example": {
+        "picture": "house with roof-piece gap",
+        "choices": [
+          "matching roof",
+          "wheel",
+          "leaf"
+        ],
+        "answer": "matching roof",
+        "show_circle": true
+      },
+      "expected_response": "One correct missing piece circled in each of five puzzles.",
+      "archetype": "five-missing-piece-puzzles",
+      "mechanic": "choose-fitting-puzzle-piece",
+      "render_kind": "logic-complete-puzzle",
+      "illustration_assets": {
+        "train_puzzle": "train picture with one missing piece and three choices",
+        "fish_puzzle": "fish picture with one missing piece and three choices",
+        "flower_puzzle": "flower picture with one missing piece and three choices",
+        "kite_puzzle": "kite picture with one missing piece and three choices",
+        "teddy_puzzle": "teddy picture with one missing piece and three choices"
+      },
+      "renderer_controls": {
+        "puzzles": [
+          "train",
+          "fish",
+          "flower",
+          "kite",
+          "teddy"
+        ],
+        "choices_per_puzzle": 3,
+        "response": "circle"
+      },
+      "teacher_cue": "Ask the child to check the gap shape before looking at picture details.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five puzzles are included",
+        "no correct piece is pre-inserted"
+      ]
+    },
+    "LT-LKG-V4-P034": {
+      "title": "Picture Logic",
+      "objective": "Choose the picture that logically completes a set.",
+      "instruction": "Look at each picture set. Circle the picture that completes the rule.",
+      "child_thinking": "I compare what changes across the pictures.",
+      "model_example": {
+        "set": [
+          "empty cup",
+          "half-full cup",
+          "full cup"
+        ],
+        "answer": "overflowing cup",
+        "show_circle": true
+      },
+      "expected_response": "One logical completion circled in each of five sets.",
+      "archetype": "five-picture-logic-sets",
+      "mechanic": "choose-logical-completion",
+      "render_kind": "logic-picture-logic",
+      "illustration_assets": {
+        "growth_set": "seed-to-plant logic set with three choices",
+        "weather_set": "weather-clothing logic set with choices",
+        "meal_set": "plate-spoon-food relationship set",
+        "home_set": "animal-home relationship set",
+        "tool_set": "object-tool relationship set"
+      },
+      "renderer_controls": {
+        "sets": [
+          "growth",
+          "weather",
+          "meal",
+          "animal_home",
+          "tool_use"
+        ],
+        "choices_per_set": 3,
+        "response": "circle"
+      },
+      "teacher_cue": "Ask what rule connects the shown pictures before presenting the choices.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five different logic relationships are used",
+        "each set has three large answer choices"
+      ]
+    },
+    "LT-LKG-V4-P035": {
+      "title": "Simple Coding",
+      "objective": "Follow directional symbols to reach a goal.",
+      "instruction": "Draw one arrow in each box to make a path from START to the goal.",
+      "child_thinking": "I move one square for each arrow and check my direction.",
+      "model_example": {
+        "grid": [
+          3,
+          3
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "code": [
+          "right",
+          "down"
+        ],
+        "goal": [
+          1,
+          1
+        ],
+        "show_path": true
+      },
+      "expected_response": "Three unsolved paths traced correctly from their starts to their goals.",
+      "archetype": "three-grid-coding-paths",
+      "mechanic": "trace-arrow-code",
+      "render_kind": "logic-simple-coding",
+      "illustration_assets": {
+        "mouse": "mouse start icon",
+        "cheese": "cheese goal icon",
+        "bee": "bee start icon",
+        "flower": "flower goal icon",
+        "car": "car start icon",
+        "garage": "garage goal icon"
+      },
+      "renderer_controls": {
+        "tasks": [
+          {
+            "grid": [
+              4,
+              4
+            ],
+            "start": [
+              0,
+              3
+            ],
+            "goal": [
+              3,
+              1
+            ],
+            "code": [
+              "right",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          },
+          {
+            "grid": [
+              4,
+              4
+            ],
+            "start": [
+              3,
+              3
+            ],
+            "goal": [
+              1,
+              0
+            ],
+            "code": [
+              "up",
+              "up",
+              "up",
+              "left",
+              "left"
+            ]
+          },
+          {
+            "grid": [
+              5,
+              4
+            ],
+            "start": [
+              0,
+              0
+            ],
+            "goal": [
+              4,
+              2
+            ],
+            "code": [
+              "right",
+              "right",
+              "down",
+              "right",
+              "right",
+              "down"
+            ]
+          }
+        ],
+        "paths_dotted_not_solid": true,
+        "show_solution": false
+      },
+      "teacher_cue": "Point to each arrow and move one grid square at a time; do not trace the path for the child.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "independent paths are dotted and unsolved",
+        "arrow directions match the configured goals"
+      ]
+    },
+    "LT-LKG-V4-P036": {
+      "title": "Thinking Challenge",
+      "objective": "Apply observation, classification and sequencing skills.",
+      "instruction": "Complete each thinking challenge.",
+      "child_thinking": "I read the small instruction for each challenge and use the right thinking skill.",
+      "model_example": {
+        "task": "circle the odd fruit among three fruits and a bus",
+        "answer": "bus",
+        "show_circle": true
+      },
+      "expected_response": "Five independent responses: circle, match, order, find and choose.",
+      "archetype": "five-mixed-logic-challenges",
+      "mechanic": "mixed-guided-logic",
+      "render_kind": "logic-thinking-challenge",
+      "illustration_assets": {
+        "odd_one_out": "four-item odd-one-out set",
+        "same_picture": "target and three same-picture choices",
+        "pattern": "visual pattern with three answer choices",
+        "size_order": "three bears in shuffled sizes",
+        "shadow": "object with three shadow choices"
+      },
+      "renderer_controls": {
+        "tasks": [
+          {
+            "type": "circle_odd",
+            "asset": "odd_one_out"
+          },
+          {
+            "type": "circle_same",
+            "asset": "same_picture"
+          },
+          {
+            "type": "complete_pattern",
+            "asset": "pattern"
+          },
+          {
+            "type": "number_order",
+            "asset": "size_order"
+          },
+          {
+            "type": "circle_shadow",
+            "asset": "shadow"
+          }
+        ]
+      },
+      "teacher_cue": "Read one short task instruction at a time and allow independent thinking.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five varied tasks fill the page",
+        "no task is pre-solved"
+      ]
+    },
+    "LT-LKG-V4-P037": {
+      "title": "Mixed Logic Review",
+      "objective": "Review core observation, matching, sorting and pattern skills.",
+      "instruction": "Complete each review activity.",
+      "child_thinking": "I choose the thinking skill that fits each activity.",
+      "model_example": {
+        "task": "match a key to a lock",
+        "show_completed_line": true
+      },
+      "expected_response": "Six independent responses across six review activities.",
+      "archetype": "six-section-logic-review",
+      "mechanic": "mixed-logic-review",
+      "render_kind": "logic-mixed-review",
+      "illustration_assets": {
+        "difference_task": "small two-picture one-difference task",
+        "match_task": "two related object pairs",
+        "sort_task": "six numbered red-blue objects",
+        "sequence_task": "four event pictures to number",
+        "position_task": "two position scenes with word choices",
+        "pattern_task": "two next-pattern rows"
+      },
+      "renderer_controls": {
+        "tasks": [
+          "find_difference",
+          "match_pairs",
+          "sort_colour",
+          "story_sequence",
+          "position_words",
+          "complete_patterns"
+        ],
+        "response_modes": [
+          "circle",
+          "line",
+          "write numbers",
+          "write order",
+          "circle word",
+          "draw next"
+        ]
+      },
+      "teacher_cue": "Give help only with reading the short instructions, not with the answers.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "six activities are present",
+        "each section has its own response mechanic"
+      ]
+    },
+    "LT-LKG-V4-P038": {
+      "title": "Brain Challenge",
+      "objective": "Solve age-appropriate visual brain teasers.",
+      "instruction": "Think carefully. Solve each picture puzzle.",
+      "child_thinking": "I try a strategy, check my answer and change it if needed.",
+      "model_example": {
+        "assessment_safe": true,
+        "label": "Try these by yourself"
+      },
+      "expected_response": "Five independent visual-puzzle responses.",
+      "archetype": "five-brain-teaser-cards",
+      "mechanic": "independent-brain-challenges",
+      "render_kind": "logic-brain-challenge",
+      "illustration_assets": {
+        "animal_pattern": "upright dog-cat-dog-cat pattern with one blank and three clearly separated choices",
+        "path_count": "three simple paths with one reaching the goal",
+        "balance_logic": "two visual balance clues and one question",
+        "grid_oddity": "small grid with one different picture",
+        "sequence_logic": "changing sequence with three choices"
+      },
+      "renderer_controls": {
+        "tasks": [
+          "animal_pattern",
+          "path_count",
+          "balance_logic",
+          "grid_oddity",
+          "sequence_logic"
+        ],
+        "model_answers_visible": false
+      },
+      "teacher_cue": "Observe which strategy the child tries; do not demonstrate an assessment answer.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "assessment-like tasks have no solved model",
+        "five response areas are clearly defined"
+      ]
+    },
+    "LT-LKG-V4-P039": {
+      "title": "Thinking Assessment",
+      "objective": "Demonstrate independent learning across core logic skills.",
+      "instruction": "Complete each task by yourself. Your teacher will observe.",
+      "child_thinking": "I work carefully and check each answer.",
+      "model_example": {
+        "assessment_safe": true,
+        "label": "Independent assessment — no completed example"
+      },
+      "expected_response": "Six independent answers covering observation, classification, matching, sequence, position and coding.",
+      "archetype": "six-section-thinking-assessment",
+      "mechanic": "independent-mixed-assessment",
+      "render_kind": "logic-thinking-assessment",
+      "illustration_assets": {
+        "observation_task": "one-difference picture pair",
+        "classification_task": "four-item odd-one-out set",
+        "matching_task": "three object-shadow matches",
+        "sequence_task": "three events to number",
+        "position_task": "two spatial word questions",
+        "coding_task": "one small unsolved arrow grid"
+      },
+      "renderer_controls": {
+        "tasks": [
+          "observation",
+          "classification",
+          "matching",
+          "sequence",
+          "position",
+          "coding"
+        ],
+        "completed_example": false,
+        "teacher_scoring": [
+          0,
+          1
+        ],
+        "maximum_score": 6
+      },
+      "teacher_cue": "Read directions only; record whether each task is completed independently.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "no model answer appears",
+        "all six tasks remain unmarked",
+        "teacher scoring is outside the child activity"
+      ]
+    },
+    "LT-LKG-V4-P040": {
+      "title": "My Thinking Journal",
+      "objective": "Reflect on a problem solved and the strategy used.",
+      "instruction": "Choose one thinking skill. Draw a problem you solved. Tell how you solved it.",
+      "child_thinking": "I remember a challenge and explain the thinking that helped me.",
+      "model_example": {
+        "skill": "matching",
+        "mini_example": "key connected to lock",
+        "not_a_child_answer": true
+      },
+      "expected_response": "One selected skill, one purposeful drawing and one short dictated explanation.",
+      "archetype": "choice-draw-dictate-journal",
+      "mechanic": "reflect-on-thinking",
+      "render_kind": "logic-thinking-journal",
+      "illustration_assets": {
+        "observe_icon": "magnifying glass for observing",
+        "match_icon": "two fitting puzzle pieces",
+        "sequence_icon": "three ordered picture cards"
+      },
+      "renderer_controls": {
+        "skill_choices": [
+          "I observed",
+          "I matched",
+          "I put in order"
+        ],
+        "choice_response": "tick one",
+        "drawing_frame_count": 1,
+        "drawing_frame_purpose": "Draw the problem I solved",
+        "dictation_lines": 2,
+        "dictation_starter": "I solved it by…"
+      },
+      "teacher_cue": "Ask the child to describe the drawing; write their words only if support is needed.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "exactly one drawing frame is used",
+        "the two lines have a dictated-response purpose"
+      ]
+    },
+    "LT-LKG-V4-P041": {
+      "title": "Logic Celebration",
+      "objective": "Celebrate specific reasoning skills learned in the book.",
+      "instruction": "Colour one badge for each thinking skill you used.",
+      "child_thinking": "I recognise the thinking skills I practised.",
+      "model_example": {
+        "badge": "Observation Star",
+        "one_section_coloured": true
+      },
+      "expected_response": "Five skill badges coloured by the child.",
+      "archetype": "five-colouring-skill-badges",
+      "mechanic": "colour-achievement-badges",
+      "render_kind": "logic-celebration",
+      "illustration_assets": {
+        "observe_badge": "outline badge with magnifying-glass icon",
+        "match_badge": "outline badge with matching-pair icon",
+        "sort_badge": "outline badge with sorting icon",
+        "sequence_badge": "outline badge with ordered-cards icon",
+        "solve_badge": "outline badge with puzzle-piece icon"
+      },
+      "renderer_controls": {
+        "badges": [
+          "I can observe",
+          "I can match",
+          "I can sort",
+          "I can put in order",
+          "I can solve"
+        ],
+        "colouring_only": true,
+        "badges_precoloured": false
+      },
+      "teacher_cue": "Name each skill and invite the child to recall one page where it was used.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "five badges are purposeful and uncoloured",
+        "no parent panel appears"
+      ]
+    },
+    "LT-LKG-V4-P042": {
+      "title": "Certificate",
+      "objective": "Celebrate completion of Logical Thinking Adventures.",
+      "instruction": "Write the child’s name, date and teacher’s signature.",
+      "child_thinking": "This certificate records completion of the book.",
+      "model_example": {
+        "not_required": true,
+        "certificate": true
+      },
+      "expected_response": "Name, date and teacher signature entered in deterministic certificate fields.",
+      "archetype": "deterministic-certificate",
+      "mechanic": "complete-certificate-fields",
+      "render_kind": "logic-certificate",
+      "illustration_assets": {
+        "logic_badge": "premium logic explorer badge without words",
+        "corner_shapes": "small crop-safe logic-shape decoration"
+      },
+      "renderer_controls": {
+        "fields": [
+          "Child’s name",
+          "Date",
+          "Teacher’s signature"
+        ],
+        "field_lines": 3,
+        "publisher_text_deterministic": true,
+        "official_logo_deterministic": true,
+        "official_star_deterministic": true
+      },
+      "teacher_cue": "Complete the certificate after the child finishes the book.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "certificate text is deterministic",
+        "no generated logo or mascot"
+      ]
+    },
+    "LT-LKG-V4-P043": {
+      "title": "I Am a Logic Explorer",
+      "objective": "Celebrate confidence and success in logical thinking.",
+      "instruction": "Colour the explorer badge. Tick the thinking skill you enjoyed most.",
+      "child_thinking": "I celebrate what I can do and choose a favourite thinking skill.",
+      "model_example": {
+        "badge": "small sample badge with one coloured star",
+        "show_answer": true
+      },
+      "expected_response": "One badge coloured and one favourite skill ticked.",
+      "archetype": "hero-badge-and-skill-choice",
+      "mechanic": "colour-and-self-select",
+      "render_kind": "logic-explorer",
+      "illustration_assets": {
+        "hero_child": "one confident LKG child holding a magnifying glass beside large puzzle pieces",
+        "explorer_badge": "large black-outline Logic Explorer colouring badge with no words",
+        "observe_icon": "magnifying glass icon",
+        "match_icon": "matching-pair icon",
+        "solve_icon": "puzzle-piece icon"
+      },
+      "renderer_controls": {
+        "badge_colouring_area": true,
+        "skill_choices": [
+          "Observe",
+          "Match",
+          "Solve"
+        ],
+        "choice_response": "tick one",
+        "official_star_deterministic": true
+      },
+      "teacher_cue": "Invite the child to name one challenge they are proud of solving.",
+      "validation_gates": [
+        "completed example is visually separate from the independent activity",
+        "independent answers are unmarked",
+        "every box, line, circle and blank area has a named child action",
+        "badge is large enough to colour",
+        "three skill choices are child-readable"
+      ]
+    }
+  }
 }

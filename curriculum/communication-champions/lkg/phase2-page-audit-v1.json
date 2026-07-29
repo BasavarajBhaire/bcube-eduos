@@ -1,0 +1,1174 @@
+{
+  "version": "communication-champions-lkg-phase2-audit-v1",
+  "book": "Communication Champions",
+  "level": "LKG (4+)",
+  "scope": "CC-LKG-V4-P008 through CC-LKG-V4-P043",
+  "learning_and_closing_page_count": 36,
+  "current_runtime_page_count_before_rebuild": 1,
+  "locked_book_rules": [
+    "consistent BCube header and footer with task-specific learning area",
+    "no repeated generic activity box",
+    "no parent or home connection panel",
+    "one compact page-specific teacher cue",
+    "model the exact child action once, then leave independent responses unanswered",
+    "use visible object or character names when they support vocabulary and reading",
+    "use separated prompt and choice areas for selection tasks",
+    "vary correct-answer positions and display order",
+    "provide large purposeful response spaces",
+    "fit artwork from visible bounds with safe padding; never crop key content"
+  ],
+  "pages": {
+    "CC-LKG-V4-P008": {
+      "physical_page": 8,
+      "printed_page": 7,
+      "title": "Good Listening",
+      "page_type": "activity_page",
+      "objective": "Recognise and practise good listening behaviours.",
+      "source_instruction": "Complete one listening-and-choose task for “Good Listening”. Say one answer using a picture-supported phrase.",
+      "approved_page_direction": "Exact title “Good Listening”, page number 6. Show four picture cards: eyes looking, ears listening, body still, waiting turn. Include one incorrect mild distractor. Add exact model phrase “I am ready to listen.”",
+      "phase2": {
+        "primary_mechanic": "listening-behaviour-choice",
+        "layout": "four-behaviour-choice-cards",
+        "child_response_path": "choose one good-listening behaviour and say the model phrase",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P008-good-listening.json"
+    },
+    "CC-LKG-V4-P009": {
+      "physical_page": 9,
+      "printed_page": 8,
+      "title": "Follow One Instruction",
+      "page_type": "activity_page",
+      "objective": "Listen and follow a one-step classroom instruction.",
+      "source_instruction": "Complete one listening-and-choose task for “Follow One Instruction”. Say one answer using a picture-supported phrase.",
+      "approved_page_direction": "Exact title “Follow One Instruction”, page number 7. Show six picture cards for clap, stand, sit, point, touch head, and show a pencil. Teacher says one instruction; child chooses and performs it.",
+      "phase2": {
+        "primary_mechanic": "listen-and-perform-one-step",
+        "layout": "six-action-listening-grid",
+        "child_response_path": "listen, identify the named action, then perform it",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P009-follow-one-instruction.json"
+    },
+    "CC-LKG-V4-P010": {
+      "physical_page": 10,
+      "printed_page": 9,
+      "title": "Follow Two Instructions",
+      "page_type": "worksheet",
+      "objective": "Follow a simple two-step instruction.",
+      "source_instruction": "Order one 3- or 4-picture sequence for “Follow Two Instructions”. Retell using first, next, then, last.",
+      "approved_page_direction": "Exact title “Follow Two Instructions”, page number 8. Show three pairs of actions such as clap then sit, pick pencil then point to book, stand then touch head. Use arrows between actions.",
+      "phase2": {
+        "primary_mechanic": "listen-and-perform-two-step",
+        "layout": "three-two-step-action-strips",
+        "child_response_path": "follow both actions in the spoken order",
+        "completed_example_required": false,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P010-follow-two-instructions.json"
+    },
+    "CC-LKG-V4-P011": {
+      "physical_page": 11,
+      "printed_page": 10,
+      "title": "Speak in a Full Sentence",
+      "page_type": "activity_page",
+      "objective": "Expand one-word answers into short sentences.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Speak in a Full Sentence”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Speak in a Full Sentence”, page number 9. Show four picture cards: dog, red ball, girl running, boy reading. Provide model frames “It is a ______.” and “The ______ is ______.”",
+      "phase2": {
+        "primary_mechanic": "picture-to-full-sentence",
+        "layout": "four-picture-sentence-prompts",
+        "child_response_path": "name each picture using a complete short sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P011-speak-in-a-full-sentence.json"
+    },
+    "CC-LKG-V4-P012": {
+      "physical_page": 12,
+      "printed_page": 11,
+      "title": "My Name and Age",
+      "page_type": "activity_page",
+      "objective": "Introduce oneself using name and age.",
+      "source_instruction": "Trace or copy one short communication word or phrase for “My Name and Age”. Say the phrase after tracing.",
+      "approved_page_direction": "Exact title “My Name and Age”, page number 10. Use an editable child-name field. Add model “My name is ______. I am ______ years old.” Provide a short tracing strip for “My name is”.",
+      "phase2": {
+        "primary_mechanic": "personal-introduction",
+        "layout": "name-age-speaking-card",
+        "child_response_path": "say and record own name and age with adult support",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P012-my-name-and-age.json"
+    },
+    "CC-LKG-V4-P013": {
+      "physical_page": 13,
+      "printed_page": 12,
+      "title": "About Me",
+      "page_type": "activity_page",
+      "objective": "Say two facts about oneself.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “About Me”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “About Me”, page number 11. Show picture choices for favourite colour, food, toy, and activity. Use frame “I like ______.” and “My favourite ______ is ______.”",
+      "phase2": {
+        "primary_mechanic": "personal-preference-speaking",
+        "layout": "four-preference-choice-groups",
+        "child_response_path": "choose personal favourites and complete the sentence frames",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P013-about-me.json"
+    },
+    "CC-LKG-V4-P014": {
+      "physical_page": 14,
+      "printed_page": 13,
+      "title": "People at School",
+      "page_type": "activity_page",
+      "objective": "Name school people and say what they do.",
+      "source_instruction": "Complete one matching task for “People at School”. Say one matched word or phrase.",
+      "approved_page_direction": "Exact title “People at School”, page number 12. Show teacher, principal, helper, driver, and friend with role cards. Child matches person to action and says one sentence.",
+      "phase2": {
+        "primary_mechanic": "people-and-role-match",
+        "layout": "people-role-matching-columns",
+        "child_response_path": "match each school person to their work and say one sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P014-people-at-school.json"
+    },
+    "CC-LKG-V4-P015": {
+      "physical_page": 15,
+      "printed_page": 14,
+      "title": "Things in My Classroom",
+      "page_type": "activity_page",
+      "objective": "Use classroom vocabulary in short sentences.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Things in My Classroom”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Things in My Classroom”, page number 13. Show book, pencil, eraser, bag, chair, board, and crayons. Use model “I can see a ______.”",
+      "phase2": {
+        "primary_mechanic": "classroom-vocabulary",
+        "layout": "named-classroom-object-grid",
+        "child_response_path": "name classroom objects and use one in a sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P015-things-in-my-classroom.json"
+    },
+    "CC-LKG-V4-P016": {
+      "physical_page": 16,
+      "printed_page": 15,
+      "title": "Action Words",
+      "page_type": "activity_page",
+      "objective": "Recognise and use common action words.",
+      "source_instruction": "Complete one matching task for “Action Words”. Say one matched word or phrase.",
+      "approved_page_direction": "Exact title “Action Words”, page number 14. Show jump, run, clap, read, write, eat. Match pictures to words and say “The child is ______.”",
+      "phase2": {
+        "primary_mechanic": "action-word-match",
+        "layout": "action-picture-word-match",
+        "child_response_path": "match each action picture to its word and say the action sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P016-action-words.json"
+    },
+    "CC-LKG-V4-P017": {
+      "physical_page": 17,
+      "printed_page": 16,
+      "title": "Describing Words",
+      "page_type": "activity_page",
+      "objective": "Use simple describing words.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Describing Words”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Describing Words”, page number 15. Show big/small, tall/short, hot/cold, happy/sad using familiar objects and expressions. Use model “The ball is big.”",
+      "phase2": {
+        "primary_mechanic": "describing-word-choice",
+        "layout": "four-comparison-pairs",
+        "child_response_path": "choose a describing word for each clear visual pair",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P017-describing-words.json"
+    },
+    "CC-LKG-V4-P018": {
+      "physical_page": 18,
+      "printed_page": 17,
+      "title": "Opposite Words",
+      "page_type": "activity_page",
+      "objective": "Match simple opposites.",
+      "source_instruction": "Complete one matching task for “Opposite Words”. Say one matched word or phrase.",
+      "approved_page_direction": "Exact title “Opposite Words”, page number 16. Show open/closed, full/empty, up/down, fast/slow, clean/dirty. Keep examples visually clear.",
+      "phase2": {
+        "primary_mechanic": "opposite-word-match",
+        "layout": "five-opposite-pairs",
+        "child_response_path": "draw lines between opposite picture-word pairs",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P018-opposite-words.json"
+    },
+    "CC-LKG-V4-P019": {
+      "physical_page": 19,
+      "printed_page": 18,
+      "title": "Position Words",
+      "page_type": "activity_page",
+      "objective": "Use in, on, under, beside, and behind.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Position Words”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Position Words”, page number 17. Show one toy bear in five positions relative to a box. Use exact sentence frame “The bear is ______ the box.”",
+      "phase2": {
+        "primary_mechanic": "position-word-choice",
+        "layout": "five-bear-position-scenes",
+        "child_response_path": "choose the correct position word and say the full sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P019-position-words.json"
+    },
+    "CC-LKG-V4-P020": {
+      "physical_page": 20,
+      "printed_page": 19,
+      "title": "Make a Sentence",
+      "page_type": "activity_page",
+      "objective": "Arrange picture and word cards into a simple sentence.",
+      "source_instruction": "Order one 3- or 4-picture sequence for “Make a Sentence”. Retell using first, next, then, last.",
+      "approved_page_direction": "Exact title “Make a Sentence”, page number 18. Use three guided sentence sets: The cat is sleeping. The boy has a ball. The girl reads a book. Use colour-coded word cards.",
+      "phase2": {
+        "primary_mechanic": "sentence-ordering",
+        "layout": "three-colour-coded-sentence-strips",
+        "child_response_path": "arrange each word set into a meaningful sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P020-make-a-sentence.json"
+    },
+    "CC-LKG-V4-P021": {
+      "physical_page": 21,
+      "printed_page": 20,
+      "title": "Greetings",
+      "page_type": "activity_page",
+      "objective": "Use greetings for different times and situations.",
+      "source_instruction": "Practise one short role-play for “Greetings”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Greetings”, page number 19. Show morning, afternoon, meeting a friend, and leaving. Use exact phrases “Good morning”, “Hello”, “How are you?”, and “Goodbye”.",
+      "phase2": {
+        "primary_mechanic": "greeting-situation-match",
+        "layout": "four-greeting-situations",
+        "child_response_path": "match and say the greeting appropriate to each situation",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P021-greetings.json"
+    },
+    "CC-LKG-V4-P022": {
+      "physical_page": 22,
+      "printed_page": 21,
+      "title": "Please and Thank You",
+      "page_type": "activity_page",
+      "objective": "Use polite words appropriately.",
+      "source_instruction": "Practise one short role-play for “Please and Thank You”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Please and Thank You”, page number 20. Show asking for a crayon, receiving help, and giving an item. Use phrases “Please may I have ______?” and “Thank you.”",
+      "phase2": {
+        "primary_mechanic": "polite-phrase-role-play",
+        "layout": "three-polite-exchange-scenes",
+        "child_response_path": "choose and say please or thank you in context",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P022-please-and-thank-you.json"
+    },
+    "CC-LKG-V4-P023": {
+      "physical_page": 23,
+      "printed_page": 22,
+      "title": "Taking Turns",
+      "page_type": "activity_page",
+      "objective": "Ask, wait, and respond during a shared activity.",
+      "source_instruction": "Practise one short role-play for “Taking Turns”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Taking Turns”, page number 21. Show a block game with cards “Can I have a turn?”, “I can wait.”, and “It is my turn.”",
+      "phase2": {
+        "primary_mechanic": "turn-taking-sequence",
+        "layout": "three-turn-taking-moments",
+        "child_response_path": "order and practise ask, wait and take a turn",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P023-taking-turns.json"
+    },
+    "CC-LKG-V4-P024": {
+      "physical_page": 24,
+      "printed_page": 23,
+      "title": "Asking for Help",
+      "page_type": "activity_page",
+      "objective": "Ask a trusted adult or friend for help.",
+      "source_instruction": "Practise one short role-play for “Asking for Help”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Asking for Help”, page number 22. Show opening a bag, reaching a book, and tying a shoelace with exact phrase “Please help me with ______.”",
+      "phase2": {
+        "primary_mechanic": "help-request-role-play",
+        "layout": "three-help-situations",
+        "child_response_path": "choose a situation and ask for help using the sentence frame",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P024-asking-for-help.json"
+    },
+    "CC-LKG-V4-P025": {
+      "physical_page": 25,
+      "printed_page": 24,
+      "title": "Joining a Group",
+      "page_type": "activity_page",
+      "objective": "Use a friendly phrase to join play.",
+      "source_instruction": "Practise one short role-play for “Joining a Group”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Joining a Group”, page number 23. Show children building, drawing, and playing ball. Use exact phrase “Can I play with you?” and response “Yes, you can join us.”",
+      "phase2": {
+        "primary_mechanic": "join-play-role-play",
+        "layout": "three-play-group-scenes",
+        "child_response_path": "choose a group, ask to join and listen to the reply",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P025-joining-a-group.json"
+    },
+    "CC-LKG-V4-P026": {
+      "physical_page": 26,
+      "printed_page": 25,
+      "title": "Sharing an Idea",
+      "page_type": "activity_page",
+      "objective": "Express an idea and listen to another idea.",
+      "source_instruction": "Practise one short role-play for “Sharing an Idea”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Sharing an Idea”, page number 24. Show two children planning a block tower. Use frames “My idea is ______.” and “I like your idea.”",
+      "phase2": {
+        "primary_mechanic": "idea-share-and-reply",
+        "layout": "paired-planning-scene",
+        "child_response_path": "share one idea and respond kindly to a partner's idea",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P026-sharing-an-idea.json"
+    },
+    "CC-LKG-V4-P027": {
+      "physical_page": 27,
+      "printed_page": 26,
+      "title": "Solve a Small Problem",
+      "page_type": "activity_page",
+      "objective": "Use words to solve a simple social problem.",
+      "source_instruction": "Practise one short role-play for “Solve a Small Problem”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Solve a Small Problem”, page number 25. Show two children wanting the same toy. Provide choices: take turns, use a timer, choose another toy. Model “Let us take turns.”",
+      "phase2": {
+        "primary_mechanic": "social-problem-choice",
+        "layout": "problem-scene-three-solutions",
+        "child_response_path": "choose a fair solution and say it to a partner",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P027-solve-a-small-problem.json"
+    },
+    "CC-LKG-V4-P028": {
+      "physical_page": 28,
+      "printed_page": 27,
+      "title": "Who, What and Where",
+      "page_type": "activity_page",
+      "objective": "Answer simple who, what, and where questions.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Who, What and Where”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Who, What and Where”, page number 26. Show one playground scene and three exact questions: Who is on the swing? What is the boy holding? Where is the ball?",
+      "phase2": {
+        "primary_mechanic": "who-what-where",
+        "layout": "playground-scene-three-questions",
+        "child_response_path": "answer who, what and where from one controlled scene",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P028-who-what-and-where.json"
+    },
+    "CC-LKG-V4-P029": {
+      "physical_page": 29,
+      "printed_page": 28,
+      "title": "Ask a Question",
+      "page_type": "activity_page",
+      "objective": "Form a simple question from a picture.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Ask a Question”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Ask a Question”, page number 27. Show four scenes and starters “Who is ______?”, “What is ______?”, “Where is ______?”, and “Why is ______?” with teacher support.",
+      "phase2": {
+        "primary_mechanic": "form-a-question",
+        "layout": "four-question-starter-scenes",
+        "child_response_path": "use each picture and starter to ask a complete question",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P029-ask-a-question.json"
+    },
+    "CC-LKG-V4-P030": {
+      "physical_page": 30,
+      "printed_page": 29,
+      "title": "Yes or No?",
+      "page_type": "activity_page",
+      "objective": "Answer and extend a yes/no question.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Yes or No?”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Yes or No?”, page number 28. Show four picture questions such as Is the cat sleeping? Is the ball red? Use frames “Yes, it is.” and “No, it is not.”",
+      "phase2": {
+        "primary_mechanic": "yes-no-and-extend",
+        "layout": "four-picture-question-cards",
+        "child_response_path": "answer yes or no and repeat the complete response",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P030-yes-or-no.json"
+    },
+    "CC-LKG-V4-P031": {
+      "physical_page": 31,
+      "printed_page": 30,
+      "title": "Answer in a Sentence",
+      "page_type": "activity_page",
+      "objective": "Respond to questions using a complete short sentence.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Answer in a Sentence”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Answer in a Sentence”, page number 29. Show three question-answer pairs: What do you see? I see a bus. What is she doing? She is drawing. Where is the book? It is on the table.",
+      "phase2": {
+        "primary_mechanic": "answer-in-a-sentence",
+        "layout": "three-picture-question-pairs",
+        "child_response_path": "answer each picture question using a complete short sentence",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P031-answer-in-a-sentence.json"
+    },
+    "CC-LKG-V4-P032": {
+      "physical_page": 32,
+      "printed_page": 31,
+      "title": "Picture Talk",
+      "page_type": "activity_page",
+      "objective": "Observe and discuss a detailed picture.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Picture Talk”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Picture Talk”, page number 30. Create one park scene with 8–10 clear objects and people. Include three prompts: “What can you see?”, “What is happening?”, “What might happen next?”",
+      "phase2": {
+        "primary_mechanic": "guided-picture-talk",
+        "layout": "rich-park-scene-prompt-strip",
+        "child_response_path": "observe, name details and predict what might happen next",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P032-picture-talk.json"
+    },
+    "CC-LKG-V4-P033": {
+      "physical_page": 33,
+      "printed_page": 32,
+      "title": "Story Sequence",
+      "page_type": "worksheet",
+      "objective": "Order four story pictures.",
+      "source_instruction": "Order one 3- or 4-picture sequence for “Story Sequence”. Retell using first, next, then, last.",
+      "approved_page_direction": "Exact title “Story Sequence”, page number 31. Show a four-step story about planting a seed. Use First, Next, Then, Last labels.",
+      "phase2": {
+        "primary_mechanic": "story-sequence-and-retell",
+        "layout": "four-shuffled-story-cards",
+        "child_response_path": "number four events and retell them in order",
+        "completed_example_required": false,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P033-story-sequence.json"
+    },
+    "CC-LKG-V4-P034": {
+      "physical_page": 34,
+      "printed_page": 33,
+      "title": "Retell a Short Story",
+      "page_type": "activity_page",
+      "objective": "Retell a familiar four-picture story.",
+      "source_instruction": "Look at one short picture story for “Retell a Short Story”. Retell or answer one simple question.",
+      "approved_page_direction": "Exact title “Retell a Short Story”, page number 32. Show a child losing and finding a toy in four clear panels. Add prompts Who? Where? What happened? How did it end?",
+      "phase2": {
+        "primary_mechanic": "four-picture-retell",
+        "layout": "four-event-story-strip",
+        "child_response_path": "retell who, where, what happened and how it ended",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P034-retell-a-short-story.json"
+    },
+    "CC-LKG-V4-P035": {
+      "physical_page": 35,
+      "printed_page": 34,
+      "title": "Make a Story Ending",
+      "page_type": "activity_page",
+      "objective": "Choose or draw a logical ending.",
+      "source_instruction": "Look at one short picture story for “Make a Story Ending”. Retell or answer one simple question.",
+      "approved_page_direction": "Exact title “Make a Story Ending”, page number 33. Show two story starter panels and two possible endings. Include one small drawing box for another ending.",
+      "phase2": {
+        "primary_mechanic": "choose-story-ending",
+        "layout": "story-starter-ending-choices-draw",
+        "child_response_path": "choose a logical ending or draw another one",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P035-make-a-story-ending.json"
+    },
+    "CC-LKG-V4-P036": {
+      "physical_page": 36,
+      "printed_page": 35,
+      "title": "Describe a Character",
+      "page_type": "activity_page",
+      "objective": "Describe how a character looks and feels.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Describe a Character”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Describe a Character”, page number 34. Show one friendly story character with visual choices for colour, size, clothing, action, and feeling. Use frame “The character is ______.”",
+      "phase2": {
+        "primary_mechanic": "character-description",
+        "layout": "character-with-attribute-choices",
+        "child_response_path": "choose visual details and describe the character",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P036-describe-a-character.json"
+    },
+    "CC-LKG-V4-P037": {
+      "physical_page": 37,
+      "printed_page": 36,
+      "title": "Show and Tell",
+      "page_type": "activity_page",
+      "objective": "Speak about one familiar object.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “Show and Tell”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “Show and Tell”, page number 35. Show a child holding an object. Use four prompts: What is it? What colour is it? What can it do? Why do you like it? Use one compact speaking card.",
+      "phase2": {
+        "primary_mechanic": "show-and-tell",
+        "layout": "object-choice-speaking-card",
+        "child_response_path": "choose one familiar object and answer four speaking prompts",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P037-show-and-tell.json"
+    },
+    "CC-LKG-V4-P038": {
+      "physical_page": 38,
+      "printed_page": 37,
+      "title": "My News",
+      "page_type": "activity_page",
+      "objective": "Share one event from home or school.",
+      "source_instruction": "Create one purposeful drawing task for “My News”. Use one short speaking or show-and-tell prompt.",
+      "approved_page_direction": "Exact title “My News”, page number 36. Provide one medium drawing frame and three prompts: Who was there? What happened? How did you feel? Use adult-supported dictation.",
+      "phase2": {
+        "primary_mechanic": "personal-news-journal",
+        "layout": "drawing-frame-three-oral-prompts",
+        "child_response_path": "draw one event and tell who, what and feeling",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P038-my-news.json"
+    },
+    "CC-LKG-V4-P039": {
+      "physical_page": 39,
+      "printed_page": 38,
+      "title": "Speak to the Group",
+      "page_type": "activity_page",
+      "objective": "Practise speaking clearly to a small group.",
+      "source_instruction": "Practise one short role-play for “Speak to the Group”. Choose the correct response from picture cards.",
+      "approved_page_direction": "Exact title “Speak to the Group”, page number 37. Show a child speaking to three classmates. Include a simple checklist: stand tall, look up, speak clearly, listen to questions.",
+      "phase2": {
+        "primary_mechanic": "small-group-speaking",
+        "layout": "speaker-audience-checklist",
+        "child_response_path": "speak to a small group and use the four speaking behaviours",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P039-speak-to-the-group.json"
+    },
+    "CC-LKG-V4-P040": {
+      "physical_page": 40,
+      "printed_page": 39,
+      "title": "Listen and Respond",
+      "page_type": "activity_page",
+      "objective": "Listen to a peer and respond kindly.",
+      "source_instruction": "Complete one listening-and-choose task for “Listen and Respond”. Say one answer using a picture-supported phrase.",
+      "approved_page_direction": "Exact title “Listen and Respond”, page number 38. Show one child sharing and another listening. Response cards: “That is interesting.”, “I like your idea.”, “Can you tell me more?”",
+      "phase2": {
+        "primary_mechanic": "listen-and-kindly-respond",
+        "layout": "peer-sharing-response-choices",
+        "child_response_path": "listen to a peer and choose a kind relevant reply",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P040-listen-and-respond.json"
+    },
+    "CC-LKG-V4-P041": {
+      "physical_page": 41,
+      "printed_page": 40,
+      "title": "My Communication Journal",
+      "page_type": "activity_page",
+      "objective": "Reflect on listening and speaking progress.",
+      "source_instruction": "Create one purposeful drawing task for “My Communication Journal”. Use one short speaking or show-and-tell prompt.",
+      "approved_page_direction": "Exact title “My Communication Journal”, page number 39. Provide one medium drawing frame and four check icons: I listened, I asked, I shared, I told a story. Add line “Today I was proud when ______.”",
+      "phase2": {
+        "primary_mechanic": "communication-reflection",
+        "layout": "drawing-frame-four-skill-checks",
+        "child_response_path": "mark practised skills and complete one reflection",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P041-my-communication-journal.json"
+    },
+    "CC-LKG-V4-P042": {
+      "physical_page": 42,
+      "printed_page": 41,
+      "title": "Certificate of Completion",
+      "page_type": "certificate",
+      "objective": "Celebrate completion of Communication Champions – LKG.",
+      "source_instruction": "Complete the certificate fields. Read the achievement statement aloud.",
+      "approved_page_direction": "Exact title “Certificate of Completion”, page number 40. Create a premium certificate with exact title, editable child name, date, teacher and parent signatures, and statement “for listening carefully, speaking clearly, asking questions, joining conversations, and sharing stories.”",
+      "phase2": {
+        "primary_mechanic": "certificate",
+        "layout": "deterministic-certificate",
+        "child_response_path": "record completion; no child learning task",
+        "completed_example_required": false,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P042-certificate-of-completion.json"
+    },
+    "CC-LKG-V4-P043": {
+      "physical_page": 43,
+      "printed_page": 42,
+      "title": "I Am a Communication Champion!",
+      "page_type": "activity_page",
+      "objective": "Celebrate communication achievements.",
+      "source_instruction": "Complete one model-and-repeat or point-and-say task for “I Am a Communication Champion!”. Use one picture-supported sentence starter.",
+      "approved_page_direction": "Exact title “I Am a Communication Champion!”, page number 41. Create a large badge and six checks: I listen, I speak in sentences, I ask questions, I take turns, I share ideas, I tell stories. Add one model phrase “I am a communication champion!”",
+      "phase2": {
+        "primary_mechanic": "achievement-celebration",
+        "layout": "achievement-badge-six-checks",
+        "child_response_path": "review and celebrate six communication achievements",
+        "completed_example_required": true,
+        "parent_or_home_panel": false,
+        "generic_response_box": false,
+        "teacher_cue": "one short, page-specific facilitation action",
+        "illustration_policy": "content-aligned artwork only; text and response mechanics deterministic"
+      },
+      "audit": {
+        "status": "REBUILD_REQUIRED",
+        "reason": "The V4 source is structurally complete but has not been converted into a task-specific Phase 2 runtime page.",
+        "release_gates": [
+          "learning goal, instruction, model and independent task use the same mechanic",
+          "completed example visibly demonstrates the child action without solving the independent task",
+          "every response has a clear place to point, circle, match, order, draw, mark or speak",
+          "no person, object or response space is cropped",
+          "text is comfortably readable at A4 print size",
+          "no parent or homework panel"
+        ]
+      },
+      "source_file": "production-prompts/communication-champions/lkg/v4/pages/CC-LKG-V4-P043-i-am-a-communication-champion.json"
+    }
+  }
+}

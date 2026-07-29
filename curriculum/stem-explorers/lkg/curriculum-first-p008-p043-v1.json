@@ -1,0 +1,1787 @@
+{
+  "version": "stem-explorers-curriculum-first-v1",
+  "book": "STEM Explorers",
+  "level": "LKG (4+)",
+  "scope": "ST-LKG-V4-P008 through ST-LKG-V4-P043",
+  "policy": "Task-specific interactive pages; no parent panel; no generic response box; response-safe independent work.",
+  "pages": {
+    "ST-LKG-V4-P008": {
+      "instruction": "Compare Picture A and Picture B. Circle five differences in Picture B. Tell one difference.",
+      "model_example": "Two leaves: the second leaf is missing one spot, and the changed spot is circled.",
+      "expected_response": "Five differences circled in Picture B and one oral comparison.",
+      "archetype": "paired-observation-scenes",
+      "mechanic": "circle-five-differences",
+      "illustration_assets": {
+        "nature_a": "park scene with tree, flowers, bird, butterfly, pond and frog",
+        "nature_b": "the same park scene with exactly five clear changes"
+      },
+      "renderer_controls": {
+        "difference_count": 5,
+        "circle_on": "picture_b",
+        "labels": [
+          "Picture A",
+          "Picture B"
+        ]
+      },
+      "teacher_cue": "Guide the child to compare one small area at a time without naming a difference.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Observe Like a Scientist",
+      "objective": "Develop observation.",
+      "physical_page": 8,
+      "printed_page": 7,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P008-observe-like-a-scientist.json",
+      "source_execution": "Children compare two nature scenes and describe differences. Include one teacher demonstration, one guided investigation, one independent child activity, one speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure there are no decorative blank boxes or empty speech balloons.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P009": {
+      "instruction": "Name each sense organ. Draw a line to what it helps you notice.",
+      "model_example": "Eye connected to a rainbow: I use my eyes to see colours.",
+      "expected_response": "Five lines matching eye, ear, nose, tongue and hand to an observation.",
+      "archetype": "sense-to-observation-match",
+      "mechanic": "match-sense-organ",
+      "illustration_assets": {
+        "eye": "one eye",
+        "ear": "one ear",
+        "nose": "one nose",
+        "tongue": "one tongue",
+        "hand": "one hand",
+        "rainbow": "colourful rainbow",
+        "bell": "ringing handbell",
+        "flower": "fragrant flower",
+        "lemon": "lemon slice",
+        "feather": "soft feather"
+      },
+      "renderer_controls": {
+        "left": [
+          "eye",
+          "ear",
+          "nose",
+          "tongue",
+          "hand"
+        ],
+        "right": [
+          "bell",
+          "feather",
+          "rainbow",
+          "lemon",
+          "flower"
+        ],
+        "pairs": [
+          [
+            "eye",
+            "rainbow"
+          ],
+          [
+            "ear",
+            "bell"
+          ],
+          [
+            "nose",
+            "flower"
+          ],
+          [
+            "tongue",
+            "lemon"
+          ],
+          [
+            "hand",
+            "feather"
+          ]
+        ]
+      },
+      "teacher_cue": "Name one observation at a time and ask which sense would help.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Five Senses",
+      "objective": "Use the senses safely.",
+      "physical_page": 9,
+      "printed_page": 8,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P009-five-senses.json",
+      "source_execution": "Match eyes, ears, nose, tongue and hands to observations. Include one teacher demonstration, one guided investigation, one independent child activity, one speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure there are no decorative blank boxes or empty speech balloons.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P010": {
+      "instruction": "Look at each numbered picture. Write its number under LIVING or NON-LIVING.",
+      "model_example": "A numbered flower is placed under LIVING because it grows.",
+      "expected_response": "Three picture numbers written in each category and one oral reason.",
+      "archetype": "numbered-picture-sort",
+      "mechanic": "sort-living-nonliving",
+      "illustration_assets": {
+        "dog": "friendly dog",
+        "tree": "green tree",
+        "butterfly": "butterfly",
+        "rock": "rock",
+        "car": "toy car",
+        "book": "closed book"
+      },
+      "renderer_controls": {
+        "items": [
+          "dog",
+          "rock",
+          "tree",
+          "book",
+          "butterfly",
+          "car"
+        ],
+        "categories": [
+          "LIVING",
+          "NON-LIVING"
+        ],
+        "correct": {
+          "LIVING": [
+            1,
+            3,
+            5
+          ],
+          "NON-LIVING": [
+            2,
+            4,
+            6
+          ]
+        },
+        "number_boxes_per_category": 3
+      },
+      "teacher_cue": "Ask whether each thing grows or needs food, then let the child write its number.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Living & Non-living",
+      "objective": "Identify and classify familiar living and non-living things.",
+      "physical_page": 10,
+      "printed_page": 9,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P010-living-and-non-living.json",
+      "source_execution": "Sort pictures into living and non-living groups. Include one teacher demonstration, one guided investigation, one independent child activity, one speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure there are no decorative blank boxes or empty speech balloons.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P011": {
+      "instruction": "Look at the plant. Draw a line from each word to the correct plant part.",
+      "model_example": "The word LEAF is connected to a leaf on the model plant.",
+      "expected_response": "Four lines connecting roots, stem, leaves and flower to the plant.",
+      "archetype": "labelled-diagram-match",
+      "mechanic": "match-plant-parts",
+      "illustration_assets": {
+        "plant": "large complete flowering plant showing roots, stem, leaves and flower"
+      },
+      "renderer_controls": {
+        "labels": [
+          "roots",
+          "stem",
+          "leaves",
+          "flower"
+        ],
+        "anchor_positions": [
+          "bottom",
+          "centre",
+          "upper sides",
+          "top"
+        ]
+      },
+      "teacher_cue": "Point to one plant part and invite the child to say its name before matching.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Plants Around Us",
+      "objective": "Recognise plant parts.",
+      "physical_page": 11,
+      "printed_page": 10,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P011-plants-around-us.json",
+      "source_execution": "Identify roots, stem, leaves and flower. Include one teacher demonstration, one guided investigation, one independent child activity, one speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure there are no decorative blank boxes or empty speech balloons.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P012": {
+      "instruction": "Name each animal and habitat. Draw a line between each animal and its home.",
+      "model_example": "Fish connected to a pond.",
+      "expected_response": "Five lines connecting animals to suitable habitats.",
+      "archetype": "animal-habitat-match",
+      "mechanic": "match-animal-home",
+      "illustration_assets": {
+        "fish": "fish",
+        "bird": "bird",
+        "rabbit": "rabbit",
+        "bee": "bee",
+        "dog": "dog",
+        "pond": "pond",
+        "nest": "bird nest",
+        "burrow": "rabbit burrow",
+        "hive": "beehive",
+        "kennel": "dog kennel"
+      },
+      "renderer_controls": {
+        "left": [
+          "fish",
+          "bird",
+          "rabbit",
+          "bee",
+          "dog"
+        ],
+        "right": [
+          "hive",
+          "kennel",
+          "pond",
+          "burrow",
+          "nest"
+        ],
+        "pairs": [
+          [
+            "fish",
+            "pond"
+          ],
+          [
+            "bird",
+            "nest"
+          ],
+          [
+            "rabbit",
+            "burrow"
+          ],
+          [
+            "bee",
+            "hive"
+          ],
+          [
+            "dog",
+            "kennel"
+          ]
+        ]
+      },
+      "teacher_cue": "Ask what each animal needs from its home after the child matches it.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Animals Around Us",
+      "objective": "Recognise habitats.",
+      "physical_page": 12,
+      "printed_page": 11,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P012-animals-around-us.json",
+      "source_execution": "Match common animals to suitable habitats. Include one teacher demonstration, one guided investigation, one independent child activity, one speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure there are no decorative blank boxes or empty speech balloons.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P013": {
+      "instruction": "Look at each weather picture. Match the item that is useful for that weather.",
+      "model_example": "Rainy weather connected to an umbrella.",
+      "expected_response": "Four lines matching sunny, rainy, windy and cloudy weather to useful items.",
+      "archetype": "weather-item-match",
+      "mechanic": "match-weather-equipment",
+      "illustration_assets": {
+        "sunny": "sunny day",
+        "rainy": "rainy day",
+        "windy": "windy day",
+        "cloudy": "cloudy day",
+        "hat": "sun hat",
+        "umbrella": "umbrella",
+        "kite": "kite",
+        "light_jacket": "light jacket"
+      },
+      "renderer_controls": {
+        "weather": [
+          "sunny",
+          "rainy",
+          "windy",
+          "cloudy"
+        ],
+        "items": [
+          "kite",
+          "hat",
+          "light_jacket",
+          "umbrella"
+        ],
+        "pairs": [
+          [
+            "sunny",
+            "hat"
+          ],
+          [
+            "rainy",
+            "umbrella"
+          ],
+          [
+            "windy",
+            "kite"
+          ],
+          [
+            "cloudy",
+            "light_jacket"
+          ]
+        ]
+      },
+      "teacher_cue": "Name the weather first, then ask what would be useful outside.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Weather Watch",
+      "objective": "Observe weather patterns.",
+      "physical_page": 13,
+      "printed_page": 12,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P013-weather-watch.json",
+      "source_execution": "Compare sunny, rainy, windy and cloudy days using large picture cards. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P014": {
+      "instruction": "Look at each numbered activity. Write its number under DAY or NIGHT.",
+      "model_example": "A child eating breakfast is placed under DAY.",
+      "expected_response": "Four picture numbers written under DAY and four under NIGHT.",
+      "archetype": "numbered-day-night-sort",
+      "mechanic": "sort-daily-activities",
+      "illustration_assets": {
+        "breakfast": "child eating breakfast",
+        "school": "child walking to school",
+        "play": "child playing outdoors",
+        "sun": "bright sun",
+        "sleep": "child sleeping",
+        "stars": "moon and stars",
+        "pyjamas": "child putting on pyjamas",
+        "bedtime_story": "adult reading a bedtime story"
+      },
+      "renderer_controls": {
+        "items": [
+          "sleep",
+          "breakfast",
+          "stars",
+          "school",
+          "play",
+          "pyjamas",
+          "sun",
+          "bedtime_story"
+        ],
+        "categories": [
+          "DAY",
+          "NIGHT"
+        ],
+        "number_boxes_per_category": 4
+      },
+      "teacher_cue": "Ask whether the sky is usually light or dark during each activity.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Day & Night",
+      "objective": "Understand daily cycles.",
+      "physical_page": 14,
+      "printed_page": 13,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P014-day-and-night.json",
+      "source_execution": "Sort activities into day or night with sky illustrations. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P015": {
+      "instruction": "Circle the pictures that show safe, careful uses of water. Cross the pictures that waste water.",
+      "model_example": "A child turning off a tap is circled.",
+      "expected_response": "Five helpful water-use pictures circled and three wasteful pictures crossed.",
+      "archetype": "water-use-scenario-grid",
+      "mechanic": "circle-save-cross-waste",
+      "illustration_assets": {
+        "drink": "child drinking water",
+        "wash_hands": "child washing hands",
+        "water_plant": "child watering one plant with a can",
+        "cook": "adult using water for cooking",
+        "turn_off_tap": "child turning off a tap",
+        "running_tap": "tap left running",
+        "hose_waste": "water hose spraying unused water",
+        "overflow": "overflowing bucket"
+      },
+      "renderer_controls": {
+        "items": [
+          "drink",
+          "running_tap",
+          "water_plant",
+          "overflow",
+          "wash_hands",
+          "hose_waste",
+          "cook",
+          "turn_off_tap"
+        ],
+        "helpful": [
+          1,
+          3,
+          5,
+          7,
+          8
+        ],
+        "wasteful": [
+          2,
+          4,
+          6
+        ]
+      },
+      "teacher_cue": "Ask the child to say how one careful action saves water.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Water Explorers",
+      "objective": "Explore water uses.",
+      "physical_page": 15,
+      "printed_page": 14,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P015-water-explorers.json",
+      "source_execution": "Identify safe everyday uses of water and discuss conservation. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P016": {
+      "instruction": "Predict first: circle FLOAT or SINK for each object. Test the objects, then circle the result.",
+      "model_example": "A leaf is predicted to FLOAT; after testing, FLOAT is circled in the result column.",
+      "expected_response": "A prediction and observed result circled for six familiar objects.",
+      "archetype": "predict-test-table",
+      "mechanic": "predict-and-record-float-sink",
+      "illustration_assets": {
+        "leaf": "leaf",
+        "coin": "coin",
+        "cork": "cork",
+        "spoon": "metal spoon",
+        "plastic_cap": "plastic bottle cap",
+        "stone": "small stone"
+      },
+      "renderer_controls": {
+        "items": [
+          "leaf",
+          "coin",
+          "cork",
+          "spoon",
+          "plastic_cap",
+          "stone"
+        ],
+        "columns": [
+          "PREDICT",
+          "RESULT"
+        ],
+        "choices": [
+          "FLOAT",
+          "SINK"
+        ]
+      },
+      "teacher_cue": "Let the child predict before placing one object at a time in water.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Floating & Sinking",
+      "objective": "Predict and test.",
+      "physical_page": 16,
+      "printed_page": 15,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P016-floating-and-sinking.json",
+      "source_execution": "Predict whether common objects float or sink, then compare results. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P017": {
+      "instruction": "Look at each numbered object. Write its number under MAGNETIC or NOT MAGNETIC.",
+      "model_example": "A paper clip is placed under MAGNETIC.",
+      "expected_response": "Four picture numbers written in each category.",
+      "archetype": "numbered-magnet-sort",
+      "mechanic": "sort-magnetic-objects",
+      "illustration_assets": {
+        "paper_clip": "paper clip",
+        "wood_block": "wooden block",
+        "key": "metal key",
+        "eraser": "rubber eraser",
+        "nail": "iron nail",
+        "plastic_spoon": "plastic spoon",
+        "steel_lid": "steel jar lid",
+        "crayon": "wax crayon"
+      },
+      "renderer_controls": {
+        "items": [
+          "wood_block",
+          "paper_clip",
+          "eraser",
+          "key",
+          "plastic_spoon",
+          "nail",
+          "crayon",
+          "steel_lid"
+        ],
+        "categories": [
+          "MAGNETIC",
+          "NOT MAGNETIC"
+        ],
+        "number_boxes_per_category": 4
+      },
+      "teacher_cue": "Ask the child to predict first, then test each safe object with a magnet.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Magnets",
+      "objective": "Discover magnetic objects.",
+      "physical_page": 17,
+      "printed_page": 16,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P017-magnets.json",
+      "source_execution": "Sort magnetic and non-magnetic classroom objects. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P018": {
+      "instruction": "Name each object. Draw a line to its matching shadow.",
+      "model_example": "A cup connected to its cup-shaped shadow.",
+      "expected_response": "Six lines connecting objects to their silhouettes.",
+      "archetype": "object-shadow-match",
+      "mechanic": "match-object-shadow",
+      "illustration_assets": {
+        "tree": "tree",
+        "kite": "kite",
+        "cup": "cup",
+        "rabbit": "rabbit",
+        "umbrella": "umbrella",
+        "bicycle": "bicycle",
+        "tree_shadow": "tree silhouette",
+        "kite_shadow": "kite silhouette",
+        "cup_shadow": "cup silhouette",
+        "rabbit_shadow": "rabbit silhouette",
+        "umbrella_shadow": "umbrella silhouette",
+        "bicycle_shadow": "bicycle silhouette"
+      },
+      "renderer_controls": {
+        "left": [
+          "tree",
+          "kite",
+          "cup",
+          "rabbit",
+          "umbrella",
+          "bicycle"
+        ],
+        "right": [
+          "cup_shadow",
+          "bicycle_shadow",
+          "tree_shadow",
+          "umbrella_shadow",
+          "rabbit_shadow",
+          "kite_shadow"
+        ]
+      },
+      "teacher_cue": "Ask the child to compare the outside shape and direction before matching.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Light & Shadow",
+      "objective": "Observe shadows.",
+      "physical_page": 18,
+      "printed_page": 17,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P018-light-and-shadow.json",
+      "source_execution": "Match objects to their shadows and notice how light creates them. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P019": {
+      "instruction": "Look at the three paper bridges. Circle the bridge that can hold the most toy animals. Draw one way to make a bridge stronger.",
+      "model_example": "A folded paper bridge with side rails holds two animals; it is circled as stronger than flat paper.",
+      "expected_response": "One strong bridge selected and one strengthening idea drawn.",
+      "archetype": "bridge-design-compare-and-draw",
+      "mechanic": "choose-and-improve-bridge",
+      "illustration_assets": {
+        "flat_bridge": "flat paper bridge over two blocks with one toy animal",
+        "folded_bridge": "accordion-fold paper bridge over two blocks holding several toy animals",
+        "rail_bridge": "paper bridge with folded side rails holding several toy animals"
+      },
+      "renderer_controls": {
+        "designs": [
+          "flat_bridge",
+          "folded_bridge",
+          "rail_bridge"
+        ],
+        "choice_positions": 3,
+        "drawing_box": "large purposeful bridge-improvement area"
+      },
+      "teacher_cue": "Let the child test folded and flat paper, then ask what made one bridge stronger.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Building Bridges",
+      "objective": "Engineering basics.",
+      "physical_page": 19,
+      "printed_page": 18,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P019-building-bridges.json",
+      "source_execution": "Build and compare simple paper bridges for toy animals. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P020": {
+      "instruction": "Match each simple machine to the everyday object that uses it.",
+      "model_example": "A ramp connected to a playground slide.",
+      "expected_response": "Six lines matching ramp, wheel and lever examples.",
+      "archetype": "simple-machine-match",
+      "mechanic": "match-machine-example",
+      "illustration_assets": {
+        "ramp": "simple ramp",
+        "wheel": "wheel and axle",
+        "lever": "lever on a fulcrum",
+        "slide": "playground slide",
+        "wheelbarrow": "wheelbarrow",
+        "seesaw": "seesaw",
+        "road_ramp": "loading ramp",
+        "bicycle": "bicycle",
+        "bottle_opener": "bottle opener"
+      },
+      "renderer_controls": {
+        "machines": [
+          "ramp",
+          "wheel",
+          "lever"
+        ],
+        "examples": [
+          "seesaw",
+          "bicycle",
+          "slide",
+          "bottle_opener",
+          "road_ramp",
+          "wheelbarrow"
+        ],
+        "matches_per_machine": 2
+      },
+      "teacher_cue": "Name the movement each machine makes easier before the child matches.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Simple Machines",
+      "objective": "Recognise everyday tools.",
+      "physical_page": 20,
+      "printed_page": 19,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P020-simple-machines.json",
+      "source_execution": "Match ramps, wheels and levers with real-life examples. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P021": {
+      "instruction": "Look at each natural object. Circle the word that names its pattern.",
+      "model_example": "A zebra is matched with STRIPES.",
+      "expected_response": "One pattern word circled for each of eight natural objects.",
+      "archetype": "nature-pattern-choice-grid",
+      "mechanic": "identify-natural-pattern",
+      "illustration_assets": {
+        "zebra": "zebra stripes",
+        "ladybird": "spotted ladybird",
+        "snail": "spiral snail shell",
+        "leaf": "leaf veins",
+        "tiger": "tiger stripes",
+        "butterfly": "spotted butterfly wings",
+        "sunflower": "sunflower spiral seeds",
+        "fern": "fern leaf pattern"
+      },
+      "renderer_controls": {
+        "items": [
+          "zebra",
+          "ladybird",
+          "snail",
+          "leaf",
+          "tiger",
+          "butterfly",
+          "sunflower",
+          "fern"
+        ],
+        "choices": [
+          "STRIPES",
+          "SPOTS",
+          "SPIRAL",
+          "VEINS"
+        ]
+      },
+      "teacher_cue": "Invite the child to trace the pattern in the air before choosing its name.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Patterns in Nature",
+      "objective": "Find natural patterns.",
+      "physical_page": 21,
+      "printed_page": 20,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P021-patterns-in-nature.json",
+      "source_execution": "Identify stripes, spots, spirals and leaf patterns. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P022": {
+      "instruction": "Look at each numbered action. Write its number under HELPS EARTH or HURTS EARTH.",
+      "model_example": "Putting paper in a recycling bin is placed under HELPS EARTH.",
+      "expected_response": "Four picture numbers written in each category.",
+      "archetype": "numbered-earth-action-sort",
+      "mechanic": "sort-environment-actions",
+      "illustration_assets": {
+        "recycle": "child recycling paper",
+        "litter": "person dropping litter",
+        "plant_tree": "child planting a tree",
+        "waste_water": "tap left running",
+        "reuse_bag": "family using reusable bag",
+        "pick_flowers": "child pulling many wild flowers",
+        "turn_off_light": "child turning off unused light",
+        "smoke": "vehicle releasing heavy smoke"
+      },
+      "renderer_controls": {
+        "items": [
+          "litter",
+          "plant_tree",
+          "waste_water",
+          "recycle",
+          "pick_flowers",
+          "reuse_bag",
+          "smoke",
+          "turn_off_light"
+        ],
+        "categories": [
+          "HELPS EARTH",
+          "HURTS EARTH"
+        ],
+        "number_boxes_per_category": 4
+      },
+      "teacher_cue": "Ask what would happen if everyone made each choice.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Healthy Earth",
+      "objective": "Care for the environment.",
+      "physical_page": 22,
+      "printed_page": 21,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P022-healthy-earth.json",
+      "source_execution": "Sort actions into 'helps Earth' and 'hurts Earth'. Include one teacher demonstration, one guided investigation, one independent activity, one speaking opportunity, expected child response, parent extension, premium illustration composition, and ensure every response area has a clear educational purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P023": {
+      "instruction": "Name the objects. Circle the things that use technology. Choose one and tell what it helps us do.",
+      "model_example": "A torch is circled: It helps us see in the dark.",
+      "expected_response": "Six technology objects circled among ten familiar objects and one oral use stated.",
+      "archetype": "technology-object-grid",
+      "mechanic": "identify-everyday-technology",
+      "illustration_assets": {
+        "torch": "torch",
+        "tablet": "tablet",
+        "fan": "electric fan",
+        "telephone": "telephone",
+        "camera": "camera",
+        "washing_machine": "washing machine",
+        "book": "book",
+        "spoon": "spoon",
+        "ball": "ball",
+        "chair": "chair"
+      },
+      "renderer_controls": {
+        "items": [
+          "book",
+          "torch",
+          "spoon",
+          "tablet",
+          "ball",
+          "fan",
+          "chair",
+          "telephone",
+          "camera",
+          "washing_machine"
+        ],
+        "technology_count": 6
+      },
+      "teacher_cue": "Ask what each circled object helps people do; accept one short sentence.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Technology Around Me",
+      "objective": "Recognise everyday technology.",
+      "physical_page": 23,
+      "printed_page": 22,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P023-technology-around-me.json",
+      "source_execution": "Identify safe everyday technology used at home and school. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P024": {
+      "instruction": "Circle every picture that shows safe technology use. Cross the unsafe pictures.",
+      "model_example": "A child sitting at a table with the screen at a comfortable distance is circled.",
+      "expected_response": "Four safe scenarios circled and four unsafe scenarios crossed.",
+      "archetype": "technology-safety-scenarios",
+      "mechanic": "circle-safe-cross-unsafe",
+      "illustration_assets": {
+        "ask_adult": "child asking adult before using a device",
+        "sit_well": "child sitting well at a table with device",
+        "short_time": "child stopping device use to stretch",
+        "clean_hands": "child using device with clean dry hands",
+        "bed_screen": "child using bright screen in bed",
+        "food_device": "child spilling a drink beside a device",
+        "too_close": "child holding screen too close",
+        "unknown_click": "child about to click an unknown pop-up"
+      },
+      "renderer_controls": {
+        "items": [
+          "too_close",
+          "ask_adult",
+          "food_device",
+          "sit_well",
+          "bed_screen",
+          "short_time",
+          "unknown_click",
+          "clean_hands"
+        ],
+        "safe": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "teacher_cue": "Discuss one safe habit at a time and ask the child to explain one choice.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Safe Technology",
+      "objective": "Use technology safely.",
+      "physical_page": 24,
+      "printed_page": 23,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P024-safe-technology.json",
+      "source_execution": "Choose safe screen and device habits using picture scenarios. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P025": {
+      "instruction": "Follow each colour-and-arrow code. Draw the next two symbols in the empty boxes.",
+      "model_example": "Red up, blue right, red up, blue right; the next symbols are red up and blue right.",
+      "expected_response": "Two symbols drawn to complete each of four coded patterns.",
+      "archetype": "coding-pattern-rows",
+      "mechanic": "complete-colour-arrow-code",
+      "illustration_assets": {
+        "arrow_up": "up arrow symbol",
+        "arrow_down": "down arrow symbol",
+        "arrow_left": "left arrow symbol",
+        "arrow_right": "right arrow symbol",
+        "red_circle": "red circle",
+        "blue_square": "blue square",
+        "green_triangle": "green triangle",
+        "yellow_star": "yellow star"
+      },
+      "renderer_controls": {
+        "rows": 4,
+        "pattern_types": [
+          "AB",
+          "AAB",
+          "ABC",
+          "AB"
+        ],
+        "empty_boxes_per_row": 2,
+        "symbols_large": true
+      },
+      "teacher_cue": "Have the child say the repeating code aloud before drawing.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Coding Patterns",
+      "objective": "Understand sequencing.",
+      "physical_page": 25,
+      "printed_page": 24,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P025-coding-patterns.json",
+      "source_execution": "Follow simple arrow and colour coding patterns. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P026": {
+      "instruction": "Guide the robot to the battery. Draw the route on the grid, then write the arrow steps in the boxes.",
+      "model_example": "Robot moves RIGHT, RIGHT, UP to reach a star; the three arrows are shown.",
+      "expected_response": "One route drawn on a large grid and five to seven arrow steps recorded.",
+      "archetype": "robot-grid-route",
+      "mechanic": "draw-route-and-code",
+      "illustration_assets": {
+        "robot": "friendly small robot",
+        "battery": "large battery icon",
+        "rock": "rock obstacle",
+        "water": "puddle obstacle",
+        "box": "wooden box obstacle"
+      },
+      "renderer_controls": {
+        "grid": [
+          6,
+          6
+        ],
+        "start": [
+          5,
+          0
+        ],
+        "goal": [
+          0,
+          5
+        ],
+        "obstacles": [
+          [
+            4,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "step_boxes": 10
+      },
+      "teacher_cue": "Ask the child to point to each square before drawing and say each direction aloud.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Robot Thinking",
+      "objective": "Give step-by-step instructions.",
+      "physical_page": 26,
+      "printed_page": 25,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P026-robot-thinking.json",
+      "source_execution": "Guide a robot through a simple picture grid. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P027": {
+      "instruction": "Look at the four bridge designs. Circle the design that is strongest. Draw one support that could improve a weaker bridge.",
+      "model_example": "A bridge with a triangle brace is circled because the brace supports it.",
+      "expected_response": "One design selected and one support drawn on a weaker design.",
+      "archetype": "engineering-design-choice",
+      "mechanic": "choose-and-improve-structure",
+      "illustration_assets": {
+        "bridge_no_support": "flat bridge without support",
+        "bridge_one_post": "bridge with one centre post",
+        "bridge_triangle": "bridge with triangular braces",
+        "bridge_arch": "bridge with an arch support"
+      },
+      "renderer_controls": {
+        "designs": [
+          "bridge_one_post",
+          "bridge_no_support",
+          "bridge_arch",
+          "bridge_triangle"
+        ],
+        "drawing_overlay_area": true,
+        "choice_positions": 4
+      },
+      "teacher_cue": "Ask where each design carries the load; let the child test paper shapes if available.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Engineering Challenge",
+      "objective": "Solve a building problem.",
+      "physical_page": 27,
+      "printed_page": 26,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P027-engineering-challenge.json",
+      "source_execution": "Choose the strongest design for a simple structure. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P028": {
+      "instruction": "Circle the tower with the widest, most stable base. Then plan your own tall tower in the grid.",
+      "model_example": "A tower with a wide bottom and smaller top is circled as stable.",
+      "expected_response": "One stable tower selected and one tower plan drawn.",
+      "archetype": "tower-choice-and-plan",
+      "mechanic": "choose-stable-draw-tower",
+      "illustration_assets": {
+        "tower_narrow": "tall block tower with narrow base",
+        "tower_leaning": "leaning block tower",
+        "tower_wide": "stable block tower with wide base",
+        "tower_uneven": "uneven block tower"
+      },
+      "renderer_controls": {
+        "designs": [
+          "tower_narrow",
+          "tower_wide",
+          "tower_uneven",
+          "tower_leaning"
+        ],
+        "drawing_grid": [
+          6,
+          8
+        ],
+        "large_drawing_area": true
+      },
+      "teacher_cue": "Invite the child to build the planned tower and compare it with the drawing.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Build a Tower",
+      "objective": "Explore stability.",
+      "physical_page": 28,
+      "printed_page": 27,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P028-build-a-tower.json",
+      "source_execution": "Stack blocks to build the tallest stable tower. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P029": {
+      "instruction": "Look at each pair. Circle the stronger structure. Tell what makes it strong.",
+      "model_example": "A chair with cross-braced legs is circled instead of a chair with loose legs.",
+      "expected_response": "One stronger structure circled in each of five varied pairs.",
+      "archetype": "strong-weak-pairs",
+      "mechanic": "compare-structure-strength",
+      "illustration_assets": {
+        "bridge_pair": "weak flat paper bridge and braced paper bridge",
+        "tower_pair": "narrow leaning tower and wide stable tower",
+        "chair_pair": "loose chair and braced chair",
+        "shelf_pair": "unsupported shelf and shelf with brackets",
+        "tent_pair": "tent without pegs and tent secured with pegs"
+      },
+      "renderer_controls": {
+        "pairs": [
+          "bridge_pair",
+          "tower_pair",
+          "chair_pair",
+          "shelf_pair",
+          "tent_pair"
+        ],
+        "answer_positions": [
+          2,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "teacher_cue": "Ask the child to point to the support before choosing the stronger structure.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Strong & Weak",
+      "objective": "Compare structures.",
+      "physical_page": 29,
+      "printed_page": 28,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P029-strong-and-weak.json",
+      "source_execution": "Identify which bridges or towers are stronger and explain why. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P030": {
+      "instruction": "Count the cubes used to measure each object. Write the number. Circle the longer or taller object in each pair.",
+      "model_example": "A pencil measures 5 cubes; 5 is written in the box.",
+      "expected_response": "Six measurements written and three comparisons circled.",
+      "archetype": "non-standard-measurement",
+      "mechanic": "count-units-and-compare",
+      "illustration_assets": {
+        "pencil": "pencil",
+        "crayon": "crayon",
+        "book": "book",
+        "eraser": "eraser",
+        "plant": "small potted plant",
+        "bottle": "water bottle"
+      },
+      "renderer_controls": {
+        "pairs": [
+          [
+            "pencil",
+            "crayon"
+          ],
+          [
+            "book",
+            "eraser"
+          ],
+          [
+            "plant",
+            "bottle"
+          ]
+        ],
+        "unit_counts": [
+          7,
+          4,
+          6,
+          3,
+          8,
+          5
+        ],
+        "writing_boxes": 6
+      },
+      "teacher_cue": "Touch and count each cube with the child before asking which object is longer or taller.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Measure & Compare",
+      "objective": "Estimate and compare.",
+      "physical_page": 30,
+      "printed_page": 29,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P030-measure-and-compare.json",
+      "source_execution": "Compare heights and lengths using non-standard units. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P031": {
+      "instruction": "Look at each numbered object. Write its number under WOOD, METAL or PLASTIC.",
+      "model_example": "A wooden spoon is placed under WOOD.",
+      "expected_response": "Three picture numbers written in each material group.",
+      "archetype": "material-sort",
+      "mechanic": "sort-by-material",
+      "illustration_assets": {
+        "wood_spoon": "wooden spoon",
+        "metal_key": "metal key",
+        "plastic_cup": "plastic cup",
+        "wood_block": "wooden block",
+        "metal_can": "metal can",
+        "plastic_bottle": "plastic bottle",
+        "wood_pencil": "wooden pencil",
+        "metal_clip": "metal paper clip",
+        "plastic_comb": "plastic comb"
+      },
+      "renderer_controls": {
+        "items": [
+          "metal_key",
+          "plastic_cup",
+          "wood_spoon",
+          "plastic_bottle",
+          "wood_block",
+          "metal_can",
+          "wood_pencil",
+          "plastic_comb",
+          "metal_clip"
+        ],
+        "categories": [
+          "WOOD",
+          "METAL",
+          "PLASTIC"
+        ],
+        "number_boxes_per_category": 3
+      },
+      "teacher_cue": "Let the child touch safe examples of the three materials before sorting.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Sort & Investigate",
+      "objective": "Collect and sort data.",
+      "physical_page": 31,
+      "printed_page": 30,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P031-sort-and-investigate.json",
+      "source_execution": "Sort classroom objects and discuss the results. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P032": {
+      "instruction": "Predict which ramp will make the ball travel farthest. Circle your prediction. Test, then tick the result.",
+      "model_example": "A high ramp is predicted; after the test, the ramp that rolled farthest is ticked.",
+      "expected_response": "One prediction and one observed result recorded, followed by an oral comparison.",
+      "archetype": "ramp-predict-test",
+      "mechanic": "predict-test-compare-distance",
+      "illustration_assets": {
+        "low_ramp": "low toy-car ramp",
+        "medium_ramp": "medium-height toy-car ramp",
+        "high_ramp": "high toy-car ramp"
+      },
+      "renderer_controls": {
+        "ramps": [
+          "medium_ramp",
+          "low_ramp",
+          "high_ramp"
+        ],
+        "prediction_controls": 3,
+        "result_controls": 3,
+        "distance_record_line": true
+      },
+      "teacher_cue": "Keep the same ball and starting point; change only the ramp height.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Predict & Test",
+      "objective": "Make predictions.",
+      "physical_page": 32,
+      "printed_page": 31,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P032-predict-and-test.json",
+      "source_execution": "Predict outcomes, test ideas and compare observations. Include one teacher demonstration, one guided STEM investigation, one independent activity, a speaking opportunity, parent extension, expected child response, premium educational illustration, and ensure every blank area has a named learning purpose.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P033": {
+      "instruction": "Look at each science picture. Use the starter to ask one complete question.",
+      "model_example": "Picture of a melting ice cube: What happens when the ice gets warm?",
+      "expected_response": "Four oral questions using What, Why, How or Which.",
+      "archetype": "science-question-prompts",
+      "mechanic": "form-question-from-scene",
+      "illustration_assets": {
+        "melting_ice": "ice cube melting in sunlight",
+        "growing_plant": "seedling growing toward light",
+        "floating_boat": "paper boat floating in water",
+        "magnet_clips": "magnet attracting paper clips"
+      },
+      "renderer_controls": {
+        "scenes": [
+          "melting_ice",
+          "growing_plant",
+          "floating_boat",
+          "magnet_clips"
+        ],
+        "starters": [
+          "What",
+          "Why",
+          "How",
+          "Which"
+        ],
+        "partner_reply_cue": true
+      },
+      "teacher_cue": "Say the starter once, then allow the child to form the rest of the question.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Ask a Question",
+      "objective": "Develop inquiry skills.",
+      "physical_page": 33,
+      "printed_page": 32,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P033-ask-a-question.json",
+      "source_execution": "Children observe a picture and generate one simple question with teacher support. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P034": {
+      "instruction": "After testing the objects in water, tick FLOAT or SINK. Draw one thing you noticed.",
+      "model_example": "A floating cork has FLOAT ticked; a short observation is modelled orally.",
+      "expected_response": "Results ticked for four objects and one observation drawing completed.",
+      "archetype": "record-investigation-results",
+      "mechanic": "tick-results-and-draw-observation",
+      "illustration_assets": {
+        "cork": "cork floating in a clear bowl",
+        "coin": "coin at bottom of clear bowl",
+        "leaf": "leaf floating in a clear bowl",
+        "stone": "stone at bottom of clear bowl"
+      },
+      "renderer_controls": {
+        "items": [
+          "cork",
+          "coin",
+          "leaf",
+          "stone"
+        ],
+        "choices": [
+          "FLOAT",
+          "SINK"
+        ],
+        "drawing_box": "one large observation box"
+      },
+      "teacher_cue": "Ask the child to describe the drawing; write their words only if support is needed.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Record My Discovery",
+      "objective": "Record observations.",
+      "physical_page": 34,
+      "printed_page": 33,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P034-record-my-discovery.json",
+      "source_execution": "Draw or tick observations after a simple investigation. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P035": {
+      "instruction": "Read each STEM word. Draw a line to the picture that shows its meaning.",
+      "model_example": "OBSERVE connected to a child looking through a magnifying glass.",
+      "expected_response": "Eight words matched to eight action pictures.",
+      "archetype": "stem-vocabulary-match",
+      "mechanic": "match-word-to-action",
+      "illustration_assets": {
+        "observe": "child observing a leaf with magnifying glass",
+        "predict": "child thinking about which object will float",
+        "test": "child placing object in water",
+        "measure": "child measuring pencil with cubes",
+        "sort": "child sorting red and blue buttons",
+        "build": "child building block bridge",
+        "record": "child drawing result on paper",
+        "improve": "child adding support to block tower"
+      },
+      "renderer_controls": {
+        "words": [
+          "observe",
+          "predict",
+          "test",
+          "measure",
+          "sort",
+          "build",
+          "record",
+          "improve"
+        ],
+        "pictures_order": [
+          "test",
+          "sort",
+          "observe",
+          "improve",
+          "measure",
+          "record",
+          "build",
+          "predict"
+        ]
+      },
+      "teacher_cue": "Read one word at a time and ask what action the child can see.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Science Vocabulary",
+      "objective": "Build STEM vocabulary.",
+      "physical_page": 35,
+      "printed_page": 34,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P035-science-vocabulary.json",
+      "source_execution": "Match key STEM words with large picture cards. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P036": {
+      "instruction": "Complete each STEM review task. Circle, match, sort and draw as directed.",
+      "model_example": "One leaf observation is modelled: green, smooth and pointed.",
+      "expected_response": "Six short tasks reviewing observation, senses, sorting, prediction, measurement and building.",
+      "archetype": "mixed-stem-review",
+      "mechanic": "six-mini-review-tasks",
+      "illustration_assets": {
+        "observation_task": "two similar leaves for detail comparison",
+        "sense_task": "bell, flower and feather with sense icons",
+        "sort_task": "two living and two non-living objects",
+        "prediction_task": "leaf and coin beside water bowl",
+        "measure_task": "pencil beside cube units",
+        "building_task": "two small bridge designs"
+      },
+      "renderer_controls": {
+        "tasks": [
+          "observation_task",
+          "sense_task",
+          "sort_task",
+          "prediction_task",
+          "measure_task",
+          "building_task"
+        ],
+        "task_count": 6,
+        "response_controls": "mixed purposeful controls"
+      },
+      "teacher_cue": "Read one task at a time and allow the child to explain one answer.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "STEM Review",
+      "objective": "Review science and engineering concepts.",
+      "physical_page": 36,
+      "printed_page": 35,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P036-stem-review.json",
+      "source_execution": "Mixed review of observation, prediction, sorting and building. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P037": {
+      "instruction": "Predict which material will absorb the most water. Test each one, then tick the result and draw what you noticed.",
+      "model_example": "A tissue absorbs a water drop; ABSORBS is ticked.",
+      "expected_response": "Prediction and results recorded for tissue, foil and plastic, plus one observation drawing.",
+      "archetype": "guided-absorption-investigation",
+      "mechanic": "predict-test-record-absorption",
+      "illustration_assets": {
+        "tissue": "square of tissue",
+        "foil": "square of aluminium foil",
+        "plastic": "square of plastic sheet",
+        "dropper": "child-safe water dropper"
+      },
+      "renderer_controls": {
+        "materials": [
+          "tissue",
+          "foil",
+          "plastic"
+        ],
+        "prediction_controls": 3,
+        "result_choices": [
+          "ABSORBS",
+          "DOES NOT ABSORB"
+        ],
+        "drawing_box": true
+      },
+      "teacher_cue": "Use equal-size pieces and one drop of water on each material.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Mini Investigation",
+      "objective": "Carry out a guided investigation.",
+      "physical_page": 37,
+      "printed_page": 36,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P037-mini-investigation.json",
+      "source_execution": "Predict, test and discuss a simple classroom experiment. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P038": {
+      "instruction": "Compare Design A and Design B. Circle the stronger design. Add one support to improve the weaker design.",
+      "model_example": "A tower with a wide base is circled; one brace is drawn on the weaker tower.",
+      "expected_response": "One stronger design selected in each of three pairs and one improvement drawn.",
+      "archetype": "engineer-compare-improve",
+      "mechanic": "choose-and-improve-design",
+      "illustration_assets": {
+        "tower_pair": "narrow tower and wide-base tower",
+        "bridge_pair": "flat bridge and triangular-braced bridge",
+        "chair_pair": "chair without cross brace and chair with cross brace"
+      },
+      "renderer_controls": {
+        "pairs": [
+          "tower_pair",
+          "bridge_pair",
+          "chair_pair"
+        ],
+        "answer_positions": [
+          2,
+          2,
+          2
+        ],
+        "improvement_box": "one large drawing overlay"
+      },
+      "teacher_cue": "Ask what changed between the designs before the child chooses.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Think Like an Engineer",
+      "objective": "Improve a design.",
+      "physical_page": 38,
+      "printed_page": 37,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P038-think-like-an-engineer.json",
+      "source_execution": "Compare two designs and choose how to make one stronger. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P039": {
+      "instruction": "Solve each picture challenge. Use observation, prediction, sorting, measuring and building ideas.",
+      "model_example": "A leaf is observed closely and the matching leaf is circled.",
+      "expected_response": "Five independent mini-challenges completed with varied response actions.",
+      "archetype": "young-scientist-challenge",
+      "mechanic": "five-stem-mini-challenges",
+      "illustration_assets": {
+        "observe_challenge": "target leaf and three similar leaf choices",
+        "predict_challenge": "ball beside three ramp heights",
+        "sort_challenge": "six numbered objects of wood and metal",
+        "measure_challenge": "two pencils beside cube units",
+        "build_challenge": "three bridge support designs"
+      },
+      "renderer_controls": {
+        "tasks": [
+          "observe_challenge",
+          "predict_challenge",
+          "sort_challenge",
+          "measure_challenge",
+          "build_challenge"
+        ],
+        "task_count": 5,
+        "answers_unmarked": true
+      },
+      "teacher_cue": "Observe which strategy the child chooses; do not demonstrate an assessment answer.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Young Scientist Challenge",
+      "objective": "Apply STEM skills.",
+      "physical_page": 39,
+      "printed_page": 38,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P039-young-scientist-challenge.json",
+      "source_execution": "Complete a picture-based STEM challenge independently. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P040": {
+      "instruction": "Choose one investigation. Draw what you did and what happened. Finish: I discovered that ___.",
+      "model_example": "A small drawing shows a leaf floating; the adult-supported model says, I discovered that a leaf can float.",
+      "expected_response": "One investigation drawing and one dictated or copied discovery.",
+      "archetype": "stem-journal",
+      "mechanic": "draw-and-dictate-discovery",
+      "illustration_assets": {
+        "float_icon": "small bowl with floating leaf",
+        "magnet_icon": "magnet attracting clips",
+        "plant_icon": "growing plant",
+        "bridge_icon": "paper bridge"
+      },
+      "renderer_controls": {
+        "choice_icons": [
+          "float_icon",
+          "magnet_icon",
+          "plant_icon",
+          "bridge_icon"
+        ],
+        "drawing_box": "large purposeful area",
+        "writing_lines": 2
+      },
+      "teacher_cue": "Ask the child to describe the drawing; support the writing only when needed.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "My STEM Journal",
+      "objective": "Reflect on learning.",
+      "physical_page": 40,
+      "printed_page": 39,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P040-my-stem-journal.json",
+      "source_execution": "Draw one favourite investigation and dictate one discovery. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P041": {
+      "instruction": "Celebrate completion of STEM Explorers.",
+      "model_example": "No completed-example strip is needed on a certificate.",
+      "expected_response": "Child name, date and teacher signature are written in the certificate fields.",
+      "archetype": "certificate",
+      "mechanic": "complete-certificate",
+      "illustration_assets": {
+        "badge": "premium STEM explorer achievement badge",
+        "trophy": "small STEM trophy with shapes and gears",
+        "confetti": "compact celebratory stars and confetti"
+      },
+      "renderer_controls": {
+        "fields": [
+          "This certificate is awarded to",
+          "Date",
+          "Teacher signature"
+        ],
+        "model_strip": false
+      },
+      "teacher_cue": "Celebrate the child’s curiosity, careful observation and effort.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "Certificate",
+      "objective": "Celebrate achievement.",
+      "physical_page": 41,
+      "printed_page": 40,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P041-certificate.json",
+      "source_execution": "Premium completion certificate with BCube branding, Star mascot and signature fields. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P042": {
+      "instruction": "Colour one badge for each STEM skill you practised. Choose your favourite skill and tell why.",
+      "model_example": "The OBSERVER badge is lightly coloured as an example.",
+      "expected_response": "Up to six skill badges coloured and one favourite skill shared orally.",
+      "archetype": "stem-explorer-badges",
+      "mechanic": "colour-and-reflect",
+      "illustration_assets": {
+        "hero": "happy LKG child holding a magnifying glass beside simple STEM tools",
+        "badge_observe": "outline magnifying-glass badge",
+        "badge_predict": "outline thought-bubble badge",
+        "badge_test": "outline water-bowl badge",
+        "badge_measure": "outline cube-ruler badge",
+        "badge_build": "outline bridge badge",
+        "badge_record": "outline pencil-and-paper badge"
+      },
+      "renderer_controls": {
+        "badges": [
+          "OBSERVE",
+          "PREDICT",
+          "TEST",
+          "MEASURE",
+          "BUILD",
+          "RECORD"
+        ],
+        "colouring": true,
+        "reflection_choices": 6
+      },
+      "teacher_cue": "Invite the child to name one page that shows the chosen skill.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "I Am a STEM Explorer",
+      "objective": "Celebrate success.",
+      "physical_page": 42,
+      "printed_page": 41,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P042-i-am-a-stem-explorer.json",
+      "source_execution": "Achievement page with STEM badges, celebration scene and one small colouring activity. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    },
+    "ST-LKG-V4-P043": {
+      "instruction": "Choose one STEM success. Draw or show it, then tell: I am proud that I ___.",
+      "model_example": "A child points to a paper bridge and says, I am proud that I built a strong bridge.",
+      "expected_response": "One celebration choice, one drawing or display, and one short spoken reflection.",
+      "archetype": "stem-celebration",
+      "mechanic": "choose-draw-share",
+      "illustration_assets": {
+        "observe_choice": "magnifying glass and leaf",
+        "experiment_choice": "water bowl and floating cork",
+        "build_choice": "paper bridge with toy animal",
+        "code_choice": "friendly robot following arrows",
+        "celebration": "two children proudly sharing STEM work"
+      },
+      "renderer_controls": {
+        "choices": [
+          "observe_choice",
+          "experiment_choice",
+          "build_choice",
+          "code_choice"
+        ],
+        "drawing_box": "medium purposeful celebration drawing area",
+        "sentence_starter": "I am proud that I ___."
+      },
+      "teacher_cue": "Let each child share one success; keep the reflection short and positive.",
+      "validation_gates": [
+        "completed example is visually separate from independent work",
+        "independent answers are unmarked",
+        "every box, circle, line and blank area has a named child action",
+        "all objects and people are fully visible and uncropped",
+        "object names appear wherever they support vocabulary or reading",
+        "response controls are large enough for an LKG child",
+        "no parent or homework panel is rendered"
+      ],
+      "title": "My STEM Celebration",
+      "objective": "Reflect on and celebrate STEM learning.",
+      "physical_page": 43,
+      "printed_page": 42,
+      "source_prompt": "production-prompts/stem-explorers/lkg/v4/pages/ST-LKG-V4-P043-my-stem-celebration.json",
+      "source_execution": "BCube branding, series information and inspirational STEM message. Include one teacher demonstration, one guided STEM activity, one independent child task, speaking opportunity, parent extension, expected child response, premium illustration composition, and no decorative blank areas.",
+      "parent_panel": false
+    }
+  }
+}

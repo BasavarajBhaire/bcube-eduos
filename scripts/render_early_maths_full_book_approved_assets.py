@@ -71,6 +71,15 @@ def load_json(path: Path) -> dict[str, Any]:
     return value
 
 
+def prepare_contract(contract: dict[str, Any], archive: zipfile.ZipFile) -> dict[str, Any]:
+    """Allow format-specific entry points to align a compiled contract to an archive.
+
+    The base runner deliberately performs no inference. Compatibility wrappers may
+    replace this hook, but must still return a complete fail-closed book contract.
+    """
+    return contract
+
+
 def parse_pages(value: str | None) -> list[str]:
     if not value or value.lower() == "all":
         return PAGE_IDS
@@ -192,16 +201,15 @@ def main() -> int:
 
     selected = parse_pages(args.pages)
     subprocess.run([sys.executable, str(BUILDER)], cwd=ROOT, check=True)
-    contract = load_json(CONTRACT)
-    missing_contracts = [page_id for page_id in selected if page_id not in contract.get("pages", {})]
-    if missing_contracts:
-        raise SystemExit(f"Runtime contracts missing: {missing_contracts}")
-
     output_dir.mkdir(parents=True, exist_ok=True)
     evidence_dir.mkdir(parents=True, exist_ok=True)
     results: list[Result] = []
 
     with tempfile.TemporaryDirectory(prefix="bcube-early-maths-full-") as temp_name, zipfile.ZipFile(archive_path) as archive:
+        contract = prepare_contract(load_json(CONTRACT), archive)
+        missing_contracts = [page_id for page_id in selected if page_id not in contract.get("pages", {})]
+        if missing_contracts:
+            raise SystemExit(f"Runtime contracts missing: {missing_contracts}")
         temp = Path(temp_name)
         blank = temp / "blank.png"
         Image.new("RGB", (1200, 1200), "white").save(blank)
