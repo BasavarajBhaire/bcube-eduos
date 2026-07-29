@@ -582,7 +582,8 @@ def render_p018(canvas, draw, source, text):
         # complete ears and feet while stopping before the umbrella below.
         (0.02, 0.485, 0.46, 0.67),
         (0.02, 0.68, 0.46, 0.815),
-        (0.02, 0.87, 0.46, 0.995),
+        # Start at the final source row so the bicycle stays fully visible.
+        (0.02, 0.825, 0.46, 0.995),
     )
     right_boxes = (
         (0.54, 0.01, 0.98, 0.17),
@@ -590,7 +591,8 @@ def render_p018(canvas, draw, source, text):
         (0.54, 0.35, 0.98, 0.495),
         (0.54, 0.515, 0.98, 0.645),
         (0.54, 0.675, 0.98, 0.81),
-        (0.54, 0.835, 0.98, 0.995),
+        # Use the same final-row boundary to preserve the full kite silhouette.
+        (0.54, 0.825, 0.98, 0.995),
     )
     images = [crop_norm(source, box) for box in left_boxes + right_boxes]
     render_two_column_match(
