@@ -435,7 +435,6 @@ class PageDataRegistry:
                 "objective": objective,
                 "instruction": instruction,
                 "teacher prompt": teacher_prompt,
-                "parent prompt": parent_prompt,
             }
             missing = [name for name, value in required.items() if not value]
             if physical != 1 and missing:

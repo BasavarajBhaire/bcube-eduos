@@ -6,6 +6,7 @@
   "book": {"name":"Curiosity Explorers","slug":"curiosity-explorers","prefix":"CE"},
   "level": "Nursery (3+)",
   "page": {"physical":10,"total_physical":44,"printed":9,"printed_visible":true,"type":"activity_page","title":"What Do You See?"},
+  "preserved_source": {"page_data":{"unit_id":"MODULE_1_OBSERVE_AND_COMPARE"}},
   "curriculum": {
     "objective": "Find and name four familiar objects within one simple scene.",
     "instruction": "Look carefully. Find and point to each object.",

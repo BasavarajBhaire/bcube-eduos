@@ -6,6 +6,7 @@
   "book": {"name":"STEM Explorers","slug":"stem-explorers","prefix":"ST"},
   "level": "LKG (4+)",
   "page": {"physical":10,"total_physical":44,"printed":9,"printed_visible":true,"type":"activity_page","title":"Living & Non-living"},
+  "preserved_source": {"page_data":{"unit_id":"SCIENCE"}},
   "curriculum": {
     "objective": "Identify and classify familiar living and non-living things.",
     "instruction": "Look at each picture. Write its number in the correct group.",
