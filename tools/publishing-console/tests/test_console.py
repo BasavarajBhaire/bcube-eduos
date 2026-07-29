@@ -12,6 +12,10 @@ CONSOLE = Path(__file__).resolve().parents[1]
 ROOT = CONSOLE.parents[1]
 sys.path.insert(0, str(CONSOLE))
 
+MOCK_UPLOAD = ROOT / "production-renders/v5/console-uploads/illustration.png"
+MOCK_STRUCTURED = ROOT / "production-renders/illustrations-by-level/test/illustration.png"
+MOCK_PAGE = ROOT / "production-renders/pages-by-level/test/page.png"
+
 import app as console_app  # noqa: E402
 from page_data_registry import PageDataRegistry, SUPPORTED_ACTIVITY_TYPES  # noqa: E402
 
@@ -58,6 +62,9 @@ class PublishingConsoleTests(unittest.TestCase):
     def setUp(self) -> None:
         console_app.app.config.update(TESTING=True)
         self.client = console_app.app.test_client()
+        page_store = patch.object(console_app, "store_generated_page", return_value=MOCK_PAGE)
+        page_store.start()
+        self.addCleanup(page_store.stop)
 
     def test_pages_endpoint_returns_resolved_metadata(self) -> None:
         response = self.client.get("/api/pages?level=ukg&book=young-scientists")
@@ -73,7 +80,11 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertTrue(payload["pages"][5]["requires_illustration"])
         self.assertFalse(payload["pages"][6]["requires_illustration"])
 
-    @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
+    @patch.object(
+        console_app,
+        "save_upload",
+        return_value=(MOCK_UPLOAD, MOCK_STRUCTURED),
+    )
     @patch.object(console_app.subprocess, "run")
     def test_publish_resolves_non_cover_server_side(self, run_mock, _upload_mock) -> None:
         run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
@@ -94,7 +105,11 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertNotIn("CLIENT-SUPPLIED-ID", command)
         self.assertEqual(payload["page"]["title"], command[command.index("--title") + 1])
 
-    @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
+    @patch.object(
+        console_app,
+        "save_upload",
+        return_value=(MOCK_UPLOAD, MOCK_STRUCTURED),
+    )
     @patch.object(console_app.subprocess, "run")
     def test_about_page_uses_dedicated_contract_without_lesson_panels(self, run_mock, _upload_mock) -> None:
         run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
@@ -156,7 +171,11 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertNotIn("--teacher-prompt", command)
         self.assertNotIn("--parent-prompt", command)
 
-    @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/welcome.png"))
+    @patch.object(
+        console_app,
+        "save_upload",
+        return_value=(MOCK_UPLOAD, MOCK_STRUCTURED),
+    )
     @patch.object(console_app.subprocess, "run")
     def test_welcome_page_uses_dedicated_contract_and_printed_page_five(
         self, run_mock, upload_mock
@@ -197,7 +216,11 @@ class PublishingConsoleTests(unittest.TestCase):
         self.assertNotIn("--teacher-prompt", command)
         self.assertNotIn("--parent-prompt", command)
 
-    @patch.object(console_app, "save_upload", return_value=Path("C:/tmp/illustration.png"))
+    @patch.object(
+        console_app,
+        "save_upload",
+        return_value=(MOCK_UPLOAD, MOCK_STRUCTURED),
+    )
     @patch.object(console_app.subprocess, "run")
     def test_optional_approval_is_forwarded(self, run_mock, _upload_mock) -> None:
         run_mock.return_value = subprocess.CompletedProcess([], 0, "published", "")
