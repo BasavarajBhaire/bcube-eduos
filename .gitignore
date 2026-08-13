@@ -3,6 +3,7 @@ tmp/
 qa-render*/
 *.pyc
 __pycache__/
+node_modules/
 .DS_Store
 
 # BCube generated/delivery artifacts — never commit these
@@ -30,6 +31,8 @@ production-renders/
 *-evidence*/
 *-contact*.png
 *-contact-sheet.png
+*-contact*.jpg
+*-contact-sheet.jpg
 
 # Temporary prompt-pack transfer archives. The JSON prompt pack is canonical.
 production-prompts/**/pages.zip
