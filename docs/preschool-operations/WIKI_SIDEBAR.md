@@ -1,0 +1,26 @@
+# Bcube Future Preschool
+
+- [Home](README.md)
+- [00 · Start Here](00-start-here/README.md)
+- [01 · Business Architecture](01-business-architecture/README.md)
+- [02 · Organization](02-organization/README.md)
+- [03 · Operating Model](03-operating-model/README.md)
+- [04 · Academic Architecture](04-academic-architecture/README.md)
+- [05 · Curriculum](05-curriculum/README.md)
+- [06 · Admissions](06-admissions/README.md)
+- [07 · Daily Operations](07-daily-operations/README.md)
+- [08 · Parent Experience](08-parent-experience/README.md)
+- [09 · People & Teachers](09-people/README.md)
+- [10 · Safety & Safeguarding](10-safety/README.md)
+- [11 · Finance & Administration](11-finance/README.md)
+- [12 · Technology Architecture](12-technology/README.md)
+- [13 · Data & Security](13-data-security/README.md)
+- [14 · Brand & Space Design](14-brand-space-design/README.md)
+- [15 · Branch Expansion](15-branch-expansion/README.md)
+- [16 · Quality & Analytics](16-quality-analytics/README.md)
+- [17 · Governance](17-governance/README.md)
+- [SOP Library](sop/README.md)
+- [Templates](templates/README.md)
+- [Architecture Decisions](adr/README.md)
+
+> When publishing these sources into a GitHub Wiki repository, this file can be adapted to `_Sidebar.md`.
